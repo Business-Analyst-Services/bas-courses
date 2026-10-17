@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
+import CourseSidebar from "@/components/CourseSidebar";
 import { requireCourseRole } from "@/lib/access";
 import { getCourse } from "@/lib/courses";
 import { getProgress } from "@/lib/data";
@@ -18,7 +19,9 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
   return (
     <>
       <Nav enrolments={enrolments} current={slug} isAdmin={viewer.isAdmin} />
-      <main className="content">
+      <div className="shell">
+        <CourseSidebar course={course} done={done} role={role} />
+        <main className="main">
         <section className="hero">
           <img className="hero-logo" src="/bas-logo.svg" alt="" />
           <div className="hk">{course.format.toUpperCase()}{course.series ? ` · ${course.series.toUpperCase()}` : ""}</div>
@@ -33,6 +36,7 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center", marginBottom: 18 }}>
           {first && <Link className="btn" href={`/c/${slug}/m/${first.id}`}>Start / continue →</Link>}
+          <Link className="btn ghost" href={`/c/${slug}/outline`}>Full outline</Link>
           {role === "presenter" && first && <Link className="btn ghost" href={`/c/${slug}/m/${first.id}?view=presenter`}>Presenter run sheet</Link>}
           {role === "presenter" && <Link className="btn ghost" href={`/c/${slug}/roster`}>Participant roster</Link>}
           <span className={`rolepill ${role}`}>You are a {role}</span>
@@ -83,6 +87,7 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
           ))}
         </div>
       </main>
+      </div>
     </>
   );
 }

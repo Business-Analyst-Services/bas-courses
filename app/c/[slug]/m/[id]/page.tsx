@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
+import CourseSidebar from "@/components/CourseSidebar";
+import { slugify } from "@/lib/slug";
 import Md from "@/components/Md";
 import ActivityField from "@/components/Activity";
 import Quiz from "@/components/Quiz";
@@ -35,9 +37,11 @@ export default async function ModulePage({
   return (
     <>
       <Nav enrolments={enrolments} current={slug} isAdmin={viewer.isAdmin} />
-      <main className="content">
+      <div className="shell">
+        <CourseSidebar course={course} currentId={m.id} done={done} view={presenterView ? "presenter" : undefined} role={role} />
+        <main className="main">
         <div style={{ display: "flex", justifyContent: "space-between", gap: 12, flexWrap: "wrap", alignItems: "center", marginBottom: 14 }}>
-          <Link href={`/c/${slug}`} style={{ color: "var(--tealdk)", fontWeight: 600, fontSize: 13.5 }}>← {course.shortTitle} agenda</Link>
+          <div className="crumbs" style={{ margin: 0 }}><Link href={`/c/${slug}`}>{course.shortTitle}</Link><span>›</span><span>{day?.label}</span><span>›</span><span>Session {course.modules.findIndex((x) => x.id === m.id) + 1} of {course.modules.length}</span></div>
           {role === "presenter" && (
             <div className="modetoggle">
               <Link href={`/c/${slug}/m/${m.id}`} className={presenterView ? "" : "on"}>Participant</Link>
@@ -51,9 +55,17 @@ export default async function ModulePage({
 
         {presenterView ? (
           <>
+            <nav className="toc" aria-label="On this page">
+              <a href="#runsheet">Run sheet</a>
+              {T.roleplay && <a href="#roleplay">Role-play</a>}
+              <a href="#facilitation">Facilitation notes</a>
+              <a href="#debrief">Debrief</a>
+              {T.answerKey && <a href="#answer-key">Answer key</a>}
+              {T.materials.length > 0 && <a href="#materials">Materials</a>}
+            </nav>
             <div className="say"><small>OPEN THE BLOCK — WHAT TO SAY</small>{T.openingLine}</div>
             <div className="panel"><h3>Purpose</h3><p>{T.purpose}</p></div>
-            <div className="panel">
+            <div className="panel" id="runsheet">
               <h3>Run sheet · {m.minutes} min</h3>
               <table className="beats"><thead><tr><th>Beat</th><th>Min</th><th>Notes</th></tr></thead>
                 <tbody>{T.beats.map((b, i) => <tr key={i}><td><b>{b.label}</b></td><td className="min">{b.minutes}</td><td><Md>{b.notes}</Md></td></tr>)}</tbody>
@@ -61,7 +73,7 @@ export default async function ModulePage({
             </div>
             {T.roleplay && (
               <>
-                <h2 className="sec">Role-play</h2>
+                <h2 className="sec" id="roleplay">Role-play</h2>
                 <div className="rpgrid">
                   <div className="card"><b>Persona</b><h3>{T.roleplay.persona}</h3><p>{T.roleplay.line}</p></div>
                   <div className="card"><b>Curveball</b><h3>{T.roleplay.curveball}</h3></div>
@@ -69,19 +81,27 @@ export default async function ModulePage({
                 </div>
               </>
             )}
-            <h2 className="sec">Facilitation notes</h2>
+            <h2 className="sec" id="facilitation">Facilitation notes</h2>
             <div className="panel"><Md>{T.facilitationNotes}</Md></div>
             <div className="goodband"><b>What good looks like: </b>{T.whatGood}</div>
             <div className="failband"><b>Common failure, and the fix: </b>{T.commonFailure}</div>
-            <h2 className="sec">Debrief questions</h2>
+            <h2 className="sec" id="debrief">Debrief questions</h2>
             <div className="panel"><ul className="objs">{T.debrief.map((d) => <li key={d}>{d}</li>)}</ul></div>
-            {T.answerKey && (<><h2 className="sec">Answer key</h2><div className="panel"><Md>{T.answerKey}</Md></div></>)}
-            {T.materials.length > 0 && (<><h2 className="sec">Materials</h2><div className="panel"><ul className="objs">{T.materials.map((x) => <li key={x}>{x}</li>)}</ul></div></>)}
+            {T.answerKey && (<><h2 className="sec" id="answer-key">Answer key</h2><div className="panel"><Md>{T.answerKey}</Md></div></>)}
+            {T.materials.length > 0 && (<><h2 className="sec" id="materials">Materials</h2><div className="panel"><ul className="objs">{T.materials.map((x) => <li key={x}>{x}</li>)}</ul></div></>)}
             <div className="navyband"><p><b>Participant view:</b> switch to Participant at the top to see exactly what the room sees, including the activities and quiz.</p></div>
           </>
         ) : (
           <>
-            <div className="bigidea">{P.bigIdea}</div>
+            <nav className="toc" aria-label="On this page">
+              <a href="#overview">Overview</a>
+              {P.sections.map((s) => <a key={s.heading} href={`#${slugify(s.heading)}`}>{s.heading}</a>)}
+              {P.activities.length > 0 && <a href="#activities">Activities ({P.activities.length})</a>}
+              {P.aiPrompt && <a href="#ai-prompt">AI prompt</a>}
+              {P.quiz.length > 0 && <a href="#quiz">Quiz</a>}
+              <a href="#takeaways">Takeaways</a>
+            </nav>
+            <div className="bigidea" id="overview">{P.bigIdea}</div>
             <Md>{P.overview}</Md>
             <div className="panel"><h3>By the end of this session you can</h3><ul className="objs">{P.objectives.map((o) => <li key={o}>{o}</li>)}</ul></div>
 
@@ -92,12 +112,12 @@ export default async function ModulePage({
             </div>
 
             {P.sections.map((s) => (
-              <section key={s.heading}><h2 className="sec">{s.heading}</h2><div className="panel"><Md>{s.body}</Md></div></section>
+              <section key={s.heading} id={slugify(s.heading)}><h2 className="sec">{s.heading}</h2><div className="panel"><Md>{s.body}</Md></div></section>
             ))}
 
-            {P.activities.length > 0 && <h2 className="sec">Workbook activities</h2>}
+            {P.activities.length > 0 && <h2 className="sec" id="activities">Workbook activities</h2>}
             {P.activities.map((a) => (
-              <div className="panel act" key={a.id}>
+              <div className="panel act" key={a.id} id={a.id}>
                 <div className="kicker">Activity{a.minutes ? ` · ${a.minutes} min` : ""}</div>
                 <h3>{a.title}</h3>
                 <Md>{a.instructions}</Md>
@@ -110,7 +130,7 @@ export default async function ModulePage({
 
             {P.aiPrompt && (
               <>
-                <h2 className="sec">Paste-ready AI prompt</h2>
+                <h2 className="sec" id="ai-prompt">Paste-ready AI prompt</h2>
                 <div className="panel">
                   <div className="pre">{P.aiPrompt}</div>
                   <div style={{ marginTop: 10, display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
@@ -121,9 +141,9 @@ export default async function ModulePage({
               </>
             )}
 
-            {P.quiz.length > 0 && (<><h2 className="sec">Knowledge check</h2><Quiz slug={slug} moduleId={m.id} items={P.quiz} initial={quiz} /></>)}
+            {P.quiz.length > 0 && (<><h2 className="sec" id="quiz">Knowledge check</h2><Quiz slug={slug} moduleId={m.id} items={P.quiz} initial={quiz} /></>)}
 
-            <h2 className="sec">Key takeaways</h2>
+            <h2 className="sec" id="takeaways">Key takeaways</h2>
             <div className="navyband"><ul className="objs">{P.takeaways.map((t) => <li key={t} style={{ color: "#fff" }}>{t}</li>)}</ul></div>
             <CompleteButton slug={slug} moduleId={m.id} done={done.has(m.id)} />
           </>
@@ -134,6 +154,7 @@ export default async function ModulePage({
           {next ? <Link href={`/c/${slug}/m/${next.id}${q}`} style={{ textAlign: "right" }}><small>Next →</small>{next.num} {next.title}</Link> : <span style={{ flex: 1 }} />}
         </nav>
       </main>
+      </div>
     </>
   );
 }

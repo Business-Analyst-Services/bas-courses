@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
+import CourseSidebar from "@/components/CourseSidebar";
+import { getProgress } from "@/lib/data";
 import { requireCourseRole } from "@/lib/access";
 import { getCourse } from "@/lib/courses";
 import { ensureSchema, sql } from "@/lib/db";
@@ -12,7 +14,8 @@ export default async function Roster({ params, searchParams }: { params: Promise
   const { activity } = await searchParams;
   const course = getCourse(slug);
   if (!course) notFound();
-  const { viewer, enrolments } = await requireCourseRole(slug, "presenter");
+  const { viewer, role, enrolments } = await requireCourseRole(slug, "presenter");
+  const done = await getProgress(viewer.userId, slug);
   await ensureSchema();
   const people = (await sql`
     SELECT e.email, e.role, e.cohort,
@@ -31,7 +34,9 @@ export default async function Roster({ params, searchParams }: { params: Promise
   return (
     <>
       <Nav enrolments={enrolments} current={slug} isAdmin={viewer.isAdmin} />
-      <main className="content" style={{ maxWidth: 1180 }}>
+      <div className="shell">
+        <CourseSidebar course={course} currentId="__roster" done={done} role={role} />
+        <main className="main">
         <Link href={`/c/${slug}`} style={{ color: "var(--tealdk)", fontWeight: 600, fontSize: 13.5 }}>← {course.shortTitle}</Link>
         <div className="kicker" style={{ marginTop: 12 }}>Presenter</div>
         <h1 className="pagetitle">Participant roster</h1>
@@ -72,6 +77,7 @@ export default async function Roster({ params, searchParams }: { params: Promise
           </div>
         )}
       </main>
+      </div>
     </>
   );
 }
