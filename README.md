@@ -14,7 +14,7 @@ Each person is enrolled per course as a **participant** or a **presenter**.
 **Stack:** Next.js 15 (App Router) on Vercel · Clerk (login) · Neon Postgres (enrolments, workbook answers, progress, quiz results) · GitHub (source; every push deploys).
 
 ## What people see
-- **Participants:** agenda, session pages (big idea, teaching content, worked WorkSafe Victoria example, workbook activities that save to Neon, paste-ready AI prompts, knowledge checks), downloads, progress.
+- **Participants:** agenda, session pages (big idea, teaching content, an industry worked example, workbook activities that save to Neon, paste-ready AI prompts, knowledge checks), downloads, progress.
 - **Presenters:** everything above, plus a Participant/Presenter toggle on every session (opening line, minute-by-minute beats, role-play persona and curveball, facilitation notes, what good looks like, debrief, answer keys) and a **roster** showing progress and every participant's activity answers.
 - **Admins** (emails in `ADMIN_EMAILS`): presenter access to every course, and `/admin` to enrol people by email.
 

@@ -37,8 +37,8 @@ export default async function ModulePage({
   return (
     <>
       <Nav enrolments={enrolments} current={slug} isAdmin={viewer.isAdmin} />
-      <div className="shell">
-        <CourseSidebar course={course} currentId={m.id} done={done} view={presenterView ? "presenter" : undefined} role={role} />
+      <CourseSidebar course={course} currentId={m.id} done={done} view={presenterView ? "presenter" : undefined} role={role} />
+        <div className="shell">
         <main className="main">
         <div style={{ display: "flex", justifyContent: "space-between", gap: 12, flexWrap: "wrap", alignItems: "center", marginBottom: 14 }}>
           <div className="crumbs" style={{ margin: 0 }}><Link href={`/c/${slug}`}>{course.shortTitle}</Link><span>›</span><span>{day?.label}</span><span>›</span><span>Session {course.modules.findIndex((x) => x.id === m.id) + 1} of {course.modules.length}</span></div>

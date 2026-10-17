@@ -29,8 +29,8 @@ export default async function Outline({ params }: { params: Promise<{ slug: stri
   return (
     <>
       <Nav enrolments={enrolments} current={slug} isAdmin={viewer.isAdmin} />
-      <div className="shell">
-        <CourseSidebar course={course} currentId="__outline" done={done} role={role} />
+      <CourseSidebar course={course} currentId="__outline" done={done} role={role} />
+        <div className="shell">
         <main className="main">
           <div className="kicker">{course.title}</div>
           <h1 className="pagetitle">Full course outline</h1>

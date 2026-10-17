@@ -19,8 +19,8 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
   return (
     <>
       <Nav enrolments={enrolments} current={slug} isAdmin={viewer.isAdmin} />
-      <div className="shell">
-        <CourseSidebar course={course} done={done} role={role} />
+      <CourseSidebar course={course} done={done} role={role} />
+        <div className="shell">
         <main className="main">
         <section className="hero">
           <img className="hero-logo" src="/bas-logo.svg" alt="" />
@@ -44,9 +44,8 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
 
         {course.caseStudy && (
           <div className="casebar">
-            {course.caseStudy.org.toLowerCase().includes("worksafe") && <img src="/worksafe-logo.svg" alt="WorkSafe Victoria" />}
-            <div>
-              <div className="kicker" style={{ marginBottom: 2 }}>Running worked example · {course.caseStudy.org}</div>
+                        <div>
+              <div className="kicker" style={{ marginBottom: 2 }}>Worked example · {course.caseStudy.org}</div>
               <b>{course.caseStudy.title}</b>
               <div style={{ fontSize: 13.5, color: "var(--grey)" }}>{course.caseStudy.summary}</div>
               {course.caseStudy.disclaimer && <small>{course.caseStudy.disclaimer}</small>}

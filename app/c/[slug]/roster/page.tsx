@@ -34,8 +34,8 @@ export default async function Roster({ params, searchParams }: { params: Promise
   return (
     <>
       <Nav enrolments={enrolments} current={slug} isAdmin={viewer.isAdmin} />
-      <div className="shell">
-        <CourseSidebar course={course} currentId="__roster" done={done} role={role} />
+      <CourseSidebar course={course} currentId="__roster" done={done} role={role} />
+        <div className="shell">
         <main className="main">
         <Link href={`/c/${slug}`} style={{ color: "var(--tealdk)", fontWeight: 600, fontSize: 13.5 }}>← {course.shortTitle}</Link>
         <div className="kicker" style={{ marginTop: 12 }}>Presenter</div>
