@@ -1,0 +1,28 @@
+{
+  "name": "bas-courses",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "validate": "node scripts/validate-content.mjs",
+    "db:setup": "node scripts/db-setup.mjs"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^6.12.0",
+    "@neondatabase/serverless": "^1.2.0",
+    "next": "15.5.28",
+    "react": "19.2.9",
+    "react-dom": "19.2.9",
+    "react-markdown": "^9.0.3",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "typescript": "^5.7.3"
+  }
+}

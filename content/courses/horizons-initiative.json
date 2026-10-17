@@ -1,0 +1,1285 @@
+{
+  "slug": "horizons-initiative",
+  "title": "Horizons: Initiative",
+  "shortTitle": "Initiative Horizon",
+  "tagline": "A full day on the engine room, where strategic intent becomes a product (Ch 6).",
+  "format": "One-day course · Day 2 of 3 · sold singly or as a 3-day bundle",
+  "duration": "1 day",
+  "delivery": "Live online · APAC · Times Sydney",
+  "audience": "Business analysts, product owners and product managers who work on funded initiatives and need to turn strategic intent into a product vision, a customer-centred feature set and a roadmap that learns.",
+  "order": 4,
+  "series": "Horizon Series",
+  "outcomes": [
+    "Explain how the analyst's role changes once an initiative is funded.",
+    "Write a product vision that connects the strategic outcome to customers and capabilities.",
+    "Build an impact map from goal to actors, impacts and deliverables.",
+    "Order features by value, risk and learning, each with a hypothesis and signal.",
+    "Plan an outcome-based roadmap and the feedback loops that keep it honest."
+  ],
+  "leaveWith": [
+    "A product vision",
+    "An impact map from a funded initiative",
+    "Top five features ordered, each with a hypothesis and signal"
+  ],
+  "caseStudy": {
+    "title": "Faster first payments for injured workers",
+    "org": "WorkSafe Victoria (illustrative)",
+    "summary": "Injured workers wait an average of 18.2 days from claim lodgement to their first weekly compensation payment, and many chase status through the contact centre. The target outcome is lodgement-to-first-payment of 7 days or less within 12 months, with claim-status calls down 40%. Across the three days we follow this one idea from investment decision (Strategy), through a funded initiative and product (Initiative), to a single elaborated backlog item (Delivery).",
+    "disclaimer": "Illustrative worked example built from public knowledge; not WorkSafe Victoria data."
+  },
+  "days": [
+    {
+      "id": "d1",
+      "label": "Day 2 of 3",
+      "title": "Initiative Horizon — strategic intent becomes a product",
+      "blocks": [
+        {
+          "time": "09:00–09:30",
+          "title": "Day 1 recap · horizon bridge",
+          "type": "welcome",
+          "moduleId": "hi-s1"
+        },
+        {
+          "time": "09:30–10:30",
+          "title": "The analyst at the Initiative Horizon",
+          "type": "session",
+          "moduleId": "hi-s2"
+        },
+        {
+          "time": "10:30–10:45",
+          "title": "Morning break",
+          "type": "break"
+        },
+        {
+          "time": "10:45–12:15",
+          "title": "Outcomes · time frame · feedback",
+          "type": "session",
+          "moduleId": "hi-s3"
+        },
+        {
+          "time": "12:15–13:00",
+          "title": "Lunch",
+          "type": "break"
+        },
+        {
+          "time": "13:00–13:45",
+          "title": "Principles applied at this horizon",
+          "type": "session",
+          "moduleId": "hi-s4"
+        },
+        {
+          "time": "13:45–15:15",
+          "title": "Analysis techniques · customer and product",
+          "type": "session",
+          "moduleId": "hi-s5"
+        },
+        {
+          "time": "15:15–15:30",
+          "title": "Afternoon break",
+          "type": "break"
+        },
+        {
+          "time": "15:30–16:30",
+          "title": "Planning and delivery techniques",
+          "type": "session",
+          "moduleId": "hi-s6"
+        },
+        {
+          "time": "16:30–17:00",
+          "title": "Exercise: apply to a funded initiative · close",
+          "type": "exercise",
+          "moduleId": "hi-s7"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "hi-s1",
+      "num": "2.1",
+      "title": "Day 1 recap · horizon bridge",
+      "subtitle": "From 'should we?' to 'what will we change, for whom, in what order?'",
+      "dayId": "d1",
+      "time": "09:00–09:30",
+      "minutes": 30,
+      "participant": {
+        "bigIdea": "The Initiative Horizon is the engine room: strategy goes in, a product that can learn comes out.",
+        "overview": "We open by recapping Day 1 — the agile mindset, the three horizons and the lean business case — and then cross the bridge. Yesterday the (illustrative) portfolio board approved Option B, phased: a claims-intake platform with a digital lodgement MVP first, then validation and straight-through processing. Today we turn that intent into a product.\n\nIf you did not attend Day 1, this block gives you everything you need: the horizons model, the running case and the funded outcome. Illustrative worked example built from public knowledge; not WorkSafe Victoria data.",
+        "objectives": [
+          "Recall the three horizons and what distinguishes them.",
+          "Summarise the funded initiative and its strategic outcome.",
+          "Identify what carries over from Strategy and what is new at Initiative."
+        ],
+        "keyPoints": [
+          {
+            "title": "What carries over",
+            "body": "The outcome (≤7 days to first payment), the hypothesis, the riskiest assumptions and the stop signals."
+          },
+          {
+            "title": "What's new",
+            "body": "Customers and users in detail, product boundaries, features, a roadmap and product-level metrics."
+          },
+          {
+            "title": "Feedback gets faster",
+            "body": "From quarterly business results to fortnightly or monthly product signals."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Day 1 in five lines",
+            "body": "- Agile analysis is sized to the decision in front of you.\n- Three horizons: Strategy (should we?), Initiative (what will we change or build?), Delivery (what's next and is it done?).\n- At Strategy we wrote a solution-free problem statement and an outcome with a baseline.\n- We mapped assumptions and tested the riskiest first.\n- We wrote a lean business case that names what would prove it wrong."
+          },
+          {
+            "heading": "The funded initiative",
+            "body": "| Item | Carried forward (illustrative) |\n|---|---|\n| Outcome | Median lodgement-to-first-payment 18.2 → ≤7 days in 12 months; status calls −40% |\n| Recommendation | Option B: buy claims-intake platform, integrate with agent systems via middleware, phased |\n| Phase 1 | Digital lodgement MVP with parallel employer notification |\n| Phase 2 | Validation and straight-through processing for low-risk claims |\n| Key insight | The employer-forwarding window was used as a default wait |\n| Decision point | Week 12 — % complete at first contact, median days to liability decision |\n\n*Illustrative worked example built from public knowledge; not WorkSafe Victoria data.*"
+          },
+          {
+            "heading": "Crossing the bridge",
+            "body": "At Initiative the analyst's questions change:\n\n| Strategy asked | Initiative asks |\n|---|---|\n| Is this worth doing? | Who exactly must behave differently for the outcome to happen? |\n| What options exist? | What product or change will we deliver, and what's in and out? |\n| What's the value at stake? | Which features deliver the most value soonest? |\n| What would prove us wrong? | What signal will each feature produce, and when? |"
+          }
+        ],
+        "activities": [
+          {
+            "title": "Bridge check",
+            "instructions": "Bring the funded initiative you'll use today (or adopt the running case). Write the strategic outcome it serves and the one assumption you'd most like to test first.",
+            "minutes": 6,
+            "prompts": [
+              {
+                "label": "My initiative (sanitised) or 'running case'",
+                "placeholder": "",
+                "id": "hi-s1-act1-p1"
+              },
+              {
+                "label": "Strategic outcome it serves",
+                "placeholder": "",
+                "id": "hi-s1-act1-p2"
+              },
+              {
+                "label": "Riskiest assumption carried from Strategy",
+                "placeholder": "",
+                "id": "hi-s1-act1-p3"
+              }
+            ],
+            "id": "hi-s1-act1"
+          }
+        ],
+        "aiPrompt": "I'm moving a funded investment from the Strategy Horizon to the Initiative Horizon. From the lean business case below, extract: (1) the strategic outcome with baseline, target and date; (2) the top three assumptions still untested; (3) the stop or pivot signals; (4) five questions I should answer at the Initiative Horizon about customers, product scope and sequencing. Lean business case:",
+        "quiz": [
+          {
+            "q": "Which question belongs to the Initiative Horizon?",
+            "opts": [
+              "Should we invest in faster payments?",
+              "Who must behave differently, and what will we build to make that happen?",
+              "Is this story done?",
+              "What is the scheme's five-year strategy?"
+            ],
+            "a": 1,
+            "why": "Initiative turns intent into a product: actors, behaviours and deliverables."
+          },
+          {
+            "q": "What should carry forward unchanged from Strategy?",
+            "opts": [
+              "The detailed requirements",
+              "The strategic outcome and stop signals",
+              "The original solution idea",
+              "The project schedule"
+            ],
+            "a": 1,
+            "why": "The outcome and exit signals anchor the initiative."
+          }
+        ],
+        "takeaways": [
+          "The outcome and assumptions travel with the initiative.",
+          "Initiative questions are about people, product and order.",
+          "Feedback should now arrive in weeks, not quarters."
+        ]
+      },
+      "presenter": {
+        "purpose": "Re-establish shared language, bring non-Day-1 participants up to speed and set up the funded initiative.",
+        "openingLine": "\"Good news — the board said yes. Bad news — now we have to work out what 'yes' actually means.\"",
+        "beats": [
+          {
+            "label": "Welcome and outcomes",
+            "minutes": 5,
+            "notes": "Introduce Day 2 and the three leave-with artefacts."
+          },
+          {
+            "label": "Day 1 recap",
+            "minutes": 8,
+            "notes": "Five lines; ask two Day 1 participants for their best 'what would prove us wrong'."
+          },
+          {
+            "label": "The funded initiative",
+            "minutes": 8,
+            "notes": "Walk the table; read the disclaimer."
+          },
+          {
+            "label": "Bridge check activity",
+            "minutes": 9,
+            "notes": "Six minutes individual; quick chat waterfall of outcomes."
+          }
+        ],
+        "facilitationNotes": "Expect a mix of Day 1 returners and new participants. Pair newcomers with returners for the first breakout. Remind everyone they can use the running case all day.",
+        "whatGood": "Every participant has an initiative and a measurable outcome written down.",
+        "commonFailure": "Participants bringing a project with no stated outcome — the fix is to have them write a provisional outcome now and flag it as an assumption.",
+        "debrief": [
+          "Whose initiative has no clear outcome yet?",
+          "What assumption are you carrying in?"
+        ],
+        "answerKey": "**Running case:** outcome = median ≤7 days lodgement-to-first-payment in 12 months, status calls −40%. Riskiest carried assumption = share of claims that are genuinely low-risk and can be fast-tracked (or agent adoption of common intake).",
+        "materials": [
+          "Day 1 recap slide",
+          "Funded initiative card"
+        ]
+      }
+    },
+    {
+      "id": "hi-s2",
+      "num": "2.2",
+      "title": "The analyst at the Initiative Horizon",
+      "subtitle": "Product thinking, boundaries and the product vision",
+      "dayId": "d1",
+      "time": "09:30–10:30",
+      "minutes": 60,
+      "participant": {
+        "bigIdea": "At Initiative, the analyst helps the team agree what the product is — and, just as importantly, what it isn't.",
+        "overview": "Once an initiative is funded, the analyst's work shifts from decision support to **product discovery and definition**. You help the product owner and team understand customers and users, define product boundaries, articulate a product vision, and translate strategic intent into features that can be tested.\n\nIn this block you'll learn what the role involves, how to work alongside a product owner without duplicating them, and how to write a product vision for the running case.",
+        "objectives": [
+          "Describe the analyst's contribution at the Initiative Horizon.",
+          "Clarify how the analyst and product owner divide and share work.",
+          "Write a product vision using a structured template.",
+          "Define product boundaries: in, out and not yet."
+        ],
+        "keyPoints": [
+          {
+            "title": "Product, not project",
+            "body": "A product persists and evolves; it is measured on outcomes, not on finishing on time."
+          },
+          {
+            "title": "BA + PO partnership",
+            "body": "The PO owns value decisions; the BA brings analysis depth, models and evidence to inform them."
+          },
+          {
+            "title": "The product vision",
+            "body": "A short statement of who it's for, what need it meets, what it is, and how it differs from today."
+          },
+          {
+            "title": "Boundaries",
+            "body": "In / out / not yet. 'Not yet' is the most useful column — it lets you say no without saying never."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "What the analyst does at Initiative",
+            "body": "Typical contributions:\n\n1. **Understand customers and users** — personas, journeys and jobs to be done.\n2. **Define the product** — vision, boundaries, key capabilities.\n3. **Connect strategy to features** — impact mapping, feature hypotheses.\n4. **Shape the roadmap** — sequence by value, risk and learning.\n5. **Set up product feedback** — product metrics and review cadence.\n6. **Prepare for Delivery** — a backlog that is ready enough to start, but not over-specified."
+          },
+          {
+            "heading": "Working with the product owner",
+            "body": "| Area | Product owner | Business analyst |\n|---|---|---|\n| Vision | Owns and communicates | Drafts, tests with stakeholders, sharpens |\n| Priorities | Decides | Provides value, risk and dependency analysis |\n| Customers | Represents the customer voice | Researches, models journeys, gathers evidence |\n| Backlog | Accountable for ordering | Structures, refines, makes items testable |\n| Stakeholders | Primary relationships | Facilitates workshops, manages detail |\n\nIn smaller teams one person may wear both hats. The point is that both sets of work happen."
+          },
+          {
+            "heading": "Writing a product vision",
+            "body": "A widely used template (paraphrased): *For [target customer] who [need], the [product] is a [category] that [key benefit]. Unlike [current alternative], our product [key difference].*\n\n**Running case:**\n\n> For injured workers who need income quickly after a workplace injury, and the claims agents who support them, *Claims Front Door* is a digital lodgement and intake service that captures a complete claim at first contact and notifies the employer in parallel. Unlike today's employer-forwarded paper process, it starts the clock on the worker's own action and gets eligible workers their first payment within a week.\n\nTest the vision: can a contact-centre officer repeat it? Does it imply the outcome? Does it exclude things?"
+          },
+          {
+            "heading": "Product boundaries",
+            "body": "| In | Out | Not yet |\n|---|---|---|\n| Worker digital lodgement | Medical provider portal | Employer self-service dashboard |\n| Parallel employer notification | Return-to-work planning | Straight-through processing (phase 2) |\n| Claim status visibility for workers | Premium and levy functions | Multilingual voice lodgement |\n| Intake data handed to agent systems via middleware | Replacing agent claims systems | Provisional payments |"
+          }
+        ],
+        "activities": [
+          {
+            "title": "Vision and boundaries",
+            "instructions": "Write a product vision for your initiative using the template. Then fill in an in / out / not yet table with at least three items per column.",
+            "minutes": 20,
+            "prompts": [
+              {
+                "label": "Product vision",
+                "placeholder": "For… who… the… is a… that… Unlike… our product…",
+                "id": "hi-s2-act1-p1"
+              },
+              {
+                "label": "In",
+                "placeholder": "",
+                "id": "hi-s2-act1-p2"
+              },
+              {
+                "label": "Out",
+                "placeholder": "",
+                "id": "hi-s2-act1-p3"
+              },
+              {
+                "label": "Not yet",
+                "placeholder": "",
+                "id": "hi-s2-act1-p4"
+              },
+              {
+                "label": "One stakeholder who will push back on 'out', and what I'll say",
+                "placeholder": "",
+                "id": "hi-s2-act1-p5"
+              }
+            ],
+            "id": "hi-s2-act1"
+          }
+        ],
+        "aiPrompt": "Help me write a product vision for a funded initiative. Use this structure: For [target customer] who [need], the [product name] is a [category] that [key benefit]. Unlike [current alternative], our product [key difference]. Produce three alternative versions with different emphases (customer, operational, regulatory). Then propose an in / out / not yet boundary table with at least four items each, and identify which 'out' item is most likely to cause stakeholder conflict. Initiative details:",
+        "quiz": [
+          {
+            "q": "Who is accountable for ordering the product backlog?",
+            "opts": [
+              "Business analyst",
+              "Product owner",
+              "Delivery lead",
+              "Sponsor"
+            ],
+            "a": 1,
+            "why": "The PO decides order; the BA provides the analysis that informs it."
+          },
+          {
+            "q": "Why is a 'not yet' column useful?",
+            "opts": [
+              "It hides scope creep",
+              "It lets you defer without rejecting, keeping focus",
+              "It replaces the roadmap",
+              "It is required by Scrum"
+            ],
+            "a": 1,
+            "why": "Deferring explicitly keeps the product focused while respecting stakeholder needs."
+          },
+          {
+            "q": "A strong product vision should…",
+            "opts": [
+              "List every feature",
+              "Name the customer, need, benefit and difference from today",
+              "Contain the budget",
+              "Be at least a page long"
+            ],
+            "a": 1,
+            "why": "It's short, customer-centred and differentiating."
+          }
+        ],
+        "takeaways": [
+          "Think product, measured on outcomes.",
+          "Partner with the PO — don't duplicate them.",
+          "A vision someone can repeat beats one that's complete.",
+          "Use 'not yet' to keep focus."
+        ]
+      },
+      "presenter": {
+        "purpose": "Clarify the analyst's role in product definition and produce the first leave-with artefact: a product vision.",
+        "openingLine": "\"If I stopped a claims agent in the corridor and asked what this product is for, what would you want them to say?\"",
+        "beats": [
+          {
+            "label": "Role at Initiative",
+            "minutes": 10,
+            "notes": "Walk the six contributions; ask which they do now."
+          },
+          {
+            "label": "BA–PO partnership",
+            "minutes": 8,
+            "notes": "Table; discuss real tensions in their teams."
+          },
+          {
+            "label": "Product vision teach and example",
+            "minutes": 10,
+            "notes": "Read the running case vision; apply the three tests."
+          },
+          {
+            "label": "Activity: vision and boundaries",
+            "minutes": 20,
+            "notes": "Pairs or trios; one plays a stakeholder who wants everything in."
+          },
+          {
+            "label": "Shares",
+            "minutes": 6,
+            "notes": "Two visions read aloud; group applies the tests."
+          },
+          {
+            "label": "Debrief and close",
+            "minutes": 6,
+            "notes": "Discuss boundary conflicts and how to say 'not yet'."
+          }
+        ],
+        "facilitationNotes": "Visions often come out as feature lists. Ask: 'which word in this tells me who it's for?' Have them read each other's visions aloud — clunky ones become obvious.\n\nUse the roleplay for one pair in front of the group if energy allows.",
+        "roleplay": {
+          "persona": "Agent Panel Manager (illustrative)",
+          "line": "\"If you're not replacing our claims systems, why should agents care?\"",
+          "curveball": "\"Our KPIs are based on our own lodgement data — your front door will make our numbers look worse.\"",
+          "move": "Acknowledge the KPI concern, show the 'out' column (no replacement of agent systems), and offer to co-design how intake data and KPIs are reported in the pilot."
+        },
+        "whatGood": "Visions under 70 words that name a customer, a need and a difference from today; boundaries with a meaningful 'not yet'.",
+        "commonFailure": "'Out' column left empty because nobody wants conflict — the fix is to require at least three items and name the stakeholder affected.",
+        "debrief": [
+          "What did you put in 'not yet' that a stakeholder really wants?",
+          "Could a front-line officer repeat your vision?",
+          "Where does your BA–PO split need clarifying?"
+        ],
+        "answerKey": "Model vision and boundaries as in sections 3–4. Good 'not yet' items defer valuable but non-essential scope (employer dashboard, straight-through processing) behind evidence from phase 1.",
+        "materials": [
+          "Product vision template",
+          "In / out / not yet canvas"
+        ]
+      }
+    },
+    {
+      "id": "hi-s3",
+      "num": "2.3",
+      "title": "Outcomes · time frame · feedback",
+      "subtitle": "Product outcomes, a months-long time frame and fortnightly signals",
+      "dayId": "d1",
+      "time": "10:45–12:15",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "At Initiative, every month without a product signal is a month you're flying on the business case alone.",
+        "overview": "The Initiative Horizon pursues **product outcomes** — changes in customer and user behaviour that drive the strategic outcome. Its time frame is typically months to a year, and feedback should come every few weeks through product metrics, user research and releases. This session links the strategic outcome to product metrics and sets the initiative's feedback rhythm.",
+        "objectives": [
+          "Distinguish strategic, product and delivery outcomes.",
+          "Define product metrics that link to the strategic outcome.",
+          "Set an initiative review cadence with clear decisions."
+        ],
+        "keyPoints": [
+          {
+            "title": "Product outcomes are behaviours",
+            "body": "Workers lodge directly; employers respond within 2 days; agents accept intake data without rekeying."
+          },
+          {
+            "title": "Months, not years",
+            "body": "Plan in quarters with a firm next 6–12 weeks and a lighter view beyond."
+          },
+          {
+            "title": "Fortnightly or monthly signals",
+            "body": "Product analytics, usability tests and operational data — reviewed on a fixed rhythm."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Three levels of outcome",
+            "body": "| Level | Running case example | Who reviews |\n|---|---|---|\n| Strategic | Median days to first payment ≤7 | Portfolio board, quarterly |\n| Product | % of claims lodged directly by workers with complete data; employer response within 2 days | PO and initiative steering, monthly |\n| Delivery | Lodgement form completion rate; drop-off by step | Team, every iteration |\n\nProduct outcomes are the bridge: they move faster than the strategic outcome and are more meaningful than feature output."
+          },
+          {
+            "heading": "Time frame and rhythm",
+            "body": "A practical cadence for the running case:\n\n- **Fortnightly:** product metrics glance in the team review.\n- **Monthly:** initiative review — product outcomes vs targets, hypotheses validated or rejected, roadmap adjusted.\n- **Quarterly:** report to the portfolio on the strategic outcome and the decision point (continue / pivot / stop).\n\nThe week-12 decision point from Strategy sits inside this rhythm."
+          },
+          {
+            "heading": "Kinds of feedback",
+            "body": "Use a mix — no single source is enough:\n\n- **Behavioural:** analytics, funnel completion, time-in-step.\n- **Attitudinal:** usability tests, worker interviews, agent feedback.\n- **Operational:** days to liability decision, rework rates, call volumes.\n- **Commercial/financial:** cost per claim handled.\n\nFor injured workers, include accessibility and wellbeing signals — speed is not the only measure of a good experience."
+          }
+        ],
+        "activities": [
+          {
+            "title": "Link outcomes to metrics",
+            "instructions": "For your initiative, write one strategic outcome, two product outcomes and one delivery metric for each product outcome. Then set your review rhythm.",
+            "minutes": 15,
+            "prompts": [
+              {
+                "label": "Strategic outcome",
+                "placeholder": "",
+                "id": "hi-s3-act1-p1"
+              },
+              {
+                "label": "Product outcome 1 + delivery metric",
+                "placeholder": "",
+                "id": "hi-s3-act1-p2"
+              },
+              {
+                "label": "Product outcome 2 + delivery metric",
+                "placeholder": "",
+                "id": "hi-s3-act1-p3"
+              },
+              {
+                "label": "Review rhythm (fortnightly / monthly / quarterly)",
+                "placeholder": "",
+                "id": "hi-s3-act1-p4"
+              }
+            ],
+            "id": "hi-s3-act1"
+          },
+          {
+            "title": "Design the monthly initiative review",
+            "instructions": "In your group, design a 60-minute monthly initiative review for month 2 of the running case. List the agenda items with timings, the evidence each needs (and who brings it), and the decisions the review can make. Include at least one attitudinal source (for example worker interviews) alongside the metrics.",
+            "minutes": 25,
+            "prompts": [
+              {
+                "label": "Agenda with timings",
+                "placeholder": "",
+                "id": "hi-s3-act2-p1"
+              },
+              {
+                "label": "Evidence pack contents and owners",
+                "placeholder": "",
+                "id": "hi-s3-act2-p2"
+              },
+              {
+                "label": "Decisions this review can make",
+                "placeholder": "e.g. reorder Next column, pause a feature, escalate to portfolio",
+                "id": "hi-s3-act2-p3"
+              },
+              {
+                "label": "Who must attend — and who must not be the only voice",
+                "placeholder": "",
+                "id": "hi-s3-act2-p4"
+              }
+            ],
+            "id": "hi-s3-act2"
+          }
+        ],
+        "aiPrompt": "Given the strategic outcome and product vision below, propose two to three product outcomes expressed as changes in customer or user behaviour, each with a metric definition, data source and target. For each product outcome, suggest one delivery-level metric the team could see every iteration. Then recommend a fortnightly / monthly / quarterly review rhythm with the decisions taken at each. Inputs:",
+        "quiz": [
+          {
+            "q": "Which is a product outcome?",
+            "opts": [
+              "Median days to first payment ≤7",
+              "% of claims lodged directly by workers with complete data",
+              "Release the lodgement form",
+              "Scheme NPV of $2.9m"
+            ],
+            "a": 1,
+            "why": "It's a behaviour change at product level that drives the strategic outcome."
+          },
+          {
+            "q": "Typical feedback cadence at the Initiative Horizon is…",
+            "opts": [
+              "Annually",
+              "Every few weeks to monthly",
+              "Daily only",
+              "Only at project close"
+            ],
+            "a": 1,
+            "why": "Initiative feedback arrives in weeks through product metrics and research."
+          }
+        ],
+        "takeaways": [
+          "Product outcomes are behaviour changes that drive strategy.",
+          "Plan firmly for 6–12 weeks, loosely beyond.",
+          "Mix behavioural, attitudinal and operational feedback."
+        ]
+      },
+      "presenter": {
+        "purpose": "Establish product-level outcomes and feedback before techniques, so features can later be tied to signals.",
+        "openingLine": "\"The board will look at time-to-payment every quarter. What will *you* look at every fortnight?\"",
+        "beats": [
+          {
+            "label": "Three levels of outcome",
+            "minutes": 15,
+            "notes": "Use the table; ask for a product outcome from someone's initiative."
+          },
+          {
+            "label": "Time frame and rhythm",
+            "minutes": 10,
+            "notes": "Show the cadence; locate the week-12 decision point."
+          },
+          {
+            "label": "Kinds of feedback",
+            "minutes": 10,
+            "notes": "Stress the wellbeing/accessibility signal for this cohort."
+          },
+          {
+            "label": "Activity: link outcomes to metrics",
+            "minutes": 20,
+            "notes": "15 minutes plus a 5-minute chat waterfall of product outcomes."
+          },
+          {
+            "label": "Activity: design the monthly review",
+            "minutes": 25,
+            "notes": "Breakouts of 3–4; each group drafts a 60-minute initiative review agenda and evidence pack for month 2."
+          },
+          {
+            "label": "Debrief",
+            "minutes": 10,
+            "notes": "Compare agendas; highlight groups whose review ends in an explicit decision."
+          }
+        ],
+        "facilitationNotes": "Keep the first half brisk so the review-design breakout gets its full 25 minutes. Participants often write outputs as product outcomes; use the 'is it a behaviour?' test.",
+        "whatGood": "Product outcomes phrased as behaviour changes with a metric and data source.",
+        "commonFailure": "'Launch the portal' as a product outcome — the fix: 'who does what differently once it launches?'",
+        "debrief": [
+          "What behaviour must change for your strategy to work?",
+          "What will you look at every fortnight?"
+        ],
+        "answerKey": "**Model monthly review (60 min):** 10 min product outcomes vs targets (PO, analytics); 15 min hypotheses validated or rejected since last review (BA); 10 min worker and agent voice — three interview clips or quotes (BA/researcher); 15 min roadmap adjustments (PO decides); 10 min risks, decision-point readiness and escalations. Decisions: reorder Next, stop or pivot a feature, request portfolio decision early.\n\n**Running case:** product outcomes — ≥60% of claims lodged directly by workers with a certificate of capacity attached; ≥80% of employers respond to parallel notification within 2 business days; agents accept ≥90% of intake records without rekeying. Delivery metrics — form completion rate; notification open/response rate; middleware handoff error rate.",
+        "materials": [
+          "Outcome levels slide",
+          "Metrics worksheet"
+        ]
+      }
+    },
+    {
+      "id": "hi-s4",
+      "num": "2.4",
+      "title": "Principles applied at this horizon",
+      "subtitle": "Seeing the whole product and thinking as a customer",
+      "dayId": "d1",
+      "time": "13:00–13:45",
+      "minutes": 45,
+      "participant": {
+        "bigIdea": "At Initiative, 'think as a customer' stops being a slogan and becomes a journey you can draw.",
+        "overview": "This block revisits the agile BA principles through the lens of product definition. We focus on the principles that most often fail at this horizon: seeing the whole product across channels and partners, thinking as a customer with real journeys, and avoiding waste in backlog creation.",
+        "objectives": [
+          "Apply each principle to product definition decisions.",
+          "Spot common Initiative-horizon anti-patterns.",
+          "Choose one principle to strengthen on your initiative."
+        ],
+        "keyPoints": [
+          {
+            "title": "See the whole product",
+            "body": "Worker, employer, agent, medical provider and scheme — the product spans organisations."
+          },
+          {
+            "title": "Think as a customer",
+            "body": "Design for the worker in pain, possibly on a phone, possibly not fluent in English."
+          },
+          {
+            "title": "Avoid backlog waste",
+            "body": "A 400-item backlog is inventory, not analysis. Detail only what's next."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Principles at Initiative",
+            "body": "| Principle | Question at Initiative | Anti-pattern |\n|---|---|---|\n| See the whole | Which actors and systems does the product touch end to end? | Designing only the screens we own |\n| Think as a customer | What does the journey feel like for each actor? | Personas made up in a meeting room |\n| Analyse value | Which features move product outcomes most? | Ordering by stakeholder seniority |\n| Get real using examples | What real claims can we walk through the product? | Abstract capability lists |\n| Understand what is doable | What do agent systems and middleware allow? | Discovering integration limits in sprint 6 |\n| Collaborate and improve | Who co-designs with us? | Agents consulted after design is done |\n| Avoid waste | What must be detailed now vs later? | Full backlog written upfront |"
+          },
+          {
+            "heading": "Thinking as an injured worker",
+            "body": "An injured worker may be in pain, anxious about money, using a phone, and dealing with an unfamiliar system for the first time. Product decisions that follow from that: plain language; save-and-return; photo upload for the certificate of capacity; a clear 'what happens next' with dates; assisted lodgement by phone for those who need it. These aren't nice-to-haves — they drive completeness at first contact, which drives the strategic outcome."
+          }
+        ],
+        "activities": [
+          {
+            "title": "Anti-pattern spotting",
+            "instructions": "Look at your initiative through the anti-pattern column. Which two are most present? For each, write the principle it breaks and one corrective action you can take this month.",
+            "minutes": 15,
+            "prompts": [
+              {
+                "label": "Anti-pattern 1, principle broken, corrective action",
+                "placeholder": "",
+                "id": "hi-s4-act1-p1"
+              },
+              {
+                "label": "Anti-pattern 2, principle broken, corrective action",
+                "placeholder": "",
+                "id": "hi-s4-act1-p2"
+              }
+            ],
+            "id": "hi-s4-act1"
+          }
+        ],
+        "aiPrompt": "Review my initiative description below against these agile BA principles: see the whole, think as a customer, analyse to determine what is valuable, get real using examples, understand what is doable, stimulate collaboration and continuous improvement, avoid waste. Identify the three anti-patterns most likely to be present, explain the evidence in my description, and suggest one corrective action for each that I could take within a month. Initiative:",
+        "quiz": [
+          {
+            "q": "Which is an Initiative-horizon anti-pattern for 'avoid waste'?",
+            "opts": [
+              "Detailing only the next few features",
+              "Writing a full detailed backlog upfront",
+              "Using 'not yet'",
+              "Reviewing metrics monthly"
+            ],
+            "a": 1,
+            "why": "Upfront detail for later features is inventory that will likely change."
+          },
+          {
+            "q": "Why does 'think as a customer' matter for the strategic outcome here?",
+            "opts": [
+              "It improves branding",
+              "Designing for the worker's context increases completeness at first contact",
+              "It reduces licence costs",
+              "It satisfies auditors"
+            ],
+            "a": 1,
+            "why": "Completeness at first contact is a key driver of time to payment."
+          }
+        ],
+        "takeaways": [
+          "The product spans actors you don't control — map them.",
+          "Customer context drives the metrics that matter.",
+          "Detail only what's next."
+        ]
+      },
+      "presenter": {
+        "purpose": "Make the principles concrete for product work and surface participants' real anti-patterns.",
+        "openingLine": "\"Picture someone who hurt their back yesterday, lodging a claim on their phone from the couch. Now let's look at our product through their eyes.\"",
+        "beats": [
+          {
+            "label": "Principles table",
+            "minutes": 12,
+            "notes": "Ask which anti-pattern they've seen this year."
+          },
+          {
+            "label": "Thinking as an injured worker",
+            "minutes": 8,
+            "notes": "Walk the worker context; link each design choice to completeness."
+          },
+          {
+            "label": "Anti-pattern activity",
+            "minutes": 15,
+            "notes": "Individual."
+          },
+          {
+            "label": "Debrief",
+            "minutes": 10,
+            "notes": "Collect the most common anti-pattern on the board."
+          }
+        ],
+        "facilitationNotes": "Post-lunch slot: keep energy up with a quick poll: 'Which anti-pattern is in your project right now?'. Be sensitive — some participants may have personal experience of workplace injury.",
+        "whatGood": "Specific corrective actions with owners and timing.",
+        "commonFailure": "Corrective actions like 'more engagement' — the fix: who, what session, by when?",
+        "debrief": [
+          "What's the most common anti-pattern in the room?",
+          "Which corrective action will you actually do?"
+        ],
+        "answerKey": "Common answers: personas not based on research → run five worker interviews; agents consulted late → invite one agent to backlog refinement; upfront backlog → archive items beyond the next quarter.",
+        "materials": [
+          "Principles table",
+          "Poll"
+        ]
+      }
+    },
+    {
+      "id": "hi-s5",
+      "num": "2.5",
+      "title": "Analysis techniques · customer and product",
+      "subtitle": "Personas, journey mapping, impact mapping and story mapping",
+      "dayId": "d1",
+      "time": "13:45–15:15",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "An impact map turns 'we're building a front door' into 'here's whose behaviour we're changing and why'.",
+        "overview": "This is the main technique block. You'll use four customer and product techniques on the running case and your own initiative: **personas** grounded in evidence, **journey mapping**, **impact mapping** and **story mapping**. The impact map is a leave-with artefact; the story map sets up tomorrow.",
+        "objectives": [
+          "Create evidence-based personas for key actors.",
+          "Map the current journey and locate pain points that drive the outcome.",
+          "Build an impact map: goal → actors → impacts → deliverables.",
+          "Lay out a story map backbone and slice a first release."
+        ],
+        "keyPoints": [
+          {
+            "title": "Personas from evidence",
+            "body": "Based on data and interviews, not imagination. Include context, goals, constraints and what success looks like."
+          },
+          {
+            "title": "Journeys reveal leaks",
+            "body": "Map what the worker does, thinks and feels at each step, plus elapsed time."
+          },
+          {
+            "title": "Impact maps connect why to what",
+            "body": "Goal (why) → actors (who) → impacts (how behaviour changes) → deliverables (what)."
+          },
+          {
+            "title": "Story maps slice releases",
+            "body": "A backbone of activities, with stories beneath, sliced horizontally into releases."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Personas",
+            "body": "**Mia, 34, warehouse worker (illustrative).** Injured her shoulder lifting stock. Mostly uses her phone. Worried about rent. Has her GP's certificate as a photo. Wants: to know she'll be paid and when. Constraint: limited time on hold; English is her second language.\n\n**Ravi, payroll officer at a mid-sized employer.** Handles claims a few times a year. Unsure of obligations. Wants: a clear, quick action. Constraint: claims are not his main job.\n\n**Jess, claims officer at an agent.** Rekeys data from forms. Wants: a complete claim on day one. Constraint: agent systems and KPIs.\n\nEach persona should state the evidence it's based on (data, interviews, complaints)."
+          },
+          {
+            "heading": "Journey mapping",
+            "body": "| Step | Worker does | Feels | Elapsed (illus.) | Pain |\n|---|---|---|---|---|\n| Injury | Sees GP, gets certificate | Anxious | Day 0–1 | Doesn't know what to do next |\n| Tells employer | Fills in form | Uncertain | Day 1–3 | Paper form, unclear |\n| Waits | Nothing visible | Frustrated | Day 3–13 | Employer forwards near deadline |\n| Agent contact | Asked for missing info | Annoyed | Day 13–15 | Repeats information |\n| Decision and payment | Receives payment | Relieved | Day 15–18 | Too late for rent |\n\nThe 'waits' row is the default-wait insight, now felt from the worker's side."
+          },
+          {
+            "heading": "Impact mapping",
+            "body": "```\nGOAL: Median lodgement-to-first-payment ≤7 days\n├── Injured worker (Mia)\n│   ├── Impact: lodges directly, with certificate, on day 1\n│   │   ├── Deliverable: mobile lodgement with photo upload\n│   │   └── Deliverable: plain-language 'what happens next'\n│   └── Impact: stops calling to check status\n│       └── Deliverable: status tracker with SMS updates\n├── Employer (Ravi)\n│   └── Impact: confirms employment details within 2 days\n│       └── Deliverable: parallel notification with one-click confirm\n└── Agent claims officer (Jess)\n    └── Impact: makes liability decision without chasing info\n        ├── Deliverable: complete intake record via middleware\n        └── Deliverable: low-risk flag at intake\n```\n\nRead it right to left: every deliverable must justify itself by an impact on an actor that moves the goal. Deliverables that can't do that are candidates for 'not yet'."
+          },
+          {
+            "heading": "Story mapping",
+            "body": "Arrange the worker's activities as a **backbone** (Report injury → Lodge claim → Track claim → Receive payment), place user stories underneath each activity, then draw horizontal lines to slice releases.\n\n**Release 1 (MVP) for the running case:** lodge on mobile with certificate photo; parallel employer notification; intake to one agent via middleware; basic status by SMS. Everything else waits for evidence from Release 1."
+          }
+        ],
+        "activities": [
+          {
+            "title": "Impact map",
+            "instructions": "Build an impact map for your initiative (or the running case). At least three actors, one or two impacts each, and deliverables under each impact. Circle deliverables that cannot justify an impact.",
+            "minutes": 30,
+            "prompts": [
+              {
+                "label": "Goal (from strategic outcome)",
+                "placeholder": "",
+                "id": "hi-s5-act1-p1"
+              },
+              {
+                "label": "Actors and their impacts",
+                "placeholder": "",
+                "id": "hi-s5-act1-p2"
+              },
+              {
+                "label": "Deliverables per impact",
+                "placeholder": "",
+                "id": "hi-s5-act1-p3"
+              },
+              {
+                "label": "Deliverables that couldn't justify an impact (→ not yet)",
+                "placeholder": "",
+                "id": "hi-s5-act1-p4"
+              }
+            ],
+            "id": "hi-s5-act1"
+          },
+          {
+            "title": "Story map backbone and first slice",
+            "instructions": "Write the backbone (4–6 activities) and draw your first release slice.",
+            "minutes": 15,
+            "prompts": [
+              {
+                "label": "Backbone activities",
+                "placeholder": "",
+                "id": "hi-s5-act2-p1"
+              },
+              {
+                "label": "Release 1 stories",
+                "placeholder": "",
+                "id": "hi-s5-act2-p2"
+              }
+            ],
+            "id": "hi-s5-act2"
+          }
+        ],
+        "aiPrompt": "Help me build an impact map. Goal: [strategic or product outcome]. For the context below, propose at least three actors (including ones outside our organisation), one or two measurable behaviour-change impacts per actor, and two candidate deliverables per impact. Flag any deliverable that doesn't clearly cause an impact. Then suggest a story map backbone of 4–6 user activities and a minimal first release slice that tests the riskiest impact. Context:",
+        "quiz": [
+          {
+            "q": "In an impact map, 'impacts' describe…",
+            "opts": [
+              "Features to build",
+              "Changes in actors' behaviour that move the goal",
+              "Project risks",
+              "Budget lines"
+            ],
+            "a": 1,
+            "why": "Impacts are behaviour changes; deliverables are what we build to cause them."
+          },
+          {
+            "q": "What's the best evidence base for personas?",
+            "opts": [
+              "The team's imagination",
+              "Data, interviews and complaints",
+              "Marketing stock photos",
+              "The sponsor's description"
+            ],
+            "a": 1,
+            "why": "Evidence-based personas stop the team designing for itself."
+          },
+          {
+            "q": "A story map's horizontal slices represent…",
+            "opts": [
+              "Teams",
+              "Releases",
+              "Sprints only",
+              "Priorities of stakeholders"
+            ],
+            "a": 1,
+            "why": "Each slice is a releasable increment across the backbone."
+          }
+        ],
+        "takeaways": [
+          "Base personas on evidence.",
+          "Journeys reveal the waits that drive the outcome.",
+          "Every deliverable must earn its place on the impact map.",
+          "Slice a thin first release across the whole journey."
+        ]
+      },
+      "presenter": {
+        "purpose": "Teach the core customer and product techniques and produce the impact map leave-with artefact.",
+        "openingLine": "\"We're going to build a map where every feature has to answer one question: whose behaviour does this change?\"",
+        "beats": [
+          {
+            "label": "Personas and journey",
+            "minutes": 15,
+            "notes": "Introduce Mia, Ravi, Jess; walk the journey and the 'waits' row."
+          },
+          {
+            "label": "Impact mapping teach",
+            "minutes": 12,
+            "notes": "Build the running case map live; read it right to left."
+          },
+          {
+            "label": "Activity: impact map",
+            "minutes": 30,
+            "notes": "Breakouts; visit at 10 and 20 minutes."
+          },
+          {
+            "label": "Story mapping teach",
+            "minutes": 10,
+            "notes": "Show backbone and Release 1 slice."
+          },
+          {
+            "label": "Activity: story map",
+            "minutes": 15,
+            "notes": "Individual or same breakout."
+          },
+          {
+            "label": "Debrief",
+            "minutes": 8,
+            "notes": "Collect 'not yet' deliverables; discuss surprises."
+          }
+        ],
+        "facilitationNotes": "Groups often jump straight to deliverables. Insist on actors and impacts first. If a group has only internal actors, ask: 'who outside the building has to do something differently?'",
+        "whatGood": "Impact maps with external actors, measurable impacts and at least one deliverable moved to 'not yet'.",
+        "commonFailure": "Impacts written as features ('worker uses the portal') — the fix: what does the worker do differently that matters to the goal?",
+        "debrief": [
+          "Which actor was hardest to define impacts for?",
+          "Which deliverable lost its place?",
+          "How thin is your first slice?"
+        ],
+        "answerKey": "Model impact map and Release 1 as in sections 3–4. Typical 'not yet' items: employer dashboard, chatbot, multilingual voice lodgement — none clearly moves the goal in phase 1 without evidence.",
+        "materials": [
+          "Persona cards",
+          "Journey map template",
+          "Impact map canvas",
+          "Story map board"
+        ]
+      }
+    },
+    {
+      "id": "hi-s6",
+      "num": "2.6",
+      "title": "Planning and delivery techniques",
+      "subtitle": "Feature hypotheses, ordering by value and learning, and the outcome roadmap",
+      "dayId": "d1",
+      "time": "15:30–16:30",
+      "minutes": 60,
+      "participant": {
+        "bigIdea": "A feature without a hypothesis is a guess; a feature with one is an experiment.",
+        "overview": "With deliverables mapped, we plan. This session covers **feature hypotheses** (what each feature should cause and how we'll know), **ordering** by value, cost of delay, risk and learning, and the **outcome-based roadmap** (Now / Next / Later). You'll produce your third leave-with artefact: top five features ordered, each with a hypothesis and signal.",
+        "objectives": [
+          "Write feature hypotheses with a measurable signal.",
+          "Order features using value, cost of delay, risk and learning.",
+          "Build a Now / Next / Later outcome roadmap."
+        ],
+        "keyPoints": [
+          {
+            "title": "Feature hypothesis",
+            "body": "We believe [feature] will result in [impact] for [actor]. We'll know when [signal] reaches [threshold] by [time]."
+          },
+          {
+            "title": "Order, don't prioritise",
+            "body": "Priorities collapse into 'all high'. A strict order forces trade-offs."
+          },
+          {
+            "title": "Learning is value",
+            "body": "Early features that test the riskiest assumption can be worth more than larger features."
+          },
+          {
+            "title": "Roadmap by outcome",
+            "body": "Now / Next / Later columns hold outcomes and hypotheses, not dates and feature lists."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Feature hypotheses",
+            "body": "| Feature | Hypothesis | Signal and threshold |\n|---|---|---|\n| Mobile lodgement with certificate photo | Workers will lodge complete claims on day 1 | ≥60% of pilot claims complete at first contact by week 8 |\n| Parallel employer notification | Employers confirm details quickly when asked directly | ≥80% respond within 2 business days |\n| Intake via middleware to agent | Agents decide liability without chasing info | Median days to liability decision ≤4 |\n| Low-risk flag at intake | Low-risk claims can be fast-tracked safely | ≥40% flagged; <2% later overturned |\n| SMS status updates | Workers stop calling for status | Status calls from pilot cohort −40% |"
+          },
+          {
+            "heading": "Ordering features",
+            "body": "Use a simple scoring discussion, not a spreadsheet war:\n\n- **Value** — how much does it move the product outcome?\n- **Cost of delay** — what do we lose per week it's not live?\n- **Risk reduction / learning** — does it test a risky assumption?\n- **Effort** — rough relative size.\n\nWeighted shortest job first (cost of delay ÷ size) is a helpful lens. In the running case, parallel employer notification ranks first: high value, high cost of delay, tests the legal assumption, modest size."
+          },
+          {
+            "heading": "The Now / Next / Later roadmap",
+            "body": "| Now (next ~6 weeks) | Next (~6–12 weeks) | Later |\n|---|---|---|\n| Outcome: employers respond within 2 days | Outcome: liability decisions without chasing | Outcome: straight-through for low-risk |\n| Parallel notification; mobile lodgement | Middleware intake; low-risk flag | STP, employer dashboard |\n| Signal: response rate, completeness | Signal: days to decision | Signal: % STP, overturn rate |\n\nThe roadmap is a communication tool; it changes as signals arrive."
+          }
+        ],
+        "activities": [
+          {
+            "title": "Top five ordered features",
+            "instructions": "From your impact map, choose five features. Write a hypothesis and signal for each, then put them in strict order with one line of reasoning per position. Place them on a Now / Next / Later roadmap.",
+            "minutes": 25,
+            "prompts": [
+              {
+                "label": "1. Feature — hypothesis — signal — why first",
+                "placeholder": "",
+                "id": "hi-s6-act1-p1"
+              },
+              {
+                "label": "2. Feature — hypothesis — signal",
+                "placeholder": "",
+                "id": "hi-s6-act1-p2"
+              },
+              {
+                "label": "3. Feature — hypothesis — signal",
+                "placeholder": "",
+                "id": "hi-s6-act1-p3"
+              },
+              {
+                "label": "4. Feature — hypothesis — signal",
+                "placeholder": "",
+                "id": "hi-s6-act1-p4"
+              },
+              {
+                "label": "5. Feature — hypothesis — signal",
+                "placeholder": "",
+                "id": "hi-s6-act1-p5"
+              },
+              {
+                "label": "Now / Next / Later",
+                "placeholder": "",
+                "id": "hi-s6-act1-p6"
+              }
+            ],
+            "id": "hi-s6-act1"
+          }
+        ],
+        "aiPrompt": "Act as a product analyst. For each feature below, write a hypothesis in the form 'We believe [feature] will result in [impact] for [actor]; we'll know when [signal] reaches [threshold] by [time]'. Then propose a strict order using value, cost of delay, risk reduction and relative effort, explaining each position in one line and noting which assumption each feature tests. Finally lay out a Now / Next / Later roadmap with an outcome per column. Features and context:",
+        "quiz": [
+          {
+            "q": "Why order features strictly rather than tagging priority High/Medium/Low?",
+            "opts": [
+              "It's faster",
+              "It forces real trade-offs",
+              "Tools require it",
+              "It hides disagreements"
+            ],
+            "a": 1,
+            "why": "Strict order prevents everything being 'High'."
+          },
+          {
+            "q": "Weighted shortest job first divides…",
+            "opts": [
+              "Value by risk",
+              "Cost of delay by job size",
+              "Effort by team size",
+              "Budget by time"
+            ],
+            "a": 1,
+            "why": "WSJF = cost of delay ÷ size, favouring high-value small items."
+          },
+          {
+            "q": "Columns on an outcome roadmap usually hold…",
+            "opts": [
+              "Fixed dates and features",
+              "Outcomes, hypotheses and signals",
+              "Team names",
+              "Budget lines"
+            ],
+            "a": 1,
+            "why": "Outcome roadmaps communicate intent and learning, not delivery dates."
+          }
+        ],
+        "takeaways": [
+          "Every feature gets a hypothesis and a signal.",
+          "Order strictly; reason out loud.",
+          "Value learning — test risky assumptions early.",
+          "Roadmap by outcome, and change it as signals arrive."
+        ]
+      },
+      "presenter": {
+        "purpose": "Turn the impact map into an ordered, testable feature set and roadmap.",
+        "openingLine": "\"Five features. One order. No ties. Let's find out what you really believe.\"",
+        "beats": [
+          {
+            "label": "Feature hypotheses",
+            "minutes": 10,
+            "notes": "Walk the table; highlight thresholds."
+          },
+          {
+            "label": "Ordering techniques",
+            "minutes": 10,
+            "notes": "Explain the four lenses and WSJF; reveal why notification ranks first."
+          },
+          {
+            "label": "Now / Next / Later",
+            "minutes": 5,
+            "notes": "Show the roadmap."
+          },
+          {
+            "label": "Activity: top five",
+            "minutes": 25,
+            "notes": "Pairs; one challenges the order."
+          },
+          {
+            "label": "Debrief",
+            "minutes": 10,
+            "notes": "Two pairs share their #1 and why."
+          }
+        ],
+        "facilitationNotes": "Expect resistance to strict ordering. Allow ties for 30 seconds, then insist. Watch for features with no signal.",
+        "whatGood": "Five features with measurable signals; an order defended by value and learning.",
+        "commonFailure": "Signals that are outputs ('feature released') — the fix: what behaviour will we see?",
+        "debrief": [
+          "What's your #1 and what does it test?",
+          "Which feature was hardest to write a signal for?",
+          "What moved from Now to Later?"
+        ],
+        "answerKey": "Model order: 1 parallel employer notification; 2 mobile lodgement with certificate photo; 3 middleware intake to one agent; 4 low-risk flag; 5 SMS status. Rationale: 1 tests the legal assumption and attacks the biggest wait; 2 drives completeness; 3–4 depend on 1–2 data; 5 is valuable but lower cost of delay.",
+        "materials": [
+          "Feature hypothesis template",
+          "Now / Next / Later board"
+        ]
+      }
+    },
+    {
+      "id": "hi-s7",
+      "num": "2.7",
+      "title": "Exercise: apply to a funded initiative · close",
+      "subtitle": "Vision, impact map and five ordered features — then the bridge to Delivery",
+      "dayId": "d1",
+      "time": "16:30–17:00",
+      "minutes": 30,
+      "participant": {
+        "bigIdea": "Leave with a product the team can start building on Monday — and a way to know if it's working.",
+        "overview": "Consolidate the day's three artefacts for your own funded initiative: the product vision, the impact map and the top five features ordered with hypotheses and signals. Then we close and bridge to Day 3, where one of those features becomes a fully elaborated backlog item.",
+        "objectives": [
+          "Finalise a product vision, impact map and ordered top five.",
+          "Check traceability from strategic outcome to feature signal.",
+          "Choose the feature you'll elaborate on Day 3."
+        ],
+        "keyPoints": [
+          {
+            "title": "Traceability",
+            "body": "Outcome → actor → impact → feature → signal. Every link should be explicit."
+          },
+          {
+            "title": "Direct the agent",
+            "body": "Use AI to tidy and cross-check; you own the order."
+          },
+          {
+            "title": "Bring one feature",
+            "body": "Tomorrow you'll elaborate one backlog item end to end."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Exercise brief",
+            "body": "1. Finalise your product vision (≤70 words).\n2. Clean up your impact map; mark 'not yet' deliverables.\n3. Confirm your top five order with hypotheses and signals.\n4. Run a traceability check: can each feature be traced to an impact, an actor and the outcome?\n5. Choose the feature you'll take into Day 3."
+          },
+          {
+            "heading": "Bridge to Day 3",
+            "body": "At the Delivery Horizon the question becomes *what's the next most valuable slice, and is it done?* We'll take one feature — for the running case, parallel employer notification — split it into stories, elaborate one with examples, acceptance criteria, non-functional requirements and a value metric, and plan the week around it."
+          }
+        ],
+        "activities": [
+          {
+            "title": "Consolidate the three artefacts",
+            "instructions": "Complete each box for your initiative.",
+            "minutes": 20,
+            "prompts": [
+              {
+                "label": "Product vision",
+                "placeholder": "",
+                "id": "hi-s7-act1-p1"
+              },
+              {
+                "label": "Impact map summary (actors → impacts → deliverables)",
+                "placeholder": "",
+                "id": "hi-s7-act1-p2"
+              },
+              {
+                "label": "Top five features ordered, with hypothesis and signal",
+                "placeholder": "",
+                "id": "hi-s7-act1-p3"
+              },
+              {
+                "label": "Traceability gaps found",
+                "placeholder": "",
+                "id": "hi-s7-act1-p4"
+              },
+              {
+                "label": "Feature I'll elaborate on Day 3",
+                "placeholder": "",
+                "id": "hi-s7-act1-p5"
+              }
+            ],
+            "id": "hi-s7-act1"
+          }
+        ],
+        "aiPrompt": "Check the traceability of my initiative artefacts below. For each of my top five features, confirm it links to a deliverable on the impact map, an actor impact and the strategic outcome; flag any broken links. Check each hypothesis has a measurable signal, threshold and time. Then recommend which feature is the best candidate to elaborate into a first backlog item, and why. Artefacts:",
+        "quiz": [
+          {
+            "q": "A traceability check at Initiative confirms that…",
+            "opts": [
+              "Every feature has a test case",
+              "Each feature links to an impact, an actor and the outcome",
+              "The budget is approved",
+              "Stories are estimated"
+            ],
+            "a": 1,
+            "why": "Traceability from outcome to feature keeps the product aligned."
+          },
+          {
+            "q": "What's the focus of the Delivery Horizon?",
+            "opts": [
+              "Whether to invest",
+              "Product vision",
+              "The next valuable slice, and whether it's done",
+              "Portfolio WIP limits"
+            ],
+            "a": 2,
+            "why": "Delivery is about small, finished, valuable increments."
+          }
+        ],
+        "takeaways": [
+          "Three artefacts: vision, impact map, ordered top five.",
+          "Trace every feature back to the outcome.",
+          "Tomorrow: one item, fully elaborated."
+        ]
+      },
+      "presenter": {
+        "purpose": "Consolidate artefacts and set up Day 3.",
+        "openingLine": "\"Let's make sure that if someone asks 'why are we building this?', every feature can answer for itself.\"",
+        "beats": [
+          {
+            "label": "Brief",
+            "minutes": 3,
+            "notes": "Explain steps."
+          },
+          {
+            "label": "Individual consolidation",
+            "minutes": 20,
+            "notes": "Circulate; prompt traceability."
+          },
+          {
+            "label": "Shares and close",
+            "minutes": 5,
+            "notes": "Two participants share their #1 feature and signal."
+          },
+          {
+            "label": "Bridge to Day 3",
+            "minutes": 2,
+            "notes": "Ask them to bring their chosen feature."
+          }
+        ],
+        "facilitationNotes": "Keep it calm and focused. If someone's artefacts are thin, prioritise the ordered top five — it feeds Day 3 directly.",
+        "whatGood": "All three artefacts present, with a chosen Day 3 feature.",
+        "commonFailure": "Features that trace to no actor — the fix: drop them to 'not yet'.",
+        "debrief": [
+          "Which link in your traceability chain is weakest?",
+          "Which feature will you bring tomorrow?"
+        ],
+        "answerKey": "Running case Day 3 feature: parallel employer notification — highest order, tests the legal assumption, small enough to elaborate in a day.",
+        "materials": [
+          "Consolidation template",
+          "Day 3 pre-work note"
+        ]
+      }
+    }
+  ],
+  "resources": [
+    {
+      "title": "Product vision template",
+      "description": "For / who / the / is a / that / unlike / our product — with three quality tests.",
+      "audience": "participant"
+    },
+    {
+      "title": "Impact map canvas",
+      "description": "Goal → actors → impacts → deliverables, with a 'not yet' margin.",
+      "audience": "participant"
+    },
+    {
+      "title": "Feature hypothesis and ordering sheet",
+      "description": "Hypothesis, signal, threshold and ordering lenses (value, cost of delay, learning, effort).",
+      "audience": "participant"
+    },
+    {
+      "title": "Running case one-pager",
+      "description": "Faster first payments — funded initiative summary and disclaimer.",
+      "audience": "participant"
+    },
+    {
+      "title": "Facilitator timing sheet — Day 2",
+      "description": "Timings, breakout plan and roleplay setup.",
+      "audience": "presenter"
+    },
+    {
+      "title": "Answer key pack — Day 2",
+      "description": "Model vision, boundaries, impact map, product outcomes and ordered features.",
+      "audience": "presenter"
+    }
+  ]
+}

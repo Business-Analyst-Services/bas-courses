@@ -1,0 +1,2392 @@
+{
+  "slug": "agile-ba",
+  "title": "Agile Business Analysis",
+  "shortTitle": "Agile BA",
+  "tagline": "Complete the whole guide, Chapters 1–9, across four sessions each day.",
+  "format": "Two-day course",
+  "duration": "2 days",
+  "delivery": "Live online · APAC · Times Sydney",
+  "audience": "Business analysts, product owners and delivery professionals working in, or moving into, agile teams — from early-career BAs to practice leads who need a shared, practical grounding in the Agile Extension to the BABOK Guide.",
+  "order": 2,
+  "outcomes": [
+    "Explain agile business analysis and contrast project and product thinking",
+    "Apply the BACCM and nine principles of the agile analysis mindset to real decisions",
+    "Place any analysis question on the right planning horizon and analyse it at the right depth",
+    "Build outcome statements, assumption maps, story maps, MVP hypotheses and example-based stories",
+    "Position the ABA role in agile teams and scaled environments with clear decision rights",
+    "Diagnose common agile analysis challenges and plan your competency development"
+  ],
+  "leaveWith": [
+    "A three-horizon map for the running case and for your own initiative",
+    "Saved activity outputs from every session, ready to reuse",
+    "Paste-ready AI prompts for each horizon",
+    "A technique selection reference by horizon",
+    "A personal 90-day competency plan and a concrete Monday move"
+  ],
+  "caseStudy": {
+    "title": "Faster first payments for injured workers",
+    "org": "WorkSafe Victoria",
+    "summary": "Injured workers wait an average of 18.2 days from lodging a claim to their first weekly payment, and around a third of contact-centre calls ask 'where is my claim?'. The target is lodgement-to-first-payment of seven days or fewer within twelve months, with claim-status calls down 40%. The case is analysed across the strategy, initiative and delivery horizons throughout both days.",
+    "disclaimer": "Illustrative worked example built from public knowledge; not WorkSafe Victoria data."
+  },
+  "days": [
+    {
+      "id": "d1",
+      "label": "Day 1",
+      "title": "Foundations",
+      "blocks": [
+        {
+          "time": "09:00–09:15",
+          "title": "Welcome · objectives · guide orientation",
+          "type": "welcome",
+          "moduleId": "d1-welcome"
+        },
+        {
+          "time": "09:15–10:30",
+          "title": "1A What agile BA is · project vs product",
+          "type": "session",
+          "moduleId": "d1-s1"
+        },
+        {
+          "time": "10:30–10:45",
+          "title": "Break",
+          "type": "break"
+        },
+        {
+          "time": "10:45–12:15",
+          "title": "1B Mindset · BACCM · nine principles",
+          "type": "session",
+          "moduleId": "d1-s2"
+        },
+        {
+          "time": "12:15–13:00",
+          "title": "Lunch",
+          "type": "break"
+        },
+        {
+          "time": "13:00–14:30",
+          "title": "2A Three Planning Horizons",
+          "type": "session",
+          "moduleId": "d1-s3"
+        },
+        {
+          "time": "14:30–14:45",
+          "title": "Break",
+          "type": "break"
+        },
+        {
+          "time": "14:45–16:15",
+          "title": "2B The agile product team · the ABA",
+          "type": "session",
+          "moduleId": "d1-s4"
+        },
+        {
+          "time": "16:15–17:00",
+          "title": "Exercise: horizon mapping · Day 1 close",
+          "type": "exercise",
+          "moduleId": "d1-ex"
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "label": "Day 2",
+      "title": "Horizons and practice",
+      "blocks": [
+        {
+          "time": "09:00–09:15",
+          "title": "Day 1 recap · questions",
+          "type": "welcome",
+          "moduleId": "d2-recap"
+        },
+        {
+          "time": "09:15–10:30",
+          "title": "3A The Strategy Horizon",
+          "type": "session",
+          "moduleId": "d2-s1"
+        },
+        {
+          "time": "10:30–10:45",
+          "title": "Break",
+          "type": "break"
+        },
+        {
+          "time": "10:45–12:15",
+          "title": "3B Initiative and Delivery Horizons",
+          "type": "session",
+          "moduleId": "d2-s2"
+        },
+        {
+          "time": "12:15–13:00",
+          "title": "Lunch",
+          "type": "break"
+        },
+        {
+          "time": "13:00–14:30",
+          "title": "4A Agile events · across horizons · scaling",
+          "type": "session",
+          "moduleId": "d2-s3"
+        },
+        {
+          "time": "14:30–14:45",
+          "title": "Break",
+          "type": "break"
+        },
+        {
+          "time": "14:45–16:15",
+          "title": "4B Common challenges · competencies",
+          "type": "session",
+          "moduleId": "d2-s4"
+        },
+        {
+          "time": "16:15–17:00",
+          "title": "Exercise: technique selection · close",
+          "type": "close",
+          "moduleId": "d2-ex"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "d1-welcome",
+      "num": "D1",
+      "title": "Welcome · objectives · guide orientation",
+      "subtitle": "How the two days work and how the guide is laid out",
+      "dayId": "d1",
+      "time": "09:00–09:15",
+      "minutes": 15,
+      "participant": {
+        "bigIdea": "Agile analysis is not a lighter BA — it is the same discipline applied at the right horizon, at the right time.",
+        "overview": "Welcome to Agile Business Analysis. Over two days you will work through the whole Agile Extension to the BABOK Guide — Chapters 1 to 9 — in eight teaching sessions and two applied exercises. Day 1 builds the foundations: what agile business analysis actually is, the mindset and principles behind it, the Three Planning Horizons and the people who make up an agile product team. Day 2 goes horizon by horizon and then into practice: events, scaling, common challenges and the competencies an agile business analyst (ABA) needs.\n\nThroughout both days we use a single running case: **Faster first payments for injured workers**, an illustrative workers' compensation scenario. Today an injured worker waits on average 18.2 days from lodging a claim to receiving their first weekly payment; the target is seven days or fewer within twelve months. You will see that one outcome analysed at strategy, initiative and delivery level, so the horizons stop being abstract.",
+        "objectives": [
+          "Explain how the two days map to Chapters 1–9 of the guide",
+          "Name the running case, its baseline and its target",
+          "Set up your workbook and AI agent so you can capture outputs as you go",
+          "State one personal outcome you want from the course"
+        ],
+        "keyPoints": [
+          {
+            "title": "Two days, nine chapters",
+            "body": "Day 1 covers foundations (Chapters 1–4 in substance); Day 2 covers the horizons in depth and the practice chapters through to Chapter 9."
+          },
+          {
+            "title": "One running case",
+            "body": "Every module returns to the 18.2 → ≤7 days first-payment case so you practise moving between horizons on one problem."
+          },
+          {
+            "title": "You direct, the agent drafts",
+            "body": "Your AI agent can draft canvases, story maps and hypotheses quickly. You bring the context and the judgement — and you own the result."
+          },
+          {
+            "title": "Save as you go",
+            "body": "Every activity box in the portal saves automatically. By the end of Day 2 you will have a complete horizon pack for your own initiative."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "How the guide is organised",
+            "body": "The Agile Extension is organised around a simple idea: business analysis happens continuously, at different levels of detail, for different decisions. The chapters move from **why** (introduction and context), to **how we think** (the mindset and its principles), to **where we work** (the Three Planning Horizons), to **how we do it** (techniques, events, scaling and competencies).\n\n| Course session | Guide focus |\n|---|---|\n| 1A | What agile analysis is · project vs product thinking |\n| 1B | The agile analysis mindset · BACCM · nine principles |\n| 2A | The Three Planning Horizons |\n| 2B | The agile product team and the ABA role |\n| 3A | The Strategy Horizon |\n| 3B | The Initiative and Delivery Horizons |\n| 4A | Agile events · analysis across horizons · scaling |\n| 4B | Common challenges · underlying competencies |"
+          },
+          {
+            "heading": "The running case",
+            "body": "**Faster first payments for injured workers.** Injured workers currently wait an average of 18.2 days between lodging a claim and receiving their first weekly payment. Around a third of contact-centre calls are claimants asking where their claim is, and delay drives disputes. The organisation wants lodgement-to-first-payment at **seven days or fewer within twelve months**, and claim-status calls down 40%.\n\nWe use this case because it has a clear measurable outcome, several stakeholder groups with competing interests (workers, employers, claims agents, the regulator's own operations, unions), statutory constraints and a mix of process, data and technology change — exactly the conditions where agile analysis earns its keep.\n\n*Illustrative worked example built from public knowledge; not WorkSafe Victoria data.*"
+          },
+          {
+            "heading": "Working norms for the two days",
+            "body": "- **Cameras on where you can** — agile analysis is a conversation discipline.\n- **Bring your own initiative.** Each activity has a box for the course case and, where useful, your own work. Real context makes the learning stick.\n- **Timeboxes are real.** We practise what we preach: when the timer ends, we inspect and adapt.\n- **Paraphrase, don't recite.** We discuss the guide's ideas in our own words; the goal is application, not memorisation."
+          }
+        ],
+        "activities": [
+          {
+            "id": "d1w-act1",
+            "title": "Set your intent",
+            "instructions": "Write one sentence describing the initiative you will use as your second case across the two days, and one thing you want to be able to do differently by Friday afternoon.",
+            "minutes": 4,
+            "prompts": [
+              {
+                "id": "d1w-act1-p1",
+                "label": "My initiative (one sentence)",
+                "placeholder": "e.g. Replace manual invoice matching for the finance shared service"
+              },
+              {
+                "id": "d1w-act1-p2",
+                "label": "What I want to do differently",
+                "placeholder": "e.g. Stop writing 60-page requirements documents up front"
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "You are my agile business analysis study partner for a two-day course on the IIBA Agile Extension to the BABOK Guide. My own initiative is: [describe]. Throughout the course I will paste outputs from exercises. For each one, challenge my assumptions, ask what evidence I have, and point out which planning horizon (strategy, initiative, delivery) the decision belongs to. Keep responses under 200 words and use Australian English.",
+        "quiz": [
+          {
+            "q": "What is the target for the running case?",
+            "opts": [
+              "Lodgement to first payment ≤7 days within 12 months",
+              "Zero disputed claims",
+              "All claims lodged online",
+              "Contact centre calls down 100%"
+            ],
+            "a": 0,
+            "why": "The North Star is ≤7 days from a baseline of 18.2 days, with claim-status calls down 40% as a supporting measure."
+          },
+          {
+            "q": "Which statement best describes the role of the AI agent in this course?",
+            "opts": [
+              "It replaces the analyst's judgement",
+              "It drafts quickly; the analyst supplies context and decides",
+              "It is only used on Day 2",
+              "It holds the official answers"
+            ],
+            "a": 1,
+            "why": "The agent removes blank-page effort; the BA owns context, challenge and decisions."
+          }
+        ],
+        "takeaways": [
+          "Two days cover the whole guide, Chapters 1–9",
+          "One running case links every horizon",
+          "Your activity boxes save — build your own pack as you go"
+        ]
+      },
+      "presenter": {
+        "purpose": "Set expectations, orient participants to the guide and the case, and get everyone's own initiative named in the first fifteen minutes.",
+        "openingLine": "\"Good morning, everyone. By five o'clock tomorrow you'll have taken one real outcome — getting injured workers their first payment in a week instead of eighteen days — from strategy all the way down to a story a team could pull into a sprint. And you'll have done the same with something from your own work.\"",
+        "beats": [
+          {
+            "label": "Welcome and introductions",
+            "minutes": 4,
+            "notes": "Name, role, one word for how agile feels in your organisation. Keep it to 15 seconds each; use chat for big groups."
+          },
+          {
+            "label": "Guide map and agenda",
+            "minutes": 4,
+            "notes": "Show the session-to-chapter table. Emphasise: whole guide, two days, four sessions per day."
+          },
+          {
+            "label": "Running case intro",
+            "minutes": 3,
+            "notes": "Read the case aloud. State the disclaimer explicitly."
+          },
+          {
+            "label": "Set your intent",
+            "minutes": 4,
+            "notes": "Participants complete the activity. Scan responses; note two or three initiatives to reference later."
+          }
+        ],
+        "facilitationNotes": "Start on time — it models the timebox. If someone's AI agent is not working, pair them with a neighbour and fix it at the first break. Watch for people who have no initiative of their own; offer them a partner's or let them use the case only. Record the words people use for agile on the shared board: you will return to them in 1B when discussing mindset.",
+        "whatGood": "Everyone has named an initiative, knows the target numbers for the case and can see the shape of both days.",
+        "commonFailure": "Introductions overrun and eat into 1A — fix: hard limit of 15 seconds each, and move the 'one word' into chat for groups larger than 12.",
+        "debrief": [
+          "What surprised you about how the guide is structured?",
+          "Whose initiative sounds most like the running case?"
+        ],
+        "answerKey": "No single answer. A strong intent statement names a specific initiative and a behavioural change (e.g. 'Stop writing everything up front; slice by outcome instead').",
+        "materials": [
+          "Agenda slide with session-to-chapter map",
+          "Running case one-pager with disclaimer",
+          "Shared board with a frame per participant"
+        ]
+      }
+    },
+    {
+      "id": "d1-s1",
+      "num": "1A",
+      "title": "What agile business analysis is",
+      "subtitle": "Project vs product · why analysis still matters when we go agile",
+      "dayId": "d1",
+      "time": "09:15–10:30",
+      "minutes": 75,
+      "participant": {
+        "bigIdea": "Agile analysis exists to keep a team building the right thing — continuously, not once.",
+        "overview": "Many organisations adopt agile delivery and quietly assume business analysis disappears with the requirements document. The opposite is true. When teams deliver in small increments, decisions about *what* to build next happen every week rather than once a year — and each one needs analysis: understanding the need, framing options, and checking whether the last change delivered value.\n\nThis session defines agile business analysis, separates it from simply 'doing BA work on an agile project', and contrasts project thinking with product thinking. We use the first-payment case to show how the same outcome looks very different when framed as a project with a fixed scope versus a product with a measurable outcome.",
+        "objectives": [
+          "Define agile business analysis in your own words",
+          "Contrast project-oriented and product-oriented ways of working",
+          "Explain why fast feedback changes when and how analysis is done",
+          "Reframe a scope-based initiative as an outcome-based one"
+        ],
+        "keyPoints": [
+          {
+            "title": "Analysis is continuous",
+            "body": "In agile settings analysis is spread across the whole life of a product, done just enough and just in time for the decision at hand."
+          },
+          {
+            "title": "Value over output",
+            "body": "Success is measured by change in the customer's situation (days to first payment), not by features shipped."
+          },
+          {
+            "title": "Projects end; products persist",
+            "body": "A project optimises for delivering scope on time. A product optimises for outcomes over its whole life, with a stable team learning as it goes."
+          },
+          {
+            "title": "Anyone can do analysis",
+            "body": "Agile analysis is a set of activities, not a job title. The ABA often coaches others to do it well."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "What makes analysis 'agile'",
+            "body": "Agile business analysis is business analysis performed in a context where change is expected and feedback is fast. Three things distinguish it:\n\n1. **Timing.** Analysis is done when a decision needs to be made, not in a front-loaded phase. Detail is elaborated progressively — broad at the start, specific only for the work about to be built.\n2. **Granularity.** Work is sliced into small, valuable increments, each of which can be tested with real users or data.\n3. **Feedback as input.** Every increment produces evidence. The analyst's job includes reading that evidence and recommending whether to persevere, pivot or stop.\n\nNone of this abandons rigour. It moves rigour from documentation to decisions: clear hypotheses, explicit assumptions, measurable outcomes and visible trade-offs."
+          },
+          {
+            "heading": "Project thinking vs product thinking",
+            "body": "| Dimension | Project thinking | Product thinking |\n|---|---|---|\n| Unit of funding | A scope of work with a budget and end date | A persistent team funded to move an outcome |\n| Success measure | On time, on budget, scope delivered | Measurable change in customer or business outcome |\n| Requirements | Agreed and baselined early | Emergent; prioritised continuously |\n| Change | Controlled through change requests | Expected; absorbed through backlog reprioritisation |\n| Team | Assembled, then disbanded | Stable and long-lived; knowledge retained |\n| Analyst's focus | Completeness of specification | Quality of the next decision |\n\nMost organisations sit somewhere in between. A common hybrid is project funding wrapped around product-style delivery teams. The ABA needs to recognise which logic is driving decisions — because a project governance board will ask 'is the scope done?' when the real question is 'has the outcome moved?'"
+          },
+          {
+            "heading": "The case through both lenses",
+            "body": "**As a project:** 'Deliver a new online claims lodgement portal with integration to agent systems by 30 June, budget $3.4m.' Success is the portal going live.\n\n**As a product:** 'Reduce lodgement-to-first-payment from 18.2 to ≤7 days within 12 months.' The portal is one *possible* means. Analysis might show that the biggest delay is not lodgement at all but the default wait for the employer's forwarding window, or missing certificates of capacity. A product team would test the cheapest intervention first — perhaps notifying the employer in parallel — and measure the effect within weeks.\n\nThe product framing makes the analyst's contribution visible: identifying where time is actually lost and which change would move the number most."
+          },
+          {
+            "heading": "Where agile analysis applies",
+            "body": "Agile analysis is not confined to software. It applies wherever you can deliver change in small increments and observe the result: policy pilots, process redesign, service design, data products. It is less suited to work where an increment cannot be released or tested — but even there, the mindset (explicit assumptions, early feedback, value focus) improves outcomes."
+          }
+        ],
+        "activities": [
+          {
+            "id": "m1a-act1",
+            "title": "Reframe from scope to outcome",
+            "instructions": "Take the project framing of the case above. In pairs, (1) write an outcome statement with a baseline, target and date; (2) list three different interventions that *might* move the outcome; (3) choose which one you would test first and why. Then repeat for your own initiative.",
+            "minutes": 20,
+            "prompts": [
+              {
+                "id": "m1a-act1-p1",
+                "label": "Outcome statement — case",
+                "placeholder": "From [baseline] to [target] by [date], measured by…"
+              },
+              {
+                "id": "m1a-act1-p2",
+                "label": "Three candidate interventions",
+                "placeholder": "1. … 2. … 3. …"
+              },
+              {
+                "id": "m1a-act1-p3",
+                "label": "Which to test first and why",
+                "placeholder": ""
+              },
+              {
+                "id": "m1a-act1-p4",
+                "label": "Outcome statement — my initiative",
+                "placeholder": ""
+              }
+            ]
+          },
+          {
+            "id": "m1a-act2",
+            "title": "Where is your organisation?",
+            "instructions": "Score your organisation 1 (pure project) to 5 (pure product) on each row of the project-vs-product table. Note the one row that most frustrates good analysis.",
+            "minutes": 8,
+            "prompts": [
+              {
+                "id": "m1a-act2-p1",
+                "label": "Scores by row",
+                "placeholder": "Funding: 2, Success: 1, Requirements: 3…"
+              },
+              {
+                "id": "m1a-act2-p2",
+                "label": "The row that hurts most, and why",
+                "placeholder": ""
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Act as a sceptical product manager. Here is a project-style statement of work: [paste]. Rewrite it as an outcome statement with baseline, target, timeframe and a leading indicator. Then list five assumptions hidden in the original scope and, for each, a cheap way to test it in under two weeks. Use Australian English.",
+        "quiz": [
+          {
+            "q": "Which best describes when analysis happens in an agile context?",
+            "opts": [
+              "Entirely before development begins",
+              "Continuously, at the level of detail the next decision needs",
+              "Only during sprint planning",
+              "After release, in a post-implementation review"
+            ],
+            "a": 1,
+            "why": "Agile analysis is progressive and just in time — broad early, detailed only for imminent work."
+          },
+          {
+            "q": "In product thinking, success is primarily measured by…",
+            "opts": [
+              "Features delivered",
+              "Adherence to baseline scope",
+              "Change in a customer or business outcome",
+              "Number of stories completed"
+            ],
+            "a": 2,
+            "why": "Products are funded to move outcomes; outputs are a means."
+          },
+          {
+            "q": "In the case, why might a new portal not be the best first intervention?",
+            "opts": [
+              "Portals are always too expensive",
+              "The largest delay may sit elsewhere, such as the employer forwarding wait",
+              "Workers don't use the internet",
+              "Agile teams cannot build portals"
+            ],
+            "a": 1,
+            "why": "Analysis of where time is lost may reveal cheaper, higher-impact changes."
+          }
+        ],
+        "takeaways": [
+          "Agile analysis moves rigour from documents to decisions",
+          "Frame work as outcomes with baselines and targets",
+          "Recognise project logic in governance and translate it to outcome logic",
+          "The ABA's value is the quality of the next decision"
+        ]
+      },
+      "presenter": {
+        "purpose": "Establish a shared definition of agile analysis and shift participants from scope thinking to outcome thinking using the case.",
+        "openingLine": "\"Hands up if you've been told 'we're agile now, so we don't need requirements.' Keep your hand up if the project then delivered exactly what the business needed. ... Right. Let's talk about why analysis matters more, not less.\"",
+        "beats": [
+          {
+            "label": "Hook and definition",
+            "minutes": 10,
+            "notes": "Run the hand-up poll. Build the definition with the group: timing, granularity, feedback."
+          },
+          {
+            "label": "Project vs product table",
+            "minutes": 15,
+            "notes": "Walk the table row by row. Ask for a local example on each row."
+          },
+          {
+            "label": "Case through both lenses",
+            "minutes": 10,
+            "notes": "Present both framings. Ask: which framing would let you discover the employer-window delay?"
+          },
+          {
+            "label": "Activity 1: reframe",
+            "minutes": 20,
+            "notes": "Pairs in breakouts. Broadcast at 10 minutes: 'move to your own initiative'."
+          },
+          {
+            "label": "Activity 2: self-score",
+            "minutes": 8,
+            "notes": "Solo; collect scores on the shared board."
+          },
+          {
+            "label": "Debrief and bridge",
+            "minutes": 12,
+            "notes": "Share two outcome statements. Bridge to 1B: 'To work this way you need a different mindset.'"
+          }
+        ],
+        "facilitationNotes": "Expect pushback from participants in heavily project-governed organisations. Acknowledge it: the hybrid is normal, and the skill is translation, not revolution. In the reframe activity, police vague outcomes ('improve customer experience') — push for a number, a baseline and a date. If pairs are stuck on interventions, prompt: 'Where in the 18.2 days does the time go?'",
+        "roleplay": {
+          "persona": "Program Director, project-governed",
+          "line": "I've got a board that funds scope and dates. Outcomes are lovely, but they won't approve them.",
+          "curveball": "And if we don't hit seven days, I'm the one who gets blamed.",
+          "move": "Offer a bridge: keep the dated scope envelope for the board, but add the outcome as the success measure and report leading indicators each month, so risk is visible early rather than at go-live."
+        },
+        "whatGood": "Outcome statements with explicit baseline, target, date and measure; at least one intervention that is not technology.",
+        "commonFailure": "Participants restate the solution as an outcome ('Portal live by June') — fix: ask 'what changes for the injured worker?' until a measurable customer outcome appears.",
+        "debrief": [
+          "What did the outcome framing let you see that the scope framing hid?",
+          "Which row of the table is hardest to shift in your organisation?",
+          "Who in your organisation owns outcomes today?"
+        ],
+        "answerKey": "**Model outcome:** 'Reduce average lodgement-to-first-payment for new weekly compensation claims from 18.2 days to ≤7 days by [date + 12 months], measured weekly from claims system timestamps.'\n\n**Candidate interventions:** notify employer in parallel at lodgement rather than waiting for forwarding; pre-validate certificate of capacity at lodgement; triage low-risk claims for straight-through determination; digital lodgement form; proactive status SMS to cut calls.\n\n**Test first:** parallel employer notification — cheap, policy-compatible and targets the largest single wait.",
+        "materials": [
+          "Project vs product slide",
+          "Case one-pager",
+          "Breakout timer",
+          "Shared board self-score frame"
+        ]
+      }
+    },
+    {
+      "id": "d1-s2",
+      "num": "1B",
+      "title": "The agile analysis mindset",
+      "subtitle": "Mindset · the BACCM · nine principles",
+      "dayId": "d1",
+      "time": "10:45–12:15",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "Techniques are borrowed; mindset is what makes them agile.",
+        "overview": "Two analysts can run the same user story workshop and get very different results. The difference is mindset: what they believe the work is for, how they treat uncertainty and how they respond to evidence. The Agile Extension describes an agile analysis mindset expressed through a set of principles, and grounds it in the Business Analysis Core Concept Model (BACCM) — the six concepts that frame all business analysis.\n\nIn this session you will connect the BACCM to agile practice, work through the nine principles in plain language, and test them against the running case. The principles are not a checklist; they are a lens for deciding what to do when the guide doesn't tell you.",
+        "objectives": [
+          "Describe the six BACCM concepts and how each shows up in agile work",
+          "Explain the nine principles in your own words with an example of each",
+          "Diagnose which principles are weak in a given situation",
+          "Apply the principles to choose an analysis approach for the case"
+        ],
+        "keyPoints": [
+          {
+            "title": "BACCM is the backbone",
+            "body": "Change, Need, Solution, Stakeholder, Value and Context — every analysis decision touches all six."
+          },
+          {
+            "title": "Principles over procedures",
+            "body": "When there is no prescribed step, the principles tell you what good looks like."
+          },
+          {
+            "title": "Uncertainty is information",
+            "body": "An agile analyst makes uncertainty explicit and reduces it deliberately through experiments."
+          },
+          {
+            "title": "Value is judged, then verified",
+            "body": "Value is estimated up front and measured after delivery; both matter."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "The BACCM in an agile setting",
+            "body": "| Concept | Plain meaning | Agile emphasis | In the case |\n|---|---|---|---|\n| **Change** | The act of transforming in response to a need | Small, frequent, reversible changes | Parallel employer notification trialled in one region |\n| **Need** | A problem or opportunity | Re-validated as evidence arrives | Workers waiting 18.2 days for income |\n| **Solution** | A way of satisfying needs | One of several options; tested, not assumed | Notification, triage, portal, SMS updates |\n| **Stakeholder** | Anyone with a relationship to the change | Engaged continuously, not at sign-off | Workers, employers, agents, unions, legal |\n| **Value** | Worth or usefulness to a stakeholder | Measured after each increment | Days saved; calls avoided; disputes reduced |\n| **Context** | Circumstances that influence the change | Constraints made visible early | Statutory timeframes, agent contracts |\n\nThe model is useful as a quick completeness check: if a backlog item cannot be traced to a need, a stakeholder and a measure of value, it is a candidate for removal."
+          },
+          {
+            "heading": "The nine principles, in plain language",
+            "body": "The guide groups its mindset into principles. In this course we work with nine, paraphrased for practice:\n\n1. **See the whole.** Understand the broader system — customers, operations, policy — before optimising a part.\n2. **Think as a customer.** Frame needs from the perspective of the person who experiences the outcome.\n3. **Analyse to determine what is valuable.** Continually assess which work would deliver the most value next.\n4. **Get real using examples.** Make needs concrete through scenarios, examples and acceptance criteria.\n5. **Understand what is doable.** Work within real constraints — capability, capacity, regulation — and expose them early.\n6. **Stimulate collaboration and continuous improvement.** Create conditions for shared understanding and inspect-and-adapt.\n7. **Avoid waste.** Do only the analysis needed for the next decision; drop work that adds no value.\n8. **Embrace uncertainty.** Treat unknowns as testable assumptions rather than risks to be documented away.\n9. **Deliver value continuously.** Prefer small increments that can be measured over large batches.\n\nPrinciples 1–4 lean toward *understanding*, 5–7 toward *working together sensibly*, and 8–9 toward *learning and flow*."
+          },
+          {
+            "heading": "Principles in tension",
+            "body": "Principles conflict. 'Avoid waste' can argue against the stakeholder workshop that 'See the whole' demands. 'Embrace uncertainty' can collide with a regulator who needs certainty about statutory compliance. The ABA's job is to make the tension explicit and pick a deliberate trade-off.\n\nIn the case, Legal may require a complete map of statutory timeframes before any process change. That looks like big up-front analysis — but it is the *right* amount for a compliance-critical constraint. Doing it is consistent with 'Understand what is doable'. The waste would be extending that same depth to every UI detail of a future portal."
+          },
+          {
+            "heading": "Diagnosing a weak mindset",
+            "body": "Symptoms that a team's mindset has drifted:\n\n- Stories describe system behaviour but no user or outcome (*Think as a customer* is weak).\n- The backlog has 400 items and nobody can say which matter most (*Analyse to determine what is valuable*).\n- Acceptance criteria are 'works as expected' (*Get real using examples*).\n- Releases are quarterly despite two-week sprints (*Deliver value continuously*).\n- Assumptions are buried in a risk register nobody reads (*Embrace uncertainty*)."
+          }
+        ],
+        "activities": [
+          {
+            "id": "m1b-act1",
+            "title": "BACCM scan of the case",
+            "instructions": "Using the BACCM table, add one new insight per concept that the table doesn't already show. Then identify which concept is least understood in the case today.",
+            "minutes": 15,
+            "prompts": [
+              {
+                "id": "m1b-act1-p1",
+                "label": "Change / Need / Solution insights",
+                "placeholder": ""
+              },
+              {
+                "id": "m1b-act1-p2",
+                "label": "Stakeholder / Value / Context insights",
+                "placeholder": ""
+              },
+              {
+                "id": "m1b-act1-p3",
+                "label": "Least understood concept and why",
+                "placeholder": ""
+              }
+            ]
+          },
+          {
+            "id": "m1b-act2",
+            "title": "Principle health check",
+            "instructions": "In trios, rate a team you know (or the case team as you imagine it) 1–5 on each of the nine principles. For the two lowest, write one concrete action the ABA could take next sprint.",
+            "minutes": 20,
+            "prompts": [
+              {
+                "id": "m1b-act2-p1",
+                "label": "Ratings 1–9",
+                "placeholder": "1:3, 2:4, 3:2 …"
+              },
+              {
+                "id": "m1b-act2-p2",
+                "label": "Lowest principle #1 — action",
+                "placeholder": ""
+              },
+              {
+                "id": "m1b-act2-p3",
+                "label": "Lowest principle #2 — action",
+                "placeholder": ""
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Here is a description of how my team currently works: [paste]. Assess it against nine agile analysis principles: see the whole; think as a customer; analyse to determine what is valuable; get real using examples; understand what is doable; stimulate collaboration and continuous improvement; avoid waste; embrace uncertainty; deliver value continuously. For each, give a 1–5 score with one line of evidence, then recommend the two highest-leverage changes. Australian English.",
+        "quiz": [
+          {
+            "q": "Which BACCM concept is about the circumstances that influence and constrain a change?",
+            "opts": [
+              "Need",
+              "Context",
+              "Value",
+              "Solution"
+            ],
+            "a": 1,
+            "why": "Context covers constraints such as legislation, culture and existing systems."
+          },
+          {
+            "q": "A team's acceptance criteria all read 'works as expected'. Which principle is weakest?",
+            "opts": [
+              "Avoid waste",
+              "Get real using examples",
+              "See the whole",
+              "Deliver value continuously"
+            ],
+            "a": 1,
+            "why": "Concrete examples and criteria are how needs become testable."
+          },
+          {
+            "q": "Legal requires a full statutory timeframe map before process change. In agile terms this is…",
+            "opts": [
+              "Waste — skip it",
+              "Appropriate analysis for a compliance-critical constraint",
+              "A sign the team isn't agile",
+              "Something for the delivery horizon only"
+            ],
+            "a": 1,
+            "why": "Depth is proportional to risk; compliance constraints warrant it."
+          },
+          {
+            "q": "Treating unknowns as testable assumptions reflects which principle?",
+            "opts": [
+              "Embrace uncertainty",
+              "Think as a customer",
+              "Avoid waste",
+              "See the whole"
+            ],
+            "a": 0,
+            "why": "Uncertainty becomes something to test, not hide."
+          }
+        ],
+        "takeaways": [
+          "The BACCM is a fast completeness check for any backlog item",
+          "The nine principles guide decisions where no procedure exists",
+          "Principles conflict — name the trade-off deliberately",
+          "Mindset drift shows up in artefacts; diagnose it there"
+        ]
+      },
+      "presenter": {
+        "purpose": "Ground participants in the BACCM and the nine principles and give them a diagnostic habit they can use at work on Monday.",
+        "openingLine": "\"This morning I asked for one word describing agile in your organisation. I've got 'ceremonies', 'Jira', 'chaos' and 'faster' on the board. Notice none of them is about how people think. That's this session.\"",
+        "beats": [
+          {
+            "label": "Hook from welcome words",
+            "minutes": 5,
+            "notes": "Read out the board words. Frame mindset vs mechanics."
+          },
+          {
+            "label": "BACCM walkthrough",
+            "minutes": 15,
+            "notes": "Walk the table. Ask the group to add the 'In the case' column live for one row before revealing."
+          },
+          {
+            "label": "Activity 1: BACCM scan",
+            "minutes": 15,
+            "notes": "Solo then share in chat."
+          },
+          {
+            "label": "Nine principles",
+            "minutes": 20,
+            "notes": "Teach in the three clusters. One quick example from the room for each."
+          },
+          {
+            "label": "Principles in tension",
+            "minutes": 5,
+            "notes": "Use the Legal example. Ask for a tension they've lived."
+          },
+          {
+            "label": "Activity 2: health check",
+            "minutes": 20,
+            "notes": "Trios in breakouts. Broadcast at 12 minutes: 'pick your two lowest now'."
+          },
+          {
+            "label": "Debrief",
+            "minutes": 10,
+            "notes": "Harvest the lowest-scoring principles across groups — usually 3 and 9. Bridge to horizons after lunch."
+          }
+        ],
+        "facilitationNotes": "The nine principles can become a lecture — avoid that by teaching in clusters and getting one room example each. Keep the list on screen during Activity 2. If trios rate everything 3, push them: 'Which one would you bet your bonus is lowest?' Capture actions on the shared board — they become commitments revisited in 4B.",
+        "whatGood": "Participants can name the principles without notes, rate honestly and produce specific, sprint-sized actions.",
+        "commonFailure": "Actions are abstract ('improve collaboration') — fix: require each action to name who, what artefact or event, and when.",
+        "debrief": [
+          "Which principle scored lowest across the room? Why might that be?",
+          "Where did principles conflict for your trio?",
+          "Which BACCM concept is most neglected in your organisation?"
+        ],
+        "answerKey": "**BACCM scan — strong answers:** Need: re-validate whether the real need is income certainty (status visibility) rather than speed alone. Stakeholder: claims agents' KPIs may reward accuracy over speed. Context: statutory employer-forwarding window treated as a default wait. Value: disputes avoided is a lagging value measure. Least understood is often **Context** (agent contract incentives).\n\n**Typical lowest principles:** Analyse to determine what is valuable (no outcome measure); Deliver value continuously (big-bang release planned). Good action: 'Next sprint review, the ABA presents the days-to-first-payment trend and asks the PO to rank the top five items against it.'",
+        "materials": [
+          "BACCM slide",
+          "Nine principles one-pager",
+          "Health check grid on shared board"
+        ]
+      }
+    },
+    {
+      "id": "d1-s3",
+      "num": "2A",
+      "title": "The Three Planning Horizons",
+      "subtitle": "Strategy · Initiative · Delivery — and how they connect",
+      "dayId": "d1",
+      "time": "13:00–14:30",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "Every analysis question belongs to a horizon; answer it at the wrong one and you waste effort or miss the point.",
+        "overview": "The heart of the Agile Extension is the Three Planning Horizons model. Organisations make decisions at different cadences and levels of detail: long-range strategic choices, medium-range initiative choices, and short-range delivery choices. Business analysis happens at all three, with different questions, stakeholders, techniques and feedback loops.\n\nThis session introduces the model, shows how feedback flows up as well as decisions flowing down, and maps the running case across the three horizons. By the end you will be able to place any analysis request on the right horizon — the single most useful diagnostic in the course.",
+        "objectives": [
+          "Describe the purpose, cadence and typical decisions of each horizon",
+          "Explain how decisions cascade down and feedback flows up",
+          "Place analysis questions on the correct horizon",
+          "Map the running case across all three horizons"
+        ],
+        "keyPoints": [
+          {
+            "title": "Strategy",
+            "body": "Long cadence (often 6–18 months). Why and where: direction, investment, outcomes. Feedback is slow and broad."
+          },
+          {
+            "title": "Initiative",
+            "body": "Medium cadence (weeks to months). What: the solution approach and capabilities to achieve a strategic outcome."
+          },
+          {
+            "title": "Delivery",
+            "body": "Short cadence (days to weeks). How, in detail: the increments a team builds and validates."
+          },
+          {
+            "title": "Two-way flow",
+            "body": "Decisions cascade down; evidence flows up. A horizon that never receives feedback is planning in a vacuum."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "The model at a glance",
+            "body": "| | Strategy Horizon | Initiative Horizon | Delivery Horizon |\n|---|---|---|---|\n| Core question | Why are we doing this, and where should we invest? | What solution approach will achieve the goal? | How exactly do we build and validate the next increment? |\n| Typical cadence | Quarterly to annual | Monthly to quarterly | Daily to fortnightly |\n| Decision makers | Executives, portfolio boards | Product owners, initiative leads | Delivery team, product owner |\n| Analysis outputs | Goals, outcomes, business model, options | Capability maps, story maps, release hypotheses, MVP | Stories, examples, acceptance criteria, models |\n| Feedback signals | Market and outcome trends | Adoption and outcome leading indicators | Working software, test results, user reactions |\n\nThe horizons are not phases: all three run concurrently. A strategy decision made in March is still live while a team delivers in June."
+          },
+          {
+            "heading": "Cascade and feedback",
+            "body": "Decisions flow **down**: strategy sets outcomes and guardrails; initiatives choose approaches that serve them; delivery slices those approaches into increments.\n\nEvidence flows **up**: delivery learns that a validation rule is far harder than estimated; the initiative re-plans its MVP; strategy learns that the seven-day target needs a policy change, not just a system.\n\nThe ABA is often the person who makes sure feedback actually travels upward. Without that, strategy ossifies and teams deliver faithfully toward a target that the evidence says is unreachable."
+          },
+          {
+            "heading": "The case across the horizons",
+            "body": "**Strategy:** Improve return-to-work outcomes by getting injured workers income faster. Outcome: lodgement to first payment ≤7 days within 12 months; claim-status calls −40%. Investment envelope and option choice (e.g. buy a claims-intake platform, integrate via middleware).\n\n**Initiative:** 'Digital lodgement and straight-through first payment for low-risk claims.' Capabilities: worker-direct lodgement, parallel employer notification, certificate validation, risk triage. MVP hypothesis: *if* workers lodge directly and employers are notified in parallel, *then* average time to first payment for low-risk claims will fall below 10 days within one quarter.\n\n**Delivery:** 'As an injured worker, I want to upload my certificate of capacity when I lodge, so that my claim isn't held up waiting for it.' Examples: a valid PDF certificate; a photo; a certificate with an expired date; no certificate."
+          },
+          {
+            "heading": "Placing questions on a horizon",
+            "body": "A quick test: ask **how long it would take to learn whether the answer was right.**\n\n- Years or many months → Strategy.\n- Weeks to a quarter → Initiative.\n- Days to a sprint → Delivery.\n\nRequests are often asked at the wrong horizon: an executive asking 'what fields should the form have?' (delivery question at strategy level) or a team asked to 'just build the portal' without a defined outcome (strategy question left unanswered)."
+          }
+        ],
+        "activities": [
+          {
+            "id": "m2a-act1",
+            "title": "Sort the questions",
+            "instructions": "Assign each question to S, I or D and justify in a phrase: (a) Should we fund intake transformation or contact-centre expansion? (b) What does the error message say for an expired certificate? (c) Which agents pilot parallel notification first? (d) Is seven days the right target? (e) What is the MVP for digital lodgement? (f) Which date format does the API return? (g) Do we buy or build the intake platform? (h) What is the acceptance criterion for SMS opt-out?",
+            "minutes": 12,
+            "prompts": [
+              {
+                "id": "m2a-act1-p1",
+                "label": "Answers a–h with justification",
+                "placeholder": "a: S — investment choice…"
+              }
+            ]
+          },
+          {
+            "id": "m2a-act2",
+            "title": "Map your initiative across horizons",
+            "instructions": "Using the case as a model, write one strategy outcome, one initiative hypothesis and one delivery story for your own initiative. Mark any horizon you can't fill — that gap is a finding.",
+            "minutes": 20,
+            "prompts": [
+              {
+                "id": "m2a-act2-p1",
+                "label": "Strategy outcome",
+                "placeholder": ""
+              },
+              {
+                "id": "m2a-act2-p2",
+                "label": "Initiative hypothesis (If… then… within…)",
+                "placeholder": ""
+              },
+              {
+                "id": "m2a-act2-p3",
+                "label": "Delivery story + two examples",
+                "placeholder": ""
+              },
+              {
+                "id": "m2a-act2-p4",
+                "label": "Gaps and what they tell you",
+                "placeholder": ""
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Here are analysis questions from my backlog and inbox: [paste list]. Classify each against the Three Planning Horizons (strategy, initiative, delivery) using the test 'how long until we learn whether the answer was right?'. Flag any question being asked at the wrong horizon and suggest who should own it. Present as a table.",
+        "quiz": [
+          {
+            "q": "Which horizon answers 'what solution approach will achieve the goal'?",
+            "opts": [
+              "Strategy",
+              "Initiative",
+              "Delivery",
+              "Portfolio"
+            ],
+            "a": 1,
+            "why": "The initiative horizon selects and shapes the solution approach."
+          },
+          {
+            "q": "The horizons are best understood as…",
+            "opts": [
+              "Sequential phases",
+              "Concurrent levels of planning with different cadences",
+              "Organisational departments",
+              "Agile ceremonies"
+            ],
+            "a": 1,
+            "why": "All three run at once at different cadences."
+          },
+          {
+            "q": "A team discovers that certificate validation is far harder than estimated. Agile practice says this evidence should…",
+            "opts": [
+              "Stay within the team",
+              "Flow up to inform initiative and possibly strategy",
+              "Be logged as a defect",
+              "Wait for the annual review"
+            ],
+            "a": 1,
+            "why": "Feedback flows upward to re-plan at higher horizons."
+          },
+          {
+            "q": "'Which date format does the API return?' belongs to…",
+            "opts": [
+              "Strategy",
+              "Initiative",
+              "Delivery",
+              "None"
+            ],
+            "a": 2,
+            "why": "It is learnt within days and affects a specific increment."
+          }
+        ],
+        "takeaways": [
+          "Three horizons, running concurrently, at different cadences",
+          "Decisions flow down, evidence flows up — the ABA keeps both moving",
+          "Use 'time to learn' to place a question on a horizon",
+          "A horizon you can't fill for your initiative is a finding"
+        ]
+      },
+      "presenter": {
+        "purpose": "Make the Three Planning Horizons the organising frame for the rest of the course.",
+        "openingLine": "\"Before lunch we talked about mindset. Now we need a map. Every question you've ever been asked as a BA belongs somewhere on this map — and a lot of frustration at work comes from questions asked in the wrong place.\"",
+        "beats": [
+          {
+            "label": "Hook and model",
+            "minutes": 15,
+            "notes": "Draw the three horizons as nested bands. Introduce cadence and core question."
+          },
+          {
+            "label": "Cascade and feedback",
+            "minutes": 10,
+            "notes": "Arrows down and up. Ask: 'When did feedback last reach your exec?'"
+          },
+          {
+            "label": "Case across the horizons",
+            "minutes": 15,
+            "notes": "Reveal one horizon at a time; ask the room to predict the next."
+          },
+          {
+            "label": "Activity 1: sort the questions",
+            "minutes": 12,
+            "notes": "Solo, then poll answers. Discuss disagreements (c and g provoke debate)."
+          },
+          {
+            "label": "Activity 2: map your initiative",
+            "minutes": 20,
+            "notes": "Solo with optional pair review in last 5 minutes."
+          },
+          {
+            "label": "Debrief",
+            "minutes": 18,
+            "notes": "Two volunteers share maps. Focus on gaps found. Bridge to 2B: 'Who works at each horizon?'"
+          }
+        ],
+        "facilitationNotes": "This is the anchor session — go slower here if needed and take time from the debrief rather than the model. Draw the horizons yourself rather than showing a static slide; it signals they are a thinking tool. Question (g) buy-vs-build can sit at strategy or initiative depending on investment scale — accept either with a justification. Post-lunch energy is low: keep Activity 1 as a rapid poll.",
+        "whatGood": "Participants confidently classify questions using 'time to learn' and find at least one horizon gap in their own initiative.",
+        "commonFailure": "Treating horizons as waterfall phases ('first strategy, then initiative…') — fix: show the case running all three concurrently with a dated timeline.",
+        "debrief": [
+          "Which horizon was hardest to fill for your initiative?",
+          "Who in your organisation makes decisions at each horizon?",
+          "Where does feedback get stuck?"
+        ],
+        "answerKey": "**Sort:** a S (investment choice); b D (specific UI text, learnt in days); c I (pilot sequencing within the initiative); d S (target-setting); e I (MVP definition); f D (technical detail of an increment); g S or I (S if it shapes the portfolio investment, I if within an approved envelope); h D (acceptance criterion).",
+        "materials": [
+          "Whiteboard or digital canvas for horizon drawing",
+          "Question cards a–h",
+          "Case horizon map handout"
+        ]
+      }
+    },
+    {
+      "id": "d1-s4",
+      "num": "2B",
+      "title": "The agile product team and the ABA",
+      "subtitle": "Roles, responsibilities and where analysis lives",
+      "dayId": "d1",
+      "time": "14:45–16:15",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "Analysis is a team responsibility; the ABA makes sure it's done well and done at the right horizon.",
+        "overview": "Agile frameworks rarely name a 'business analyst'. Scrum has a product owner, developers and a scrum master; other frameworks add roles such as product manager or release train engineer. That absence makes some BAs anxious and leads some organisations to remove the role entirely. The Agile Extension takes a different view: analysis is a set of activities the whole team needs, and someone with strong analysis capability — the agile business analyst — adds enormous value whether or not that is their title.\n\nThis session looks at the agile product team, the ways the ABA contributes alongside or as part of the product owner role, and how the ABA's focus shifts across horizons.",
+        "objectives": [
+          "Describe the common roles in an agile product team",
+          "Explain several ways the ABA role can be structured",
+          "Distinguish the product owner's accountability from the ABA's contribution",
+          "Define your own ABA contribution for the case and your initiative"
+        ],
+        "keyPoints": [
+          {
+            "title": "Accountability vs activity",
+            "body": "The product owner is accountable for value and backlog order. Analysis activities that inform those decisions can be done by an ABA, the PO, or the team."
+          },
+          {
+            "title": "Several valid shapes",
+            "body": "ABA as product owner, as proxy, as team member, or as an analyst serving several teams — each with trade-offs."
+          },
+          {
+            "title": "Horizon shifts the role",
+            "body": "At strategy the ABA looks like a business architect; at delivery like an embedded analyst writing examples with testers."
+          },
+          {
+            "title": "Coach, not gatekeeper",
+            "body": "A strong ABA spreads analysis capability through the team rather than becoming a bottleneck."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Who's on an agile product team",
+            "body": "| Role | Core accountability | Where analysis shows up |\n|---|---|---|\n| Product owner / product manager | Maximise value; own the backlog order | Prioritisation, outcome definition, stakeholder trade-offs |\n| Developers (incl. testers, designers) | Build a usable, valuable increment | Refining stories, examples, technical feasibility |\n| Scrum master / agile coach | Effective process and team health | Facilitating refinement, retrospectives |\n| Agile business analyst | Shared understanding of needs and value | Elicitation, modelling, slicing, hypothesis framing, measuring value |\n| Stakeholders and customers | Provide needs and feedback | Reviews, testing, discovery interviews |"
+          },
+          {
+            "heading": "Shapes the ABA role can take",
+            "body": "1. **ABA as product owner.** One person holds accountability and does the analysis. Clear, but the PO needs real decision authority — an analyst 'PO' without it becomes a proxy in disguise.\n2. **ABA supporting a product owner.** The PO decides; the ABA researches, models and prepares options. Works well when the PO is a busy business leader.\n3. **ABA as team member.** Analysis is one skill within a cross-functional team; the ABA also tests, facilitates or designs.\n4. **ABA across teams.** One analyst supports several teams on a shared product, often at initiative horizon, ensuring consistency of capabilities and data.\n\nNo shape is universally right. Choose based on where the PO's capacity gaps are and how complex the stakeholder landscape is."
+          },
+          {
+            "heading": "The ABA across horizons",
+            "body": "- **Strategy:** helps leaders articulate outcomes, compare options, test business model assumptions. Partners with enterprise and business architects.\n- **Initiative:** shapes the solution approach: capability maps, story maps, MVP and release hypotheses, stakeholder alignment.\n- **Delivery:** works with the team on story slicing, examples, acceptance criteria, lightweight models, and checking delivered value.\n\nIn the case, one ABA might spend Monday helping the Head of Claims Operations frame the seven-day outcome for the board, Wednesday building the story map for digital lodgement, and Thursday writing examples for certificate upload with a tester. Moving between horizons — and carrying insight between them — is the role's distinctive value."
+          },
+          {
+            "heading": "Anti-patterns",
+            "body": "- **Requirements handover.** The ABA writes stories in isolation and throws them to the team. Fix: co-write in refinement.\n- **Proxy without power.** The ABA is called PO but every decision escalates. Fix: make decision rights explicit.\n- **Bottleneck analyst.** Nothing enters a sprint without the ABA. Fix: coach the team to write examples; review rather than author.\n- **Delivery-only BA.** The analyst never sees strategy, so can't judge value. Fix: secure a seat at initiative reviews."
+          }
+        ],
+        "activities": [
+          {
+            "id": "m2b-act1",
+            "title": "Design the case team",
+            "instructions": "For the digital lodgement initiative, propose a team shape: list roles, choose an ABA shape (1–4) and justify it. State the decision rights of the PO and the ABA explicitly.",
+            "minutes": 20,
+            "prompts": [
+              {
+                "id": "m2b-act1-p1",
+                "label": "Team roles",
+                "placeholder": ""
+              },
+              {
+                "id": "m2b-act1-p2",
+                "label": "ABA shape and justification",
+                "placeholder": ""
+              },
+              {
+                "id": "m2b-act1-p3",
+                "label": "Decision rights — PO",
+                "placeholder": ""
+              },
+              {
+                "id": "m2b-act1-p4",
+                "label": "Decision rights — ABA",
+                "placeholder": ""
+              }
+            ]
+          },
+          {
+            "id": "m2b-act2",
+            "title": "My ABA week",
+            "instructions": "Sketch a realistic week for yourself as ABA on your own initiative: which horizon, which activity, with whom. Note one anti-pattern you're at risk of.",
+            "minutes": 15,
+            "prompts": [
+              {
+                "id": "m2b-act2-p1",
+                "label": "Monday to Friday sketch",
+                "placeholder": "Mon: S — outcome review with…"
+              },
+              {
+                "id": "m2b-act2-p2",
+                "label": "Anti-pattern risk and mitigation",
+                "placeholder": ""
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "I'm the business analyst on an agile product team. Context: [team roles, product owner availability, number of stakeholders]. Recommend which of these four ABA role shapes fits best: ABA as product owner; ABA supporting a product owner; ABA as cross-functional team member; ABA across multiple teams. Give pros, cons, the decision rights I should agree, and two anti-patterns to watch for.",
+        "quiz": [
+          {
+            "q": "Who is accountable for ordering the product backlog?",
+            "opts": [
+              "The ABA",
+              "The product owner",
+              "The scrum master",
+              "The steering committee"
+            ],
+            "a": 1,
+            "why": "The PO is accountable; the ABA informs those decisions."
+          },
+          {
+            "q": "An ABA titled 'product owner' must escalate every priority call. This is the…",
+            "opts": [
+              "Bottleneck analyst",
+              "Proxy without power",
+              "Requirements handover",
+              "Delivery-only BA"
+            ],
+            "a": 1,
+            "why": "Title without decision rights."
+          },
+          {
+            "q": "Which activity is most characteristic of the ABA at initiative horizon?",
+            "opts": [
+              "Writing SQL",
+              "Building a story map and MVP hypothesis",
+              "Setting the corporate strategy",
+              "Running daily stand-up"
+            ],
+            "a": 1,
+            "why": "Initiative work shapes the solution approach and MVP."
+          }
+        ],
+        "takeaways": [
+          "Analysis is a team activity; the ABA ensures it's done well",
+          "Make PO and ABA decision rights explicit",
+          "Choose an ABA shape deliberately",
+          "Carry insight between horizons — that's the role's edge"
+        ]
+      },
+      "presenter": {
+        "purpose": "Help participants position the ABA role credibly in agile teams and agree decision rights.",
+        "openingLine": "\"Open the Scrum Guide and search for 'business analyst'. Zero results. So — are you out of a job? Let's find out why the answer is no, and what you need to be instead.\"",
+        "beats": [
+          {
+            "label": "Hook",
+            "minutes": 5,
+            "notes": "The zero-results provocation."
+          },
+          {
+            "label": "Team roles table",
+            "minutes": 15,
+            "notes": "Walk roles; ask where analysis happens today in their teams."
+          },
+          {
+            "label": "Four ABA shapes",
+            "minutes": 15,
+            "notes": "Present with trade-offs. Quick poll: which shape is yours?"
+          },
+          {
+            "label": "ABA across horizons + anti-patterns",
+            "minutes": 10,
+            "notes": "Use the 'Monday/Wednesday/Thursday' story."
+          },
+          {
+            "label": "Activity 1: design the case team",
+            "minutes": 20,
+            "notes": "Pairs in breakouts."
+          },
+          {
+            "label": "Activity 2: my ABA week",
+            "minutes": 15,
+            "notes": "Solo."
+          },
+          {
+            "label": "Debrief",
+            "minutes": 10,
+            "notes": "Share team designs; contrast shapes chosen. Bridge to exercise."
+          }
+        ],
+        "facilitationNotes": "Some participants will feel threatened by the PO role. Validate it: many ABAs are de facto POs without authority. Steer to decision rights rather than titles. Use the roleplay with a volunteer in plenary — it lands better than slides.",
+        "roleplay": {
+          "persona": "Head of Claims Operations, nominated PO",
+          "line": "I'm the product owner, but honestly I've got two hours a week. Can you just decide what goes in the sprint?",
+          "curveball": "And if the agents complain, tell them it was your call.",
+          "move": "Agree to prepare a ranked recommendation with rationale against the seven-day outcome each fortnight, but keep the decision with the PO in a 20-minute fixed slot. Make accountability visible rather than absorbing it."
+        },
+        "whatGood": "Explicit, written decision rights and a role shape justified by context.",
+        "commonFailure": "Choosing 'ABA as PO' by default without checking authority — fix: ask 'who can say no to the Agent Panel Manager?'",
+        "debrief": [
+          "Which shape did pairs choose for the case, and why?",
+          "What decision rights did you find hardest to articulate?",
+          "Which anti-pattern is most common where you work?"
+        ],
+        "answerKey": "**Strong case design:** PO = Head of Claims Operations (or delegate) with authority over intake process; ABA supporting the PO (shape 2) because the PO has limited time and the stakeholder landscape (agents, employers, unions, Legal) is complex. Team: ABA, 3–4 developers, tester, service designer, claims SME part-time. PO decides backlog order, MVP scope and release; ABA owns option analysis, story map, examples, value measurement and the stakeholder engagement plan.",
+        "materials": [
+          "Roles slide",
+          "Four shapes one-pager",
+          "Roleplay card"
+        ]
+      }
+    },
+    {
+      "id": "d1-ex",
+      "num": "EX1",
+      "title": "Exercise: horizon mapping",
+      "subtitle": "Apply Day 1 to the case end to end · Day 1 close",
+      "dayId": "d1",
+      "time": "16:15–17:00",
+      "minutes": 45,
+      "participant": {
+        "bigIdea": "If you can map one outcome cleanly across three horizons, you can analyse almost anything in an agile organisation.",
+        "overview": "This exercise consolidates Day 1. In small groups you build a one-page horizon map for the running case: the strategy outcome and guardrails, the initiative approach and MVP hypothesis, and a first set of delivery stories with examples. You also mark where feedback should flow up and which principle each decision draws on.\n\nThe output becomes the input for Day 2, where we go deep on each horizon.",
+        "objectives": [
+          "Produce a coherent three-horizon map for the case",
+          "Trace every delivery story to a strategic outcome",
+          "Identify feedback loops and their owners",
+          "Reflect on Day 1 learning"
+        ],
+        "keyPoints": [
+          {
+            "title": "Traceability up",
+            "body": "Every story should answer 'which outcome does this move?'"
+          },
+          {
+            "title": "Hypotheses in the middle",
+            "body": "The initiative layer turns strategy into testable bets."
+          },
+          {
+            "title": "Feedback named",
+            "body": "Each loop needs a signal, a cadence and an owner."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "The horizon map template",
+            "body": "| Layer | Content | Example (partial) |\n|---|---|---|\n| Strategy outcome | Baseline → target, date, guardrails | 18.2 → ≤7 days in 12 months; no increase in incorrectly accepted claims |\n| Initiative hypothesis | If … then … measured by … within … | If workers lodge directly with parallel employer notice, low-risk claims reach first payment in <10 days within a quarter |\n| Capabilities | 3–5 capabilities needed | Direct lodgement; parallel notification; certificate validation; risk triage |\n| Delivery stories | 3–5 stories with examples | Upload certificate at lodgement |\n| Feedback loops | Signal, cadence, owner | Weekly days-to-payment by risk tier — ABA to PO |"
+          },
+          {
+            "heading": "Day 1 close",
+            "body": "Before you leave: review your saved boxes from 1A, 1B, 2A and 2B. Tonight, spend ten minutes reading your own initiative's horizon gaps. Tomorrow starts with a recap and your questions."
+          }
+        ],
+        "activities": [
+          {
+            "id": "ex1-act1",
+            "title": "Build the horizon map",
+            "instructions": "In groups of three or four, complete every row of the template for the case. Add one guardrail metric, at least three stories with two examples each, and two feedback loops. Mark the principle each key decision draws on.",
+            "minutes": 30,
+            "prompts": [
+              {
+                "id": "ex1-act1-p1",
+                "label": "Strategy outcome and guardrails",
+                "placeholder": ""
+              },
+              {
+                "id": "ex1-act1-p2",
+                "label": "Initiative hypothesis and capabilities",
+                "placeholder": ""
+              },
+              {
+                "id": "ex1-act1-p3",
+                "label": "Delivery stories with examples",
+                "placeholder": ""
+              },
+              {
+                "id": "ex1-act1-p4",
+                "label": "Feedback loops (signal · cadence · owner)",
+                "placeholder": ""
+              },
+              {
+                "id": "ex1-act1-p5",
+                "label": "Principles referenced",
+                "placeholder": ""
+              }
+            ]
+          },
+          {
+            "id": "ex1-act2",
+            "title": "Day 1 reflection",
+            "instructions": "One thing you'll stop doing, one you'll start.",
+            "minutes": 5,
+            "prompts": [
+              {
+                "id": "ex1-act2-p1",
+                "label": "Stop",
+                "placeholder": ""
+              },
+              {
+                "id": "ex1-act2-p2",
+                "label": "Start",
+                "placeholder": ""
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Review this three-horizon map for coherence: [paste]. Check that every delivery story traces to the initiative hypothesis and strategic outcome; that the hypothesis is testable with a measure and timeframe; that there is at least one guardrail; and that feedback loops have a signal, cadence and owner. List the three weakest links and suggest fixes.",
+        "quiz": [
+          {
+            "q": "What makes an initiative hypothesis testable?",
+            "opts": [
+              "It names a technology",
+              "It states an expected measurable change within a timeframe",
+              "It has executive sponsorship",
+              "It is written as a user story"
+            ],
+            "a": 1,
+            "why": "Measure plus timeframe allows a persevere/pivot decision."
+          },
+          {
+            "q": "Why add a guardrail metric to the strategy outcome?",
+            "opts": [
+              "To slow the team down",
+              "To prevent the target being hit in a harmful way",
+              "Because auditors require it",
+              "To replace the main outcome"
+            ],
+            "a": 1,
+            "why": "e.g. speed must not come at the cost of incorrectly accepted claims."
+          }
+        ],
+        "takeaways": [
+          "Map once, trace always",
+          "Hypotheses connect strategy to delivery",
+          "Feedback loops need owners",
+          "Your Day 1 boxes are tomorrow's inputs"
+        ]
+      },
+      "presenter": {
+        "purpose": "Consolidate Day 1 into a single applied artefact and close the day with reflection.",
+        "openingLine": "\"You've got four building blocks from today. Now we snap them together. Thirty minutes, one page, three horizons.\"",
+        "beats": [
+          {
+            "label": "Brief and template",
+            "minutes": 5,
+            "notes": "Show the template with the partial example."
+          },
+          {
+            "label": "Group build",
+            "minutes": 25,
+            "notes": "Breakouts of 3–4. Visit every room. Broadcast at 15 minutes: 'feedback loops now'."
+          },
+          {
+            "label": "Gallery and feedback",
+            "minutes": 10,
+            "notes": "Two groups present; others note one strength and one gap."
+          },
+          {
+            "label": "Reflection and close",
+            "minutes": 5,
+            "notes": "Stop/start; preview Day 2."
+          }
+        ],
+        "facilitationNotes": "Energy will be low; keep the brief to five minutes and get them into rooms fast. Groups commonly over-invest in stories and skip feedback loops — the 15-minute broadcast matters. Screenshot each map for tomorrow's recap.",
+        "whatGood": "Stories trace cleanly to the hypothesis, a guardrail exists, and feedback loops have owners.",
+        "commonFailure": "Initiative hypothesis restates the solution ('Build the portal') — fix: insist on 'if… then… measured by… within…'.",
+        "debrief": [
+          "Which link in your chain felt weakest?",
+          "Where did your group disagree?",
+          "What will you look at tonight?"
+        ],
+        "answerKey": "**Model map:** Strategy — 18.2 → ≤7 days within 12 months; claim-status calls −40%; guardrail: no rise in incorrectly accepted claims or disputes. Hypothesis — if workers lodge directly and employers are notified in parallel, low-risk claims reach first payment in <10 days within one quarter (measured weekly by risk tier). Capabilities — worker-direct lodgement; parallel employer notification; certificate capture and validation; low-risk triage; proactive status updates. Stories — upload certificate (valid PDF; expired certificate rejected with guidance); employer notified on submission (email within 5 minutes; bounced email flagged to agent); SMS status on determination (opted-in worker receives SMS; opted-out does not). Loops — weekly days-to-payment by tier (ABA → PO); monthly outcome trend and guardrail (PO → Head of Claims/steering).",
+        "materials": [
+          "Horizon map template",
+          "Breakout timers",
+          "Screenshot tool"
+        ]
+      }
+    },
+    {
+      "id": "d2-recap",
+      "num": "D2",
+      "title": "Day 1 recap · questions",
+      "subtitle": "Reconnect to the horizon map and open questions",
+      "dayId": "d2",
+      "time": "09:00–09:15",
+      "minutes": 15,
+      "participant": {
+        "bigIdea": "Yesterday gave us the map; today we walk each territory.",
+        "overview": "We open Day 2 by revisiting the horizon maps built yesterday, resolving questions from the parking lot, and setting up the day's journey: Strategy Horizon, Initiative and Delivery Horizons, then events, scaling, challenges and competencies.",
+        "objectives": [
+          "Recall the three horizons, nine principles and ABA shapes",
+          "Resolve outstanding questions",
+          "Connect your own initiative map to today's sessions"
+        ],
+        "keyPoints": [
+          {
+            "title": "Quick recall",
+            "body": "Strategy (why/where), Initiative (what), Delivery (how). Decisions down, evidence up."
+          },
+          {
+            "title": "Parking lot",
+            "body": "Questions from Day 1 are answered now or assigned to a session today."
+          },
+          {
+            "title": "Today's arc",
+            "body": "Deep dive by horizon in the morning; practice and people in the afternoon."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Recall grid",
+            "body": "| Concept | One-line recall |\n|---|---|\n| Agile analysis | Continuous, just-enough analysis focused on value |\n| BACCM | Change, Need, Solution, Stakeholder, Value, Context |\n| Nine principles | See the whole; think as a customer; analyse value; get real with examples; understand what is doable; collaborate and improve; avoid waste; embrace uncertainty; deliver value continuously |\n| Horizons | Strategy · Initiative · Delivery, concurrent, two-way flow |\n| ABA shapes | As PO · supporting PO · team member · across teams |"
+          },
+          {
+            "heading": "Today's journey",
+            "body": "3A goes deep on strategy analysis; 3B on initiative and delivery analysis with story mapping and examples; 4A on agile events, analysis across horizons and scaling; 4B on common challenges and the competencies an ABA needs. We close with a technique selection exercise."
+          }
+        ],
+        "activities": [
+          {
+            "id": "d2r-act1",
+            "title": "Overnight insight",
+            "instructions": "Write one insight or question from reviewing your Day 1 work.",
+            "minutes": 4,
+            "prompts": [
+              {
+                "id": "d2r-act1-p1",
+                "label": "Insight or question",
+                "placeholder": ""
+              }
+            ]
+          }
+        ],
+        "quiz": [
+          {
+            "q": "Which flows upward through the horizons?",
+            "opts": [
+              "Budgets",
+              "Evidence and feedback",
+              "User stories",
+              "Governance approvals"
+            ],
+            "a": 1,
+            "why": "Decisions cascade down; evidence flows up."
+          },
+          {
+            "q": "Which is NOT one of the six BACCM concepts?",
+            "opts": [
+              "Value",
+              "Context",
+              "Velocity",
+              "Stakeholder"
+            ],
+            "a": 2,
+            "why": "Velocity is a delivery metric, not a core concept."
+          }
+        ],
+        "takeaways": [
+          "The horizon map is today's backbone",
+          "Questions are welcome — parked items get answered today"
+        ]
+      },
+      "presenter": {
+        "purpose": "Re-energise, consolidate Day 1 and clear the parking lot.",
+        "openingLine": "\"Morning! Last night I looked at your horizon maps. Three groups nailed the stories; only one nailed the feedback loops. So today, we follow the evidence upward.\"",
+        "beats": [
+          {
+            "label": "Recall quiz",
+            "minutes": 5,
+            "notes": "Rapid-fire recall using the grid; cold-call gently."
+          },
+          {
+            "label": "Parking lot",
+            "minutes": 6,
+            "notes": "Answer or assign each question to a session."
+          },
+          {
+            "label": "Overnight insight",
+            "minutes": 4,
+            "notes": "Chat waterfall: everyone posts, nobody hits enter until told."
+          }
+        ],
+        "facilitationNotes": "Keep this tight. If the parking lot is large, cluster and assign rather than answering everything now.",
+        "whatGood": "Everyone can recall the three horizons and nine principles; no unresolved blocking questions.",
+        "commonFailure": "Recap turns into re-teaching — fix: recall only; deeper issues go to the matching session.",
+        "debrief": [
+          "What stuck from yesterday?",
+          "What's still fuzzy?"
+        ],
+        "materials": [
+          "Day 1 horizon map screenshots",
+          "Parking lot board"
+        ]
+      }
+    },
+    {
+      "id": "d2-s1",
+      "num": "3A",
+      "title": "The Strategy Horizon",
+      "subtitle": "Analysing goals, outcomes and options at the top of the map",
+      "dayId": "d2",
+      "time": "09:15–10:30",
+      "minutes": 75,
+      "participant": {
+        "bigIdea": "At the strategy horizon, the ABA's job is to make the bet explicit — and testable.",
+        "overview": "Strategy horizon analysis supports the organisation's longest-range decisions: which outcomes matter, where to invest and which business model or service assumptions to test. Feedback is slow, stakes are high and stakeholders are senior. Agile analysis contributes by converting strategy statements into measurable outcomes, surfacing the riskiest assumptions and framing investment as a series of options rather than a single commitment.\n\nWe work through the case's strategy horizon: from 'improve return to work' to a measurable outcome, an assumption map, and an options comparison.",
+        "objectives": [
+          "Describe the purpose and stakeholders of strategy horizon analysis",
+          "Translate a strategic intent into measurable outcomes with leading indicators",
+          "Identify and rank the riskiest strategic assumptions",
+          "Compare investment options using value, risk and learning speed"
+        ],
+        "keyPoints": [
+          {
+            "title": "Intent → outcome",
+            "body": "Strategic intent becomes an outcome with baseline, target, timeframe, guardrails and leading indicators."
+          },
+          {
+            "title": "Assumptions are the risk",
+            "body": "Every strategy rests on beliefs. Rank them by impact and uncertainty; test the top-right first."
+          },
+          {
+            "title": "Options, not a plan",
+            "body": "Frame investment as staged options with decision points that evidence can trigger."
+          },
+          {
+            "title": "Typical techniques",
+            "body": "Business model canvas, value stream mapping, purpose alignment, impact mapping, assumption mapping, Kano and real options thinking."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "What happens at the strategy horizon",
+            "body": "Strategy horizon analysis answers: *why change, where to play, and how will we know it worked?* Typical inputs are corporate plans, regulatory direction, customer research and performance data. Outputs include outcome statements, investment themes, option assessments and the guardrails within which initiatives operate.\n\nCadence is long — quarterly or annual planning, with occasional off-cycle pivots. The ABA's distinctive contribution is to keep strategy honest: anchor it in evidence, make assumptions visible, and design leading indicators so the organisation doesn't wait a year to learn it was wrong."
+          },
+          {
+            "heading": "From intent to outcome",
+            "body": "**Intent:** 'Help injured workers return to work sooner by reducing financial stress early in the claim.'\n\n| Element | Case example |\n|---|---|\n| Outcome | Average lodgement-to-first-payment ≤7 days |\n| Baseline | 18.2 days (illustrative) |\n| Timeframe | Within 12 months |\n| Supporting measure | Claim-status calls −40% |\n| Guardrails | No increase in incorrectly accepted claims; dispute rate not worse |\n| Leading indicators | % lodgements with valid certificate at submission; % employers notified within 1 day; median days by risk tier |\n\nLeading indicators move within weeks and predict the lagging outcome — they are what lets strategy receive feedback quickly."
+          },
+          {
+            "heading": "Assumption mapping",
+            "body": "Plot assumptions on two axes: **impact if wrong** and **current evidence**. High-impact, low-evidence assumptions are tested first.\n\nCase assumptions:\n- A large share of claims is genuinely low-risk and suitable for fast-tracking. *(High impact, low evidence — test first via historical data analysis.)*\n- The employer forwarding window is the largest single delay. *(High impact, medium evidence — validate with timestamp analysis.)*\n- Workers will lodge directly if offered a digital channel. *(Medium impact, low evidence — test via pilot.)*\n- Agents will accept process change without KPI changes. *(High impact, low evidence — test via stakeholder interviews.)*"
+          },
+          {
+            "heading": "Comparing options",
+            "body": "| Option | Description | Value potential | Risk | Speed to learn |\n|---|---|---|---|---|\n| A | Expand contact centre to chase claims | Low (treats symptom) | Low | Fast |\n| B | Buy a claims-intake platform, integrate via middleware; phased MVP | High | Medium | Medium |\n| C | Build bespoke end-to-end claims system | High | High | Slow |\n| D | Policy and process change only (parallel notification, triage) | Medium | Low | Fast |\n\nA strong recommendation often combines options: start D immediately to learn fast and bank early value, while staging B with a decision point after the MVP. That is real-options thinking — buy the right, not the obligation, to invest further."
+          }
+        ],
+        "activities": [
+          {
+            "id": "m3a-act1",
+            "title": "Assumption map",
+            "instructions": "In pairs, add three more assumptions for the case and place all seven on an impact × evidence grid. Choose the top two to test and design a test for each (method, measure, time).",
+            "minutes": 20,
+            "prompts": [
+              {
+                "id": "m3a-act1-p1",
+                "label": "Three new assumptions",
+                "placeholder": ""
+              },
+              {
+                "id": "m3a-act1-p2",
+                "label": "Grid placement (impact / evidence) for all seven",
+                "placeholder": ""
+              },
+              {
+                "id": "m3a-act1-p3",
+                "label": "Test design #1",
+                "placeholder": "Method · measure · time"
+              },
+              {
+                "id": "m3a-act1-p4",
+                "label": "Test design #2",
+                "placeholder": ""
+              }
+            ]
+          },
+          {
+            "id": "m3a-act2",
+            "title": "Strategy outcome for your initiative",
+            "instructions": "Write the strategic outcome for your own initiative using the intent → outcome table, including at least one guardrail and two leading indicators.",
+            "minutes": 12,
+            "prompts": [
+              {
+                "id": "m3a-act2-p1",
+                "label": "Outcome table",
+                "placeholder": "Outcome · Baseline · Timeframe · Guardrails · Leading indicators"
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Act as a strategy-horizon business analyst. Our strategic intent is: [paste]. Produce (1) an outcome statement with baseline, target and timeframe; (2) two guardrail metrics; (3) three leading indicators that would move within six weeks; (4) the eight riskiest assumptions ranked by impact and evidence; (5) a staged-options recommendation with decision points. Flag anything you've assumed about our context.",
+        "quiz": [
+          {
+            "q": "Why are leading indicators important at the strategy horizon?",
+            "opts": [
+              "They replace the outcome",
+              "They provide early feedback before the lagging outcome moves",
+              "Boards require them",
+              "They measure team velocity"
+            ],
+            "a": 1,
+            "why": "They shorten the strategy feedback loop."
+          },
+          {
+            "q": "Which assumption should be tested first?",
+            "opts": [
+              "Low impact, low evidence",
+              "High impact, high evidence",
+              "High impact, low evidence",
+              "Low impact, high evidence"
+            ],
+            "a": 2,
+            "why": "Greatest risk, least known."
+          },
+          {
+            "q": "Combining a fast low-cost option with a staged larger investment reflects…",
+            "opts": [
+              "Waterfall planning",
+              "Real-options thinking",
+              "Gold plating",
+              "Scope creep"
+            ],
+            "a": 1,
+            "why": "Keep the right to invest further once evidence arrives."
+          }
+        ],
+        "takeaways": [
+          "Turn intent into outcome + guardrails + leading indicators",
+          "Test the riskiest strategic assumptions first",
+          "Stage investment as options with decision points",
+          "The ABA keeps strategy evidence-based"
+        ]
+      },
+      "presenter": {
+        "purpose": "Equip participants to contribute credibly at strategy level with outcomes, assumptions and options.",
+        "openingLine": "\"Most BAs never get invited to strategy conversations. By the end of this session you'll have three tools that will get you invited back.\"",
+        "beats": [
+          {
+            "label": "Hook and purpose of the horizon",
+            "minutes": 8,
+            "notes": "Ask: who has been in a strategy conversation? What was missing?"
+          },
+          {
+            "label": "Intent to outcome",
+            "minutes": 12,
+            "notes": "Build the table live with the room."
+          },
+          {
+            "label": "Assumption mapping",
+            "minutes": 10,
+            "notes": "Demonstrate with the four case assumptions."
+          },
+          {
+            "label": "Activity 1",
+            "minutes": 20,
+            "notes": "Pairs in breakouts."
+          },
+          {
+            "label": "Options comparison",
+            "minutes": 8,
+            "notes": "Walk the options table; ask which they'd recommend."
+          },
+          {
+            "label": "Activity 2",
+            "minutes": 12,
+            "notes": "Solo on own initiative."
+          },
+          {
+            "label": "Debrief",
+            "minutes": 5,
+            "notes": "One test design shared; bridge to 3B."
+          }
+        ],
+        "facilitationNotes": "Participants from delivery-heavy roles may feel out of depth. Reassure: these tools are BA tools at a different altitude. In Activity 1, push for tests that take weeks not months — historical data analysis is often the quickest.",
+        "roleplay": {
+          "persona": "Chief Digital Officer",
+          "line": "We've already decided to buy the platform. I don't need options, I need delivery.",
+          "curveball": "The vendor says the integration is out of the box.",
+          "move": "Accept the decision, then frame a decision point: 'Let's run parallel notification now and agree the MVP measure. If the platform MVP doesn't beat the process-only result, we'll know before full rollout.' Ask for the vendor's evidence of integration with agent systems."
+        },
+        "whatGood": "Outcomes with guardrails; tests designed for weeks not months; options with explicit decision points.",
+        "commonFailure": "Leading indicators that are just activity counts ('number of meetings held') — fix: ask 'does this predict the outcome?'",
+        "debrief": [
+          "Which assumption surprised you?",
+          "What's the fastest test you designed?",
+          "Who in your organisation would care about guardrails?"
+        ],
+        "answerKey": "**Additional assumptions:** employers will respond faster to direct notification; certificates can be validated automatically; the WIRC Act permits parallel notification; workers trust a digital channel with medical information. **Top tests:** (1) Low-risk share — analyse 12 months of claims by injury type and outcome; measure % that would meet triage rules; two weeks. (2) Forwarding window as largest delay — timestamp analysis of lodgement → employer → agent → determination → payment for 500 claims; one week.",
+        "materials": [
+          "Intent-to-outcome template",
+          "Assumption grid",
+          "Options table"
+        ]
+      }
+    },
+    {
+      "id": "d2-s2",
+      "num": "3B",
+      "title": "Initiative and Delivery Horizons",
+      "subtitle": "From solution approach to stories with examples",
+      "dayId": "d2",
+      "time": "10:45–12:15",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "The initiative horizon decides what to build first; the delivery horizon makes it unambiguous.",
+        "overview": "Once strategy sets the outcome, the initiative horizon shapes a solution approach: the capabilities required, the minimum viable product and the release plan expressed as hypotheses. The delivery horizon then turns the next slice into small, testable work items with concrete examples.\n\nThis session covers both, because the hand-off between them is where many agile teams lose value. We build a story map for digital lodgement, define the MVP, and write delivery-ready stories with examples and acceptance criteria.",
+        "objectives": [
+          "Explain the purpose and outputs of initiative and delivery horizon analysis",
+          "Build a story map and slice an MVP",
+          "Write stories with concrete examples and acceptance criteria",
+          "Choose appropriate techniques for each horizon"
+        ],
+        "keyPoints": [
+          {
+            "title": "Initiative: shape the solution",
+            "body": "Capabilities, story maps, MVP and release hypotheses. Cadence: weeks to a quarter."
+          },
+          {
+            "title": "Delivery: make it concrete",
+            "body": "Stories, examples, acceptance criteria and lightweight models — done just before the work is pulled."
+          },
+          {
+            "title": "Story maps bridge both",
+            "body": "The backbone is initiative-level; the slices below become delivery backlog."
+          },
+          {
+            "title": "Examples are the specification",
+            "body": "Concrete examples remove ambiguity faster than prose and double as tests."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Initiative horizon analysis",
+            "body": "Initiative analysis answers *what solution, delivered in what order, will move the outcome?* Typical activities:\n\n- **Capability and context mapping** to understand what must change.\n- **Stakeholder analysis** for the initiative's specific landscape.\n- **Story mapping** to lay out the user journey and slice releases.\n- **MVP definition** — the smallest release that tests the riskiest hypothesis.\n- **Release hypotheses** — each release has an expected measurable effect.\n\nTechniques the guide associates here include story mapping, impact mapping, personas, journey mapping, value modelling and minimal viable product thinking."
+          },
+          {
+            "heading": "Story map for digital lodgement",
+            "body": "**Backbone (worker journey):** Report injury → Lodge claim → Provide evidence → Employer informed → Claim assessed → Receive first payment → Track status\n\n| Release | Slice | Hypothesis |\n|---|---|---|\n| MVP | Worker lodges online; uploads certificate; employer emailed in parallel; manual triage | Low-risk claims reach first payment in <10 days |\n| R2 | Automated certificate checks; rule-based low-risk triage | Low-risk claims <7 days; agent effort per claim −20% |\n| R3 | Proactive SMS status; employer portal confirmation | Claim-status calls −40% |\n\nThe MVP is deliberately unglamorous: manual triage behind a simple digital front end. It tests the biggest assumption (parallel notification shortens time) before investing in automation."
+          },
+          {
+            "heading": "Delivery horizon analysis",
+            "body": "Delivery analysis answers *exactly what does this increment do, and how will we know it's done?* It happens in refinement, just before the work is pulled, with the people who will build and test it.\n\n**Story:** As an injured worker, I want to upload my certificate of capacity when I lodge, so that my claim isn't held up waiting for it.\n\n**Examples (specification by example):**\n\n| Given | When | Then |\n|---|---|---|\n| A valid PDF certificate dated within 14 days | Worker uploads at lodgement | Certificate is attached and status shows 'Received' |\n| A clear phone photo of a certificate | Worker uploads | Accepted and flagged for agent visual check |\n| A certificate whose capacity period has expired | Worker uploads | Worker is told it has expired and how to get a current one; lodgement can continue |\n| No certificate | Worker submits | Lodgement succeeds; worker receives a reminder with guidance within 24 hours |\n\nNotice the third and fourth rows: lodgement is never blocked, because blocking would slow the outcome. That design choice came from the strategy-level guardrail and outcome — the horizons connecting."
+          },
+          {
+            "heading": "Slicing well",
+            "body": "Good slices are **vertical** (deliver a thin end-to-end piece of value), **independent** where possible, and **testable**. Useful slicing patterns: by workflow step, by business rule variation, by data variation, by happy path vs exceptions, by user type. Avoid horizontal slices ('build the database', 'build the UI') that deliver no value alone."
+          }
+        ],
+        "activities": [
+          {
+            "id": "m3b-act1",
+            "title": "Extend the story map",
+            "instructions": "In groups, add two activities under each backbone step for the MVP and R2. Then challenge the MVP: is there an even smaller slice that would test the hypothesis?",
+            "minutes": 20,
+            "prompts": [
+              {
+                "id": "m3b-act1-p1",
+                "label": "Activities per backbone step",
+                "placeholder": ""
+              },
+              {
+                "id": "m3b-act1-p2",
+                "label": "A smaller MVP option",
+                "placeholder": ""
+              },
+              {
+                "id": "m3b-act1-p3",
+                "label": "Hypothesis for your smaller MVP",
+                "placeholder": ""
+              }
+            ]
+          },
+          {
+            "id": "m3b-act2",
+            "title": "Stories with examples",
+            "instructions": "Write two delivery stories for the case (e.g. parallel employer notification; low-risk triage flag) with at least three Given/When/Then examples each, including one exception.",
+            "minutes": 20,
+            "prompts": [
+              {
+                "id": "m3b-act2-p1",
+                "label": "Story 1 with examples",
+                "placeholder": ""
+              },
+              {
+                "id": "m3b-act2-p2",
+                "label": "Story 2 with examples",
+                "placeholder": ""
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Here is a user story: [paste]. Generate 6 Given/When/Then examples covering the happy path, at least two business-rule variations and two exceptions. Then identify any ambiguous words in the story and list the questions I should ask the product owner. Don't invent business rules — mark them as questions.",
+        "quiz": [
+          {
+            "q": "What is the main purpose of the MVP in the case?",
+            "opts": [
+              "Deliver every feature quickly",
+              "Test the riskiest hypothesis with the smallest release",
+              "Satisfy the vendor contract",
+              "Replace manual triage"
+            ],
+            "a": 1,
+            "why": "Manual triage behind a simple front end tests parallel notification cheaply."
+          },
+          {
+            "q": "Which is a vertical slice?",
+            "opts": [
+              "Build the database schema",
+              "Worker uploads a PDF certificate and sees 'Received'",
+              "Design all screens",
+              "Write the API layer"
+            ],
+            "a": 1,
+            "why": "It delivers end-to-end value."
+          },
+          {
+            "q": "Why does lodgement continue when a certificate has expired?",
+            "opts": [
+              "It's a defect",
+              "Blocking would slow the outcome; the guardrail is handled by agent review",
+              "The law requires it",
+              "To reduce testing"
+            ],
+            "a": 1,
+            "why": "Delivery design follows strategic outcome and guardrails."
+          },
+          {
+            "q": "When does delivery horizon analysis typically happen?",
+            "opts": [
+              "At project initiation",
+              "Just before work is pulled, in refinement",
+              "After release",
+              "During annual planning"
+            ],
+            "a": 1,
+            "why": "Just enough, just in time."
+          }
+        ],
+        "takeaways": [
+          "Story maps connect initiative and delivery",
+          "MVPs test hypotheses, not feature lists",
+          "Examples are the clearest specification",
+          "Slice vertically"
+        ]
+      },
+      "presenter": {
+        "purpose": "Build practical story mapping, MVP and example-writing skills linked to the case outcome.",
+        "openingLine": "\"Yesterday we wrote 'upload certificate'. Today we find out how many ways that story can go wrong — and why that's the most valuable fifteen minutes of analysis you'll do this sprint.\"",
+        "beats": [
+          {
+            "label": "Hook",
+            "minutes": 5,
+            "notes": "Ask for ways certificate upload can go wrong; collect five fast."
+          },
+          {
+            "label": "Initiative horizon and story map",
+            "minutes": 15,
+            "notes": "Build the backbone live."
+          },
+          {
+            "label": "Activity 1",
+            "minutes": 20,
+            "notes": "Groups in breakouts."
+          },
+          {
+            "label": "Delivery horizon and examples",
+            "minutes": 15,
+            "notes": "Walk the example table; emphasise the never-block design."
+          },
+          {
+            "label": "Activity 2",
+            "minutes": 20,
+            "notes": "Pairs."
+          },
+          {
+            "label": "Slicing patterns and debrief",
+            "minutes": 15,
+            "notes": "Share best exception example; review a horizontal slice and fix it together."
+          }
+        ],
+        "facilitationNotes": "Story mapping online works best on a shared board with sticky notes; pre-build the backbone. When groups propose a smaller MVP, celebrate it — e.g. 'email form + manual entry' is a valid MVP. For Activity 2, insist on at least one exception example.",
+        "whatGood": "A thinner MVP than the one presented; examples covering exceptions; stories traceable to the hypothesis.",
+        "commonFailure": "Examples that restate the story ('Given a user, when they do the thing, then it works') — fix: require concrete data values in each example.",
+        "debrief": [
+          "Did anyone find a smaller MVP?",
+          "Which exception example was most revealing?",
+          "Where does the initiative-to-delivery handover break in your organisation?"
+        ],
+        "answerKey": "**Smaller MVP:** a simple web form feeding a shared mailbox, with an automated email to the employer and manual agent entry — tests parallel notification in two weeks without integration.\n\n**Story: parallel employer notification.** Given a lodged claim with a valid employer email, when the worker submits, then the employer receives notice within 5 minutes with a link to confirm details. Given an invalid employer email, then the agent is alerted to contact the employer by phone within one business day. Given the employer confirms within 2 days, then the claim is marked 'Employer confirmed' and the agent proceeds.\n\n**Story: low-risk triage flag.** Given an injury type on the low-risk list and a valid certificate, then the claim is flagged low-risk. Given a psychological injury, then it is never auto-flagged. Given missing employer details, then not flagged until confirmed.",
+        "materials": [
+          "Pre-built story map backbone",
+          "Example table template",
+          "Slicing patterns card"
+        ]
+      }
+    },
+    {
+      "id": "d2-s3",
+      "num": "4A",
+      "title": "Agile events, across horizons, and scaling",
+      "subtitle": "Where analysis happens in the cadence — and what changes at scale",
+      "dayId": "d2",
+      "time": "13:00–14:30",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "Analysis has a rhythm; get into the events and you get into the decisions.",
+        "overview": "Agile work runs on recurring events — planning, refinement, reviews, retrospectives — and larger organisations add events for coordinating many teams. The ABA's influence depends on knowing what each event is for and what analysis it needs. This session maps analysis to events at each horizon, explores how analysis carries across horizons, and looks at what changes when you scale to many teams working on one product or portfolio.",
+        "objectives": [
+          "Identify the analysis contribution to common agile events",
+          "Map events to horizons",
+          "Explain how analysis outputs flow across horizons",
+          "Describe analysis challenges and practices at scale"
+        ],
+        "keyPoints": [
+          {
+            "title": "Every event has an analysis job",
+            "body": "Refinement clarifies, planning commits, review gathers evidence, retrospective improves the way analysis is done."
+          },
+          {
+            "title": "Each horizon has its events",
+            "body": "Delivery: sprint events. Initiative: release/quarterly planning, roadmap review. Strategy: portfolio and strategy reviews."
+          },
+          {
+            "title": "Scale adds coordination",
+            "body": "More teams means shared backlogs, dependencies and consistent definitions — analysis becomes a connective function."
+          },
+          {
+            "title": "Frameworks differ; needs don't",
+            "body": "Whatever the scaling framework, someone must keep needs, value and dependencies coherent."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Analysis in delivery events",
+            "body": "| Event | Purpose | ABA contribution |\n|---|---|---|\n| Backlog refinement | Make upcoming work ready | Slicing, examples, open questions, dependency checks |\n| Sprint planning | Commit to a goal and work | Clarify goal against outcome; confirm readiness |\n| Daily stand-up | Coordinate | Unblock questions quickly; avoid analysis queues |\n| Sprint review | Inspect increment with stakeholders | Prepare evidence: did it move the indicator? Capture feedback as backlog changes |\n| Retrospective | Improve how we work | Raise analysis-related impediments |"
+          },
+          {
+            "heading": "Events at initiative and strategy horizons",
+            "body": "- **Initiative:** quarterly or release planning (choose the next release hypothesis), roadmap reviews, MVP results reviews (persevere, pivot, stop), stakeholder showcases.\n- **Strategy:** portfolio reviews, outcome reviews, investment decisions, strategy refreshes.\n\nIn the case: a fortnightly sprint review shows employer notification working; a monthly initiative review examines days-to-payment by risk tier; a quarterly steering review checks the ≤7-day trajectory and guardrails and decides whether to fund R2 automation."
+          },
+          {
+            "heading": "Analysis across horizons",
+            "body": "Analysis outputs must travel. A delivery finding (employers ignore email notices 30% of the time) changes an initiative decision (add SMS to employers in R2) and potentially a strategic assumption (employer responsiveness). The ABA builds this flow through:\n\n- **Traceability light:** each backlog item links to a capability and outcome.\n- **Evidence summaries:** a one-page 'what we learnt' at each review, rolled upward.\n- **Shared measures:** the same leading indicators reported at all three horizons."
+          },
+          {
+            "heading": "Scaling",
+            "body": "When several teams work on one product, analysis challenges multiply: competing priorities, cross-team dependencies, inconsistent definitions of data and terms, and features that span teams.\n\nPractices that help:\n- **A shared product backlog** with a clear owner for cross-team priority.\n- **Feature- or capability-level analysis** held by an ABA working across teams.\n- **Shared domain models and glossaries** ('lodgement date' means one thing everywhere).\n- **Joint planning events** to surface dependencies early.\n- **Communities of practice** so analysts share techniques and templates.\n\nIn the case, scaling would arrive when intake, agent integration and payments teams all work on first-payment speed. Without a shared definition of 'first payment date', each team would report a different number."
+          }
+        ],
+        "activities": [
+          {
+            "id": "m4a-act1",
+            "title": "Event-analysis map",
+            "instructions": "For the case, list one event per horizon and describe the analysis input, the decision made and the evidence fed upward.",
+            "minutes": 20,
+            "prompts": [
+              {
+                "id": "m4a-act1-p1",
+                "label": "Delivery event: input · decision · evidence up",
+                "placeholder": ""
+              },
+              {
+                "id": "m4a-act1-p2",
+                "label": "Initiative event",
+                "placeholder": ""
+              },
+              {
+                "id": "m4a-act1-p3",
+                "label": "Strategy event",
+                "placeholder": ""
+              }
+            ]
+          },
+          {
+            "id": "m4a-act2",
+            "title": "Scaling risks",
+            "instructions": "Assume three teams (Intake, Agent Integration, Payments). Identify three cross-team analysis risks and a practice to mitigate each. Include one shared definition that must be agreed.",
+            "minutes": 20,
+            "prompts": [
+              {
+                "id": "m4a-act2-p1",
+                "label": "Risk 1 and mitigation",
+                "placeholder": ""
+              },
+              {
+                "id": "m4a-act2-p2",
+                "label": "Risk 2 and mitigation",
+                "placeholder": ""
+              },
+              {
+                "id": "m4a-act2-p3",
+                "label": "Risk 3 and mitigation",
+                "placeholder": ""
+              },
+              {
+                "id": "m4a-act2-p4",
+                "label": "Shared definition to agree",
+                "placeholder": ""
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "We have [number] teams working on [product]. Their backlogs are: [summaries]. Identify cross-team dependencies, inconsistent terms or data definitions, and features that span teams. Propose a shared glossary of the ten most important terms and an agenda for a joint planning session focused on dependencies.",
+        "quiz": [
+          {
+            "q": "Which event is the main opportunity to gather evidence about whether an increment moved an indicator?",
+            "opts": [
+              "Daily stand-up",
+              "Sprint review",
+              "Retrospective",
+              "Sprint planning"
+            ],
+            "a": 1,
+            "why": "Reviews inspect the increment with stakeholders."
+          },
+          {
+            "q": "A delivery finding that changes an initiative decision is an example of…",
+            "opts": [
+              "Scope creep",
+              "Analysis flowing across horizons",
+              "A defect",
+              "Waste"
+            ],
+            "a": 1,
+            "why": "Evidence travels upward."
+          },
+          {
+            "q": "At scale, why is a shared glossary important?",
+            "opts": [
+              "Auditors require one",
+              "Different teams otherwise define key terms and measures differently",
+              "It replaces stories",
+              "It speeds up stand-ups"
+            ],
+            "a": 1,
+            "why": "e.g. 'first payment date' must mean one thing."
+          }
+        ],
+        "takeaways": [
+          "Know each event's analysis job",
+          "Every horizon has events — get into them",
+          "Build upward evidence flow deliberately",
+          "At scale, shared definitions and dependency analysis are essential"
+        ]
+      },
+      "presenter": {
+        "purpose": "Show participants where in the cadence they can influence decisions, and prepare them for scaled environments.",
+        "openingLine": "\"Show of hands: who's ever been told 'that decision was made at PI planning, you weren't there'? Today is about being in the room — or making sure your analysis is.\"",
+        "beats": [
+          {
+            "label": "Hook",
+            "minutes": 5,
+            "notes": "Show of hands; collect stories."
+          },
+          {
+            "label": "Delivery events table",
+            "minutes": 15,
+            "notes": "Focus on sprint review as the evidence event."
+          },
+          {
+            "label": "Initiative and strategy events",
+            "minutes": 10,
+            "notes": "Use the case cadence."
+          },
+          {
+            "label": "Activity 1",
+            "minutes": 20,
+            "notes": "Pairs."
+          },
+          {
+            "label": "Across horizons and scaling",
+            "minutes": 15,
+            "notes": "Tell the 30% email-ignored story; then scaling practices."
+          },
+          {
+            "label": "Activity 2",
+            "minutes": 20,
+            "notes": "Trios."
+          },
+          {
+            "label": "Debrief",
+            "minutes": 5,
+            "notes": "Harvest shared definitions; bridge to challenges."
+          }
+        ],
+        "facilitationNotes": "Stay framework-neutral: some participants use SAFe, others LeSS or home-grown models. Translate terms rather than debating frameworks. Activity 2's shared definition is usually 'first payment date' or 'lodgement date' — draw out how timestamp sources differ.",
+        "whatGood": "Event maps with explicit upward evidence; scaling risks tied to concrete mitigations and at least one shared definition.",
+        "commonFailure": "Framework debates hijack the session — fix: park them and ask 'what analysis does this event need, whatever it's called?'",
+        "debrief": [
+          "Which event do you most need to be in?",
+          "What shared definition would most help your organisation?",
+          "How does evidence currently reach your executives?"
+        ],
+        "answerKey": "**Event map:** Delivery — sprint review: input is the employer notification increment and confirmation-rate data; decision is accept and tune reminders; evidence up: 30% of employers ignore email. Initiative — monthly review: input days-to-payment by tier; decision: add employer SMS to R2; evidence up: employer responsiveness assumption weaker than believed. Strategy — quarterly steering: input trajectory vs ≤7 days and guardrails; decision: fund R2 automation or pivot.\n\n**Scaling risks:** inconsistent definition of 'first payment date' (agree glossary: date funds are released to the worker's account); Intake ships fields Payments can't consume (shared data model, joint refinement); competing priorities (single product owner for cross-team ordering).",
+        "materials": [
+          "Events table slide",
+          "Case cadence calendar",
+          "Three-team scenario card"
+        ]
+      }
+    },
+    {
+      "id": "d2-s4",
+      "num": "4B",
+      "title": "Common challenges and competencies",
+      "subtitle": "What goes wrong, and what the ABA needs to be good at",
+      "dayId": "d2",
+      "time": "14:45–16:15",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "Agile analysis fails in predictable ways — and the competencies that prevent it can be learnt.",
+        "overview": "Even well-intentioned agile teams hit recurring analysis problems: backlogs that grow without value, stakeholders who disengage, documentation that is either missing or excessive, and pressure to treat agile as 'faster waterfall'. This session names those challenges, offers practical responses, and then looks at the underlying competencies the guide associates with agile analysis — the mix of thinking, interpersonal and domain capabilities that make an ABA effective.",
+        "objectives": [
+          "Recognise common agile analysis challenges and their causes",
+          "Select practical responses to each challenge",
+          "Describe the underlying competencies of an effective ABA",
+          "Create a personal development plan"
+        ],
+        "keyPoints": [
+          {
+            "title": "Challenges are patterns",
+            "body": "Bloated backlogs, absent stakeholders, documentation extremes, horizon confusion and outcome-less delivery recur everywhere."
+          },
+          {
+            "title": "Respond with principles",
+            "body": "Each challenge maps to a weak principle — use the principle to choose the fix."
+          },
+          {
+            "title": "Competencies, not just techniques",
+            "body": "Systems thinking, facilitation, negotiation, adaptability and domain knowledge matter as much as any canvas."
+          },
+          {
+            "title": "Grow deliberately",
+            "body": "Pick two competencies and practise them in real events with feedback."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Common challenges and responses",
+            "body": "| Challenge | Symptom | Likely weak principle | Response |\n|---|---|---|---|\n| Bloated backlog | Hundreds of items, no clear top ten | Analyse to determine what is valuable | Rank against outcome; archive anything untouched for 90 days |\n| Absent stakeholders | Reviews with no business attendees | Stimulate collaboration | Shorter, outcome-focused reviews; go to stakeholders |\n| Documentation extremes | Either nothing or 80-page specs | Avoid waste | Document what must outlive the conversation: rules, decisions, models |\n| Horizon confusion | Execs debating field names; teams guessing strategy | See the whole | Make the horizon map visible; route questions |\n| Output obsession | Velocity celebrated; outcome unmeasured | Deliver value continuously | Report leading indicators at every review |\n| Faster waterfall | Fixed scope chopped into sprints | Embrace uncertainty | Re-frame scope as hypotheses with decision points |"
+          },
+          {
+            "heading": "Documentation that earns its place",
+            "body": "Agile teams still document — selectively. Keep: business rules (e.g. low-risk triage criteria), decisions and their rationale, domain models and glossaries, regulatory traceability (statutory timeframes), and examples that serve as tests. Skip: duplicated narrative, speculative detail for work not yet prioritised, and documents nobody reads.\n\nIn a regulated environment like workers' compensation, traceability to legislation is non-negotiable — but it can be lightweight: a table linking each rule to its statutory source."
+          },
+          {
+            "heading": "Underlying competencies",
+            "body": "| Cluster | Competencies | Agile emphasis |\n|---|---|---|\n| Analytical thinking | Systems thinking, conceptual thinking, decision-making, creative thinking | Seeing the whole across horizons; framing hypotheses |\n| Behavioural | Adaptability, ethics, personal accountability, trustworthiness | Comfort with changing direction on evidence |\n| Interaction | Facilitation, negotiation, teaching, teamwork, leadership | Running refinement; coaching the team to analyse |\n| Communication | Verbal, written, visual, listening | Concise artefacts; telling the evidence story |\n| Business and domain knowledge | Industry, organisation, solution knowledge | Knowing statutory constraints, agent models |\n| Tools and technology | Collaboration and modelling tools, AI assistants | Using AI to draft while retaining judgement |"
+          },
+          {
+            "heading": "Agile analysis and AI",
+            "body": "AI agents can draft story maps, example tables and assumption lists in seconds. That raises the value of the ABA's judgement: knowing which assumption actually matters, which example exposes a real rule, and which output reflects the organisation's context rather than generic patterns. Treat AI output as a first draft from a capable but uninformed colleague: feed it context, challenge it, verify against evidence, and never let it decide."
+          }
+        ],
+        "activities": [
+          {
+            "id": "m4b-act1",
+            "title": "Challenge clinic",
+            "instructions": "In trios, each person describes a real challenge (2 minutes). The trio identifies the weak principle and proposes a response that can start next sprint.",
+            "minutes": 25,
+            "prompts": [
+              {
+                "id": "m4b-act1-p1",
+                "label": "My challenge",
+                "placeholder": ""
+              },
+              {
+                "id": "m4b-act1-p2",
+                "label": "Weak principle identified",
+                "placeholder": ""
+              },
+              {
+                "id": "m4b-act1-p3",
+                "label": "Response starting next sprint",
+                "placeholder": ""
+              }
+            ]
+          },
+          {
+            "id": "m4b-act2",
+            "title": "Competency plan",
+            "instructions": "Rate yourself 1–5 on each competency cluster. Pick two to develop and define a practice opportunity, a feedback source and a 90-day check.",
+            "minutes": 15,
+            "prompts": [
+              {
+                "id": "m4b-act2-p1",
+                "label": "Self-ratings by cluster",
+                "placeholder": ""
+              },
+              {
+                "id": "m4b-act2-p2",
+                "label": "Development area 1 — practice · feedback · 90-day check",
+                "placeholder": ""
+              },
+              {
+                "id": "m4b-act2-p3",
+                "label": "Development area 2",
+                "placeholder": ""
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "I'm an agile business analyst. My self-assessment is: [paste ratings]. My current context is: [team, product, organisation]. Suggest a 90-day development plan for my two weakest competencies, with weekly practice opportunities inside normal agile events, how to get feedback, and how I'll know I've improved.",
+        "quiz": [
+          {
+            "q": "A backlog of 400 items with no clear top ten reflects which weak principle?",
+            "opts": [
+              "Get real using examples",
+              "Analyse to determine what is valuable",
+              "Embrace uncertainty",
+              "See the whole"
+            ],
+            "a": 1,
+            "why": "No value-based ordering."
+          },
+          {
+            "q": "Which documentation should an agile team keep in a regulated setting?",
+            "opts": [
+              "Nothing — working software is enough",
+              "Business rules, decisions, and traceability to legislation",
+              "Full 80-page specifications for all future work",
+              "Only meeting minutes"
+            ],
+            "a": 1,
+            "why": "Document what must outlive the conversation."
+          },
+          {
+            "q": "The best stance toward AI-drafted analysis is…",
+            "opts": [
+              "Accept it as authoritative",
+              "Avoid AI entirely",
+              "Treat it as a first draft to challenge with context and evidence",
+              "Use it only for strategy"
+            ],
+            "a": 2,
+            "why": "The ABA retains judgement."
+          }
+        ],
+        "takeaways": [
+          "Challenges are predictable — map each to a principle",
+          "Document what must outlive the conversation",
+          "Competencies outlast techniques",
+          "AI raises the premium on judgement"
+        ]
+      },
+      "presenter": {
+        "purpose": "Normalise common challenges, give practical responses, and turn learning into a personal development plan.",
+        "openingLine": "\"Everything we've taught you will meet reality on Monday. So let's bring reality into the room now — your actual challenges, and how to handle them.\"",
+        "beats": [
+          {
+            "label": "Hook",
+            "minutes": 5,
+            "notes": "Invite one-word challenges in chat."
+          },
+          {
+            "label": "Challenges table",
+            "minutes": 15,
+            "notes": "Map chat words to table rows."
+          },
+          {
+            "label": "Documentation that earns its place",
+            "minutes": 5,
+            "notes": "Case: statutory traceability table."
+          },
+          {
+            "label": "Activity 1: challenge clinic",
+            "minutes": 25,
+            "notes": "Trios; strict 2-minute descriptions."
+          },
+          {
+            "label": "Competencies and AI",
+            "minutes": 15,
+            "notes": "Walk clusters; discuss AI as uninformed colleague."
+          },
+          {
+            "label": "Activity 2: competency plan",
+            "minutes": 15,
+            "notes": "Solo."
+          },
+          {
+            "label": "Debrief",
+            "minutes": 10,
+            "notes": "Revisit 1B principle actions — still right?"
+          }
+        ],
+        "facilitationNotes": "The challenge clinic can become venting. Keep trios to the structure: describe, diagnose principle, propose a next-sprint response. Revisit the 1B health check actions on the shared board — it closes the loop between mindset and practice.",
+        "whatGood": "Responses that are specific, start next sprint and are tied to a principle; development plans with real practice opportunities.",
+        "commonFailure": "Responses depend on someone else changing ('management needs to…') — fix: ask 'what can you do in the next event you attend?'",
+        "debrief": [
+          "Which challenge came up most?",
+          "Which competency will you practise first?",
+          "Does your 1B action still hold?"
+        ],
+        "answerKey": "**Example clinic result:** Challenge — reviews attended only by the team. Weak principle — stimulate collaboration. Response — cut review to 30 minutes, open with the days-to-payment chart, invite two named agents and one employer representative, ask each for one decision-relevant reaction.\n\n**Example competency plan:** Facilitation — run the next two refinements; ask the scrum master for feedback on question quality; 90-day check: team writes examples without prompting. Systems thinking — build a causal loop of first-payment delays; review with the PO; 90-day check: used in a steering paper.",
+        "materials": [
+          "Challenges table",
+          "Competency self-rating grid",
+          "1B health check board"
+        ]
+      }
+    },
+    {
+      "id": "d2-ex",
+      "num": "EX2",
+      "title": "Exercise: technique selection",
+      "subtitle": "Choose the right technique for the horizon and the question · course close",
+      "dayId": "d2",
+      "time": "16:15–17:00",
+      "minutes": 45,
+      "participant": {
+        "bigIdea": "A good ABA doesn't know every technique — they know which question each one answers.",
+        "overview": "The final exercise brings the whole course together. You receive analysis scenarios from the running case spanning all three horizons. For each, identify the horizon, the question really being asked, the technique you'd use and the output you'd produce. Then apply the same thinking to your own initiative and commit to your first move on Monday.",
+        "objectives": [
+          "Select techniques appropriate to horizon and question",
+          "Justify technique choice against principles",
+          "Commit to a first action on your own initiative"
+        ],
+        "keyPoints": [
+          {
+            "title": "Question first",
+            "body": "Clarify the decision before picking a technique."
+          },
+          {
+            "title": "Horizon shapes depth",
+            "body": "The same technique (e.g. personas) is used lightly at strategy and in detail at delivery."
+          },
+          {
+            "title": "Smallest useful output",
+            "body": "Choose the technique that produces just enough for the decision."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Technique quick reference",
+            "body": "| Horizon | Techniques |\n|---|---|\n| Strategy | Business model canvas, purpose alignment model, value stream mapping, impact mapping, assumption mapping, real options, Kano analysis |\n| Initiative | Story mapping, journey mapping, personas, MVP definition, value modelling, stakeholder mapping, capability mapping |\n| Delivery | User stories, specification by example, Given/When/Then, story slicing, lightweight process and data models, storyboarding, backlog refinement |\n| All horizons | Retrospectives, hypothesis framing, relative estimation, visual models, prioritisation |"
+          },
+          {
+            "heading": "Scenarios",
+            "body": "1. The steering committee asks whether to fund automation (R2) now or wait.\n2. A tester asks what happens when a worker lodges two claims for the same injury.\n3. The PO wants to know which worker groups struggle most with lodgement.\n4. The Agent Panel Manager says agents won't change processes without KPI changes.\n5. The executive asks whether the seven-day target still makes sense after six months.\n6. The team can't agree whether 'lodged' means submitted or validated."
+          }
+        ],
+        "activities": [
+          {
+            "id": "ex2-act1",
+            "title": "Technique selection",
+            "instructions": "In groups, for each scenario record: horizon, the real question, chosen technique, output and the principle that justifies the choice.",
+            "minutes": 25,
+            "prompts": [
+              {
+                "id": "ex2-act1-p1",
+                "label": "Scenarios 1–3",
+                "placeholder": "Horizon · question · technique · output · principle"
+              },
+              {
+                "id": "ex2-act1-p2",
+                "label": "Scenarios 4–6",
+                "placeholder": ""
+              }
+            ]
+          },
+          {
+            "id": "ex2-act2",
+            "title": "My Monday move",
+            "instructions": "For your own initiative, name the first analysis move you'll make, at which horizon, with which technique, in which event.",
+            "minutes": 7,
+            "prompts": [
+              {
+                "id": "ex2-act2-p1",
+                "label": "My first move",
+                "placeholder": "Horizon · technique · event · by when"
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Here is an analysis request I've received: [paste]. Tell me which planning horizon it belongs to, the real decision behind it, two candidate techniques with pros and cons, and the smallest output that would support the decision. Ask me up to three clarifying questions first if needed.",
+        "quiz": [
+          {
+            "q": "'What happens when a worker lodges two claims for the same injury?' calls for…",
+            "opts": [
+              "Business model canvas",
+              "Specification by example",
+              "Real options",
+              "Purpose alignment"
+            ],
+            "a": 1,
+            "why": "A delivery-level rule clarified through examples."
+          },
+          {
+            "q": "'Does the seven-day target still make sense?' belongs to which horizon?",
+            "opts": [
+              "Delivery",
+              "Initiative",
+              "Strategy",
+              "None"
+            ],
+            "a": 2,
+            "why": "Target-setting is strategic."
+          },
+          {
+            "q": "The team disagrees on what 'lodged' means. The best technique is…",
+            "opts": [
+              "Glossary / lightweight data model",
+              "Kano analysis",
+              "Story mapping",
+              "Retrospective"
+            ],
+            "a": 0,
+            "why": "A shared definition resolves ambiguity."
+          }
+        ],
+        "takeaways": [
+          "Question first, technique second",
+          "Match depth to horizon",
+          "Leave with one concrete Monday move"
+        ]
+      },
+      "presenter": {
+        "purpose": "Integrate the course through technique selection and close with commitments.",
+        "openingLine": "\"Six scenarios, three horizons, one case. This is what a normal fortnight looks like for an ABA. Let's see how you'd play it.\"",
+        "beats": [
+          {
+            "label": "Brief",
+            "minutes": 3,
+            "notes": "Show reference table and scenarios."
+          },
+          {
+            "label": "Group work",
+            "minutes": 25,
+            "notes": "Breakouts; broadcast at 12 minutes to move to scenarios 4–6."
+          },
+          {
+            "label": "Debrief scenarios",
+            "minutes": 7,
+            "notes": "Rapid round; focus on 1, 4 and 6."
+          },
+          {
+            "label": "Monday move and close",
+            "minutes": 10,
+            "notes": "Each participant states their move in one sentence; thank-yous and resources."
+          }
+        ],
+        "facilitationNotes": "Accept multiple valid techniques if justified. Scenario 4 is often answered with 'escalate' — redirect to stakeholder analysis and purpose alignment. Finish on time; the Monday move round is the emotional close, so protect those last ten minutes.",
+        "whatGood": "Each scenario has a horizon, a reframed question and a justified technique; every participant leaves with a concrete first move.",
+        "commonFailure": "Choosing favourite techniques regardless of question — fix: ask 'what decision does this output support?'",
+        "debrief": [
+          "Which scenario was hardest to place?",
+          "What's your Monday move?",
+          "What will you tell your manager about this course?"
+        ],
+        "answerKey": "1 — Strategy/Initiative boundary; question: is MVP evidence strong enough to invest? Technique: real options with MVP results review; output: decision paper with evidence and recommendation. Principle: deliver value continuously / embrace uncertainty.\n2 — Delivery; question: what's the duplicate-claim rule? Technique: specification by example; output: Given/When/Then table. Principle: get real using examples.\n3 — Initiative; question: who is underserved? Technique: personas and journey mapping using lodgement data; output: 2–3 personas with pain points. Principle: think as a customer.\n4 — Initiative; question: what drives agent behaviour? Technique: stakeholder mapping plus purpose alignment, then incentive analysis; output: engagement plan and proposed KPI change. Principle: understand what is doable.\n5 — Strategy; question: has evidence changed the bet? Technique: outcome review against leading indicators and assumption map; output: refreshed outcome and assumptions. Principle: see the whole.\n6 — Delivery (with cross-horizon impact); question: what does 'lodged' mean? Technique: glossary and lightweight data model; output: agreed definition with timestamp source. Principle: avoid waste.",
+        "materials": [
+          "Technique reference card",
+          "Scenario cards",
+          "Course resources list"
+        ]
+      }
+    }
+  ],
+  "resources": [
+    {
+      "title": "IIBA Agile Extension to the BABOK Guide v2",
+      "description": "The source guide for this course. Members can download it from IIBA.",
+      "href": "https://www.iiba.org/",
+      "audience": "participant"
+    },
+    {
+      "title": "Horizon map template",
+      "description": "One-page template for mapping an outcome across the strategy, initiative and delivery horizons.",
+      "audience": "participant"
+    },
+    {
+      "title": "Technique selection card",
+      "description": "Quick reference of techniques by planning horizon.",
+      "audience": "participant"
+    },
+    {
+      "title": "Running case one-pager",
+      "description": "Baseline, target, stakeholders and constraints for the illustrative first-payment case.",
+      "audience": "participant"
+    },
+    {
+      "title": "Facilitator setup checklist",
+      "description": "Breakout rooms, shared board frames, case pack and timers to prepare before Day 1.",
+      "audience": "presenter"
+    },
+    {
+      "title": "Answer key pack",
+      "description": "Model answers for all activities and both exercises, consolidated for quick reference.",
+      "audience": "presenter"
+    }
+  ]
+}

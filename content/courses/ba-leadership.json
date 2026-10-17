@@ -1,0 +1,2260 @@
+{
+  "slug": "ba-leadership",
+  "title": "BA Leadership",
+  "shortTitle": "BA Leadership",
+  "tagline": "Build, lead and grow a business analysis practice that sponsors trust.",
+  "format": "Two-day course",
+  "duration": "2 days",
+  "delivery": "Live online · APAC · Times Sydney",
+  "audience": "BA practice leads, lead and senior business analysts stepping into practice leadership, and managers accountable for a BA team or Centre of Excellence.",
+  "order": 1,
+  "outcomes": [
+    "Make a defensible case for BA value using the Sammy Value Model and the upstream/downstream economics",
+    "Design a practice around four jobs, four roles and four services, and assess BACOE readiness honestly",
+    "Set governance — boundaries, forums and decision rights — that gives the practice real influence",
+    "Lead the practice's use of AI with banded guardrails, review and provenance rules",
+    "Calibrate delivery with two foundations, three tiers and practical quality gates",
+    "Measure practice value through three mechanisms and pitch a 90-day plan to a sponsor"
+  ],
+  "leaveWith": [
+    "A value-optimised Jobs To Be Done reframe of a real BA position description",
+    "A BACOE readiness diagnostic with a Go / Hold / No-Go recommendation",
+    "A decision-rights RACI and escalation path",
+    "A one-page AI guardrail standard for your practice",
+    "A six-dimension maturity check and sponsor message",
+    "Tiering for a real initiative and three quality gates",
+    "A 12-month capability plan with pairings",
+    "A staged practice scorecard and quarterly value report outline",
+    "A pitched 90-day practice plan and a Monday commitment"
+  ],
+  "caseStudy": {
+    "title": "Faster first payments for injured workers",
+    "org": "WorkSafe Victoria",
+    "summary": "Claims operations want to cut lodgement-to-first-payment from 18.2 days to ≤7 days within 12 months and reduce claim-status calls by 40%. The As-Is showed that the biggest leak sat between teams: the statutory employer-forwarding window used as a default wait (p95 9.4 days), plus 23% determination rework from invalid certificates of capacity. Participants examine the BA practice behind this work — engaged after funding, no value reporting — and ask what it would take for its BAs to have shaped the investment rather than documented it.",
+    "disclaimer": "Illustrative worked example built from public knowledge; not WorkSafe Victoria data."
+  },
+  "days": [
+    {
+      "id": "d1",
+      "label": "Day 1",
+      "title": "Leading the practice",
+      "blocks": [
+        {
+          "time": "09:00–09:15",
+          "title": "Welcome, objectives and your practice today",
+          "type": "welcome",
+          "moduleId": "d1-s1"
+        },
+        {
+          "time": "09:15–10:30",
+          "title": "The BA value proposition",
+          "type": "session",
+          "moduleId": "d1-s2"
+        },
+        {
+          "time": "10:30–10:45",
+          "title": "Break",
+          "type": "break"
+        },
+        {
+          "time": "10:45–12:15",
+          "title": "The Practice Model: roles, services, maturity",
+          "type": "session",
+          "moduleId": "d1-s3"
+        },
+        {
+          "time": "12:15–13:00",
+          "title": "Lunch",
+          "type": "break"
+        },
+        {
+          "time": "13:00–14:30",
+          "title": "Influence and decisions: governance",
+          "type": "session",
+          "moduleId": "d1-s4"
+        },
+        {
+          "time": "14:30–14:45",
+          "title": "Break",
+          "type": "break"
+        },
+        {
+          "time": "14:45–16:15",
+          "title": "Leading BA through AI: guardrails",
+          "type": "session",
+          "moduleId": "d1-s5"
+        },
+        {
+          "time": "16:15–17:00",
+          "title": "Exercise: practice maturity check and close",
+          "type": "exercise",
+          "moduleId": "d1-s6"
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "label": "Day 2",
+      "title": "Growing the practice",
+      "blocks": [
+        {
+          "time": "09:00–09:15",
+          "title": "Day 1 recap and questions",
+          "type": "welcome",
+          "moduleId": "d2-s1"
+        },
+        {
+          "time": "09:15–10:30",
+          "title": "Standards and playbooks: quality gates",
+          "type": "session",
+          "moduleId": "d2-s2"
+        },
+        {
+          "time": "10:30–10:45",
+          "title": "Break",
+          "type": "break"
+        },
+        {
+          "time": "10:45–12:15",
+          "title": "Coaching and capability: career paths",
+          "type": "session",
+          "moduleId": "d2-s3"
+        },
+        {
+          "time": "12:15–13:00",
+          "title": "Lunch",
+          "type": "break"
+        },
+        {
+          "time": "13:00–14:30",
+          "title": "Measuring practice value: KPIs",
+          "type": "session",
+          "moduleId": "d2-s4"
+        },
+        {
+          "time": "14:30–14:45",
+          "title": "Break",
+          "type": "break"
+        },
+        {
+          "time": "14:45–16:15",
+          "title": "Build your 90-day practice plan",
+          "type": "exercise",
+          "moduleId": "d2-s5"
+        },
+        {
+          "time": "16:15–17:00",
+          "title": "Pitch your plan, feedback and course close",
+          "type": "close",
+          "moduleId": "d2-s6"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "d1-s1",
+      "num": "1.0",
+      "title": "Welcome, objectives and your practice today",
+      "subtitle": "Set the frame, lock in your practice and meet the worked example",
+      "dayId": "d1",
+      "time": "09:00–09:15",
+      "minutes": 15,
+      "participant": {
+        "bigIdea": "Every organisation that employs BAs already has a practice — the only question is whether anyone is leading it.",
+        "overview": "This opening block sets the frame for two days of practice leadership. We separate the **BA practice** (how analysis is actually done across the organisation, defined or not) from the **BACOE** (a small, permanent function that institutionalises and governs that practice). Most of you lead a practice; few of you yet lead a BACOE — and that is fine.\n\nYou will lock in the practice you are going to work on for both days and meet the running worked example: an illustrative claims-operations BA practice at WorkSafe Victoria, working on *Faster first payments for injured workers*. Illustrative worked example built from public knowledge; not WorkSafe Victoria data.",
+        "objectives": [
+          "Distinguish a BA practice from a BACOE in one sentence each",
+          "Name the practice you will work on across both days and its current sponsor",
+          "Describe the course chain from value proposition to a 90-day plan",
+          "Set up your AI agent so it can draft against the BAS playbooks"
+        ],
+        "keyPoints": [
+          {
+            "title": "Practice ≠ BACOE",
+            "body": "The practice is the discipline as exercised by every BA. The BACOE is the governance shell that turns it from a lucky individual outcome into a portfolio-wide capability."
+          },
+          {
+            "title": "One chain, two days",
+            "body": "Day 1 builds the case and the shape of the practice. Day 2 builds the standards, people, measures and a 90-day plan you can pitch."
+          },
+          {
+            "title": "You direct, the agent drafts",
+            "body": "Playbooks are structured specs — inputs, steps, success criteria, outputs. Your agent drafts; you bring the real inputs and the judgement."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Why practice leadership is a different job",
+            "body": "Leading a BA practice is not being the best BA in the room. A practitioner improves the initiatives they work on; a practice lead improves *every* initiative the organisation runs, including the ones they will never touch. The BAS Practice Model describes three layers of leverage:\n\n| Layer | Unit of value | Typical return |\n|---|---|---|\n| Individual leverage | One BA positioned upstream of funding | 10–20× cost of the role |\n| Disciplined delivery | One initiative at the right tier | Avoids both paperwork and missed nuance |\n| Institutional capability | The whole portfolio | 2–6× BACOE cost, far higher in absolute dollars |\n\nThe course moves through all three, but the lens is always the leader's: what must be true across the organisation for good analysis to happen by default rather than by luck."
+          },
+          {
+            "heading": "Meet the worked example",
+            "body": "Where an example is needed we use one organisation. In our illustrative case WorkSafe Victoria's claims operations team is pursuing **Faster first payments for injured workers**: lodgement-to-first-payment currently averages **18.2 days**, and the target is **≤7 days within 12 months**, with claim-status calls down 40%.\n\nThe BA practice supporting this work is typical of many public-sector practices: capable BAs, mostly engaged after funding is approved, no shared standard for when a Project Vision is required, and no regular value report to the executive. Across both days you will look at this practice through the leader's eyes — what would have to change for its BAs to have shaped the investment rather than documented it?\n\n*Illustrative worked example built from public knowledge; not WorkSafe Victoria data.*"
+          },
+          {
+            "heading": "How the two days fit together",
+            "body": "- **Day 1 · Leading the practice** — the value proposition, the Practice Model (roles, services, maturity), governance and decision rights, and leading BA through AI. It closes with a maturity check on your own practice.\n- **Day 2 · Growing the practice** — standards and quality gates, coaching and career paths, measuring practice value, and a 90-day practice plan that you pitch for feedback.\n\nEach module leaves a saved artefact in this portal. By 16:15 on Day 2 those artefacts become the inputs to your plan."
+          }
+        ],
+        "activities": [
+          {
+            "id": "d1-s1-act1",
+            "title": "Lock in your practice",
+            "minutes": 6,
+            "instructions": "Write down the practice you will work on for both days. Be specific: the organisation, the BAs in scope, who sponsors them today (if anyone), and the one frustration you most want to fix. If you do not currently lead a practice, use the one you work in.",
+            "prompts": [
+              {
+                "id": "practice",
+                "label": "My practice (organisation, number of BAs, where they report)",
+                "placeholder": "e.g. 14 BAs across Claims and Digital, reporting into the PMO"
+              },
+              {
+                "id": "sponsor",
+                "label": "Who sponsors the practice today — and how often do you speak with them?"
+              },
+              {
+                "id": "frustration",
+                "label": "The one frustration I most want to fix by the end of Day 2"
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "You are my drafting assistant for a two-day BA Leadership course. I lead (or work in) this BA practice: [describe organisation, number of BAs, reporting line, sponsor]. Over the next two days I will give you BAS playbook steps and my real inputs. Always: (1) draft, never decide; (2) state every assumption explicitly; (3) flag anything you could not know about my organisation as a question for me; (4) use Australian English. Confirm you understand by summarising my practice back to me in five bullet points and listing three questions you would need answered to assess its maturity.",
+        "quiz": [
+          {
+            "q": "Which statement best describes the difference between a BA practice and a BACOE?",
+            "opts": [
+              "They are the same thing under different names",
+              "The practice is how analysis is done by every BA; the BACOE is a small permanent function that governs and institutionalises it",
+              "A BACOE is any team of more than five BAs",
+              "The practice exists only once a BACOE is established"
+            ],
+            "a": 1,
+            "why": "Every organisation with BAs has a practice. A BACOE is the governance shell that makes good practice repeatable — and not every organisation should have one yet."
+          },
+          {
+            "q": "In the course's agent model, who owns the decision?",
+            "opts": [
+              "The AI agent",
+              "The playbook",
+              "The BA leader",
+              "The sponsor's PA"
+            ],
+            "a": 2,
+            "why": "The agent drafts against the playbook spec; the participant brings the real inputs, challenges the draft and owns the decision."
+          }
+        ],
+        "takeaways": [
+          "You already lead a practice — the question is whether it is led deliberately",
+          "Practice and BACOE are different; the BACOE is one option, not the goal",
+          "Everything you build today feeds your 90-day plan tomorrow"
+        ]
+      },
+      "presenter": {
+        "purpose": "Set the frame, lock every participant into a real practice, introduce the worked example and confirm agents are working.",
+        "openingLine": "“Every organisation that employs BAs already has a practice. Some of them are led. By five o'clock tomorrow, yours will be — on paper, with a plan and a sponsor conversation ready.”",
+        "beats": [
+          {
+            "label": "Welcome and frame — practice vs BACOE",
+            "minutes": 4,
+            "notes": "Two definitions on one slide. Ask: hands up if your practice has a written standard for when a Project Vision is required."
+          },
+          {
+            "label": "Course chain and agent model",
+            "minutes": 3,
+            "notes": "Show the two-day chain. Say plainly: the agent doesn't know your organisation; you feed it."
+          },
+          {
+            "label": "Worked example introduction",
+            "minutes": 3,
+            "notes": "18.2 days → ≤7 days. Read the disclaimer aloud once."
+          },
+          {
+            "label": "Lock in your practice (activity)",
+            "minutes": 5,
+            "notes": "Silent writing in the portal. Spot-check three participants' entries aloud at the end."
+          }
+        ],
+        "facilitationNotes": "Keep this to exactly 15 minutes — the value proposition module needs its full 75. Pre-survey results should already be on screen as a single slide (practice size, reporting line, sponsor yes/no). If anyone has no practice, pair them mentally with the worked example and tell them so. Confirm agents by asking everyone to paste the aiPrompt and reply in chat with a thumbs-up when the summary comes back; chase non-responders at the break, not now.",
+        "whatGood": "Every participant has a named practice, a named (or explicitly absent) sponsor and one frustration in the portal; every agent has replied.",
+        "commonFailure": "Opening drags into introductions round the room — and the fix is to take introductions in chat while you talk, then name three patterns you see.",
+        "debrief": [
+          "How many of you named a sponsor you speak to monthly or more?",
+          "What do the frustrations have in common?"
+        ],
+        "answerKey": "A strong lock-in names the reporting line (e.g. “14 BAs reporting into the PMO”), names a sponsor or states “no sponsor”, and frames the frustration as an outcome (“BAs are brought in after the business case is approved”) rather than a complaint (“we're not respected”).",
+        "materials": [
+          "Pre-survey summary slide",
+          "Course chain slide",
+          "Worked example one-pager with disclaimer",
+          "Agent setup one-pager"
+        ]
+      }
+    },
+    {
+      "id": "d1-s2",
+      "num": "1.1",
+      "title": "The BA value proposition",
+      "subtitle": "Same role, different position, wildly different return",
+      "dayId": "d1",
+      "time": "09:15–10:30",
+      "minutes": 75,
+      "participant": {
+        "bigIdea": "The return on a BA is set by where they sit relative to the funding decision, not by how well they write requirements.",
+        "overview": "Most BA practices are positioned as delivery support. They improve clarity and efficiency, and they return roughly **1–3× their cost**. The same skills, positioned *upstream* of funding decisions, return **10–20×** — because they shape what gets funded, not just how it gets delivered.\n\nThis module gives you the value theory (the Sammy Value Model), the economics, the conditions under which the high return collapses, and the language you need to make the case to a sponsor without overclaiming.",
+        "objectives": [
+          "Explain value using the Sammy Value Model (Person, Thing, Context, Value)",
+          "Contrast delivery-support and investment-shaping BA on the six structural axes",
+          "Reproduce the conservative 7.5× base case and explain how it reaches 10–20×",
+          "Name the conditions under which the high return will not materialise",
+          "Rewrite one position-description responsibility as a Job To Be Done with a value metric"
+        ],
+        "keyPoints": [
+          {
+            "title": "Value is an interaction",
+            "body": "A solution has no inherent value. Value exists only where a specific person interacts with a thing in a specific context."
+          },
+          {
+            "title": "Position sets the ceiling",
+            "body": "After funding, even exceptional analysis optimises inside a fixed envelope. Before funding, analysis changes the envelope."
+          },
+          {
+            "title": "The when matters too",
+            "body": "Early analysis changes what is funded; mid-delivery analysis changes the design; late analysis only corrects individual decisions."
+          },
+          {
+            "title": "Contingent, not guaranteed",
+            "body": "10–20× needs upstream access, a big enough portfolio, outcome measures, a sponsor who can stop work, and senior judgement."
+          },
+          {
+            "title": "Halve the attribution",
+            "body": "BAs rarely create value alone. When in doubt, halve the share you claim — credibility is the asset."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "A value theory you can defend",
+            "body": "Value is spoken about loosely in most organisations. The **Sammy Value Model** (Julian Sammy) makes it precise: value exists only at the intersection of four elements — **Person** (who experiences the benefit), **Thing** (the product, service, process or system), **Context** (the circumstances of the interaction) and **Value** (the perceived benefit). Change the person or the context and the value can change dramatically or disappear.\n\nThis is why BAs do not create value by producing artefacts. They create it by deliberately shaping the interaction between people, solutions and context — by surfacing impacts, expanding the organisation's understanding of what must change, aligning tactical execution with strategic intent, and uncovering the dependencies that decide feasibility.\n\nIn the worked example, a new claims portal (Thing) has no value in itself. It has value when an injured worker (Person) can lodge directly, without waiting for their employer to forward the claim (Context), and receives their first payment in days rather than weeks (Value). The insight that unlocked the outcome was contextual: the statutory employer-forwarding window was being used as a default wait."
+          },
+          {
+            "heading": "Delivery support versus investment shaping",
+            "body": "The difference is structural, not a matter of better documentation. It shows up on six axes that travel together:\n\n| Axis | Delivery-support BA | Investment-shaping BA |\n|---|---|---|\n| Position | Enters after funding is approved | Enters before |\n| Mandate | Make a defined initiative succeed | Ensure the right initiatives are chosen |\n| Counterparty | Delivery management | Executive sponsor and finance |\n| Decision authority | Recommends within scope | Challenges scope — including stop |\n| Accountability | Delivery artefacts | Benefits integrity |\n| Capability profile | Requirements, modelling, facilitation | Plus commercial judgement and seniority |\n\nThe six move together. Putting a delivery-focused BA into an upstream seat without changing mandate, counterparty and accountability produces a frustrated analyst with the wrong job description. As a leader, your job is to change the configuration, not just the person."
+          },
+          {
+            "heading": "The economics — and how to read them honestly",
+            "body": "Take a BA on AUD $150,000, fully loaded at about **$180,000**, influencing a $10–30 million portfolio. Conservative annual contributions:\n\n| Mechanism | Annual value |\n|---|---|\n| Avoided or reshaped low-value investment | $450,000 |\n| Pre-delivery scope optimisation | $250,000 |\n| Benefits integrity and capital redirection | $400,000 |\n| Structural operational efficiency | $250,000 |\n| **Total** | **$1,350,000 (≈7.5×)** |\n\nOne material upstream intervention a year — reshaping a $2–5 million initiative — lifts this into the 10–15× band; on $30–100 million portfolios with several such decisions, 15–20×.\n\nRead these numbers with four disciplines. Separate **cashable savings**, **avoided cost** and **value protection** — most BA value is the latter two. **Attribute conservatively** — halve it when in doubt. Treat it as a **decision-quality model**, not a guarantee. And **validate at home** with three pieces of evidence: investments in the last 24 months that missed their benefits, cases where a senior BA changed scope or stopped work, and rework rates with versus without senior BA engagement."
+          },
+          {
+            "heading": "When the return collapses to 1–3×",
+            "body": "The high return is contingent. It will not materialise when:\n\n- the BA is engaged **after funding** is approved;\n- the portfolio is **too small** (under about $5 million a year) to give the leverage work to do;\n- the BA is **measured on artefacts** rather than outcomes;\n- the sponsor **cannot or will not stop** initiatives;\n- the BA is **early-career or generalist** and placed alone — the fix is to put a Senior BA above the role, not remove it.\n\nIn many organisations these conditions fail because BAs are treated as labour — budgeted on day-rate arithmetic, allocated by capacity rather than fit. The leader's argument is not that analysts should work differently; it is that the organisation must be configured differently for the analyst to work."
+          }
+        ],
+        "activities": [
+          {
+            "id": "d1-s2-act1",
+            "title": "Where does your PD sit?",
+            "minutes": 20,
+            "instructions": "Open a real BA position description from your practice. Count the responsibilities that use activity verbs (elicit, document, support, assist) versus decision or outcome verbs (shape, challenge, quantify, stop). Then rewrite the **two** most important responsibilities as Jobs To Be Done, each with a primary metric and a conservative annual dollar value with its assumption stated. Use the worked example if you have no PD.",
+            "prompts": [
+              {
+                "id": "count",
+                "label": "Activity verbs vs outcome verbs in the PD (count and two examples)"
+              },
+              {
+                "id": "jtbd1",
+                "label": "JTBD 1 — job, metric, conservative annual value, assumption"
+              },
+              {
+                "id": "jtbd2",
+                "label": "JTBD 2 — job, metric, conservative annual value, assumption"
+              },
+              {
+                "id": "conditions",
+                "label": "Which collapse condition is most true in your practice today?"
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Act as the BAS Business Analyst Value Generator. Input: the BA position description below and the Sammy Value Model (value exists only where a Person interacts with a Thing in a Context to produce perceived Value). Steps: (1) rewrite each responsibility as a Job To Be Done — a decision, outcome or risk reduction, no activity verbs; (2) assign a primary metric (cost avoided, revenue enabled, time saved, risk reduced) and a conservative annual AUD value with the assumption stated; (3) separate one-off from recurring and upstream from downstream; (4) calculate ROI as a multiple against a fully loaded cost of $180,000 and halve any attribution you are unsure of; (5) rewrite the PD in outcome language, maximum six responsibilities. Flag every number I need to verify against my own portfolio. PD: [paste here]",
+        "quiz": [
+          {
+            "q": "Why does delivery-focused business analysis cap the return at around 1–3×?",
+            "opts": [
+              "Delivery BAs are less skilled",
+              "The largest financial decisions have already been made before they arrive",
+              "Delivery work has no measurable outcomes",
+              "Templates slow them down"
+            ],
+            "a": 1,
+            "why": "Once capital, scope and assumed benefits are committed, analysis can only optimise inside a fixed envelope. The cap is positional, not personal."
+          },
+          {
+            "q": "Which is the defining mark of the investment-shaping role?",
+            "opts": [
+              "Writing traceable requirements",
+              "Running more workshops",
+              "The recommendation to stop or fundamentally reshape an initiative",
+              "Owning the project schedule"
+            ],
+            "a": 2,
+            "why": "Challenging scope — including stopping work — is what the delivery-support role structurally cannot do."
+          },
+          {
+            "q": "A BA's intervention 'prevented $2m of rework that would have occurred next year'. How should this be classified?",
+            "opts": [
+              "Cashable saving",
+              "Avoided cost",
+              "Revenue enabled",
+              "Value protection only"
+            ],
+            "a": 1,
+            "why": "It prevents future spend but does not reduce the current budget — avoided cost. Present it separately from cashable savings."
+          }
+        ],
+        "takeaways": [
+          "Position relative to the funding line sets the ceiling on BA value",
+          "The six axes move together — change the configuration, not just the person",
+          "Claim conservatively and validate with your own portfolio evidence",
+          "Name the collapse conditions before a sponsor does"
+        ]
+      },
+      "presenter": {
+        "purpose": "Prove that BA return is structural, give participants a defensible value language, and have each one reframe part of a real PD.",
+        "openingLine": "“Most BAs return one to three times their cost — not because they're bad at the job, but because they're positioned downstream of the funding decision. Move the same skill set upstream and the return is ten to twenty. Today we prove that's structural, not personal.”",
+        "beats": [
+          {
+            "label": "TEACH — Sammy Value Model and the temporal dimension",
+            "minutes": 12,
+            "notes": "Use the claims portal example: the same Thing has no value until the worker can lodge directly. Draw the where/when axes."
+          },
+          {
+            "label": "TEACH — six axes and the economics",
+            "minutes": 13,
+            "notes": "Walk the 7.5× table line by line; then show how one $3m intervention moves it to 10–15×. Stress cashable vs avoided vs protection."
+          },
+          {
+            "label": "ROLE-PLAY — the Activity Sponsor",
+            "minutes": 8,
+            "notes": "Play the persona; drop the curveball; ask the room for the BA move."
+          },
+          {
+            "label": "BUILD — PD audit and two JTBDs (activity)",
+            "minutes": 22,
+            "notes": "Agent drafts via the aiPrompt; participant challenges every number. Visit breakouts at minutes 5 and 15."
+          },
+          {
+            "label": "PEER REVIEW — is this decision-ready?",
+            "minutes": 12,
+            "notes": "Pairs swap JTBDs. Test: would a CFO accept the assumption? Is attribution halved?"
+          },
+          {
+            "label": "DEBRIEF — name the transferable move",
+            "minutes": 8,
+            "notes": "Use the debrief questions; close on the collapse conditions."
+          }
+        ],
+        "facilitationNotes": "This is the module that earns the room's attention for two days — keep the economics crisp and honest. Do not let anyone leave believing 10–20× is a default; say “contingent” at least three times. During BUILD, the most common agent error is inflated dollar values with no assumption: ask “what would the CFO say?” and make them halve it. If a participant's practice is under $5m portfolio, say so kindly and redirect them to the delivery-quality value (rework) rather than investment shaping.",
+        "roleplay": {
+          "persona": "The Activity Sponsor — a General Manager who funds the BA team",
+          "line": "“I just need someone who can write good requirements quickly. Why would I pay for a BA to sit in funding conversations?”",
+          "curveball": "Hands over the PD: every responsibility is a delivery verb — elicit, document, support, assist.",
+          "move": "Reframe responsibilities as Jobs To Be Done — decisions, outcomes, risk reduction — and quantify one conservatively, naming the condition it depends on."
+        },
+        "whatGood": "Two JTBDs per participant, each with a metric, a conservative dollar value, a visible assumption and halved attribution where uncertain; each participant can name the collapse condition that applies to them.",
+        "commonFailure": "Participants inflate the numbers to make the case — and the fix is to require the assumption in writing and apply the halve-the-attribution rule before peer review.",
+        "debrief": [
+          "Where did the agent reach for activity verbs, and how did you reframe them?",
+          "Which JTBD carries the biggest value — and what would have to be true for it to materialise?",
+          "If you took this to your sponsor on Monday, what's the first question they'd ask?"
+        ],
+        "answerKey": "**Model JTBDs (worked example).**\n\n1. *Was:* “Elicit and document requirements for claims system changes.” *JTBD:* “Ensure claims-intake initiatives address the measured cause of payment delay before funding is approved.” Metric: avoided low-value spend. Value: $300,000/yr — assumes one $1.2m initiative a year is reshaped by 50%, attribution halved.\n2. *Was:* “Support testing and implementation.” *JTBD:* “Confirm the benefit claimed at approval (lodgement-to-payment ≤7 days) is measured after go-live.” Metric: benefits realised vs claimed. Value: $200,000/yr — assumes 10% of the $2.0m addressable value would otherwise go unmeasured and unrecovered.\n\n**Collapse condition most often true:** engaged after funding. A good answer names the specific forum the BA is absent from (e.g. investment committee).",
+        "materials": [
+          "Sammy Value Model slide",
+          "Six axes table",
+          "7.5× economics table",
+          "Persona and curveball card",
+          "Business Analyst Value Generator playbook"
+        ]
+      }
+    },
+    {
+      "id": "d1-s3",
+      "num": "1.2",
+      "title": "The Practice Model: roles, services, maturity",
+      "subtitle": "Four jobs, four roles, four services — and an honest read of readiness",
+      "dayId": "d1",
+      "time": "10:45–12:15",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "Individual capability does not scale. Practice does — but only when its roles, services and preconditions are designed on purpose.",
+        "overview": "A high-leverage BA is usually a matter of luck: the right person in the right seat at the right time. When that person leaves, the value leaves. The Practice Model is how you make the leverage institutional.\n\nThis module covers the four jobs of a practice (set the standard, develop the people, govern the practice, deliver where leverage is highest), the four roles, the four-service catalogue, the six preconditions for a BACOE, and the fallback ladder when they are not met. You will score your own practice against the preconditions.",
+        "objectives": [
+          "Describe the four jobs a BA practice or BACOE performs",
+          "Define the four practice roles and the working staffing ratios",
+          "Explain the four-service catalogue and the intake workflow",
+          "Assess your practice against the six BACOE preconditions and choose the right model"
+        ],
+        "keyPoints": [
+          {
+            "title": "Four jobs",
+            "body": "Set the standard. Develop the people. Govern the practice. Deliver where leverage is highest."
+          },
+          {
+            "title": "Four roles",
+            "body": "Practice Lead, Lead BA, Senior BA, Business Analyst — roughly one BA per Senior, each Lead anchoring three to five pairings."
+          },
+          {
+            "title": "Four services",
+            "body": "Investment shaping, delivery assurance, standards and tooling, capability development. No ad-hoc work outside the catalogue."
+          },
+          {
+            "title": "Six preconditions",
+            "body": "If three or more are not met, do not establish a BACOE — run a lighter intervention and revisit."
+          },
+          {
+            "title": "A stage, not a defeat",
+            "body": "A Community of Practice with senior anchors often builds the evidence for the later BACOE case."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "The four jobs and the four roles",
+            "body": "Whether or not you have a formal BACOE, a well-run practice does four jobs: **set the standard** (methods, artefacts, tiers, quality bar), **develop the people** (training, mentoring, community, career paths), **govern the practice** (assure quality, gate-keep investment cases, report value) and **deliver where leverage is highest** (place senior BAs where investment shaping matters most, rather than spreading them thinly).\n\nThe work runs on four roles:\n\n| Role | Accountability | Notes |\n|---|---|---|\n| BA Practice Lead | The practice and its value | ~40% governance and executive engagement, 30% capability and team, 20% standards and quality, 10% hands-on |\n| Lead BA | Gold and complex Silver engagements end-to-end | Owns investment-shaping deliverables to sponsor or board; the person standards are calibrated against |\n| Senior BA | Silver and Bronze initiatives, Gold streams | Most day-to-day delivery; mentors BAs placed alongside |\n| Business Analyst | Defined parts of the work | Paired with a Senior or Lead; builds the senior pipeline |\n\nA practical ratio is roughly **one Business Analyst per Senior**, with each Lead anchoring three to five of those pairings. A BACOE needs at least **60% of staff at Senior or Lead level** to challenge sponsors credibly."
+          },
+          {
+            "heading": "Services and intake",
+            "body": "A practice that accepts any work from anyone becomes a resource pool. The BACOE publishes four services:\n\n1. **Investment shaping** — senior BA placement before funding; Project Vision, business case quality review, benefits validation.\n2. **Delivery assurance** — quality review on Silver and Gold initiatives at defined gates, without duplicating PMO governance.\n3. **Standards and tooling** — templates, methods, training, requirements tooling.\n4. **Capability development** — training, mentoring, accreditation, career pathways.\n\nIntake is four steps: the sponsor submits a **one-page request** (problem, expected investment, business owner, service); the Practice Lead **triages weekly** into Bronze, Silver or Gold; a **Senior BA is assigned within five working days** for Silver and Gold; and engagement starts with a **Project Vision workshop within ten working days**. Initiatives under a threshold (typically $250K–$500K) get Bronze treatment regardless of demand.\n\nIn the worked example, *Faster first payments* would arrive as a one-page request from the Head of Claims Operations — and on the five-factor test it is Silver at minimum, arguably Gold given reach across agents, employers and workers."
+          },
+          {
+            "heading": "Readiness: the six preconditions",
+            "body": "A BACOE returns about **2–6×** across the portfolio — lower in multiple than a single upstream BA, far higher in absolute value. But only if:\n\n1. Senior BAs are placed **upstream of funding** decisions.\n2. The executive sponsor has **authority to stop** initiatives.\n3. **Benefits ownership** sits with the business, not the project.\n4. The BACOE **reports above the PMO**, not into it.\n5. At least **60% of staff** are Senior or Lead.\n6. Funding is committed for **at least three years** (or staged with explicit metrics for each review point).\n\n**If three or more are not met, do not establish a BACOE.** Establish a Community of Practice, a standards working group or a small number of embedded senior BAs, and revisit. A poorly funded or politically constrained BACOE produces worse outcomes than none at all.\n\nWhen the ideal reporting line is unavailable, use the fallback ladder: **CFO** (preferred — aligned to capital allocation) → **COO** (only if the mandate covers enterprise performance, not just throughput) → **inside the PMO** (high risk; needs a written investment-quality mandate and an escalation path outside the PMO) → **virtual BACOE / Community of Practice**."
+          },
+          {
+            "heading": "Maturity as a pathway, not a score",
+            "body": "Maturity in this model is a pathway rather than a ladder of adjectives. A BACOE is built over roughly **24 months in three phases**, each with a decision gate:\n\n| Phase | Months | Gate question |\n|---|---|---|\n| Readiness | 0–3 | Three-year funding committed and reporting line confirmed? |\n| Pilot | 3–9 | Quantified value on at least three pilots, stable operating model? |\n| Scale and embed | 9–24 | Portfolio-level reporting, practice independent of any one person? |\n\nOrganisations that compress this below twelve months usually skip Readiness or Pilot and pay for it with a defunding decision in Year 2. Your 90-day plan on Day 2 is, in effect, a Readiness phase — or the lighter intervention that builds towards one."
+          }
+        ],
+        "activities": [
+          {
+            "id": "d1-s3-act1",
+            "title": "Run the readiness diagnostic on your practice",
+            "minutes": 30,
+            "instructions": "Score each of the six preconditions for your practice as **Met**, **Partly met** or **Not met**, with one line of evidence each. Count the Not mets. Then choose your model: full BACOE, BACOE inside the PMO with conditions, or a lighter intervention (Community of Practice, standards working group, embedded seniors). Finally, map your current staff to the four roles and calculate your Senior-plus-Lead percentage.",
+            "prompts": [
+              {
+                "id": "scores",
+                "label": "Six preconditions — Met / Partly / Not met, with evidence"
+              },
+              {
+                "id": "model",
+                "label": "Recommended model and why (Go / Hold / No-Go)"
+              },
+              {
+                "id": "roles",
+                "label": "Current staff mapped to the four roles; Senior + Lead %"
+              },
+              {
+                "id": "gap",
+                "label": "The single precondition that, if fixed, would change your recommendation"
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Act as the BAS BACOE Readiness Diagnostic. Assess my BA practice against the six preconditions: (1) senior BAs upstream of funding; (2) sponsor authority to stop initiatives; (3) benefits owned by the business; (4) reporting line above the PMO; (5) at least 60% Senior or Lead staff; (6) three-year funding or staged commitment. For each: score Met / Partly met / Not met, state the evidence you used, and list the question I must answer if evidence is missing. Count Not mets. If three or more, recommend a lighter intervention (Community of Practice, standards working group or embedded senior BAs) and say what would trigger a revisit. Otherwise recommend Go or Hold with the gap to close first. My practice: [describe reporting line, headcount by level, sponsor, how BAs are engaged, funding horizon].",
+        "quiz": [
+          {
+            "q": "Your practice meets three of the six preconditions. What does the model recommend?",
+            "opts": [
+              "Establish a full BACOE immediately",
+              "Establish a lighter intervention and revisit when conditions improve",
+              "Hire more junior BAs first",
+              "Move the practice into IT"
+            ],
+            "a": 1,
+            "why": "Three or more unmet preconditions means do not establish a BACOE; run a Community of Practice, standards group or embedded seniors instead."
+          },
+          {
+            "q": "Which reporting line is preferred for a BACOE?",
+            "opts": [
+              "CIO",
+              "PMO",
+              "CFO",
+              "HR"
+            ],
+            "a": 2,
+            "why": "The CFO owns capital allocation, so an investment-shaping function reporting there is structurally aligned with the value it produces."
+          },
+          {
+            "q": "How quickly should a Senior BA be assigned to a Silver or Gold request?",
+            "opts": [
+              "Within five working days",
+              "Within one quarter",
+              "After the business case is approved",
+              "When capacity allows"
+            ],
+            "a": 0,
+            "why": "The intake workflow assigns a Senior BA within five working days and starts with a Project Vision workshop within ten."
+          }
+        ],
+        "takeaways": [
+          "Design the practice around four jobs, four roles and four services",
+          "Seniority mix is a precondition, not a nice-to-have",
+          "Three or more unmet preconditions means a lighter intervention first",
+          "Maturity is a 24-month pathway with decision gates"
+        ]
+      },
+      "presenter": {
+        "purpose": "Give participants the structural model of a practice and have them diagnose their own readiness honestly.",
+        "openingLine": "“One BA in finance reshapes a four-million-dollar programme. Another in operations is brought in two weeks before go-live to write documentation. Same title, same salary band, wildly different value. This session is about making the first one the default.”",
+        "beats": [
+          {
+            "label": "TEACH — four jobs and four roles",
+            "minutes": 15,
+            "notes": "Use the role table; ask the room for their Senior + Lead percentage by show of fingers."
+          },
+          {
+            "label": "TEACH — services and intake",
+            "minutes": 12,
+            "notes": "Walk the worked example through the four intake steps."
+          },
+          {
+            "label": "TEACH — six preconditions and fallback ladder",
+            "minutes": 13,
+            "notes": "Read the 'worse than none at all' line slowly. Show the ladder."
+          },
+          {
+            "label": "BUILD — readiness diagnostic (activity)",
+            "minutes": 30,
+            "notes": "Agent drafts; participant supplies evidence. Push for evidence, not opinion."
+          },
+          {
+            "label": "PEER REVIEW — challenge the scores",
+            "minutes": 12,
+            "notes": "Pairs: the reviewer's job is to downgrade one score with a good question."
+          },
+          {
+            "label": "DEBRIEF — Go, Hold or No-Go",
+            "minutes": 8,
+            "notes": "Quick poll of recommendations; draw out the most common blocking precondition."
+          }
+        ],
+        "facilitationNotes": "Expect most participants to land on Hold or No-Go — normalise it. The fallback ladder is the hope in this module: a Community of Practice is a stage, not a defeat. Watch for optimism bias on precondition 2 (authority to stop): ask “when did your sponsor last stop something?” If nobody can name an instance, it is Not met. Keep the pathway table on screen at the debrief to bridge to Day 2.",
+        "roleplay": {
+          "persona": "The Enthusiastic CIO",
+          "line": "“Great — let's set up the BA Centre of Excellence inside my team next month.”",
+          "curveball": "Offers headcount but no authority outside IT initiatives.",
+          "move": "Thank them, name the reporting-line precondition and the 'cannot govern non-IT initiatives' failure condition, and propose a Community of Practice pilot with a CFO escalation path."
+        },
+        "whatGood": "Every precondition scored with evidence; a clear Go / Hold / No-Go; role mapping with a Senior + Lead percentage; one named precondition that would change the answer.",
+        "commonFailure": "Participants score preconditions on intent (“our sponsor would stop things”) rather than evidence — and the fix is to require a dated example for every Met.",
+        "debrief": [
+          "Which precondition blocked the most practices in the room?",
+          "Who chose a lighter intervention — and what would trigger a revisit?",
+          "What surprised you about your seniority mix?"
+        ],
+        "answerKey": "**Worked example (illustrative).** 1 Upstream: Not met — BAs join after investment committee approval. 2 Stop authority: Partly — the Head of Claims Ops has paused but not stopped work. 3 Benefits ownership: Not met — benefits close with the project. 4 Reporting line: Not met — BAs report into the PMO. 5 Seniority: Partly — 45% Senior/Lead. 6 Funding: Partly — 18-month commitment.\n\nThree Not mets → **No-Go for a full BACOE**. Recommend a Community of Practice anchored by two senior BAs, plus one senior BA embedded upstream on *Faster first payments* as a pilot to evidence Mechanism 1. Revisit trigger: benefits ownership assigned to the Head of Claims Ops and a CFO escalation path agreed.",
+        "materials": [
+          "Four roles table",
+          "Service catalogue and intake slide",
+          "Six preconditions checklist",
+          "Fallback ladder slide",
+          "BACOE Readiness Diagnostic playbook",
+          "Persona and curveball card"
+        ]
+      }
+    },
+    {
+      "id": "d1-s4",
+      "num": "1.3",
+      "title": "Influence and decisions: governance",
+      "subtitle": "Decision rights, forums and boundaries that let the practice say 'stop'",
+      "dayId": "d1",
+      "time": "13:00–14:30",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "A practice that can recommend stopping an initiative but cannot make anyone listen is a reporting function, not a governance function.",
+        "overview": "Influence in a BA practice is designed, not personal. It comes from three things: clear **boundaries** with the PMO, the CIO/CTO and the transformation office; standing **governance forums** where investment quality is decided; and a **sponsor** with the authority to act on what the practice finds.\n\nThis module covers the boundary principles, the three governance forums, decision rights and escalation, and how to influence when you do not yet have formal authority.",
+        "objectives": [
+          "State the boundary between the practice and the PMO, CIO/CTO and transformation office",
+          "Describe the three governance forums and what each decides",
+          "Draft a decision-rights RACI for a real investment decision",
+          "Plan influence for a decision where the practice has no formal authority"
+        ],
+        "keyPoints": [
+          {
+            "title": "What and why vs how",
+            "body": "The PMO owns how work is delivered. The practice owns what and why — problem, scope, benefits integrity, requirements quality."
+          },
+          {
+            "title": "Two claimants = wrong boundary",
+            "body": "If two functions claim the same activity, the boundary is wrong. Resolve it before launch."
+          },
+          {
+            "title": "Three forums",
+            "body": "Steering Committee (monthly), Investment Quality Forum (fortnightly), Community of Practice (monthly)."
+          },
+          {
+            "title": "Fund, reshape, descope, stop",
+            "body": "The Investment Quality Forum's four outputs. If 'stop' is never used, the forum is ceremonial."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Boundaries with existing functions",
+            "body": "The most common political failure of a BA practice is unclear positioning. Without deliberate boundaries it is seen as either redundant or expansionist — and defunded within two years.\n\n| Function | Owns | The practice owns |\n|---|---|---|\n| PMO | The *how*: schedules, dependencies, delivery forums, status, risk and issue management | The *what* and *why*: problem definition, scope shaping, benefits integrity, requirements quality |\n| CIO/CTO | The technical solution: architecture, platforms, build, integration, security, run | The business problem and the conditions under which value will materialise |\n| Transformation office | Large-scale change programmes | Senior BA leadership into those programmes and alignment with enterprise standards; governs BAU change outside them |\n\nThe test is simple: **if two functions claim the same activity, the boundary is wrong**. The BAS Boundary Negotiator maps the activity landscape, resolves overlaps with these principles, produces a RACI and escalation paths, and ends in a signed Boundaries Agreement."
+          },
+          {
+            "heading": "The three governance forums",
+            "body": "**BACOE Steering Committee — monthly.** Chaired by the executive sponsor; attended by the Practice Lead, PMO Lead, CIO representative and transformation office representative. Reviews portfolio value, escalations, boundary issues and operating-model changes.\n\n**Investment Quality Forum — fortnightly.** Chaired by the Practice Lead; attended by senior BAs and PMO portfolio leads. Reviews initiatives at investment-decision stage and produces one of four recommendations: **fund, reshape, descope or stop**.\n\n**BA Community of Practice — monthly.** Chaired by the Capability Lead; open to all BAs. Knowledge sharing, capability development and standards updates.\n\nWithout a formal BACOE you can still run lighter versions: a monthly sponsor one-to-one in place of the Steering Committee, and an investment-quality review slot inside an existing portfolio forum."
+          },
+          {
+            "heading": "Decision rights and escalation",
+            "body": "Influence fails most often where decision rights are implicit. For every material decision, write down who is **Accountable**, what evidence they need, and when the decision is required. In the worked example:\n\n| Decision | Accountable | Evidence needed | Required by |\n|---|---|---|---|\n| D1 Single digital front door vs channel per agent | Chief Digital Officer | Channel volumes, agent integration costs | Week 4 |\n| D2 Risk threshold for straight-through approval | Head of Claims Operations | Share of low-risk claims, dispute-rate impact | Before Release 3 |\n| D3 Agent KPI changes | Agent Panel Manager | Queue-age and SLA modelling | Before Release 1 pilot |\n\nThe practice's role is to make each decision *decision-ready*: the options framed, the evidence assembled, the trade-offs explicit. Escalation should be pre-agreed — for example, a Practice Lead recommendation to stop that is overruled goes to the Steering Committee with the evidence attached and the decision minuted."
+          },
+          {
+            "heading": "Influence without formal authority",
+            "body": "Most practice leads start without stop authority. Influence then comes from three sources you can build deliberately:\n\n- **Evidence** — a Project Vision with a baseline, target and measurement plan is harder to ignore than an opinion. In the worked example, showing that the employer-forwarding window (p95 9.4 days) was the largest leak reframed the conversation from “buy a portal” to “change who starts the clock”.\n- **Stakeholder positioning** — map influence and interest, and engage early anyone who becomes a blocker when consulted late (in the example, HSR and union representatives).\n- **Cadence** — a predictable rhythm (weekly 30-minute steering for high-influence/high-interest stakeholders, a monthly one-pager for the CFO) builds the track record that later justifies formal authority.\n\nThe aim is to earn the precondition, not to work around it."
+          }
+        ],
+        "activities": [
+          {
+            "id": "d1-s4-act1",
+            "title": "Draft your decision-rights RACI",
+            "minutes": 30,
+            "instructions": "Choose one live or upcoming investment decision in your organisation. List the three to five activities around it (problem definition, business case review, scope change, benefits tracking, stop/continue). For each, name who is Responsible, Accountable, Consulted and Informed across the practice, PMO, CIO/CTO and sponsor. Mark any activity that two functions claim. Then write the escalation path for a stop recommendation that is overruled.",
+            "prompts": [
+              {
+                "id": "decision",
+                "label": "The decision and when it is required"
+              },
+              {
+                "id": "raci",
+                "label": "RACI — activity by function"
+              },
+              {
+                "id": "overlaps",
+                "label": "Overlaps found (two claimants) and your proposed resolution"
+              },
+              {
+                "id": "escalation",
+                "label": "Escalation path for an overruled stop recommendation"
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Act as the BAS BACOE Boundary Negotiator. Functions: BA practice, PMO, CIO/CTO, transformation office, executive sponsor. Principles: PMO owns how (schedule, dependencies, status, risk); BA practice owns what and why (problem definition, scope shaping, benefits integrity, requirements quality); CIO/CTO owns the technical solution; transformation office owns large-scale programmes. For the decision below: (1) list the activities involved; (2) propose a RACI with exactly one Accountable per activity; (3) flag any activity two functions currently claim and resolve it using the principles; (4) draft an escalation path for an overruled stop recommendation. Decision and current state: [describe].",
+        "quiz": [
+          {
+            "q": "Two functions both claim ownership of benefits tracking. What does the model say?",
+            "opts": [
+              "Share it equally",
+              "The boundary is wrong — resolve it before launch",
+              "Let the PMO decide",
+              "Ignore it until a dispute arises"
+            ],
+            "a": 1,
+            "why": "Two claimants is the signal of a wrong boundary. Resolve it explicitly, before the practice launches."
+          },
+          {
+            "q": "Which forum produces fund / reshape / descope / stop recommendations?",
+            "opts": [
+              "Community of Practice",
+              "Steering Committee",
+              "Investment Quality Forum",
+              "PMO status meeting"
+            ],
+            "a": 2,
+            "why": "The fortnightly Investment Quality Forum, chaired by the Practice Lead, reviews initiatives at investment-decision stage."
+          },
+          {
+            "q": "What does the CIO/CTO own under the boundary principles?",
+            "opts": [
+              "The business problem",
+              "The technical solution",
+              "Benefits integrity",
+              "Requirements quality"
+            ],
+            "a": 1,
+            "why": "The CIO/CTO owns architecture, platforms, build and run; the practice defines the value the system must deliver."
+          }
+        ],
+        "takeaways": [
+          "Design influence through boundaries, forums and decision rights",
+          "Every activity needs exactly one owner — two claimants means fix the boundary",
+          "If 'stop' is never used, the forum is ceremonial",
+          "Without authority, build evidence and cadence to earn it"
+        ]
+      },
+      "presenter": {
+        "purpose": "Equip participants to design the governance that gives a practice real influence, and to draft decision rights for a live decision.",
+        "openingLine": "“A practice that can recommend stopping an initiative but can't make anyone listen is a reporting function, not a governance function. This afternoon we design the listening.”",
+        "beats": [
+          {
+            "label": "TEACH — boundaries and the two-claimant test",
+            "minutes": 15,
+            "notes": "Boundary table. Ask: what does your PMO do that your BAs also think they do?"
+          },
+          {
+            "label": "TEACH — three forums and decision rights",
+            "minutes": 15,
+            "notes": "Walk D1–D3 from the worked example."
+          },
+          {
+            "label": "ROLE-PLAY — the PMO Director",
+            "minutes": 10,
+            "notes": "Play the persona; let two participants try the move."
+          },
+          {
+            "label": "BUILD — decision-rights RACI (activity)",
+            "minutes": 30,
+            "notes": "Agent drafts the RACI; participant corrects it against reality."
+          },
+          {
+            "label": "PEER REVIEW — find the double Accountable",
+            "minutes": 12,
+            "notes": "Pairs swap; reviewer hunts overlaps and missing escalation."
+          },
+          {
+            "label": "DEBRIEF — what will you negotiate first?",
+            "minutes": 8,
+            "notes": "Collect one boundary per participant in chat."
+          }
+        ],
+        "facilitationNotes": "Participants often hear 'boundaries' as turf war. Reframe: boundaries make the practice complementary, and the PMO usually welcomes better-shaped initiatives. In the BUILD, insist on exactly one Accountable per row — agents often produce two. If someone's practice sits inside the PMO, revisit the fallback-ladder conditions (written investment-quality mandate, escalation outside the PMO).",
+        "roleplay": {
+          "persona": "The PMO Director",
+          "line": "“We already run stage gates. Why do we need another forum?”",
+          "curveball": "Points out that the last BA-led review delayed a release by three weeks.",
+          "move": "Acknowledge the cost, separate the how (PMO gates) from the what and why (investment quality), and offer to run the review inside an existing portfolio forum slot with a fixed turnaround."
+        },
+        "whatGood": "One decision, a RACI with single accountability per activity, overlaps named and resolved, and a written escalation path for an overruled stop.",
+        "commonFailure": "RACIs list every function as Consulted on everything — and the fix is to ask “who would be fired if this went wrong?” for each Accountable and “what would change if we didn't consult them?” for each C.",
+        "debrief": [
+          "Which activity had two claimants in your organisation?",
+          "Who in your organisation has actually stopped an initiative — and what made it possible?",
+          "Which forum can you run next month without anyone's permission?"
+        ],
+        "answerKey": "**Model RACI (worked example, decision D2 straight-through approval threshold).** Problem definition and evidence: R Senior BA, A Practice Lead, C Claims Ops data team, I PMO. Business case review: R Senior BA, A Head of Claims Ops, C Finance, Legal & Compliance, I CIO. Scope change: R PMO, A Head of Claims Ops, C Practice Lead. Benefits tracking: R Senior BA, A Head of Claims Ops (business owner), I Steering Committee. Stop/continue: R Practice Lead (recommend), A Executive sponsor, C PMO, CIO.\n\n**Overlap:** PMO and practice both claimed 'benefits tracking' — resolved: PMO tracks delivery milestones; practice tracks the benefit measure; business owner is accountable.\n\n**Escalation:** overruled stop → Steering Committee within one cycle, with Project Vision, evidence pack and dissent minuted.",
+        "materials": [
+          "Boundary table slide",
+          "Three forums slide",
+          "Worked example decision log D1–D3",
+          "BACOE Boundary Negotiator playbook",
+          "BACOE Operating Model Designer playbook",
+          "Persona and curveball card"
+        ]
+      }
+    },
+    {
+      "id": "d1-s5",
+      "num": "1.4",
+      "title": "Leading BA through AI: guardrails",
+      "subtitle": "You direct, the agent drafts — and the practice sets the rules",
+      "dayId": "d1",
+      "time": "14:45–16:15",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "AI removes the blank page and the typing; it does not remove the judgement — and the practice lead is accountable for where that line sits.",
+        "overview": "AI agents are now part of how analysis gets done, whether the practice has sanctioned it or not. The leader's job is not to ban or to cheerlead, but to set **guardrails**: what the agent may draft, what data it may see, who reviews what, and how the practice proves its outputs are still analysis rather than plausible text.\n\nThe BAS playbooks are structured specs — inputs, steps, success criteria, outputs — which is exactly what an agent needs. This module turns that into a practice-level operating rule and a one-page guardrail standard you can take back.",
+        "objectives": [
+          "Explain the 'you direct, the agent drafts' model and where judgement must stay human",
+          "Classify BA tasks by the level of AI assistance appropriate to each",
+          "Draft a one-page AI guardrail standard for your practice",
+          "Define review and provenance rules that keep AI-assisted artefacts defensible"
+        ],
+        "keyPoints": [
+          {
+            "title": "Playbooks are agent specs",
+            "body": "Defined inputs, steps, success criteria and outputs make a playbook an instruction set an agent can execute."
+          },
+          {
+            "title": "The agent doesn't know your organisation",
+            "body": "It knows nothing you haven't fed it. The BA supplies the real inputs and challenges every assumption."
+          },
+          {
+            "title": "Judgement stays human",
+            "body": "Tier choice, stop recommendations, benefit claims and stakeholder positions are decisions — the agent may draft options, never decide."
+          },
+          {
+            "title": "Provenance is the new traceability",
+            "body": "Every AI-assisted artefact should show its inputs, the reviewer and what the reviewer changed."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "The operating model: you direct, the agent drafts",
+            "body": "In the BAS model, the playbook is the agent's instruction set and the BA is the director. The BA brings the real inputs (a position description, a concept paper, process data) and the judgement. The agent removes the blank-page problem — drafting the Jobs To Be Done list, the Readiness Diagnostic, the Project Vision, the As-Is/To-Be, the Tier Classification. The BA then challenges the draft against reality, fixes the gaps and owns the decision.\n\nThis model only works if two conditions hold. First, the inputs are real: an agent fed a generic description produces a generic Vision. Second, review is genuine: the BA must be able to defend every line in front of a sponsor without saying “the AI wrote that”. A leader's guardrails exist to protect both conditions at scale."
+          },
+          {
+            "heading": "Classifying BA work by AI suitability",
+            "body": "Not all BA work carries the same risk. A simple three-band classification gives your practice a shared language:\n\n| Band | Agent role | Examples | Review |\n|---|---|---|---|\n| **Draft freely** | Produce first drafts from supplied inputs | Meeting summaries, Bronze Requirements Summary, user-story first cuts, glossary | Author review |\n| **Draft with evidence** | Draft, but every claim must trace to a supplied source | Project Vision, As-Is pain-point inventory, stakeholder map, business case numbers | Author plus peer review; sources attached |\n| **Human decides** | May frame options; must not recommend as final | Tier classification, fund/reshape/stop recommendation, benefit attribution, anything about individuals | Senior or Lead BA sign-off; decision minuted with rationale |\n\nIn the worked example, an agent can draft the five-lane swim-lane from interview notes (draft with evidence), but the 23% certificate-rework figure must trace to the claims warehouse, and the straight-through approval threshold (decision D2) is a human decision owned by the Head of Claims Operations."
+          },
+          {
+            "heading": "Data and privacy guardrails",
+            "body": "The practice lead must agree with privacy, security and legal teams what may be put into which tool. A practical default:\n\n- **Approved tools only** — enterprise-licensed agents with data-retention controls; no personal accounts for work content.\n- **Classify before you paste** — public and internal content may be used; confidential content only in approved enterprise tools; personal or health information (in the example, injured workers' claim details) never, unless de-identified and approved.\n- **Synthetic or aggregated data** for worked examples and training — the WorkSafe case in this course is itself illustrative.\n- **Record the tool and version** used on any artefact that goes to a governance forum.\n\nIn Australian public-sector contexts, align these rules to the applicable privacy legislation and the organisation's information-security classification scheme rather than inventing a parallel one."
+          },
+          {
+            "heading": "Review, provenance and quality",
+            "body": "AI-assisted artefacts fail in recognisable ways: confident numbers with no source, activity verbs dressed as outcomes, To-Be designs that don't connect to the As-Is, stakeholders who don't exist. Your quality standard should name these and check for them.\n\nA lightweight provenance block on every Silver or Gold artefact answers four questions: **What inputs were supplied? Which playbook step was run? Who reviewed it? What did the reviewer change?** If the reviewer changed nothing, ask why — a draft that survives review untouched has usually not been reviewed.\n\nFinally, keep a **practice prompt library**: the agreed prompts for each playbook step, versioned and owned by a Senior or Lead BA. It turns individual prompting skill into a practice asset, exactly as templates once did."
+          }
+        ],
+        "activities": [
+          {
+            "id": "d1-s5-act1",
+            "title": "Draft your one-page AI guardrail standard",
+            "minutes": 35,
+            "instructions": "Using the three-band classification, list six to ten common BA tasks in your practice and assign each to a band. Then write your data rules (approved tools, what may and may not be pasted), your review rule for each band, and the provenance block every governance-bound artefact must carry. Keep it to one page — if it doesn't fit, it won't be followed.",
+            "prompts": [
+              {
+                "id": "bands",
+                "label": "Tasks by band — Draft freely / Draft with evidence / Human decides"
+              },
+              {
+                "id": "data",
+                "label": "Data rules — approved tools, allowed and prohibited content"
+              },
+              {
+                "id": "review",
+                "label": "Review rule for each band"
+              },
+              {
+                "id": "provenance",
+                "label": "Provenance block (the four questions, in your words)"
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Help me draft a one-page AI guardrail standard for my BA practice. Use three bands: Draft freely (author review), Draft with evidence (every claim traced to a supplied source; peer review), Human decides (agent may frame options only; Senior or Lead BA sign-off). Here are our common BA tasks: [list]. Here are our approved tools and data classification levels: [describe]. Produce: (1) a table of tasks by band with a one-line rationale; (2) data rules — what may and may not be pasted into each tool; (3) a provenance block with four questions (inputs supplied, playbook step run, reviewer, what the reviewer changed); (4) five tell-tale signs of an unreviewed AI draft. Do not invent our policies — mark anything you are assuming as [CONFIRM].",
+        "quiz": [
+          {
+            "q": "Which task belongs in the 'Human decides' band?",
+            "opts": [
+              "Summarising workshop notes",
+              "Drafting a glossary",
+              "Recommending whether to stop an initiative",
+              "Formatting a Requirements Summary"
+            ],
+            "a": 2,
+            "why": "Fund, reshape and stop recommendations are decisions; the agent may frame options but a senior BA decides and the rationale is minuted."
+          },
+          {
+            "q": "An AI-drafted Project Vision passes review with no changes. What should the practice lead conclude?",
+            "opts": [
+              "The agent is excellent",
+              "It probably has not been genuinely reviewed",
+              "Review can be skipped next time",
+              "The playbook is too simple"
+            ],
+            "a": 1,
+            "why": "A draft that survives review untouched has usually not been challenged against reality. Ask what the reviewer checked."
+          },
+          {
+            "q": "Why are BAS playbooks well suited to agents?",
+            "opts": [
+              "They are short",
+              "They define inputs, steps, success criteria and outputs",
+              "They avoid numbers",
+              "They are written for AI only"
+            ],
+            "a": 1,
+            "why": "A structured spec with defined inputs and success criteria is exactly what an agent needs to execute — and what a reviewer needs to check against."
+          }
+        ],
+        "takeaways": [
+          "Set guardrails by task risk, not by tool enthusiasm",
+          "Real inputs and genuine review are the two conditions that make AI drafting safe",
+          "Provenance is the new traceability",
+          "A versioned prompt library is a practice asset"
+        ]
+      },
+      "presenter": {
+        "purpose": "Have participants leave with a practical, one-page AI guardrail standard for their practice.",
+        "openingLine": "“Your BAs are already using AI — the only question is whether your practice has decided how. This session, you decide.”",
+        "beats": [
+          {
+            "label": "TEACH — direct vs draft, playbooks as agent specs",
+            "minutes": 12,
+            "notes": "Show one playbook step and the matching prompt side by side."
+          },
+          {
+            "label": "TEACH — three bands and data guardrails",
+            "minutes": 15,
+            "notes": "Walk the worked-example classification; stress the personal-information line."
+          },
+          {
+            "label": "DEMO — spot the unreviewed draft",
+            "minutes": 8,
+            "notes": "Show an agent-drafted pain-point inventory with three planted errors; room finds them."
+          },
+          {
+            "label": "BUILD — one-page guardrail standard (activity)",
+            "minutes": 35,
+            "notes": "Agent drafts; participant replaces every [CONFIRM] with their reality or an action."
+          },
+          {
+            "label": "PEER REVIEW — would your CISO sign it?",
+            "minutes": 12,
+            "notes": "Pairs test data rules and the Human-decides band."
+          },
+          {
+            "label": "DEBRIEF — the line you won't cross",
+            "minutes": 8,
+            "notes": "Each participant names one task they moved bands during the session."
+          }
+        ],
+        "facilitationNotes": "Expect a split room: enthusiasts and sceptics. Use the bands to give both a place. The demo is the energy point — prepare the planted errors in advance: an unsourced percentage, a non-existent stakeholder role, and a To-Be step that addresses no As-Is pain point. Do not give legal advice on privacy; direct participants to their own privacy and security teams and keep the standard as a draft for that conversation.",
+        "roleplay": {
+          "persona": "The Cautious Risk Manager",
+          "line": "“We can't have analysts putting claims data into a chatbot.”",
+          "curveball": "Reveals that two BAs already use personal AI accounts for meeting notes.",
+          "move": "Agree on the risk, propose approved tools and the classify-before-you-paste rule, and offer the guardrail standard as the remedy rather than a ban that drives use underground."
+        },
+        "whatGood": "A one-page standard with tasks in bands, explicit data rules, a review rule per band, a four-question provenance block and no unresolved [CONFIRM] tags without an owner.",
+        "commonFailure": "Standards become long policy documents nobody reads — and the fix is the one-page limit and a table, not prose.",
+        "debrief": [
+          "Which task did you move from 'Draft freely' to a stricter band, and why?",
+          "What is the first conversation you need with privacy or security?",
+          "Who in your practice should own the prompt library?"
+        ],
+        "answerKey": "**Model bands (worked example practice).** Draft freely: workshop summaries; glossary; Bronze Requirements Summary first draft; user-story first cuts. Draft with evidence: Project Vision; As-Is pain-point inventory (each figure traced to claims warehouse or agent monthly file); stakeholder map; benefits model. Human decides: tier classification; D2 straight-through threshold; fund/reshape/stop; benefit attribution; any assessment of a named individual.\n\n**Data rules:** enterprise-licensed agent only; no claimant personal or health information; use aggregated volumes and de-identified samples; record tool and version on governance artefacts.\n\n**Provenance block:** Inputs · Playbook step · Reviewer · Changes made.\n\n**Planted errors in the demo:** unsourced “35% of claims are low-risk”; a “Claims Innovation Board” that does not exist; To-Be step “AI chatbot triage” that addresses no As-Is pain point.",
+        "materials": [
+          "Playbook-as-spec slide",
+          "Three bands table",
+          "Demo artefact with planted errors",
+          "Guardrail standard template",
+          "Persona and curveball card"
+        ]
+      }
+    },
+    {
+      "id": "d1-s6",
+      "num": "1.5",
+      "title": "Exercise: practice maturity check and close",
+      "subtitle": "Bring Day 1 together into one honest picture of your practice",
+      "dayId": "d1",
+      "time": "16:15–17:00",
+      "minutes": 45,
+      "participant": {
+        "bigIdea": "You can't plan a practice you haven't honestly diagnosed.",
+        "overview": "This exercise consolidates Day 1 into a single maturity check across the four jobs of a practice — standard, people, governance and leverage — plus the AI guardrails you drafted. It becomes the baseline for your 90-day plan tomorrow.\n\nYou will also prepare a two-minute sponsor conversation: the one thing you would say to your sponsor on Monday about where the practice stands.",
+        "objectives": [
+          "Rate your practice on the four jobs plus AI readiness using evidence",
+          "Identify the two biggest gaps and their likely cause",
+          "Prepare a two-minute sponsor message grounded in Day 1 evidence"
+        ],
+        "keyPoints": [
+          {
+            "title": "Evidence over adjectives",
+            "body": "Each rating needs a fact: a date, a document, a forum, a number."
+          },
+          {
+            "title": "Two gaps, not ten",
+            "body": "A plan that addresses everything addresses nothing. Pick the two that unlock the most."
+          },
+          {
+            "title": "Talk to the sponsor in their language",
+            "body": "Value, risk and decisions — not methodology."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "The maturity check",
+            "body": "Rate each dimension **1 (absent), 2 (ad hoc), 3 (defined), 4 (operating), 5 (embedded)** with one line of evidence:\n\n| Dimension | What 'operating' (4) looks like |\n|---|---|\n| Set the standard | Project Vision and As-Is/To-Be required on every initiative; tiers applied at intake |\n| Develop the people | Four roles defined; Senior/Lead ≥60%; every BA paired; Community of Practice meets monthly |\n| Govern the practice | Boundaries agreed; Investment Quality Forum runs; at least one reshape or stop in the last year |\n| Deliver where leverage is highest | Senior BAs placed upstream on the highest-value initiatives |\n| Value reporting | Quarterly value report against the three mechanisms |\n| AI guardrails | Banded standard, approved tools, provenance on governance artefacts |\n\nIn the worked example (illustrative), the practice scores roughly 2 · 2 · 1 · 1 · 1 · 2: competent analysts, no upstream placement, no value reporting."
+          },
+          {
+            "heading": "From diagnosis to the sponsor conversation",
+            "body": "Choose the two lowest-scoring dimensions that, if improved, would most change the practice's value. Usually one is structural (upstream placement, reporting line, stop authority) and one is foundational (standards, value reporting).\n\nThen prepare a two-minute message: **what we found** (one fact), **what it costs** (in the sponsor's terms — delay, rework, unrealised benefits), **what we propose to test** (one pilot), and **what we need from you** (one decision). In the worked example: “Our BAs joined *Faster first payments* after the funding decision. The largest leak — the employer-forwarding wait — was only found in delivery. I'd like to place a senior BA upstream on the next two claims initiatives and report the value in a quarter. I need you to invite them to investment committee.”"
+          }
+        ],
+        "activities": [
+          {
+            "id": "d1-s6-act1",
+            "title": "Maturity check and sponsor message",
+            "minutes": 25,
+            "instructions": "Rate your practice on the six dimensions with one line of evidence each. Select your two priority gaps. Then write your two-minute sponsor message using the four-part structure: found, costs, test, need.",
+            "prompts": [
+              {
+                "id": "ratings",
+                "label": "Six ratings (1–5) with evidence"
+              },
+              {
+                "id": "gaps",
+                "label": "Two priority gaps and why they unlock the most"
+              },
+              {
+                "id": "message",
+                "label": "Two-minute sponsor message — found / costs / test / need"
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Here are my Day 1 outputs: value proposition JTBDs, readiness diagnostic, decision-rights RACI and AI guardrail standard [paste]. Rate my practice 1–5 on six dimensions (set the standard, develop the people, govern the practice, deliver where leverage is highest, value reporting, AI guardrails), citing the evidence from my outputs for each rating and flagging where evidence is missing. Recommend the two gaps that would most increase practice value and draft a two-minute sponsor message in four parts: what we found, what it costs, what we propose to test, what we need from you.",
+        "quiz": [
+          {
+            "q": "What makes a maturity rating credible?",
+            "opts": [
+              "A consensus of the BA team",
+              "A specific piece of evidence such as a date, forum or number",
+              "The highest score you can justify",
+              "Alignment with an industry average"
+            ],
+            "a": 1,
+            "why": "Ratings without evidence are opinions; the plan built on them will not survive a sponsor's first question."
+          },
+          {
+            "q": "Which is the strongest 'need' in a sponsor message?",
+            "opts": [
+              "Support for the BA team",
+              "More recognition",
+              "An invitation for a senior BA to attend investment committee",
+              "A bigger budget"
+            ],
+            "a": 2,
+            "why": "A specific, actionable decision the sponsor can make this week."
+          }
+        ],
+        "takeaways": [
+          "Your baseline is the input to tomorrow's plan",
+          "Pick two gaps — one structural, one foundational",
+          "Ask the sponsor for one specific decision"
+        ]
+      },
+      "presenter": {
+        "purpose": "Consolidate Day 1 into an evidence-based baseline and a sponsor message; close the day.",
+        "openingLine": "“You've spent today looking at your practice through five lenses. Now we put them on one page — honestly — because tomorrow's plan is only as good as today's diagnosis.”",
+        "beats": [
+          {
+            "label": "Frame the maturity check",
+            "minutes": 5,
+            "notes": "Show the six-dimension table and the worked-example scores."
+          },
+          {
+            "label": "Maturity check and sponsor message (activity)",
+            "minutes": 25,
+            "notes": "Solo work with the agent. Circulate; challenge any 4 or 5 without evidence."
+          },
+          {
+            "label": "Share — three sponsor messages",
+            "minutes": 10,
+            "notes": "Three volunteers read their message; room scores it on found / costs / test / need."
+          },
+          {
+            "label": "Close Day 1 and preview Day 2",
+            "minutes": 5,
+            "notes": "Ask everyone to bring one real initiative and their practice's current templates tomorrow."
+          }
+        ],
+        "facilitationNotes": "Energy is lowest now — keep it brisk and personal. The sponsor messages are the payoff: pick volunteers whose practices differ (one large, one small, one public sector). Remind participants their outputs are saved in the portal and will be pulled into the 90-day plan.",
+        "whatGood": "Six evidenced ratings, two gaps (one structural, one foundational) and a sponsor message with a single, specific ask.",
+        "commonFailure": "Sponsor messages slide into methodology (“we need a Project Vision template”) — and the fix is to ask “what does that cost the sponsor?” until the message is in their terms.",
+        "debrief": [
+          "Which dimension scored lowest across the room?",
+          "What is the one decision you will ask your sponsor for?",
+          "What do you need to bring tomorrow to make the plan real?"
+        ],
+        "answerKey": "**Worked example ratings (illustrative):** Standard 2 (Visions sometimes written, not required); People 2 (45% Senior/Lead, no pairing model); Governance 1 (no forum, never stopped work); Leverage 1 (all BAs post-funding); Value reporting 1 (none); AI 2 (tools in use, no standard).\n\n**Priority gaps:** Leverage (structural) and Value reporting (foundational) — upstream placement creates the value; reporting proves it.\n\n**Model message:** see section two of this module.",
+        "materials": [
+          "Maturity check table",
+          "Sponsor message template",
+          "Day 2 preparation note"
+        ]
+      }
+    },
+    {
+      "id": "d2-s1",
+      "num": "2.0",
+      "title": "Day 1 recap and questions",
+      "subtitle": "Reconnect the chain and set up today's build",
+      "dayId": "d2",
+      "time": "09:00–09:15",
+      "minutes": 15,
+      "participant": {
+        "bigIdea": "Yesterday diagnosed the practice; today grows it.",
+        "overview": "A short recap of Day 1 — value proposition, Practice Model, governance, AI guardrails and your maturity check — followed by open questions. We then preview the Day 2 chain: standards, capability, value measures and a 90-day plan you will pitch at the end of the day.",
+        "objectives": [
+          "Recall the four jobs, six preconditions and three forums",
+          "Restate your two priority gaps from the maturity check",
+          "Connect today's modules to your 90-day plan"
+        ],
+        "keyPoints": [
+          {
+            "title": "Position sets value",
+            "body": "Upstream 10–20× (contingent); downstream 1–3×."
+          },
+          {
+            "title": "Readiness before structure",
+            "body": "Three or more unmet preconditions → lighter intervention."
+          },
+          {
+            "title": "Today's chain",
+            "body": "Standards → people → measures → plan → pitch."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Day 1 in five lines",
+            "body": "1. **Value** is an interaction (Person, Thing, Context, Value), and BA return is set by position relative to the funding line.\n2. **The Practice Model** runs on four jobs, four roles and four services; a BACOE needs six preconditions.\n3. **Governance** is designed: boundaries, three forums, explicit decision rights.\n4. **AI** drafts; humans decide — guardrails are banded by task risk.\n5. **Your baseline** is six evidenced ratings and two priority gaps."
+          },
+          {
+            "heading": "How today builds your plan",
+            "body": "Each Day 2 module adds one component to the 90-day plan: a **standard** (minimum quality gates), a **people move** (pairings and pathways), a **measure** (what you will report in 90 days) and finally the **plan** itself, which you pitch for feedback. Keep your Day 1 outputs open — you will reuse them."
+          }
+        ],
+        "activities": [
+          {
+            "id": "d2-s1-act1",
+            "title": "Overnight reflection",
+            "minutes": 5,
+            "instructions": "Write one thing that changed in your thinking overnight and one question you want answered today.",
+            "prompts": [
+              {
+                "id": "changed",
+                "label": "One thing that changed in my thinking"
+              },
+              {
+                "id": "question",
+                "label": "One question I want answered today"
+              }
+            ]
+          }
+        ],
+        "quiz": [
+          {
+            "q": "Which three forums does the Practice Model define?",
+            "opts": [
+              "Steering Committee, Investment Quality Forum, Community of Practice",
+              "Design Authority, CAB, PMO",
+              "Sprint review, retrospective, planning",
+              "Board, audit, risk"
+            ],
+            "a": 0,
+            "why": "Monthly Steering Committee, fortnightly Investment Quality Forum and monthly Community of Practice."
+          },
+          {
+            "q": "Which return band applies to a BACOE across the portfolio?",
+            "opts": [
+              "10–20×",
+              "2–6×",
+              "1–3×",
+              "50×"
+            ],
+            "a": 1,
+            "why": "A BACOE returns 2–6× in multiple terms — lower than a single upstream BA but far higher in absolute value."
+          }
+        ],
+        "takeaways": [
+          "Bring your two priority gaps into every module today",
+          "Each module adds one component to your plan"
+        ]
+      },
+      "presenter": {
+        "purpose": "Re-energise the room, answer parked questions and connect Day 1 outputs to the Day 2 build.",
+        "openingLine": "“Yesterday we diagnosed. Today we grow. By three o'clock you'll have a 90-day plan; by five, you'll have pitched it.”",
+        "beats": [
+          {
+            "label": "Day 1 in five lines",
+            "minutes": 4,
+            "notes": "One slide; ask the room to fill each line before you reveal it."
+          },
+          {
+            "label": "Overnight reflection (activity)",
+            "minutes": 5,
+            "notes": "Silent writing; read three aloud."
+          },
+          {
+            "label": "Open questions",
+            "minutes": 4,
+            "notes": "Answer parked questions; park anything that belongs to a later module."
+          },
+          {
+            "label": "Today's chain",
+            "minutes": 2,
+            "notes": "Show standards → people → measures → plan → pitch."
+          }
+        ],
+        "facilitationNotes": "Start on time even if people are missing — the recap is designed to be caught up on. Check the chat for anyone who did not bring an initiative and pair them with the worked example.",
+        "whatGood": "Everyone has their two gaps in front of them and knows what they will produce today.",
+        "commonFailure": "Open questions consume the block — and the fix is to time-box at four minutes and park the rest visibly.",
+        "debrief": [
+          "What changed overnight?",
+          "Which question should we make sure we answer today?"
+        ],
+        "materials": [
+          "Day 1 summary slide",
+          "Day 2 chain slide",
+          "Parked questions board"
+        ]
+      }
+    },
+    {
+      "id": "d2-s2",
+      "num": "2.1",
+      "title": "Standards and playbooks: quality gates",
+      "subtitle": "Two foundations, three tiers, and gates that calibrate rather than burden",
+      "dayId": "d2",
+      "time": "09:15–10:30",
+      "minutes": 75,
+      "participant": {
+        "bigIdea": "The biggest avoidable failure in business analysis is not capability but calibration — heavy method on small problems, light method on large ones.",
+        "overview": "Standards are the first job of a practice. The BAS standard has **two foundations** that apply to every initiative — the **Project Vision** and **As-Is before To-Be** — and **three tiers** (Bronze, Silver, Gold) that scale the depth of delivery to the scale of the problem.\n\nThis module covers the standard, the five-factor tier test, and how to set quality gates that a practice lead can actually run without becoming a process tax.",
+        "objectives": [
+          "Describe the six elements of a Project Vision and the baseline/target/measurement-plan test",
+          "Explain why As-Is precedes To-Be and the side-by-side test",
+          "Classify an initiative using the five-factor tier test",
+          "Define three quality gates for your practice"
+        ],
+        "keyPoints": [
+          {
+            "title": "Two foundations, always",
+            "body": "Every initiative gets a Project Vision and an As-Is/To-Be. They vary in depth, never in presence."
+          },
+          {
+            "title": "Three tiers, cumulative",
+            "body": "Bronze 4 artefacts; Silver 12; Gold 24. Each tier inherits the one below."
+          },
+          {
+            "title": "Default up",
+            "body": "Misclassification is almost always too light. In borderline cases, default up."
+          },
+          {
+            "title": "Coverage, not document count",
+            "body": "Documents are evidence of analysis, not the substance. Areas may be combined."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "The two foundations",
+            "body": "**The Project Vision** proves, on a single page, that the analyst understands the problem. Most initiatives fail in framing, not execution: stakeholders agree on a name and a budget but not on the problem. The Vision has six elements: **Problem**, **Desired Outcome**, **Scope Boundaries**, **Stakeholders**, **Early View of the Solution** and **Measures of Success**. A measure counts only if it has a **baseline**, a **target** and a **measurement plan** — otherwise it is a statement of hope.\n\nIn the worked example: baseline 18.2 days lodgement-to-first-payment; target ≤7 days within 12 months of Release 1; measured from the worker's first action to payment received, owned by the Head of Claims Operations, with a dispute-rate watch metric that must not rise.\n\n**As-Is before To-Be.** Initiatives stall when the future is designed before the present is understood. The As-Is is evidence of operational reality — delays, errors, data breaks and workarounds — and it defines the scope of impact. The test: a stakeholder should see the improvement by looking at As-Is and To-Be side by side, from their own vantage point. In the example, the As-Is revealed the employer-forwarding wait (p95 9.4 days) and 23% determination rework from invalid certificates — the two problems the To-Be had to solve."
+          },
+          {
+            "heading": "Bronze, Silver, Gold",
+            "body": "| Tier | Typical work | Duration and effort | Artefacts | Approval |\n|---|---|---|---|---|\n| **Bronze** | Dashboards, minor enhancements, single-team workflows | 2–6 weeks; ¼–½ BA | 4: Project Brief, Requirements Summary, Configuration Guide, Handover Package | Operational sign-off |\n| **Silver** | Cross-team change, integrations, process redesign | 3–9 months; ½–1 BA | 12: Bronze + Business Case, Stakeholder Analysis, Requirements Specification, As-Is/To-Be Models, Solution Design, Data Contracts, Test Plan, Training and Benefits Tracking | Investment committee |\n| **Gold** | Platform replacement, multi-year, regulatory, cross-agency | 12–36 months; 2–5 BAs + lead | 24: Silver + Strategic Business Case, Enterprise Stakeholder Plan, Enterprise As-Is/To-Be, Enterprise Requirements, Solution Architecture, Data Strategy, Roadmap, QA Framework, Change Plan, Operations Handbook, Benefits and Risk | Board |\n\nBronze is a discipline of restraint; Silver is rigour without ceremony; Gold is a defensible foundation and assurance trail for the largest investments. **Artefacts may be combined** — twelve areas of analysis can live in one well-structured Confluence space."
+          },
+          {
+            "heading": "Choosing the tier",
+            "body": "Score five factors as small, medium or large: **Cost** (including five-year run cost), **Risk** (reversible / recoverable / strategic damage), **Reach** (teams, systems, processes, customers), **Reversibility** and **Strategic visibility**. Mostly small → Bronze; mostly medium → Silver; mostly large, **or any two large** → Gold. In borderline cases, **default up** — the bias is always towards lighter, and its cost is paid later by someone else.\n\nWorked example: Cost medium ($6.8m three-year), Risk large (statutory payments to injured workers), Reach large (workers, employers, agents, contact centre), Reversibility medium, Visibility large → **Gold** by the any-two-large rule, even though it might be argued as Silver on cost alone."
+          },
+          {
+            "heading": "Quality gates a leader can run",
+            "body": "Quality gates turn the standard into practice. Keep them few and tied to decisions:\n\n1. **Gate 1 — Vision signed** (all tiers): six elements present; measures have baseline, target, measurement plan; sponsor and business owner signed. *Before any requirements work.*\n2. **Gate 2 — Tier confirmed** (all tiers): five-factor score recorded; As-Is evidenced; To-Be addresses each As-Is pain point. *Before business case or build.*\n3. **Gate 3 — Benefits handed over** (Silver and Gold): benefit measure live, business owner accepts ownership. *Before project closure.*\n\nDelivery assurance reviews Silver and Gold at these gates without duplicating PMO stage gates. Bronze is assured by template and spot-check."
+          }
+        ],
+        "activities": [
+          {
+            "id": "d2-s2-act1",
+            "title": "Tier your initiative and set your gates",
+            "minutes": 22,
+            "instructions": "Take one real initiative (or the worked example). Score it on the five factors with a one-line rationale each and state the tier. Then write the three quality gates for your practice in your own words, including who checks each and what evidence passes it.",
+            "prompts": [
+              {
+                "id": "factors",
+                "label": "Five-factor scores with rationale"
+              },
+              {
+                "id": "tier",
+                "label": "Tier and whether you defaulted up"
+              },
+              {
+                "id": "gates",
+                "label": "Three quality gates — criteria, checker, evidence"
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Act as the BAS Tier Classifier. Score the initiative below on five factors — Cost (including five-year run cost), Risk (reversible / recoverable / strategic), Reach, Reversibility, Strategic visibility — as small, medium or large with a one-line rationale each. Apply the rule: mostly small = Bronze, mostly medium = Silver, mostly large or any two large = Gold; in borderline cases default up and say so. List the cumulative artefacts required for that tier and which could sensibly be combined. Flag any factor where you lack evidence. Initiative: [paste Project Vision or description].",
+        "quiz": [
+          {
+            "q": "An initiative scores two large, two medium and one small. Which tier?",
+            "opts": [
+              "Bronze",
+              "Silver",
+              "Gold",
+              "Depends on budget only"
+            ],
+            "a": 2,
+            "why": "Any two large scores together point to Gold."
+          },
+          {
+            "q": "Which is NOT one of the six Project Vision elements?",
+            "opts": [
+              "Scope Boundaries",
+              "Early View of the Solution",
+              "Detailed Requirements",
+              "Measures of Success"
+            ],
+            "a": 2,
+            "why": "The six are Problem, Desired Outcome, Scope Boundaries, Stakeholders, Early View of the Solution and Measures of Success."
+          },
+          {
+            "q": "A measure has a target and a data source but no baseline. What is it?",
+            "opts": [
+              "A valid measure",
+              "A statement of hope",
+              "A KPI",
+              "A benefit"
+            ],
+            "a": 1,
+            "why": "Without baseline, target and measurement plan, a measure cannot show improvement."
+          }
+        ],
+        "takeaways": [
+          "Two foundations on every initiative, varying only in depth",
+          "Tier by five factors and default up",
+          "Gates tied to decisions, not documents",
+          "Coverage and traceability beat document count"
+        ]
+      },
+      "presenter": {
+        "purpose": "Give participants the BAS standard and a set of quality gates they can run in their own practice.",
+        "openingLine": "“A forty-page spec for a two-week dashboard and a vendor template for a multi-year ERP. Same error, opposite directions. Today we fix calibration.”",
+        "beats": [
+          {
+            "label": "TEACH — the two foundations",
+            "minutes": 15,
+            "notes": "Show the worked-example Vision measures; ask what's missing from a typical Vision in their practice."
+          },
+          {
+            "label": "TEACH — tiers and the five-factor test",
+            "minutes": 13,
+            "notes": "Score the worked example live with the room; land on Gold by any-two-large."
+          },
+          {
+            "label": "ROLE-PLAY — the Speed Sponsor",
+            "minutes": 8,
+            "notes": "Persona pushes for Bronze; participant holds the line."
+          },
+          {
+            "label": "BUILD — tier your initiative and gates (activity)",
+            "minutes": 22,
+            "notes": "Agent classifies; participant challenges any factor without evidence."
+          },
+          {
+            "label": "PEER REVIEW — would you default up?",
+            "minutes": 10,
+            "notes": "Pairs: reviewer argues for the next tier up."
+          },
+          {
+            "label": "DEBRIEF — one gate you'll start on Monday",
+            "minutes": 7,
+            "notes": "Collect in chat."
+          }
+        ],
+        "facilitationNotes": "Many practices have templates but no calibration. Spend the teaching time on the why. When participants push back that Gold sounds heavy, return to 'artefacts may be combined' — Gold is coverage, not twenty-four Word documents. Gate 1 is the single most valuable gate for most practices; steer anyone overwhelmed to start there.",
+        "roleplay": {
+          "persona": "The Speed Sponsor",
+          "line": "“Let's keep this light — call it Bronze so we can start next week.”",
+          "curveball": "The initiative changes a statutory payment process across external agents.",
+          "move": "Score the five factors in front of the sponsor, show the two large scores, and offer to combine Gold artefacts so the start date holds while coverage is preserved."
+        },
+        "whatGood": "A tier backed by five evidenced factor scores and three gates each with a checker and pass evidence.",
+        "commonFailure": "Gates written as document checklists (“BRD complete”) — and the fix is to rewrite each gate as a question that a decision depends on.",
+        "debrief": [
+          "Where did you default up — and what convinced you?",
+          "Which gate would have caught a failure you've seen in your practice?",
+          "What will you stop requiring on Bronze work?"
+        ],
+        "answerKey": "**Worked example tiering:** Cost medium ($6.8m three-year incl. licences, integration, change); Risk large (statutory weekly payments, WIRC Act obligations); Reach large (workers, employers, agents, contact centre, payments); Reversibility medium (phased releases with pilot agents); Visibility large (CDO and Head of Claims Ops sponsorship, ministerial interest likely). → **Gold** (any two large).\n\n**Model gates:** G1 Vision signed — checked by Lead BA — evidence: signed one-page Vision with baseline 18.2 days, target ≤7, measurement plan. G2 Tier confirmed — Practice Lead — evidence: five-factor record; each To-Be step traced to an As-Is pain point. G3 Benefits handed over — Practice Lead with business owner — evidence: benefit dashboard live; Head of Claims Ops accepts ownership in writing.",
+        "materials": [
+          "Project Vision template",
+          "As-Is To-Be side-by-side slide",
+          "Tier table",
+          "Five-factor scoring card",
+          "Tier Classifier playbook",
+          "Persona and curveball card"
+        ]
+      }
+    },
+    {
+      "id": "d2-s3",
+      "num": "2.2",
+      "title": "Coaching and capability: career paths",
+      "subtitle": "Build the senior pipeline the practice depends on",
+      "dayId": "d2",
+      "time": "10:45–12:15",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "A practice without seniors cannot challenge sponsors; a practice without juniors runs hot now and dry later. The ratio is a leadership decision.",
+        "overview": "Developing the people is the second job of a practice. Investment shaping requires experience and gravitas that methodology cannot substitute, so the practice lead's capability strategy is really a seniority strategy: how BAs move from delivering defined parts of the work to shaping investment decisions.\n\nThis module covers the four roles as a career path, the role-family taxonomy that makes them recognisable outside your organisation, pairing and coaching models, and a capability plan for your practice.",
+        "objectives": [
+          "Describe the career path from Business Analyst to Practice Lead and the shift at each step",
+          "Map your practice to the BA role family and identify adjacent families",
+          "Design a pairing and coaching model using the working ratios",
+          "Run a structured coaching conversation that moves a BA upstream"
+        ],
+        "keyPoints": [
+          {
+            "title": "Career path = shift in counterparty",
+            "body": "BAs work with delivery teams; Seniors with business owners; Leads with sponsors and boards; the Practice Lead with the executive."
+          },
+          {
+            "title": "Recognisable titles",
+            "body": "The four roles map to the IIBA Career Road Map and Clare's role family, so progression and benchmarking work without translation."
+          },
+          {
+            "title": "1:1 and 3–5",
+            "body": "About one BA per Senior; each Lead anchoring three to five pairings."
+          },
+          {
+            "title": "Coach the move, not the template",
+            "body": "The hardest capability to build is commercial judgement and the confidence to recommend 'stop'."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "The four roles as a career path",
+            "body": "| Step | Works mainly with | The capability shift |\n|---|---|---|\n| Business Analyst | Delivery teams, Senior BA | From completing tasks to understanding why the task matters; modelling, elicitation, testing handover |\n| Senior BA | Business owners | Owns the outcome of investment decisions on initiatives they shape; mentors a BA; carries organisational knowledge |\n| Lead BA | Sponsors, boards | Runs Gold and complex Silver end-to-end; owns investment-shaping deliverables; the person standards are calibrated against |\n| Practice Lead | Executive, peers in PMO/CIO/transformation | Owns the practice's value, business case, boundaries and standards |\n\nThe defining shift is not technique but **counterparty and accountability** — the same six axes from Day 1. A Senior BA who has never sat with finance is not yet ready to be a Lead, however good their models are."
+          },
+          {
+            "heading": "The role family and adjacent families",
+            "body": "The four practice roles map onto the BA role family first published by Clare (2008) and maintained by IIBA as the Business Analyst Career Road Map. Business Analyst and Senior BA sit on the career spine; the Lead BA sits at the transition into the BA leadership family; the Practice Lead sits in that leadership family as the COE leader role, interfacing upward into senior leadership.\n\nThe extended family makes adjacent paths explicit — **Product Management, Agile/Delivery, Data and Analytics, UX/Service Design**, as well as project management, testing and business operations. A capability framework should name the legitimate exits and re-entries: a strong BA who moves into product ownership for two years often returns as a better Lead. Retention is about pathways, not just pay."
+          },
+          {
+            "heading": "Pairing and coaching models",
+            "body": "A practical working ratio is **one Business Analyst per Senior**, with each **Lead anchoring three to five pairings**. Too many juniors produces output that looks like analysis but cannot challenge a sponsor, and consumes the seniors' mentoring time.\n\nUse three coaching mechanisms:\n\n- **Pairing on live work** — the BA drafts, the Senior reviews and explains the judgement. In the worked example, a BA drafts the As-Is pain-point inventory; the Senior shows why the forwarding wait matters more than the payment batch run.\n- **Structured peer review** — every Silver and Gold Vision is peer-reviewed against the six elements before Gate 1.\n- **Shadowing upward** — BAs attend one sponsor or Investment Quality Forum meeting a quarter to see challenge modelled.\n\nIn a coaching conversation, use **GROW**-style structure but anchor it to the practice: *Goal* (which upstream job), *Reality* (evidence from recent work), *Options* (next assignment that stretches counterparty), *Will* (one commitment, reviewed in four weeks)."
+          },
+          {
+            "heading": "A capability plan for your practice",
+            "body": "A capability plan answers four questions: **What is our seniority mix now and in 12 months?** (target ≥60% Senior/Lead if you intend investment shaping). **Who is paired with whom?** **Which three capabilities matter most?** (commonly commercial judgement, facilitation of difficult decisions, and value quantification). **How will we know it's working?** (e.g. number of BAs who have presented to a sponsor; Visions passing Gate 1 first time).\n\nRewrite position descriptions as part of the plan: the Value Generator exercise from Day 1 gives you outcome-language PDs for each role, which become both the career framework and the performance conversation."
+          }
+        ],
+        "activities": [
+          {
+            "id": "d2-s3-act1",
+            "title": "Design your capability plan",
+            "minutes": 30,
+            "instructions": "Map every BA in your practice to the four roles (initials only — no names or personal details). Calculate your current Senior + Lead percentage and the target in 12 months. Propose pairings and Lead anchors. Choose the three capabilities you will build and one measure for each. Finally, describe the next stretch assignment for one BA that shifts their counterparty upward.",
+            "prompts": [
+              {
+                "id": "mix",
+                "label": "Current role mix and Senior + Lead % — and 12-month target"
+              },
+              {
+                "id": "pairings",
+                "label": "Pairings and Lead anchors"
+              },
+              {
+                "id": "capabilities",
+                "label": "Three priority capabilities and a measure for each"
+              },
+              {
+                "id": "stretch",
+                "label": "One stretch assignment that shifts a BA's counterparty"
+              }
+            ]
+          },
+          {
+            "id": "d2-s3-act2",
+            "title": "Coaching conversation practice",
+            "minutes": 15,
+            "instructions": "In trios (coach, BA, observer), run a ten-minute coaching conversation using Goal–Reality–Options–Will anchored to one upstream job. The observer notes the moment the BA committed to something specific. Rotate if time allows.",
+            "prompts": [
+              {
+                "id": "commitment",
+                "label": "The commitment agreed and when it will be reviewed"
+              },
+              {
+                "id": "observer",
+                "label": "Observer note — what moved the conversation forward?"
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Help me build a 12-month capability plan for my BA practice. Roles: Business Analyst, Senior BA, Lead BA, Practice Lead. Working ratios: about one BA per Senior; each Lead anchors three to five pairings; target at least 60% Senior or Lead if the practice is to shape investment decisions. Current mix (initials and role only): [list]. Produce: (1) current and target mix with the hiring or promotion moves required; (2) proposed pairings; (3) three priority capabilities with a development activity and a measure for each; (4) one stretch assignment per Senior BA that shifts their counterparty towards sponsors or finance. Do not make judgements about named individuals' performance — flag where I need to decide.",
+        "quiz": [
+          {
+            "q": "What most distinguishes a Lead BA from a Senior BA?",
+            "opts": [
+              "Better modelling skills",
+              "Owning investment-shaping deliverables for sponsors or boards",
+              "More certifications",
+              "Managing more juniors"
+            ],
+            "a": 1,
+            "why": "The shift is counterparty and accountability — Leads run Gold engagements and own deliverables that go to the sponsor or board."
+          },
+          {
+            "q": "What is the practical working ratio for pairings?",
+            "opts": [
+              "Five BAs per Senior",
+              "About one BA per Senior, each Lead anchoring three to five pairings",
+              "One Lead per BA",
+              "No ratio is needed"
+            ],
+            "a": 1,
+            "why": "This keeps mentoring time realistic and seniority high enough to challenge sponsors."
+          },
+          {
+            "q": "Why map practice roles to the IIBA Career Road Map?",
+            "opts": [
+              "It is mandatory",
+              "So titles are recognisable for recruitment, HR and benchmarking",
+              "To reduce salaries",
+              "To replace the PD"
+            ],
+            "a": 1,
+            "why": "Recognisable role names let progression and external benchmarking work without translation."
+          }
+        ],
+        "takeaways": [
+          "Capability strategy is seniority strategy",
+          "Career steps are shifts in counterparty and accountability",
+          "Pairings with realistic ratios build the senior pipeline",
+          "Coach the upstream move, not the template"
+        ]
+      },
+      "presenter": {
+        "purpose": "Have participants design a capability plan and practise a coaching conversation that moves a BA upstream.",
+        "openingLine": "“You can't buy gravitas with a template. Investment shaping needs people who've earned the right to say 'stop' — and this session is about growing them on purpose.”",
+        "beats": [
+          {
+            "label": "TEACH — four roles as a career path",
+            "minutes": 12,
+            "notes": "Emphasise counterparty shift; link back to the six axes."
+          },
+          {
+            "label": "TEACH — role family, ratios and coaching mechanisms",
+            "minutes": 13,
+            "notes": "Show the role-family figure; walk the worked-example pairing."
+          },
+          {
+            "label": "BUILD — capability plan (activity 1)",
+            "minutes": 30,
+            "notes": "Agent drafts the mix and pairings; participant decides promotions and stretch assignments."
+          },
+          {
+            "label": "PRACTICE — coaching trios (activity 2)",
+            "minutes": 15,
+            "notes": "Ten-minute conversation plus five for observer feedback. Broadcast a time check at 8 minutes."
+          },
+          {
+            "label": "PEER REVIEW — is the ratio realistic?",
+            "minutes": 12,
+            "notes": "Pairs test whether the 12-month target is achievable with budget and promotions."
+          },
+          {
+            "label": "DEBRIEF — the stretch assignment",
+            "minutes": 8,
+            "notes": "Three participants share their stretch assignment."
+          }
+        ],
+        "facilitationNotes": "Remind participants to use initials and roles only — no personal or performance information in the agent or the portal. The coaching trios need clear instructions on screen and a visible timer. If numbers do not divide into trios, form a pair with the facilitator observing. Watch for capability plans that are all training courses — push for assignments and pairings, which build judgement faster.",
+        "roleplay": {
+          "persona": "The Comfortable Senior BA",
+          "line": "“I like delivery work. I don't really want to sit in funding meetings.”",
+          "curveball": "They are the most respected analyst in the practice and the obvious Lead candidate.",
+          "move": "Explore what they value in delivery, reframe upstream work as protecting the delivery they care about, and agree one low-risk step — attending one Investment Quality Forum as an observer."
+        },
+        "whatGood": "A mix with a realistic 12-month target, named pairings, three capabilities each with a measure, and a stretch assignment that changes counterparty; a coaching conversation that ends in a specific, dated commitment.",
+        "commonFailure": "Capability plans become training calendars — and the fix is to require at least one assignment-based and one pairing-based development activity per capability.",
+        "debrief": [
+          "What is your Senior + Lead percentage — and is investment shaping realistic with it?",
+          "What made the coaching conversation land a commitment?",
+          "Which adjacent family do your best BAs leave for — and how could you bring them back?"
+        ],
+        "answerKey": "**Worked example (illustrative, 11 BAs):** current 1 Practice Lead plus 10 delivery staff: 1 Lead, 3 Senior, 6 BA → Senior + Lead 40% of delivery staff (45% including the Practice Lead). 12-month target: promote 2 BAs to Senior and recruit 1 Lead → 2 Leads, 5 Seniors, 4 BAs = 64% of 11 delivery staff. Pairings: each Senior with up to one BA; each Lead anchoring 2–3 pairings plus the claims portfolio.\n\nCapabilities: value quantification (measure: Visions with baseline/target/plan at Gate 1); facilitating difficult decisions (measure: BAs who have presented a reshape option); commercial judgement (measure: Seniors who have co-authored a business case with finance).\n\nStretch assignment: Senior BA on *Faster first payments* co-presents the D2 straight-through threshold options to the Head of Claims Ops.\n\n**Coaching:** a good conversation ends with a specific action and date, e.g. “I'll attend the next Investment Quality Forum on the 14th and debrief with you on the 15th.”",
+        "materials": [
+          "Career path table",
+          "BA role family figure",
+          "Pairing model slide",
+          "GROW coaching card",
+          "Persona and curveball card"
+        ]
+      }
+    },
+    {
+      "id": "d2-s4",
+      "num": "2.3",
+      "title": "Measuring practice value: KPIs",
+      "subtitle": "Three mechanisms, staged measures and a report a CFO will read",
+      "dayId": "d2",
+      "time": "13:00–14:30",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "A practice that cannot show its value will eventually be measured on its cost.",
+        "overview": "Value reporting is what turns a practice from an overhead into an investment. The BAS model measures practice value through **three mechanisms** — investment decision quality, delivery efficiency and rework reduction, and benefits integrity — reported quarterly to the Steering Committee and annually to the board.\n\nThis module covers the mechanisms, how to build KPIs with a baseline, target and measurement plan, how to stage measures over one versus three years, and how to report value honestly.",
+        "objectives": [
+          "Describe the three value mechanisms and how each is quantified",
+          "Build practice KPIs with baseline, target, measurement plan and owner",
+          "Stage measures for 90 days, 12 months and three years",
+          "Draft the structure of a quarterly value report"
+        ],
+        "keyPoints": [
+          {
+            "title": "Three mechanisms",
+            "body": "Investment decisions reshaped or stopped; rework and delivery efficiency; benefits integrity and capital redirection."
+          },
+          {
+            "title": "Conservative model",
+            "body": "A $2.0m BACOE on a $60m portfolio: $4.5m annual value, 2.25× — before higher-performing cases reach 4–6×."
+          },
+          {
+            "title": "Stage the metrics",
+            "body": "Twelve-month metrics differ from three-year metrics. Agree both up front or be judged on cost."
+          },
+          {
+            "title": "Lead and lag",
+            "body": "Pair each outcome measure with a leading indicator you can move in 90 days."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "The three value mechanisms",
+            "body": "**Mechanism 1 — Investment decision quality.** Senior BAs before funding reshape, descope or stop initiatives that would consume capital without benefit. On a mid-size portfolio this is typically 3–5% of annual change spend — consistent with PMI's finding that 11.4% of investment is wasted through poor project performance.\n\n**Mechanism 2 — Delivery efficiency and rework.** Standards and assurance reduce rework from 25–40% of project cost to 10–15% in mature practices. Only a portion is practice-attributable.\n\n**Mechanism 3 — Benefits integrity.** 30–50% of claimed benefits are never measured after implementation. A practice that owns benefits tracking turns invisible value into evidenced value.\n\n| Mechanism ($60m portfolio, $2.0m BACOE) | Conservative annual value |\n|---|---|\n| Investment decisions reshaped or stopped | $1,800,000 |\n| Rework and delivery efficiency (attributable) | $1,500,000 |\n| Benefits integrity and capital redirection | $1,200,000 |\n| **Total** | **$4,500,000 — 2.25×** |"
+          },
+          {
+            "heading": "Building KPIs that survive scrutiny",
+            "body": "Each practice KPI needs a **baseline**, a **target**, a **measurement plan** (data, source, cadence, owner) and a statement of **what it doesn't measure**. A useful set covers all three mechanisms plus practice health:\n\n| KPI | Mechanism | Type |\n|---|---|---|\n| Value of initiatives reshaped, descoped or stopped at investment stage | 1 | Lag |\n| % of Silver/Gold initiatives with a senior BA assigned before funding | 1 | Lead |\n| Rework as % of delivery cost on BA-assured vs non-assured initiatives | 2 | Lag |\n| % of Visions passing Gate 1 first time | 2 | Lead |\n| % of claimed benefits with a live measure 6 months after go-live | 3 | Lag |\n| % of initiatives with benefits owner accepted at Gate 3 | 3 | Lead |\n| Senior + Lead % of practice | Health | Lead |\n\nThe worked example shows the pattern at initiative level: the north-star (lodgement-to-first-payment) is supported by tier-2 drivers, each with an owner and source — % claims lodged digitally (CDO, portal analytics), % certificates valid at first submission (Claims Ops, claims warehouse), agent queue age p95 (Agent Panel Manager). A practice KPI tree works the same way."
+          },
+          {
+            "heading": "Staging measures over time",
+            "body": "A practice funded for twelve months and judged at twelve months will be measured on its costs and published templates, not on investment-quality outcomes that take longer to mature. Agree a staged scorecard at the outset:\n\n- **90 days** — leading indicators only: senior BAs placed upstream on named initiatives; Gate 1 in use; value baseline captured.\n- **12 months** — first quantified Mechanism 1 and 3 cases on at least three pilots; first quarterly value report delivered.\n- **3 years** — portfolio-level value against the three mechanisms; return multiple reported to the board.\n\nIn the worked example, an upstream BA on the next claims initiative could show a 90-day leading indicator (placed before investment committee) long before the lagging value (avoided spend) is provable."
+          },
+          {
+            "heading": "Reporting value honestly",
+            "body": "The BAS Value Reporting Generator aggregates contributions across the three mechanisms, compares actual to target, identifies trends, surfaces risks, and produces either a **quarterly value report** for the Steering Committee or an **annual board report**.\n\nThree honesty rules protect credibility: separate **cashable, avoided and protected** value; **halve attribution** when in doubt and say so; and report **misses** alongside wins — a report with no red is not believed. A one-page quarterly report has four parts: value this quarter by mechanism; leading indicators against target; risks and preconditions at threat; decisions needed from the Steering Committee."
+          }
+        ],
+        "activities": [
+          {
+            "id": "d2-s4-act1",
+            "title": "Build your practice scorecard",
+            "minutes": 30,
+            "instructions": "Draft five to seven KPIs for your practice covering all three mechanisms and practice health. For each, state baseline (or how you will capture it), target, measurement plan and owner, and mark it lead or lag. Then stage them: which will you report at 90 days, 12 months and 3 years?",
+            "prompts": [
+              {
+                "id": "kpis",
+                "label": "KPIs — mechanism, lead/lag, baseline, target, measurement plan, owner"
+              },
+              {
+                "id": "staging",
+                "label": "Staging — 90 days / 12 months / 3 years"
+              },
+              {
+                "id": "doesnt",
+                "label": "What your scorecard doesn't measure — and the watch metric that guards it"
+              }
+            ]
+          },
+          {
+            "id": "d2-s4-act2",
+            "title": "Draft a one-page quarterly value report",
+            "minutes": 12,
+            "instructions": "Using illustrative numbers or the worked example, draft the four-part quarterly report: value by mechanism (classified as cashable, avoided or protected), leading indicators, risks and preconditions at threat, and decisions needed.",
+            "prompts": [
+              {
+                "id": "report",
+                "label": "Quarterly value report — four parts"
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Act as the BAS Value Reporting Generator. Three mechanisms: (1) investment decisions reshaped, descoped or stopped; (2) rework and delivery efficiency (attributable share only); (3) benefits integrity and capital redirection. My practice data: [initiatives, portfolio size, practice cost, outcomes]. Produce: (a) a scorecard of 5–7 KPIs across the three mechanisms and practice health, each with baseline, target, measurement plan, owner, and lead/lag; (b) a staged view at 90 days, 12 months and 3 years; (c) a one-page quarterly value report with value by mechanism classified as cashable, avoided or protected, attribution halved where uncertain, leading indicators, risks to preconditions, and decisions needed. Mark every assumed figure [ASSUMED].",
+        "quiz": [
+          {
+            "q": "Which KPI is a leading indicator for Mechanism 1?",
+            "opts": [
+              "Value of initiatives stopped",
+              "% of Silver/Gold initiatives with a senior BA assigned before funding",
+              "Rework % of delivery cost",
+              "Benefits measured after go-live"
+            ],
+            "a": 1,
+            "why": "Upstream placement precedes, and predicts, the lagging value of reshaped or stopped investments."
+          },
+          {
+            "q": "A practice is funded for 12 months only. What should the leader do?",
+            "opts": [
+              "Decline the funding",
+              "Promise the three-year value in year one",
+              "Agree staged metrics that differ at 12 months and 3 years",
+              "Measure only cost"
+            ],
+            "a": 2,
+            "why": "Set expectations explicitly: early metrics are leading indicators; outcome metrics mature later."
+          },
+          {
+            "q": "Why include misses in a value report?",
+            "opts": [
+              "Regulatory requirement",
+              "A report with no red is not believed",
+              "To lower expectations",
+              "It is optional"
+            ],
+            "a": 1,
+            "why": "Honest reporting is the asset that earns the practice its next round of trust and funding."
+          }
+        ],
+        "takeaways": [
+          "Measure the three mechanisms, not activity",
+          "Every KPI needs baseline, target, measurement plan and owner",
+          "Stage the scorecard so year one isn't judged on year-three outcomes",
+          "Report honestly — classify, halve, and show misses"
+        ]
+      },
+      "presenter": {
+        "purpose": "Have participants build a staged practice scorecard and the shape of a quarterly value report.",
+        "openingLine": "“If you don't measure your practice's value, someone else will measure its cost. This session gives you the numbers before they ask.”",
+        "beats": [
+          {
+            "label": "TEACH — three mechanisms and the 2.25× model",
+            "minutes": 15,
+            "notes": "Walk the table; contrast with 10–20× for an individual BA (absolute vs multiple)."
+          },
+          {
+            "label": "TEACH — KPIs, lead/lag and staging",
+            "minutes": 13,
+            "notes": "Show the worked-example KPI tree and the practice KPI table."
+          },
+          {
+            "label": "BUILD — practice scorecard (activity 1)",
+            "minutes": 30,
+            "notes": "Agent drafts; participant replaces every [ASSUMED] with a real figure or a capture plan."
+          },
+          {
+            "label": "BUILD — quarterly value report (activity 2)",
+            "minutes": 12,
+            "notes": "One page, four parts. Push for at least one miss."
+          },
+          {
+            "label": "PEER REVIEW — the CFO test",
+            "minutes": 12,
+            "notes": "Reviewer plays the CFO: which number would you challenge first?"
+          },
+          {
+            "label": "DEBRIEF — your 90-day measure",
+            "minutes": 8,
+            "notes": "Each participant posts the one measure they'll report at 90 days."
+          }
+        ],
+        "facilitationNotes": "Participants without data panic here — reassure them that the 90-day scorecard is mostly leading indicators and baseline capture. Insist on the cashable/avoided/protected split in the report; it is the single biggest credibility lever with finance. Keep the worked example as a fallback for anyone without practice data.",
+        "roleplay": {
+          "persona": "The Sceptical CFO",
+          "line": "“Every team tells me they save millions. Show me where it is in my budget.”",
+          "curveball": "Asks which of the $4.5m is cashable this financial year.",
+          "move": "Separate cashable from avoided and protected value openly, show the halved attribution, and offer one initiative where the CFO's own team can verify the avoided spend."
+        },
+        "whatGood": "Five to seven KPIs covering all three mechanisms, each with baseline, target, plan and owner; a clear 90-day / 12-month / 3-year staging; a one-page report with classified value and at least one honest miss.",
+        "commonFailure": "Scorecards fill up with activity counts (workshops held, documents produced) — and the fix is to ask “which mechanism does this prove?” and delete anything that maps to none.",
+        "debrief": [
+          "Which mechanism is hardest to evidence in your practice — and why?",
+          "What will you report at 90 days?",
+          "What did the CFO challenge first?"
+        ],
+        "answerKey": "**Model scorecard (worked example practice, illustrative).**\n1. % Silver/Gold claims initiatives with senior BA before investment committee — M1 lead — baseline 0% — target 50% in 12 months — PMO intake register, monthly — Practice Lead.\n2. Value reshaped/descoped/stopped — M1 lag — baseline not captured — target first three cases in 12 months — Investment Quality Forum minutes — Practice Lead.\n3. % Visions passing Gate 1 first time — M2 lead — baseline capture in first 30 days — target 70% — gate log — Lead BA.\n4. Rework % on assured vs non-assured — M2 lag — sample of 6 initiatives — target 10-point gap — project cost reports — PMO.\n5. % benefits with live measure 6 months post go-live — M3 lag — baseline ~40% — target 80% — benefits register — business owners.\n6. Senior + Lead % — health — 40% → 64%.\n\n**Doesn't measure:** quality of decisions themselves; guarded by a watch metric on post-approval scope changes.\n\n**Staging:** 90 days = 1, 3, 6 plus baselines; 12 months = add 2 and 5; 3 years = return multiple.",
+        "materials": [
+          "Three mechanisms table",
+          "Practice KPI table",
+          "Worked-example KPI tree",
+          "Quarterly value report template",
+          "BACOE Value Reporting Generator playbook",
+          "Persona and curveball card"
+        ]
+      }
+    },
+    {
+      "id": "d2-s5",
+      "num": "2.4",
+      "title": "Build your 90-day practice plan",
+      "subtitle": "Turn two days of diagnosis into a plan a sponsor can approve",
+      "dayId": "d2",
+      "time": "14:45–16:15",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "Ninety days is a Readiness phase: long enough to prove one thing, short enough that nobody loses interest.",
+        "overview": "In the BAS pathway the first phase of building a practice — **Readiness, months 0–3** — confirms preconditions, secures backing, agrees boundaries and builds the case. Your 90-day plan is that phase, or the lighter intervention that builds towards it.\n\nThis module assembles everything you have produced — value proposition, readiness diagnostic, decision rights, AI guardrails, maturity check, quality gates, capability plan and scorecard — into one plan with three workstreams, a pilot, a decision gate and an ask.",
+        "objectives": [
+          "Structure a 90-day plan around your two priority gaps",
+          "Select one pilot initiative that can evidence a value mechanism",
+          "Define the day-90 decision gate and what it unlocks",
+          "Assemble the plan from your saved course outputs"
+        ],
+        "keyPoints": [
+          {
+            "title": "Three workstreams",
+            "body": "Position (where BAs sit), Standard (gates and playbooks), People and proof (capability and value reporting)."
+          },
+          {
+            "title": "One pilot",
+            "body": "One upstream placement on one initiative beats a programme of templates."
+          },
+          {
+            "title": "A gate at day 90",
+            "body": "Name the decision you will ask for at day 90 and the evidence you'll bring."
+          },
+          {
+            "title": "Don't skip phases",
+            "body": "Compressing Readiness is the most common cause of defunding in Year 2."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "The shape of the plan",
+            "body": "A 90-day plan has five parts:\n\n1. **Starting point** — your maturity ratings and two priority gaps (Day 1 close).\n2. **Model choice** — full BACOE track, conditional PMO-hosted model, or lighter intervention (readiness diagnostic).\n3. **Three workstreams over three months**:\n\n| Workstream | Days 1–30 | Days 31–60 | Days 61–90 |\n|---|---|---|---|\n| Position | Agree pilot initiative; senior BA placed upstream | Project Vision signed; tier confirmed | Investment Quality review held on pilot |\n| Standard | Gate 1 published; AI guardrail standard agreed with privacy/security | Gate 2 in use; prompt library v1 | Gate 3 drafted; boundaries discussion with PMO |\n| People and proof | Baselines captured; pairings agreed | Community of Practice launched; first coaching cycle | 90-day value report delivered |\n\n4. **Day-90 decision gate** — what you will ask for and the evidence.\n5. **Risks and asks** — preconditions at threat and the decisions needed from your sponsor."
+          },
+          {
+            "heading": "Choosing the pilot",
+            "body": "A good pilot initiative is **pre-funding** (so Mechanism 1 is available), **Silver or Gold** (so there is enough at stake), has a **business owner willing to own benefits**, and is **visible to your sponsor**. Avoid initiatives already in delivery — they can only show delivery-band value.\n\nIn the worked example, *Faster first payments* is already funded, so it is a poor Mechanism 1 pilot. A better choice is the next initiative in the claims pipeline — for example, return-to-work planning, which was explicitly out of scope — where a senior BA could join before investment committee and apply the same lodgement-clock insight: find the default wait hidden in the process."
+          },
+          {
+            "heading": "The day-90 gate and the ask",
+            "body": "End the plan with the decision you want at day 90 and the evidence that would justify it. Typical gates:\n\n- *Lighter intervention → BACOE readiness:* “Evidence from one pilot and two unmet preconditions now met; approve the BACOE business case build.”\n- *Embedded seniors → standard placement:* “Pilot showed value; make senior BA placement before investment committee the default for Silver and Gold.”\n- *Standards → governance:* “Gates adopted; establish the fortnightly Investment Quality Forum.”\n\nThe ask must be specific, within the sponsor's authority and tied to evidence you will actually have at day 90."
+          }
+        ],
+        "activities": [
+          {
+            "id": "d2-s5-act1",
+            "title": "Assemble your 90-day practice plan",
+            "minutes": 45,
+            "instructions": "Pull your saved outputs from both days into the five-part plan. Keep it to one page plus the workstream table. Be specific: name the pilot, the senior BA (role, not name, if you prefer), the dates of each 30-day milestone, the day-90 gate and the ask.",
+            "prompts": [
+              {
+                "id": "start",
+                "label": "1. Starting point — ratings and two priority gaps"
+              },
+              {
+                "id": "model",
+                "label": "2. Model choice and rationale"
+              },
+              {
+                "id": "workstreams",
+                "label": "3. Three workstreams × three months"
+              },
+              {
+                "id": "gate",
+                "label": "4. Day-90 decision gate and evidence"
+              },
+              {
+                "id": "risks",
+                "label": "5. Risks, preconditions at threat and asks"
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Using my saved course outputs below — value JTBDs, readiness diagnostic, decision-rights RACI, AI guardrail standard, maturity check and sponsor message, tier and quality gates, capability plan, and practice scorecard — draft a 90-day BA practice plan in five parts: (1) starting point and two priority gaps; (2) model choice (BACOE, conditional PMO-hosted, or lighter intervention) with rationale tied to the six preconditions; (3) a table of three workstreams (Position; Standard; People and proof) across days 1–30, 31–60, 61–90; (4) a day-90 decision gate with the specific ask and the evidence I will have; (5) risks and asks. Keep it to one page plus the table. Do not add activities I have not supported with an output — list them as gaps instead. Outputs: [paste].",
+        "quiz": [
+          {
+            "q": "Which makes the best pilot for demonstrating Mechanism 1?",
+            "opts": [
+              "A funded initiative in delivery",
+              "A Bronze dashboard change",
+              "A pre-funding Silver or Gold initiative with a willing benefits owner",
+              "Any initiative the sponsor likes"
+            ],
+            "a": 2,
+            "why": "Mechanism 1 is only available before funding, and needs enough at stake to matter."
+          },
+          {
+            "q": "What is the most common cause of practice defunding in Year 2?",
+            "opts": [
+              "Poor templates",
+              "Skipping or compressing Readiness and Pilot phases",
+              "Too many forums",
+              "Using AI"
+            ],
+            "a": 1,
+            "why": "Organisations that compress the pathway usually skip Readiness or Pilot and pay for it with a defunding decision."
+          }
+        ],
+        "takeaways": [
+          "Your 90-day plan is a Readiness phase — prove one thing",
+          "Pick a pre-funding pilot",
+          "End with a specific, evidenced ask"
+        ]
+      },
+      "presenter": {
+        "purpose": "Have every participant assemble a specific, evidenced 90-day plan from their course outputs.",
+        "openingLine": "“You've built eight pieces over two days. Now they become one page that a sponsor can say yes to.”",
+        "beats": [
+          {
+            "label": "TEACH — five-part plan and three workstreams",
+            "minutes": 12,
+            "notes": "Show the worked-example table; stress one pilot."
+          },
+          {
+            "label": "TEACH — choosing the pilot and the day-90 gate",
+            "minutes": 10,
+            "notes": "Use the 'Faster first payments is already funded' twist to make the pre-funding point."
+          },
+          {
+            "label": "BUILD — assemble the plan (activity)",
+            "minutes": 45,
+            "notes": "Agent assembles from saved outputs; participant cuts anything unsupported. Visit every participant at least once."
+          },
+          {
+            "label": "PEER REVIEW — pitch-readiness check",
+            "minutes": 15,
+            "notes": "Pairs check: is the pilot pre-funding? Is the ask specific and within the sponsor's authority?"
+          },
+          {
+            "label": "DEBRIEF — prepare to pitch",
+            "minutes": 8,
+            "notes": "Explain the pitch format: three minutes, three questions."
+          }
+        ],
+        "facilitationNotes": "This is the longest BUILD in the course — protect it. The agent will try to add activities; make participants delete anything not grounded in an output. Watch for plans with three pilots: insist on one. If a participant's model choice is 'lighter intervention', make sure the day-90 gate still asks for a real decision.",
+        "roleplay": {
+          "persona": "The Busy Executive Sponsor",
+          "line": "“I've got five minutes. What do you need from me?”",
+          "curveball": "Says yes to everything but commits to nothing specific.",
+          "move": "Ask for one specific decision with a date — e.g. an invitation for the senior BA to the next investment committee — and confirm it in writing that day."
+        },
+        "whatGood": "One page plus a table: two gaps, a justified model, one pre-funding pilot, dated 30-day milestones in three workstreams, a day-90 gate with evidence and a specific ask.",
+        "commonFailure": "Plans try to fix every gap at once — and the fix is to cut back to the two priority gaps and one pilot.",
+        "debrief": [
+          "What did you cut to fit the plan on a page?",
+          "Is your pilot genuinely pre-funding?",
+          "What is the one sentence your sponsor must remember?"
+        ],
+        "answerKey": "**Worked example plan (illustrative).** 1 Starting point: Leverage 1, Value reporting 1. 2 Model: lighter intervention — Community of Practice with two senior anchors plus one embedded senior BA (three unmet preconditions). 3 Workstreams: Position — senior BA placed on return-to-work planning initiative before investment committee (day 20); Vision signed (day 50); Investment Quality review held (day 80). Standard — Gate 1 and AI guardrail standard (day 30); Gate 2 and prompt library (day 60); boundaries meeting with PMO (day 75). People and proof — baselines and pairings (day 30); Community of Practice launch (day 45); 90-day value report (day 90). 4 Gate: “Make senior BA placement before investment committee the default for Silver/Gold claims initiatives.” Evidence: the pilot's reshape recommendation and leading indicators. 5 Risks: benefits ownership still unassigned; ask Head of Claims Ops to accept benefits ownership for the pilot.",
+        "materials": [
+          "Plan template",
+          "Workstream table",
+          "Pilot selection checklist",
+          "Persona and curveball card"
+        ]
+      }
+    },
+    {
+      "id": "d2-s6",
+      "num": "2.5",
+      "title": "Pitch your plan, feedback and course close",
+      "subtitle": "Three minutes to win a sponsor — then commit to Monday",
+      "dayId": "d2",
+      "time": "16:15–17:00",
+      "minutes": 45,
+      "participant": {
+        "bigIdea": "A plan you can't pitch in three minutes is a plan your sponsor won't fund.",
+        "overview": "You pitch your 90-day plan to a small group playing your sponsor. Each pitch is three minutes, followed by structured feedback. We then close the course with your Monday commitment and the resources to keep going.",
+        "objectives": [
+          "Pitch a 90-day plan in three minutes using found / costs / test / need",
+          "Give and receive structured feedback on a peer's plan",
+          "Commit to one action you will take on Monday"
+        ],
+        "keyPoints": [
+          {
+            "title": "Three minutes",
+            "body": "Found, costs, test, need — the same structure as your Day 1 sponsor message, now with a plan behind it."
+          },
+          {
+            "title": "Feedback in three lines",
+            "body": "What will land; what the sponsor will challenge; what to cut."
+          },
+          {
+            "title": "Monday matters",
+            "body": "The first action within a week predicts whether the plan happens at all."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "The pitch structure",
+            "body": "**Found** (30 seconds) — one evidenced fact about your practice. **Costs** (45 seconds) — what that costs in the sponsor's terms: delay, rework, unrealised benefits, risk. **Test** (60 seconds) — your pilot and the 90-day workstreams in one sentence each. **Need** (45 seconds) — the specific decision and the date.\n\nThe worked-example pitch opens: “Our BAs joined *Faster first payments* after it was funded — and the biggest leak, an employer-forwarding wait of up to 9.4 days, was only found in delivery. Imagine finding that before the business case.”"
+          },
+          {
+            "heading": "Giving useful feedback",
+            "body": "Feedback givers play the sponsor and then step out of role to give three lines: **what will land**, **what the sponsor will challenge first**, and **what to cut**. Keep it specific and kind; the goal is a better pitch on Monday, not a perfect one today."
+          },
+          {
+            "heading": "After the course",
+            "body": "Your saved outputs remain in this portal. Run the relevant playbooks with your agent as you implement: the Readiness Diagnostic before any business case, the Tier Classifier at intake, the Value Reporting Generator each quarter. Revisit your maturity check at day 90 and compare."
+          }
+        ],
+        "activities": [
+          {
+            "id": "d2-s6-act1",
+            "title": "Pitch and feedback",
+            "minutes": 25,
+            "instructions": "In groups of three, each person pitches for three minutes while the others play the sponsor. After each pitch, the listeners give three lines of feedback. Record the feedback you received and your revised opening line.",
+            "prompts": [
+              {
+                "id": "feedback",
+                "label": "Feedback received — lands / challenged / cut"
+              },
+              {
+                "id": "opening",
+                "label": "My revised opening line"
+              }
+            ]
+          },
+          {
+            "id": "d2-s6-act2",
+            "title": "Monday commitment",
+            "minutes": 5,
+            "instructions": "Write the one action you will take on Monday, who it involves, and how you will know it is done.",
+            "prompts": [
+              {
+                "id": "monday",
+                "label": "My Monday action, who it involves and the evidence it's done"
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Here is my 90-day BA practice plan [paste]. Play my executive sponsor — a busy senior leader focused on budget, risk and delivery dates. First, ask me the three hardest questions you would ask after a three-minute pitch. Then step out of role and give me three lines of feedback: what will land, what you would challenge first, and what I should cut. Finally, suggest a sharper 30-second opening based on the strongest evidence in my plan.",
+        "quiz": [
+          {
+            "q": "What are the four parts of the pitch?",
+            "opts": [
+              "Problem, solution, cost, timeline",
+              "Found, costs, test, need",
+              "Vision, scope, tier, gates",
+              "Why, what, how, when"
+            ],
+            "a": 1,
+            "why": "The same structure as the Day 1 sponsor message — now backed by a plan."
+          },
+          {
+            "q": "Which is the best 'need'?",
+            "opts": [
+              "Your ongoing support",
+              "A senior BA invited to the 12 March investment committee",
+              "More resources for BA",
+              "Recognition of the BA team's work"
+            ],
+            "a": 1,
+            "why": "Specific, dated and within the sponsor's authority."
+          }
+        ],
+        "takeaways": [
+          "Three minutes, four parts, one ask",
+          "Use feedback to sharpen the opening",
+          "Take one action on Monday"
+        ]
+      },
+      "presenter": {
+        "purpose": "Have every participant pitch their plan, receive structured feedback, commit to a first action, and close the course.",
+        "openingLine": "“Your sponsor won't read your plan. They'll listen to three minutes of it. Let's make those three minutes count.”",
+        "beats": [
+          {
+            "label": "Pitch format and groups",
+            "minutes": 4,
+            "notes": "Show the four-part structure and the three-line feedback card; move to breakout trios."
+          },
+          {
+            "label": "Pitch and feedback (activity 1)",
+            "minutes": 25,
+            "notes": "Three rounds of about eight minutes: three-minute pitch, two minutes of sponsor questions, three lines of feedback. Broadcast time checks."
+          },
+          {
+            "label": "Plenary — two best openings",
+            "minutes": 5,
+            "notes": "Ask each trio to nominate one opening line; read two aloud."
+          },
+          {
+            "label": "Monday commitment (activity 2)",
+            "minutes": 5,
+            "notes": "Silent writing in the portal."
+          },
+          {
+            "label": "Course close",
+            "minutes": 6,
+            "notes": "Recap the chain; point to resources and playbooks; thank the room; collect evaluations."
+          }
+        ],
+        "facilitationNotes": "Keep breakout timings tight; broadcast at 3, 5 and 8 minutes in each round. Encourage sponsors-in-role to interrupt as real sponsors would. In plenary, celebrate specific asks over polished delivery. Close on time — finishing at 17:00 is part of modelling a disciplined practice.",
+        "roleplay": {
+          "persona": "The Distracted Sponsor",
+          "line": "“Sorry — can you give me the short version?”",
+          "curveball": "Interrupts after 45 seconds to ask what it costs.",
+          "move": "Go straight to the need: the specific decision, the date and the cost of not deciding — then fill in the evidence if asked."
+        },
+        "whatGood": "Every participant pitches within three minutes with a specific, dated ask, receives three lines of feedback and records a Monday action with evidence of completion.",
+        "commonFailure": "Pitches run long on methodology — and the fix is a visible three-minute timer and a sponsor who interrupts at 90 seconds.",
+        "debrief": [
+          "What did the sponsor challenge first in your trio?",
+          "Which opening line would you steal?",
+          "What will you do on Monday?"
+        ],
+        "answerKey": "**Model pitch (worked example).** Found: “Our BAs joined *Faster first payments* after funding; the employer-forwarding wait — up to 9.4 days — was only found in delivery.” Costs: “That one finding is worth about $1.1m a year in duplicated contact demand; finding it before funding would have shaped the business case.” Test: “For 90 days, one senior BA joins the return-to-work planning initiative before investment committee, with a signed Vision and a value report at day 90.” Need: “I need you to invite them to the next investment committee and to own the benefits for that pilot.”\n\n**Model Monday action:** “Email the Head of Claims Ops proposing the pilot and requesting a 20-minute meeting this week; done when the meeting is in the calendar.”",
+        "materials": [
+          "Pitch structure slide",
+          "Feedback card",
+          "Breakout timer",
+          "Course evaluation link",
+          "Resources list"
+        ]
+      }
+    }
+  ],
+  "resources": [
+    {
+      "title": "Business Analyst Practice Leadership Model (book)",
+      "description": "The source text for this course: value theory, the delivery model and the BACOE, by Chale Dodge.",
+      "audience": "participant"
+    },
+    {
+      "title": "Business Analyst Value Generator",
+      "description": "Playbook: decomposes a BA position description into Jobs To Be Done, assigns value metrics, calculates ROI and rewrites the PD.",
+      "audience": "participant"
+    },
+    {
+      "title": "Project Vision Builder",
+      "description": "Playbook: produces the six-element Project Vision signed by sponsor and business owner.",
+      "audience": "participant"
+    },
+    {
+      "title": "As-Is To-Be Analyser",
+      "description": "Playbook: current process, pain points and workarounds, systems and data flow, and To-Be with role changes explicit.",
+      "audience": "participant"
+    },
+    {
+      "title": "Tier Classifier",
+      "description": "Playbook: five-factor test producing a defensible Bronze / Silver / Gold recommendation.",
+      "audience": "participant"
+    },
+    {
+      "title": "Bronze, Silver and Gold Delivery Packs",
+      "description": "Playbooks: the 4, 12 and 24 cumulative deliverables for each tier.",
+      "audience": "participant"
+    },
+    {
+      "title": "BACOE Readiness Diagnostic",
+      "description": "Playbook: assesses the six preconditions and returns Go / Hold / No-Go.",
+      "audience": "participant"
+    },
+    {
+      "title": "BACOE Business Case Builder",
+      "description": "Playbook: three-year cost model, return ramp, preconditions and the five-part executive business case.",
+      "audience": "participant"
+    },
+    {
+      "title": "BACOE Boundary Negotiator",
+      "description": "Playbook: activity landscape, overlap resolution, RACI, escalation paths and signed Boundaries Agreement.",
+      "audience": "participant"
+    },
+    {
+      "title": "BACOE Operating Model Designer",
+      "description": "Playbook: roles, three governance forums, four-service catalogue and intake workflow.",
+      "audience": "participant"
+    },
+    {
+      "title": "BACOE Value Reporting Generator",
+      "description": "Playbook: quarterly value report and annual board report across the three mechanisms.",
+      "audience": "participant"
+    },
+    {
+      "title": "Practice templates pack",
+      "description": "One-page Project Vision, maturity check, AI guardrail standard, quality gates, capability plan, scorecard and 90-day plan templates.",
+      "audience": "participant"
+    },
+    {
+      "title": "Facilitator run sheet",
+      "description": "Minute-by-minute timings, beats and room management for both days.",
+      "audience": "presenter"
+    },
+    {
+      "title": "Persona and curveball cards",
+      "description": "Role-play personas, curveballs and model BA moves for each module.",
+      "audience": "presenter"
+    },
+    {
+      "title": "Worked example pack — Faster first payments",
+      "description": "Illustrative Vision, As-Is inventory, decision log, tiering and KPI tree. Illustrative worked example built from public knowledge; not WorkSafe Victoria data.",
+      "audience": "presenter"
+    },
+    {
+      "title": "AI demo artefact with planted errors",
+      "description": "Agent-drafted pain-point inventory with three planted errors for the guardrails module.",
+      "audience": "presenter"
+    }
+  ]
+}

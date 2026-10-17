@@ -1,0 +1,1349 @@
+{
+  "slug": "horizons-strategy",
+  "title": "Horizons: Strategy",
+  "shortTitle": "Strategy Horizon",
+  "tagline": "A foundations bridge, then a full day on analysis before money is committed (Ch 1–3, 5)",
+  "format": "One-day course · Day 1 of 3 · sold singly or as a 3-day bundle",
+  "duration": "1 day",
+  "delivery": "Live online · APAC · Times Sydney",
+  "audience": "Business analysts, product owners, portfolio and strategy analysts, and BA leads who are asked to shape investment ideas before funding is approved — and who want an agile way to do it without writing a 60-page business case.",
+  "order": 3,
+  "series": "Horizon Series",
+  "outcomes": [
+    "Explain the agile mindset and the three planning horizons, and place any piece of your own work on the right horizon.",
+    "Frame a strategic problem without smuggling a solution into it.",
+    "Use outcome-focused analysis techniques (problem framing, value modelling, assumption mapping, real options) before money is committed.",
+    "Build a lean business case that states what evidence would prove the investment wrong.",
+    "Set up feedback loops that let a portfolio change its mind cheaply."
+  ],
+  "leaveWith": [
+    "A lean business case that names what would prove it wrong",
+    "A solution-free problem statement",
+    "A horizon map of your own work"
+  ],
+  "caseStudy": {
+    "title": "Faster first payments for injured workers",
+    "org": "WorkSafe Victoria (illustrative)",
+    "summary": "Injured workers wait an average of 18.2 days from claim lodgement to their first weekly compensation payment, and many chase status through the contact centre. The target outcome is lodgement-to-first-payment of 7 days or less within 12 months, with claim-status calls down 40%. Across the three days we follow this one idea from investment decision (Strategy), through a funded initiative and product (Initiative), to a single elaborated backlog item (Delivery).",
+    "disclaimer": "Illustrative worked example built from public knowledge; not WorkSafe Victoria data."
+  },
+  "days": [
+    {
+      "id": "d1",
+      "label": "Day 1 of 3",
+      "title": "Strategy Horizon — analysis before money is committed",
+      "blocks": [
+        {
+          "time": "09:00–09:30",
+          "title": "Welcome · foundations (Ch 1–3)",
+          "type": "welcome",
+          "moduleId": "hs-s1"
+        },
+        {
+          "time": "09:30–10:30",
+          "title": "The analyst at the Strategy Horizon",
+          "type": "session",
+          "moduleId": "hs-s2"
+        },
+        {
+          "time": "10:30–10:45",
+          "title": "Morning break",
+          "type": "break"
+        },
+        {
+          "time": "10:45–12:15",
+          "title": "Outcomes · time frame · feedback",
+          "type": "session",
+          "moduleId": "hs-s3"
+        },
+        {
+          "time": "12:15–13:00",
+          "title": "Lunch",
+          "type": "break"
+        },
+        {
+          "time": "13:00–13:45",
+          "title": "Principles applied at this horizon",
+          "type": "session",
+          "moduleId": "hs-s4"
+        },
+        {
+          "time": "13:45–15:15",
+          "title": "Analysis techniques",
+          "type": "session",
+          "moduleId": "hs-s5"
+        },
+        {
+          "time": "15:15–15:30",
+          "title": "Afternoon break",
+          "type": "break"
+        },
+        {
+          "time": "15:30–16:30",
+          "title": "Planning and delivery techniques",
+          "type": "session",
+          "moduleId": "hs-s6"
+        },
+        {
+          "time": "16:30–17:00",
+          "title": "Exercise: apply to a live investment idea · close",
+          "type": "exercise",
+          "moduleId": "hs-s7"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "hs-s1",
+      "num": "1.1",
+      "title": "Welcome · foundations (Ch 1–3)",
+      "subtitle": "The agile mindset, the principles, and the three planning horizons in thirty minutes",
+      "dayId": "d1",
+      "time": "09:00–09:30",
+      "minutes": 30,
+      "participant": {
+        "bigIdea": "Agile analysis is not a smaller version of waterfall analysis — it is analysis sized to the decision in front of you.",
+        "overview": "This opening block is a bridge. Some of you have worked in agile teams for years; others have spent a career in stage-gated programmes. Either way, we need a shared language before we spend the day at the Strategy Horizon.\n\nWe cover three foundations quickly: the **agile mindset** (why we value learning over certainty), the **principles of agile business analysis** (the ideas that steer every technique you will use today), and the **planning horizons** model — Strategy, Initiative and Delivery — which describes how the *questions* an analyst asks change as the time frame shortens and the feedback gets faster.\n\nThe running case for the whole series is introduced here: *Faster first payments for injured workers*. Illustrative worked example built from public knowledge; not WorkSafe Victoria data.",
+        "objectives": [
+          "Describe the agile mindset in your own words and contrast it with a predictive mindset.",
+          "Name the core principles of agile business analysis and give an example of each.",
+          "Explain the three planning horizons and what distinguishes them: outcomes, time frame and feedback cycle.",
+          "Place three pieces of your own current work on a horizon."
+        ],
+        "keyPoints": [
+          {
+            "title": "Mindset before method",
+            "body": "Practices (stand-ups, backlogs, sprints) are visible; the mindset — expecting to be wrong, valuing fast feedback, putting customer value first — is what makes them work."
+          },
+          {
+            "title": "Principles steer techniques",
+            "body": "Seeing the whole, thinking as a customer, analysing to determine what is valuable, getting real using examples, understanding what is doable, stimulating collaboration and continuous improvement, and avoiding waste."
+          },
+          {
+            "title": "Three horizons",
+            "body": "Strategy (is this worth doing at all?), Initiative (what product or change will deliver it?), Delivery (what do we build next and how will we know it worked?)."
+          },
+          {
+            "title": "Same analyst, different altitude",
+            "body": "The horizons are not job titles. One BA often works across all three in the same week; the skill is knowing which question you are answering right now."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "The agile mindset in one page",
+            "body": "An agile mindset starts from a simple admission: **in complex work, we do not know enough at the start to plan the whole thing accurately.** Rather than fighting that uncertainty with bigger upfront documents, agile analysis reduces it in small, deliberate steps — by making assumptions explicit, testing the riskiest ones first, and adjusting the plan as evidence arrives.\n\nFor an analyst that changes three habits:\n\n- **From completeness to sufficiency.** Analysis is \"done\" when it is enough to make the next decision well, not when every requirement is written down.\n- **From sign-off to shared understanding.** The goal of a conversation is that the people who will make and use the solution understand it the same way — documents are a by-product.\n- **From outputs to outcomes.** We measure success by the change in behaviour or results the customer sees, not by the number of features shipped."
+          },
+          {
+            "heading": "The principles, practically",
+            "body": "| Principle (paraphrased) | What it looks like on a Tuesday |\n|---|---|\n| See the whole | You ask *why* this initiative exists and what else in the organisation it touches before you analyse the detail. |\n| Think as a customer | You describe the problem from the injured worker's point of view, not from the claims system's. |\n| Analyse to determine what is valuable | You rank options by value and evidence, not by who shouted loudest. |\n| Get real using examples | You test a rule with three concrete claims rather than debating it in the abstract. |\n| Understand what is doable | You check constraints — legislation, data, capacity — early, so options are realistic. |\n| Stimulate collaboration and continuous improvement | You make your thinking visible on a shared board and invite challenge. |\n| Avoid waste | You stop analysing when the next decision is already clear. |"
+          },
+          {
+            "heading": "The three planning horizons",
+            "body": "Think of the horizons as three zoom levels on the same landscape.\n\n| | Strategy | Initiative | Delivery |\n|---|---|---|---|\n| Core question | Should we invest, and why? | What will we change or build to realise the strategy? | What is the next most valuable slice, and is it done? |\n| Typical time frame | 1–5 years; reviewed quarterly | Months to a year; reviewed every few weeks | Days to weeks; reviewed every iteration |\n| Feedback | Slow, lagging, business-level | Product metrics, customer response | Working software, demos, acceptance |\n| Typical artefacts | Problem statement, lean case, value model | Product vision, impact map, feature roadmap | Stories, examples, acceptance criteria |\n\nToday is Day 1: the Strategy Horizon. Day 2 takes the same case into the Initiative Horizon; Day 3 into Delivery."
+          },
+          {
+            "heading": "Meet the running case",
+            "body": "Our illustrative case: from claim lodgement to the first weekly compensation payment takes about **18.2 days** on average. Workers chase status through the contact centre, and delay is a known driver of disputes. A strategic outcome has been proposed: **lodgement to first payment in 7 days or less within 12 months, and claim-status calls down 40%.**\n\nAt the Strategy Horizon our job is *not* to design the claims portal. It is to decide whether this is worth investing in, what we would need to believe for it to succeed, and how we would find out quickly if we are wrong.\n\n*Illustrative worked example built from public knowledge; not WorkSafe Victoria data.*"
+          }
+        ],
+        "activities": [
+          {
+            "title": "Horizon sort: your own work",
+            "instructions": "List three pieces of work currently on your plate. For each, write the question it is really trying to answer, then decide which horizon that question belongs to. Be honest — many people discover they are doing Delivery-level work on a Strategy-level question (or the reverse).",
+            "minutes": 8,
+            "prompts": [
+              {
+                "label": "Work item 1 — the question it answers, and its horizon",
+                "placeholder": "e.g. 'Portal requirements' → really asking 'should we build a portal?' → Strategy",
+                "id": "hs-s1-act1-p1"
+              },
+              {
+                "label": "Work item 2 — question and horizon",
+                "placeholder": "",
+                "id": "hs-s1-act1-p2"
+              },
+              {
+                "label": "Work item 3 — question and horizon",
+                "placeholder": "",
+                "id": "hs-s1-act1-p3"
+              },
+              {
+                "label": "One mismatch I noticed",
+                "placeholder": "Where is the altitude of my work wrong for the decision?",
+                "id": "hs-s1-act1-p4"
+              }
+            ],
+            "id": "hs-s1-act1"
+          }
+        ],
+        "aiPrompt": "You are helping a business analyst classify their work using the three agile planning horizons (Strategy: should we invest and why; Initiative: what product or change will realise the strategy; Delivery: what is the next valuable slice and is it done). I will paste a list of my current work items. For each one: (1) restate the underlying decision question in one sentence, (2) assign the horizon that question belongs to, (3) flag any item where the level of detail I am producing does not match the horizon, and (4) suggest the single most useful artefact for that horizon. Ask me one clarifying question if an item is ambiguous. My work items are:",
+        "quiz": [
+          {
+            "q": "Which statement best reflects the agile mindset for analysis?",
+            "opts": [
+              "Analysis is complete when every requirement is documented",
+              "Analysis is sufficient when it supports the next decision well",
+              "Analysis is the responsibility of the product owner only",
+              "Analysis should be avoided in agile teams"
+            ],
+            "a": 1,
+            "why": "Agile analysis is sized to the decision at hand; completeness for its own sake creates waste."
+          },
+          {
+            "q": "What primarily distinguishes the three planning horizons?",
+            "opts": [
+              "The seniority of the analyst",
+              "The tools used",
+              "The outcomes sought, the time frame and the speed of feedback",
+              "Whether the team uses Scrum or Kanban"
+            ],
+            "a": 2,
+            "why": "Horizons differ by outcome, time frame and feedback cycle — not by role or tool."
+          },
+          {
+            "q": "'Should we invest in faster first payments at all?' is a question for which horizon?",
+            "opts": [
+              "Strategy",
+              "Initiative",
+              "Delivery",
+              "None — it is a governance question"
+            ],
+            "a": 0,
+            "why": "Whether to invest, and why, is the defining Strategy Horizon question."
+          }
+        ],
+        "takeaways": [
+          "The mindset — expecting to learn — matters more than any ceremony.",
+          "Principles are your tie-breaker when techniques conflict.",
+          "Every question you analyse lives on a horizon; match your detail to it.",
+          "Today we stay at Strategy: worth it, why, and how we would know we are wrong."
+        ]
+      },
+      "presenter": {
+        "purpose": "Build a shared vocabulary fast, set the 'you direct, the agent drafts' expectation, and introduce the running case so the day has a spine.",
+        "openingLine": "\"Before we talk about strategy, a quick confession test: hands up if you've ever written a detailed requirements document for something that was cancelled before anyone read it. Keep that memory — today is about not doing that again.\"",
+        "beats": [
+          {
+            "label": "Welcome, outcomes, logistics",
+            "minutes": 5,
+            "notes": "Introduce yourself, the three-day series and today's three leave-with artefacts. Cameras-on norm, chat for parking-lot questions."
+          },
+          {
+            "label": "Mindset and principles",
+            "minutes": 9,
+            "notes": "Walk the principles table. Ask for one example from the room for 'get real using examples'."
+          },
+          {
+            "label": "Three horizons",
+            "minutes": 8,
+            "notes": "Show the comparison table. Stress: same analyst, different altitude."
+          },
+          {
+            "label": "Running case and horizon sort",
+            "minutes": 8,
+            "notes": "Introduce the case with the disclaimer. Run the horizon sort individually for 5 minutes, take two shares."
+          }
+        ],
+        "facilitationNotes": "Keep this tight — 30 minutes goes fast. Experienced agile practitioners may want to debate definitions; acknowledge and park. The purpose is shared language, not a lecture.\n\nRead the disclaimer aloud the first time the WorkSafe case appears, and again whenever a participant treats a figure as fact. Explain the AI pattern: participants bring the real inputs and judgement, the agent removes the blank page, and the BA reviews and owns the decision.",
+        "whatGood": "Participants can name all three horizons and have at least one 'mismatch' noted from their own work.",
+        "commonFailure": "Turning the foundations bridge into a 30-minute agile 101 lecture — the fix is to stop at the horizon table and let the case carry the rest of the day.",
+        "debrief": [
+          "Who found a piece of work at the wrong altitude?",
+          "Which principle do you most often break under pressure?",
+          "What would change if you sized analysis to the decision?"
+        ],
+        "answerKey": "**Horizon sort — model answers.** 'Write portal requirements' usually hides a Strategy question (*should we offer a digital lodgement channel?*) if funding is not yet approved. 'Update the claims SLA dashboard' is typically Delivery. 'Agree the scope of the claims modernisation programme' is Initiative. A good mismatch note names the decision and the artefact that would actually serve it.",
+        "materials": [
+          "Horizons comparison slide",
+          "Case one-pager with disclaimer",
+          "Shared whiteboard with three horizon lanes"
+        ]
+      }
+    },
+    {
+      "id": "hs-s2",
+      "num": "1.2",
+      "title": "The analyst at the Strategy Horizon",
+      "subtitle": "What the BA is for before an investment exists",
+      "dayId": "d1",
+      "time": "09:30–10:30",
+      "minutes": 60,
+      "participant": {
+        "bigIdea": "At the Strategy Horizon, the analyst's product is a better decision — not a better document.",
+        "overview": "Most analysts arrive after the decision has been made. Strategy-horizon analysis moves you upstream, to where leaders are deciding which problems deserve investment. Here the analyst helps leaders see the whole system, frames the problem without a premature solution, tests whether the proposed outcome is realistic and measurable, and makes the assumptions behind the investment visible.\n\nThis session clarifies the role, the stakeholders you will work with and the kinds of contribution that earn you a seat in those conversations.",
+        "objectives": [
+          "Describe the analyst's contribution at the Strategy Horizon.",
+          "Identify the stakeholders who own strategic decisions and what each needs from analysis.",
+          "Write a solution-free problem statement for the running case.",
+          "Distinguish a strategic outcome from an output."
+        ],
+        "keyPoints": [
+          {
+            "title": "Decision support",
+            "body": "You help leaders choose between competing problems and options with explicit evidence and assumptions."
+          },
+          {
+            "title": "Problem before solution",
+            "body": "Most strategic proposals arrive as a solution ('we need a portal'). Your first job is to find the problem it is meant to solve."
+          },
+          {
+            "title": "Outcomes, not outputs",
+            "body": "'Launch a portal' is an output. 'Workers paid within 7 days' is an outcome. Strategies are judged on outcomes."
+          },
+          {
+            "title": "Seeing the whole",
+            "body": "Map the value chain end to end — the delay is rarely where the loudest stakeholder thinks it is."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "What the analyst does here",
+            "body": "At this horizon you will typically:\n\n1. **Clarify the strategic intent** — what goal or pain is driving this idea, and who owns it?\n2. **Frame the problem** — describe the gap between today and the desired state without naming a solution.\n3. **Size the value** — roughly, what is at stake if we solve it? Who benefits and how much?\n4. **Surface assumptions** — what must be true for this investment to pay off?\n5. **Outline options** — including 'do nothing' and 'do something small first'.\n6. **Design the feedback** — what signals, at what intervals, would tell us to continue, pivot or stop?\n\nNotice what is *not* on the list: detailed requirements, process models at task level, user stories. Those belong to later horizons and would be waste here."
+          },
+          {
+            "heading": "Who you work with",
+            "body": "| Stakeholder (illustrative) | What they need from you |\n|---|---|\n| Head of Claims Operations | Confidence that the outcome is achievable and measurable without breaking operations |\n| Chief Digital Officer | Clarity on whether a channel investment is the right lever |\n| CFO / portfolio board | A sized value case and a clear point at which to stop funding |\n| Legal and Compliance | Early sight of statutory constraints (for example employer notification windows) |\n| Agent Panel Manager | Understanding of impact on claims agents' contracts and KPIs |\n| Worker representatives | Assurance the change helps injured workers, not just the scheme |"
+          },
+          {
+            "heading": "Writing a solution-free problem statement",
+            "body": "A good strategic problem statement has four parts: **who** is affected, **what** is happening, the **impact**, and the **evidence**. It deliberately avoids naming a solution.\n\n**Weak:** *We need a new digital claims portal so workers can lodge online.*\n\n**Strong:** *Injured workers wait an average of 18.2 days from lodging a claim to receiving their first weekly payment. During that wait many contact us to check status, and delay is a known contributor to disputes and poorer return-to-work outcomes. We want to understand where that time goes and what it would take to pay eligible workers within 7 days.*\n\nThe strong version leaves room for many options: process change, triage of low-risk claims, parallel employer notification, data sharing with agents — or yes, a portal."
+          },
+          {
+            "heading": "Outcome versus output",
+            "body": "A test you can apply to any strategic goal: *if we delivered this and nothing changed for the customer, would we call it a success?* If yes, it is an output.\n\n- Output: *Deploy an online lodgement form by June.*\n- Outcome: *Median lodgement-to-first-payment falls from 18.2 to 7 days or less.*\n- Leading indicator: *Share of claims lodged with a complete certificate of capacity at first contact.*\n\nAt Strategy you want one outcome everyone can repeat, plus two or three leading indicators that move sooner."
+          }
+        ],
+        "activities": [
+          {
+            "title": "Rewrite the brief",
+            "instructions": "The (illustrative) executive brief reads: *'Build a digital claims portal to modernise lodgement.'* Rewrite it as a solution-free problem statement using who / what / impact / evidence. Then write the strategic outcome and two leading indicators.",
+            "minutes": 15,
+            "prompts": [
+              {
+                "label": "Problem statement (who, what, impact, evidence)",
+                "placeholder": "Injured workers…",
+                "id": "hs-s2-act1-p1"
+              },
+              {
+                "label": "Strategic outcome (measurable)",
+                "placeholder": "",
+                "id": "hs-s2-act1-p2"
+              },
+              {
+                "label": "Leading indicator 1",
+                "placeholder": "",
+                "id": "hs-s2-act1-p3"
+              },
+              {
+                "label": "Leading indicator 2",
+                "placeholder": "",
+                "id": "hs-s2-act1-p4"
+              },
+              {
+                "label": "Solutions my statement still allows",
+                "placeholder": "List at least three",
+                "id": "hs-s2-act1-p5"
+              }
+            ],
+            "id": "hs-s2-act1"
+          }
+        ],
+        "aiPrompt": "Act as a sceptical strategy reviewer. I will paste a problem statement for a proposed investment. Check it against four tests: (1) does it name who is affected, what is happening, the impact and the evidence; (2) does it smuggle in a solution or technology — if so, quote the phrase and suggest a neutral rewrite; (3) is the desired outcome measurable, with a baseline and target; (4) list at least four materially different solution options the statement still allows. Finish with a revised version of the statement under 90 words. My statement:",
+        "quiz": [
+          {
+            "q": "Which of these is a strategic outcome rather than an output?",
+            "opts": [
+              "Launch a digital lodgement form",
+              "Hire ten more claims officers",
+              "Median time to first payment falls to 7 days or less",
+              "Integrate with agent systems via middleware"
+            ],
+            "a": 2,
+            "why": "Outcomes describe the change the customer experiences; the others are means to an end."
+          },
+          {
+            "q": "What is the main risk of a problem statement that names a solution?",
+            "opts": [
+              "It is too short",
+              "It narrows the options before the problem is understood",
+              "Executives will not read it",
+              "It cannot be measured"
+            ],
+            "a": 1,
+            "why": "Naming the solution anchors everyone on one option and hides cheaper or better alternatives."
+          },
+          {
+            "q": "Which activity is usually waste at the Strategy Horizon?",
+            "opts": [
+              "Sizing the value at stake",
+              "Writing detailed user stories",
+              "Surfacing assumptions",
+              "Defining stop signals"
+            ],
+            "a": 1,
+            "why": "Detailed stories belong to the Delivery Horizon; at Strategy the decision may still be 'don't invest'."
+          }
+        ],
+        "takeaways": [
+          "Your product here is a better investment decision.",
+          "Strip the solution out of the problem before you analyse it.",
+          "Agree one outcome and a few leading indicators.",
+          "Know who owns the decision and what evidence they need."
+        ]
+      },
+      "presenter": {
+        "purpose": "Reposition the analyst as a decision-support partner upstream of funding, and produce the first leave-with artefact: a solution-free problem statement.",
+        "openingLine": "\"Most of us are invited in after someone has already decided what to build. This session is about what you do if you're invited in before.\"",
+        "beats": [
+          {
+            "label": "The role at this horizon",
+            "minutes": 12,
+            "notes": "Walk the six contributions. Ask: which of these do you already do, even informally?"
+          },
+          {
+            "label": "Stakeholders",
+            "minutes": 8,
+            "notes": "Use the table; ask participants to map the equivalent roles in their own organisation."
+          },
+          {
+            "label": "Problem statements",
+            "minutes": 12,
+            "notes": "Show weak vs strong. Highlight that the strong version still allows a portal — we're not anti-solution, we're pro-options."
+          },
+          {
+            "label": "Rewrite the brief activity",
+            "minutes": 18,
+            "notes": "15 minutes individually or in pairs, then 3 minutes of shares."
+          },
+          {
+            "label": "Outcome vs output and close",
+            "minutes": 10,
+            "notes": "Apply the 'nothing changed for the customer' test to two or three shares."
+          }
+        ],
+        "facilitationNotes": "Pairs work well for the rewrite — one writes, the other plays the executive who 'just wants a portal'. Push for evidence in the statement; many first drafts omit it.\n\nIf a participant says 'my executives would never accept that', acknowledge the politics and suggest the framing: *we're protecting the investment by checking the problem first*.",
+        "roleplay": {
+          "persona": "Chief Digital Officer (illustrative)",
+          "line": "\"The board has already said we're doing a portal. I just need you to write the requirements.\"",
+          "curveball": "\"If you start questioning the portal, you'll make me look indecisive.\"",
+          "move": "Agree with the intent, then reframe: 'Absolutely — let's make sure the portal hits the 7-day target. Can I spend two days confirming where the 18 days actually go, so the portal is aimed at the biggest leak?'"
+        },
+        "whatGood": "A problem statement with who / what / impact / evidence, no solution words, and a measurable outcome with a baseline.",
+        "commonFailure": "Statements that swap 'portal' for 'digital solution' and call it solution-free — the fix is to ask 'could a process change alone satisfy this statement?'",
+        "debrief": [
+          "What solution words did you find hiding in your first draft?",
+          "Which stakeholder would push back hardest on a solution-free statement?",
+          "What evidence would you need to make the statement credible?"
+        ],
+        "answerKey": "**Model problem statement:** Injured workers wait an average of 18.2 days (illustrative) between lodging a claim and receiving their first weekly payment. During that time many contact us to ask about status, and delay contributes to disputes and slower return to work. We want to understand where the time is lost and what it would take to pay eligible workers within 7 days.\n\n**Outcome:** median lodgement-to-first-payment ≤7 days within 12 months; claim-status calls down 40%.\n\n**Leading indicators:** % of claims complete at first contact; median days from lodgement to liability decision; % of low-risk claims identified at intake.\n\n**Options still allowed:** triage/fast-track low-risk claims; parallel employer notification; provisional payments; agent process standardisation; digital lodgement; data sharing with medical providers.",
+        "materials": [
+          "Executive brief card",
+          "Problem statement template",
+          "Stakeholder table slide"
+        ]
+      }
+    },
+    {
+      "id": "hs-s3",
+      "num": "1.3",
+      "title": "Outcomes · time frame · feedback",
+      "subtitle": "What success looks like at Strategy, how long it takes to see, and how to learn sooner",
+      "dayId": "d1",
+      "time": "10:45–12:15",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "Strategic feedback is slow by nature — your job is to design faster signals that arrive before the money runs out.",
+        "overview": "Each horizon is defined by three things: the outcomes it pursues, the time frame it operates over and the feedback cycle that tells you whether it is working. At Strategy, outcomes are business-level, time frames are long and true results lag. That combination is dangerous: an organisation can spend a year before finding out a strategy was wrong.\n\nIn this 90-minute block you will build an **outcome tree** for the running case, set realistic review intervals, and design a **feedback ladder** — leading indicators that move within weeks, linked to the lagging outcome that moves in months.",
+        "objectives": [
+          "Describe the outcomes, time frame and feedback typical of the Strategy Horizon.",
+          "Build an outcome tree linking a strategic outcome to measurable drivers.",
+          "Distinguish leading and lagging indicators and choose credible ones.",
+          "Define continue / pivot / stop signals with review dates."
+        ],
+        "keyPoints": [
+          {
+            "title": "Outcomes are business-level",
+            "body": "Customer, financial, regulatory or capability outcomes — expressed as a change from a baseline."
+          },
+          {
+            "title": "Time frames are long, reviews are not",
+            "body": "A strategy may run for years, but it should be reviewed at least quarterly with real evidence."
+          },
+          {
+            "title": "Lagging results, leading signals",
+            "body": "Time-to-first-payment is lagging. Completeness at lodgement is leading. You need both."
+          },
+          {
+            "title": "Decide your stop rule in advance",
+            "body": "A stop signal written before funding is far easier to act on than one invented after sunk cost sets in."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Strategy-horizon outcomes",
+            "body": "Strategic outcomes typically fall into four families: **customer** (faster, fairer, simpler), **financial** (cost, revenue, risk exposure), **compliance/regulatory** (meeting statutory obligations), and **capability** (what the organisation can do afterwards that it could not before).\n\nFor the running case:\n\n| Family | Illustrative outcome |\n|---|---|\n| Customer | Median lodgement-to-first-payment 18.2 → ≤7 days |\n| Customer/operational | Claim-status calls down 40% |\n| Financial | Value at stake ~$2.0m per year (illustrative), from reduced handling and fewer disputes |\n| Capability | Ability to identify and fast-track low-risk claims at intake |"
+          },
+          {
+            "heading": "Building an outcome tree",
+            "body": "An outcome tree breaks a strategic outcome into the drivers that cause it. Each branch should be something you can measure.\n\n```\nTime to first payment (lagging)\n├── Time to complete lodgement\n│   ├── % lodged with certificate of capacity at first contact\n│   └── Employer notification elapsed time\n├── Time to liability decision\n│   ├── % claims triaged as low-risk at intake\n│   └── Median days awaiting information\n└── Time from decision to payment\n    └── % payments set up same day as decision\n```\n\nThe tree shows where to look. In the illustrative case, the biggest leak turns out not to be inside any one team: it is the statutory employer-forwarding window being used as a *default wait* rather than a ceiling."
+          },
+          {
+            "heading": "Time frame and review cadence",
+            "body": "At this horizon you should be explicit about three dates:\n\n- **Evidence date** — when the first leading indicator should move (e.g. 8–12 weeks after a pilot starts).\n- **Review date** — when the portfolio will formally look at the evidence (quarterly is typical).\n- **Outcome date** — when the lagging outcome should be reached (here, 12 months).\n\nA strategy with only an outcome date is a bet with no exits."
+          },
+          {
+            "heading": "The feedback ladder",
+            "body": "| Rung | Signal | Speed | Example |\n|---|---|---|---|\n| 1 | Assumption tests | Days–weeks | Sample 50 recent claims: what share were low-risk? |\n| 2 | Leading indicators | Weeks | % complete at first contact in pilot region |\n| 3 | Operational results | 1–3 months | Median days to liability decision |\n| 4 | Strategic outcome | 6–12 months | Median days to first payment |\n\nAgree **continue / pivot / stop** thresholds on rungs 1–2. For example: *if fewer than 30% of sampled claims are low-risk, the fast-track option will not reach 7 days — pivot to process redesign*."
+          }
+        ],
+        "activities": [
+          {
+            "title": "Outcome tree for the case",
+            "instructions": "In small groups, build an outcome tree for 'lodgement to first payment ≤7 days'. Aim for three levels. Mark each node L (leading) or G (lagging) and note whether you have a baseline.",
+            "minutes": 25,
+            "prompts": [
+              {
+                "label": "Top-level outcome and baseline",
+                "placeholder": "",
+                "id": "hs-s3-act1-p1"
+              },
+              {
+                "label": "Level-2 drivers",
+                "placeholder": "List 3–4",
+                "id": "hs-s3-act1-p2"
+              },
+              {
+                "label": "Level-3 measurable drivers (mark L/G)",
+                "placeholder": "",
+                "id": "hs-s3-act1-p3"
+              },
+              {
+                "label": "Where I think the biggest leak is, and why",
+                "placeholder": "",
+                "id": "hs-s3-act1-p4"
+              }
+            ],
+            "id": "hs-s3-act1"
+          },
+          {
+            "title": "Continue / pivot / stop",
+            "instructions": "Choose two leading indicators from your tree. For each, write a threshold and review date that would trigger continue, pivot or stop.",
+            "minutes": 15,
+            "prompts": [
+              {
+                "label": "Indicator 1 — continue / pivot / stop thresholds and date",
+                "placeholder": "",
+                "id": "hs-s3-act2-p1"
+              },
+              {
+                "label": "Indicator 2 — continue / pivot / stop thresholds and date",
+                "placeholder": "",
+                "id": "hs-s3-act2-p2"
+              }
+            ],
+            "id": "hs-s3-act2"
+          }
+        ],
+        "aiPrompt": "You are a performance-measurement analyst. Given the strategic outcome below, draft an outcome tree three levels deep. For every node give: a measurable definition, whether it is leading or lagging, a likely data source, and how quickly it would move after an intervention. Then propose two leading indicators with continue / pivot / stop thresholds and a review date. Flag any node where a baseline is unlikely to exist. Strategic outcome:",
+        "quiz": [
+          {
+            "q": "Which is a leading indicator for 'time to first payment'?",
+            "opts": [
+              "Median days to first payment",
+              "Annual scheme cost",
+              "% of claims lodged with a certificate of capacity at first contact",
+              "Number of disputes resolved in the year"
+            ],
+            "a": 2,
+            "why": "Completeness at first contact moves quickly and drives the lagging outcome."
+          },
+          {
+            "q": "Why set stop signals before funding?",
+            "opts": [
+              "To satisfy auditors",
+              "Because sunk cost makes it hard to define them later",
+              "Because agile teams don't need budgets",
+              "To reduce stakeholder numbers"
+            ],
+            "a": 1,
+            "why": "Once money is spent, people rationalise continuing; pre-agreed thresholds counter that bias."
+          },
+          {
+            "q": "In the illustrative case, the biggest leak was found to be…",
+            "opts": [
+              "Slow payment processing in finance",
+              "The employer-forwarding window used as a default wait",
+              "Lack of contact-centre staff",
+              "Medical certificate formats"
+            ],
+            "a": 1,
+            "why": "A statutory ceiling had become the default wait — a whole-system insight no single team owned."
+          }
+        ],
+        "takeaways": [
+          "Every strategic outcome needs a baseline, a target and a date.",
+          "Build the outcome tree to find where to look.",
+          "Pair lagging outcomes with fast leading indicators.",
+          "Write continue / pivot / stop rules before money is spent."
+        ]
+      },
+      "presenter": {
+        "purpose": "Make the slow feedback of strategy tangible and give participants a tool (the feedback ladder) to speed it up.",
+        "openingLine": "\"If this strategy is wrong, how many months would it take us to find out? Let's make that number smaller.\"",
+        "beats": [
+          {
+            "label": "Outcomes at Strategy",
+            "minutes": 10,
+            "notes": "Walk the four families with the case figures. Read the disclaimer."
+          },
+          {
+            "label": "Outcome tree demo",
+            "minutes": 15,
+            "notes": "Build the top two levels live on the whiteboard; reveal the 'default wait' insight."
+          },
+          {
+            "label": "Group activity: outcome tree",
+            "minutes": 25,
+            "notes": "Breakouts of 3–4. Visit each room at 10 minutes and check for measurable nodes."
+          },
+          {
+            "label": "Time frame and feedback ladder",
+            "minutes": 15,
+            "notes": "Teach evidence / review / outcome dates and the four rungs."
+          },
+          {
+            "label": "Activity: continue / pivot / stop",
+            "minutes": 15,
+            "notes": "Individual, then two shares."
+          },
+          {
+            "label": "Debrief",
+            "minutes": 10,
+            "notes": "Use debrief questions; capture good thresholds on the shared board."
+          }
+        ],
+        "facilitationNotes": "The outcome tree is where many groups stall. Prompt with 'what has to happen before a payment can be made?'. Encourage them to write unmeasurable nodes anyway and then fix them.\n\nIf time is short, cut the second activity to one indicator. Keep the debrief — it's where the 'decide stop rules in advance' message lands.",
+        "whatGood": "Trees with measurable nodes, at least two leading indicators and thresholds tied to a date.",
+        "commonFailure": "Thresholds like 'if it isn't working, stop' — the fix is to insist on a number, a data source and a date.",
+        "debrief": [
+          "Which node surprised your group?",
+          "Which threshold would be hardest to act on politically?",
+          "What evidence date did you set, and could it be sooner?"
+        ],
+        "answerKey": "**Model tree (level 2):** time to complete lodgement; time to liability decision; time from decision to payment. **Level 3 examples:** % complete at first contact (L); employer notification elapsed days (L); % triaged low-risk at intake (L); median days awaiting information (G/L); % payment set-up same day (L).\n\n**Model thresholds:** *% low-risk in a 50-claim sample by week 3 — ≥40% continue; 25–40% pivot to narrower fast-track; <25% stop fast-track and redirect to process redesign.* *% complete at first contact in pilot by week 10 — ≥70% continue; 50–70% pivot to guided lodgement; <50% stop and investigate.*",
+        "materials": [
+          "Outcome tree template",
+          "Feedback ladder slide",
+          "Breakout room plan"
+        ]
+      }
+    },
+    {
+      "id": "hs-s4",
+      "num": "1.4",
+      "title": "Principles applied at this horizon",
+      "subtitle": "How each agile BA principle changes shape when the decision is an investment",
+      "dayId": "d1",
+      "time": "13:00–13:45",
+      "minutes": 45,
+      "participant": {
+        "bigIdea": "The principles do not change between horizons — what they ask of you does.",
+        "overview": "This shorter post-lunch block revisits the principles from the morning and applies each one specifically to Strategy-horizon work. The aim is a practical checklist you can bring into any investment conversation: a set of questions that, if you ask them, will make you useful in the room.",
+        "objectives": [
+          "Apply each agile BA principle to a strategic decision.",
+          "Use a principles checklist to critique an investment proposal.",
+          "Identify which principle is most at risk in your organisation."
+        ],
+        "keyPoints": [
+          {
+            "title": "See the whole → system view",
+            "body": "Map the end-to-end value stream across teams, agents and employers before choosing where to invest."
+          },
+          {
+            "title": "Think as a customer → worker's journey",
+            "body": "Measure delay as the injured worker experiences it, not by internal SLA."
+          },
+          {
+            "title": "Analyse value → compare options",
+            "body": "Always include 'do nothing' and 'do something small' as options."
+          },
+          {
+            "title": "Avoid waste → stop early",
+            "body": "Stop strategic analysis once the next funding decision is clear."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "The principles at Strategy",
+            "body": "| Principle | Question to ask at Strategy | Running case example |\n|---|---|---|\n| See the whole | Which parts of the system contribute to this outcome? | Worker, employer, agent, medical provider, scheme |\n| Think as a customer | What does the customer experience, end to end? | 18 days without income and repeated status calls |\n| Analyse to determine value | Which option produces the most value per dollar and per month? | Fast-track triage vs portal vs provisional payments |\n| Get real using examples | Can we test the idea against real cases? | Walk five recent claims through each option |\n| Understand what is doable | What legal, data and capacity constraints apply? | Statutory employer notification; agent contracts |\n| Stimulate collaboration | Who must co-own this decision? | Claims Ops, CDO, agents, worker reps |\n| Avoid waste | What analysis can we skip for now? | Detailed portal design until the triage hypothesis is tested |"
+          },
+          {
+            "heading": "Getting real at the Strategy Horizon",
+            "body": "Examples are not just for user stories. At Strategy, *walk three to five real (or realistic) cases through the proposed change*. In the running case, take a straightforward back-strain claim with a complete certificate, a claim where the employer is slow to respond, and a complex psychological-injury claim. Ask: where does each spend its days today, and which option would change that?\n\nThis quickly shows that a portal alone barely helps the slow-employer claim, while parallel employer notification helps all three."
+          },
+          {
+            "heading": "When principles conflict",
+            "body": "Principles sometimes pull against each other. *Avoid waste* says stop analysing; *see the whole* says you haven't looked at agents yet. Resolve conflicts by asking **which decision is next and what it needs**. If the next decision is 'fund a 10-week discovery', you need just enough of the whole to scope that discovery — not a full end-to-end model."
+          }
+        ],
+        "activities": [
+          {
+            "title": "Principles critique",
+            "instructions": "Use the principles table as a checklist to critique the original (illustrative) proposal: 'Build a digital claims portal, $4m, 18 months'. For each principle, note one gap and one question you would ask.",
+            "minutes": 15,
+            "prompts": [
+              {
+                "label": "Biggest gap found",
+                "placeholder": "",
+                "id": "hs-s4-act1-p1"
+              },
+              {
+                "label": "Three questions I'd ask the sponsor",
+                "placeholder": "",
+                "id": "hs-s4-act1-p2"
+              },
+              {
+                "label": "Principle most at risk in my organisation, and why",
+                "placeholder": "",
+                "id": "hs-s4-act1-p3"
+              }
+            ],
+            "id": "hs-s4-act1"
+          }
+        ],
+        "aiPrompt": "Act as an agile business analysis coach. I will paste an investment proposal. Critique it against these principles: see the whole, think as a customer, analyse to determine what is valuable, get real using examples, understand what is doable, stimulate collaboration and continuous improvement, avoid waste. For each principle give one gap you see and one question I should ask the sponsor. Then suggest three realistic example cases I could walk through the proposal to test it. Proposal:",
+        "quiz": [
+          {
+            "q": "At Strategy, 'get real using examples' most usefully means…",
+            "opts": [
+              "Writing Given/When/Then scenarios",
+              "Walking a few real cases through each option",
+              "Building a prototype",
+              "Collecting user stories"
+            ],
+            "a": 1,
+            "why": "Concrete cases expose which options actually change the outcome."
+          },
+          {
+            "q": "When 'avoid waste' and 'see the whole' conflict, you should…",
+            "opts": [
+              "Always model the whole system",
+              "Always stop analysing",
+              "Do just enough to support the next decision",
+              "Escalate to the sponsor"
+            ],
+            "a": 2,
+            "why": "The next decision sets how much of the whole you need to see."
+          }
+        ],
+        "takeaways": [
+          "Turn each principle into a question for the sponsor.",
+          "Use real cases to test options, even at Strategy.",
+          "Resolve principle conflicts by asking what the next decision needs."
+        ]
+      },
+      "presenter": {
+        "purpose": "Convert the principles into a practical critique checklist, and re-energise the room after lunch.",
+        "openingLine": "\"Here's a $4 million proposal. You have fifteen minutes and seven principles. Find the holes.\"",
+        "beats": [
+          {
+            "label": "Principles table walk-through",
+            "minutes": 12,
+            "notes": "Move fast; ask for one example per principle from the room."
+          },
+          {
+            "label": "Getting real with cases",
+            "minutes": 8,
+            "notes": "Walk the three claim types; show the portal doesn't help the slow-employer claim."
+          },
+          {
+            "label": "Principles critique activity",
+            "minutes": 15,
+            "notes": "Pairs. Encourage blunt critique."
+          },
+          {
+            "label": "Conflicts and debrief",
+            "minutes": 10,
+            "notes": "Discuss conflicts; capture the 'principle most at risk' answers."
+          }
+        ],
+        "facilitationNotes": "Post-lunch energy is low — keep people talking. Use chat waterfalls: everyone types their biggest gap and hits enter at the same time.",
+        "whatGood": "Critiques that name concrete gaps (no do-nothing option, no worker view, no stop rule).",
+        "commonFailure": "Generic critique ('needs more stakeholder engagement') — the fix is to demand which stakeholder and which question.",
+        "debrief": [
+          "What was the most expensive gap you found?",
+          "Which principle is least practised where you work?"
+        ],
+        "answerKey": "**Likely gaps:** no baseline or outcome target; solution-first framing; no options compared; agents and employers absent; no examples tested; legislation not checked; no stop rule; 18-month delivery with no interim learning.\n\n**Strong sponsor questions:** What happens to time-to-payment if we do nothing for 12 months? Which part of the 18 days does a portal remove? What would we learn in the first 10 weeks?",
+        "materials": [
+          "Proposal card",
+          "Principles checklist"
+        ]
+      }
+    },
+    {
+      "id": "hs-s5",
+      "num": "1.5",
+      "title": "Analysis techniques",
+      "subtitle": "Value modelling, assumption mapping, options and real options for investment decisions",
+      "dayId": "d1",
+      "time": "13:45–15:15",
+      "minutes": 90,
+      "participant": {
+        "bigIdea": "Good strategic analysis makes the bet visible: what we believe, what it's worth, and what we'd lose if we're wrong.",
+        "overview": "This is the technique-heavy block of the day. You will use four Strategy-horizon techniques on the running case: **value stream and value modelling**, **assumption mapping**, **options analysis** and **real options**. Together they produce the content of the lean business case you will finish in the final exercise.\n\nEach technique is introduced briefly, demonstrated on the case and then practised.",
+        "objectives": [
+          "Sketch a high-level value stream and locate the biggest delay.",
+          "Build a simple, transparent value model with ranges.",
+          "Map assumptions by importance and evidence, and pick the riskiest to test.",
+          "Compare options including 'do nothing', and use real options to keep choices open."
+        ],
+        "keyPoints": [
+          {
+            "title": "Value stream",
+            "body": "Five to seven stages from trigger to outcome, with elapsed time on each. Not a process model."
+          },
+          {
+            "title": "Value model",
+            "body": "A short chain from the outcome to dollars or other value, using ranges rather than false precision."
+          },
+          {
+            "title": "Assumption map",
+            "body": "Plot assumptions by importance and by how much evidence you have. Test the important, unevidenced ones first."
+          },
+          {
+            "title": "Real options",
+            "body": "Buy the right, not the obligation, to invest further — fund small, learn, then decide."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Value stream: where the days go",
+            "body": "An illustrative strategic value stream for the case:\n\n| Stage | Typical elapsed (illustrative) |\n|---|---|\n| Injury → worker lodges claim with employer | 2–3 days |\n| Employer forwards claim to agent | up to 10 days (statutory ceiling, often used as default) |\n| Agent registers and requests information | 1–2 days |\n| Liability decision | 3–5 days |\n| Payment set-up and first payment | 1–2 days |\n\nAt this altitude you only need enough detail to find the biggest bar. Here it is employer forwarding — which suggests options around *parallel notification* rather than just faster internal processing."
+          },
+          {
+            "heading": "Value modelling with ranges",
+            "body": "Keep it short and transparent. For example (all figures illustrative):\n\n- Status calls avoided: 40% of ~X calls × handling cost → *$0.5–0.8m per year*\n- Disputes avoided through earlier payment: small % of disputes × average dispute cost → *$0.8–1.2m*\n- Faster return to work from earlier support → *$0.3–0.6m (low confidence)*\n- **Total value at stake: roughly $1.6–2.6m per year; midpoint ~$2.0m.**\n\nShow ranges and confidence. A three-year NPV around $2.9m with ~20-month payback (illustrative) is useful *only* if everyone can see the assumptions behind it."
+          },
+          {
+            "heading": "Assumption mapping",
+            "body": "List every belief the case depends on, then plot each on two axes: **importance** (if wrong, does the case collapse?) and **evidence** (do we know, or are we guessing?).\n\n| Assumption | Importance | Evidence | Action |\n|---|---|---|---|\n| A meaningful share of claims are low-risk and can be fast-tracked | High | Low | **Test first** — sample 50 claims |\n| Employers can be notified in parallel within the legislation | High | Medium | Confirm with Legal |\n| Agents will adopt a common intake | High | Low | Test with one agent |\n| Workers will use a digital channel | Medium | Medium | Check channel data |\n| Status calls fall when workers can see progress | Medium | High | Accept |"
+          },
+          {
+            "heading": "Options and real options",
+            "body": "Always compare at least three options including **do nothing**:\n\n| Option | Cost (illus.) | Time to first evidence | Addresses biggest leak? |\n|---|---|---|---|\n| A. Do nothing | $0 | — | No |\n| B. Buy claims-intake platform, integrate via middleware, phased | $$ | 12 weeks (MVP) | Yes, with parallel notification |\n| C. Custom portal, big-bang | $$$ | 12+ months | Partly |\n| D. Process-only change: parallel notification + triage rules | $ | 6 weeks | Yes, partly |\n\nA **real option** structures the investment so you can stop or expand cheaply: fund D now plus a 12-week MVP of B, with a decision point at week 12. The recommendation in the illustrative case is Option B, phased — digital lodgement MVP first, then validation and straight-through processing."
+          }
+        ],
+        "activities": [
+          {
+            "title": "Assumption map",
+            "instructions": "List at least six assumptions behind the case. Plot them by importance and evidence. Choose the two to test first and design a cheap test for each (one to two weeks, minimal cost).",
+            "minutes": 25,
+            "prompts": [
+              {
+                "label": "My assumptions (6+)",
+                "placeholder": "",
+                "id": "hs-s5-act1-p1"
+              },
+              {
+                "label": "Top two to test, and why",
+                "placeholder": "",
+                "id": "hs-s5-act1-p2"
+              },
+              {
+                "label": "Test design for assumption 1",
+                "placeholder": "What we'll do, sample, signal, threshold",
+                "id": "hs-s5-act1-p3"
+              },
+              {
+                "label": "Test design for assumption 2",
+                "placeholder": "",
+                "id": "hs-s5-act1-p4"
+              }
+            ],
+            "id": "hs-s5-act1"
+          },
+          {
+            "title": "Options with a real option",
+            "instructions": "Compare at least three options including 'do nothing'. Then describe a staged investment that buys a real option.",
+            "minutes": 20,
+            "prompts": [
+              {
+                "label": "Options table (cost, time to evidence, addresses leak?)",
+                "placeholder": "",
+                "id": "hs-s5-act2-p1"
+              },
+              {
+                "label": "My staged investment / real option",
+                "placeholder": "Fund X now; decide Y at week N based on Z",
+                "id": "hs-s5-act2-p2"
+              }
+            ],
+            "id": "hs-s5-act2"
+          }
+        ],
+        "aiPrompt": "You are a strategy analyst preparing an investment decision. Using the problem statement and context below: (1) sketch a 5–7 stage value stream with plausible elapsed times and identify the biggest delay; (2) list at least eight assumptions the investment depends on and rate each for importance and evidence (high/medium/low); (3) design a one-to-two-week test for the two riskiest; (4) compare four options including 'do nothing' on cost band, time to first evidence and whether they address the biggest delay; (5) propose a staged investment with an explicit decision point. Use ranges, not single figures, and mark any number you invented as an assumption. Context:",
+        "quiz": [
+          {
+            "q": "On an assumption map, which assumptions should you test first?",
+            "opts": [
+              "Low importance, low evidence",
+              "High importance, high evidence",
+              "High importance, low evidence",
+              "The ones the sponsor likes most"
+            ],
+            "a": 2,
+            "why": "These are the beliefs that could sink the case and that you currently cannot support."
+          },
+          {
+            "q": "Why use ranges in a strategic value model?",
+            "opts": [
+              "They look more sophisticated",
+              "They honestly show uncertainty and invite challenge",
+              "Finance requires them",
+              "They make the NPV larger"
+            ],
+            "a": 1,
+            "why": "Single figures imply false precision; ranges show where more evidence is needed."
+          },
+          {
+            "q": "A 'real option' in investment analysis is…",
+            "opts": [
+              "An option that is guaranteed to succeed",
+              "Funding a small step that preserves the right to invest further",
+              "The cheapest option",
+              "An option chosen by the board"
+            ],
+            "a": 1,
+            "why": "Real options buy learning and keep the choice to expand, change or stop."
+          },
+          {
+            "q": "Why include 'do nothing' as an option?",
+            "opts": [
+              "It is always the cheapest",
+              "It sets the baseline cost of the status quo",
+              "Regulators require it",
+              "To make other options look better"
+            ],
+            "a": 1,
+            "why": "Do nothing makes the cost of inaction explicit, which is often the strongest argument."
+          }
+        ],
+        "takeaways": [
+          "Find the biggest bar in the value stream before choosing a solution.",
+          "Model value with ranges and show your assumptions.",
+          "Test high-importance, low-evidence assumptions first.",
+          "Stage the investment so you can stop cheaply."
+        ]
+      },
+      "presenter": {
+        "purpose": "Equip participants with four core Strategy-horizon techniques and generate the raw material for the lean business case.",
+        "openingLine": "\"Every business case is a bet. In the next ninety minutes we'll make the bet visible — what we believe, what it's worth, and how much we'd lose if we're wrong.\"",
+        "beats": [
+          {
+            "label": "Value stream",
+            "minutes": 12,
+            "notes": "Draw the five stages; show the 10-day bar. Ask: what options does that suggest?"
+          },
+          {
+            "label": "Value model with ranges",
+            "minutes": 10,
+            "notes": "Walk the illustrative ranges. Emphasise the disclaimer and the transparency of assumptions."
+          },
+          {
+            "label": "Assumption mapping teach",
+            "minutes": 8,
+            "notes": "Explain the two axes; place two assumptions live."
+          },
+          {
+            "label": "Activity: assumption map",
+            "minutes": 25,
+            "notes": "Breakouts. Push for tests that take under two weeks."
+          },
+          {
+            "label": "Options and real options teach",
+            "minutes": 10,
+            "notes": "Walk the options table; explain staging."
+          },
+          {
+            "label": "Activity: options and real option",
+            "minutes": 20,
+            "notes": "Individual or pairs."
+          },
+          {
+            "label": "Debrief",
+            "minutes": 5,
+            "notes": "Collect two staged investments; compare decision points."
+          }
+        ],
+        "facilitationNotes": "This is the densest block — protect activity time. If you're running late, shorten the value model teach rather than the assumption activity.\n\nWatch for participants inventing precise numbers. Remind them: ranges and flagged assumptions, every time. If someone uses an AI agent to draft the value model, ask them to highlight every number the agent made up.",
+        "whatGood": "Assumption maps with a clear 'test first' quadrant and tests under two weeks; a staged investment with a dated decision point.",
+        "commonFailure": "Tests that are really mini-projects ('run a pilot for six months') — the fix is to ask 'what is the smallest thing that would change your mind?'",
+        "debrief": [
+          "Which assumption would sink the case if wrong?",
+          "What's the cheapest test you designed?",
+          "Where is your decision point, and who makes the call?"
+        ],
+        "answerKey": "**Riskiest assumptions:** share of low-risk claims; legality of parallel employer notification; agent adoption of common intake.\n\n**Model tests:** (1) Sample 50 claims from last quarter; classify risk with Claims Ops — signal: % low-risk; threshold ≥40% continue. (2) One-hour session with Legal on the notification provisions — signal: yes/no plus conditions. (3) Shadow one agent's intake for two days with the proposed common fields — signal: % fields available at first contact.\n\n**Model staged investment:** fund process change (parallel notification + triage rules) and a 12-week intake MVP with one agent; decision at week 12 on % complete at first contact and median days to liability decision.",
+        "materials": [
+          "Value stream template",
+          "Assumption map canvas",
+          "Options table template"
+        ]
+      }
+    },
+    {
+      "id": "hs-s6",
+      "num": "1.6",
+      "title": "Planning and delivery techniques",
+      "subtitle": "Lean business cases, portfolio flow and the strategy review cadence",
+      "dayId": "d1",
+      "time": "15:30–16:30",
+      "minutes": 60,
+      "participant": {
+        "bigIdea": "A lean business case is a hypothesis with a budget — and an exit.",
+        "overview": "Analysis is only useful if it shapes how money and attention flow. This session covers the planning techniques that connect Strategy-horizon analysis to the portfolio: the **lean business case**, **hypothesis-driven investment**, **portfolio Kanban** (limiting work in progress at the investment level) and the **strategy review cadence**.",
+        "objectives": [
+          "Structure a one-page lean business case.",
+          "Express an investment as a testable hypothesis.",
+          "Explain how portfolio Kanban and WIP limits improve strategic flow.",
+          "Design a quarterly strategy review that uses evidence."
+        ],
+        "keyPoints": [
+          {
+            "title": "Lean business case",
+            "body": "One page: problem, outcome, options, recommended first step, assumptions, cost of delay, what would prove it wrong."
+          },
+          {
+            "title": "Hypothesis framing",
+            "body": "We believe [doing this] for [these people] will achieve [this outcome]. We'll know when [signal] by [date]."
+          },
+          {
+            "title": "Portfolio WIP limits",
+            "body": "Starting fewer strategic initiatives finishes more of them — and frees analysts to do them properly."
+          },
+          {
+            "title": "Cadenced review",
+            "body": "Quarterly, with evidence from leading indicators; decisions are continue, pivot or stop."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "The lean business case",
+            "body": "| Section | What it contains |\n|---|---|\n| Problem | Solution-free statement with evidence |\n| Outcome | Baseline → target → date |\n| Hypothesis | We believe… we'll know when… |\n| Options considered | Including do nothing |\n| Recommended first step | The smallest investment that tests the riskiest assumption |\n| Cost of delay | What each month of waiting costs (illus. ~$165k/month at $2.0m/yr) |\n| Key assumptions | Top five with evidence rating |\n| **What would prove us wrong** | Specific signals and thresholds that would stop or pivot |\n| Review | Dates and decision-makers |\n\nThe last two rows are what most cases miss — and what make yours trustworthy."
+          },
+          {
+            "heading": "Hypothesis-driven investment",
+            "body": "Write the investment as a hypothesis:\n\n> *We believe that parallel employer notification plus intake triage for injured workers will reduce median lodgement-to-first-payment from 18.2 to ≤7 days. We'll know we're on track when ≥70% of pilot claims are complete at first contact and median days to liability decision fall below 5 by week 12.*\n\nThis keeps the conversation about evidence and gives the portfolio board an honest question to ask each quarter."
+          },
+          {
+            "heading": "Portfolio flow and Kanban",
+            "body": "Many organisations start far more strategic initiatives than they can staff. A **portfolio Kanban** board makes investment flow visible — *Funnel → Reviewing → Analysing → Ready → Implementing → Done* — with **WIP limits** on Analysing and Implementing.\n\nFor analysts this matters: WIP limits protect the time needed to do Strategy-horizon analysis properly, and the board makes it obvious when an idea has been 'analysing' for six months without a decision."
+          },
+          {
+            "heading": "The strategy review",
+            "body": "A good quarterly review takes 60–90 minutes per portfolio and follows a fixed agenda: (1) outcome trend vs baseline; (2) leading indicators vs thresholds; (3) assumptions tested since last review; (4) decision — continue, pivot or stop; (5) next evidence date. The analyst prepares the evidence pack and facilitates, but the decision belongs to the accountable executive."
+          }
+        ],
+        "activities": [
+          {
+            "title": "Draft the hypothesis and cost of delay",
+            "instructions": "Write the investment hypothesis for the case, then estimate the cost of delay per month using the illustrative value at stake. Finally, place the initiative on a portfolio Kanban board and note what would move it to the next column.",
+            "minutes": 20,
+            "prompts": [
+              {
+                "label": "Investment hypothesis",
+                "placeholder": "We believe… for… will… We'll know when… by…",
+                "id": "hs-s6-act1-p1"
+              },
+              {
+                "label": "Cost of delay per month and reasoning",
+                "placeholder": "",
+                "id": "hs-s6-act1-p2"
+              },
+              {
+                "label": "Current Kanban column and exit criteria",
+                "placeholder": "",
+                "id": "hs-s6-act1-p3"
+              }
+            ],
+            "id": "hs-s6-act1"
+          }
+        ],
+        "aiPrompt": "Turn my analysis into a one-page lean business case. Sections: problem (solution-free), outcome (baseline, target, date), hypothesis (we believe / we'll know when), options considered including do nothing, recommended first step, cost of delay per month, top five assumptions with evidence ratings, what would prove us wrong (specific signals and thresholds), and review dates. Keep it under 450 words, use ranges for figures, and list anything you had to assume at the end. My analysis notes:",
+        "quiz": [
+          {
+            "q": "Which section most distinguishes a lean business case from a traditional one?",
+            "opts": [
+              "Executive summary",
+              "What would prove us wrong",
+              "Financial appendix",
+              "Project schedule"
+            ],
+            "a": 1,
+            "why": "Naming disconfirming evidence in advance makes the case testable and honest."
+          },
+          {
+            "q": "What is the main benefit of WIP limits at the portfolio level?",
+            "opts": [
+              "More initiatives start",
+              "Initiatives finish faster and get proper analysis",
+              "Budgets are reduced",
+              "Fewer stakeholders"
+            ],
+            "a": 1,
+            "why": "Limiting work in progress improves flow and focus."
+          },
+          {
+            "q": "If value at stake is ~$2.0m/yr, the monthly cost of delay is roughly…",
+            "opts": [
+              "$20k",
+              "$165k",
+              "$500k",
+              "$2.0m"
+            ],
+            "a": 1,
+            "why": "$2.0m ÷ 12 ≈ $167k — illustrative, and useful for urgency conversations."
+          }
+        ],
+        "takeaways": [
+          "One page, with a hypothesis and an exit.",
+          "Cost of delay turns 'later' into a number.",
+          "Limit strategic WIP to protect analysis quality.",
+          "Review quarterly on evidence, and decide."
+        ]
+      },
+      "presenter": {
+        "purpose": "Connect analysis to investment flow and prepare participants to assemble their lean business case.",
+        "openingLine": "\"If your business case couldn't possibly be proven wrong, it isn't a business case — it's a wish.\"",
+        "beats": [
+          {
+            "label": "Lean business case anatomy",
+            "minutes": 15,
+            "notes": "Walk the table; stress the last two rows."
+          },
+          {
+            "label": "Hypothesis framing",
+            "minutes": 8,
+            "notes": "Read the model hypothesis; ask what's missing in typical cases they've seen."
+          },
+          {
+            "label": "Portfolio Kanban and review",
+            "minutes": 12,
+            "notes": "Show a board; discuss WIP limits and the review agenda."
+          },
+          {
+            "label": "Activity: hypothesis and cost of delay",
+            "minutes": 20,
+            "notes": "Individual; share two hypotheses."
+          },
+          {
+            "label": "Bridge to final exercise",
+            "minutes": 5,
+            "notes": "Explain the exercise and that they'll use their own investment idea."
+          }
+        ],
+        "facilitationNotes": "Some participants will say their organisation insists on a 40-page template. Suggest the lean case as the cover page and decision tool, with the template as an appendix.",
+        "whatGood": "A hypothesis with a measurable signal and date; a cost-of-delay estimate with reasoning shown.",
+        "commonFailure": "Hypotheses with no signal ('we'll know when it works') — the fix is to require a number and a date.",
+        "debrief": [
+          "What would your sponsor find most uncomfortable on this page?",
+          "Where would your initiative sit on the portfolio board today?"
+        ],
+        "answerKey": "**Model hypothesis** as in section 2. **Cost of delay:** ~$2.0m ÷ 12 ≈ $165k per month (illustrative), plus non-financial cost to workers without income. **Kanban:** likely 'Analysing'; exit criteria = riskiest assumption tested, lean case approved, first step funded.",
+        "materials": [
+          "Lean business case one-page template",
+          "Portfolio Kanban example"
+        ]
+      }
+    },
+    {
+      "id": "hs-s7",
+      "num": "1.7",
+      "title": "Exercise: apply to a live investment idea · close",
+      "subtitle": "Your own lean business case, and a bridge to the Initiative Horizon",
+      "dayId": "d1",
+      "time": "16:30–17:00",
+      "minutes": 30,
+      "participant": {
+        "bigIdea": "Leave with a case that someone could say no to — that is what makes it worth saying yes to.",
+        "overview": "Apply today's techniques to a real investment idea from your own work (or continue with the running case if you have none). In 20 minutes you will assemble a lean business case that names what would prove it wrong, finalise your solution-free problem statement and update your horizon map. Then we close and bridge to Day 2.",
+        "objectives": [
+          "Assemble a lean business case for a live investment idea.",
+          "Finalise a solution-free problem statement.",
+          "Update your personal horizon map."
+        ],
+        "keyPoints": [
+          {
+            "title": "Use your own idea",
+            "body": "The artefacts are more valuable when they're real. Sanitise sensitive details."
+          },
+          {
+            "title": "Direct the agent, own the judgement",
+            "body": "Use the AI prompt to draft, then challenge every number and assumption."
+          },
+          {
+            "title": "Bridge to Initiative",
+            "body": "Tomorrow the funded case becomes a product vision and an impact map."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "Exercise brief",
+            "body": "1. Choose a live investment idea (or use the running case).\n2. Write the solution-free problem statement.\n3. Complete the lean business case: outcome, hypothesis, options, first step, cost of delay, top assumptions, **what would prove us wrong**, review.\n4. Update your horizon map from this morning: what will you do differently on Monday?\n\nYou may use your AI agent to draft from your notes. Review the draft as the BA: delete invented figures, sharpen the stop signals, and check that the problem statement is still solution-free."
+          },
+          {
+            "heading": "Bridge to Day 2",
+            "body": "If the board approves Option B (phased), the question changes from *should we?* to *what exactly will we change or build, for whom, and in what order?* That is the Initiative Horizon — tomorrow's focus — where we build a product vision, an impact map and an ordered set of features, each with a hypothesis and a signal."
+          }
+        ],
+        "activities": [
+          {
+            "title": "Lean business case for a live idea",
+            "instructions": "Complete each box. Aim for one page in total. Keep figures as ranges and mark assumptions.",
+            "minutes": 20,
+            "prompts": [
+              {
+                "label": "Investment idea (sanitised)",
+                "placeholder": "",
+                "id": "hs-s7-act1-p1"
+              },
+              {
+                "label": "Solution-free problem statement",
+                "placeholder": "",
+                "id": "hs-s7-act1-p2"
+              },
+              {
+                "label": "Outcome: baseline → target → date",
+                "placeholder": "",
+                "id": "hs-s7-act1-p3"
+              },
+              {
+                "label": "Hypothesis",
+                "placeholder": "",
+                "id": "hs-s7-act1-p4"
+              },
+              {
+                "label": "Options incl. do nothing, and recommended first step",
+                "placeholder": "",
+                "id": "hs-s7-act1-p5"
+              },
+              {
+                "label": "What would prove us wrong (signals + thresholds + dates)",
+                "placeholder": "",
+                "id": "hs-s7-act1-p6"
+              },
+              {
+                "label": "Updated horizon map — one change for Monday",
+                "placeholder": "",
+                "id": "hs-s7-act1-p7"
+              }
+            ],
+            "id": "hs-s7-act1"
+          }
+        ],
+        "aiPrompt": "I am a business analyst finishing a lean business case. Using my notes below, draft a one-page case with: solution-free problem statement; outcome with baseline, target and date; hypothesis; at least three options including do nothing; recommended first step; cost of delay; top five assumptions with evidence ratings; 'what would prove us wrong' with specific signals, thresholds and dates; review cadence. Then critique your own draft: list any solution words in the problem statement, any invented figures, and any stop signal that is not measurable. My notes:",
+        "quiz": [
+          {
+            "q": "What makes a business case 'lean' in the agile sense?",
+            "opts": [
+              "It is under five pages",
+              "It is a testable hypothesis with a first step and explicit exit signals",
+              "It has no financials",
+              "It is written by the product owner"
+            ],
+            "a": 1,
+            "why": "Brevity helps, but the defining feature is testability and staged commitment."
+          },
+          {
+            "q": "What changes when we move from the Strategy to the Initiative Horizon?",
+            "opts": [
+              "The question moves from 'should we?' to 'what will we change or build, and in what order?'",
+              "Analysis stops",
+              "Only developers are involved",
+              "The outcome is discarded"
+            ],
+            "a": 0,
+            "why": "The funded outcome carries forward; the question becomes how to realise it."
+          }
+        ],
+        "takeaways": [
+          "You now have three artefacts: lean case, problem statement, horizon map.",
+          "The best cases name their own failure conditions.",
+          "Tomorrow: from investment to product."
+        ]
+      },
+      "presenter": {
+        "purpose": "Consolidate learning into the three leave-with artefacts and bridge to Day 2.",
+        "openingLine": "\"Last block. Bring a real investment idea — the messier the better — and let's make it something a board could say no to.\"",
+        "beats": [
+          {
+            "label": "Exercise brief",
+            "minutes": 3,
+            "notes": "Explain the steps; offer the running case as fallback."
+          },
+          {
+            "label": "Individual work",
+            "minutes": 20,
+            "notes": "Circulate (or visit rooms); challenge stop signals."
+          },
+          {
+            "label": "Shares and close",
+            "minutes": 5,
+            "notes": "Two volunteers read their 'what would prove us wrong'."
+          },
+          {
+            "label": "Bridge to Day 2",
+            "minutes": 2,
+            "notes": "Preview the Initiative Horizon; remind them to bring a funded initiative."
+          }
+        ],
+        "facilitationNotes": "Keep the clock visible. If people finish early, ask them to run the AI self-critique prompt on their case. End on time — it's 17:00.\n\nAsk participants to bring a funded initiative (or keep the running case) to Day 2.",
+        "whatGood": "Every participant has at least the problem statement and the 'what would prove us wrong' box completed.",
+        "commonFailure": "Stop signals that are aspirations ('if stakeholders lose interest') — the fix is to tie each to a number and a date.",
+        "debrief": [
+          "What's one thing you'll do differently in your next investment conversation?",
+          "What would prove your case wrong — and would you actually stop?"
+        ],
+        "answerKey": "**Model 'what would prove us wrong' (running case):** <40% of sampled claims low-risk by week 3 → stop fast-track; Legal advises parallel notification not permissible → pivot to employer-side digital forwarding; <50% complete at first contact in pilot by week 10 → pause platform phase 2; median days to liability decision not below 6 by week 12 → return to board with revised options.",
+        "materials": [
+          "Lean business case template (fillable)",
+          "Day 2 pre-work note"
+        ]
+      }
+    }
+  ],
+  "resources": [
+    {
+      "title": "Lean business case — one-page template",
+      "description": "Fillable template with problem, outcome, hypothesis, options, first step, cost of delay, assumptions, what would prove us wrong and review.",
+      "audience": "participant"
+    },
+    {
+      "title": "Horizons quick reference",
+      "description": "Strategy, Initiative and Delivery compared by question, time frame, feedback and typical artefacts.",
+      "audience": "participant"
+    },
+    {
+      "title": "Assumption map canvas",
+      "description": "Importance × evidence grid with a test-design panel.",
+      "audience": "participant"
+    },
+    {
+      "title": "Running case one-pager",
+      "description": "Faster first payments for injured workers — illustrative figures and disclaimer.",
+      "audience": "participant"
+    },
+    {
+      "title": "Facilitator timing sheet — Day 1",
+      "description": "Block-by-block timings, breakout plan and fallback cuts if running late.",
+      "audience": "presenter"
+    },
+    {
+      "title": "Answer key pack — Day 1",
+      "description": "Model problem statement, outcome tree, thresholds, tests and lean case for the running case.",
+      "audience": "presenter"
+    }
+  ]
+}
