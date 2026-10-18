@@ -6,10 +6,10 @@ import { usePathname } from "next/navigation";
 export default function DropdownCloser() {
   const path = usePathname();
   useEffect(() => {
-    document.querySelectorAll("details.cbdrop[open], details.switcher[open]").forEach((d) => d.removeAttribute("open"));
+    document.querySelectorAll("details.cbdrop[open], details.switcher[open], details.viewdrop[open]").forEach((d) => d.removeAttribute("open"));
   }, [path]);
   useEffect(() => {
-    const sel = "details.cbdrop, details.switcher";
+    const sel = "details.cbdrop, details.switcher, details.viewdrop";
     const onClick = (e: MouseEvent) => {
       const t = e.target as Element;
       document.querySelectorAll(`${sel}`).forEach((d) => {

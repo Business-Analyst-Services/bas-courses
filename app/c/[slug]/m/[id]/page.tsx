@@ -8,6 +8,7 @@ import Md from "@/components/Md";
 import ActivityField from "@/components/Activity";
 import Quiz from "@/components/Quiz";
 import SampleKit from "@/components/SampleKit";
+import Tabs, { type TabDef } from "@/components/Tabs";
 import { CompleteButton, CopyButton } from "@/components/Buttons";
 import { requireCourseRole } from "@/lib/access";
 import { getModule, moduleNeighbours } from "@/lib/courses";
@@ -46,123 +47,201 @@ export default async function ModulePage({
       <CourseSidebar course={course} schedule={schedule} here={`/c/${slug}/m/${m.id}${q}`} currentId={m.id} done={done} view={presenterView ? "presenter" : undefined} role={role} />
         <div className="shell">
         <main className="main">
-        <div style={{ display: "flex", justifyContent: "space-between", gap: 12, flexWrap: "wrap", alignItems: "center", marginBottom: 14 }}>
-          <div className="crumbs" style={{ margin: 0 }}><Link href={`/c/${slug}`}>{course.shortTitle}</Link><span>›</span><span>{day?.label}</span><span>›</span><span>Session {course.modules.findIndex((x) => x.id === m.id) + 1} of {course.modules.length}</span></div>
-          {role === "presenter" && (
-            <div className="modetoggle">
-              <Link href={`/c/${slug}/m/${m.id}`} className={presenterView ? "" : "on"}>Participant</Link>
-              <Link href={`/c/${slug}/m/${m.id}?view=presenter`} className={presenterView ? "on" : ""}>Presenter</Link>
-            </div>
-          )}
-        </div>
-        <div className="kicker">{day?.label} · {m.time} · {m.minutes} min {presenterView && "· PRESENTER RUN SHEET"}</div>
-        <h1 className="pagetitle">{m.num} — {m.title}</h1>
-        <p className="lead">{m.subtitle}</p>
-        {isHidden && <div className="notice">This session is hidden from participants. Only presenters and admins can see it.</div>}
-
-        {presenterView ? (
-          <>
-            <nav className="toc" aria-label="On this page">
-              <a href="#runsheet">Run sheet</a>
-              {T.roleplay && <a href="#roleplay">Role-play</a>}
-              <a href="#facilitation">Facilitation notes</a>
-              <a href="#debrief">Debrief</a>
-              {T.answerKey && <a href="#answer-key">Answer key</a>}
-              {T.materials.length > 0 && <a href="#materials">Materials</a>}
-            </nav>
-            <div className="say"><small>OPEN THE BLOCK — WHAT TO SAY</small>{T.openingLine}</div>
-            <div className="panel"><h3>Purpose</h3><p>{T.purpose}</p></div>
-            <div className="panel" id="runsheet">
-              <h3>Run sheet · {m.minutes} min</h3>
-              <table className="beats"><thead><tr><th>Beat</th><th>Min</th><th>Notes</th></tr></thead>
-                <tbody>{T.beats.map((b, i) => <tr key={i}><td><b>{b.label}</b></td><td className="min">{b.minutes}</td><td><Md>{b.notes}</Md></td></tr>)}</tbody>
-              </table>
-            </div>
-            {T.roleplay && (
-              <>
-                <h2 className="sec" id="roleplay">Role-play</h2>
-                <div className="rpgrid">
-                  <div className="card"><b>Persona</b><h3>{T.roleplay.persona}</h3><p>{T.roleplay.line}</p></div>
-                  <div className="card"><b>Curveball</b><h3>{T.roleplay.curveball}</h3></div>
-                  <div className="card" style={{ gridColumn: "1 / -1" }}><b>The BA move</b><p style={{ color: "var(--ink)" }}>{T.roleplay.move}</p></div>
+        {(() => {
+          const idx = course.modules.findIndex((x) => x.id === m.id) + 1;
+          const total = T.beats.reduce((x, y) => x + y.minutes, 0) || m.minutes;
+          const KP_ICONS = ["🎯", "💡", "🤖", "🧭", "🛡️", "⚡"];
+          const ACCENTS = ["teal", "navy", "amber", "violet", "rose"];
+          const glance = (
+            <div className="glance" aria-label="Session at a glance">
+              {T.beats.map((bt, i) => (
+                <div key={i} className={`gl gl${i % 4}`} style={{ flex: bt.minutes }} title={`${bt.label} · ${bt.minutes} min`}>
+                  <b>{bt.label.split("·").pop()?.trim()}</b><small>{bt.minutes} min</small>
                 </div>
-              </>
-            )}
-            <h2 className="sec" id="facilitation">Facilitation notes</h2>
-            <div className="panel"><Md>{T.facilitationNotes}</Md></div>
-            <div className="goodband"><b>What good looks like: </b>{T.whatGood}</div>
-            <div className="failband"><b>Common failure, and the fix: </b>{T.commonFailure}</div>
-            <h2 className="sec" id="debrief">Debrief questions</h2>
-            <div className="panel"><ul className="objs">{T.debrief.map((d) => <li key={d}>{d}</li>)}</ul></div>
-            {T.answerKey && (<><h2 className="sec" id="answer-key">Answer key</h2><div className="panel"><Md>{T.answerKey}</Md></div></>)}
-            {T.materials.length > 0 && (<><h2 className="sec" id="materials">Materials</h2><div className="panel"><ul className="objs">{T.materials.map((x) => <li key={x}>{x}</li>)}</ul></div></>)}
-            <div className="navyband"><p><b>Participant view:</b> switch to Participant at the top to see exactly what the room sees, including the activities and quiz.</p></div>
-          </>
-        ) : (
-          <>
-            <nav className="toc" aria-label="On this page">
-              <a href="#overview">Overview</a>
-              {P.sections.map((s) => <a key={s.heading} href={`#${slugify(s.heading)}`}>{s.heading}</a>)}
-              {P.activities.length > 0 && <a href="#activities">Activities ({P.activities.length})</a>}
-              {P.samples?.length ? <a href="#samples">Sample playbook{P.samples.length > 1 ? "s" : ""}</a> : null}
-              {showAi && P.aiPrompt && <a href="#ai-prompt">AI prompt</a>}
-              {showQuiz && P.quiz.length > 0 && <a href="#quiz">Quiz</a>}
-              <a href="#takeaways">Takeaways</a>
-            </nav>
-            <div className="bigidea" id="overview">{P.bigIdea}</div>
-            <Md>{P.overview}</Md>
-            <div className="panel"><h3>By the end of this session you can</h3><ul className="objs">{P.objectives.map((o) => <li key={o}>{o}</li>)}</ul></div>
-
-            <div className="grid g3" style={{ marginBottom: 10 }}>
-              {P.keyPoints.map((k, i) => (
-                <div className="card" key={i}><span className="stepchip">{i + 1}</span><h3>{k.title}</h3><p>{k.body}</p></div>
               ))}
             </div>
+          );
 
-            {P.sections.map((s) => (
-              <section key={s.heading} id={slugify(s.heading)}><h2 className="sec">{s.heading}</h2><div className="panel"><Md>{s.body}</Md></div></section>
-            ))}
-
-            {P.samples?.length ? (
-              <>
-                <h2 className="sec" id="samples">Sample playbook{P.samples.length > 1 ? "s" : ""}: prompt, templates and outputs</h2>
-                {P.samples.map((k) => <SampleKit key={k.code} kit={k} />)}
-              </>
-            ) : null}
-
-            {P.activities.length > 0 && <h2 className="sec" id="activities">Workbook activities</h2>}
-            {P.activities.map((a) => (
-              <div className="panel act" key={a.id} id={a.id}>
-                <div className="kicker">Activity{a.minutes ? ` · ${a.minutes} min` : ""}</div>
-                <h3>{a.title}</h3>
-                <Md>{a.instructions}</Md>
-                {a.prompts.map((p) => (
-                  <ActivityField key={p.id} slug={slug} activityId={a.id} promptId={p.id} label={p.label}
-                    placeholder={p.placeholder} initial={responses[`${a.id}::${p.id}`] ?? ""} />
+          const participantTabs: TabDef[] = [
+            {
+              id: "overview", label: "Overview", icon: "✨",
+              panel: (
+                <>
+                  <div className="bigidea" id="overview"><span className="bq" aria-hidden>“</span>{P.bigIdea}</div>
+                  <div className="ovgrid">
+                    <div className="ovtext"><Md>{P.overview}</Md></div>
+                    <aside className="objcard">
+                      <div className="olh">By the end you can</div>
+                      <ol className="objsteps">{P.objectives.map((o) => <li key={o}>{o}</li>)}</ol>
+                    </aside>
+                  </div>
+                  <h2 className="sec">Session at a glance · {total} min</h2>
+                  {glance}
+                  <div className="kpgrid">
+                    {P.keyPoints.map((k, i) => (
+                      <div className={`kp acc-${ACCENTS[i % ACCENTS.length]}`} key={i}>
+                        <span className="kpi" aria-hidden>{KP_ICONS[i % KP_ICONS.length]}</span>
+                        <h3>{k.title}</h3><p>{k.body}</p>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              ),
+            },
+            {
+              id: "learn", label: "Learn", icon: "📘", badge: P.sections.length,
+              panel: (
+                <>
+                  <nav className="chaprail" aria-label="Chapters">
+                    {P.sections.map((s, i) => <a key={s.heading} href={`#${slugify(s.heading)}`}><span>{String(i + 1).padStart(2, "0")}</span>{s.heading}</a>)}
+                  </nav>
+                  {P.sections.map((s, i) => (
+                    <section key={s.heading} id={slugify(s.heading)} className={`chapter acc-${ACCENTS[i % ACCENTS.length]}`}>
+                      <div className="chhead"><span className="chnum">{String(i + 1).padStart(2, "0")}</span><h2>{s.heading}</h2></div>
+                      <div className="chbody"><Md>{s.body}</Md></div>
+                    </section>
+                  ))}
+                </>
+              ),
+            },
+          ];
+          if (P.samples?.length) participantTabs.push({
+            id: "samples", label: "Samples", icon: "🧰", badge: P.samples.length,
+            panel: (<div id="samples">{P.samples.map((k) => <SampleKit key={k.code} kit={k} />)}</div>),
+          });
+          if (P.activities.length) participantTabs.push({
+            id: "activities", label: "Activities", icon: "🛠️", badge: P.activities.length,
+            panel: (
+              <div id="activities">
+                {P.activities.map((a, i) => (
+                  <div className="panel act actcard" key={a.id} id={a.id}>
+                    <div className="acthead">
+                      <span className="actnum">{i + 1}</span>
+                      <div><div className="kicker" style={{ margin: 0 }}>Activity {i + 1} of {P.activities.length}</div><h3>{a.title}</h3></div>
+                      {a.minutes ? <span className="timer">⏱ {a.minutes} min</span> : null}
+                    </div>
+                    <Md>{a.instructions}</Md>
+                    {a.prompts.map((pr) => (
+                      <ActivityField key={pr.id} slug={slug} activityId={a.id} promptId={pr.id} label={pr.label}
+                        placeholder={pr.placeholder} initial={responses[`${a.id}::${pr.id}`] ?? ""} />
+                    ))}
+                  </div>
                 ))}
               </div>
-            ))}
+            ),
+          });
+          if (showAi && P.aiPrompt) participantTabs.push({
+            id: "ai-prompt", label: "AI prompt", icon: "🤖",
+            panel: (
+              <div className="promptcard" id="ai-prompt">
+                <div className="promptbar"><span className="dots"><i /><i /><i /></span><span>Paste into your course agent</span><CopyButton text={P.aiPrompt} /></div>
+                <div className="pre">{P.aiPrompt}</div>
+                <div className="guard">🛡️ Never paste confidential or personal data into a consumer AI tool. Use your organisation&apos;s approved tool.</div>
+              </div>
+            ),
+          });
+          if (showQuiz && P.quiz.length) participantTabs.push({
+            id: "quiz", label: "Quiz", icon: "🧠", badge: P.quiz.length,
+            panel: (<div id="quiz"><Quiz slug={slug} moduleId={m.id} items={P.quiz} initial={quiz} /></div>),
+          });
+          participantTabs.push({
+            id: "takeaways", label: "Takeaways", icon: "🏁",
+            panel: (
+              <div id="takeaways">
+                <div className="tkgrid">{P.takeaways.map((t, i) => <div className="tk" key={t}><span>{i + 1}</span>{t}</div>)}</div>
+                <div className="donebox"><div><b>Finished this session?</b><small>Mark it complete to track your progress across the course.</small></div><CompleteButton slug={slug} moduleId={m.id} done={done.has(m.id)} /></div>
+              </div>
+            ),
+          });
 
-            {showAi && P.aiPrompt && (
-              <>
-                <h2 className="sec" id="ai-prompt">Paste-ready AI prompt</h2>
-                <div className="panel">
-                  <div className="pre">{P.aiPrompt}</div>
-                  <div style={{ marginTop: 10, display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
-                    <CopyButton text={P.aiPrompt} />
-                    <span style={{ fontSize: 12.5, color: "var(--grey)" }}>Never paste confidential or personal data into a consumer AI tool. Use your organisation&apos;s approved tool.</span>
+          const presenterTabs: TabDef[] = [
+            {
+              id: "runsheet", label: "Run sheet", icon: "⏱", badge: T.beats.length,
+              panel: (
+                <>
+                  <div className="say"><small>OPEN THE BLOCK — WHAT TO SAY</small>{T.openingLine}</div>
+                  <div className="panel"><div className="olh">Purpose</div><p>{T.purpose}</p></div>
+                  {glance}
+                  <ol className="timeline" id="runsheet">
+                    {T.beats.map((bt, i) => (
+                      <li key={i} className={`tl tl${i % 4}`}>
+                        <div className="tldot">{bt.minutes}<small>min</small></div>
+                        <div className="tlbody"><b>{bt.label}</b><Md>{bt.notes}</Md></div>
+                      </li>
+                    ))}
+                  </ol>
+                </>
+              ),
+            },
+          ];
+          if (T.roleplay) presenterTabs.push({
+            id: "roleplay", label: "Role-play", icon: "🎭",
+            panel: (
+              <div className="rpstage" id="roleplay">
+                <div className="rpcard persona"><b>Persona</b><h3>{T.roleplay.persona}</h3><p className="bubble">{T.roleplay.line}</p></div>
+                <div className="rpcard curve"><b>⚡ Curveball</b><h3>{T.roleplay.curveball}</h3></div>
+                <div className="rpcard move"><b>✅ The BA move</b><p>{T.roleplay.move}</p></div>
+              </div>
+            ),
+          });
+          presenterTabs.push({
+            id: "facilitation", label: "Facilitation", icon: "🧭",
+            panel: (
+              <div id="facilitation">
+                <div className="panel"><Md>{T.facilitationNotes}</Md></div>
+                <div className="gfgrid">
+                  <div className="goodband"><b>✅ What good looks like</b><p>{T.whatGood}</p></div>
+                  <div className="failband"><b>⚠️ Common failure, and the fix</b><p>{T.commonFailure}</p></div>
+                </div>
+              </div>
+            ),
+          });
+          presenterTabs.push({
+            id: "debrief", label: "Debrief", icon: "💬", badge: T.debrief.length,
+            panel: (<div className="qgrid" id="debrief">{T.debrief.map((x, i) => <div className="qcard" key={x}><span>Q{i + 1}</span>{x}</div>)}</div>),
+          });
+          if (T.answerKey) presenterTabs.push({ id: "answer-key", label: "Answer key", icon: "🔑", panel: (<div className="panel" id="answer-key"><Md>{T.answerKey}</Md></div>) });
+          if (T.materials.length) presenterTabs.push({
+            id: "materials", label: "Materials", icon: "📦", badge: T.materials.length,
+            panel: (<ul className="matlist" id="materials">{T.materials.map((x) => <li key={x}>{x}</li>)}</ul>),
+          });
+
+          return (
+            <>
+              <div className="crumbs"><Link href={`/c/${slug}`}>{course.shortTitle}</Link><span>›</span><span>{day?.label}</span><span>›</span><span>Session {idx} of {course.modules.length}</span></div>
+              <header className={`shero ${presenterView ? "pres" : ""}`}>
+                <div className="shnum"><small>SESSION</small>{idx}<span>of {course.modules.length}</span></div>
+                <div className="shmain">
+                  <div className="shkick">{day?.label}{day?.title ? ` · ${day.title}` : ""}{presenterView ? " · Presenter run sheet" : ""}</div>
+                  <h1>{m.title}</h1>
+                  <p>{m.subtitle}</p>
+                  <div className="shchips">
+                    <span>🗓 {m.time}</span><span>⏱ {m.minutes} min</span>
+                    {P.activities.length > 0 && <span>🛠️ {P.activities.length} activities</span>}
+                    {showQuiz && P.quiz.length > 0 && <span>🧠 {P.quiz.length}-question check</span>}
+                    {done.has(m.id) && <span className="ok">✓ Completed</span>}
                   </div>
                 </div>
-              </>
-            )}
-
-            {showQuiz && P.quiz.length > 0 && (<><h2 className="sec" id="quiz">Knowledge check</h2><Quiz slug={slug} moduleId={m.id} items={P.quiz} initial={quiz} /></>)}
-
-            <h2 className="sec" id="takeaways">Key takeaways</h2>
-            <div className="navyband"><ul className="objs">{P.takeaways.map((t) => <li key={t} style={{ color: "#fff" }}>{t}</li>)}</ul></div>
-            <CompleteButton slug={slug} moduleId={m.id} done={done.has(m.id)} />
-          </>
-        )}
+                {role === "presenter" && (
+                  <details className="viewdrop">
+                    <summary>{presenterView ? "🎤 Presenter view" : "👥 Participant view"} <span className="car">▼</span></summary>
+                    <div className="vdpanel">
+                      <div className="cbpanelh">Show this session as</div>
+                      <Link href={`/c/${slug}/m/${m.id}`} className={`cbitem ${presenterView ? "" : "on"}`}>
+                        <span className="sbnum">👥</span><span>Participant<small>What the room sees: teaching, activities, prompt, quiz</small></span><span />
+                      </Link>
+                      <Link href={`/c/${slug}/m/${m.id}?view=presenter`} className={`cbitem ${presenterView ? "on" : ""}`}>
+                        <span className="sbnum">🎤</span><span>Presenter<small>Run sheet, role-play, facilitation, debrief, answer key</small></span><span />
+                      </Link>
+                    </div>
+                  </details>
+                )}
+              </header>
+              {isHidden && <div className="notice">This session is hidden from participants. Only presenters and admins can see it.</div>}
+              <Tabs key={presenterView ? "p" : "a"} tabs={presenterView ? presenterTabs : participantTabs} />
+            </>
+          );
+        })()}
 
         <nav className="pager">
           {prev ? <Link href={`/c/${slug}/m/${prev.id}${q}`}><small>← Previous</small>{prev.num} {prev.title}</Link> : <span style={{ flex: 1 }} />}
