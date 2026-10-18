@@ -2,7 +2,7 @@
   "slug": "horizons-initiative",
   "title": "Horizons: Initiative",
   "shortTitle": "Initiative Horizon",
-  "tagline": "A full day on the engine room, where strategic intent becomes a product (Ch 6).",
+  "tagline": "A full day on the engine room of agile business analysis — what should we build, and in what order? (Ch 6)",
   "format": "One-day course · Day 2 of 3 · sold singly or as a 3-day bundle",
   "duration": "1 day",
   "delivery": "Live online · APAC · Times Sydney",
@@ -10,16 +10,19 @@
   "order": 4,
   "series": "Horizon Series",
   "outcomes": [
-    "Explain how the analyst's role changes once an initiative is funded.",
-    "Write a product vision that connects the strategic outcome to customers and capabilities.",
-    "Build an impact map from goal to actors, impacts and deliverables.",
-    "Order features by value, risk and learning, each with a hypothesis and signal.",
-    "Plan an outcome-based roadmap and the feedback loops that keep it honest."
+    "Explain the Agile Business Analyst's role at the Initiative Horizon and how it differs from the Product Owner's.",
+    "Produce the five outcomes of Initiative analysis: shared customer understanding, a product vision, a prioritized feature backlog, a product roadmap and features ready for delivery.",
+    "Plan in a rolling one-to-three-month window with wave-based elaboration, and keep context flowing down and feedback flowing up.",
+    "Apply the nine principles of agile business analysis to product decisions.",
+    "Select from the Initiative Horizon's analysis and planning techniques — and know where the rest of the toolkit fits."
   ],
   "leaveWith": [
-    "A product vision",
-    "An impact map from a funded initiative",
-    "Top five features ordered, each with a hypothesis and signal"
+    "A persona, empathy map and journey map for your key customer",
+    "A product vision and context boundary",
+    "An impact map or opportunity solution tree from a funded initiative",
+    "A prioritized top five features, each with a hypothesis statement",
+    "A Now / Next / Later roadmap and a feature-readiness check",
+    "The Initiative Horizon technique map (all 43 techniques)"
   ],
   "caseStudy": {
     "title": "Delivered right first time: last-mile reliability",
@@ -31,7 +34,7 @@
     {
       "id": "p1",
       "label": "Role",
-      "title": "Day 2 · Morning — the analyst at the Initiative Horizon",
+      "title": "The analyst at the Initiative Horizon (6.1–6.3)",
       "blocks": [
         {
           "time": "09:00–09:30",
@@ -55,17 +58,17 @@
     {
       "id": "p2",
       "label": "Outcomes",
-      "title": "Outcomes, time frame, feedback and principles",
+      "title": "Measures, time frame, context, feedback and principles (6.3–6.6)",
       "blocks": [
         {
           "time": "10:45–11:30",
-          "title": "Three levels of outcome",
+          "title": "Measuring product outcomes",
           "type": "session",
           "moduleId": "hi-s3"
         },
         {
           "time": "11:30–12:15",
-          "title": "Time frame and feedback",
+          "title": "Time frame, context and feedback",
           "type": "session",
           "moduleId": "hi-s3b"
         },
@@ -76,7 +79,7 @@
         },
         {
           "time": "13:00–13:45",
-          "title": "Principles applied at this horizon",
+          "title": "The nine principles at this horizon",
           "type": "session",
           "moduleId": "hi-s4"
         }
@@ -85,17 +88,17 @@
     {
       "id": "p3",
       "label": "Analysis",
-      "title": "Customer and product analysis techniques",
+      "title": "Analysis techniques: customer and outcome (6.7.1)",
       "blocks": [
         {
-          "time": "13:45–14:15",
-          "title": "Personas and journey mapping",
+          "time": "13:45–14:30",
+          "title": "Understanding the customer",
           "type": "session",
           "moduleId": "hi-s5"
         },
         {
-          "time": "14:15–15:15",
-          "title": "Impact mapping",
+          "time": "14:30–15:15",
+          "title": "Connecting features to outcomes",
           "type": "session",
           "moduleId": "hi-s5b"
         },
@@ -109,28 +112,34 @@
     {
       "id": "p4",
       "label": "Planning",
-      "title": "Planning techniques, roadmap and apply",
+      "title": "Planning and delivery techniques, readiness and apply (6.7)",
       "blocks": [
         {
           "time": "15:30–15:50",
-          "title": "Story mapping and the first release",
+          "title": "Story mapping, MVP and feature decomposition",
           "type": "session",
           "moduleId": "hi-s5c"
         },
         {
           "time": "15:50–16:15",
-          "title": "Feature hypotheses and ordering",
+          "title": "Hypotheses and prioritization techniques",
           "type": "session",
           "moduleId": "hi-s6"
         },
         {
           "time": "16:15–16:30",
-          "title": "The Now / Next / Later roadmap",
+          "title": "The product roadmap and real options",
           "type": "session",
           "moduleId": "hi-s6b"
         },
         {
-          "time": "16:30–17:00",
+          "time": "16:30–16:45",
+          "title": "Features ready for delivery",
+          "type": "session",
+          "moduleId": "hi-s6c"
+        },
+        {
+          "time": "16:45–17:00",
           "title": "Exercise: apply to a funded initiative · close",
           "type": "exercise",
           "moduleId": "hi-s7"
@@ -172,7 +181,7 @@
         "sections": [
           {
             "heading": "Day 1 in five lines",
-            "body": "- Agile analysis is sized to the decision in front of you.\n- Three horizons: Strategy (should we?), Initiative (what will we change or build?), Delivery (what's next and is it done?).\n- At Strategy we wrote a solution-free problem statement and an outcome with a baseline.\n- We mapped assumptions and tested the riskiest first.\n- We wrote a lean business case that names what would prove it wrong."
+            "body": "- Agile analysis is sized to the decision in front of you, guided by nine principles (STAG US Pursue, Avoid and Embrace).\n- Three horizons: Strategy (should we?), Initiative (what will we change or build?), Delivery (what's next and is it done?).\n- At Strategy we wrote a solution-free problem statement and an outcome with a baseline.\n- We mapped assumptions and tested the riskiest first.\n- We wrote a lean business case that names what would prove it wrong."
           },
           {
             "heading": "The funded initiative",
@@ -180,7 +189,7 @@
           },
           {
             "heading": "Crossing the bridge",
-            "body": "At Initiative the analyst's questions change:\n\n| Strategy asked | Initiative asks |\n|---|---|\n| Is this worth doing? | Who exactly must behave differently for the outcome to happen? |\n| What options exist? | What product or change will we deliver, and what's in and out? |\n| What's the value at stake? | Which features deliver the most value soonest? |\n| What would prove us wrong? | What signal will each feature produce, and when? |"
+            "body": "The primary question at the Initiative Horizon is: **what should we build, and in what order?** The analyst's questions change:\n\n| Strategy asked | Initiative asks |\n|---|---|\n| Is this worth doing? | Who exactly must behave differently for the outcome to happen? |\n| What options exist? | What product or change will we deliver, and what's in and out? |\n| What's the value at stake? | Which features deliver the most value soonest? |\n| What would prove us wrong? | What signal will each feature produce, and when? |"
           }
         ],
         "activities": [
@@ -282,27 +291,27 @@
       "id": "hi-s2",
       "num": "2.2",
       "title": "The analyst at the Initiative Horizon",
-      "subtitle": "Product thinking, boundaries and the product vision",
+      "subtitle": "Role, the Product Owner partnership, the five outcomes of analysis and the product vision",
       "dayId": "p1",
       "time": "09:30–10:30",
       "minutes": 60,
       "participant": {
         "bigIdea": "At Initiative, the analyst helps the team agree what the product is — and, just as importantly, what it isn't.",
-        "overview": "Once an initiative is funded, the analyst's work shifts from decision support to **product discovery and definition**. You help the product owner and team understand customers and users, define product boundaries, articulate a product vision, and translate strategic intent into features that can be tested.\n\nIn this block you'll learn what the role involves, how to work alongside a product owner without duplicating them, and how to write a product vision for the running case.",
+        "overview": "If any single horizon defines the contribution of agile business analysis, it is the Initiative Horizon. Here the Agile Business Analyst understands customers, develops the product vision, builds and orders the feature backlog, shapes the roadmap and keeps a steady flow of features ready for delivery.\n\nThis block covers the role, the partnership with the Product Owner, the **five outcomes of analysis** that the rest of the day builds, and the first of them you'll draft: the product vision and its boundary.",
         "objectives": [
-          "Describe the analyst's contribution at the Initiative Horizon.",
-          "Clarify how the analyst and product owner divide and share work.",
-          "Write a product vision using a structured template.",
-          "Define product boundaries: in, out and not yet."
+          "Describe the Agile Business Analyst's contribution at the Initiative Horizon.",
+          "Differentiate the Product Owner (decision-maker) and Agile Business Analyst (analyst, investigator, facilitator).",
+          "Name the five outcomes of Initiative analysis.",
+          "Write a product vision and define the product boundary with a context diagram."
         ],
         "keyPoints": [
           {
-            "title": "Product, not project",
-            "body": "A product persists and evolves; it is measured on outcomes, not on finishing on time."
+            "title": "Features, not stories",
+            "body": "Initiative produces features, not stories; a vision, not a specification; a roadmap, not a project plan."
           },
           {
-            "title": "BA + PO partnership",
-            "body": "The PO owns value decisions; the BA brings analysis depth, models and evidence to inform them."
+            "title": "PO decides, BA analyses",
+            "body": "The Product Owner is the decision-maker; the analyst makes sure those decisions rest on understanding, not assumption."
           },
           {
             "title": "The product vision",
@@ -316,19 +325,23 @@
         "sections": [
           {
             "heading": "What the analyst does at Initiative",
-            "body": "Typical contributions:\n\n1. **Understand customers and users** — personas, journeys and jobs to be done.\n2. **Define the product** — vision, boundaries, key capabilities.\n3. **Connect strategy to features** — impact mapping, feature hypotheses.\n4. **Shape the roadmap** — sequence by value, risk and learning.\n5. **Set up product feedback** — product metrics and review cadence.\n6. **Prepare for Delivery** — a backlog that is ready enough to start, but not over-specified."
+            "body": "The Agile Business Analyst at this horizon:\n\n1. **Understands customers** — research, personas, empathy maps, journeys, jobs to be done.\n2. **Develops the product vision** — with stakeholders and customers.\n3. **Builds and orders the feature backlog** — providing the analysis behind the Product Owner's decisions.\n4. **Shapes the roadmap** — a directional plan, not a schedule.\n5. **Keeps features ready for delivery** — elaborating just ahead of the Delivery Team.\n6. **Bridges** the Delivery Team and the wider stakeholder community — and carries learning up to Strategy.\n\nIn larger organizations this may be led by senior analysts or product managers; in small teams it sits alongside Delivery work. What matters is that someone does it with skill and intent."
           },
           {
-            "heading": "Working with the product owner",
-            "body": "| Area | Product owner | Business analyst |\n|---|---|---|\n| Vision | Owns and communicates | Drafts, tests with stakeholders, sharpens |\n| Priorities | Decides | Provides value, risk and dependency analysis |\n| Customers | Represents the customer voice | Researches, models journeys, gathers evidence |\n| Backlog | Accountable for ordering | Structures, refines, makes items testable |\n| Stakeholders | Primary relationships | Facilitates workshops, manages detail |\n\nIn smaller teams one person may wear both hats. The point is that both sets of work happen."
+            "heading": "Working with the Product Owner",
+            "body": "The relationship works best when the roles are clearly differentiated. The **Product Owner** is the decision-maker, business voice and keeper of priorities. The **Agile Business Analyst** is the analyst, investigator and facilitator who challenges, probes and tests the Product Owner's thinking — not to undermine it, but to strengthen it.\n\n| Area | Product Owner | Agile Business Analyst |\n|---|---|---|\n| Vision | Owns and communicates | Drafts, tests with stakeholders, sharpens |\n| Priorities | Decides | Provides value, risk and dependency analysis |\n| Customers | Represents the customer voice | Researches, models journeys, gathers evidence |\n| Backlog | Accountable for ordering | Structures, refines, makes items testable |\n| Stakeholders | Primary relationships | Facilitates workshops, manages detail |\n\nIn smaller teams one person may wear both hats. The point is that both sets of work happen."
+          },
+          {
+            "heading": "The five outcomes of analysis",
+            "body": "![The five outcomes of Initiative Horizon analysis: shared understanding of the customer, a compelling product vision, a prioritized feature backlog, a product roadmap, and well-elaborated features ready for delivery, with the course session that builds each](/files/horizons-initiative/visuals/initiative-outcomes.svg)\n\n*The five outcomes of analysis — and where today builds each one.*\n\nThese are **living artifacts**, updated as the team learns. The rest of today builds each one in turn."
           },
           {
             "heading": "Writing a product vision",
-            "body": "A widely used template (paraphrased): *For [target customer] who [need], the [product] is a [category] that [key benefit]. Unlike [current alternative], our product [key difference].*\n\n**Running case:**\n\n> For receivers who need their freight to arrive when promised, and the depot planners and drivers who serve them, *Right First Time* is a delivery-management service that captures complete consignment data at booking and confirms the delivery window with the receiver before routes lock. Unlike today's knock-and-hope attempts and overnight manifests, it plans around the receiver's own answer and gets consignments delivered on the first attempt.\n\nTest the vision: can a contact-centre officer repeat it? Does it imply the outcome? Does it exclude things?"
+            "body": "A widely used template (paraphrased): *For [target customer] who [need], the [product] is a [category] that [key benefit]. Unlike [current alternative], our product [key difference].*\n\n**Running case:**\n\n> For receivers who need their freight to arrive when promised, and the depot planners and drivers who serve them, *Right First Time* is a delivery-management service that captures complete consignment data at booking and confirms the delivery window with the receiver before routes lock. Unlike today's knock-and-hope attempts and overnight manifests, it plans around the receiver's own answer and gets consignments delivered on the first attempt.\n\nTest the vision: can a contact-centre officer repeat it? Does it imply the outcome? Does it exclude things?\n\nThe vision is a test any proposed feature can be held against: *does this move us toward the vision, or away from it?* Other product vision techniques you can use: a **product vision board**, an **elevator pitch**, or a structured **visioning workshop** with a broad stakeholder group."
           },
           {
-            "heading": "Product boundaries",
-            "body": "| In | Out | Not yet |\n|---|---|---|\n| Real-time shipper booking with address validation | Warehouse management | Shipper self-service dashboard |\n| Receiver delivery-window notification and confirmation | Linehaul scheduling | Dynamic route optimisation (phase 2) |\n| Live consignment tracking for receivers | Pricing and billing | Parcel-locker network |\n| Run data handed to subcontractor driver apps via middleware | Replacing subcontractor systems | Multilingual voice notifications |"
+            "heading": "Product boundaries and the context diagram",
+            "body": "A **context diagram** is one of the first artifacts at this horizon: what is inside the product, what is outside, and which external actors and systems interact with it. It prevents both over-building and the late discovery of missing integrations. A **systems ecosystem map** extends it with data flows and organizational relationships.\n\nFor the running case, inside the boundary: booking validation, receiver notification and confirmation, tracking. Outside but interacting: shipper systems, subcontractor driver apps (via middleware), the route planner, the contact centre.\n\n| In | Out | Not yet |\n|---|---|---|\n| Real-time shipper booking with address validation | Warehouse management | Shipper self-service dashboard |\n| Receiver delivery-window notification and confirmation | Linehaul scheduling | Dynamic route optimisation (phase 2) |\n| Live consignment tracking for receivers | Pricing and billing | Parcel-locker network |\n| Run data handed to subcontractor driver apps via middleware | Replacing subcontractor systems | Multilingual voice notifications |"
           }
         ],
         "activities": [
@@ -403,10 +416,10 @@
           }
         ],
         "takeaways": [
-          "Think product, measured on outcomes.",
-          "Partner with the PO — don't duplicate them.",
-          "A vision someone can repeat beats one that's complete.",
-          "Use 'not yet' to keep focus."
+          "Initiative answers: what should we build, and in what order?",
+          "The PO decides; the analyst makes the decision well-informed.",
+          "Five outcomes: customer understanding, vision, feature backlog, roadmap, ready features.",
+          "Draw the boundary early — in, out and not yet."
         ]
       },
       "presenter": {
@@ -415,18 +428,23 @@
         "beats": [
           {
             "label": "Role at Initiative",
-            "minutes": 10,
+            "minutes": 8,
             "notes": "Walk the six contributions; ask which they do now."
           },
           {
-            "label": "BA–PO partnership",
-            "minutes": 8,
-            "notes": "Table; discuss real tensions in their teams."
+            "label": "PO–BA partnership",
+            "minutes": 7,
+            "notes": "Decision-maker vs analyst; discuss real tensions."
           },
           {
-            "label": "Product vision teach and example",
+            "label": "The five outcomes of analysis",
+            "minutes": 5,
+            "notes": "Show the visual; point to where today builds each."
+          },
+          {
+            "label": "Product vision and context diagram",
             "minutes": 10,
-            "notes": "Read the running case vision; apply the three tests."
+            "notes": "Read the running case vision; apply the tests; sketch the context diagram."
           },
           {
             "label": "Activity: vision and boundaries",
@@ -434,14 +452,9 @@
             "notes": "Pairs or trios; one plays a stakeholder who wants everything in."
           },
           {
-            "label": "Shares",
-            "minutes": 6,
-            "notes": "Two visions read aloud; group applies the tests."
-          },
-          {
-            "label": "Debrief and close",
-            "minutes": 6,
-            "notes": "Discuss boundary conflicts and how to say 'not yet'."
+            "label": "Shares and debrief",
+            "minutes": 10,
+            "notes": "Two visions read aloud; discuss how to say 'not yet'."
           }
         ],
         "facilitationNotes": "Visions often come out as feature lists. Ask: 'which word in this tells me who it's for?' Have them read each other's visions aloud — clunky ones become obvious.\n\nUse the roleplay for one pair in front of the group if energy allows.",
@@ -460,22 +473,23 @@
         ],
         "answerKey": "Model vision and boundaries as in sections 3–4. Good 'not yet' items defer valuable but non-essential scope (shipper dashboard, dynamic route optimisation) behind evidence from phase 1.",
         "materials": [
+          "Five outcomes visual",
           "Product vision template",
-          "In / out / not yet canvas"
+          "Context diagram / in-out-not yet canvas"
         ]
       }
     },
     {
       "id": "hi-s3",
       "num": "2.3",
-      "title": "Three levels of outcome",
-      "subtitle": "Strategic, product and delivery outcomes — and the metrics that link them",
+      "title": "Measuring product outcomes",
+      "subtitle": "Metrics and KPIs: translating strategic measures into product-level outcomes",
       "dayId": "p2",
       "time": "10:45–11:30",
       "minutes": 45,
       "participant": {
         "bigIdea": "Product outcomes are the bridge: faster than the strategic outcome, more meaningful than feature output.",
-        "overview": "The Initiative Horizon pursues **product outcomes** — changes in customer and user behaviour that drive the strategic outcome. This session separates the three levels of outcome, shows how each is owned and reviewed, and links your strategic outcome to product metrics you can actually measure.",
+        "overview": "The Strategy Horizon set strategic success measures. At Initiative, **Metrics and Key Performance Indicators** translate them into product-level outcomes and feature-level indicators: what measurable change in customer behaviour or business performance each significant feature should produce, and how we'll detect it. Features with defined success metrics are more honestly prioritized, tested and evaluated.",
         "objectives": [
           "Distinguish strategic, product and delivery outcomes.",
           "Express product outcomes as observable behaviour changes.",
@@ -498,7 +512,7 @@
         "sections": [
           {
             "heading": "Three levels of outcome",
-            "body": "| Level | Running case example | Who reviews |\n|---|---|---|\n| Strategic | On-time last-mile delivery ≥92% | Portfolio board, quarterly |\n| Product | % of consignments booked with complete, validated data; receivers confirming before route lock | PO and initiative steering, monthly |\n| Delivery | Notification response rate; drop-off by step | Team, every iteration |\n\nProduct outcomes are the bridge: they move faster than the strategic outcome and are more meaningful than feature output."
+            "body": "| Level | Running case example | Who reviews |\n|---|---|---|\n| Strategic | On-time last-mile delivery ≥92% | Portfolio board, quarterly |\n| Product | % of consignments booked with complete, validated data; receivers confirming before route lock | Product Owner, monthly roadmap review |\n| Delivery | Notification response rate; drop-off by step | Team, every iteration |\n\nProduct outcomes are the bridge: they move faster than the strategic outcome and are more meaningful than feature output."
           },
           {
             "heading": "Writing a product outcome",
@@ -571,7 +585,7 @@
         ]
       },
       "presenter": {
-        "purpose": "Establish product-level outcomes before techniques, so features can later be tied to signals.",
+        "purpose": "Translate strategic measures into product and feature metrics, so features can later be tied to signals.",
         "openingLine": "\"The board will look at on-time delivery every quarter. What will *you* look at every fortnight?\"",
         "beats": [
           {
@@ -617,37 +631,46 @@
     {
       "id": "hi-s3b",
       "num": "2.4",
-      "title": "Time frame and feedback",
-      "subtitle": "A months-long horizon, a fortnightly-to-monthly rhythm and a mix of signals",
+      "title": "Time frame, context and feedback",
+      "subtitle": "Weeks to months, a rolling one-to-three-month window, and the flows between horizons",
       "dayId": "p2",
       "time": "11:30–12:15",
       "minutes": 45,
       "participant": {
-        "bigIdea": "At Initiative, every month without a product signal is a month you're flying on the business case alone.",
-        "overview": "The Initiative Horizon runs over months to a year. Feedback must arrive every few weeks — through product metrics, user research and releases — or the business case goes untested until it's too late. This session sets the initiative's planning time frame, its review rhythm and the mix of feedback that keeps it honest.",
+        "bigIdea": "Only what is needed soon is elaborated in detail; everything further out is held lightly.",
+        "overview": "The Initiative Horizon operates over **weeks to months**, with a rolling planning window of roughly **one to three months**. It has no single prescribed cadence — its rhythm follows the Delivery Team's needs. It also sits at the centre of the flows between horizons: context down from Strategy, context down to Delivery, feedback up from Delivery, and learning up to Strategy.",
         "objectives": [
-          "Set a planning time frame: firm near term, lighter beyond.",
-          "Design a review cadence where each review ends in a decision.",
-          "Combine behavioural, attitudinal, operational and financial feedback."
+          "Describe the Initiative time frame and its rolling one-to-three-month window.",
+          "Apply wave-based elaboration to the feature backlog.",
+          "Trace the four flows of context and feedback through the Initiative Horizon.",
+          "Design a review rhythm that ends in decisions."
         ],
         "keyPoints": [
           {
-            "title": "Months, not years",
-            "body": "Plan in quarters with a firm next 6–12 weeks and a lighter view beyond."
+            "title": "Weeks to months",
+            "body": "A rolling window of about one to three months — never the whole product upfront."
           },
           {
-            "title": "Fortnightly or monthly signals",
-            "body": "Product analytics, usability tests and operational data — reviewed on a fixed rhythm."
+            "title": "Wave-based elaboration",
+            "body": "Next one to two iterations: ready. Beyond: understood at feature level. Outer edge: placeholders."
           },
           {
-            "title": "Reviews end in decisions",
-            "body": "Continue, reorder, pivot or stop — a review without a decision is a status meeting."
+            "title": "Context down, feedback up",
+            "body": "Strategy context shapes the vision; Delivery feedback reshapes the backlog and roadmap."
+          },
+          {
+            "title": "Never block delivery",
+            "body": "The backlog must never fall into a state where the Delivery Team lacks well-elaborated work."
           }
         ],
         "sections": [
           {
-            "heading": "Time frame and rhythm",
-            "body": "A practical cadence for the running case:\n\n- **Fortnightly:** product metrics glance in the team review.\n- **Monthly:** initiative review — product outcomes vs targets, hypotheses validated or rejected, roadmap adjusted.\n- **Quarterly:** report to the portfolio on the strategic outcome and the decision point (continue / pivot / stop).\n\nThe week-12 decision point from Strategy sits inside this rhythm."
+            "heading": "Time frame and the rolling window",
+            "body": "![A rolling one-to-three-month planning window: features in the next one to two iterations are ready, features beyond are understood at feature level, and features at the outer edge are placeholders](/files/horizons-initiative/visuals/rolling-window.svg)\n\n*Wave-based elaboration across the rolling window.*\n\nA common rhythm, loosely synchronized with delivery:\n\n- **Weekly:** product backlog refinement.\n- **Monthly:** product roadmap review — outcomes vs targets, hypotheses validated or rejected, roadmap adjusted.\n- **As needed:** discovery and planning workshops.\n\nThe important thing is not the frequency but the discipline of continuous engagement. The Strategy Horizon's week-12 decision point sits inside this rhythm."
+          },
+          {
+            "heading": "Context and feedback: the four flows",
+            "body": "| Flow | What moves | Analyst's job |\n|---|---|---|\n| Context **down from Strategy** | Investment rationale, opportunity, customer outcomes, constraints, success criteria | Make sure it's clear and current — or the gaps get filled with assumption |\n| Context **down to Delivery** | Vision, ordered feature backlog, roadmap, elaborated features | Tell the team not just *what* but *why* and *for whom* |\n| Feedback **up from Delivery** | Iteration reviews, adoption, usage, delivery complexity | Translate it into backlog and roadmap decisions |\n| Learning **up to Strategy** | Opportunity bigger or smaller; need different; competitor moved | Surface it in a form strategy decision-makers can act on |\n\nFeedback also flows *within* the horizon: interviews, prototype tests and workshops continuously update the team's understanding."
           },
           {
             "heading": "Kinds of feedback",
@@ -691,15 +714,26 @@
         "aiPrompt": "For the initiative below, recommend a fortnightly / monthly / quarterly review rhythm with the decisions taken at each. For each product outcome, identify a leading signal (moves in weeks) and the lagging measure it predicts, and propose at least one behavioural, attitudinal, operational and financial feedback source. Initiative and outcomes:",
         "quiz": [
           {
-            "q": "Typical feedback cadence at the Initiative Horizon is…",
+            "q": "The Initiative Horizon's planning window is roughly…",
             "opts": [
-              "Annually",
-              "Every few weeks to monthly",
-              "Daily only",
-              "Only at project close"
+              "One iteration",
+              "One to three months",
+              "Three to five years",
+              "The whole product, defined upfront"
             ],
             "a": 1,
-            "why": "Initiative feedback arrives in weeks through product metrics and research."
+            "why": "A rolling window of about one to three months, elaborated in waves."
+          },
+          {
+            "q": "A feature at the outer edge of the planning window should be…",
+            "opts": [
+              "Fully decomposed into stories",
+              "Held as a placeholder on the roadmap",
+              "Removed from the backlog",
+              "Estimated in hours"
+            ],
+            "a": 1,
+            "why": "Only what is needed soon is elaborated; elaborating far-out work is waste."
           },
           {
             "q": "Which is a leading signal for on-time last-mile delivery?",
@@ -714,10 +748,10 @@
           }
         ],
         "takeaways": [
-          "Plan firmly for 6–12 weeks, loosely beyond.",
-          "Every review ends in a decision.",
-          "Mix behavioural, attitudinal and operational feedback.",
-          "Watch leading signals to predict the lagging outcome."
+          "Weeks to months; a rolling one-to-three-month window.",
+          "Elaborate in waves — ready, feature-level, placeholder.",
+          "Context flows down; feedback and learning flow up.",
+          "Every review ends in a decision."
         ]
       },
       "presenter": {
@@ -725,24 +759,24 @@
         "openingLine": "\"If your only feedback is the quarterly board report, how many months could you build the wrong thing?\"",
         "beats": [
           {
-            "label": "Time frame and rhythm",
+            "label": "Time frame and rolling window",
             "minutes": 7,
-            "notes": "Show the cadence; locate the week-12 decision point."
+            "notes": "Show the wave visual; contrast with upfront project planning."
           },
           {
-            "label": "Kinds of feedback and leading vs lagging",
+            "label": "The four flows",
             "minutes": 8,
-            "notes": "Stress accessibility and safety signals alongside speed."
+            "notes": "Walk the table; ask where their flows break."
           },
           {
-            "label": "Activity: design the monthly review",
+            "label": "Activity: design the monthly roadmap review",
             "minutes": 22,
-            "notes": "Breakouts of 3–4; each group drafts a 60-minute initiative review for month 2."
+            "notes": "Breakouts of 3–4; month 2 of the running case."
           },
           {
             "label": "Debrief",
             "minutes": 8,
-            "notes": "Compare agendas; highlight groups whose review ends in an explicit decision."
+            "notes": "Compare agendas; highlight reviews that end in a decision and feed learning upward."
           }
         ],
         "facilitationNotes": "Protect the breakout time. Groups default to status-update agendas — push them to name the decisions first and work backwards to the evidence.",
@@ -752,9 +786,10 @@
           "What will you look at every fortnight?",
           "Which decision can your review actually make?"
         ],
-        "answerKey": "**Model monthly review (60 min):** 10 min product outcomes vs targets (PO, analytics); 15 min hypotheses validated or rejected since last review (BA); 10 min receiver and driver voice — three interview clips or quotes (BA/researcher); 15 min roadmap adjustments (PO decides); 10 min risks, decision-point readiness and escalations. Decisions: reorder Next, stop or pivot a feature, request portfolio decision early.",
+        "answerKey": "**Model monthly roadmap review (60 min):** 10 min product outcomes vs targets (PO, analytics); 15 min hypotheses validated or rejected since last review (BA); 10 min receiver and driver voice — three interview clips or quotes (BA/researcher); 15 min roadmap adjustments (PO decides); 10 min risks, decision-point readiness and escalations. Decisions: reorder Next, stop or pivot a feature, request portfolio decision early.",
         "materials": [
-          "Cadence slide",
+          "Rolling-window visual",
+          "Four flows slide",
           "Review agenda template"
         ]
       }
@@ -762,16 +797,16 @@
     {
       "id": "hi-s4",
       "num": "2.5",
-      "title": "Principles applied at this horizon",
+      "title": "The nine principles at this horizon",
       "subtitle": "Seeing the whole product and thinking as a customer",
       "dayId": "p2",
       "time": "13:00–13:45",
       "minutes": 45,
       "participant": {
         "bigIdea": "At Initiative, 'think as a customer' stops being a slogan and becomes a journey you can draw.",
-        "overview": "This block revisits the agile BA principles through the lens of product definition. We focus on the principles that most often fail at this horizon: seeing the whole product across channels and partners, thinking as a customer with real journeys, and avoiding waste in backlog creation.",
+        "overview": "The nine principles of agile business analysis find some of their richest expression at the Initiative Horizon, where the work is complex, uncertainty is high and decisions are felt for the life of the product. Remember them with the mnemonic **STAG US Pursue, Avoid and Embrace**.",
         "objectives": [
-          "Apply each principle to product definition decisions.",
+          "Apply each of the nine principles to product decisions.",
           "Spot common Initiative-horizon anti-patterns.",
           "Choose one principle to strengthen on your initiative."
         ],
@@ -791,8 +826,8 @@
         ],
         "sections": [
           {
-            "heading": "Principles at Initiative",
-            "body": "| Principle | Question at Initiative | Anti-pattern |\n|---|---|---|\n| See the whole | Which actors and systems does the product touch end to end? | Designing only the screens we own |\n| Think as a customer | What does the journey feel like for each actor? | Personas made up in a meeting room |\n| Analyse value | Which features move product outcomes most? | Ordering by stakeholder seniority |\n| Get real using examples | What real consignments can we walk through the product? | Abstract capability lists |\n| Understand what is doable | What do subcontractor systems and middleware allow? | Discovering integration limits in sprint 6 |\n| Collaborate and improve | Who co-designs with us? | Drivers consulted after design is done |\n| Avoid waste | What must be detailed now vs later? | Full backlog written upfront |"
+            "heading": "The nine principles at Initiative",
+            "body": "| Principle | At the Initiative Horizon | Anti-pattern |\n|---|---|---|\n| **S**ee the Whole | Hold vision, customer, strategy, capacity and competition in view — including what is *not* on the backlog | Designing only the screens we own |\n| **T**hink as a Customer | Discovery, personas, journey and empathy maps, jobs to be done | Personas made up in a meeting room |\n| **A**nalyze to Determine What is Valuable | Make value visible; spot features that look valuable but aren't | Ordering by stakeholder seniority |\n| **G**et Real Using Examples | Walk a persona through a feature; hypothesis statements and experiments | Abstract capability lists |\n| **U**nderstand What is Feasible | Technical, organizational and financial feasibility; Real Options | Discovering integration limits in iteration 6 |\n| **S**timulate Collaboration | Discovery workshops, vision sessions, roadmap reviews, refinement | Drivers consulted after design is done |\n| **P**ursue Continuous Improvement | Retrospect on product understanding, not just delivery practice | Never asking if our predictions of value are improving |\n| **A**void Waste | Elaborate to the detail the backlog position needs — no more | Full backlog of stories written upfront |\n| **E**mbrace Uncertainty and Change | Every plan a hypothesis; every roadmap directional | False precision on scope, date and cost |"
           },
           {
             "heading": "Thinking as a receiver",
@@ -823,18 +858,18 @@
             "id": "hi-s4-act1"
           }
         ],
-        "aiPrompt": "Review my initiative description below against these agile BA principles: see the whole, think as a customer, analyse to determine what is valuable, get real using examples, understand what is doable, stimulate collaboration and continuous improvement, avoid waste. Identify the three anti-patterns most likely to be present, explain the evidence in my description, and suggest one corrective action for each that I could take within a month. Initiative:",
+        "aiPrompt": "Review my initiative description below against the nine principles of agile business analysis: See the Whole, Think as a Customer, Analyze to Determine What is Valuable, Get Real Using Examples, Understand What is Feasible, Stimulate Collaboration, Pursue Continuous Improvement, Avoid Waste, Embrace Uncertainty and Change. Identify the three anti-patterns most likely to be present, explain the evidence, and suggest one corrective action for each I could take within a month. Initiative:",
         "quiz": [
           {
-            "q": "Which is an Initiative-horizon anti-pattern for 'avoid waste'?",
+            "q": "Which principle is 'perhaps the most important' at the Initiative Horizon, because the temptation to resolve uncertainty prematurely is strongest?",
             "opts": [
-              "Detailing only the next few features",
-              "Writing a full detailed backlog upfront",
-              "Using 'not yet'",
-              "Reviewing metrics monthly"
+              "Avoid Waste",
+              "Embrace Uncertainty and Change",
+              "See the Whole",
+              "Stimulate Collaboration"
             ],
             "a": 1,
-            "why": "Upfront detail for later features is inventory that will likely change."
+            "why": "Organizations push for false precision here; treat plans as hypotheses and roadmaps as directional."
           },
           {
             "q": "Why does 'think as a customer' matter for the strategic outcome here?",
@@ -861,7 +896,7 @@
           {
             "label": "Principles table",
             "minutes": 10,
-            "notes": "Ask which anti-pattern they've seen this year."
+            "notes": "Teach the STAG US mnemonic; ask which anti-pattern they've seen this year."
           },
           {
             "label": "Thinking as a receiver",
@@ -901,17 +936,19 @@
     {
       "id": "hi-s5",
       "num": "2.6",
-      "title": "Personas and journey mapping",
-      "subtitle": "Evidence-based actors and the journey where the outcome leaks",
+      "title": "Understanding the customer",
+      "subtitle": "Personas, empathy maps, journey maps, jobs to be done and job stories",
       "dayId": "p3",
-      "time": "13:45–14:15",
-      "minutes": 30,
+      "time": "13:45–14:30",
+      "minutes": 45,
       "participant": {
         "bigIdea": "You can't change a behaviour you haven't watched happen.",
-        "overview": "Before mapping features, know the people. This session builds **evidence-based personas** for the key actors and a **current-state journey map** that shows where time, effort and confidence leak — the leaks your product must fix.",
+        "overview": "Behind every feature is a customer. **Shared understanding of the customer** is the first outcome of Initiative analysis — and one of the most easily overlooked. You'll build it with five techniques: **personas**, **customer empathy maps**, **customer journey maps**, **jobs to be done** and **job stories**. These are living tools: a persona on the wall referenced in every planning conversation is doing useful work; one filed in a repository is not.",
         "objectives": [
           "Create evidence-based personas for key actors.",
-          "Map the current journey and locate the pain points that drive the outcome."
+          "Capture what a customer thinks, feels, sees, hears, says and does in an empathy map.",
+          "Map the current journey and locate the pain points that drive the outcome.",
+          "Express the underlying job, and a feature as a job story."
         ],
         "keyPoints": [
           {
@@ -925,6 +962,10 @@
           {
             "title": "Actors beyond your walls",
             "body": "Shippers, subcontract drivers and receivers don't report to you — and they decide whether the outcome happens."
+          },
+          {
+            "title": "Jobs, not features",
+            "body": "Customers 'hire' a product to get a job done. The most valuable features serve that job — not what customers say they want."
           }
         ],
         "sections": [
@@ -941,20 +982,28 @@
             "body": "**Mia, 34, shift-working nurse (illustrative).** Ordered a 30 kg flat-pack wardrobe online. Mostly uses her phone. Already missed one delivery while on a night shift. Wants: to know when it will arrive, or where it can be left. Constraint: can't take calls on the ward; English is her second language.\n\n**Ravi, dispatch coordinator at a mid-sized online retailer (the shipper).** Books consignments from a spreadsheet a few times a day. Unsure of cut-offs and address rules. Wants: a clear, quick booking. Constraint: dispatch is only part of his job.\n\n**Jess, route planner at a Southern Cross Freight depot.** Rekeys addresses that fail validation before the 5 am route lock. Wants: complete, confirmed data before planning. Constraint: subcontractor systems and per-drop KPIs.\n\nEach persona should state the evidence it's based on (data, interviews, complaints)."
           },
           {
+            "heading": "Customer empathy maps",
+            "body": "An empathy map captures what the customer **thinks and feels**, **hears**, **sees**, **says and does**, plus the **pains** and **gains** that shape their experience. Build it from real research — interviews, observation, contextual inquiry — not imagination.\n\n![Customer empathy map for Mia the receiver with quadrants for thinks and feels, hears, sees, says and does, and a pains and gains strip](/files/horizons-initiative/visuals/empathy-map.svg)\n\n*Empathy map — Mia, the receiver. A blank template is in Resources.*"
+          },
+          {
             "heading": "How a journey map works",
             "body": "A journey map follows **one persona through one scenario**, stage by stage. Read across a row for the story; read down a column for everything happening at that moment. The emotion curve and the elapsed-time row usually show where the outcome leaks.\n\n![Explainer of a journey map grid with rows for stages, does, thinks, feels, elapsed, pain and opportunity, and six build steps](/files/horizons-initiative/visuals/journey-how-it-works.svg)\n\n*How a journey map works — the seven rows and six build steps.*\n\n| Row | Ask | Common mistake |\n|---|---|---|\n| Stages | What phases would the actor name? | Using your internal process steps |\n| Does | What do they physically do? | Writing what the system does |\n| Thinks | What are they wondering? | Leaving it blank |\n| Feels | Up or down at this moment? | Making every step neutral |\n| Elapsed | How long, and how long waiting? | Ignoring waits between steps |\n| Pain | What breaks? | Listing every annoyance equally |\n| Opportunity | What might fix the biggest pain? | Jumping to one solution too early |"
           },
           {
             "heading": "Running case journey",
             "body": "![Mia's current delivery journey across five stages: order, dispatch, wait, attempt, recover, with the emotion curve dipping lowest at the failed attempt](/files/horizons-initiative/visuals/journey-worked-example.svg)\n\n*Worked example — Mia's journey. The deepest dip is the failed first attempt.*\n\n| Step | Receiver does | Feels | Elapsed (illus.) | Pain |\n|---|---|---|---|---|\n| Order | Buys online, gets 'ships in 1–2 days' | Hopeful | Day 0 | No delivery day given |\n| Dispatch | Gets generic dispatch email | Uncertain | Day 1 | Tracking says 'in transit' only |\n| Waits | Nothing visible | Frustrated | Day 1–3 | Can't plan around shifts |\n| Attempt | Not home; card left | Annoyed | Day 3 | Nobody asked beforehand |\n| Re-delivery or collection | Drives to depot | Resigned | Day 5–6 | Too heavy for her car |\n\nThe 'attempt' row is the default-discovery insight, now felt from the receiver's side.\n\nYour turn: use the blank template below for the persona you chose.\n\n![Blank journey map template with six stages and seven rows](/files/horizons-initiative/visuals/journey-template.svg)\n\n*Journey map template — download the printable PDF from Resources.*"
+          },
+          {
+            "heading": "Jobs to be done and job stories",
+            "body": "**Jobs to be done** asks what job the customer is hiring the product to accomplish. Mia isn't hiring 'delivery notifications' — she's hiring *'get my wardrobe without losing a shift'*.\n\nA **job story** frames a feature around the situation that motivates it:\n\n> *When* I'm working nights and a big delivery is due, *I want to* choose a safe place or a window that fits my roster, *so I can* get it first time without swapping a shift.\n\n| User story | Job story |\n|---|---|\n| As a receiver, I want SMS notifications | When a delivery is due and I can't be home, I want to choose what happens, so I don't lose a day |\n| Role + capability | Situation + motivation + expected outcome |\n\nJob stories keep features anchored to motivation rather than to a surface-level request."
           }
         ],
         "activities": [
           {
             "id": "hi-s5-act0",
             "title": "Persona and pain point",
-            "instructions": "Pick the actor whose behaviour matters most to your outcome. Using the persona template, write a short persona (context, goal, constraint, evidence). Then sketch the current journey on the journey map template and name the single biggest pain point.",
-            "minutes": 10,
+            "instructions": "Pick the actor whose behaviour matters most to your outcome. Using the templates, write a short persona (context, goal, constraint, evidence) and an empathy map. Sketch the current journey and name the single biggest pain point. Then write one job story for it.",
+            "minutes": 18,
             "prompts": [
               {
                 "id": "hi-s5-act0-p1",
@@ -967,8 +1016,18 @@
                 "placeholder": "data, interviews, complaints"
               },
               {
+                "id": "hi-s5-act0-p5",
+                "label": "Empathy map highlights (thinks/feels, says/does, pains, gains)",
+                "placeholder": ""
+              },
+              {
                 "id": "hi-s5-act0-p3",
                 "label": "Biggest pain point in the current journey",
+                "placeholder": ""
+              },
+              {
+                "id": "hi-s5-act0-p4",
+                "label": "Job story: When… I want to… so I can…",
                 "placeholder": ""
               }
             ]
@@ -997,12 +1056,24 @@
             ],
             "a": 1,
             "why": "Waits and pain show where the outcome leaks."
+          },
+          {
+            "q": "A job story is structured as…",
+            "opts": [
+              "As a… I want… so that…",
+              "When… I want to… so I can…",
+              "Given… when… then…",
+              "For… who… the… is a…"
+            ],
+            "a": 1,
+            "why": "Job stories describe the situation, the motivation and the expected outcome."
           }
         ],
         "takeaways": [
-          "Base personas on evidence.",
-          "Include actors outside your organisation.",
-          "Journeys reveal the waits that drive the outcome."
+          "Base personas and empathy maps on evidence.",
+          "Journeys reveal the waits that drive the outcome.",
+          "Ask what job the customer is hiring the product to do.",
+          "Keep these tools live in planning, not filed away."
         ]
       },
       "presenter": {
@@ -1012,22 +1083,32 @@
           {
             "label": "Personas: anatomy and how to build",
             "minutes": 7,
-            "notes": "Show the anatomy visual; walk the seven parts and the evidence strip. Introduce Mia, Ravi and Jess."
+            "notes": "Show the anatomy visual; introduce Mia, Ravi and Jess."
           },
           {
-            "label": "Journey mapping: how it works + Mia's journey",
-            "minutes": 8,
-            "notes": "Show the how-it-works grid, then the worked example; land on the 'attempt' dip."
+            "label": "Empathy maps",
+            "minutes": 5,
+            "notes": "Walk Mia's empathy map; stress research sources."
           },
           {
-            "label": "Activity: persona and pain point",
-            "minutes": 10,
-            "notes": "Individual, using the two templates."
+            "label": "Journey mapping",
+            "minutes": 7,
+            "notes": "How-it-works grid, then the worked example; land on the 'attempt' dip."
+          },
+          {
+            "label": "Jobs to be done and job stories",
+            "minutes": 5,
+            "notes": "Contrast with a user story."
+          },
+          {
+            "label": "Activity",
+            "minutes": 18,
+            "notes": "Individual, using the templates."
           },
           {
             "label": "Debrief",
-            "minutes": 5,
-            "notes": "Two people read their pain point; check it's evidence-based."
+            "minutes": 3,
+            "notes": "Two people read their job story."
           }
         ],
         "facilitationNotes": "Keep it tight — this sets up the impact map. Challenge any persona attribute that has no evidence behind it.",
@@ -1040,28 +1121,27 @@
         "answerKey": "Running case: Mia (receiver) — biggest pain: nobody asks before the attempt; Ravi (shipper) — unsure of address rules at booking; Jess (planner) — rekeying failed addresses before the 5 am route lock.",
         "materials": [
           "Persona anatomy visual",
-          "Persona template (PDF)",
-          "Journey map explainer",
-          "Mia journey worked example",
-          "Journey map template (PDF)"
+          "Persona, empathy map and journey map templates (PDF)",
+          "Mia worked examples"
         ]
       }
     },
     {
       "id": "hi-s5b",
       "num": "2.7",
-      "title": "Impact mapping",
-      "subtitle": "Goal → actors → impacts → deliverables",
+      "title": "Connecting features to outcomes",
+      "subtitle": "Impact mapping and opportunity solution trees",
       "dayId": "p3",
-      "time": "14:15–15:15",
-      "minutes": 60,
+      "time": "14:30–15:15",
+      "minutes": 45,
       "participant": {
         "bigIdea": "An impact map turns 'we're building a front door' into 'here's whose behaviour we're changing and why'.",
-        "overview": "The **impact map** is this day's central artefact. It connects the goal (why) to the actors (who), the behaviour changes we need (how) and the deliverables that might cause them (what). Anything that can't trace to an impact becomes 'not yet'.",
+        "overview": "Two techniques connect what we might build to why. **Impact mapping** links the goal to actors, the behaviours we need from them and the features that support those behaviours. **Opportunity solution trees** link a product outcome to the opportunities that could produce it and the solutions that could address each opportunity — making sure the solution space is explored before committing.",
         "objectives": [
           "Build an impact map: goal → actors → impacts → deliverables.",
           "Express impacts as measurable behaviour changes.",
-          "Move deliverables that can't justify an impact to 'not yet'."
+          "Move deliverables that can't justify an impact to 'not yet'.",
+          "Build an opportunity solution tree to widen the solution space."
         ],
         "keyPoints": [
           {
@@ -1085,13 +1165,17 @@
           {
             "heading": "Checking the map",
             "body": "Run four checks before you call it done:\n\n1. **External actors** — at least one actor outside your organisation.\n2. **Measurable impacts** — each impact could be counted.\n3. **More than one deliverable option** per impact — otherwise you've reverse-engineered a solution.\n4. **A 'not yet' margin** — at least one deliverable lost its place.\n\nWorked example from higher education: a university's goal was first-year retention. The impact 'students book an adviser in week 3' had three options — SMS nudge, timetable slot, peer mentor. The planned app was moved to 'not yet'."
+          },
+          {
+            "heading": "Opportunity solution trees",
+            "body": "```\nOUTCOME: ≥70% of notified receivers confirm before route lock\n├── Opportunity: receivers don't know a delivery is coming\n│   ├── Solution: SMS/email notice the evening before\n│   └── Solution: retailer checkout asks for preferred window\n├── Opportunity: receivers can't be home in the window\n│   ├── Solution: one-tap safe-drop choice\n│   └── Solution: redirect to a nearby pickup point\n└── Opportunity: receivers don't trust unknown senders\n    └── Solution: notice branded with the retailer's name\n```\n\nRead it top down: outcome → opportunities (customer needs, pains or desires found in discovery) → solutions. Several solutions per opportunity is the point — it stops the first idea becoming the only idea. Pick solutions to test with **hypothesis statements** (session 2.9).\n\n| | Impact map | Opportunity solution tree |\n|---|---|---|\n| Starts from | Goal | Product outcome |\n| Organizes by | Actors and their behaviour | Customer opportunities |\n| Best for | Many actors, cross-organization products | Deep discovery on one customer group |"
           }
         ],
         "activities": [
           {
-            "title": "Impact map",
-            "instructions": "Build an impact map for your initiative (or the running case). At least three actors, one or two impacts each, and deliverables under each impact. Circle deliverables that cannot justify an impact.",
-            "minutes": 30,
+            "title": "Impact map (or opportunity solution tree)",
+            "instructions": "Build an impact map for your initiative (or the running case): at least three actors, one or two impacts each, and deliverables under each impact. Circle deliverables that cannot justify an impact. If your product serves one main customer group, you may build an opportunity solution tree instead.",
+            "minutes": 22,
             "prompts": [
               {
                 "label": "Goal (from strategic outcome)",
@@ -1140,11 +1224,23 @@
             ],
             "a": 1,
             "why": "Real impacts usually have several ways to cause them."
+          },
+          {
+            "q": "An opportunity solution tree mainly helps you…",
+            "opts": [
+              "Estimate features",
+              "Explore several solutions for each customer opportunity before committing",
+              "Assign owners",
+              "Write acceptance criteria"
+            ],
+            "a": 1,
+            "why": "It keeps the solution space broad and connected to the outcome."
           }
         ],
         "takeaways": [
           "Actors and impacts before deliverables.",
           "Every deliverable must earn its place.",
+          "Explore several solutions per opportunity.",
           "'Not yet' is a decision, not a deletion."
         ]
       },
@@ -1154,23 +1250,23 @@
         "beats": [
           {
             "label": "Impact mapping teach",
-            "minutes": 12,
+            "minutes": 9,
             "notes": "Build the running case map live; read it right to left."
           },
           {
-            "label": "Checking the map",
-            "minutes": 5,
-            "notes": "Four checks; university example."
+            "label": "Opportunity solution trees",
+            "minutes": 6,
+            "notes": "Show the tree; compare with the impact map."
           },
           {
-            "label": "Activity: impact map",
-            "minutes": 30,
-            "notes": "Breakouts; visit at 10 and 20 minutes."
+            "label": "Activity: impact map or tree",
+            "minutes": 22,
+            "notes": "Breakouts choose either technique; visit at 8 and 16 minutes."
           },
           {
             "label": "Debrief",
-            "minutes": 13,
-            "notes": "Collect 'not yet' deliverables; discuss surprises."
+            "minutes": 8,
+            "notes": "Collect 'not yet' deliverables; which technique suited whom?"
           }
         ],
         "facilitationNotes": "Groups often jump straight to deliverables. Insist on actors and impacts first. If a group has only internal actors, ask: 'who outside the building has to do something differently?'",
@@ -1182,24 +1278,26 @@
         ],
         "answerKey": "Model impact map as in the section. Typical 'not yet' items: shipper dashboard, chatbot, parcel-locker network — none clearly moves the goal in phase 1 without evidence.",
         "materials": [
-          "Impact map canvas"
+          "Impact map canvas",
+          "Opportunity solution tree canvas"
         ]
       }
     },
     {
       "id": "hi-s5c",
       "num": "2.8",
-      "title": "Story mapping and the first release",
-      "subtitle": "A backbone of activities, sliced into a thin first release",
+      "title": "Story mapping, MVP and feature decomposition",
+      "subtitle": "The whole journey, the smallest valuable slice, and features broken down for sequencing",
       "dayId": "p4",
       "time": "15:30–15:50",
       "minutes": 20,
       "participant": {
         "bigIdea": "The first release should cross the whole journey thinly, not one step of it thickly.",
-        "overview": "A **story map** lays the actor's activities out as a backbone and slices releases horizontally across it. It turns the impact map's deliverables into a first release that can produce a signal.",
+        "overview": "A **story map** lays the user's activities out as a backbone, with alternatives beneath. **Minimum viable product** thinking finds the smallest set of features that delivers the core value proposition and generates real feedback. **Story decomposition** at this horizon breaks large features into mid-level, independently deliverable capabilities that the roadmap can sequence.",
         "objectives": [
           "Lay out a story map backbone of 4–6 activities.",
-          "Slice a first release that tests the riskiest impact."
+          "Slice a first release that tests the riskiest impact.",
+          "Decompose a large feature into mid-level capabilities for sequencing."
         ],
         "keyPoints": [
           {
@@ -1215,6 +1313,10 @@
           {
             "heading": "Story mapping",
             "body": "Arrange the receiver's activities as a **backbone** (Order → Get delivery window → Track consignment → Receive delivery), place user stories underneath each activity, then draw horizontal lines to slice releases.\n\n**Release 1 (MVP) for the running case:** receiver delivery-window notification with one-click confirm or safe drop; real-time booking with address validation for pilot shippers; run data to one subcontractor via middleware; basic tracking by SMS. Everything else waits for evidence from Release 1."
+          },
+          {
+            "heading": "MVP and feature decomposition",
+            "body": "**MVP** is not 'version one of everything' — it is the smallest set that tests the core value proposition with real customers. For the running case: receiver confirmation, validated booking for pilot shippers, run data to one subcontractor, SMS tracking.\n\n**Decomposition at Initiative** produces features, not stories:\n\n| Large feature | Mid-level features (Initiative) | Stories (later, at Delivery) |\n|---|---|---|\n| Receiver delivery management | Window notification · one-tap confirm · safe-drop choice · re-book after a miss | Elaborated just in time |\n\nDecompose enough to sequence and release incrementally — not so far that you're writing stories for work six months away."
           }
         ],
         "activities": [
@@ -1249,6 +1351,17 @@
             ],
             "a": 1,
             "why": "Each slice is a releasable increment across the backbone."
+          },
+          {
+            "q": "Story decomposition at the Initiative Horizon produces…",
+            "opts": [
+              "Stories ready to build",
+              "Mid-level features that will be elaborated later",
+              "Tasks",
+              "Test cases"
+            ],
+            "a": 1,
+            "why": "Initiative decomposition is for sequencing; story-level detail waits for Delivery."
           }
         ],
         "takeaways": [
@@ -1291,17 +1404,18 @@
     {
       "id": "hi-s6",
       "num": "2.9",
-      "title": "Feature hypotheses and ordering",
-      "subtitle": "Make each feature an experiment, then order by value, cost of delay and learning",
+      "title": "Hypotheses and prioritization techniques",
+      "subtitle": "Hypothesis statements, Kano, Purpose Alignment, value modelling, MoSCoW, WSJF and collaborative games",
       "dayId": "p4",
       "time": "15:50–16:15",
       "minutes": 25,
       "participant": {
         "bigIdea": "A feature without a hypothesis is a guess; a feature with one is an experiment.",
-        "overview": "With deliverables mapped, every feature gets a **hypothesis** — what it should cause and how we'll know — and then a strict **order** by value, cost of delay, risk reduction and effort.",
+        "overview": "Prioritizing the feature backlog is one of the most analytically demanding activities at this horizon. Features compete on customer value, contribution to the vision, technical risk, dependencies and strategic alignment. The analyst makes the trade-offs visible; **the decision belongs to the Product Owner**. First, every feature becomes a **hypothesis statement**; then we order using the right technique for the decision.",
         "objectives": [
-          "Write feature hypotheses with a measurable signal.",
-          "Order features using value, cost of delay, risk and learning."
+          "Write hypothesis statements with a measurable signal.",
+          "Choose a prioritization technique to fit the decision.",
+          "Order features and explain the reasoning to the Product Owner."
         ],
         "keyPoints": [
           {
@@ -1315,23 +1429,31 @@
           {
             "title": "Learning is value",
             "body": "Early features that test the riskiest assumption can be worth more than larger features."
+          },
+          {
+            "title": "PO decides",
+            "body": "The analysis is the analyst's; the prioritization decision is the Product Owner's."
           }
         ],
         "sections": [
           {
-            "heading": "Feature hypotheses",
-            "body": "| Feature | Hypothesis | Signal and threshold |\n|---|---|---|\n| Receiver delivery-window confirmation | Receivers confirm availability or a safe drop when asked directly | ≥70% respond before route lock |\n| Real-time booking with address validation | Shippers book complete consignments on day 1 | ≥60% of pilot consignments complete at booking by week 8 |\n| Run data via middleware to subcontractors | Drivers deliver without rekeying or futile attempts | First-attempt failure rate ≤5% |\n| At-risk flag at sort | At-risk consignments can be re-planned before dispatch | ≥80% of late consignments flagged; <5% false alarms |\n| SMS live tracking | Receivers stop calling for status | Status calls from pilot cohort −40% |"
+            "heading": "Hypothesis statements",
+            "body": "*We believe that [feature] will produce [outcome] for [customer], and we will know we are right when [measurable signal].*\n\n| Feature | Hypothesis | Signal and threshold |\n|---|---|---|\n| Receiver delivery-window confirmation | Receivers confirm availability or a safe drop when asked directly | ≥70% respond before route lock |\n| Real-time booking with address validation | Shippers book complete consignments on day 1 | ≥60% of pilot consignments complete at booking by week 8 |\n| Run data via middleware to subcontractors | Drivers deliver without rekeying or futile attempts | First-attempt failure rate ≤5% |\n| At-risk flag at sort | At-risk consignments can be re-planned before dispatch | ≥80% of late consignments flagged; <5% false alarms |\n| SMS live tracking | Receivers stop calling for status | Status calls from pilot cohort −40% |"
           },
           {
-            "heading": "Ordering features",
-            "body": "Use a simple scoring discussion, not a spreadsheet war:\n\n- **Value** — how much does it move the product outcome?\n- **Cost of delay** — what do we lose per week it's not live?\n- **Risk reduction / learning** — does it test a risky assumption?\n- **Effort** — rough relative size.\n\nWeighted shortest job first (cost of delay ÷ size) is a helpful lens. In the running case, receiver delivery-window confirmation ranks first: high value, high cost of delay, tests the privacy and response assumptions, modest size."
+            "heading": "Prioritization techniques",
+            "body": "No single technique fits every decision — choose for the context:\n\n| Technique | Question it answers | Use when |\n|---|---|---|\n| **Kano Analysis** | Is it basic, performance or delight? | Ensuring basics are covered before polishing; spotting differentiators |\n| **Purpose Alignment Model** | Does it differentiate us, or is it necessary but non-differentiating? | Deciding where to invest vs standardize |\n| **Value Modeling** | What outcome will it produce, measured how? | Moving from opinion to explicit value |\n| **MoSCoW** | Must, Should, Could, Won't (this time)? | Scoping a release with stakeholders |\n| **Cost of delay / WSJF** | What do we lose per week, divided by size? | Sequencing a flow of features |\n| **Dot voting / Buy a Feature** | What do stakeholders value when budget is limited? | Surfacing honest trade-offs (collaborative games) |\n\nRunning case through Kano: delivery-window notice is now **basic** (receivers expect it); one-tap safe drop is **performance**; retailer-branded live map is **delight**. Purpose Alignment: booking validation is necessary but not differentiating — buy or standardize it; receiver confirmation is differentiating — invest."
+          },
+          {
+            "heading": "Ordering the running case",
+            "body": "In the running case, receiver delivery-window confirmation ranks first: high value, high cost of delay, tests the privacy and response assumptions, modest size. Remember: the analyst prepares the analysis; the Product Owner makes the call."
           }
         ],
         "activities": [
           {
             "title": "Top five ordered features",
-            "instructions": "From your impact map, choose five features. Write a hypothesis and signal for each, then put them in strict order with one line of reasoning per position.",
-            "minutes": 15,
+            "instructions": "From your impact map or tree, choose five features. Write a hypothesis statement for each, pick one prioritization technique that fits your context, and put the five in strict order with one line of reasoning per position.",
+            "minutes": 13,
             "prompts": [
               {
                 "label": "1. Feature — hypothesis — signal — why first",
@@ -1385,6 +1507,17 @@
             ],
             "a": 1,
             "why": "WSJF = cost of delay ÷ size, favouring high-value small items."
+          },
+          {
+            "q": "In Kano Analysis, a feature whose absence causes dissatisfaction but whose presence goes unnoticed is…",
+            "opts": [
+              "Delight",
+              "Performance",
+              "Basic",
+              "Indifferent"
+            ],
+            "a": 2,
+            "why": "Basic features are expected; cover them before elaborating performance features."
           }
         ],
         "takeaways": [
@@ -1398,24 +1531,24 @@
         "openingLine": "\"Five features. One order. No ties. Let's find out what you really believe.\"",
         "beats": [
           {
-            "label": "Feature hypotheses",
+            "label": "Hypothesis statements",
             "minutes": 4,
-            "notes": "Walk the table; highlight thresholds."
+            "notes": "Template and table; highlight thresholds."
           },
           {
-            "label": "Ordering techniques",
-            "minutes": 4,
-            "notes": "Four lenses and WSJF; reveal why confirmation ranks first."
+            "label": "Prioritization techniques",
+            "minutes": 6,
+            "notes": "Walk the selection table; Kano and Purpose Alignment on the running case."
           },
           {
             "label": "Activity: top five",
-            "minutes": 15,
-            "notes": "Pairs; one challenges the order."
+            "minutes": 13,
+            "notes": "Pairs; one plays Product Owner and makes the final call."
           },
           {
             "label": "Debrief",
             "minutes": 2,
-            "notes": "One pair shares their #1 and why."
+            "notes": "Which technique did you use, and why?"
           }
         ],
         "facilitationNotes": "Expect resistance to strict ordering. Allow ties for 30 seconds, then insist. Watch for features with no signal.",
@@ -1434,14 +1567,14 @@
     {
       "id": "hi-s6b",
       "num": "2.10",
-      "title": "The Now / Next / Later roadmap",
-      "subtitle": "An outcome roadmap that changes as signals arrive",
+      "title": "The product roadmap and real options",
+      "subtitle": "A directional plan that tells a story — and decisions held open until the last responsible moment",
       "dayId": "p4",
       "time": "16:15–16:30",
       "minutes": 15,
       "participant": {
         "bigIdea": "A roadmap is a statement of intent and learning, not a delivery contract.",
-        "overview": "The **outcome roadmap** communicates what we're trying to change Now, Next and Later — with the hypotheses and signals that will move items between columns.",
+        "overview": "The **product roadmap** is the Initiative Horizon's primary communication artifact — a directional plan, not a schedule or a commitment to dates. A good roadmap tells a story: how early deliveries build the foundation, how the product grows from its minimum viable form toward its vision, and how each phase generates feedback. **Real Options** keeps decisions open until the last responsible moment.",
         "objectives": [
           "Build a Now / Next / Later outcome roadmap.",
           "Explain how signals move items between columns."
@@ -1460,6 +1593,10 @@
           {
             "heading": "The Now / Next / Later roadmap",
             "body": "| Now (next ~6 weeks) | Next (~6–12 weeks) | Later |\n|---|---|---|\n| Outcome: receivers confirm before route lock | Outcome: runs delivered without futile attempts | Outcome: dynamic re-planning on the day |\n| Receiver confirmation; real-time booking | Middleware run data; at-risk flag | Route optimisation, shipper dashboard |\n| Signal: response rate, completeness | Signal: first-attempt failure rate | Signal: on-time %, re-plan rate |\n\nThe roadmap is a communication tool; it changes as signals arrive."
+          },
+          {
+            "heading": "Real options",
+            "body": "Defer commitment until the point where the cost of not deciding exceeds the value of the information gained by waiting.\n\n| Decision | Option held open | Decide by |\n|---|---|---|\n| Route optimisation vendor | Keep two vendors in the running | When Release 1 data shows real re-plan volumes |\n| Parcel-locker network | Partner pilot vs build | After safe-drop uptake is known |\n\nAsk of each roadmap item: does this decision genuinely need to be made now?"
           }
         ],
         "activities": [
@@ -1494,6 +1631,17 @@
             ],
             "a": 1,
             "why": "Outcome roadmaps communicate intent and learning, not delivery dates."
+          },
+          {
+            "q": "Real Options advises committing…",
+            "opts": [
+              "As early as possible",
+              "At the last responsible moment",
+              "Only after delivery",
+              "Never"
+            ],
+            "a": 1,
+            "why": "Defer until the cost of waiting exceeds the value of more information."
           }
         ],
         "takeaways": [
@@ -1507,7 +1655,7 @@
           {
             "label": "Now / Next / Later",
             "minutes": 5,
-            "notes": "Show the roadmap; point at the signals row."
+            "notes": "Show the roadmap as a story; point at the signals row; one real option."
           },
           {
             "label": "Activity: roadmap",
@@ -1533,20 +1681,149 @@
       }
     },
     {
-      "id": "hi-s7",
+      "id": "hi-s6c",
       "num": "2.11",
+      "title": "Features ready for delivery",
+      "subtitle": "Story elaboration, the Three Amigos, the Kanban board and relative estimation",
+      "dayId": "p4",
+      "time": "16:30–16:45",
+      "minutes": 15,
+      "participant": {
+        "bigIdea": "The handoff to Delivery works best as a continuous flow, not a gate.",
+        "overview": "The fifth outcome of Initiative analysis is a steady supply of **features ready for delivery**. A ready feature has a clear user need, an agreed scope and boundary, initial acceptance conditions, and known risks and dependencies — but *not* fully specified stories. That detail comes at the Delivery Horizon, just in time.",
+        "objectives": [
+          "Apply a feature-readiness check.",
+          "Use the Three Amigos, a Kanban board and relative estimation to keep elaboration just ahead of delivery."
+        ],
+        "keyPoints": [
+          {
+            "title": "Ready, not specified",
+            "body": "Need, scope, initial acceptance conditions, risks and dependencies — no detailed stories yet."
+          },
+          {
+            "title": "Three Amigos at Initiative",
+            "body": "Product Owner, analyst and a Delivery Team member check a feature is understood well enough to decompose and sequence."
+          },
+          {
+            "title": "Make the pipeline visible",
+            "body": "A Kanban board shows features moving from identified to ready — and where they get stuck."
+          }
+        ],
+        "sections": [
+          {
+            "heading": "The feature-readiness check",
+            "body": "| Check | Running case: receiver confirmation |\n|---|---|\n| User need | Receivers can't plan around an unknown delivery window |\n| Scope and boundary | Notice, confirm, safe drop; *not* re-booking after a miss (next feature) |\n| Initial acceptance conditions | Confirmation reaches the route planner before route lock; works on a phone in plain language |\n| Non-functional constraints | Accessibility, privacy of receiver contact data, SMS delivery time |\n| Risks and dependencies | Shipper must supply a mobile number; middleware to route planner |\n| Size | Relative estimate: M (T-shirt) |\n\n**Non-functional requirements** set at product level here flow down as constraints on every story."
+          },
+          {
+            "heading": "Keeping the pipeline flowing",
+            "body": "- **Story elaboration (light touch):** enough to plan confidently, not so much it over-constrains the Delivery Team.\n- **Three Amigos:** Product Owner, analyst and a Delivery Team member talk through the feature — is it understood, how complex is it, is the priority grounded in delivery reality?\n- **Kanban board:** Identified → Exploring → Elaborating → Ready, with a work-in-progress limit.\n- **Relative estimation:** T-shirt sizes or feature points for roadmap sequencing.\n- **Spikes:** time-boxed investigations when uncertainty would make planning unreliable.\n\nWatch the Delivery Team's backlog consumption and stay one to two iterations ahead. If a feature turns out larger than expected, decompose it, adjust the roadmap or find a simpler first version."
+          }
+        ],
+        "activities": [
+          {
+            "id": "hi-s6c-act1",
+            "title": "Readiness check",
+            "instructions": "Run the readiness check on your #1 feature. Mark each item ready, partial or missing, and name who you need in your Three Amigos conversation.",
+            "minutes": 7,
+            "prompts": [
+              {
+                "id": "hi-s6c-act1-p1",
+                "label": "Need · scope · acceptance conditions",
+                "placeholder": ""
+              },
+              {
+                "id": "hi-s6c-act1-p2",
+                "label": "NFRs · risks and dependencies · size",
+                "placeholder": ""
+              },
+              {
+                "id": "hi-s6c-act1-p3",
+                "label": "Three Amigos: who, and the one question to resolve",
+                "placeholder": ""
+              }
+            ]
+          }
+        ],
+        "aiPrompt": "Run a feature-readiness check on the feature below. Assess: user need, scope and boundary, initial acceptance conditions, non-functional constraints, risks and dependencies, and a relative size. Mark each ready / partial / missing, list the questions for a Three Amigos conversation, and warn me if anything is over-specified for the Initiative Horizon. Feature:",
+        "quiz": [
+          {
+            "q": "A feature ready for the Delivery Horizon has…",
+            "opts": [
+              "Fully specified user stories with detailed acceptance criteria",
+              "A clear need, scope, initial acceptance conditions and known risks",
+              "A fixed delivery date",
+              "Only a title"
+            ],
+            "a": 1,
+            "why": "Detailed elaboration happens at Delivery, just in time."
+          },
+          {
+            "q": "Who takes part in a Three Amigos conversation at the Initiative Horizon?",
+            "opts": [
+              "Sponsor, PO, architect",
+              "Product Owner, analyst and a Delivery Team member",
+              "Three analysts",
+              "Customer, tester, manager"
+            ],
+            "a": 1,
+            "why": "It checks the feature is understood well enough to decompose and sequence."
+          }
+        ],
+        "takeaways": [
+          "Ready means understood, not specified.",
+          "Run a Three Amigos before a feature reaches the top.",
+          "Make the elaboration pipeline visible.",
+          "Stay one to two iterations ahead of delivery."
+        ]
+      },
+      "presenter": {
+        "purpose": "Build the fifth outcome of analysis: features ready for delivery.",
+        "openingLine": "\"What's the least the Delivery Team needs to know to start well — and what should we deliberately leave for them?\"",
+        "beats": [
+          {
+            "label": "Readiness check and pipeline",
+            "minutes": 6,
+            "notes": "Walk the check on receiver confirmation; show the Kanban columns."
+          },
+          {
+            "label": "Activity: readiness check",
+            "minutes": 7,
+            "notes": "Individual."
+          },
+          {
+            "label": "Debrief",
+            "minutes": 2,
+            "notes": "What was missing most often?"
+          }
+        ],
+        "facilitationNotes": "Watch for over-specification — participants writing full stories. Pull them back: what's the least needed to sequence and start?",
+        "whatGood": "A readiness check with gaps named and a Three Amigos question.",
+        "commonFailure": "Treating ready as 'fully specified' — the fix: detail waits for Delivery.",
+        "debrief": [
+          "What was missing most often?"
+        ],
+        "answerKey": "Running case as in the readiness table; typical gap: dependency on shippers supplying receiver mobile numbers.",
+        "materials": [
+          "Feature-readiness checklist",
+          "Elaboration Kanban board"
+        ]
+      }
+    },
+    {
+      "id": "hi-s7",
+      "num": "2.12",
       "title": "Exercise: apply to a funded initiative · close",
       "subtitle": "Vision, impact map and five ordered features — then the bridge to Delivery",
       "dayId": "p4",
-      "time": "16:30–17:00",
-      "minutes": 30,
+      "time": "16:45–17:00",
+      "minutes": 15,
       "participant": {
         "bigIdea": "Leave with a product the team can start building on Monday — and a way to know if it's working.",
-        "overview": "Consolidate the day's three artefacts for your own funded initiative: the product vision, the impact map and the top five features ordered with hypotheses and signals. Then we close and bridge to Day 3, where one of those features becomes a fully elaborated backlog item.",
+        "overview": "Consolidate the five outcomes for your own funded initiative, check traceability, and see where the whole Initiative toolkit fits. Then we bridge to Day 3.",
         "objectives": [
-          "Finalise a product vision, impact map and ordered top five.",
+          "Consolidate your five outcomes of analysis.",
           "Check traceability from strategic outcome to feature signal.",
-          "Choose the feature you'll elaborate on Day 3."
+          "Know where the rest of the 43 Initiative techniques fit."
         ],
         "keyPoints": [
           {
@@ -1565,7 +1842,11 @@
         "sections": [
           {
             "heading": "Exercise brief",
-            "body": "1. Finalise your product vision (≤70 words).\n2. Clean up your impact map; mark 'not yet' deliverables.\n3. Confirm your top five order with hypotheses and signals.\n4. Run a traceability check: can each feature be traced to an impact, an actor and the outcome?\n5. Choose the feature you'll take into Day 3."
+            "body": "1. Customer: persona, empathy map, journey, job story.\n2. Vision and boundary (≤70 words).\n3. Impact map or opportunity solution tree; mark 'not yet'.\n4. Top five ordered, with hypothesis statements; Now / Next / Later.\n5. Readiness check on your #1 — the feature you'll take into Day 3."
+          },
+          {
+            "heading": "The Initiative Horizon toolkit",
+            "body": "The book lists 37 analysis techniques and 6 planning and delivery techniques for this horizon. Today you practised the ones in bold teal; the rest are your reference toolkit, grouped by the outcome they mainly serve.\n\n![Map of all 43 Initiative Horizon techniques grouped by the five outcomes of analysis, with the techniques taught in this course highlighted](/files/horizons-initiative/visuals/technique-map.svg)\n\n*The Initiative Horizon technique map. Grouping by outcome is this course's; most techniques serve more than one outcome.*"
           },
           {
             "heading": "Bridge to Day 3",
@@ -1574,9 +1855,9 @@
         ],
         "activities": [
           {
-            "title": "Consolidate the three artefacts",
+            "title": "Consolidate the five outcomes",
             "instructions": "Complete each box for your initiative.",
-            "minutes": 20,
+            "minutes": 8,
             "prompts": [
               {
                 "label": "Product vision",
@@ -1644,23 +1925,18 @@
         "beats": [
           {
             "label": "Brief",
-            "minutes": 3,
-            "notes": "Explain steps."
+            "minutes": 2,
+            "notes": "Explain the five steps."
           },
           {
             "label": "Individual consolidation",
-            "minutes": 20,
+            "minutes": 8,
             "notes": "Circulate; prompt traceability."
           },
           {
-            "label": "Shares and close",
+            "label": "Toolkit map and bridge to Day 3",
             "minutes": 5,
-            "notes": "Two participants share their #1 feature and signal."
-          },
-          {
-            "label": "Bridge to Day 3",
-            "minutes": 2,
-            "notes": "Ask them to bring their chosen feature."
+            "notes": "Show the technique map; ask them to bring their #1 feature."
           }
         ],
         "facilitationNotes": "Keep it calm and focused. If someone's artefacts are thin, prioritise the ordered top five — it feeds Day 3 directly.",
@@ -1692,6 +1968,18 @@
       "audience": "participant"
     },
     {
+      "title": "Empathy map template (printable)",
+      "description": "Thinks and feels, hears, sees, says and does, pains and gains.",
+      "href": "/files/horizons-initiative/visuals/empathy-map-template.pdf",
+      "audience": "participant"
+    },
+    {
+      "title": "Initiative Horizon technique map",
+      "description": "All 43 techniques from Chapter 6, grouped by the five outcomes of analysis.",
+      "href": "/files/horizons-initiative/visuals/technique-map.pdf",
+      "audience": "participant"
+    },
+    {
       "title": "Product vision template",
       "description": "For / who / the / is a / that / unlike / our product — with three quality tests.",
       "audience": "participant"
@@ -1703,7 +1991,7 @@
     },
     {
       "title": "Feature hypothesis and ordering sheet",
-      "description": "Hypothesis, signal, threshold and ordering lenses (value, cost of delay, learning, effort).",
+      "description": "Hypothesis statement, signal and threshold, plus the prioritization technique selector (Kano, Purpose Alignment, MoSCoW, WSJF, Buy a Feature).",
       "audience": "participant"
     },
     {
