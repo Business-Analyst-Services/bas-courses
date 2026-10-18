@@ -5,7 +5,7 @@ import { scheduleCookie } from "@/lib/schedule";
 /** /c/<slug>/schedule?s=6wk&next=/c/<slug>/m/x — remember the viewer's schedule choice, then go back. */
 export async function GET(req: NextRequest, { params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const course = getCourse(slug);
+  const course = await getCourse(slug);
   const s = req.nextUrl.searchParams.get("s") ?? "";
   const next = req.nextUrl.searchParams.get("next") ?? "";
   const dest = next.startsWith(`/c/${slug}`) ? next : `/c/${slug}`;

@@ -1,7 +1,7 @@
 "use server";
 import { revalidatePath } from "next/cache";
 import { ensureSchema, sql } from "./db";
-import { getViewer, getEnrolments, requireAdmin } from "./access";
+import { getViewer, getEnrolments } from "./access";
 import { getCourse } from "./courses";
 
 async function enrolledViewer(slug: string) {
@@ -35,39 +35,14 @@ export async function setComplete(slug: string, moduleId: string, done: boolean)
 
 export async function answerQuiz(slug: string, moduleId: string, question: number, answer: number) {
   const v = await enrolledViewer(slug);
-  const q = getCourse(slug)?.modules.find((m) => m.id === moduleId)?.participant.quiz[question];
+  const q = (await getCourse(slug, { includeHidden: true }))?.modules.find((m) => m.id === moduleId)?.participant.quiz[question];
   if (!q) throw new Error("Unknown question");
   const correct = q.a === answer;
   await sql`
-    INSERT INTO quiz_answers (user_id, course_slug, module_id, question, answer, correct)
-    VALUES (${v.userId}, ${slug}, ${moduleId}, ${question}, ${answer}, ${correct})
+    INSERT INTO quiz_answers (user_id, email, course_slug, module_id, question, answer, correct)
+    VALUES (${v.userId}, ${v.email}, ${slug}, ${moduleId}, ${question}, ${answer}, ${correct})
     ON CONFLICT (user_id, course_slug, module_id, question)
-    DO UPDATE SET answer = EXCLUDED.answer, correct = EXCLUDED.correct, answered_at = now()`;
+    DO UPDATE SET answer = EXCLUDED.answer, correct = EXCLUDED.correct, email = EXCLUDED.email, answered_at = now()`;
   return { correct };
 }
 
-// ---------- admin ----------
-export async function enrol(formData: FormData) {
-  await requireAdmin();
-  await ensureSchema();
-  const emails = String(formData.get("emails") ?? "")
-    .split(/[\s,;]+/)
-    .map((e) => e.trim().toLowerCase())
-    .filter((e) => /.+@.+\..+/.test(e));
-  const slug = String(formData.get("course"));
-  const role = formData.get("role") === "presenter" ? "presenter" : "participant";
-  const cohort = String(formData.get("cohort") ?? "").trim() || null;
-  if (!getCourse(slug)) throw new Error("Unknown course");
-  for (const email of emails) {
-    await sql`INSERT INTO enrolments (email, course_slug, role, cohort) VALUES (${email}, ${slug}, ${role}, ${cohort})
-              ON CONFLICT (email, course_slug) DO UPDATE SET role = EXCLUDED.role, cohort = EXCLUDED.cohort`;
-  }
-  revalidatePath("/admin");
-}
-
-export async function unenrol(formData: FormData) {
-  await requireAdmin();
-  await ensureSchema();
-  await sql`DELETE FROM enrolments WHERE email = ${String(formData.get("email"))} AND course_slug = ${String(formData.get("course"))}`;
-  revalidatePath("/admin");
-}

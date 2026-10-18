@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
-import { getScheduledCourse } from "@/lib/schedule";
 import CourseSidebar from "@/components/CourseSidebar";
+import { withSchedule } from "@/lib/schedule";
 import { slugify } from "@/lib/slug";
 import Md from "@/components/Md";
 import ActivityField from "@/components/Activity";
@@ -20,10 +20,10 @@ export default async function ModulePage({
 }: { params: Promise<{ slug: string; id: string }>; searchParams: Promise<{ view?: string }> }) {
   const { slug, id } = await params;
   const { view } = await searchParams;
-  const { course, schedule } = await getScheduledCourse(slug);
-  const m = course && getModule(course, id);
-  if (!course || !m) notFound();
-  const { viewer, role, enrolments } = await requireCourseRole(slug);
+  const { viewer, role, enrolments, course: baseCourse } = await requireCourseRole(slug);
+  const { course, schedule } = await withSchedule(baseCourse);
+  const m = getModule(course, id);
+  if (!m) notFound();
   const presenterView = view === "presenter" && role === "presenter";
   const [done, responses, quiz] = await Promise.all([
     getProgress(viewer.userId, slug),
@@ -34,6 +34,10 @@ export default async function ModulePage({
   const day = course.days.find((d) => d.id === m.dayId);
   const q = presenterView ? "?view=presenter" : "";
   const P = m.participant;
+  const S = course.settings;
+  const showAi = S.showAiPrompts || role === "presenter";
+  const showQuiz = S.showQuiz || role === "presenter";
+  const isHidden = S.hiddenModules.includes(m.id);
   const T = m.presenter;
 
   return (
@@ -54,6 +58,7 @@ export default async function ModulePage({
         <div className="kicker">{day?.label} · {m.time} · {m.minutes} min {presenterView && "· PRESENTER RUN SHEET"}</div>
         <h1 className="pagetitle">{m.num} — {m.title}</h1>
         <p className="lead">{m.subtitle}</p>
+        {isHidden && <div className="notice">This session is hidden from participants. Only presenters and admins can see it.</div>}
 
         {presenterView ? (
           <>
@@ -100,8 +105,8 @@ export default async function ModulePage({
               {P.sections.map((s) => <a key={s.heading} href={`#${slugify(s.heading)}`}>{s.heading}</a>)}
               {P.activities.length > 0 && <a href="#activities">Activities ({P.activities.length})</a>}
               {P.samples?.length ? <a href="#samples">Sample playbook{P.samples.length > 1 ? "s" : ""}</a> : null}
-              {P.aiPrompt && <a href="#ai-prompt">AI prompt</a>}
-              {P.quiz.length > 0 && <a href="#quiz">Quiz</a>}
+              {showAi && P.aiPrompt && <a href="#ai-prompt">AI prompt</a>}
+              {showQuiz && P.quiz.length > 0 && <a href="#quiz">Quiz</a>}
               <a href="#takeaways">Takeaways</a>
             </nav>
             <div className="bigidea" id="overview">{P.bigIdea}</div>
@@ -138,7 +143,7 @@ export default async function ModulePage({
               </div>
             ))}
 
-            {P.aiPrompt && (
+            {showAi && P.aiPrompt && (
               <>
                 <h2 className="sec" id="ai-prompt">Paste-ready AI prompt</h2>
                 <div className="panel">
@@ -151,7 +156,7 @@ export default async function ModulePage({
               </>
             )}
 
-            {P.quiz.length > 0 && (<><h2 className="sec" id="quiz">Knowledge check</h2><Quiz slug={slug} moduleId={m.id} items={P.quiz} initial={quiz} /></>)}
+            {showQuiz && P.quiz.length > 0 && (<><h2 className="sec" id="quiz">Knowledge check</h2><Quiz slug={slug} moduleId={m.id} items={P.quiz} initial={quiz} /></>)}
 
             <h2 className="sec" id="takeaways">Key takeaways</h2>
             <div className="navyband"><ul className="objs">{P.takeaways.map((t) => <li key={t} style={{ color: "#fff" }}>{t}</li>)}</ul></div>

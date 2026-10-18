@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Course, Day, Schedule } from "@/lib/types";
+import type { Day, LoadedCourse, Schedule } from "@/lib/types";
 import DropdownCloser from "./DropdownCloser";
 
 /** Group consecutive days that share a `menu` label into one dropdown ("Wk 1–2"); otherwise one per day. */
@@ -16,15 +16,18 @@ function menuGroups(days: Day[]) {
 /** Course menu bar under the main nav: overview, one dropdown per day/week group, outline, roster, schedule picker. */
 export default function CourseSidebar({
   course, currentId, done, view, role, schedule, here,
-}: { course: Course; currentId?: string; done: Set<string>; view?: string; role: string; schedule?: Schedule; here?: string }) {
+}: { course: LoadedCourse; currentId?: string; done: Set<string>; view?: string; role: string; schedule?: Schedule; here?: string }) {
   const q = view === "presenter" ? "?view=presenter" : "";
   const pct = Math.round((100 * done.size) / Math.max(course.modules.length, 1));
+  const S = course.settings;
+  const isP = role === "presenter";
+  const hidden = new Set(S.hiddenModules);
   const cur = course.modules.find((m) => m.id === currentId);
   return (
     <div className="cbar">
       <DropdownCloser />
       <div className="cbarin">
-        <Link href={`/c/${course.slug}`} className="cbtitle">{course.shortTitle}</Link>
+        <Link href={`/c/${course.slug}`} className="cbtitle">{course.shortTitle}{S.status !== "published" && <span className={`statuspill ${S.status}`}>{S.status}</span>}</Link>
         <nav className="cbmenu">
           <Link href={`/c/${course.slug}`} className={`cbtab ${!currentId ? "on" : ""}`}>Overview</Link>
           {menuGroups(course.days).map((g) => {
@@ -46,7 +49,7 @@ export default function CourseSidebar({
                     return (
                       <Link key={m.id} href={`/c/${course.slug}/m/${m.id}${q}`} className={`cbitem ${m.id === currentId ? "on" : ""}`}>
                         <span className="sbnum">{m.num}</span>
-                        <span>{m.title}<small>{g.days.length > 1 ? `${d?.label} · ` : ""}{m.time}</small></span>
+                        <span>{m.title}<small>{g.days.length > 1 ? `${d?.label} · ` : ""}{m.time}{hidden.has(m.id) && " · hidden from participants"}</small></span>
                         <span className="sbtick">{done.has(m.id) ? "✓" : ""}</span>
                       </Link>
                     );
@@ -55,8 +58,8 @@ export default function CourseSidebar({
               </details>
             );
           })}
-          <Link href={`/c/${course.slug}/outline`} className={`cbtab ${currentId === "__outline" ? "on" : ""}`}>Outline</Link>
-          {role === "presenter" && <Link href={`/c/${course.slug}/roster`} className={`cbtab ${currentId === "__roster" ? "on" : ""}`}>Roster</Link>}
+          {(S.showOutline || isP) && <Link href={`/c/${course.slug}/outline`} className={`cbtab ${currentId === "__outline" ? "on" : ""}`}>Outline</Link>}
+          {isP && S.showRoster && <Link href={`/c/${course.slug}/roster`} className={`cbtab ${currentId === "__roster" ? "on" : ""}`}>Roster</Link>}
         </nav>
         {course.schedules && course.schedules.length > 1 && schedule && (
           <details className="cbdrop cbsched">

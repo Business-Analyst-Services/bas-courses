@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { redirect } from "next/navigation";
 import Nav from "@/components/Nav";
-import { getScheduledCourse } from "@/lib/schedule";
 import CourseSidebar from "@/components/CourseSidebar";
+import { withSchedule } from "@/lib/schedule";
 import { requireCourseRole } from "@/lib/access";
 import { getProgress } from "@/lib/data";
 import { slugify } from "@/lib/slug";
@@ -12,9 +12,9 @@ export const dynamic = "force-dynamic";
 /** One-page map of everything in the course, for quick review. */
 export default async function Outline({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const { course, schedule } = await getScheduledCourse(slug);
-  if (!course) notFound();
-  const { viewer, role, enrolments } = await requireCourseRole(slug);
+  const { viewer, role, enrolments, course: baseCourse } = await requireCourseRole(slug);
+  const { course, schedule } = await withSchedule(baseCourse);
+  if (!course.settings.showOutline && role !== "presenter") redirect(`/c/${slug}`);
   const done = await getProgress(viewer.userId, slug);
   const totals = course.modules.reduce(
     (a, m) => ({

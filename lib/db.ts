@@ -2,6 +2,7 @@ import { neon } from "@neondatabase/serverless";
 
 export const sql = neon(process.env.DATABASE_URL!);
 
+// Idempotent schema: safe to run on every cold start.
 export const SCHEMA = `
 CREATE TABLE IF NOT EXISTS enrolments (
   email        TEXT NOT NULL,
@@ -11,6 +12,8 @@ CREATE TABLE IF NOT EXISTS enrolments (
   created_at   TIMESTAMPTZ NOT NULL DEFAULT now(),
   PRIMARY KEY (email, course_slug)
 );
+ALTER TABLE enrolments ADD COLUMN IF NOT EXISTS cohort_id INT;
+ALTER TABLE enrolments ADD COLUMN IF NOT EXISTS status TEXT NOT NULL DEFAULT 'active';
 CREATE TABLE IF NOT EXISTS responses (
   user_id      TEXT NOT NULL,
   email        TEXT NOT NULL,
@@ -39,10 +42,57 @@ CREATE TABLE IF NOT EXISTS quiz_answers (
   answered_at  TIMESTAMPTZ NOT NULL DEFAULT now(),
   PRIMARY KEY (user_id, course_slug, module_id, question)
 );
+ALTER TABLE quiz_answers ADD COLUMN IF NOT EXISTS email TEXT;
+CREATE TABLE IF NOT EXISTS course_settings (
+  slug           TEXT PRIMARY KEY,
+  status         TEXT NOT NULL DEFAULT 'published',
+  sort           INT,
+  catalogue      BOOLEAN NOT NULL DEFAULT true,
+  show_outline   BOOLEAN NOT NULL DEFAULT true,
+  show_resources BOOLEAN NOT NULL DEFAULT true,
+  show_ai        BOOLEAN NOT NULL DEFAULT true,
+  show_quiz      BOOLEAN NOT NULL DEFAULT true,
+  show_roster    BOOLEAN NOT NULL DEFAULT true,
+  hidden_modules TEXT[] NOT NULL DEFAULT '{}',
+  title          TEXT,
+  short_title    TEXT,
+  tagline        TEXT,
+  updated_at     TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE TABLE IF NOT EXISTS custom_courses (
+  slug        TEXT PRIMARY KEY,
+  body        JSONB NOT NULL,
+  updated_by  TEXT,
+  updated_at  TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE TABLE IF NOT EXISTS cohorts (
+  id              SERIAL PRIMARY KEY,
+  course_slug     TEXT NOT NULL,
+  name            TEXT NOT NULL,
+  status          TEXT NOT NULL DEFAULT 'scheduled',
+  start_date      DATE,
+  end_date        DATE,
+  capacity        INT NOT NULL DEFAULT 20,
+  forecast_seats  INT NOT NULL DEFAULT 0,
+  price           NUMERIC(10,2),
+  delivery        TEXT,
+  presenter_email TEXT,
+  notes           TEXT,
+  created_at      TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE TABLE IF NOT EXISTS attendance (
+  cohort_id   INT  NOT NULL,
+  email       TEXT NOT NULL,
+  module_id   TEXT NOT NULL,
+  present     BOOLEAN NOT NULL,
+  marked_by   TEXT,
+  marked_at   TIMESTAMPTZ NOT NULL DEFAULT now(),
+  PRIMARY KEY (cohort_id, email, module_id)
+);
 `;
 
 let ready: Promise<void> | null = null;
-/** Creates tables on first use, so a fresh Neon database works with no manual migration. */
+/** Creates/updates tables on first use, so a fresh Neon database works with no manual migration. */
 export function ensureSchema() {
   if (!ready) {
     ready = (async () => {

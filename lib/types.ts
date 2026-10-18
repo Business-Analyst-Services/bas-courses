@@ -95,3 +95,24 @@ export type Course = {
   modules: Module[];
   resources: { title: string; description: string; href?: string; audience: "participant" | "presenter" }[];
 };
+
+export type CourseStatus = "published" | "hidden" | "archived";
+
+/** Admin-controlled settings stored in Neon; applied on top of the course content. */
+export type CourseSettings = {
+  status: CourseStatus;          // published = live; hidden = admins/presenters only; archived = enrolled read-only, off catalogue
+  sort: number | null;
+  catalogue: boolean;            // show under "Also from BAS" to people not enrolled
+  showOutline: boolean;
+  showResources: boolean;
+  showAiPrompts: boolean;
+  showQuiz: boolean;
+  showRoster: boolean;
+  hiddenModules: string[];       // session ids hidden from participants
+  title: string | null;          // display overrides
+  shortTitle: string | null;
+  tagline: string | null;
+  source: "file" | "imported";
+};
+
+export type LoadedCourse = Course & { settings: CourseSettings };

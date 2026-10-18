@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { UserButton } from "@clerk/nextjs";
-import { getCourses } from "@/lib/courses";
+import { getAllCourses } from "@/lib/courses";
 import type { Role } from "@/lib/access";
 
-export default function Nav({
+export default async function Nav({
   enrolments,
   current,
   isAdmin,
@@ -12,7 +12,7 @@ export default function Nav({
   current?: string;
   isAdmin?: boolean;
 }) {
-  const mine = getCourses().filter((c) => enrolments[c.slug]);
+  const mine = (await getAllCourses()).filter((c) => enrolments[c.slug]);
   const cur = mine.find((c) => c.slug === current);
   return (
     <header className="nav">

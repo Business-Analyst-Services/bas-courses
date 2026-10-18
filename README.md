@@ -16,7 +16,13 @@ Each person is enrolled per course as a **participant** or a **presenter**.
 ## What people see
 - **Participants:** agenda, session pages (big idea, teaching content, an industry worked example, workbook activities that save to Neon, paste-ready AI prompts, knowledge checks), downloads, progress.
 - **Presenters:** everything above, plus a Participant/Presenter toggle on every session (opening line, minute-by-minute beats, role-play persona and curveball, facilitation notes, what good looks like, debrief, answer keys) and a **roster** showing progress and every participant's activity answers.
-- **Admins** (emails in `ADMIN_EMAILS`): presenter access to every course, and `/admin` to enrol people by email.
+- **Admins** (emails in `ADMIN_EMAILS`): presenter access to every course, plus `/admin`:
+  - **Dashboard:** running, upcoming, forecast and delivered cohorts, seat fill, attendance, completion, quiz averages, booked revenue.
+  - **Courses:** status (published, hidden or archived), per-course menu toggles (outline, resources, AI prompts, quizzes, roster, catalogue), hide individual sessions, title and tagline overrides, sort order. Add courses by importing JSON (validated), downloading the template, exporting or duplicating an existing course.
+  - **Cohorts:** dates, capacity, forecast seats, price, delivery and lead presenter. Status is worked out from the dates. Each cohort has a roster, waitlist and attendance grid.
+  - **Enrolments:** bulk enrol into a cohort (over capacity goes to the waitlist) or straight into a course; filter, give a waitlisted person a seat, remove.
+  - **Reports:** by course and by cohort, with a date range; CSV exports for cohorts, enrolments, attendance, completion and quiz answers.
+- **Presenters** mark attendance per cohort and session on the course Roster page.
 
 ## Editing content
 All course content is in `content/courses/<slug>.json` (schema in `lib/types.ts`). Edit, run `npm run validate`, commit, push. Vercel redeploys.

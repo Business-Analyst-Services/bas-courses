@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
-import { getScheduledCourse } from "@/lib/schedule";
 import CourseSidebar from "@/components/CourseSidebar";
+import { withSchedule } from "@/lib/schedule";
 import { requireCourseRole } from "@/lib/access";
 import { getProgress } from "@/lib/data";
 
@@ -10,11 +9,12 @@ export const dynamic = "force-dynamic";
 
 export default async function CoursePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const { course, schedule } = await getScheduledCourse(slug);
-  if (!course) notFound();
-  const { viewer, role, enrolments } = await requireCourseRole(slug);
+  const { viewer, role, enrolments, course: baseCourse } = await requireCourseRole(slug);
+  const { course, schedule } = await withSchedule(baseCourse);
   const done = await getProgress(viewer.userId, slug);
   const first = course.modules[0];
+  const S = course.settings;
+  const isP = role === "presenter";
 
   return (
     <>
@@ -36,9 +36,9 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center", marginBottom: 18 }}>
           {first && <Link className="btn" href={`/c/${slug}/m/${first.id}`}>Start / continue →</Link>}
-          <Link className="btn ghost" href={`/c/${slug}/outline`}>Full outline</Link>
+          {(S.showOutline || isP) && <Link className="btn ghost" href={`/c/${slug}/outline`}>Full outline</Link>}
           {role === "presenter" && first && <Link className="btn ghost" href={`/c/${slug}/m/${first.id}?view=presenter`}>Presenter run sheet</Link>}
-          {role === "presenter" && <Link className="btn ghost" href={`/c/${slug}/roster`}>Participant roster</Link>}
+          {isP && S.showRoster && <Link className="btn ghost" href={`/c/${slug}/roster`}>Participant roster</Link>}
           <span className={`rolepill ${role}`}>You are a {role}</span>
         </div>
 
@@ -56,6 +56,12 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
           </>
         )}
 
+        {isP && S.status !== "published" && (
+          <div className="notice">This course is <b>{S.status}</b>{S.status === "hidden" ? ": only presenters and admins can see it." : ": enrolled people can still open it, but it's off the catalogue."}</div>
+        )}
+        {isP && S.hiddenModules.length > 0 && (
+          <div className="notice">{S.hiddenModules.length} session{S.hiddenModules.length > 1 ? "s are" : " is"} hidden from participants. You can still see {S.hiddenModules.length > 1 ? "them" : "it"}.</div>
+        )}
         {course.caseStudy && (
           <div className="casebar">
                         <div>
@@ -90,6 +96,7 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
           <div className="panel"><h3>You leave with</h3><ul className="objs">{course.leaveWith.map((o) => <li key={o}>{o}</li>)}</ul></div>
         </div>
 
+        {(S.showResources || isP) && course.resources.length > 0 && <>
         <h2 className="sec">Resources</h2>
         <div className="grid g2">
           {course.resources.filter((r) => r.audience === "participant" || role === "presenter").map((r) => (
@@ -99,6 +106,7 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
             </div>
           ))}
         </div>
+        </>}
       </main>
       </div>
     </>

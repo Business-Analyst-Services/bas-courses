@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import { getViewer, getEnrolments } from "@/lib/access";
-import { getCourses } from "@/lib/courses";
+import { getAllCourses } from "@/lib/courses";
 import { getProgress } from "@/lib/data";
 
 export const dynamic = "force-dynamic";
@@ -10,7 +10,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ d
   const { denied } = await searchParams;
   const v = await getViewer();
   const enr = await getEnrolments(v);
-  const courses = getCourses();
+  const courses = await getAllCourses();
   const mine = courses.filter((c) => enr[c.slug]);
   const progress = Object.fromEntries(
     await Promise.all(mine.map(async (c) => [c.slug, (await getProgress(v.userId, c.slug)).size] as const)),
@@ -43,7 +43,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ d
           <div className="coursegrid">
             {mine.map((c) => (
               <Link key={c.slug} href={`/c/${c.slug}`} className="ccard">
-                <div className="meta">{c.format}</div>
+                <div className="meta">{c.format}{v.isAdmin && c.settings.status !== "published" && <span className={`statuspill ${c.settings.status}`}>{c.settings.status}</span>}</div>
                 <h3>{c.title}</h3>
                 <p>{c.tagline}</p>
                 <div className="foot">
@@ -58,11 +58,11 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ d
           </div>
         )}
 
-        {courses.length > mine.length && (
+        {courses.some((c) => !enr[c.slug] && c.settings.catalogue && c.settings.status === "published") && (
           <>
             <h2 className="sec">Also from BAS</h2>
             <div className="coursegrid">
-              {courses.filter((c) => !enr[c.slug]).map((c) => (
+              {courses.filter((c) => !enr[c.slug] && c.settings.catalogue && c.settings.status === "published").map((c) => (
                 <a key={c.slug} className="ccard locked" href="https://business-analyst.services" target="_blank" rel="noreferrer">
                   <div className="meta">{c.format}</div>
                   <h3>{c.title}</h3>
