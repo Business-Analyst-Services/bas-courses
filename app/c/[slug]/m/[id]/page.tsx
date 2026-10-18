@@ -6,6 +6,7 @@ import { slugify } from "@/lib/slug";
 import Md from "@/components/Md";
 import ActivityField from "@/components/Activity";
 import Quiz from "@/components/Quiz";
+import SampleKit from "@/components/SampleKit";
 import { CompleteButton, CopyButton } from "@/components/Buttons";
 import { requireCourseRole } from "@/lib/access";
 import { getCourse, getModule, moduleNeighbours } from "@/lib/courses";
@@ -97,6 +98,7 @@ export default async function ModulePage({
               <a href="#overview">Overview</a>
               {P.sections.map((s) => <a key={s.heading} href={`#${slugify(s.heading)}`}>{s.heading}</a>)}
               {P.activities.length > 0 && <a href="#activities">Activities ({P.activities.length})</a>}
+              {P.samples?.length ? <a href="#samples">Sample playbook{P.samples.length > 1 ? "s" : ""}</a> : null}
               {P.aiPrompt && <a href="#ai-prompt">AI prompt</a>}
               {P.quiz.length > 0 && <a href="#quiz">Quiz</a>}
               <a href="#takeaways">Takeaways</a>
@@ -114,6 +116,13 @@ export default async function ModulePage({
             {P.sections.map((s) => (
               <section key={s.heading} id={slugify(s.heading)}><h2 className="sec">{s.heading}</h2><div className="panel"><Md>{s.body}</Md></div></section>
             ))}
+
+            {P.samples?.length ? (
+              <>
+                <h2 className="sec" id="samples">Sample playbook{P.samples.length > 1 ? "s" : ""}: prompt, templates and outputs</h2>
+                {P.samples.map((k) => <SampleKit key={k.code} kit={k} />)}
+              </>
+            ) : null}
 
             {P.activities.length > 0 && <h2 className="sec" id="activities">Workbook activities</h2>}
             {P.activities.map((a) => (

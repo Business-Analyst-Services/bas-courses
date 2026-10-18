@@ -20,6 +20,15 @@ export type Activity = {
   prompts: { id: string; label: string; placeholder?: string }[]; // each becomes a saved text box
 };
 
+/** A sample playbook kit: the prompt, the template files, and step-by-step sample outputs. */
+export type SampleKit = {
+  code: string;            // "01", "B1"
+  title: string;           // "Discovery & Stakeholder Mapping"
+  prompt: string;          // paste-ready prompt that runs the playbook (plain text)
+  templates: { label: string; href: string; kind: "blank" | "worked" | "pdf"; preview?: string }[];
+  outputs: { step: string; artefact: string; image: string; caption: string }[]; // one per step
+};
+
 export type Module = {
   id: string;              // e.g. "d1-s2"
   num: string;             // display number, e.g. "1A", "01", "Wk 2 · Mon"
@@ -36,6 +45,7 @@ export type Module = {
     sections: { heading: string; body: string }[];  // (md) teaching content, 2–5 sections, substantive
     activities: Activity[];                   // 1–3
     aiPrompt?: string;                        // paste-ready prompt for their AI agent (plain text)
+    samples?: SampleKit[];                    // sample playbook kits: prompt + template files + sample outputs
     quiz: Quiz[];                             // 2–4 knowledge checks
     takeaways: string[];                      // 3–5
   };

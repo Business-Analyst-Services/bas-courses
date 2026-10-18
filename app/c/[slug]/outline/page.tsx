@@ -60,6 +60,7 @@ export default async function Outline({ params }: { params: Promise<{ slug: stri
                       <div>
                         <div className="olh">Activities</div>
                         {m.participant.activities.map((a) => <Link key={a.id} href={`${base}#${a.id}`}>{a.title}</Link>)}
+                        {m.participant.samples?.length ? <Link href={`${base}#samples`}>Sample playbook{m.participant.samples.length > 1 ? "s" : ""}</Link> : null}
                         {m.participant.aiPrompt && <Link href={`${base}#ai-prompt`}>AI prompt</Link>}
                         {m.participant.quiz.length > 0 && <Link href={`${base}#quiz`}>Knowledge check ({m.participant.quiz.length})</Link>}
                       </div>

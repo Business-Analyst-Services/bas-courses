@@ -97,6 +97,19 @@
      "moduleId": "wrap"
     }
    ]
+  },
+  {
+   "id": "bonus",
+   "label": "Take-home",
+   "title": "Bonus job-seeker playbooks (self-paced)",
+   "blocks": [
+    {
+     "time": "Self-paced",
+     "title": "B1–B3 · Bonus job-seeker playbooks",
+     "type": "session",
+     "moduleId": "bonus"
+    }
+   ]
   }
  ],
  "modules": [
@@ -481,6 +494,68 @@
      "Map stakeholders by the decisions they control, not the org chart.",
      "If a stakeholder can't name a decision they own, they're not the right stakeholder.",
      "Your output (Decision Register) feeds the next playbook"
+    ],
+    "samples": [
+     {
+      "code": "01",
+      "title": "Discovery & Stakeholder Mapping",
+      "prompt": "You are my BA agent. We are running BAS Playbook 01 — Discovery & Stakeholder Mapping.\nFrame the real problem. Identify decision-makers. Surface the decisions that must be made before delivery can begin.\n\nOperate one step at a time. Never invent facts: if an input is missing, ask me for it or flag the gap explicitly as an assumption. Draft in plain business language. I am the BA — I review, decide and own every output.\n\nPLAYBOOK INPUTS\n1. Initiative Brief or Problem Statement — A short narrative describing the problem, opportunity, or change being explored.\n2. Sponsor and Initial Stakeholder List — Names, roles, and reporting lines of known stakeholders (can be partial).\n\nSTEP 1 — FRAME THE PROBLEM\nInputs: Initiative Brief or Problem Statement\nUsing the brief:\n- Restate the problem in one sentence using plain business language\n- Identify the measurable outcome the business is seeking\n- Capture three working assumptions and three open questions\n- Avoid solutions or technology choices at this stage\nSuccess criteria:\n- Problem statement is one sentence and is outcome-focused\n- Assumptions and open questions are explicit\n- No solution language has crept in\nProduce:\n- Problem Statement (one sentence)\n- Target Outcome\n- Assumptions (3)\n- Open Questions (3)\nStep output: Discovery Brief (one page)\n\nSTEP 2 — IDENTIFY STAKEHOLDERS\nInputs: Sponsor and Initial Stakeholder List, Discovery Brief\nFor the framed problem:\n- List every stakeholder group affected, internal and external\n- Capture role, decision rights, and what success looks like for each\n- Identify who owns each in-scope process or system\n- Flag stakeholders likely to block, slow, or accelerate the work\nSuccess criteria:\n- All decision-makers are named, not just titles\n- Each stakeholder has a stated success measure\n- Blockers and accelerators are explicitly flagged\nFor each stakeholder:\n- Name\n- Role\n- Group\n- Decision Rights\n- What Success Looks Like\n- Risk Flag (Blocker / Neutral / Accelerator)\nStep output: Stakeholder Register\n\nSTEP 3 — MAP INFLUENCE AND INTEREST\nInputs: Stakeholder Register\nUsing the register:\n- Plot each stakeholder on a 2x2 of Influence (low/high) vs Interest (low/high)\n- Identify the four to six stakeholders in the high/high quadrant — the keys\n- Define an engagement cadence for each quadrant\n- Note any stakeholder whose position is likely to shift over the initiative\nSuccess criteria:\n- Every stakeholder is plotted\n- Each quadrant has a defined engagement approach\n- Position shifts are anticipated, not discovered late\nRespond with:\n- Influence/Interest Matrix (with stakeholder names plotted)\n- Quadrant Engagement Plan (quadrant -> cadence -> channel -> owner)\n- Watchlist (stakeholders likely to shift quadrant)\nStep output: Stakeholder Map\n\nSTEP 4 — SURFACE THE REAL DECISIONS\nInputs: Discovery Brief, Stakeholder Map\nFrom the framed problem and stakeholders:\n- List every decision that must be made before delivery can begin\n- For each decision, name the single accountable decision-maker\n- Identify what information is needed to make the decision well\n- Sequence the decisions in the order they need to happen\nSuccess criteria:\n- Each decision has one accountable name, not a committee\n- Information needs are concrete, not vague\n- The sequence is logically ordered with dependencies called out\nFor each decision:\n- Decision\n- Accountable\n- Information Needed\n- Earliest Date Required\n- Depends On\nStep output: Decision Register\n\nRun STEP 1 only, using my inputs below. Then stop and wait for my review before continuing to the next step.\n\nMY INPUTS:\n[paste your initiative brief, stakeholder list and any other inputs here]",
+      "templates": [
+       {
+        "label": "01_Discovery_Blank_Template.pptx",
+        "href": "/files/ba-playbooks/01_Discovery_Blank_Template.pptx",
+        "kind": "blank",
+        "preview": "/files/ba-playbooks/samples/pb01_tpl-1.png"
+       },
+       {
+        "label": "01_Discovery_Worked_Example.pptx",
+        "href": "/files/ba-playbooks/01_Discovery_Worked_Example.pptx",
+        "kind": "worked",
+        "preview": "/files/ba-playbooks/samples/pb01_out-1.png"
+       },
+       {
+        "label": "Initiative_Template.pptx",
+        "href": "/files/ba-playbooks/Initiative_Template.pptx",
+        "kind": "blank"
+       },
+       {
+        "label": "Initiative_Worked_Example.pptx",
+        "href": "/files/ba-playbooks/Initiative_Worked_Example.pptx",
+        "kind": "worked"
+       },
+       {
+        "label": "BAS_Playbook_Template_Blank.pdf",
+        "href": "/files/ba-playbooks/BAS_Playbook_Template_Blank.pdf",
+        "kind": "pdf"
+       }
+      ],
+      "outputs": [
+       {
+        "step": "Step 1",
+        "artefact": "Discovery Brief",
+        "image": "/files/ba-playbooks/samples/pb01_out-1.png",
+        "caption": "Frame the Problem. Problem: new customer onboarding at Northbridge takes 14 days, causing a 22% drop-off before the first transaction. Target outcome: reduce time-to-first-transaction from 14 days to under 5 days within 12 months, with drop-off below 10%. Assumptions: a compliant ID-verification provider can be integrated; core banking…"
+       },
+       {
+        "step": "Step 2",
+        "artefact": "Stakeholder Register",
+        "image": "/files/ba-playbooks/samples/pb01_out-2.png",
+        "caption": "Identify Stakeholders. Priya Singh, Head of Customer Operations (sponsor) — approves any change to the onboarding SLA; success = reduced manual rework; Accelerator. Marcus Lee, Tech Lead — approves the integration architecture; success = a maintainable, secure integration; Neutral. Compliance Director (AML/KYC) — approves KYC controls;…"
+       },
+       {
+        "step": "Step 3",
+        "artefact": "Stakeholder Map (2x2)",
+        "image": "/files/ba-playbooks/samples/pb01_out-3.png",
+        "caption": "Map Influence and Interest. High influence / high interest (partner — key players): Priya Singh, Head of CX, Compliance Director — weekly steering; proactive 1:1s with the Compliance Director to surface and resolve objections early. High influence / lower interest (manage closely): CFO — keep informed with a monthly one-pager; watchlist, as…"
+       },
+       {
+        "step": "Step 4",
+        "artefact": "Decision Register",
+        "image": "/files/ba-playbooks/samples/pb01_out-4.png",
+        "caption": "Surface the Real Decisions. D1: acceptable automated-KYC false-accept rate — Accountable: Compliance Director; needs fraud and rejection data plus risk appetite; required by week 3. D2: in-house build vs SaaS for ID verification — Accountable: CTO; needs vendor capability, integration cost and D1's threshold; required by week 4. D3: which steps…"
+       }
+      ]
+     }
     ]
    },
    "presenter": {
@@ -742,6 +817,58 @@
      "Quantify every pain point in time, cost and risk.",
      "Design the To-Be to remove handoffs — don't paper over them.",
      "Your output (To-Be BPMN with Change Summary) feeds the next playbook"
+    ],
+    "samples": [
+     {
+      "code": "02",
+      "title": "Process Mapping & BPMN",
+      "prompt": "You are my BA agent. We are running BAS Playbook 02 — Process Mapping & BPMN.\nCapture how work flows today. Quantify where it leaks. Design a To-Be that removes the leaks instead of papering over them.\n\nOperate one step at a time. Never invent facts: if an input is missing, ask me for it or flag the gap explicitly as an assumption. Draft in plain business language. I am the BA — I review, decide and own every output.\n\nPLAYBOOK INPUTS\n1. Process Scope Statement — Defines the start event, end event, and boundaries of the process being mapped.\n2. Subject Matter Expert Access — Named SMEs for each role/lane in the process, available for two short interviews.\n\nSTEP 1 — CONFIRM SCOPE AND LANES\nInputs: Process Scope Statement\nBefore drawing anything:\n- Confirm the trigger event that starts the process and the outcome that ends it\n- Identify the participating roles or systems (these become BPMN pool/lanes)\n- Define what is explicitly out of scope to prevent map creep\n- Agree the level of detail (L1 end-to-end, L2 per role, L3 task-level)\nSuccess criteria:\n- Start and end events are unambiguous\n- Lanes match real organisational accountabilities\n- Out-of-scope items are listed, not assumed\nRespond with:\n- Trigger Event\n- End Event\n- Lanes (roles/systems)\n- Out of Scope\n- Level of Detail\nStep output: Process Scope Confirmation\n\nSTEP 2 — MAP THE AS-IS\nInputs: Process Scope Confirmation, SME interviews\nWalk through the current process with SMEs:\n- Capture each task, gateway and event in BPMN 2.0 notation\n- Place every task in the correct lane — never blur accountabilities\n- Use exclusive (XOR) gateways for decisions, parallel (AND) for concurrent work\n- Note volumes, average duration, and rework rate at each task where data exists\nSuccess criteria:\n- BPMN is syntactically correct (one start, one end per pool, gateways balance)\n- Every task sits in exactly one lane\n- Operational data is captured where available, gaps are flagged\nRespond with:\n- As-Is BPMN Diagram\n- Task Inventory (task -> lane -> duration -> volume -> notes)\n- Data Gaps Log\nStep output: As-Is Process Map\n\nSTEP 3 — IDENTIFY PAIN POINTS AND VALUE LEAKS\nInputs: As-Is Process Map, Task Inventory\nWalk the As-Is map and look for:\n- Handoffs between lanes (each handoff is a candidate for delay or loss)\n- Rework loops where work returns to an earlier task\n- Manual tasks operating on structured digital data (automation candidates)\n- Wait states between tasks that add no value\nSuccess criteria:\n- Every handoff is named\n- Rework loops are quantified, not just observed\n- Pain points are categorised so they can be prioritised\nFor each pain point:\n- Location (task or handoff)\n- Type (handoff / rework / manual / wait)\n- Impact (time, cost, risk, CX)\n- Quantified Cost (where possible)\n- Priority (H/M/L)\nStep output: Pain Point Register\n\nSTEP 4 — DESIGN THE TO-BE\nInputs: As-Is Process Map, Pain Point Register\nRedesign the process to address prioritised pain points:\n- Eliminate, automate, or simplify each high-priority pain point\n- Reduce handoffs wherever a single role can own end-to-end\n- Replace sequential steps with parallel where data allows\n- Quantify the expected improvement against each As-Is metric\nSuccess criteria:\n- Every high-priority pain point is addressed in the To-Be\n- Improvements are quantified with explicit assumptions\n- Change impact on roles is named, not glossed over\nRespond with:\n- To-Be BPMN Diagram\n- Change Summary (As-Is task -> To-Be change -> expected impact)\n- Role Impact Note (which roles change, by how much)\nStep output: To-Be Process Map\n\nRun STEP 1 only, using my inputs below. Then stop and wait for my review before continuing to the next step.\n\nMY INPUTS:\n[paste your initiative brief, stakeholder list and any other inputs here]",
+      "templates": [
+       {
+        "label": "02_Process_Mapping_Blank_Template.pptx",
+        "href": "/files/ba-playbooks/02_Process_Mapping_Blank_Template.pptx",
+        "kind": "blank",
+        "preview": "/files/ba-playbooks/samples/pb02_tpl-1.png"
+       },
+       {
+        "label": "02_Process_Mapping_Worked_Example.pptx",
+        "href": "/files/ba-playbooks/02_Process_Mapping_Worked_Example.pptx",
+        "kind": "worked",
+        "preview": "/files/ba-playbooks/samples/pb02_out-1.png"
+       },
+       {
+        "label": "BAS_Playbook_Template_Blank.pdf",
+        "href": "/files/ba-playbooks/BAS_Playbook_Template_Blank.pdf",
+        "kind": "pdf"
+       }
+      ],
+      "outputs": [
+       {
+        "step": "Step 1",
+        "artefact": "Process Scope Confirmation",
+        "image": "/files/ba-playbooks/samples/pb02_out-1.png",
+        "caption": "Confirm Scope and Lanes. Process: customer onboarding. Trigger: customer submits the onboarding form. End event: customer account is active and funded. Lanes: Customer, Onboarding Ops, Compliance, Core Banking System. Out of scope: marketing acquisition; card production and mailing. Level of detail: Level 2 (per role)."
+       },
+       {
+        "step": "Step 2",
+        "artefact": "As-Is Swimlane + Task Inventory",
+        "image": "/files/ba-playbooks/samples/pb02_out-2.png",
+        "caption": "Map the As-Is. Four-lane swim-lane with the clock started at form submission; volume ≈4,200 applications/month. Key inventory lines: ‘Manually verify ID’ — 38 min, 18% rework; ‘Review supporting documents’ — 25 min, 12% rework; ‘Manual fraud queue check’ — p95 6-day wait, 9% rework; ‘Provision account’ — 1 day, 6% rework. Data gaps…"
+       },
+       {
+        "step": "Step 3",
+        "artefact": "Pain Point Register",
+        "image": "/files/ba-playbooks/samples/pb02_out-3.png",
+        "caption": "Identify Pain Points and Value Leaks. P1 Handoff Onboarding Ops → Compliance — wait — average 2.4 days delay, ~$87k/yr deferred revenue (H). P2 Manual ID verification — manual work on structured digital data, keyed by hand — ~$190k/yr (H). P3 Fraud review queue — wait — p95 of 6 days, ~$310k/yr deferred revenue (H). P4 ID rework loop — rework — 18% of IDs…"
+       },
+       {
+        "step": "Step 4",
+        "artefact": "To-Be Change Summary",
+        "image": "/files/ba-playbooks/samples/pb02_out-4.png",
+        "caption": "Design the To-Be. Change 1: manual ID verification (38 min) → API call to the ID provider (45 sec); 99% time cut, removes the rework loop, reskill 2 FTEs. Change 2: sequential review then provisioning → parallel compliance + provisioning; removes ~1 day of waiting. Change 3: fraud queue (p95 6 days) → risk-scored triage, exceptions…"
+       }
+      ]
+     }
     ]
    },
    "presenter": {
@@ -1011,6 +1138,58 @@
      "Decompose it into drivers an exec can read on one page.",
      "Convert each gap into a dollar value and rank the leaks.",
      "Your output (Prioritised Fix List) feeds the next playbook"
+    ],
+    "samples": [
+     {
+      "code": "03",
+      "title": "Data Analysis & KPIs",
+      "prompt": "You are my BA agent. We are running BAS Playbook 03 — Data Analysis & KPIs.\nChoose what to measure. Build the tree that connects strategy to the operational metrics that move it. Find where value is leaking.\n\nOperate one step at a time. Never invent facts: if an input is missing, ask me for it or flag the gap explicitly as an assumption. Draft in plain business language. I am the BA — I review, decide and own every output.\n\nPLAYBOOK INPUTS\n1. Strategic Outcome Statement — The single business outcome the initiative is meant to move (revenue, cost, risk, experience).\n2. Available Data Sources — List of systems, reports, and datasets that can be queried during the workshop.\n\nSTEP 1 — CHOOSE THE NORTH STAR METRIC\nInputs: Strategic Outcome Statement\nFrom the strategic outcome:\n- Choose one — and only one — North Star metric that signals the outcome is achieved\n- Confirm the metric is currently measurable, with a known data source\n- Set a baseline (current value) and a target (12-month aspiration)\n- State what the metric does not measure to prevent gaming\nSuccess criteria:\n- One metric is chosen, not three\n- Baseline and target are real numbers, not 'TBC'\n- Gaming risks are explicit\nRespond with:\n- North Star Metric\n- Definition (precise)\n- Baseline\n- Target\n- What This Metric Does Not Measure\nStep output: North Star Metric Definition\n\nSTEP 2 — BUILD THE KPI TREE\nInputs: North Star Metric Definition\nDecompose the North Star into the operational drivers that move it:\n- Identify two to four Tier-1 drivers that combine to produce the North Star\n- Decompose each Tier-1 driver into two or three Tier-2 operational metrics\n- For every leaf metric, name the system that holds the data and the owner\n- Keep the tree shallow enough that an exec can read it on one page\nSuccess criteria:\n- The maths is sound: Tier-1 drivers reconstruct the North Star\n- Every leaf metric has a named owner and data source\n- The tree fits on a single page\nRespond with:\n- KPI Tree Diagram (North Star -> Tier-1 -> Tier-2)\n- Metric Catalogue (metric -> formula -> source system -> owner)\n- Data Gaps (metrics with no current source)\nStep output: KPI Tree\n\nSTEP 3 — RUN THE VALUE LEAK ANALYSIS\nInputs: KPI Tree, Available Data Sources\nPull data for each leaf metric and look for leaks:\n- For each leaf metric, plot the distribution and identify outliers\n- Quantify the gap between current performance and a reasonable benchmark\n- Convert each gap into a dollar value (revenue lost, cost incurred, risk carried)\n- Rank leaks by dollar value and by ease of fixing\nSuccess criteria:\n- Every leak has a dollar value with stated assumptions\n- Outliers are investigated, not deleted\n- The top three leaks are clearly the top three\nFor each leak:\n- Metric\n- Current Performance\n- Benchmark\n- Gap (units)\n- Gap (annualised $)\n- Ease of Fixing (H/M/L)\n- Assumptions\nStep output: Value Leak Analysis\n\nSTEP 4 — PRIORITISE THE FIX LIST\nInputs: Value Leak Analysis\nConvert the analysis into a defensible fix list:\n- Plot each leak on a 2x2 of Dollar Impact vs Ease of Fixing\n- Pick the top three from the high-impact / high-ease quadrant\n- For each pick, name the leading indicator that will move first if the fix works\n- Define a check-in cadence to track movement against the leading indicator\nSuccess criteria:\n- Three leaks are picked, not seven\n- Each pick has a leading indicator separate from the lagging metric\n- Cadence is realistic and owned\nRespond with:\n- Impact/Ease Matrix (with leaks plotted)\n- Top 3 Fix List (leak -> leading indicator -> owner -> cadence)\n- Deferred List (with reason)\nStep output: Prioritised Fix List\n\nRun STEP 1 only, using my inputs below. Then stop and wait for my review before continuing to the next step.\n\nMY INPUTS:\n[paste your initiative brief, stakeholder list and any other inputs here]",
+      "templates": [
+       {
+        "label": "03_Data_Analysis_Blank_Template.pptx",
+        "href": "/files/ba-playbooks/03_Data_Analysis_Blank_Template.pptx",
+        "kind": "blank",
+        "preview": "/files/ba-playbooks/samples/pb03_tpl-1.png"
+       },
+       {
+        "label": "03_Data_Analysis_Worked_Example.pptx",
+        "href": "/files/ba-playbooks/03_Data_Analysis_Worked_Example.pptx",
+        "kind": "worked",
+        "preview": "/files/ba-playbooks/samples/pb03_out-1.png"
+       },
+       {
+        "label": "BAS_Playbook_Template_Blank.pdf",
+        "href": "/files/ba-playbooks/BAS_Playbook_Template_Blank.pdf",
+        "kind": "pdf"
+       }
+      ],
+      "outputs": [
+       {
+        "step": "Step 1",
+        "artefact": "North Star Metric",
+        "image": "/files/ba-playbooks/samples/pb03_out-1.png",
+        "caption": "Choose the North Star Metric. Metric: time-to-first-transaction — median days from form submission to first transaction. Baseline: 14 days. Target: 5 days within 12 months. Owner: Head of Customer Operations. What it doesn’t measure: customer satisfaction or fraud rate — guarded by a fraud-loss watch metric and the drop-off rate (target below 10%)."
+       },
+       {
+        "step": "Step 2",
+        "artefact": "KPI Tree",
+        "image": "/files/ba-playbooks/samples/pb03_out-2.png",
+        "caption": "Build the KPI Tree. Tier-1 drivers: identity verification time; document review time; account provisioning time. Tier-2 (with owner + source): auto-pass rate (Compliance Director, KYC decision log); image rework rate (Head of Customer Ops, onboarding platform); API latency (Tech Lead, integration monitoring); manual review queue depth…"
+       },
+       {
+        "step": "Step 3",
+        "artefact": "Value Leak Analysis",
+        "image": "/files/ba-playbooks/samples/pb03_out-3.png",
+        "caption": "Run the Value Leak Analysis. Leak 1: manual review queue depth — now average 280 cases, p95 6 days, vs a <24-hour benchmark → ~$310k/yr. Leak 2: ID image rework rate — now 18% vs <3% benchmark → ~$120k/yr. Leak 3: provisioning latency — now 1 day vs <1-hour benchmark → ~$87k/yr. Assumptions logged (deferred revenue per day per customer, blended…"
+       },
+       {
+        "step": "Step 4",
+        "artefact": "Impact / Ease Matrix",
+        "image": "/files/ba-playbooks/samples/pb03_out-4.png",
+        "caption": "Prioritise the Fix List. Do first (top 3): Fix 1 — automate ID verification — leading indicator: API success rate — Tech Lead, daily. Fix 2 — shrink the manual review queue via risk-scored triage — leading indicator: queue depth — Compliance Director, daily. Fix 3 — parallelise compliance and provisioning — leading indicator: stage overlap %…"
+       }
+      ]
+     }
     ]
    },
    "presenter": {
@@ -1268,6 +1447,58 @@
      "Slice into INVEST stories with real roles and outcomes.",
      "Write Given/When/Then for happy, alternative and failure paths.",
      "Your output (Scope Sign-Off Record) feeds the next playbook"
+    ],
+    "samples": [
+     {
+      "code": "04",
+      "title": "Requirements & User Stories",
+      "prompt": "You are my BA agent. We are running BAS Playbook 04 — Requirements & User Stories.\nWrite requirements and user stories that survive sprint planning, with acceptance criteria that hold up in UAT.\n\nOperate one step at a time. Never invent facts: if an input is missing, ask me for it or flag the gap explicitly as an assumption. Draft in plain business language. I am the BA — I review, decide and own every output.\n\nPLAYBOOK INPUTS\n1. To-Be Process Map and Prioritised Fix List — Outputs of Playbooks 02 and 03 — these define what needs to be built.\n2. Solution Constraints — Known constraints: regulatory, technical, budget, timeline, integration boundaries.\n\nSTEP 1 — CAPTURE REQUIREMENTS\nInputs: To-Be Process Map, Prioritised Fix List, Solution Constraints\nWorking from the To-Be:\n- Capture every functional requirement the To-Be implies, in plain language\n- Capture non-functional requirements: performance, security, availability, accessibility, compliance\n- Number every requirement so it can be traced through delivery and testing\n- Tag each requirement with its source (which To-Be task or fix it comes from)\nSuccess criteria:\n- Each requirement is a single statement, not a paragraph\n- Functional and non-functional are clearly separated\n- Every requirement traces back to a To-Be element\nFor each requirement:\n- ID (REQ-001, REQ-002...)\n- Type (Functional / Non-Functional)\n- Statement\n- Source (To-Be task or fix)\n- Priority (Must / Should / Could / Won't)\nStep output: Requirements Catalogue\n\nSTEP 2 — SLICE INTO USER STORIES\nInputs: Requirements Catalogue\nConvert Must and Should requirements into user stories:\n- Use the form: As a <role>, I want <capability>, so that <outcome>\n- Each story must be independent, valuable, and small enough for one sprint\n- Group stories under epics that map to To-Be process areas\n- Reject any story that is really a task, technical detail, or wish\nSuccess criteria:\n- Every story has a real role, not 'user'\n- Every story has a stated outcome, not a feature description\n- Stories pass the INVEST check (Independent, Negotiable, Valuable, Estimable, Small, Testable)\nRespond with:\n- Epic Map (epic -> stories)\n- Story Backlog (ID, story, epic, priority, dependencies)\nStep output: Story Backlog\n\nSTEP 3 — WRITE ACCEPTANCE CRITERIA\nInputs: Story Backlog\nFor every Must and Should story:\n- Write acceptance criteria in Given / When / Then form\n- Cover the happy path, the main alternative paths, and the failure modes\n- Include criteria for non-functional requirements that apply to the story\n- Confirm each criterion is testable without ambiguity\nSuccess criteria:\n- Every story has at least one happy-path and one failure-path criterion\n- Each criterion would produce an unambiguous pass/fail in test\n- Non-functional aspects (timing, security) are not forgotten\nFor each story:\n- Story ID\n- AC-1 (Given/When/Then) — happy path\n- AC-2 (Given/When/Then) — alternative path\n- AC-3 (Given/When/Then) — failure path\n- Non-Functional AC (if any)\nStep output: Story Backlog with Acceptance Criteria\n\nSTEP 4 — BUILD THE TRACEABILITY MATRIX\nInputs: Requirements Catalogue, Story Backlog with Acceptance Criteria\nConnect everything end-to-end:\n- Build a matrix linking each REQ to the stories that satisfy it\n- Link each story to the test cases that will verify it\n- Flag any REQ with no story (gap) and any story with no REQ (scope creep)\n- Confirm the sponsor and tech lead both sign off the matrix\nSuccess criteria:\n- No orphan requirements\n- No orphan stories\n- Sign-off is recorded with date and name\nRespond with:\n- Traceability Matrix (REQ ID -> Story IDs -> Test Case IDs)\n- Gap List (orphans in either direction)\n- Sign-Off Record\nStep output: Traceability Matrix\n\nRun STEP 1 only, using my inputs below. Then stop and wait for my review before continuing to the next step.\n\nMY INPUTS:\n[paste your initiative brief, stakeholder list and any other inputs here]",
+      "templates": [
+       {
+        "label": "04_Requirements_Blank_Template.pptx",
+        "href": "/files/ba-playbooks/04_Requirements_Blank_Template.pptx",
+        "kind": "blank",
+        "preview": "/files/ba-playbooks/samples/pb04_tpl-1.png"
+       },
+       {
+        "label": "04_Requirements_Worked_Example.pptx",
+        "href": "/files/ba-playbooks/04_Requirements_Worked_Example.pptx",
+        "kind": "worked",
+        "preview": "/files/ba-playbooks/samples/pb04_out-1.png"
+       },
+       {
+        "label": "BAS_Playbook_Template_Blank.pdf",
+        "href": "/files/ba-playbooks/BAS_Playbook_Template_Blank.pdf",
+        "kind": "pdf"
+       }
+      ],
+      "outputs": [
+       {
+        "step": "Step 1",
+        "artefact": "Requirements Catalogue",
+        "image": "/files/ba-playbooks/samples/pb04_out-1.png",
+        "caption": "Capture Requirements. REQ-014 (Functional, Must): the system shall verify customer identity via API to the ID provider in under 60 seconds — source: To-Be ‘verify identity’. REQ-015 (Functional, Must): the system shall run compliance checks and account provisioning in parallel — source: To-Be ‘parallelise’. REQ-016 (Functional, Must): the…"
+       },
+       {
+        "step": "Step 2",
+        "artefact": "Story Backlog",
+        "image": "/files/ba-playbooks/samples/pb04_out-2.png",
+        "caption": "Slice into User Stories. IDV-03 (Identity Verification, Must): “As a new customer, I want my identity verified in real time, so that I can complete onboarding in one sitting.” IDV-04 (Risk Triage, Must): “As an onboarding officer, I want only exceptions in my queue, so that I focus on genuine risk.” PRV-02 (Provisioning, Must): “As a…"
+       },
+       {
+        "step": "Step 3",
+        "artefact": "Given / When / Then",
+        "image": "/files/ba-playbooks/samples/pb04_out-3.png",
+        "caption": "Write Acceptance Criteria. IDV-03 — happy: Given a valid passport image, When the system calls the ID provider, Then verification completes within 60 seconds and onboarding advances. Alternative: Given a low-quality image, When submitted, Then the customer is prompted to retake before submission. Failure: Given the provider is unavailable, When…"
+       },
+       {
+        "step": "Step 4",
+        "artefact": "Traceability Matrix",
+        "image": "/files/ba-playbooks/samples/pb04_out-4.png",
+        "caption": "Build the Traceability Matrix. REQ-014 → IDV-03, IDV-04 → TC-027, TC-028, TC-031 (traced). REQ-015 → PRV-02 → TC-040, TC-041 (traced). REQ-016 → IDV-04 → TC-050, TC-051 (traced). Orphan check run in both directions before sign-off. Sign-off: approved by Priya Singh (Sponsor) and Marcus Lee (Tech Lead), 18 August 2026. *Illustrative worked example…"
+       }
+      ]
+     }
     ]
    },
    "presenter": {
@@ -1533,6 +1764,58 @@
      "Agree the weights before you score the options.",
      "Compress to a one-page case an exec reads in sixty seconds.",
      "Your output (One-Page Business Case) feeds the next playbook"
+    ],
+    "samples": [
+     {
+      "code": "05",
+      "title": "Solution Design & Business Cases",
+      "prompt": "You are my BA agent. We are running BAS Playbook 05 — Solution Design & Business Cases.\nGenerate and score solution options, size benefits and costs, and build a one-page business case execs will actually read.\n\nOperate one step at a time. Never invent facts: if an input is missing, ask me for it or flag the gap explicitly as an assumption. Draft in plain business language. I am the BA — I review, decide and own every output.\n\nPLAYBOOK INPUTS\n1. Requirements Catalogue and Story Backlog — What needs to be solved — outputs of Playbook 04.\n2. Constraint Set — Budget envelope, timeline, regulatory boundary, in-house capability, vendor preferences.\n\nSTEP 1 — GENERATE SOLUTION OPTIONS\nInputs: Requirements Catalogue, Constraint Set\nDeliberately generate at least three meaningfully different options:\n- Build vs Buy vs Configure-existing — at minimum, one of each\n- For each option, describe the architecture in two or three sentences\n- Name the major components, integrations, and data flows\n- Identify the implicit assumptions each option carries\nSuccess criteria:\n- At least three genuinely different options exist\n- Each option could plausibly be chosen — no straw men\n- Assumptions are surfaced, not buried\nFor each option:\n- Option Name\n- Architecture Summary (2–3 sentences)\n- Major Components\n- Integrations\n- Key Assumptions\nStep output: Solution Options\n\nSTEP 2 — SCORE THE OPTIONS\nInputs: Solution Options, Constraint Set\nScore each option against weighted criteria:\n- Define five to seven scoring criteria (fit, cost, time, risk, scalability, lock-in)\n- Weight criteria so the weights sum to 100\n- Score each option 1–5 against each criterion, with a one-line rationale\n- Calculate weighted totals and identify the recommendation\nSuccess criteria:\n- Weights are agreed before scoring (no anchoring on a preferred option)\n- Every score has a rationale\n- The recommendation falls naturally out of the maths\nRespond with:\n- Scoring Criteria with Weights\n- Solution Options Matrix (criterion x option, scores + rationales)\n- Weighted Totals and Recommendation\nStep output: Solution Options Matrix\n\nSTEP 3 — SIZE COSTS AND BENEFITS\nInputs: Solution Options Matrix, Recommended Option\nFor the recommended option:\n- Build a 3-year cost model: one-off (build/licence/setup) and recurring (run/support)\n- Build a 3-year benefits model from the Value Leak Analysis: revenue, cost saved, risk reduced\n- State assumptions for every line item, especially benefit ramp-up\n- Be conservative — discount benefits, not costs\nSuccess criteria:\n- Costs and benefits both have explicit assumptions\n- Benefits ramp realistically (no full benefits in month one)\n- Numbers reconcile to the Value Leak Analysis\nRespond with:\n- 3-Year Cost Model (table)\n- 3-Year Benefits Model (table)\n- Assumption Log\n- Net Present Value and Payback Period\nStep output: Cost-Benefit Model\n\nSTEP 4 — BUILD THE ONE-PAGE BUSINESS CASE\nInputs: Solution Options Matrix, Cost-Benefit Model\nCompress everything into one page an exec will read:\n- Lead with the outcome and the ask, not the background\n- Show the recommended option, headline numbers, and the runner-up for context\n- Include the top three risks and the mitigations\n- Close with the decision required and the date by which it's needed\nSuccess criteria:\n- Fits on one A4 page in 11pt or larger\n- An exec who skims only the first three lines understands the ask\n- Risks are real, not boilerplate\nRespond with:\n- Outcome and Ask (top of page)\n- Recommended Option Summary\n- Headline Numbers (NPV, payback, year-1 cost)\n- Top 3 Risks and Mitigations\n- Decision Required and By When\nStep output: One-Page Business Case\n\nRun STEP 1 only, using my inputs below. Then stop and wait for my review before continuing to the next step.\n\nMY INPUTS:\n[paste your initiative brief, stakeholder list and any other inputs here]",
+      "templates": [
+       {
+        "label": "05_Solution_Design_Blank_Template.pptx",
+        "href": "/files/ba-playbooks/05_Solution_Design_Blank_Template.pptx",
+        "kind": "blank",
+        "preview": "/files/ba-playbooks/samples/pb05_tpl-1.png"
+       },
+       {
+        "label": "05_Solution_Design_Worked_Example.pptx",
+        "href": "/files/ba-playbooks/05_Solution_Design_Worked_Example.pptx",
+        "kind": "worked",
+        "preview": "/files/ba-playbooks/samples/pb05_out-1.png"
+       },
+       {
+        "label": "BAS_Playbook_Template_Blank.pdf",
+        "href": "/files/ba-playbooks/BAS_Playbook_Template_Blank.pdf",
+        "kind": "pdf"
+       }
+      ],
+      "outputs": [
+       {
+        "step": "Step 1",
+        "artefact": "Solution Options",
+        "image": "/files/ba-playbooks/samples/pb05_out-1.png",
+        "caption": "Generate Solution Options. Option A — Build in-house KYC: build ID verification and orchestration in-house against core banking (KYC service, orchestration, fraud model); assumes we can hire ML/KYC engineers. Option B — Buy SaaS ID-verification: customer form → SaaS API → core banking via middleware (SaaS provider, integration middleware);…"
+       },
+       {
+        "step": "Step 2",
+        "artefact": "Weighted Scorecard",
+        "image": "/files/ba-playbooks/samples/pb05_out-2.png",
+        "caption": "Score the Options. Weights agreed before scoring (illustrative): customer experience .25, time-to-benefit .20, compliance fit .20, 3-year cost .20, integration risk .15. Weighted scores (of 5): B = 4.25, A = 3.35, C = 3.15. Recommendation: Buy SaaS (Option B), phased — it falls out of the maths, not a preference."
+       },
+       {
+        "step": "Step 3",
+        "artefact": "Cost-Benefit Model",
+        "image": "/files/ba-playbooks/samples/pb05_out-3.png",
+        "caption": "Size Costs and Benefits. Option B: Year 1 — cost $480k, benefit $210k; Year 2 — cost $170k, benefit $560k; Year 3 — cost $170k, benefit $610k (conservative ramp). NPV (3-yr): $890k; payback 14 months; year-1 cost $480k. Benefits reconcile to Playbook 03’s $517k/yr addressable value; every number carries its assumption in a footnote."
+       },
+       {
+        "step": "Step 4",
+        "artefact": "One-Page Business Case",
+        "image": "/files/ba-playbooks/samples/pb05_out-4.png",
+        "caption": "Build the One-Page Business Case. The ask: approve $480k year-1 to cut onboarding from 14 to 5 days; NPV $890k, payback 14 months. Recommended option: Option B — buy the SaaS ID-verification platform and integrate via middleware. Top 3 risks: vendor outage halts onboarding (queue-and-retry plus a manual fallback path); false-accept rate breaches…"
+       }
+      ]
+     }
     ]
    },
    "presenter": {
@@ -1790,6 +2073,58 @@
      "Map change with ADKAR — skip a stage and adoption stalls.",
      "Diarise benefits reviews before go-live, not after.",
      "Your output (Benefits Realisation Plan) feeds the next playbook"
+    ],
+    "samples": [
+     {
+      "code": "06",
+      "title": "Delivery & Change",
+      "prompt": "You are my BA agent. We are running BAS Playbook 06 — Delivery & Change.\nSequence delivery, plan change adoption, and define benefits realisation so the value actually lands and sticks beyond go-live.\n\nOperate one step at a time. Never invent facts: if an input is missing, ask me for it or flag the gap explicitly as an assumption. Draft in plain business language. I am the BA — I review, decide and own every output.\n\nPLAYBOOK INPUTS\n1. Approved Business Case and Story Backlog — The agreed solution and what must be built — outputs of Playbooks 04 and 05.\n2. Change Impact Inputs — Affected roles, current ways of working, organisational change capacity.\n\nSTEP 1 — SEQUENCE THE DELIVERY ROADMAP\nInputs: Approved Business Case, Story Backlog\nConvert the backlog into a sequenced roadmap:\n- Group stories into releases that each deliver standalone value\n- Sequence releases so dependencies are respected and risk is retired early\n- Set a realistic target date for each release based on team capacity\n- Identify the minimum viable release that can go live first\nSuccess criteria:\n- Each release has a stated value, not just a feature list\n- The first release is genuinely minimum viable\n- The roadmap is honest about capacity, not aspirational\nRespond with:\n- Delivery Roadmap (release -> stories -> target date -> value delivered)\n- Dependency Map (technical and organisational)\n- Minimum Viable Release Definition\nStep output: Delivery Roadmap\n\nSTEP 2 — RUN THE CHANGE IMPACT ASSESSMENT\nInputs: Delivery Roadmap, Change Impact Inputs\nFor each affected group:\n- Identify what specifically changes: process, system, role, performance measure\n- Rate the change magnitude (small / moderate / significant / transformational)\n- Identify what training, comms or support each group needs\n- Identify groups whose performance measures must change to support the new way of working\nSuccess criteria:\n- No affected group is missed\n- Magnitude ratings are consistent across groups\n- Performance measure changes are explicit, not implied\nFor each affected group:\n- Group\n- What Changes\n- Magnitude\n- Training Needed\n- Comms Needed\n- Performance Measure Changes\nStep output: Change Impact Assessment\n\nSTEP 3 — BUILD THE CHANGE PLAN\nInputs: Change Impact Assessment, Delivery Roadmap\nDesign interventions that build awareness, capability and adoption:\n- Map interventions to the ADKAR stages (Awareness, Desire, Knowledge, Ability, Reinforcement)\n- Sequence interventions so they precede the technical release that needs them\n- Identify change champions in each affected group\n- Define adoption metrics that will be tracked through and after go-live\nSuccess criteria:\n- Every ADKAR stage has at least one intervention\n- Interventions are timed against the roadmap, not floating\n- Adoption metrics are leading, not just lagging\nRespond with:\n- Change Plan (intervention -> ADKAR stage -> audience -> owner -> date)\n- Champion Network (named people per affected group)\n- Adoption Metric Set\nStep output: Change Plan\n\nSTEP 4 — DEFINE THE BENEFITS REALISATION PLAN\nInputs: Approved Business Case, Delivery Roadmap, Change Plan\nMake sure the value actually lands:\n- Restate each benefit from the business case with its measurement method\n- Set a baseline measurement before go-live for every benefit\n- Define the cadence and owner for each post-go-live measurement\n- Schedule a formal benefits review at 3, 6, and 12 months\n- Define the corrective actions if benefits do not track to plan\nSuccess criteria:\n- Every benefit has a baseline, owner, and measurement cadence\n- Reviews are diarised before go-live, not after\n- Corrective actions are pre-agreed, not invented under pressure\nRespond with:\n- Benefits Realisation Plan (benefit -> measure -> baseline -> target -> owner -> cadence)\n- Review Schedule (3 / 6 / 12 months)\n- Corrective Action Playbook\nStep output: Benefits Realisation Plan\n\nRun STEP 1 only, using my inputs below. Then stop and wait for my review before continuing to the next step.\n\nMY INPUTS:\n[paste your initiative brief, stakeholder list and any other inputs here]",
+      "templates": [
+       {
+        "label": "06_Delivery_Blank_Template.pptx",
+        "href": "/files/ba-playbooks/06_Delivery_Blank_Template.pptx",
+        "kind": "blank",
+        "preview": "/files/ba-playbooks/samples/pb06_tpl-1.png"
+       },
+       {
+        "label": "06_Delivery_Worked_Example.pptx",
+        "href": "/files/ba-playbooks/06_Delivery_Worked_Example.pptx",
+        "kind": "worked",
+        "preview": "/files/ba-playbooks/samples/pb06_out-1.png"
+       },
+       {
+        "label": "BAS_Playbook_Template_Blank.pdf",
+        "href": "/files/ba-playbooks/BAS_Playbook_Template_Blank.pdf",
+        "kind": "pdf"
+       }
+      ],
+      "outputs": [
+       {
+        "step": "Step 1",
+        "artefact": "Delivery Roadmap",
+        "image": "/files/ba-playbooks/samples/pb06_out-1.png",
+        "caption": "Sequence the Delivery Roadmap. R1 (months 1–2): API ID verification — new individual customers verified in real time. R2 (months 3–4): risk triage + parallel provisioning — exceptions only; same-hour activation. R3 (months 5–6): document automation — auto-validated documents. MVP defined as R1; dependencies drawn (R2 depends on D1’s false-accept…"
+       },
+       {
+        "step": "Step 2",
+        "artefact": "Change Impact Assessment",
+        "image": "/files/ba-playbooks/samples/pb06_out-2.png",
+        "caption": "Run the Change Impact Assessment. Compliance reviewers — significant: from full review to exception-only; training: 2-day exception triage course; measure shifts from volume to exception accuracy. Onboarding Ops — moderate: from keying data to handling unclear cases; training: new tooling walkthrough; measures: average handle time, rework rate.…"
+       },
+       {
+        "step": "Step 3",
+        "artefact": "ADKAR Journey",
+        "image": "/files/ba-playbooks/samples/pb06_out-3.png",
+        "caption": "Build the Change Plan. ADKAR-mapped and sequenced ahead of each release. Awareness: all-hands on the 14 → 5 day goal. Desire: show reviewers the rework they lose. Knowledge: exception triage course before R2. Ability: shadowed go-live with real applications. Reinforcement: daily queue-depth review. Adoption metrics: auto-pass rate, reviewer…"
+       },
+       {
+        "step": "Step 4",
+        "artefact": "Benefits Realisation Plan",
+        "image": "/files/ba-playbooks/samples/pb06_out-4.png",
+        "caption": "Define the Benefits Realisation Plan. Benefit 1: time-to-first-transaction — measure: median days form → first transaction; baseline 14 days; target 5 days by month 6; owner: Head of Customer Ops; monthly. Benefit 2: onboarding drop-off — measure: % abandoning before first transaction; baseline 22%; target <10%; owner: Head of CX; monthly. Benefit 3:…"
+       }
+      ]
+     }
     ]
    },
    "presenter": {
@@ -2015,6 +2350,330 @@
      "Shared board"
     ]
    }
+  },
+  {
+   "id": "bonus",
+   "num": "B1–B3",
+   "title": "Bonus Job-Seeker Playbooks",
+   "dayId": "bonus",
+   "time": "Self-paced",
+   "minutes": 60,
+   "subtitle": "Same discipline, pointed at your career: run your job search, tailor each application and rank live roles with your agent.",
+   "participant": {
+    "bigIdea": "Run your career move like a BA initiative: frame the target, evidence the value, decide with data.",
+    "overview": "Three take-home playbooks built on the same four-step pattern as Playbooks 01–06. Each comes as a complete kit: the paste-ready prompt, a blank template and a worked example, and a sample output for every step.\n\nThe worked examples follow a fictional candidate who led the Northbridge onboarding work you saw today.",
+    "objectives": [
+     "Frame a target role and evidence the value you move (B1)",
+     "Score your fit for a specific job ad and close the gaps before applying (B2)",
+     "Build a match model and rank live roles so effort goes where it pays (B3)"
+    ],
+    "keyPoints": [
+     {
+      "title": "Same four steps",
+      "body": "Inputs, four steps, success criteria and named outputs, exactly like 01–06."
+     },
+     {
+      "title": "Evidence, not adjectives",
+      "body": "Every claim in a resume or interview traces to an artefact and an outcome."
+     },
+     {
+      "title": "You own the send",
+      "body": "The agent drafts and scores. You review and approve every application."
+     }
+    ],
+    "sections": [
+     {
+      "heading": "B1 — BA Job Search & Interview Playbook",
+      "body": "*Run your own job search the way you would run a BA initiative: frame the target, evidence the value, and convert interviews into offers.*\n\n**Inputs**\n\n- **Career Outcome Statement** — The role, level, sector and outcome you're targeting in the next 3–6 months, written as one sentence.\n- **Evidence Inventory** — Your initiatives, artefacts (briefs, BPMN, business cases) and quantified outcomes you can point to.\n\n**Step 1 — Frame the Target Role** · *Inputs: Career Outcome Statement*\n\n- Restate the role you want in one sentence: level, domain, and the problem you solve\n- Identify the measurable outcome an employer is buying (the value you move)\n- Capture three assumptions about the market and three open questions to test\n- Avoid job-title chasing — anchor on the outcome you create\n\n*Success:* The target is one sentence and outcome-focused; Assumptions and open questions about the market are explicit; No vague 'open to anything' positioning.\n\n**Produce:** Target Role Statement (one sentence); Value You Move; Assumptions (3); Open Questions (3). **Output:** Positioning Brief (one page)\n\n**Step 2 — Map the Hiring Stakeholders** · *Inputs: Positioning Brief, target company list*\n\n- Identify the hiring manager, the recruiter, and the panel — who decides what\n- Capture what success looks like for each (what pain are they hiring to fix)\n- Find a warm path in: referral, alumni, community, content\n- Flag who can accelerate or block your application\n\n*Success:* Decision-makers are named, not just companies; Each contact has a stated 'what success looks like'; At least one warm path per priority target.\n\n**For each contact:** Name / Role; Company; What They Need; Warm Path In; Risk Flag (Blocker / Neutral / Accelerator). **Output:** Target & Contact Map\n\n**Step 3 — Build the Evidence Portfolio** · *Inputs: Evidence Inventory, target role requirements*\n\n- For each target requirement, pick one artefact that proves you can do it\n- Rewrite each achievement as outcome + metric + your specific contribution\n- Sanitise client artefacts (Discovery Brief, BPMN, business case) into a portfolio\n- Prepare two STAR stories per core BA competency\n\n*Success:* Every key requirement is matched to evidence; Achievements are quantified, not described; Portfolio artefacts are confidential-safe.\n\n**For each achievement:** Requirement Matched; Artefact / Story; Outcome + Metric; Your Contribution. **Output:** Evidence Portfolio + STAR bank\n\n**Step 4 — Run the Interview & Offer Loop** · *Inputs: Target & Contact Map, Evidence Portfolio*\n\n- Prepare a 90-second value pitch tied to the employer's outcome\n- For each stage, rehearse one live BA artefact you can sketch on the spot\n- Capture feedback after every interview and feed it forward\n- Define your offer criteria and walk-away point before negotiating\n\n*Success:* Pitch is outcome-led, not a CV recital; You can produce a BA artefact live under light pressure; Offer criteria are set before, not during, the negotiation.\n\n**None** 90-second Value Pitch; Live Artefact per stage; Feedback Log; Offer Criteria & Walk-away. **Output:** Interview Plan + Offer Decision\n\n**Outputs:** Positioning Brief · Target & Contact Map · Evidence Portfolio + STAR bank · Interview Plan + Offer Decision"
+     },
+     {
+      "heading": "B2 — Application Tailoring & Fit Assessment",
+      "body": "*Review a role against your resume and cover letter, score the fit, close the gaps, and produce tailored, review-ready application material.*\n\n**Inputs**\n\n- **Job Advertisement** — Full text of the target role: title, responsibilities, selection criteria, must-haves and nice-to-haves.\n- **Current Resume & Cover Letter** — Your latest resume plus a base cover letter (or template) to tailor for this role.\n\n**Step 1 — Deconstruct the Job Ad** · *Inputs: Job Advertisement*\n\n- State the role's core mandate in one sentence and the outcome the employer is buying\n- Separate the must-have requirements from the nice-to-haves and the cultural signals\n- Capture the selection criteria and the keywords a screener or ATS will scan for, verbatim\n- Note seniority, domain and any disqualifiers (location, work rights, certifications)\n\n*Success:* Must-haves are clearly separated from nice-to-haves; Selection criteria and ATS keywords are captured word-for-word; Disqualifiers are flagged before any effort is spent.\n\n**Produce:** Role Mandate (one sentence); Must-Haves; Nice-to-Haves; Selection Criteria & Keywords; Disqualifiers. **Output:** Job Ad Breakdown\n\n**Step 2 — Compare Against Your Resume & Cover Letter** · *Inputs: Job Ad Breakdown, Current Resume & Cover Letter*\n\n- Match each must-have to concrete evidence in your resume, or mark it missing\n- Check the career summary and cover letter answer the mandate in the first three lines\n- Identify the keyword gaps a screen or ATS would penalise\n- Flag any claim not backed by an achievement with a metric\n\n*Success:* Every must-have is marked Strong / Partial / Missing; Keyword gaps are explicit; Unsupported claims are flagged.\n\n**For each requirement:** Requirement; Evidence in Resume (quote / section); Coverage (Strong / Partial / Missing); Keyword Match (Y/N); Note. **Output:** Fit Comparison Matrix\n\n**Step 3 — Score Suitability & Identify Gaps** · *Inputs: Fit Comparison Matrix*\n\n- Score fit against the weighted must-haves to a single 0–100 suitability score\n- Classify the role: Strong apply / Apply with tailoring / Stretch / Skip\n- List the top gaps and whether each is closeable now (reword), soon (upskill), or not\n- Recommend the next step for each gap and an explicit apply / no-go call\n\n*Success:* The suitability score is defensible from the matrix; The apply / no-go call is explicit, not hedged; Each gap has a concrete next step.\n\n**Produce:** Suitability Score (0–100); Verdict (Strong apply / Tailor / Stretch / Skip); Top Gaps; Next Step per Gap; Apply Decision & Why. **Output:** Suitability Assessment\n\n**Step 4 — Produce Tailored Application Material** · *Inputs: Suitability Assessment, Current Resume & Cover Letter*\n\n- Rewrite the career summary to lead with the role's mandate and your matching outcome\n- Rework 3–5 achievements into outcome + metric + relevance, weaving in missing keywords honestly\n- Draft a tailored cover letter that answers the selection criteria in order\n- Produce a change log so every edit can be reviewed before sending\n\n*Success:* The summary mirrors the mandate without fabricating experience; Achievements are quantified and keyword-aligned; Every edit is listed for your review.\n\n**Produce:** Tailored Career Summary; Revised Achievements (before → after); Tailored Cover Letter; Edit Change Log; Reviewer Checklist. **Output:** Tailored Resume & Cover Letter (review-ready)\n\n**Outputs:** Job Ad Breakdown · Fit Comparison Matrix · Suitability Assessment · Tailored Resume & Cover Letter"
+     },
+     {
+      "heading": "B3 — AI Opportunity Match & Pipeline",
+      "body": "*Connect a job-seeker app, pull live roles, score the match for each, and focus your effort on the opportunities most worth applying for.*\n\n**Inputs**\n\n- **Candidate Profile & Preferences** — Your structured skills, experience and outcomes, plus preferences: level, salary, location/remote, sectors, deal-breakers.\n- **Connected Job Source** — An authenticated job-seeker app / API or saved-search export (e.g. Seek, LinkedIn, Indeed) that returns a list of roles.\n\n**Step 1 — Build the Candidate Profile & Match Model** · *Inputs: Candidate Profile & Preferences*\n\n- Convert your resume into a structured skills / experience / outcome profile the model can score\n- Define weighted match criteria (skills, seniority, domain, location/remote, salary, growth)\n- Set hard filters (deal-breakers) that auto-reject roles (e.g. on-site only, wrong level)\n- Define score bands and the action each triggers (apply now / tailor / watch / skip)\n\n*Success:* Criteria are weighted and sum to 100; Hard filters are explicit and testable; Score bands map to clear actions.\n\n**Produce:** Structured Candidate Profile; Weighted Criteria (sum 100); Hard Filters; Score Bands & Actions. **Output:** Match Model\n\n**Step 2 — Connect the App & Pull Roles** · *Inputs: Connected Job Source, Match Model*\n\n- Connect the job-seeker app (or import a saved-search export) and pull the current role list\n- Normalise each role to a common record: title, employer, location, salary, requirements, link\n- De-duplicate cross-board repeats and drop any role that fails a hard filter\n- Flag stale, expired or low-information ads for exclusion\n\n*Success:* Every role is normalised to the same fields; Duplicates and hard-filter failures are removed; The remaining list is current and complete.\n\n**For each role:** Title; Employer; Location / Remote; Salary; Key Requirements; Source Link; Status (kept / filtered / stale). **Output:** Normalised Role List\n\n**Step 3 — Score & Rank the Opportunities** · *Inputs: Normalised Role List, Match Model*\n\n- Score each role against the weighted criteria to a 0–100 match score\n- Show the per-criterion breakdown so each score is explainable, not a black box\n- Identify the specific gap(s) lowering each role's score\n- Rank the roles and group them into the action bands from the model\n\n*Success:* Every role has an explainable score with a breakdown; Gaps per role are named; The ranking is consistent with the weights.\n\n**For each role:** Match Score (0–100); Per-Criterion Breakdown; Top Gap(s); Action Band; Effort-to-Apply (Low / Med / High). **Output:** Scored Opportunity Board\n\n**Step 4 — Prioritise & Trigger Applications** · *Inputs: Scored Opportunity Board*\n\n- Select the top roles by match score against a realistic weekly application capacity\n- For each pick, hand off to the Application Tailoring playbook (B2) for tailored material\n- Track each role: applied → responded → interview → outcome, and log the result\n- Re-tune the criteria weights based on which applications actually convert\n\n*Success:* The shortlist respects real weekly capacity; Each pick has a next action and an owner (you); Outcomes feed back to improve future scoring.\n\n**Produce:** Weekly Shortlist (ranked); Action per Role (apply / tailor / watch); Tracking Board fields; Feedback Loop to Match Model. **Output:** Application Action Plan\n\n**Outputs:** Match Model · Normalised Role List · Scored Opportunity Board · Application Action Plan"
+     }
+    ],
+    "activities": [
+     {
+      "id": "bonus-b1-act1",
+      "title": "B1 · Step 1 — Frame the Target Role",
+      "minutes": 15,
+      "instructions": "Run Step 1 of B1 with your agent on your own search, then check it against the success criteria:\n\n- The target is one sentence and outcome-focused\n- Assumptions and open questions about the market are explicit\n- No vague 'open to anything' positioning",
+      "prompts": [
+       {
+        "id": "bonus-b1-s1-r0",
+        "label": "Target Role Statement (one sentence)"
+       },
+       {
+        "id": "bonus-b1-s1-r1",
+        "label": "Value You Move"
+       },
+       {
+        "id": "bonus-b1-s1-r2",
+        "label": "Assumptions (3)"
+       },
+       {
+        "id": "bonus-b1-s1-r3",
+        "label": "Open Questions (3)"
+       }
+      ]
+     },
+     {
+      "id": "bonus-b2-act1",
+      "title": "B2 · Step 1 — Deconstruct the Job Ad",
+      "minutes": 15,
+      "instructions": "Run Step 1 of B2 with your agent on your own search, then check it against the success criteria:\n\n- Must-haves are clearly separated from nice-to-haves\n- Selection criteria and ATS keywords are captured word-for-word\n- Disqualifiers are flagged before any effort is spent",
+      "prompts": [
+       {
+        "id": "bonus-b2-s1-r0",
+        "label": "Role Mandate (one sentence)"
+       },
+       {
+        "id": "bonus-b2-s1-r1",
+        "label": "Must-Haves"
+       },
+       {
+        "id": "bonus-b2-s1-r2",
+        "label": "Nice-to-Haves"
+       },
+       {
+        "id": "bonus-b2-s1-r3",
+        "label": "Selection Criteria & Keywords"
+       },
+       {
+        "id": "bonus-b2-s1-r4",
+        "label": "Disqualifiers"
+       }
+      ]
+     },
+     {
+      "id": "bonus-b3-act1",
+      "title": "B3 · Step 1 — Build the Candidate Profile & Match Model",
+      "minutes": 15,
+      "instructions": "Run Step 1 of B3 with your agent on your own search, then check it against the success criteria:\n\n- Criteria are weighted and sum to 100\n- Hard filters are explicit and testable\n- Score bands map to clear actions",
+      "prompts": [
+       {
+        "id": "bonus-b3-s1-r0",
+        "label": "Structured Candidate Profile"
+       },
+       {
+        "id": "bonus-b3-s1-r1",
+        "label": "Weighted Criteria (sum 100)"
+       },
+       {
+        "id": "bonus-b3-s1-r2",
+        "label": "Hard Filters"
+       },
+       {
+        "id": "bonus-b3-s1-r3",
+        "label": "Score Bands & Actions"
+       }
+      ]
+     }
+    ],
+    "samples": [
+     {
+      "code": "B1",
+      "title": "BA Job Search & Interview Playbook",
+      "prompt": "You are my BA agent. We are running BAS Playbook B1 — BA Job Search & Interview Playbook.\nRun your own job search the way you would run a BA initiative: frame the target, evidence the value, and convert interviews into offers.\n\nOperate one step at a time. Never invent facts: if an input is missing, ask me for it or flag the gap explicitly as an assumption. Draft in plain business language. I am the BA — I review, decide and own every output.\n\nPLAYBOOK INPUTS\n1. Career Outcome Statement — The role, level, sector and outcome you're targeting in the next 3–6 months, written as one sentence.\n2. Evidence Inventory — Your initiatives, artefacts (briefs, BPMN, business cases) and quantified outcomes you can point to.\n\nSTEP 1 — FRAME THE TARGET ROLE\nInputs: Career Outcome Statement\nTreat the search like Discovery:\n- Restate the role you want in one sentence: level, domain, and the problem you solve\n- Identify the measurable outcome an employer is buying (the value you move)\n- Capture three assumptions about the market and three open questions to test\n- Avoid job-title chasing — anchor on the outcome you create\nSuccess criteria:\n- The target is one sentence and outcome-focused\n- Assumptions and open questions about the market are explicit\n- No vague 'open to anything' positioning\nProduce:\n- Target Role Statement (one sentence)\n- Value You Move\n- Assumptions (3)\n- Open Questions (3)\nStep output: Positioning Brief (one page)\n\nSTEP 2 — MAP THE HIRING STAKEHOLDERS\nInputs: Positioning Brief, target company list\nFor each target company:\n- Identify the hiring manager, the recruiter, and the panel — who decides what\n- Capture what success looks like for each (what pain are they hiring to fix)\n- Find a warm path in: referral, alumni, community, content\n- Flag who can accelerate or block your application\nSuccess criteria:\n- Decision-makers are named, not just companies\n- Each contact has a stated 'what success looks like'\n- At least one warm path per priority target\nFor each contact:\n- Name / Role\n- Company\n- What They Need\n- Warm Path In\n- Risk Flag (Blocker / Neutral / Accelerator)\nStep output: Target & Contact Map\n\nSTEP 3 — BUILD THE EVIDENCE PORTFOLIO\nInputs: Evidence Inventory, target role requirements\nConvert your work into proof:\n- For each target requirement, pick one artefact that proves you can do it\n- Rewrite each achievement as outcome + metric + your specific contribution\n- Sanitise client artefacts (Discovery Brief, BPMN, business case) into a portfolio\n- Prepare two STAR stories per core BA competency\nSuccess criteria:\n- Every key requirement is matched to evidence\n- Achievements are quantified, not described\n- Portfolio artefacts are confidential-safe\nFor each achievement:\n- Requirement Matched\n- Artefact / Story\n- Outcome + Metric\n- Your Contribution\nStep output: Evidence Portfolio + STAR bank\n\nSTEP 4 — RUN THE INTERVIEW & OFFER LOOP\nInputs: Target & Contact Map, Evidence Portfolio\nTreat each interview as a working session:\n- Prepare a 90-second value pitch tied to the employer's outcome\n- For each stage, rehearse one live BA artefact you can sketch on the spot\n- Capture feedback after every interview and feed it forward\n- Define your offer criteria and walk-away point before negotiating\nSuccess criteria:\n- Pitch is outcome-led, not a CV recital\n- You can produce a BA artefact live under light pressure\n- Offer criteria are set before, not during, the negotiation\nRespond with:\n- 90-second Value Pitch\n- Live Artefact per stage\n- Feedback Log\n- Offer Criteria & Walk-away\nStep output: Interview Plan + Offer Decision\n\nRun STEP 1 only, using my inputs below. Then stop and wait for my review before continuing to the next step.\n\nMY INPUTS:\n[paste your initiative brief, stakeholder list and any other inputs here]",
+      "templates": [
+       {
+        "label": "B1_Job_Search_Blank_Template.pptx",
+        "href": "/files/ba-playbooks/B1_Job_Search_Blank_Template.pptx",
+        "kind": "blank",
+        "preview": "/files/ba-playbooks/samples/pbB1_tpl-1.png"
+       },
+       {
+        "label": "B1_Job_Search_Worked_Example.pptx",
+        "href": "/files/ba-playbooks/B1_Job_Search_Worked_Example.pptx",
+        "kind": "worked",
+        "preview": "/files/ba-playbooks/samples/pbB1_out-1.png"
+       }
+      ],
+      "outputs": [
+       {
+        "step": "Step 1",
+        "artefact": "Positioning Brief (one page)",
+        "image": "/files/ba-playbooks/samples/pbB1_out-1.png",
+        "caption": "Frame the Target Role. Target: a Senior BA role in financial services where I cut process cycle time and build defensible business cases. Value moved: time-to-decision and cost-to-serve."
+       },
+       {
+        "step": "Step 2",
+        "artefact": "Target & Contact Map",
+        "image": "/files/ba-playbooks/samples/pbB1_out-2.png",
+        "caption": "Map the Hiring Stakeholders. Name: hiring manager, Transformation Lead. Needs: a BA who can run Discovery solo. Warm path: ex-colleague on her team. Flag: Accelerator."
+       },
+       {
+        "step": "Step 3",
+        "artefact": "Evidence Portfolio + STAR bank",
+        "image": "/files/ba-playbooks/samples/pbB1_out-3.png",
+        "caption": "Build the Evidence Portfolio. Requirement: build business cases. Artefact: one-page case (sanitised). Outcome: $890k NPV approved. Contribution: framed the options and ran the scoring."
+       },
+       {
+        "step": "Step 4",
+        "artefact": "Interview Plan + Offer Decision",
+        "image": "/files/ba-playbooks/samples/pbB1_out-4.png",
+        "caption": "Run the Interview & Offer Loop. Pitch: 'I cut onboarding from 14 to 5 days by reframing the decisions, not just the requirements — here's how I'd approach your cycle-time problem.'"
+       }
+      ]
+     },
+     {
+      "code": "B2",
+      "title": "Application Tailoring & Fit Assessment",
+      "prompt": "You are my BA agent. We are running BAS Playbook B2 — Application Tailoring & Fit Assessment.\nReview a role against your resume and cover letter, score the fit, close the gaps, and produce tailored, review-ready application material.\n\nOperate one step at a time. Never invent facts: if an input is missing, ask me for it or flag the gap explicitly as an assumption. Draft in plain business language. I am the BA — I review, decide and own every output.\n\nPLAYBOOK INPUTS\n1. Job Advertisement — Full text of the target role: title, responsibilities, selection criteria, must-haves and nice-to-haves.\n2. Current Resume & Cover Letter — Your latest resume plus a base cover letter (or template) to tailor for this role.\n\nSTEP 1 — DECONSTRUCT THE JOB AD\nInputs: Job Advertisement\nFrom the job ad:\n- State the role's core mandate in one sentence and the outcome the employer is buying\n- Separate the must-have requirements from the nice-to-haves and the cultural signals\n- Capture the selection criteria and the keywords a screener or ATS will scan for, verbatim\n- Note seniority, domain and any disqualifiers (location, work rights, certifications)\nSuccess criteria:\n- Must-haves are clearly separated from nice-to-haves\n- Selection criteria and ATS keywords are captured word-for-word\n- Disqualifiers are flagged before any effort is spent\nProduce:\n- Role Mandate (one sentence)\n- Must-Haves\n- Nice-to-Haves\n- Selection Criteria & Keywords\n- Disqualifiers\nStep output: Job Ad Breakdown\n\nSTEP 2 — COMPARE AGAINST YOUR RESUME & COVER LETTER\nInputs: Job Ad Breakdown, Current Resume & Cover Letter\nMap your material to the role:\n- Match each must-have to concrete evidence in your resume, or mark it missing\n- Check the career summary and cover letter answer the mandate in the first three lines\n- Identify the keyword gaps a screen or ATS would penalise\n- Flag any claim not backed by an achievement with a metric\nSuccess criteria:\n- Every must-have is marked Strong / Partial / Missing\n- Keyword gaps are explicit\n- Unsupported claims are flagged\nFor each requirement:\n- Requirement\n- Evidence in Resume (quote / section)\n- Coverage (Strong / Partial / Missing)\n- Keyword Match (Y/N)\n- Note\nStep output: Fit Comparison Matrix\n\nSTEP 3 — SCORE SUITABILITY & IDENTIFY GAPS\nInputs: Fit Comparison Matrix\nTurn the comparison into a decision:\n- Score fit against the weighted must-haves to a single 0–100 suitability score\n- Classify the role: Strong apply / Apply with tailoring / Stretch / Skip\n- List the top gaps and whether each is closeable now (reword), soon (upskill), or not\n- Recommend the next step for each gap and an explicit apply / no-go call\nSuccess criteria:\n- The suitability score is defensible from the matrix\n- The apply / no-go call is explicit, not hedged\n- Each gap has a concrete next step\nProduce:\n- Suitability Score (0–100)\n- Verdict (Strong apply / Tailor / Stretch / Skip)\n- Top Gaps\n- Next Step per Gap\n- Apply Decision & Why\nStep output: Suitability Assessment\n\nSTEP 4 — PRODUCE TAILORED APPLICATION MATERIAL\nInputs: Suitability Assessment, Current Resume & Cover Letter\nGenerate review-ready material:\n- Rewrite the career summary to lead with the role's mandate and your matching outcome\n- Rework 3–5 achievements into outcome + metric + relevance, weaving in missing keywords honestly\n- Draft a tailored cover letter that answers the selection criteria in order\n- Produce a change log so every edit can be reviewed before sending\nSuccess criteria:\n- The summary mirrors the mandate without fabricating experience\n- Achievements are quantified and keyword-aligned\n- Every edit is listed for your review\nProduce:\n- Tailored Career Summary\n- Revised Achievements (before → after)\n- Tailored Cover Letter\n- Edit Change Log\n- Reviewer Checklist\nStep output: Tailored Resume & Cover Letter (review-ready)\n\nRun STEP 1 only, using my inputs below. Then stop and wait for my review before continuing to the next step.\n\nMY INPUTS:\n[paste your initiative brief, stakeholder list and any other inputs here]",
+      "templates": [
+       {
+        "label": "B2_Application_Tailoring_Blank_Template.pptx",
+        "href": "/files/ba-playbooks/B2_Application_Tailoring_Blank_Template.pptx",
+        "kind": "blank",
+        "preview": "/files/ba-playbooks/samples/pbB2_tpl-1.png"
+       },
+       {
+        "label": "B2_Application_Tailoring_Worked_Example.pptx",
+        "href": "/files/ba-playbooks/B2_Application_Tailoring_Worked_Example.pptx",
+        "kind": "worked",
+        "preview": "/files/ba-playbooks/samples/pbB2_out-1.png"
+       }
+      ],
+      "outputs": [
+       {
+        "step": "Step 1",
+        "artefact": "Job Ad Breakdown",
+        "image": "/files/ba-playbooks/samples/pbB2_out-1.png",
+        "caption": "Deconstruct the Job Ad. Mandate: own end-to-end Discovery for a payments transformation. Must-haves: 5+ yrs BA, BPMN, stakeholder mgmt. Keywords: elicitation, user stories, BPMN. Disqualifier: must hold current work rights."
+       },
+       {
+        "step": "Step 2",
+        "artefact": "Fit Comparison Matrix",
+        "image": "/files/ba-playbooks/samples/pbB2_out-2.png",
+        "caption": "Compare Against Your Resume & Cover Letter. Requirement: BPMN process mapping. Evidence: 'redesigned onboarding As-Is / To-Be' (Acme role). Coverage: Strong. Keyword match: Y."
+       },
+       {
+        "step": "Step 3",
+        "artefact": "Suitability Assessment",
+        "image": "/files/ba-playbooks/samples/pbB2_out-3.png",
+        "caption": "Score Suitability & Identify Gaps. Score 78/100. Verdict: Apply with tailoring. Top gap: light fintech keyword density — closeable now by rewording two roles. Decision: apply."
+       },
+       {
+        "step": "Step 4",
+        "artefact": "Tailored Resume & Cover Letter (review-ready)",
+        "image": "/files/ba-playbooks/samples/pbB2_out-4.png",
+        "caption": "Produce Tailored Application Material. Summary before: 'Experienced BA.' After: 'Senior BA who cut payments onboarding from 14 to 5 days — seeking to own Discovery on your transformation.'"
+       }
+      ]
+     },
+     {
+      "code": "B3",
+      "title": "AI Opportunity Match & Pipeline",
+      "prompt": "You are my BA agent. We are running BAS Playbook B3 — AI Opportunity Match & Pipeline.\nConnect a job-seeker app, pull live roles, score the match for each, and focus your effort on the opportunities most worth applying for.\n\nOperate one step at a time. Never invent facts: if an input is missing, ask me for it or flag the gap explicitly as an assumption. Draft in plain business language. I am the BA — I review, decide and own every output.\n\nPLAYBOOK INPUTS\n1. Candidate Profile & Preferences — Your structured skills, experience and outcomes, plus preferences: level, salary, location/remote, sectors, deal-breakers.\n2. Connected Job Source — An authenticated job-seeker app / API or saved-search export (e.g. Seek, LinkedIn, Indeed) that returns a list of roles.\n\nSTEP 1 — BUILD THE CANDIDATE PROFILE & MATCH MODEL\nInputs: Candidate Profile & Preferences\nSet the scoring baseline:\n- Convert your resume into a structured skills / experience / outcome profile the model can score\n- Define weighted match criteria (skills, seniority, domain, location/remote, salary, growth)\n- Set hard filters (deal-breakers) that auto-reject roles (e.g. on-site only, wrong level)\n- Define score bands and the action each triggers (apply now / tailor / watch / skip)\nSuccess criteria:\n- Criteria are weighted and sum to 100\n- Hard filters are explicit and testable\n- Score bands map to clear actions\nProduce:\n- Structured Candidate Profile\n- Weighted Criteria (sum 100)\n- Hard Filters\n- Score Bands & Actions\nStep output: Match Model\n\nSTEP 2 — CONNECT THE APP & PULL ROLES\nInputs: Connected Job Source, Match Model\nIngest the opportunity list:\n- Connect the job-seeker app (or import a saved-search export) and pull the current role list\n- Normalise each role to a common record: title, employer, location, salary, requirements, link\n- De-duplicate cross-board repeats and drop any role that fails a hard filter\n- Flag stale, expired or low-information ads for exclusion\nSuccess criteria:\n- Every role is normalised to the same fields\n- Duplicates and hard-filter failures are removed\n- The remaining list is current and complete\nFor each role:\n- Title\n- Employer\n- Location / Remote\n- Salary\n- Key Requirements\n- Source Link\n- Status (kept / filtered / stale)\nStep output: Normalised Role List\n\nSTEP 3 — SCORE & RANK THE OPPORTUNITIES\nInputs: Normalised Role List, Match Model\nApply the match model:\n- Score each role against the weighted criteria to a 0–100 match score\n- Show the per-criterion breakdown so each score is explainable, not a black box\n- Identify the specific gap(s) lowering each role's score\n- Rank the roles and group them into the action bands from the model\nSuccess criteria:\n- Every role has an explainable score with a breakdown\n- Gaps per role are named\n- The ranking is consistent with the weights\nFor each role:\n- Match Score (0–100)\n- Per-Criterion Breakdown\n- Top Gap(s)\n- Action Band\n- Effort-to-Apply (Low / Med / High)\nStep output: Scored Opportunity Board\n\nSTEP 4 — PRIORITISE & TRIGGER APPLICATIONS\nInputs: Scored Opportunity Board\nConvert scores into a plan:\n- Select the top roles by match score against a realistic weekly application capacity\n- For each pick, hand off to the Application Tailoring playbook (B2) for tailored material\n- Track each role: applied → responded → interview → outcome, and log the result\n- Re-tune the criteria weights based on which applications actually convert\nSuccess criteria:\n- The shortlist respects real weekly capacity\n- Each pick has a next action and an owner (you)\n- Outcomes feed back to improve future scoring\nProduce:\n- Weekly Shortlist (ranked)\n- Action per Role (apply / tailor / watch)\n- Tracking Board fields\n- Feedback Loop to Match Model\nStep output: Application Action Plan\n\nRun STEP 1 only, using my inputs below. Then stop and wait for my review before continuing to the next step.\n\nMY INPUTS:\n[paste your initiative brief, stakeholder list and any other inputs here]",
+      "templates": [
+       {
+        "label": "B3_Opportunity_Pipeline_Blank_Template.pptx",
+        "href": "/files/ba-playbooks/B3_Opportunity_Pipeline_Blank_Template.pptx",
+        "kind": "blank",
+        "preview": "/files/ba-playbooks/samples/pbB3_tpl-1.png"
+       },
+       {
+        "label": "B3_Opportunity_Pipeline_Worked_Example.pptx",
+        "href": "/files/ba-playbooks/B3_Opportunity_Pipeline_Worked_Example.pptx",
+        "kind": "worked",
+        "preview": "/files/ba-playbooks/samples/pbB3_out-1.png"
+       }
+      ],
+      "outputs": [
+       {
+        "step": "Step 1",
+        "artefact": "Match Model",
+        "image": "/files/ba-playbooks/samples/pbB3_out-1.png",
+        "caption": "Build the Candidate Profile & Match Model. Criteria: skills 35, domain 20, level 15, location 15, salary 15. Hard filter: reject if on-site only. Bands: 80+ apply now, 65–79 tailor, 50–64 watch."
+       },
+       {
+        "step": "Step 2",
+        "artefact": "Normalised Role List",
+        "image": "/files/ba-playbooks/samples/pbB3_out-2.png",
+        "caption": "Connect the App & Pull Roles. BA, Acme Bank, Sydney / Hybrid, $140–160k, 'BPMN, payments, stakeholder mgmt', seek.com/123, Status: kept."
+       },
+       {
+        "step": "Step 3",
+        "artefact": "Scored Opportunity Board",
+        "image": "/files/ba-playbooks/samples/pbB3_out-3.png",
+        "caption": "Score & Rank the Opportunities. Acme Bank BA — 86/100 (skills 32/35, domain 18/20, salary 12/15). Gap: light on cloud. Band: Apply now. Effort: Low."
+       },
+       {
+        "step": "Step 4",
+        "artefact": "Application Action Plan",
+        "image": "/files/ba-playbooks/samples/pbB3_out-4.png",
+        "caption": "Prioritise & Trigger Applications. This week: apply to the top 5 (≥80), tailor 3 in the 65–79 band, watch 4. After two weeks, raise the salary weight — no callbacks below $150k."
+       }
+      ]
+     }
+    ],
+    "quiz": [
+     {
+      "q": "The job-seeker playbooks treat your career as…",
+      "opts": [
+       "A numbers game",
+       "A BA initiative — with stakeholders, evidence and decisions",
+       "A recruiter's problem",
+       "Pure luck"
+      ],
+      "a": 1,
+      "why": "The same BA discipline pointed at your career: frame the target role, map the hiring stakeholders, build evidence, run the loop."
+     },
+     {
+      "q": "In B2, what do you do before tailoring your resume?",
+      "opts": [
+       "Send it as-is",
+       "Deconstruct the job ad and score your fit against it",
+       "Call the recruiter",
+       "Rewrite your LinkedIn"
+      ],
+      "a": 1,
+      "why": "Job Ad Breakdown → Fit Comparison Matrix → Suitability Assessment → then tailored material."
+     }
+    ],
+    "takeaways": [
+     "Treat the job search as an initiative with a target outcome",
+     "Tailor to the ad's mandate, not to a generic resume",
+     "Score fit before you spend effort",
+     "Never let an agent submit on your behalf"
+    ]
+   },
+   "presenter": {
+    "purpose": "Self-paced take-home. Signposted in the Wrap; no live delivery.",
+    "openingLine": "Same discipline you used today, now pointed at your own career.",
+    "beats": [
+     {
+      "label": "B1 Job Search & Interview",
+      "minutes": 20,
+      "notes": "Self-paced."
+     },
+     {
+      "label": "B2 Application Tailoring",
+      "minutes": 20,
+      "notes": "Self-paced."
+     },
+     {
+      "label": "B3 Opportunity Match",
+      "minutes": 20,
+      "notes": "Self-paced."
+     }
+    ],
+    "facilitationNotes": "Point participants here during the Wrap. If asked in follow-up, start with B2 on one real job ad. It gives the fastest visible result.",
+    "whatGood": "A tailored application traceable line by line to evidence, and a ranked shortlist with a weekly plan.",
+    "commonFailure": "Letting the agent invent achievements. The fix: every line must trace to the Evidence Inventory, or it is cut.",
+    "debrief": [
+     "Which of your claims could you not evidence?",
+     "What did the fit score change about where you'll apply?"
+    ],
+    "materials": [
+     "B1_Job_Search_Blank_Template.pptx and B1_Job_Search_Worked_Example.pptx",
+     "B2_Application_Tailoring_Blank_Template.pptx and B2_Application_Tailoring_Worked_Example.pptx",
+     "B3_Opportunity_Pipeline_Blank_Template.pptx and B3_Opportunity_Pipeline_Worked_Example.pptx"
+    ]
+   }
   }
  ],
  "resources": [
@@ -2112,6 +2771,42 @@
    "title": "Initiative_Worked_Example.pptx",
    "description": "Initiative one-pager — worked example (Northbridge Digital Bank).",
    "href": "/files/ba-playbooks/Initiative_Worked_Example.pptx",
+   "audience": "participant"
+  },
+  {
+   "title": "B1_Job_Search_Blank_Template.pptx",
+   "description": "Bonus playbook B1 — blank template.",
+   "href": "/files/ba-playbooks/B1_Job_Search_Blank_Template.pptx",
+   "audience": "participant"
+  },
+  {
+   "title": "B1_Job_Search_Worked_Example.pptx",
+   "description": "Bonus playbook B1 — worked example.",
+   "href": "/files/ba-playbooks/B1_Job_Search_Worked_Example.pptx",
+   "audience": "participant"
+  },
+  {
+   "title": "B2_Application_Tailoring_Blank_Template.pptx",
+   "description": "Bonus playbook B2 — blank template.",
+   "href": "/files/ba-playbooks/B2_Application_Tailoring_Blank_Template.pptx",
+   "audience": "participant"
+  },
+  {
+   "title": "B2_Application_Tailoring_Worked_Example.pptx",
+   "description": "Bonus playbook B2 — worked example.",
+   "href": "/files/ba-playbooks/B2_Application_Tailoring_Worked_Example.pptx",
+   "audience": "participant"
+  },
+  {
+   "title": "B3_Opportunity_Pipeline_Blank_Template.pptx",
+   "description": "Bonus playbook B3 — blank template.",
+   "href": "/files/ba-playbooks/B3_Opportunity_Pipeline_Blank_Template.pptx",
+   "audience": "participant"
+  },
+  {
+   "title": "B3_Opportunity_Pipeline_Worked_Example.pptx",
+   "description": "Bonus playbook B3 — worked example.",
+   "href": "/files/ba-playbooks/B3_Opportunity_Pipeline_Worked_Example.pptx",
    "audience": "participant"
   },
   {

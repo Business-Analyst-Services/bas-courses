@@ -8,7 +8,10 @@ const TYPES: Record<string, string> = {
   ".docx": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
   ".xlsx": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
   ".png": "image/png",
+  ".jpg": "image/jpeg",
 };
+
+const INLINE = new Set([".png", ".jpg"]);
 
 /** Course files live in private/files/<course-slug>/… and are only served to enrolled users. */
 export async function GET(_req: Request, { params }: { params: Promise<{ path: string[] }> }) {
@@ -22,11 +25,13 @@ export async function GET(_req: Request, { params }: { params: Promise<{ path: s
   if (!file.startsWith(root + path.sep)) return new Response("Bad path", { status: 400 });
   try {
     const data = await fs.readFile(file);
+    const ext = path.extname(file).toLowerCase();
     return new Response(data, {
       headers: {
         "Content-Type": TYPES[path.extname(file).toLowerCase()] ?? "application/octet-stream",
-        "Content-Disposition": `attachment; filename="${path.basename(file)}"`,
-        "Cache-Control": "private, no-store",
+        // Images display inline (sample outputs, template previews); documents download.
+        "Content-Disposition": `${INLINE.has(ext) ? "inline" : "attachment"}; filename="${path.basename(file)}"`,
+        "Cache-Control": INLINE.has(ext) ? "private, max-age=3600" : "private, no-store",
       },
     });
   } catch {

@@ -15,6 +15,13 @@ for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".json"))) {
     if (sum !== m.minutes) err(f, `${m.id} beats ${sum} ≠ ${m.minutes}`);
     for (const [i, q] of (m.participant?.quiz ?? []).entries()) if (!(q.a >= 0 && q.a < q.opts.length)) err(f, `${m.id} quiz ${i} answer out of range`);
     for (const k of ["bigIdea", "overview", "objectives", "keyPoints", "sections", "activities", "quiz", "takeaways"]) if (m.participant?.[k] == null) err(f, `${m.id} participant.${k} missing`);
+    for (const kit of m.participant?.samples ?? []) {
+      if (!kit.prompt?.trim()) err(f, `${m.id} kit ${kit.code} missing prompt`);
+      if (!kit.templates?.length) err(f, `${m.id} kit ${kit.code} has no template files`);
+      if (!kit.outputs?.length) err(f, `${m.id} kit ${kit.code} has no sample outputs`);
+      const paths = [...(kit.templates ?? []).flatMap((t) => [t.href, t.preview]), ...(kit.outputs ?? []).map((o) => o.image)];
+      for (const h of paths.filter(Boolean)) if (!fs.existsSync("private" + decodeURI(h))) err(f, `${m.id} kit ${kit.code} missing file ${h}`);
+    }
     for (const k of ["purpose", "openingLine", "beats", "facilitationNotes", "whatGood", "commonFailure", "debrief", "materials"]) if (m.presenter?.[k] == null) err(f, `${m.id} presenter.${k} missing`);
   }
   for (const d of c.days) for (const b of d.blocks) if (b.moduleId && !ids.has(b.moduleId)) err(f, `block links missing module ${b.moduleId}`);
