@@ -9,9 +9,10 @@ const TYPES: Record<string, string> = {
   ".xlsx": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
   ".png": "image/png",
   ".jpg": "image/jpeg",
+  ".svg": "image/svg+xml",
 };
 
-const INLINE = new Set([".png", ".jpg"]);
+const INLINE = new Set([".png", ".jpg", ".svg"]);
 
 /** Course files live in private/files/<course-slug>/… and are only served to enrolled users. */
 export async function GET(_req: Request, { params }: { params: Promise<{ path: string[] }> }) {
@@ -28,6 +29,7 @@ export async function GET(_req: Request, { params }: { params: Promise<{ path: s
     const ext = path.extname(file).toLowerCase();
     return new Response(data, {
       headers: {
+        "Content-Security-Policy": "script-src 'none'",
         "Content-Type": TYPES[path.extname(file).toLowerCase()] ?? "application/octet-stream",
         // Images display inline (sample outputs, template previews); documents download.
         "Content-Disposition": `${INLINE.has(ext) ? "inline" : "attachment"}; filename="${path.basename(file)}"`,

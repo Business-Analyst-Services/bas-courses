@@ -929,19 +929,31 @@
         ],
         "sections": [
           {
-            "heading": "Personas",
+            "heading": "What a persona is for",
+            "body": "A persona is a short, evidence-based portrait of one **actor** whose behaviour your initiative needs to change. It is not a marketing segment and not a wish list. Its job at the Initiative Horizon is to keep the team designing for real people — and to hand the impact map a clear 'success looks like' behaviour.\n\n![Annotated persona card for Mia the receiver, showing seven parts: name and role, context, goals, pain points, constraints, success looks like, and an evidence strip](/files/horizons-initiative/visuals/persona-anatomy.svg)\n\n*Anatomy of a persona — seven parts, each traceable to evidence..*"
+          },
+          {
+            "heading": "How to build a persona",
+            "body": "1. **Choose the actor** whose behaviour matters most to your product outcome (start with one; two or three is plenty for an initiative).\n2. **Gather evidence first** — five to eight interviews, analytics, complaints and support logs, observation.\n3. **Cluster what you found** into context, goals, pains, constraints and today's behaviours.\n4. **Write 'success looks like'** as one observable behaviour — this becomes an impact on your impact map.\n5. **Fill the evidence strip** and rate confidence. Any line with no evidence is an assumption to test, not a fact.\n\n![Blank persona template with name and role, quote, six content boxes and an evidence and confidence strip](/files/horizons-initiative/visuals/persona-template.svg)\n\n*Persona template — download the printable PDF from Resources.*"
+          },
+          {
+            "heading": "Running case personas",
             "body": "**Mia, 34, shift-working nurse (illustrative).** Ordered a 30 kg flat-pack wardrobe online. Mostly uses her phone. Already missed one delivery while on a night shift. Wants: to know when it will arrive, or where it can be left. Constraint: can't take calls on the ward; English is her second language.\n\n**Ravi, dispatch coordinator at a mid-sized online retailer (the shipper).** Books consignments from a spreadsheet a few times a day. Unsure of cut-offs and address rules. Wants: a clear, quick booking. Constraint: dispatch is only part of his job.\n\n**Jess, route planner at a Southern Cross Freight depot.** Rekeys addresses that fail validation before the 5 am route lock. Wants: complete, confirmed data before planning. Constraint: subcontractor systems and per-drop KPIs.\n\nEach persona should state the evidence it's based on (data, interviews, complaints)."
           },
           {
-            "heading": "Journey mapping",
-            "body": "| Step | Receiver does | Feels | Elapsed (illus.) | Pain |\n|---|---|---|---|---|\n| Order | Buys online, gets 'ships in 1–2 days' | Hopeful | Day 0 | No delivery day given |\n| Dispatch | Gets generic dispatch email | Uncertain | Day 1 | Tracking says 'in transit' only |\n| Waits | Nothing visible | Frustrated | Day 1–3 | Can't plan around shifts |\n| Attempt | Not home; card left | Annoyed | Day 3 | Nobody asked beforehand |\n| Re-delivery or collection | Drives to depot | Resigned | Day 5–6 | Too heavy for her car |\n\nThe 'attempt' row is the default-discovery insight, now felt from the receiver's side."
+            "heading": "How a journey map works",
+            "body": "A journey map follows **one persona through one scenario**, stage by stage. Read across a row for the story; read down a column for everything happening at that moment. The emotion curve and the elapsed-time row usually show where the outcome leaks.\n\n![Explainer of a journey map grid with rows for stages, does, thinks, feels, elapsed, pain and opportunity, and six build steps](/files/horizons-initiative/visuals/journey-how-it-works.svg)\n\n*How a journey map works — the seven rows and six build steps.*\n\n| Row | Ask | Common mistake |\n|---|---|---|\n| Stages | What phases would the actor name? | Using your internal process steps |\n| Does | What do they physically do? | Writing what the system does |\n| Thinks | What are they wondering? | Leaving it blank |\n| Feels | Up or down at this moment? | Making every step neutral |\n| Elapsed | How long, and how long waiting? | Ignoring waits between steps |\n| Pain | What breaks? | Listing every annoyance equally |\n| Opportunity | What might fix the biggest pain? | Jumping to one solution too early |"
+          },
+          {
+            "heading": "Running case journey",
+            "body": "![Mia's current delivery journey across five stages: order, dispatch, wait, attempt, recover, with the emotion curve dipping lowest at the failed attempt](/files/horizons-initiative/visuals/journey-worked-example.svg)\n\n*Worked example — Mia's journey. The deepest dip is the failed first attempt.*\n\n| Step | Receiver does | Feels | Elapsed (illus.) | Pain |\n|---|---|---|---|---|\n| Order | Buys online, gets 'ships in 1–2 days' | Hopeful | Day 0 | No delivery day given |\n| Dispatch | Gets generic dispatch email | Uncertain | Day 1 | Tracking says 'in transit' only |\n| Waits | Nothing visible | Frustrated | Day 1–3 | Can't plan around shifts |\n| Attempt | Not home; card left | Annoyed | Day 3 | Nobody asked beforehand |\n| Re-delivery or collection | Drives to depot | Resigned | Day 5–6 | Too heavy for her car |\n\nThe 'attempt' row is the default-discovery insight, now felt from the receiver's side.\n\nYour turn: use the blank template below for the persona you chose.\n\n![Blank journey map template with six stages and seven rows](/files/horizons-initiative/visuals/journey-template.svg)\n\n*Journey map template — download the printable PDF from Resources.*"
           }
         ],
         "activities": [
           {
             "id": "hi-s5-act0",
             "title": "Persona and pain point",
-            "instructions": "Pick the actor whose behaviour matters most to your outcome. Write a short persona (context, goal, constraint, evidence) and the single biggest pain point in their current journey.",
+            "instructions": "Pick the actor whose behaviour matters most to your outcome. Using the persona template, write a short persona (context, goal, constraint, evidence). Then sketch the current journey on the journey map template and name the single biggest pain point.",
             "minutes": 10,
             "prompts": [
               {
@@ -998,19 +1010,19 @@
         "openingLine": "\"Who in this story has the worst day — and have any of us actually spoken to them?\"",
         "beats": [
           {
-            "label": "Personas",
+            "label": "Personas: anatomy and how to build",
             "minutes": 7,
-            "notes": "Introduce Mia, Ravi and Jess; ask what evidence each rests on."
+            "notes": "Show the anatomy visual; walk the seven parts and the evidence strip. Introduce Mia, Ravi and Jess."
           },
           {
-            "label": "Journey mapping",
+            "label": "Journey mapping: how it works + Mia's journey",
             "minutes": 8,
-            "notes": "Walk the receiver journey; land on the 'attempt' row."
+            "notes": "Show the how-it-works grid, then the worked example; land on the 'attempt' dip."
           },
           {
             "label": "Activity: persona and pain point",
             "minutes": 10,
-            "notes": "Individual."
+            "notes": "Individual, using the two templates."
           },
           {
             "label": "Debrief",
@@ -1027,8 +1039,11 @@
         ],
         "answerKey": "Running case: Mia (receiver) — biggest pain: nobody asks before the attempt; Ravi (shipper) — unsure of address rules at booking; Jess (planner) — rekeying failed addresses before the 5 am route lock.",
         "materials": [
-          "Persona cards",
-          "Journey map template"
+          "Persona anatomy visual",
+          "Persona template (PDF)",
+          "Journey map explainer",
+          "Mia journey worked example",
+          "Journey map template (PDF)"
         ]
       }
     },
@@ -1664,6 +1679,18 @@
     }
   ],
   "resources": [
+    {
+      "title": "Persona template (printable)",
+      "description": "One-page persona card with evidence and confidence strip.",
+      "href": "/files/horizons-initiative/visuals/persona-template.pdf",
+      "audience": "participant"
+    },
+    {
+      "title": "Journey map template (printable)",
+      "description": "Six-stage grid: does, thinks, feels, elapsed, pain, opportunity.",
+      "href": "/files/horizons-initiative/visuals/journey-template.pdf",
+      "audience": "participant"
+    },
     {
       "title": "Product vision template",
       "description": "For / who / the / is a / that / unlike / our product — with three quality tests.",
