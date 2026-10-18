@@ -25,6 +25,11 @@ for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".json"))) {
     for (const k of ["purpose", "openingLine", "beats", "facilitationNotes", "whatGood", "commonFailure", "debrief", "materials"]) if (m.presenter?.[k] == null) err(f, `${m.id} presenter.${k} missing`);
   }
   for (const d of c.days) for (const b of d.blocks) if (b.moduleId && !ids.has(b.moduleId)) err(f, `block links missing module ${b.moduleId}`);
+  for (const s of c.schedules ?? []) {
+    const linked = (s.days ?? c.days).flatMap((d) => d.blocks.map((b) => b.moduleId).filter(Boolean));
+    for (const id of linked) if (!ids.has(id)) err(f, `schedule ${s.id} links missing module ${id}`);
+    for (const id of ids) if (!linked.includes(id)) err(f, `schedule ${s.id} leaves out module ${id}`);
+  }
   for (const r of c.resources ?? []) if (r.href?.startsWith("/files/") && !fs.existsSync("private" + decodeURI(r.href))) err(f, `missing file ${r.href}`);
   console.log(`✓ ${f}: ${c.modules.length} modules`);
 }

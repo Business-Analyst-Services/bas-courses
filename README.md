@@ -9,7 +9,7 @@ Each person is enrolled per course as a **participant** or a **presenter**.
 | BA Leadership | `ba-leadership` | 2 days |
 | Agile Business Analysis | `agile-ba` | 2 days |
 | Horizons: Strategy / Initiative / Delivery | `horizons-*` | 1 day each (Horizon Series) |
-| Practical AI for End-to-End BA (flagship) | `practical-ai` | 6 weeks, 12 sessions |
+| Practical AI for End-to-End BA (flagship) | `practical-ai` | 12 × 2-hour sessions: 12 weeks (default) or 6-week intensive, switchable from the course menu |
 
 **Stack:** Next.js 15 (App Router) on Vercel · Clerk (login) · Neon Postgres (enrolments, workbook answers, progress, quiz results) · GitHub (source; every push deploys).
 

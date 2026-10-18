@@ -1,16 +1,16 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
+import { getScheduledCourse } from "@/lib/schedule";
 import CourseSidebar from "@/components/CourseSidebar";
 import { requireCourseRole } from "@/lib/access";
-import { getCourse } from "@/lib/courses";
 import { getProgress } from "@/lib/data";
 
 export const dynamic = "force-dynamic";
 
 export default async function CoursePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const course = getCourse(slug);
+  const { course, schedule } = await getScheduledCourse(slug);
   if (!course) notFound();
   const { viewer, role, enrolments } = await requireCourseRole(slug);
   const done = await getProgress(viewer.userId, slug);
@@ -19,7 +19,7 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
   return (
     <>
       <Nav enrolments={enrolments} current={slug} isAdmin={viewer.isAdmin} />
-      <CourseSidebar course={course} done={done} role={role} />
+      <CourseSidebar course={course} schedule={schedule} here={`/c/${slug}`} done={done} role={role} />
         <div className="shell">
         <main className="main">
         <section className="hero">
@@ -41,6 +41,20 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
           {role === "presenter" && <Link className="btn ghost" href={`/c/${slug}/roster`}>Participant roster</Link>}
           <span className={`rolepill ${role}`}>You are a {role}</span>
         </div>
+
+        {course.schedules && course.schedules.length > 1 && schedule && (
+          <>
+            <div className="kicker" style={{ marginBottom: 6 }}>Choose your schedule · same {course.modules.length} sessions, same artefacts</div>
+            <nav className="schedpick" aria-label="Schedule">
+              {course.schedules.map((s) => (
+                <a key={s.id} href={`/c/${slug}/schedule?s=${s.id}&next=/c/${slug}`} className={s.id === schedule.id ? "on" : ""} aria-current={s.id === schedule.id ? "true" : undefined}>
+                  <b>{s.id === schedule.id ? "● " : "○ "}{s.label}</b>
+                  {s.note && <small>{s.note}</small>}
+                </a>
+              ))}
+            </nav>
+          </>
+        )}
 
         {course.caseStudy && (
           <div className="casebar">

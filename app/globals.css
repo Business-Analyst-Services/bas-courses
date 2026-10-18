@@ -339,6 +339,13 @@ a.agrow:hover{background:var(--light)}
 .cbitem.on .sbnum{color:var(--teal2)}
 .sbnum{color:var(--tealdk);font-weight:700;font-size:11.5px;padding-top:1px}
 .sbtick{color:var(--good);font-weight:700;font-size:12px}
+.cbsched .cbpanel{left:auto;right:0;width:340px}
+.cbsched .cbitem{grid-template-columns:22px 1fr 0}
+.schedpick{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 18px}
+.schedpick a{flex:1 1 260px;border:1px solid var(--line);background:#fff;border-radius:14px;padding:12px 14px;color:var(--ink)}
+.schedpick a b{display:block;color:var(--navy);font-size:14px}
+.schedpick a small{color:var(--grey);font-size:12.5px}
+.schedpick a.on{border-color:var(--teal);box-shadow:0 0 0 2px var(--teal) inset;background:var(--ice)}
 .cbprog{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--grey);white-space:nowrap}
 .toc{position:sticky;top:110px;z-index:20;background:var(--bg);padding:10px 0;margin-bottom:12px;display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
 .toc a{font-size:12.5px;font-weight:600;color:var(--navy);background:#fff;border:1px solid var(--line);border-radius:99px;padding:5px 12px;white-space:nowrap}
@@ -358,7 +365,7 @@ a.agrow:hover{background:var(--light)}
   .cbtitle{border:none;width:100%}
   .cbmenu{overflow-x:auto;flex-wrap:nowrap;width:100%}
   .cbdrop{position:static}
-  .cbpanel{left:16px;right:16px;width:auto}
+  .cbpanel,.cbsched .cbpanel{left:16px;right:16px;width:auto}
   .cbprog{display:none}
   .toc{top:58px;overflow-x:auto;flex-wrap:nowrap}
 }

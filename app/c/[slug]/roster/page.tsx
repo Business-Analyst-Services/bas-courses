@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
+import { getScheduledCourse } from "@/lib/schedule";
 import CourseSidebar from "@/components/CourseSidebar";
 import { getProgress } from "@/lib/data";
 import { requireCourseRole } from "@/lib/access";
-import { getCourse } from "@/lib/courses";
 import { ensureSchema, sql } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
@@ -12,7 +12,7 @@ export const dynamic = "force-dynamic";
 export default async function Roster({ params, searchParams }: { params: Promise<{ slug: string }>; searchParams: Promise<{ activity?: string }> }) {
   const { slug } = await params;
   const { activity } = await searchParams;
-  const course = getCourse(slug);
+  const { course, schedule } = await getScheduledCourse(slug);
   if (!course) notFound();
   const { viewer, role, enrolments } = await requireCourseRole(slug, "presenter");
   const done = await getProgress(viewer.userId, slug);
@@ -34,7 +34,7 @@ export default async function Roster({ params, searchParams }: { params: Promise
   return (
     <>
       <Nav enrolments={enrolments} current={slug} isAdmin={viewer.isAdmin} />
-      <CourseSidebar course={course} currentId="__roster" done={done} role={role} />
+      <CourseSidebar course={course} schedule={schedule} here={`/c/${slug}/roster`} currentId="__roster" done={done} role={role} />
         <div className="shell">
         <main className="main">
         <Link href={`/c/${slug}`} style={{ color: "var(--tealdk)", fontWeight: 600, fontSize: 13.5 }}>← {course.shortTitle}</Link>

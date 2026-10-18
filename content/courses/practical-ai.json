@@ -3,9 +3,9 @@
  "title": "Practical AI for End-to-End Business Analysis",
  "shortTitle": "Practical AI (Flagship)",
  "tagline": "One initiative, carried from problem to benefits with AI at every step.",
- "format": "Flagship · 6 weeks",
- "duration": "6 weeks (12 sessions)",
- "delivery": "Live on Zoom · Mon + Wed 19:00–22:00 Sydney · one global intake",
+ "format": "Flagship · 12 weeks",
+ "duration": "12 weeks · 12 × 2-hour sessions",
+ "delivery": "Live on Zoom · Mondays 19:00–21:00 Sydney · one global intake",
  "audience": "Practising business analysts, product owners, consultants and change leads who want to use AI agents across the full BA lifecycle on a real initiative, not a toy example. Suits intermediate to senior BAs; no coding required.",
  "order": 6,
  "series": "Flagship",
@@ -32,132 +32,186 @@
  },
  "days": [
   {
-   "id": "wk1",
+   "id": "w1",
    "label": "Week 1",
    "title": "Discovery",
    "blocks": [
     {
-     "time": "Mon 19:00–22:00",
-     "title": "Mon · Frame the problem with AI",
+     "time": "Mon 19:00–21:00",
+     "title": "Frame the problem with AI",
      "type": "session",
      "moduleId": "wk1-mon"
-    },
+    }
+   ],
+   "menu": "Wk 1–2"
+  },
+  {
+   "id": "w2",
+   "label": "Week 2",
+   "title": "Discovery",
+   "blocks": [
     {
-     "time": "Wed 19:00–22:00",
-     "title": "Wed · Stakeholders and decisions",
+     "time": "Mon 19:00–21:00",
+     "title": "Stakeholders and decisions",
      "type": "session",
      "moduleId": "wk1-wed"
     }
-   ]
+   ],
+   "menu": "Wk 1–2"
   },
   {
-   "id": "wk2",
-   "label": "Week 2",
+   "id": "w3",
+   "label": "Week 3",
    "title": "Process",
    "blocks": [
     {
-     "time": "Mon 19:00–22:00",
-     "title": "Mon · AI-assisted As-Is BPMN",
+     "time": "Mon 19:00–21:00",
+     "title": "AI-assisted As-Is BPMN",
      "type": "session",
      "moduleId": "wk2-mon"
-    },
+    }
+   ],
+   "menu": "Wk 3–4"
+  },
+  {
+   "id": "w4",
+   "label": "Week 4",
+   "title": "Process",
+   "blocks": [
     {
-     "time": "Wed 19:00–22:00",
-     "title": "Wed · Design the To-Be",
+     "time": "Mon 19:00–21:00",
+     "title": "Design the To-Be",
      "type": "session",
      "moduleId": "wk2-wed"
     }
-   ]
+   ],
+   "menu": "Wk 3–4"
   },
   {
-   "id": "wk3",
-   "label": "Week 3",
+   "id": "w5",
+   "label": "Week 5",
    "title": "Data and KPIs",
    "blocks": [
     {
-     "time": "Mon 19:00–22:00",
-     "title": "Mon · North Star and KPI tree",
+     "time": "Mon 19:00–21:00",
+     "title": "North Star and KPI tree",
      "type": "session",
      "moduleId": "wk3-mon"
-    },
+    }
+   ],
+   "menu": "Wk 5–6"
+  },
+  {
+   "id": "w6",
+   "label": "Week 6",
+   "title": "Data and KPIs",
+   "blocks": [
     {
-     "time": "Wed 19:00–22:00",
-     "title": "Wed · Value leaks and fix list",
+     "time": "Mon 19:00–21:00",
+     "title": "Value leaks and fix list",
      "type": "session",
      "moduleId": "wk3-wed"
     }
-   ]
+   ],
+   "menu": "Wk 5–6"
   },
   {
-   "id": "wk4",
-   "label": "Week 4",
+   "id": "w7",
+   "label": "Week 7",
    "title": "Requirements",
    "blocks": [
     {
-     "time": "Mon 19:00–22:00",
-     "title": "Mon · Requirements and stories",
+     "time": "Mon 19:00–21:00",
+     "title": "Requirements and stories",
      "type": "session",
      "moduleId": "wk4-mon"
-    },
+    }
+   ],
+   "menu": "Wk 7–8"
+  },
+  {
+   "id": "w8",
+   "label": "Week 8",
+   "title": "Requirements",
+   "blocks": [
     {
-     "time": "Wed 19:00–22:00",
-     "title": "Wed · AC and traceability",
+     "time": "Mon 19:00–21:00",
+     "title": "AC and traceability",
      "type": "session",
      "moduleId": "wk4-wed"
     }
-   ]
+   ],
+   "menu": "Wk 7–8"
   },
   {
-   "id": "wk5",
-   "label": "Week 5",
+   "id": "w9",
+   "label": "Week 9",
    "title": "Solution and case",
    "blocks": [
     {
-     "time": "Mon 19:00–22:00",
-     "title": "Mon · Generate and score options",
+     "time": "Mon 19:00–21:00",
+     "title": "Generate and score options",
      "type": "session",
      "moduleId": "wk5-mon"
-    },
+    }
+   ],
+   "menu": "Wk 9–10"
+  },
+  {
+   "id": "w10",
+   "label": "Week 10",
+   "title": "Solution and case",
+   "blocks": [
     {
-     "time": "Wed 19:00–22:00",
-     "title": "Wed · One-page business case",
+     "time": "Mon 19:00–21:00",
+     "title": "One-page business case",
      "type": "session",
      "moduleId": "wk5-wed"
     }
-   ]
+   ],
+   "menu": "Wk 9–10"
   },
   {
-   "id": "wk6",
-   "label": "Week 6",
+   "id": "w11",
+   "label": "Week 11",
    "title": "Delivery and change",
    "blocks": [
     {
-     "time": "Mon 19:00–22:00",
-     "title": "Mon · Roadmap and change plan",
+     "time": "Mon 19:00–21:00",
+     "title": "Roadmap and change plan",
      "type": "session",
      "moduleId": "wk6-mon"
-    },
+    }
+   ],
+   "menu": "Wk 11–12"
+  },
+  {
+   "id": "w12",
+   "label": "Week 12",
+   "title": "Delivery and change",
+   "blocks": [
     {
-     "time": "Wed 19:00–22:00",
-     "title": "Wed · Benefits plan and showcase",
+     "time": "Mon 19:00–21:00",
+     "title": "Benefits plan and showcase",
      "type": "session",
      "moduleId": "wk6-wed"
     }
-   ]
+   ],
+   "menu": "Wk 11–12"
   }
  ],
  "modules": [
   {
    "id": "wk1-mon",
-   "num": "Wk 1 · Mon",
+   "num": "S1",
    "title": "Frame the problem with AI",
    "subtitle": "Turn a vague brief into a one-sentence, outcome-focused problem and a stakeholder register",
-   "dayId": "wk1",
-   "time": "Mon 19:00–22:00",
-   "minutes": 180,
+   "dayId": "w1",
+   "time": "19:00–21:00",
+   "minutes": 120,
    "participant": {
     "bigIdea": "If you can't say the problem in one sentence without a solution in it, you're not ready to analyse it.",
-    "overview": "This first session launches the initiative you will carry for six weeks. You'll bring a real problem from your workplace (sanitised), and by 22:00 you'll have a one-page Discovery Brief and a first-cut Stakeholder Register, both drafted with your AI agent and reviewed by you.\n\nWe use Playbook 01 Steps 1 and 2. The AI is very good at restating messy narratives in plain language, proposing assumptions and listing stakeholder groups you forgot. It is very bad at knowing who actually holds the decision rights in your organisation, so that's the part you own.\n\nThroughout the course the instructor works one initiative live: *Shorter waits for specialist outpatient appointments*, an illustrative scenario at Riverside Health Network, a fictional public health service. No real patient data is used. You'll see each artefact built on that case before you build yours.",
+    "overview": "This first session launches the initiative you will carry through all twelve sessions. You'll bring a real problem from your workplace (sanitised), and by 21:00 you'll have a one-page Discovery Brief and a first-cut Stakeholder Register, both drafted with your AI agent and reviewed by you.\n\nWe use Playbook 01 Steps 1 and 2. The AI is very good at restating messy narratives in plain language, proposing assumptions and listing stakeholder groups you forgot. It is very bad at knowing who actually holds the decision rights in your organisation, so that's the part you own.\n\nThroughout the course the instructor works one initiative live: *Shorter waits for specialist outpatient appointments*, an illustrative scenario at Riverside Health Network, a fictional public health service. No real patient data is used. You'll see each artefact built on that case before you build yours.",
     "objectives": [
      "Restate a messy brief as a one-sentence, outcome-focused problem statement",
      "Separate assumptions from open questions and keep solution language out",
@@ -200,8 +254,8 @@
       "body": "**Inputs:** Sponsor and Initial Stakeholder List, Discovery Brief\n\n**What to do**\n- List every stakeholder group affected, internal and external\n- Capture role, decision rights, and what success looks like for each\n- Identify who owns each in-scope process or system\n- Flag stakeholders likely to block, slow, or accelerate the work\n\n**Success criteria**\n- All decision-makers are named, not just titles\n- Each stakeholder has a stated success measure\n- Blockers and accelerators are explicitly flagged\n\n**Produce:** Name; Role; Group; Decision Rights; What Success Looks Like; Risk Flag (Blocker / Neutral / Accelerator)\n\n**Step output:** Stakeholder Register"
      },
      {
-      "heading": "Setting up your agent for six weeks",
-      "body": "You will use one AI workspace for the whole course, so set it up properly tonight.\n\n| Tool | Where | What to load |\n|---|---|---|\n| ChatGPT | Projects (or a Custom GPT) | Paste the playbook prompt as instructions; upload your sanitised brief as a file |\n| Gemini | Gems → New Gem | Playbook as instructions; attach up to 10 files or a Drive folder |\n| Microsoft 365 Copilot | Agent Builder / Copilot Studio | Playbook as instructions; ground on a SharePoint folder |\n\nName it after your initiative (e.g. *Outpatient Access BA Agent*). Every week you'll add the previous artefact to its knowledge, so the chain builds itself: Decision Register → To-Be Map → Fix List → Story Backlog → Business Case → Benefits Plan.\n\nThe operating pattern never changes: **set the role and paste the playbook → feed your inputs → run one step → review against the success criteria → flag gaps, don't invent → carry the output forward.**\n\n**Try it in another industry.** *Fintech:* \"We need a new onboarding app\" — rewrite it as the outcome (e.g. what share of applicants abandon at the AML/KYC identity check, and the target). *Blockchain:* \"Let's put supplier credentials on-chain\" — which decision would that actually change, and who owns it?\n\n**AI guardrail.** Never paste confidential, commercial-in-confidence or personal information into a consumer AI tool. Use your organisation's enterprise or grounded version (Microsoft 365 Copilot, ChatGPT Enterprise/Team, Gemini for Workspace) or sanitise first: replace names with roles, round numbers, remove patient, client or customer identifiers, and use synthetic records for anything data-shaped. Health information is sensitive information: never paste patient names, URNs, Medicare numbers, dates of birth, referral letters or clinical notes into any AI tool your organisation hasn't approved for it. The agent drafts; you own the decision."
+      "heading": "Setting up your agent for the whole course",
+      "body": "You will use one AI workspace for all twelve sessions, so set it up properly tonight.\n\n| Tool | Where | What to load |\n|---|---|---|\n| ChatGPT | Projects (or a Custom GPT) | Paste the playbook prompt as instructions; upload your sanitised brief as a file |\n| Gemini | Gems → New Gem | Playbook as instructions; attach up to 10 files or a Drive folder |\n| Microsoft 365 Copilot | Agent Builder / Copilot Studio | Playbook as instructions; ground on a SharePoint folder |\n\nName it after your initiative (e.g. *Outpatient Access BA Agent*). Every week you'll add the previous artefact to its knowledge, so the chain builds itself: Decision Register → To-Be Map → Fix List → Story Backlog → Business Case → Benefits Plan.\n\nThe operating pattern never changes: **set the role and paste the playbook → feed your inputs → run one step → review against the success criteria → flag gaps, don't invent → carry the output forward.**\n\n**Try it in another industry.** *Fintech:* \"We need a new onboarding app\" — rewrite it as the outcome (e.g. what share of applicants abandon at the AML/KYC identity check, and the target). *Blockchain:* \"Let's put supplier credentials on-chain\" — which decision would that actually change, and who owns it?\n\n**AI guardrail.** Never paste confidential, commercial-in-confidence or personal information into a consumer AI tool. Use your organisation's enterprise or grounded version (Microsoft 365 Copilot, ChatGPT Enterprise/Team, Gemini for Workspace) or sanitise first: replace names with roles, round numbers, remove patient, client or customer identifiers, and use synthetic records for anything data-shaped. Health information is sensitive information: never paste patient names, URNs, Medicare numbers, dates of birth, referral letters or clinical notes into any AI tool your organisation hasn't approved for it. The agent drafts; you own the decision."
      },
      {
       "heading": "Worked example — Outpatient access",
@@ -212,8 +266,8 @@
      {
       "id": "wk1-mon-build",
       "title": "Build: Discovery Brief (one page), Stakeholder Register for your initiative",
-      "minutes": 60,
-      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and last week's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 10 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 40 minutes build, 10 minutes peer challenge, 10 minutes fix.",
+      "minutes": 45,
+      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and the previous session's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 8 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 30 minutes build, 8 minutes peer challenge, 7 minutes fix.",
       "prompts": [
        {
         "id": "wk1-mon-o0",
@@ -235,8 +289,8 @@
      {
       "id": "wk1-mon-task",
       "title": "Set the task: before next session",
-      "minutes": 30,
-      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session; your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
+      "minutes": 20,
+      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session (allow 60–90 minutes; that's one week away on the 12-week schedule, two to five days on the 6-week intensive); your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
       "prompts": [
        {
         "id": "wk1-mon-hw-brief",
@@ -245,7 +299,7 @@
        },
        {
         "id": "wk1-mon-hw-sh",
-        "label": "Validate three stakeholders' decision rights with a real person this week (a 10-minute chat counts). What changed?",
+        "label": "Validate three stakeholders' decision rights with a real person before the next session (a 10-minute chat counts). What changed?",
         "placeholder": "Stakeholder — what I assumed — what I learnt"
        }
       ]
@@ -300,27 +354,27 @@
     "openingLine": "“If you can't say the problem in one sentence without a solution in it, you're not ready to analyse it. Tonight we prove that on your own initiative, and the AI is going to help, but it's not going to be in charge.”",
     "beats": [
      {
-      "label": "19:00–19:45 · Concept and playbook step",
-      "minutes": 45,
-      "notes": "Core idea: Bad Discovery looks for requirements. Good Discovery looks for decisions. Teach steps 1 Frame the Problem, 2 Identify Stakeholders with success criteria. Homework check-in (first 5 minutes)."
+      "label": "19:00–19:30 · Concept and playbook step",
+      "minutes": 30,
+      "notes": "Core idea: Bad Discovery looks for requirements. Good Discovery looks for decisions. Teach steps 1 Frame the Problem, 2 Identify Stakeholders with success criteria. Between-session task check-in (first 5 minutes)."
      },
      {
-      "label": "19:45–20:30 · Live AI demo",
-      "minutes": 45,
+      "label": "19:30–19:55 · Live AI demo",
+      "minutes": 25,
       "notes": "Live demo on the Outpatient access case (fictional Riverside Health Network, synthetic data only) using the script in the facilitation notes. Model critique: catch one invented fact and one missing stakeholder or step."
      },
      {
-      "label": "20:30–21:30 · Build on your initiative",
-      "minutes": 60,
-      "notes": "Breakout build on participants' own initiatives: 40 min build, 10 min peer role-play challenge, 10 min fix. Broadcast the curveball at 21:10."
+      "label": "19:55–20:40 · Build on your initiative",
+      "minutes": 45,
+      "notes": "Breakout build on participants' own initiatives: 30 min build, 8 min peer role-play challenge, 7 min fix. Broadcast the curveball at 20:25."
      },
      {
-      "label": "21:30–22:00 · Share back, set the task",
-      "minutes": 30,
+      "label": "20:40–21:00 · Share back, set the task",
+      "minutes": 20,
       "notes": "Two screen-share showcases, debrief questions, quiz in the portal, set the task and next session's inputs."
      }
     ],
-    "facilitationNotes": "**Run of show (Zoom, 19:00–22:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:44.\n\n**19:00–19:45 Concept.** Open with the core idea, then walk the playbook steps (Frame the Problem, Identify Stakeholders) using the success criteria as the teaching spine. Cold-call two participants on their homework from last session.\n\n**19:45–20:30 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 1 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Discovery Brief (one page)*: Problem: Category 2 (semi-urgent) patients wait an average 74 days from referral receipt to first specialist outpatient appointment; 34% of calls to the outpatient call centre are ‘where is my referral’. Target outcome: ≤45 days within 12 months, with no rise…\n   - *Stakeholder Register*: Executive Director Ambulatory Care — sponsor; approves any service standard or process change; success = shorter waits and fewer complaints; Accelerator. Director of Medical Services — chairs clinical governance and owns triage protocol approval; Neutral until…\n6. Close the demo with the challenger move: *\"Act as a sceptical sponsor. Give me the three hardest questions about this.\"*\n\n**20:30–21:30 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 21:10 drop the curveball into the breakouts via broadcast.\n\n**21:30–22:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each; run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
+    "facilitationNotes": "**Run of show (Zoom, 19:00–21:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:29.\n\n**19:00–19:30 Concept.** Open with the core idea, then walk the playbook steps (Frame the Problem, Identify Stakeholders) using the success criteria as the teaching spine. Cold-call two participants on their task from the previous session.\n\n**19:30–19:55 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 1 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Discovery Brief (one page)*: Problem: Category 2 (semi-urgent) patients wait an average 74 days from referral receipt to first specialist outpatient appointment; 34% of calls to the outpatient call centre are ‘where is my referral’. Target outcome: ≤45 days within 12 months, with no rise…\n   - *Stakeholder Register*: Executive Director Ambulatory Care — sponsor; approves any service standard or process change; success = shorter waits and fewer complaints; Accelerator. Director of Medical Services — chairs clinical governance and owns triage protocol approval; Neutral until…\n6. Close the demo with the challenger move: *\"Act as a sceptical sponsor. Give me the three hardest questions about this.\"*\n\n**19:55–20:40 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 20:25 drop the curveball into the breakouts via broadcast.\n\n**20:40–21:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each (keep it to two); run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
     "roleplay": {
      "persona": "The Sponsor",
      "line": "“Just tell me what you need from me and when. I trust you to run it.”",
@@ -331,7 +385,7 @@
     "commonFailure": "Participants accept the AI's fluent first draft and present it as fact, including invented numbers, names or decision owners. Fix: make them run the 'list every assumption you made' prompt and show you three lines they changed before peer review.",
     "debrief": [
      "Where did the AI save you the most time tonight, and where did it mislead you?",
-     "Which line of your Stakeholder Register are you least confident in, and who will confirm it this week?",
+     "Which line of your Stakeholder Register are you least confident in, and who will confirm it before the next session?",
      "Who is actually accountable? How did you answer that for your initiative?",
      "What did you remove or anonymise before pasting into your agent?"
     ],
@@ -341,19 +395,19 @@
      "Enterprise AI workspace for the live demo (Copilot, ChatGPT Enterprise/Team or Gemini for Workspace)",
      "Playbook 01 — Discovery & Stakeholder Mapping",
      "Outpatient access worked example — Riverside Health Network (illustrative, fictional)",
-     "Tonight's AI prompt (post in chat at 19:44)",
+     "Tonight's AI prompt (post in chat at 19:29)",
      "Role-play persona and curveball cards"
     ]
    }
   },
   {
    "id": "wk1-wed",
-   "num": "Wk 1 · Wed",
+   "num": "S2",
    "title": "Stakeholders and decisions",
    "subtitle": "Map influence and interest, then surface the decisions that must be made before delivery",
-   "dayId": "wk1",
-   "time": "Wed 19:00–22:00",
-   "minutes": 180,
+   "dayId": "w2",
+   "time": "19:00–21:00",
+   "minutes": 120,
    "participant": {
     "bigIdea": "Bad Discovery looks for requirements. Good Discovery looks for decisions.",
     "overview": "Tonight we turn your Stakeholder Register into two things a sponsor can act on: an Influence/Interest map with an engagement plan, and a Decision Register. The Decision Register is the first link in the chain: every later artefact either informs a decision on it or is blocked by one.\n\nAI is useful here as a challenger. Ask it to find the decisions hiding inside your assumptions and open questions, and to tell you where you've named a committee instead of a person. Then you correct it with what you know about your organisation.",
@@ -411,8 +465,8 @@
      {
       "id": "wk1-wed-build",
       "title": "Build: Stakeholder Map, Decision Register for your initiative",
-      "minutes": 60,
-      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and last week's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 10 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 40 minutes build, 10 minutes peer challenge, 10 minutes fix.",
+      "minutes": 45,
+      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and the previous session's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 8 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 30 minutes build, 8 minutes peer challenge, 7 minutes fix.",
       "prompts": [
        {
         "id": "wk1-wed-o0",
@@ -434,8 +488,8 @@
      {
       "id": "wk1-wed-task",
       "title": "Set the task: before next session",
-      "minutes": 30,
-      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session; your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
+      "minutes": 20,
+      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session (allow 60–90 minutes; that's one week away on the 12-week schedule, two to five days on the 6-week intensive); your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
       "prompts": [
        {
         "id": "wk1-wed-hw-dr",
@@ -444,7 +498,7 @@
        },
        {
         "id": "wk1-wed-hw-next",
-        "label": "Bring for Week 2: the process trigger, end event and the roles involved, plus any volumes you can get",
+        "label": "Bring for Session 3: the process trigger, end event and the roles involved, plus any volumes you can get",
         "placeholder": "Trigger: … End event: … Roles: … Volumes/data: …"
        }
       ]
@@ -499,27 +553,27 @@
     "openingLine": "“Bad Discovery looks for requirements. Good Discovery looks for decisions. Tonight we prove that on your own initiative, and the AI is going to help, but it's not going to be in charge.”",
     "beats": [
      {
-      "label": "19:00–19:45 · Concept and playbook step",
-      "minutes": 45,
-      "notes": "Core idea: Bad Discovery looks for requirements. Good Discovery looks for decisions. Teach steps 3 Map Influence and Interest, 4 Surface the Real Decisions with success criteria. Homework check-in (first 5 minutes)."
+      "label": "19:00–19:30 · Concept and playbook step",
+      "minutes": 30,
+      "notes": "Core idea: Bad Discovery looks for requirements. Good Discovery looks for decisions. Teach steps 3 Map Influence and Interest, 4 Surface the Real Decisions with success criteria. Between-session task check-in (first 5 minutes)."
      },
      {
-      "label": "19:45–20:30 · Live AI demo",
-      "minutes": 45,
+      "label": "19:30–19:55 · Live AI demo",
+      "minutes": 25,
       "notes": "Live demo on the Outpatient access case (fictional Riverside Health Network, synthetic data only) using the script in the facilitation notes. Model critique: catch one invented fact and one missing stakeholder or step."
      },
      {
-      "label": "20:30–21:30 · Build on your initiative",
-      "minutes": 60,
-      "notes": "Breakout build on participants' own initiatives: 40 min build, 10 min peer role-play challenge, 10 min fix. Broadcast the curveball at 21:10."
+      "label": "19:55–20:40 · Build on your initiative",
+      "minutes": 45,
+      "notes": "Breakout build on participants' own initiatives: 30 min build, 8 min peer role-play challenge, 7 min fix. Broadcast the curveball at 20:25."
      },
      {
-      "label": "21:30–22:00 · Share back, set the task",
-      "minutes": 30,
+      "label": "20:40–21:00 · Share back, set the task",
+      "minutes": 20,
       "notes": "Two screen-share showcases, debrief questions, quiz in the portal, set the task and next session's inputs."
      }
     ],
-    "facilitationNotes": "**Run of show (Zoom, 19:00–22:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:44.\n\n**19:00–19:45 Concept.** Open with the core idea, then walk the playbook steps (Map Influence and Interest, Surface the Real Decisions) using the success criteria as the teaching spine. Cold-call two participants on their homework from last session.\n\n**19:45–20:30 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 3 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Stakeholder Map*: High influence / high interest: Executive Director Ambulatory Care, CDHO, Director of Medical Services — weekly 30-min steering. High influence / low interest: CFO — monthly one-pager (interest will jump once the benefit is sized — watchlist). Low/high: outpat…\n   - *Decision Register*: D1: single e-referral front door for all clinics vs channel-per-clinic — Accountable: CDHO; needs referral channel volumes and PAS integration costs; required by week 4. D2: which routine referrals may be triaged daily by a clinical nurse consultant under an a…\n6. Close the demo with the challenger move: *\"Act as a sceptical sponsor. Give me the three hardest questions about this.\"*\n\n**20:30–21:30 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 21:10 drop the curveball into the breakouts via broadcast.\n\n**21:30–22:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each; run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
+    "facilitationNotes": "**Run of show (Zoom, 19:00–21:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:29.\n\n**19:00–19:30 Concept.** Open with the core idea, then walk the playbook steps (Map Influence and Interest, Surface the Real Decisions) using the success criteria as the teaching spine. Cold-call two participants on their task from the previous session.\n\n**19:30–19:55 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 3 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Stakeholder Map*: High influence / high interest: Executive Director Ambulatory Care, CDHO, Director of Medical Services — weekly 30-min steering. High influence / low interest: CFO — monthly one-pager (interest will jump once the benefit is sized — watchlist). Low/high: outpat…\n   - *Decision Register*: D1: single e-referral front door for all clinics vs channel-per-clinic — Accountable: CDHO; needs referral channel volumes and PAS integration costs; required by week 4. D2: which routine referrals may be triaged daily by a clinical nurse consultant under an a…\n6. Close the demo with the challenger move: *\"Act as a sceptical sponsor. Give me the three hardest questions about this.\"*\n\n**19:55–20:40 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 20:25 drop the curveball into the breakouts via broadcast.\n\n**20:40–21:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each (keep it to two); run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
     "roleplay": {
      "persona": "The Head of Unit",
      "line": "“Triage rules and clinic templates belong to my unit. You're not changing how my clinic is measured.”",
@@ -530,7 +584,7 @@
     "commonFailure": "Participants accept the AI's fluent first draft and present it as fact, including invented numbers, names or decision owners. Fix: make them run the 'list every assumption you made' prompt and show you three lines they changed before peer review.",
     "debrief": [
      "Where did the AI save you the most time tonight, and where did it mislead you?",
-     "Which line of your Decision Register are you least confident in, and who will confirm it this week?",
+     "Which line of your Decision Register are you least confident in, and who will confirm it before the next session?",
      "Who is actually accountable? How did you answer that for your initiative?",
      "What did you remove or anonymise before pasting into your agent?"
     ],
@@ -540,22 +594,22 @@
      "Enterprise AI workspace for the live demo (Copilot, ChatGPT Enterprise/Team or Gemini for Workspace)",
      "Playbook 01 — Discovery & Stakeholder Mapping",
      "Outpatient access worked example — Riverside Health Network (illustrative, fictional)",
-     "Tonight's AI prompt (post in chat at 19:44)",
+     "Tonight's AI prompt (post in chat at 19:29)",
      "Role-play persona and curveball cards"
     ]
    }
   },
   {
    "id": "wk2-mon",
-   "num": "Wk 2 · Mon",
+   "num": "S3",
    "title": "AI-assisted As-Is BPMN",
    "subtitle": "Scope the lanes, map how work really happens and quantify where it waits",
-   "dayId": "wk2",
-   "time": "Mon 19:00–22:00",
-   "minutes": 180,
+   "dayId": "w3",
+   "time": "19:00–21:00",
+   "minutes": 120,
    "participant": {
     "bigIdea": "Most process pain isn't in the tasks; it's in the handoffs.",
-    "overview": "This week you analyse the process behind your problem. Tonight is the As-Is: you'll confirm scope, trigger, end event and lanes, then build a swim-lane map with an activity inventory that records time, volume and rework for each step.\n\nAI accelerates the tedious parts: turning interview notes or a procedure document into a draft activity list, proposing lanes, and generating BPMN-style text or Mermaid/PlantUML you can paste into a diagram tool. It will happily draw the process *as the manual says*. Your job is to correct it to how the work actually happens.",
+    "overview": "Across Sessions 3 and 4 you analyse the process behind your problem. Tonight is the As-Is: you'll confirm scope, trigger, end event and lanes, then build a swim-lane map with an activity inventory that records time, volume and rework for each step.\n\nAI accelerates the tedious parts: turning interview notes or a procedure document into a draft activity list, proposing lanes, and generating BPMN-style text or Mermaid/PlantUML you can paste into a diagram tool. It will happily draw the process *as the manual says*. Your job is to correct it to how the work actually happens.",
     "objectives": [
      "Set a crisp process boundary: trigger, end event, lanes, out-of-scope, level of detail",
      "Convert SME notes into a draft swim-lane map and activity inventory with AI",
@@ -599,7 +653,7 @@
      },
      {
       "heading": "BPMN essentials you'll use",
-      "body": "| Element | Meaning | Use it for |\n|---|---|---|\n| Start / end event (circle) | Trigger and outcome | Clock start and stop of your North Star later |\n| Task (rounded box) | Work done by a role | One verb + noun: *Validate referral* |\n| Exclusive gateway (X diamond) | Either/or decision | *Protocol match?* yes / no |\n| Parallel gateway (+ diamond) | Both paths at once | Notify patient *and* start triage |\n| Pool / lane | Who does it | One lane per role or system |\n| Message flow (dashed) | Handoff between organisations | GP practice → Referral Hub |\n\nCount handoffs (every lane crossing) and wait states (every time work sits in a queue). Those two numbers are your As-Is baseline for the acid test on Wednesday.\n\nAI tip: ask for **Mermaid flowchart** or **BPMN XML** output, then paste it into Mermaid Live, draw.io or Camunda Modeler. Always check gateways: models frequently use exclusive gateways where the work is actually parallel.\n\n**Try it in another industry.** *Insurance:* sketch the As-Is for a home-contents claim from first notice of loss to settlement and count the handoffs between call centre, assessor and fraud team. *Finance:* map month-end reporting from ledger close to board pack and count the wait states between business units and group finance.\n\n**AI guardrail.** Never paste confidential, commercial-in-confidence or personal information into a consumer AI tool. Use your organisation's enterprise or grounded version (Microsoft 365 Copilot, ChatGPT Enterprise/Team, Gemini for Workspace) or sanitise first: replace names with roles, round numbers, remove patient, client or customer identifiers, and use synthetic records for anything data-shaped. Health information is sensitive information: never paste patient names, URNs, Medicare numbers, dates of birth, referral letters or clinical notes into any AI tool your organisation hasn't approved for it. The agent drafts; you own the decision."
+      "body": "| Element | Meaning | Use it for |\n|---|---|---|\n| Start / end event (circle) | Trigger and outcome | Clock start and stop of your North Star later |\n| Task (rounded box) | Work done by a role | One verb + noun: *Validate referral* |\n| Exclusive gateway (X diamond) | Either/or decision | *Protocol match?* yes / no |\n| Parallel gateway (+ diamond) | Both paths at once | Notify patient *and* start triage |\n| Pool / lane | Who does it | One lane per role or system |\n| Message flow (dashed) | Handoff between organisations | GP practice → Referral Hub |\n\nCount handoffs (every lane crossing) and wait states (every time work sits in a queue). Those two numbers are your As-Is baseline for the acid test in the next session.\n\nAI tip: ask for **Mermaid flowchart** or **BPMN XML** output, then paste it into Mermaid Live, draw.io or Camunda Modeler. Always check gateways: models frequently use exclusive gateways where the work is actually parallel.\n\n**Try it in another industry.** *Insurance:* sketch the As-Is for a home-contents claim from first notice of loss to settlement and count the handoffs between call centre, assessor and fraud team. *Finance:* map month-end reporting from ledger close to board pack and count the wait states between business units and group finance.\n\n**AI guardrail.** Never paste confidential, commercial-in-confidence or personal information into a consumer AI tool. Use your organisation's enterprise or grounded version (Microsoft 365 Copilot, ChatGPT Enterprise/Team, Gemini for Workspace) or sanitise first: replace names with roles, round numbers, remove patient, client or customer identifiers, and use synthetic records for anything data-shaped. Health information is sensitive information: never paste patient names, URNs, Medicare numbers, dates of birth, referral letters or clinical notes into any AI tool your organisation hasn't approved for it. The agent drafts; you own the decision."
      },
      {
       "heading": "Worked example — Outpatient access",
@@ -610,8 +664,8 @@
      {
       "id": "wk2-mon-build",
       "title": "Build: Process Scope Confirmation, As-Is Process Map for your initiative",
-      "minutes": 60,
-      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and last week's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 10 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 40 minutes build, 10 minutes peer challenge, 10 minutes fix.",
+      "minutes": 45,
+      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and the previous session's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 8 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 30 minutes build, 8 minutes peer challenge, 7 minutes fix.",
       "prompts": [
        {
         "id": "wk2-mon-o0",
@@ -633,8 +687,8 @@
      {
       "id": "wk2-mon-task",
       "title": "Set the task: before next session",
-      "minutes": 30,
-      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session; your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
+      "minutes": 20,
+      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session (allow 60–90 minutes; that's one week away on the 12-week schedule, two to five days on the 6-week intensive); your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
       "prompts": [
        {
         "id": "wk2-mon-hw-walk",
@@ -698,27 +752,27 @@
     "openingLine": "“Most process pain isn't in the tasks; it's in the handoffs. Tonight we prove that on your own initiative, and the AI is going to help, but it's not going to be in charge.”",
     "beats": [
      {
-      "label": "19:00–19:45 · Concept and playbook step",
-      "minutes": 45,
-      "notes": "Core idea: Most process pain isn't in the tasks — it's in the handoffs. Teach steps 1 Confirm Scope and Lanes, 2 Map the As-Is with success criteria. Homework check-in (first 5 minutes)."
+      "label": "19:00–19:30 · Concept and playbook step",
+      "minutes": 30,
+      "notes": "Core idea: Most process pain isn't in the tasks — it's in the handoffs. Teach steps 1 Confirm Scope and Lanes, 2 Map the As-Is with success criteria. Between-session task check-in (first 5 minutes)."
      },
      {
-      "label": "19:45–20:30 · Live AI demo",
-      "minutes": 45,
+      "label": "19:30–19:55 · Live AI demo",
+      "minutes": 25,
       "notes": "Live demo on the Outpatient access case (fictional Riverside Health Network, synthetic data only) using the script in the facilitation notes. Model critique: catch one invented fact and one missing stakeholder or step."
      },
      {
-      "label": "20:30–21:30 · Build on your initiative",
-      "minutes": 60,
-      "notes": "Breakout build on participants' own initiatives: 40 min build, 10 min peer role-play challenge, 10 min fix. Broadcast the curveball at 21:10."
+      "label": "19:55–20:40 · Build on your initiative",
+      "minutes": 45,
+      "notes": "Breakout build on participants' own initiatives: 30 min build, 8 min peer role-play challenge, 7 min fix. Broadcast the curveball at 20:25."
      },
      {
-      "label": "21:30–22:00 · Share back, set the task",
-      "minutes": 30,
+      "label": "20:40–21:00 · Share back, set the task",
+      "minutes": 20,
       "notes": "Two screen-share showcases, debrief questions, quiz in the portal, set the task and next session's inputs."
      }
     ],
-    "facilitationNotes": "**Run of show (Zoom, 19:00–22:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:44.\n\n**19:00–19:45 Concept.** Open with the core idea, then walk the playbook steps (Confirm Scope and Lanes, Map the As-Is) using the success criteria as the teaching spine. Cold-call two participants on their homework from last session.\n\n**19:45–20:30 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 1 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Process Scope Confirmation*: Trigger: a GP decides to refer a patient and sends a referral (fax, post or e-referral). End event: first specialist outpatient appointment attended. Lanes: Patient, GP practice, Referral Hub (admin), Specialist Clinic (triage clinician), Bookings. Out of scop…\n   - *As-Is Process Map*: Five-lane swim-lane with the clock started at referral receipt. Key inventory lines: ‘Referral waits in clinic inbox for registration and the weekly consultant triage session’ — wait, p95 21 days, average 12; ‘Registration in PAS from fax/PDF’ — re-keyed manua…\n6. Close the demo with the challenger move: *\"Act as a sceptical process owner. Give me the three hardest questions about this.\"*\n\n**20:30–21:30 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 21:10 drop the curveball into the breakouts via broadcast.\n\n**21:30–22:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each; run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
+    "facilitationNotes": "**Run of show (Zoom, 19:00–21:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:29.\n\n**19:00–19:30 Concept.** Open with the core idea, then walk the playbook steps (Confirm Scope and Lanes, Map the As-Is) using the success criteria as the teaching spine. Cold-call two participants on their task from the previous session.\n\n**19:30–19:55 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 1 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Process Scope Confirmation*: Trigger: a GP decides to refer a patient and sends a referral (fax, post or e-referral). End event: first specialist outpatient appointment attended. Lanes: Patient, GP practice, Referral Hub (admin), Specialist Clinic (triage clinician), Bookings. Out of scop…\n   - *As-Is Process Map*: Five-lane swim-lane with the clock started at referral receipt. Key inventory lines: ‘Referral waits in clinic inbox for registration and the weekly consultant triage session’ — wait, p95 21 days, average 12; ‘Registration in PAS from fax/PDF’ — re-keyed manua…\n6. Close the demo with the challenger move: *\"Act as a sceptical process owner. Give me the three hardest questions about this.\"*\n\n**19:55–20:40 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 20:25 drop the curveball into the breakouts via broadcast.\n\n**20:40–21:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each (keep it to two); run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
     "roleplay": {
      "persona": "The Overloaded SME",
      "line": "“It depends. Honestly the system doesn't work the way the manual says.”",
@@ -729,7 +783,7 @@
     "commonFailure": "Participants accept the AI's fluent first draft and present it as fact, including invented numbers, names or decision owners. Fix: make them run the 'list every assumption you made' prompt and show you three lines they changed before peer review.",
     "debrief": [
      "Where did the AI save you the most time tonight, and where did it mislead you?",
-     "Which line of your As-Is Process Map are you least confident in, and who will confirm it this week?",
+     "Which line of your As-Is Process Map are you least confident in, and who will confirm it before the next session?",
      "Show me how it really works, not how the manual says. Where does it wait? How did you answer that for your initiative?",
      "What did you remove or anonymise before pasting into your agent?"
     ],
@@ -739,19 +793,19 @@
      "Enterprise AI workspace for the live demo (Copilot, ChatGPT Enterprise/Team or Gemini for Workspace)",
      "Playbook 02 — Process Mapping & BPMN",
      "Outpatient access worked example — Riverside Health Network (illustrative, fictional)",
-     "Tonight's AI prompt (post in chat at 19:44)",
+     "Tonight's AI prompt (post in chat at 19:29)",
      "Role-play persona and curveball cards"
     ]
    }
   },
   {
    "id": "wk2-wed",
-   "num": "Wk 2 · Wed",
+   "num": "S4",
    "title": "Design the To-Be",
    "subtitle": "Quantify pain points and value leaks, then design a To-Be that removes handoffs",
-   "dayId": "wk2",
-   "time": "Wed 19:00–22:00",
-   "minutes": 180,
+   "dayId": "w4",
+   "time": "19:00–21:00",
+   "minutes": 120,
    "participant": {
     "bigIdea": "Design the To-Be to remove handoffs; don't paper over them.",
     "overview": "Tonight you turn the As-Is into an improvement. First you name and quantify each pain point (wait, rework, manual-on-digital, handoff) in time, cost and risk. Then you design a To-Be that removes the biggest ones, and you prove it with the side-by-side acid test: cycle time, handoffs and automated steps, before and after.\n\nAI is strong at generating redesign patterns (parallelise, validate at source, straight-through processing, eliminate the batch) and at doing the arithmetic. It is weak at knowing what's legally or politically possible, so every To-Be change needs a named control or a decision on the register.",
@@ -809,8 +863,8 @@
      {
       "id": "wk2-wed-build",
       "title": "Build: Pain Point Register, To-Be Process Map for your initiative",
-      "minutes": 60,
-      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and last week's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 10 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 40 minutes build, 10 minutes peer challenge, 10 minutes fix.",
+      "minutes": 45,
+      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and the previous session's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 8 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 30 minutes build, 8 minutes peer challenge, 7 minutes fix.",
       "prompts": [
        {
         "id": "wk2-wed-o0",
@@ -832,8 +886,8 @@
      {
       "id": "wk2-wed-task",
       "title": "Set the task: before next session",
-      "minutes": 30,
-      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session; your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
+      "minutes": 20,
+      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session (allow 60–90 minutes; that's one week away on the 12-week schedule, two to five days on the 6-week intensive); your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
       "prompts": [
        {
         "id": "wk2-wed-hw-acid",
@@ -842,7 +896,7 @@
        },
        {
         "id": "wk2-wed-hw-data",
-        "label": "Bring for Week 3: any data you can get on the end-to-end cycle time, volumes and costs. Note where data doesn't exist.",
+        "label": "Bring for Session 5: any data you can get on the end-to-end cycle time, volumes and costs. Note where data doesn't exist.",
         "placeholder": "Data item — source — owner — trusted? (Y/N)"
        }
       ]
@@ -897,27 +951,27 @@
     "openingLine": "“Design the To-Be to remove handoffs; don't paper over them. Tonight we prove that on your own initiative, and the AI is going to help, but it's not going to be in charge.”",
     "beats": [
      {
-      "label": "19:00–19:45 · Concept and playbook step",
-      "minutes": 45,
-      "notes": "Core idea: Most process pain isn't in the tasks — it's in the handoffs. Teach steps 3 Identify Pain Points and Value Leaks, 4 Design the To-Be with success criteria. Homework check-in (first 5 minutes)."
+      "label": "19:00–19:30 · Concept and playbook step",
+      "minutes": 30,
+      "notes": "Core idea: Most process pain isn't in the tasks — it's in the handoffs. Teach steps 3 Identify Pain Points and Value Leaks, 4 Design the To-Be with success criteria. Between-session task check-in (first 5 minutes)."
      },
      {
-      "label": "19:45–20:30 · Live AI demo",
-      "minutes": 45,
+      "label": "19:30–19:55 · Live AI demo",
+      "minutes": 25,
       "notes": "Live demo on the Outpatient access case (fictional Riverside Health Network, synthetic data only) using the script in the facilitation notes. Model critique: catch one invented fact and one missing stakeholder or step."
      },
      {
-      "label": "20:30–21:30 · Build on your initiative",
-      "minutes": 60,
-      "notes": "Breakout build on participants' own initiatives: 40 min build, 10 min peer role-play challenge, 10 min fix. Broadcast the curveball at 21:10."
+      "label": "19:55–20:40 · Build on your initiative",
+      "minutes": 45,
+      "notes": "Breakout build on participants' own initiatives: 30 min build, 8 min peer role-play challenge, 7 min fix. Broadcast the curveball at 20:25."
      },
      {
-      "label": "21:30–22:00 · Share back, set the task",
-      "minutes": 30,
+      "label": "20:40–21:00 · Share back, set the task",
+      "minutes": 20,
       "notes": "Two screen-share showcases, debrief questions, quiz in the portal, set the task and next session's inputs."
      }
     ],
-    "facilitationNotes": "**Run of show (Zoom, 19:00–22:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:44.\n\n**19:00–19:45 Concept.** Open with the core idea, then walk the playbook steps (Identify Pain Points and Value Leaks, Design the To-Be) using the success criteria as the teaching spine. Cold-call two participants on their homework from last session.\n\n**19:45–20:30 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 3 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Pain Point Register*: P1 Inbox and weekly-triage delay — wait — up to 21 days, ~$1.1m/yr in status calls, avoidable ED presentations while waiting and duplicate re-referrals (illustrative). P2 Incomplete referrals returned to the GP — rework loop — 28% of referrals, ~$640k/yr. P3 M…\n   - *To-Be Process Map*: GP sends a structured e-referral straight into a daily triage queue; patient is notified by SMS in parallel (removes P1). Mandatory fields and results validated at submission with guided correction (removes P2’s loop). Single referral record shared e-referral…\n6. Close the demo with the challenger move: *\"Act as a sceptical process owner. Give me the three hardest questions about this.\"*\n\n**20:30–21:30 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 21:10 drop the curveball into the breakouts via broadcast.\n\n**21:30–22:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each; run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
+    "facilitationNotes": "**Run of show (Zoom, 19:00–21:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:29.\n\n**19:00–19:30 Concept.** Open with the core idea, then walk the playbook steps (Identify Pain Points and Value Leaks, Design the To-Be) using the success criteria as the teaching spine. Cold-call two participants on their task from the previous session.\n\n**19:30–19:55 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 3 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Pain Point Register*: P1 Inbox and weekly-triage delay — wait — up to 21 days, ~$1.1m/yr in status calls, avoidable ED presentations while waiting and duplicate re-referrals (illustrative). P2 Incomplete referrals returned to the GP — rework loop — 28% of referrals, ~$640k/yr. P3 M…\n   - *To-Be Process Map*: GP sends a structured e-referral straight into a daily triage queue; patient is notified by SMS in parallel (removes P1). Mandatory fields and results validated at submission with guided correction (removes P2’s loop). Single referral record shared e-referral…\n6. Close the demo with the challenger move: *\"Act as a sceptical process owner. Give me the three hardest questions about this.\"*\n\n**19:55–20:40 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 20:25 drop the curveball into the breakouts via broadcast.\n\n**20:40–21:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each (keep it to two); run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
     "roleplay": {
      "persona": "The Process Owner",
      "line": "“We can't let nurses triage. Every referral has to be seen by a consultant — that's clinical governance.”",
@@ -928,7 +982,7 @@
     "commonFailure": "Participants accept the AI's fluent first draft and present it as fact, including invented numbers, names or decision owners. Fix: make them run the 'list every assumption you made' prompt and show you three lines they changed before peer review.",
     "debrief": [
      "Where did the AI save you the most time tonight, and where did it mislead you?",
-     "Which line of your To-Be Process Map are you least confident in, and who will confirm it this week?",
+     "Which line of your To-Be Process Map are you least confident in, and who will confirm it before the next session?",
      "Show me how it really works, not how the manual says. Where does it wait? How did you answer that for your initiative?",
      "What did you remove or anonymise before pasting into your agent?"
     ],
@@ -938,19 +992,19 @@
      "Enterprise AI workspace for the live demo (Copilot, ChatGPT Enterprise/Team or Gemini for Workspace)",
      "Playbook 02 — Process Mapping & BPMN",
      "Outpatient access worked example — Riverside Health Network (illustrative, fictional)",
-     "Tonight's AI prompt (post in chat at 19:44)",
+     "Tonight's AI prompt (post in chat at 19:29)",
      "Role-play persona and curveball cards"
     ]
    }
   },
   {
    "id": "wk3-mon",
-   "num": "Wk 3 · Mon",
+   "num": "S5",
    "title": "North Star and KPI tree",
    "subtitle": "Choose one accountable metric and decompose it into drivers with owners and sources",
-   "dayId": "wk3",
-   "time": "Mon 19:00–22:00",
-   "minutes": 180,
+   "dayId": "w5",
+   "time": "19:00–21:00",
+   "minutes": 120,
    "participant": {
     "bigIdea": "One North Star. Two tiers of drivers. No vanity metrics.",
     "overview": "This week makes your initiative measurable. Tonight you choose a single North Star metric with a definition precise enough that two analysts would calculate the same number, a baseline, a target, an owner and an honest note on what it doesn't measure. Then you build a two-tier KPI tree where every leaf has an owner and a data source.\n\nAI helps you test metric definitions for ambiguity, propose driver decompositions and write SQL or Excel formulas against a *sanitised or synthetic* extract. Never upload a real data extract to a consumer tool.",
@@ -1008,8 +1062,8 @@
      {
       "id": "wk3-mon-build",
       "title": "Build: North Star Metric Definition, KPI Tree for your initiative",
-      "minutes": 60,
-      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and last week's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 10 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 40 minutes build, 10 minutes peer challenge, 10 minutes fix.",
+      "minutes": 45,
+      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and the previous session's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 8 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 30 minutes build, 8 minutes peer challenge, 7 minutes fix.",
       "prompts": [
        {
         "id": "wk3-mon-o0",
@@ -1031,8 +1085,8 @@
      {
       "id": "wk3-mon-task",
       "title": "Set the task: before next session",
-      "minutes": 30,
-      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session; your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
+      "minutes": 20,
+      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session (allow 60–90 minutes; that's one week away on the 12-week schedule, two to five days on the 6-week intensive); your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
       "prompts": [
        {
         "id": "wk3-mon-hw-base",
@@ -1096,27 +1150,27 @@
     "openingLine": "“One North Star. Two tiers of drivers. No vanity metrics. Tonight we prove that on your own initiative, and the AI is going to help, but it's not going to be in charge.”",
     "beats": [
      {
-      "label": "19:00–19:45 · Concept and playbook step",
-      "minutes": 45,
-      "notes": "Core idea: One North Star. Two tiers of drivers. No vanity metrics. Teach steps 1 Choose the North Star Metric, 2 Build the KPI Tree with success criteria. Homework check-in (first 5 minutes)."
+      "label": "19:00–19:30 · Concept and playbook step",
+      "minutes": 30,
+      "notes": "Core idea: One North Star. Two tiers of drivers. No vanity metrics. Teach steps 1 Choose the North Star Metric, 2 Build the KPI Tree with success criteria. Between-session task check-in (first 5 minutes)."
      },
      {
-      "label": "19:45–20:30 · Live AI demo",
-      "minutes": 45,
+      "label": "19:30–19:55 · Live AI demo",
+      "minutes": 25,
       "notes": "Live demo on the Outpatient access case (fictional Riverside Health Network, synthetic data only) using the script in the facilitation notes. Model critique: catch one invented fact and one missing stakeholder or step."
      },
      {
-      "label": "20:30–21:30 · Build on your initiative",
-      "minutes": 60,
-      "notes": "Breakout build on participants' own initiatives: 40 min build, 10 min peer role-play challenge, 10 min fix. Broadcast the curveball at 21:10."
+      "label": "19:55–20:40 · Build on your initiative",
+      "minutes": 45,
+      "notes": "Breakout build on participants' own initiatives: 30 min build, 8 min peer role-play challenge, 7 min fix. Broadcast the curveball at 20:25."
      },
      {
-      "label": "21:30–22:00 · Share back, set the task",
-      "minutes": 30,
+      "label": "20:40–21:00 · Share back, set the task",
+      "minutes": 20,
       "notes": "Two screen-share showcases, debrief questions, quiz in the portal, set the task and next session's inputs."
      }
     ],
-    "facilitationNotes": "**Run of show (Zoom, 19:00–22:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:44.\n\n**19:00–19:45 Concept.** Open with the core idea, then walk the playbook steps (Choose the North Star Metric, Build the KPI Tree) using the success criteria as the teaching spine. Cold-call two participants on their homework from last session.\n\n**19:45–20:30 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 1 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *North Star Metric Definition*: Metric: calendar days from referral receipt (first arrival in any Riverside channel) to first specialist outpatient appointment attended, Category 2 referrals. Baseline: 74 days (12-month average, illustrative). Target: ≤45 days within 12 months of R1 go-live.…\n   - *KPI Tree*: Tier-1 drivers: referral intake and triage lead time; booking lead time; clinic slot wait. Tier-2 (with owner + source): % referrals received as structured e-referrals (CDHO, e-referral analytics); % referrals complete at first submission (Outpatient Operation…\n6. Close the demo with the challenger move: *\"Act as a sceptical data owner. Give me the three hardest questions about this.\"*\n\n**20:30–21:30 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 21:10 drop the curveball into the breakouts via broadcast.\n\n**21:30–22:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each; run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
+    "facilitationNotes": "**Run of show (Zoom, 19:00–21:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:29.\n\n**19:00–19:30 Concept.** Open with the core idea, then walk the playbook steps (Choose the North Star Metric, Build the KPI Tree) using the success criteria as the teaching spine. Cold-call two participants on their task from the previous session.\n\n**19:30–19:55 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 1 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *North Star Metric Definition*: Metric: calendar days from referral receipt (first arrival in any Riverside channel) to first specialist outpatient appointment attended, Category 2 referrals. Baseline: 74 days (12-month average, illustrative). Target: ≤45 days within 12 months of R1 go-live.…\n   - *KPI Tree*: Tier-1 drivers: referral intake and triage lead time; booking lead time; clinic slot wait. Tier-2 (with owner + source): % referrals received as structured e-referrals (CDHO, e-referral analytics); % referrals complete at first submission (Outpatient Operation…\n6. Close the demo with the challenger move: *\"Act as a sceptical data owner. Give me the three hardest questions about this.\"*\n\n**19:55–20:40 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 20:25 drop the curveball into the breakouts via broadcast.\n\n**20:40–21:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each (keep it to two); run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
     "roleplay": {
      "persona": "The 'I Don't Know'",
      "line": "“I'm not sure we measure that. You'd have to ask someone in the other team.”",
@@ -1127,7 +1181,7 @@
     "commonFailure": "Participants accept the AI's fluent first draft and present it as fact, including invented numbers, names or decision owners. Fix: make them run the 'list every assumption you made' prompt and show you three lines they changed before peer review.",
     "debrief": [
      "Where did the AI save you the most time tonight, and where did it mislead you?",
-     "Which line of your KPI Tree are you least confident in, and who will confirm it this week?",
+     "Which line of your KPI Tree are you least confident in, and who will confirm it before the next session?",
      "What does this field actually contain? How did you answer that for your initiative?",
      "What did you remove or anonymise before pasting into your agent?"
     ],
@@ -1137,22 +1191,22 @@
      "Enterprise AI workspace for the live demo (Copilot, ChatGPT Enterprise/Team or Gemini for Workspace)",
      "Playbook 03 — Data Analysis & KPIs",
      "Outpatient access worked example — Riverside Health Network (illustrative, fictional)",
-     "Tonight's AI prompt (post in chat at 19:44)",
+     "Tonight's AI prompt (post in chat at 19:29)",
      "Role-play persona and curveball cards"
     ]
    }
   },
   {
    "id": "wk3-wed",
-   "num": "Wk 3 · Wed",
+   "num": "S6",
    "title": "Value leaks and fix list",
    "subtitle": "Turn each gap into dollars, then rank a top-three fix list with leading indicators",
-   "dayId": "wk3",
-   "time": "Wed 19:00–22:00",
-   "minutes": 180,
+   "dayId": "w6",
+   "time": "19:00–21:00",
+   "minutes": 120,
    "participant": {
     "bigIdea": "If you can't put a dollar figure on the leak, you can't win the funding argument.",
-    "overview": "Tonight you convert the gaps in your KPI tree into money. For each leak you compare current performance to a benchmark or best-practice level, multiply by volume and unit cost, and log every assumption. Then you rank the leaks into a Top 3 Fix List, each with impact, ease, an owner, a leading indicator and a review date.\n\nAI is excellent at structuring the arithmetic and catching unit errors, and at proposing benchmarks, which you must verify. The total addressable value you produce tonight becomes the benefits line of your Week 5 business case.",
+    "overview": "Tonight you convert the gaps in your KPI tree into money. For each leak you compare current performance to a benchmark or best-practice level, multiply by volume and unit cost, and log every assumption. Then you rank the leaks into a Top 3 Fix List, each with impact, ease, an owner, a leading indicator and a review date.\n\nAI is excellent at structuring the arithmetic and catching unit errors, and at proposing benchmarks, which you must verify. The total addressable value you produce tonight becomes the benefits line of your Session 10 business case.",
     "objectives": [
      "Calculate value leaks as gap × volume × unit cost with logged assumptions",
      "Distinguish addressable value from total cost",
@@ -1207,8 +1261,8 @@
      {
       "id": "wk3-wed-build",
       "title": "Build: Value Leak Analysis, Prioritised Fix List for your initiative",
-      "minutes": 60,
-      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and last week's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 10 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 40 minutes build, 10 minutes peer challenge, 10 minutes fix.",
+      "minutes": 45,
+      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and the previous session's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 8 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 30 minutes build, 8 minutes peer challenge, 7 minutes fix.",
       "prompts": [
        {
         "id": "wk3-wed-o0",
@@ -1230,8 +1284,8 @@
      {
       "id": "wk3-wed-task",
       "title": "Set the task: before next session",
-      "minutes": 30,
-      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session; your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
+      "minutes": 20,
+      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session (allow 60–90 minutes; that's one week away on the 12-week schedule, two to five days on the 6-week intensive); your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
       "prompts": [
        {
         "id": "wk3-wed-hw-fix",
@@ -1240,7 +1294,7 @@
        },
        {
         "id": "wk3-wed-hw-req",
-        "label": "Bring for Week 4: your To-Be map and fix list loaded into your agent, plus one user you can ask about the new process"
+        "label": "Bring for Session 7: your To-Be map and fix list loaded into your agent, plus one user you can ask about the new process"
        }
       ]
      }
@@ -1294,27 +1348,27 @@
     "openingLine": "“If you can't put a dollar figure on the leak, you can't win the funding argument. Tonight we prove that on your own initiative, and the AI is going to help, but it's not going to be in charge.”",
     "beats": [
      {
-      "label": "19:00–19:45 · Concept and playbook step",
-      "minutes": 45,
-      "notes": "Core idea: One North Star. Two tiers of drivers. No vanity metrics. Teach steps 3 Run the Value Leak Analysis, 4 Prioritise the Fix List with success criteria. Homework check-in (first 5 minutes)."
+      "label": "19:00–19:30 · Concept and playbook step",
+      "minutes": 30,
+      "notes": "Core idea: One North Star. Two tiers of drivers. No vanity metrics. Teach steps 3 Run the Value Leak Analysis, 4 Prioritise the Fix List with success criteria. Between-session task check-in (first 5 minutes)."
      },
      {
-      "label": "19:45–20:30 · Live AI demo",
-      "minutes": 45,
+      "label": "19:30–19:55 · Live AI demo",
+      "minutes": 25,
       "notes": "Live demo on the Outpatient access case (fictional Riverside Health Network, synthetic data only) using the script in the facilitation notes. Model critique: catch one invented fact and one missing stakeholder or step."
      },
      {
-      "label": "20:30–21:30 · Build on your initiative",
-      "minutes": 60,
-      "notes": "Breakout build on participants' own initiatives: 40 min build, 10 min peer role-play challenge, 10 min fix. Broadcast the curveball at 21:10."
+      "label": "19:55–20:40 · Build on your initiative",
+      "minutes": 45,
+      "notes": "Breakout build on participants' own initiatives: 30 min build, 8 min peer role-play challenge, 7 min fix. Broadcast the curveball at 20:25."
      },
      {
-      "label": "21:30–22:00 · Share back, set the task",
-      "minutes": 30,
+      "label": "20:40–21:00 · Share back, set the task",
+      "minutes": 20,
       "notes": "Two screen-share showcases, debrief questions, quiz in the portal, set the task and next session's inputs."
      }
     ],
-    "facilitationNotes": "**Run of show (Zoom, 19:00–22:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:44.\n\n**19:00–19:45 Concept.** Open with the core idea, then walk the playbook steps (Run the Value Leak Analysis, Prioritise the Fix List) using the success criteria as the teaching spine. Cold-call two participants on their homework from last session.\n\n**19:45–20:30 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 3 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Value Leak Analysis*: Leak 1: inbox and weekly-triage delay — gap to a 2-day best practice ≈ 10 days on ~65% of referrals → ~$1.1m/yr (status calls, avoidable ED presentations while waiting, duplicate re-referrals). Leak 2: incomplete referrals — 28% returned vs 8% benchmark → ~$64…\n   - *Prioritised Fix List*: Fix 1: structured e-referral into a daily triage queue with parallel SMS notification to the patient — Impact H / Ease M — leading indicator: % referrals received as e-referrals. Fix 2: mandatory-field and results validation at submission — Impact H / Ease H —…\n6. Close the demo with the challenger move: *\"Act as a sceptical data owner. Give me the three hardest questions about this.\"*\n\n**20:30–21:30 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 21:10 drop the curveball into the breakouts via broadcast.\n\n**21:30–22:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each; run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
+    "facilitationNotes": "**Run of show (Zoom, 19:00–21:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:29.\n\n**19:00–19:30 Concept.** Open with the core idea, then walk the playbook steps (Run the Value Leak Analysis, Prioritise the Fix List) using the success criteria as the teaching spine. Cold-call two participants on their task from the previous session.\n\n**19:30–19:55 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 3 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Value Leak Analysis*: Leak 1: inbox and weekly-triage delay — gap to a 2-day best practice ≈ 10 days on ~65% of referrals → ~$1.1m/yr (status calls, avoidable ED presentations while waiting, duplicate re-referrals). Leak 2: incomplete referrals — 28% returned vs 8% benchmark → ~$64…\n   - *Prioritised Fix List*: Fix 1: structured e-referral into a daily triage queue with parallel SMS notification to the patient — Impact H / Ease M — leading indicator: % referrals received as e-referrals. Fix 2: mandatory-field and results validation at submission — Impact H / Ease H —…\n6. Close the demo with the challenger move: *\"Act as a sceptical data owner. Give me the three hardest questions about this.\"*\n\n**19:55–20:40 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 20:25 drop the curveball into the breakouts via broadcast.\n\n**20:40–21:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each (keep it to two); run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
     "roleplay": {
      "persona": "The Finance Business Partner",
      "line": "“Where did that $12 per contact come from? I don't recognise it.”",
@@ -1325,7 +1379,7 @@
     "commonFailure": "Participants accept the AI's fluent first draft and present it as fact, including invented numbers, names or decision owners. Fix: make them run the 'list every assumption you made' prompt and show you three lines they changed before peer review.",
     "debrief": [
      "Where did the AI save you the most time tonight, and where did it mislead you?",
-     "Which line of your Prioritised Fix List are you least confident in, and who will confirm it this week?",
+     "Which line of your Prioritised Fix List are you least confident in, and who will confirm it before the next session?",
      "What does this field actually contain? How did you answer that for your initiative?",
      "What did you remove or anonymise before pasting into your agent?"
     ],
@@ -1335,19 +1389,19 @@
      "Enterprise AI workspace for the live demo (Copilot, ChatGPT Enterprise/Team or Gemini for Workspace)",
      "Playbook 03 — Data Analysis & KPIs",
      "Outpatient access worked example — Riverside Health Network (illustrative, fictional)",
-     "Tonight's AI prompt (post in chat at 19:44)",
+     "Tonight's AI prompt (post in chat at 19:29)",
      "Role-play persona and curveball cards"
     ]
    }
   },
   {
    "id": "wk4-mon",
-   "num": "Wk 4 · Mon",
+   "num": "S7",
    "title": "Requirements and stories",
    "subtitle": "Capture numbered, prioritised requirements and slice them into INVEST stories",
-   "dayId": "wk4",
-   "time": "Mon 19:00–22:00",
-   "minutes": 180,
+   "dayId": "w7",
+   "time": "19:00–21:00",
+   "minutes": 120,
    "participant": {
     "bigIdea": "A requirement that can't be tested can't be delivered.",
     "overview": "This week turns your To-Be and fix list into something a delivery team can build. Tonight you capture functional and non-functional requirements, numbered, MoSCoW-prioritised and traced to To-Be steps, then slice them into INVEST user stories with real roles and outcomes.\n\nAI is genuinely fast at this: it will draft dozens of requirements from a To-Be map in seconds. That's the risk. Volume isn't quality, and an unreviewed AI backlog is tech debt before it's code. You'll learn to make AI propose, then cut ruthlessly.",
@@ -1405,8 +1459,8 @@
      {
       "id": "wk4-mon-build",
       "title": "Build: Requirements Catalogue, Story Backlog for your initiative",
-      "minutes": 60,
-      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and last week's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 10 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 40 minutes build, 10 minutes peer challenge, 10 minutes fix.",
+      "minutes": 45,
+      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and the previous session's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 8 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 30 minutes build, 8 minutes peer challenge, 7 minutes fix.",
       "prompts": [
        {
         "id": "wk4-mon-o0",
@@ -1428,8 +1482,8 @@
      {
       "id": "wk4-mon-task",
       "title": "Set the task: before next session",
-      "minutes": 30,
-      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session; your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
+      "minutes": 20,
+      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session (allow 60–90 minutes; that's one week away on the 12-week schedule, two to five days on the 6-week intensive); your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
       "prompts": [
        {
         "id": "wk4-mon-hw-moscow",
@@ -1492,27 +1546,27 @@
     "openingLine": "“A requirement that can't be tested can't be delivered. Tonight we prove that on your own initiative, and the AI is going to help, but it's not going to be in charge.”",
     "beats": [
      {
-      "label": "19:00–19:45 · Concept and playbook step",
-      "minutes": 45,
-      "notes": "Core idea: A requirement that can't be tested can't be delivered. Teach steps 1 Capture Requirements, 2 Slice into User Stories with success criteria. Homework check-in (first 5 minutes)."
+      "label": "19:00–19:30 · Concept and playbook step",
+      "minutes": 30,
+      "notes": "Core idea: A requirement that can't be tested can't be delivered. Teach steps 1 Capture Requirements, 2 Slice into User Stories with success criteria. Between-session task check-in (first 5 minutes)."
      },
      {
-      "label": "19:45–20:30 · Live AI demo",
-      "minutes": 45,
+      "label": "19:30–19:55 · Live AI demo",
+      "minutes": 25,
       "notes": "Live demo on the Outpatient access case (fictional Riverside Health Network, synthetic data only) using the script in the facilitation notes. Model critique: catch one invented fact and one missing stakeholder or step."
      },
      {
-      "label": "20:30–21:30 · Build on your initiative",
-      "minutes": 60,
-      "notes": "Breakout build on participants' own initiatives: 40 min build, 10 min peer role-play challenge, 10 min fix. Broadcast the curveball at 21:10."
+      "label": "19:55–20:40 · Build on your initiative",
+      "minutes": 45,
+      "notes": "Breakout build on participants' own initiatives: 30 min build, 8 min peer role-play challenge, 7 min fix. Broadcast the curveball at 20:25."
      },
      {
-      "label": "21:30–22:00 · Share back, set the task",
-      "minutes": 30,
+      "label": "20:40–21:00 · Share back, set the task",
+      "minutes": 20,
       "notes": "Two screen-share showcases, debrief questions, quiz in the portal, set the task and next session's inputs."
      }
     ],
-    "facilitationNotes": "**Run of show (Zoom, 19:00–22:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:44.\n\n**19:00–19:45 Concept.** Open with the core idea, then walk the playbook steps (Capture Requirements, Slice into User Stories) using the success criteria as the teaching spine. Cold-call two participants on their homework from last session.\n\n**19:45–20:30 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 1 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Requirements Catalogue*: REQ-001 (Must): a GP can submit a structured e-referral from their practice software, with results attached — traces to To-Be step 1. REQ-004 (Must): the patient receives an SMS acknowledgement within 1 hour of referral acceptance — To-Be step 1. REQ-009 (Must…\n   - *Story Backlog*: “As a referring GP, I want to submit a complete e-referral with results attached, so that my patient enters triage without being returned for missing information.” AC — happy: Given all mandatory fields and results are attached, When I submit, Then I get a ref…\n6. Close the demo with the challenger move: *\"Act as a sceptical test lead. Give me the three hardest questions about this.\"*\n\n**20:30–21:30 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 21:10 drop the curveball into the breakouts via broadcast.\n\n**21:30–22:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each; run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
+    "facilitationNotes": "**Run of show (Zoom, 19:00–21:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:29.\n\n**19:00–19:30 Concept.** Open with the core idea, then walk the playbook steps (Capture Requirements, Slice into User Stories) using the success criteria as the teaching spine. Cold-call two participants on their task from the previous session.\n\n**19:30–19:55 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 1 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Requirements Catalogue*: REQ-001 (Must): a GP can submit a structured e-referral from their practice software, with results attached — traces to To-Be step 1. REQ-004 (Must): the patient receives an SMS acknowledgement within 1 hour of referral acceptance — To-Be step 1. REQ-009 (Must…\n   - *Story Backlog*: “As a referring GP, I want to submit a complete e-referral with results attached, so that my patient enters triage without being returned for missing information.” AC — happy: Given all mandatory fields and results are attached, When I submit, Then I get a ref…\n6. Close the demo with the challenger move: *\"Act as a sceptical test lead. Give me the three hardest questions about this.\"*\n\n**19:55–20:40 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 20:25 drop the curveball into the breakouts via broadcast.\n\n**20:40–21:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each (keep it to two); run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
     "roleplay": {
      "persona": "The Skeptic",
      "line": "“We did a 'transformation' two years ago. Nothing changed.”",
@@ -1523,7 +1577,7 @@
     "commonFailure": "Participants accept the AI's fluent first draft and present it as fact, including invented numbers, names or decision owners. Fix: make them run the 'list every assumption you made' prompt and show you three lines they changed before peer review.",
     "debrief": [
      "Where did the AI save you the most time tonight, and where did it mislead you?",
-     "Which line of your Story Backlog are you least confident in, and who will confirm it this week?",
+     "Which line of your Story Backlog are you least confident in, and who will confirm it before the next session?",
      "Give me a real example. What happens on the unhappy path? How did you answer that for your initiative?",
      "What did you remove or anonymise before pasting into your agent?"
     ],
@@ -1533,19 +1587,19 @@
      "Enterprise AI workspace for the live demo (Copilot, ChatGPT Enterprise/Team or Gemini for Workspace)",
      "Playbook 04 — Requirements & User Stories",
      "Outpatient access worked example — Riverside Health Network (illustrative, fictional)",
-     "Tonight's AI prompt (post in chat at 19:44)",
+     "Tonight's AI prompt (post in chat at 19:29)",
      "Role-play persona and curveball cards"
     ]
    }
   },
   {
    "id": "wk4-wed",
-   "num": "Wk 4 · Wed",
+   "num": "S8",
    "title": "AC and traceability",
    "subtitle": "Write Given/When/Then for every path and prove coverage with a traceability matrix",
-   "dayId": "wk4",
-   "time": "Wed 19:00–22:00",
-   "minutes": 180,
+   "dayId": "w8",
+   "time": "19:00–21:00",
+   "minutes": 120,
    "participant": {
     "bigIdea": "Traceability is how you prove nothing was lost between the problem and the build.",
     "overview": "Tonight you make your stories testable and your scope defensible. You write Given/When/Then acceptance criteria for the happy, alternative and failure paths, then build a traceability matrix linking requirement → story → test case → To-Be step → decision. An orphan check finds requirements with no story and tests with no requirement.\n\nAI can generate unhappy paths you didn't think of and run the orphan check mechanically across a large table. You decide which edge cases matter and lock the MVP scope with the sponsor.",
@@ -1603,8 +1657,8 @@
      {
       "id": "wk4-wed-build",
       "title": "Build: Story Backlog with Acceptance Criteria, Traceability Matrix for your initiative",
-      "minutes": 60,
-      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and last week's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 10 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 40 minutes build, 10 minutes peer challenge, 10 minutes fix.",
+      "minutes": 45,
+      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and the previous session's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 8 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 30 minutes build, 8 minutes peer challenge, 7 minutes fix.",
       "prompts": [
        {
         "id": "wk4-wed-o0",
@@ -1626,8 +1680,8 @@
      {
       "id": "wk4-wed-task",
       "title": "Set the task: before next session",
-      "minutes": 30,
-      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session; your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
+      "minutes": 20,
+      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session (allow 60–90 minutes; that's one week away on the 12-week schedule, two to five days on the 6-week intensive); your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
       "prompts": [
        {
         "id": "wk4-wed-hw-trace",
@@ -1636,7 +1690,7 @@
        },
        {
         "id": "wk4-wed-hw-opts",
-        "label": "Bring for Week 5: three genuinely different ways to deliver your MVP, and any cost information you can find",
+        "label": "Bring for Session 9: three genuinely different ways to deliver your MVP, and any cost information you can find",
         "placeholder": "Option A … B … C …"
        }
       ]
@@ -1691,27 +1745,27 @@
     "openingLine": "“Traceability is how you prove nothing was lost between the problem and the build. Tonight we prove that on your own initiative, and the AI is going to help, but it's not going to be in charge.”",
     "beats": [
      {
-      "label": "19:00–19:45 · Concept and playbook step",
-      "minutes": 45,
-      "notes": "Core idea: A requirement that can't be tested can't be delivered. Teach steps 3 Write Acceptance Criteria, 4 Build the Traceability Matrix with success criteria. Homework check-in (first 5 minutes)."
+      "label": "19:00–19:30 · Concept and playbook step",
+      "minutes": 30,
+      "notes": "Core idea: A requirement that can't be tested can't be delivered. Teach steps 3 Write Acceptance Criteria, 4 Build the Traceability Matrix with success criteria. Between-session task check-in (first 5 minutes)."
      },
      {
-      "label": "19:45–20:30 · Live AI demo",
-      "minutes": 45,
+      "label": "19:30–19:55 · Live AI demo",
+      "minutes": 25,
       "notes": "Live demo on the Outpatient access case (fictional Riverside Health Network, synthetic data only) using the script in the facilitation notes. Model critique: catch one invented fact and one missing stakeholder or step."
      },
      {
-      "label": "20:30–21:30 · Build on your initiative",
-      "minutes": 60,
-      "notes": "Breakout build on participants' own initiatives: 40 min build, 10 min peer role-play challenge, 10 min fix. Broadcast the curveball at 21:10."
+      "label": "19:55–20:40 · Build on your initiative",
+      "minutes": 45,
+      "notes": "Breakout build on participants' own initiatives: 30 min build, 8 min peer role-play challenge, 7 min fix. Broadcast the curveball at 20:25."
      },
      {
-      "label": "21:30–22:00 · Share back, set the task",
-      "minutes": 30,
+      "label": "20:40–21:00 · Share back, set the task",
+      "minutes": 20,
       "notes": "Two screen-share showcases, debrief questions, quiz in the portal, set the task and next session's inputs."
      }
     ],
-    "facilitationNotes": "**Run of show (Zoom, 19:00–22:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:44.\n\n**19:00–19:45 Concept.** Open with the core idea, then walk the playbook steps (Write Acceptance Criteria, Build the Traceability Matrix) using the success criteria as the teaching spine. Cold-call two participants on their homework from last session.\n\n**19:45–20:30 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 3 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Story Backlog with Acceptance Criteria*: REQ → story → UAT case for every Must and Should, tested only with synthetic referrals; orphan check found REQ-009 (community languages) had no story — sliced and added to R2; two test cases with no requirement traced back to a missed rule (notify the GP when…\n   - *Traceability Matrix*: MVP scope locked: e-referral + submission validation + patient SMS acknowledgement in two pilot clinics (R1); deferred: predictive demand model, patient self-booking portal. Signed: Executive Director Ambulatory Care (sponsor), CDHO, Director of Medical Servic…\n6. Close the demo with the challenger move: *\"Act as a sceptical test lead. Give me the three hardest questions about this.\"*\n\n**20:30–21:30 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 21:10 drop the curveball into the breakouts via broadcast.\n\n**21:30–22:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each; run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
+    "facilitationNotes": "**Run of show (Zoom, 19:00–21:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:29.\n\n**19:00–19:30 Concept.** Open with the core idea, then walk the playbook steps (Write Acceptance Criteria, Build the Traceability Matrix) using the success criteria as the teaching spine. Cold-call two participants on their task from the previous session.\n\n**19:30–19:55 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 3 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Story Backlog with Acceptance Criteria*: REQ → story → UAT case for every Must and Should, tested only with synthetic referrals; orphan check found REQ-009 (community languages) had no story — sliced and added to R2; two test cases with no requirement traced back to a missed rule (notify the GP when…\n   - *Traceability Matrix*: MVP scope locked: e-referral + submission validation + patient SMS acknowledgement in two pilot clinics (R1); deferred: predictive demand model, patient self-booking portal. Signed: Executive Director Ambulatory Care (sponsor), CDHO, Director of Medical Servic…\n6. Close the demo with the challenger move: *\"Act as a sceptical test lead. Give me the three hardest questions about this.\"*\n\n**19:55–20:40 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 20:25 drop the curveball into the breakouts via broadcast.\n\n**20:40–21:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each (keep it to two); run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
     "roleplay": {
      "persona": "The Test Lead",
      "line": "“I can't test 'the system should be user-friendly'.”",
@@ -1722,7 +1776,7 @@
     "commonFailure": "Participants accept the AI's fluent first draft and present it as fact, including invented numbers, names or decision owners. Fix: make them run the 'list every assumption you made' prompt and show you three lines they changed before peer review.",
     "debrief": [
      "Where did the AI save you the most time tonight, and where did it mislead you?",
-     "Which line of your Traceability Matrix are you least confident in, and who will confirm it this week?",
+     "Which line of your Traceability Matrix are you least confident in, and who will confirm it before the next session?",
      "Give me a real example. What happens on the unhappy path? How did you answer that for your initiative?",
      "What did you remove or anonymise before pasting into your agent?"
     ],
@@ -1732,19 +1786,19 @@
      "Enterprise AI workspace for the live demo (Copilot, ChatGPT Enterprise/Team or Gemini for Workspace)",
      "Playbook 04 — Requirements & User Stories",
      "Outpatient access worked example — Riverside Health Network (illustrative, fictional)",
-     "Tonight's AI prompt (post in chat at 19:44)",
+     "Tonight's AI prompt (post in chat at 19:29)",
      "Role-play persona and curveball cards"
     ]
    }
   },
   {
    "id": "wk5-mon",
-   "num": "Wk 5 · Mon",
+   "num": "S9",
    "title": "Generate and score options",
    "subtitle": "Generate Build / Buy / Configure with no straw men, then score against weights agreed first",
-   "dayId": "wk5",
-   "time": "Mon 19:00–22:00",
-   "minutes": 180,
+   "dayId": "w9",
+   "time": "19:00–21:00",
+   "minutes": 120,
    "participant": {
     "bigIdea": "A single recommendation isn't a decision; it's a fait accompli.",
     "overview": "This week you build the case for change. Tonight you generate three genuinely arguable options and score them against weighted criteria agreed *before* scoring, then run a sensitivity check to see what would flip the recommendation.\n\nAI is a superb option generator and a dangerous scorer: it will rationalise whatever it scored first. So we separate the jobs. AI proposes options and criteria; humans agree weights; AI scores with written rationale; you challenge every score.",
@@ -1802,8 +1856,8 @@
      {
       "id": "wk5-mon-build",
       "title": "Build: Solution Options, Solution Options Matrix for your initiative",
-      "minutes": 60,
-      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and last week's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 10 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 40 minutes build, 10 minutes peer challenge, 10 minutes fix.",
+      "minutes": 45,
+      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and the previous session's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 8 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 30 minutes build, 8 minutes peer challenge, 7 minutes fix.",
       "prompts": [
        {
         "id": "wk5-mon-o0",
@@ -1825,8 +1879,8 @@
      {
       "id": "wk5-mon-task",
       "title": "Set the task: before next session",
-      "minutes": 30,
-      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session; your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
+      "minutes": 20,
+      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session (allow 60–90 minutes; that's one week away on the 12-week schedule, two to five days on the 6-week intensive); your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
       "prompts": [
        {
         "id": "wk5-mon-hw-red",
@@ -1889,27 +1943,27 @@
     "openingLine": "“A single recommendation isn't a decision; it's a fait accompli. Tonight we prove that on your own initiative, and the AI is going to help, but it's not going to be in charge.”",
     "beats": [
      {
-      "label": "19:00–19:45 · Concept and playbook step",
-      "minutes": 45,
-      "notes": "Core idea: Three real options, scored before they're sized. Teach steps 1 Generate Solution Options, 2 Score the Options with success criteria. Homework check-in (first 5 minutes)."
+      "label": "19:00–19:30 · Concept and playbook step",
+      "minutes": 30,
+      "notes": "Core idea: Three real options, scored before they're sized. Teach steps 1 Generate Solution Options, 2 Score the Options with success criteria. Between-session task check-in (first 5 minutes)."
      },
      {
-      "label": "19:45–20:30 · Live AI demo",
-      "minutes": 45,
+      "label": "19:30–19:55 · Live AI demo",
+      "minutes": 25,
       "notes": "Live demo on the Outpatient access case (fictional Riverside Health Network, synthetic data only) using the script in the facilitation notes. Model critique: catch one invented fact and one missing stakeholder or step."
      },
      {
-      "label": "20:30–21:30 · Build on your initiative",
-      "minutes": 60,
-      "notes": "Breakout build on participants' own initiatives: 40 min build, 10 min peer role-play challenge, 10 min fix. Broadcast the curveball at 21:10."
+      "label": "19:55–20:40 · Build on your initiative",
+      "minutes": 45,
+      "notes": "Breakout build on participants' own initiatives: 30 min build, 8 min peer role-play challenge, 7 min fix. Broadcast the curveball at 20:25."
      },
      {
-      "label": "21:30–22:00 · Share back, set the task",
-      "minutes": 30,
+      "label": "20:40–21:00 · Share back, set the task",
+      "minutes": 20,
       "notes": "Two screen-share showcases, debrief questions, quiz in the portal, set the task and next session's inputs."
      }
     ],
-    "facilitationNotes": "**Run of show (Zoom, 19:00–22:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:44.\n\n**19:00–19:45 Concept.** Open with the core idea, then walk the playbook steps (Generate Solution Options, Score the Options) using the success criteria as the teaching spine. Cold-call two participants on their homework from last session.\n\n**19:45–20:30 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 1 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Solution Options*: Option A — Build: extend the existing PAS referral module in-house; full control, slowest to benefit. Option B — Buy: e-referral and triage SaaS platform integrated with the PAS via a FHIR integration engine; fastest patient- and GP-facing improvement, integra…\n   - *Solution Options Matrix*: Weights agreed before scoring: patient & GP experience .25, time-to-benefit .20, integration risk .20, 3-year cost .20, clinician adoption .15. Scores (1–5 with rationale): B = 4.1, A = 3.6, C = 2.8. Sensitivity: B stays ahead unless integration risk is weight…\n6. Close the demo with the challenger move: *\"Act as a sceptical CFO. Give me the three hardest questions about this.\"*\n\n**20:30–21:30 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 21:10 drop the curveball into the breakouts via broadcast.\n\n**21:30–22:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each; run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
+    "facilitationNotes": "**Run of show (Zoom, 19:00–21:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:29.\n\n**19:00–19:30 Concept.** Open with the core idea, then walk the playbook steps (Generate Solution Options, Score the Options) using the success criteria as the teaching spine. Cold-call two participants on their task from the previous session.\n\n**19:30–19:55 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 1 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Solution Options*: Option A — Build: extend the existing PAS referral module in-house; full control, slowest to benefit. Option B — Buy: e-referral and triage SaaS platform integrated with the PAS via a FHIR integration engine; fastest patient- and GP-facing improvement, integra…\n   - *Solution Options Matrix*: Weights agreed before scoring: patient & GP experience .25, time-to-benefit .20, integration risk .20, 3-year cost .20, clinician adoption .15. Scores (1–5 with rationale): B = 4.1, A = 3.6, C = 2.8. Sensitivity: B stays ahead unless integration risk is weight…\n6. Close the demo with the challenger move: *\"Act as a sceptical CFO. Give me the three hardest questions about this.\"*\n\n**19:55–20:40 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 20:25 drop the curveball into the breakouts via broadcast.\n\n**20:40–21:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each (keep it to two); run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
     "roleplay": {
      "persona": "The Vendor",
      "line": "“Our platform does all of that out of the box.”",
@@ -1920,7 +1974,7 @@
     "commonFailure": "Participants accept the AI's fluent first draft and present it as fact, including invented numbers, names or decision owners. Fix: make them run the 'list every assumption you made' prompt and show you three lines they changed before peer review.",
     "debrief": [
      "Where did the AI save you the most time tonight, and where did it mislead you?",
-     "Which line of your Solution Options Matrix are you least confident in, and who will confirm it this week?",
+     "Which line of your Solution Options Matrix are you least confident in, and who will confirm it before the next session?",
      "What are we NOT choosing, and why? How did you answer that for your initiative?",
      "What did you remove or anonymise before pasting into your agent?"
     ],
@@ -1930,22 +1984,22 @@
      "Enterprise AI workspace for the live demo (Copilot, ChatGPT Enterprise/Team or Gemini for Workspace)",
      "Playbook 05 — Solution Design & Business Cases",
      "Outpatient access worked example — Riverside Health Network (illustrative, fictional)",
-     "Tonight's AI prompt (post in chat at 19:44)",
+     "Tonight's AI prompt (post in chat at 19:29)",
      "Role-play persona and curveball cards"
     ]
    }
   },
   {
    "id": "wk5-wed",
-   "num": "Wk 5 · Wed",
+   "num": "S10",
    "title": "One-page business case",
    "subtitle": "Size costs and benefits honestly, then compress to a page an executive reads in sixty seconds",
-   "dayId": "wk5",
-   "time": "Wed 19:00–22:00",
-   "minutes": 180,
+   "dayId": "w10",
+   "time": "19:00–21:00",
+   "minutes": 120,
    "participant": {
     "bigIdea": "Lead with the ask and the number; footnote every assumption.",
-    "overview": "Tonight you size the recommended option and compress it into a one-page business case. Costs cover licences, build, integration, change and run. Benefits come straight from your Week 3 value leaks, ramped conservatively. You calculate NPV and payback, then write the page: the ask, the headline numbers, the top three risks and the decision date.\n\nAI is excellent at NPV arithmetic and at drafting crisp executive prose. It's also excellent at making optimistic numbers look authoritative. Every figure needs a footnoted assumption you can defend.",
+    "overview": "Tonight you size the recommended option and compress it into a one-page business case. Costs cover licences, build, integration, change and run. Benefits come straight from your Session 6 value leaks, ramped conservatively. You calculate NPV and payback, then write the page: the ask, the headline numbers, the top three risks and the decision date.\n\nAI is excellent at NPV arithmetic and at drafting crisp executive prose. It's also excellent at making optimistic numbers look authoritative. Every figure needs a footnoted assumption you can defend.",
     "objectives": [
      "Size three-year costs and conservatively ramped benefits",
      "Calculate NPV and payback and state the discount rate",
@@ -2000,8 +2054,8 @@
      {
       "id": "wk5-wed-build",
       "title": "Build: Cost-Benefit Model, One-Page Business Case for your initiative",
-      "minutes": 60,
-      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and last week's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 10 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 40 minutes build, 10 minutes peer challenge, 10 minutes fix.",
+      "minutes": 45,
+      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and the previous session's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 8 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 30 minutes build, 8 minutes peer challenge, 7 minutes fix.",
       "prompts": [
        {
         "id": "wk5-wed-o0",
@@ -2023,8 +2077,8 @@
      {
       "id": "wk5-wed-task",
       "title": "Set the task: before next session",
-      "minutes": 30,
-      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session; your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
+      "minutes": 20,
+      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session (allow 60–90 minutes; that's one week away on the 12-week schedule, two to five days on the 6-week intensive); your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
       "prompts": [
        {
         "id": "wk5-wed-hw-exec",
@@ -2032,7 +2086,7 @@
        },
        {
         "id": "wk5-wed-hw-road",
-        "label": "Bring for Week 6: your MVP scope, the affected groups, and the North Star owner's availability for benefits reviews"
+        "label": "Bring for Session 11: your MVP scope, the affected groups, and the North Star owner's availability for benefits reviews"
        }
       ]
      }
@@ -2086,27 +2140,27 @@
     "openingLine": "“Lead with the ask and the number; footnote every assumption. Tonight we prove that on your own initiative, and the AI is going to help, but it's not going to be in charge.”",
     "beats": [
      {
-      "label": "19:00–19:45 · Concept and playbook step",
-      "minutes": 45,
-      "notes": "Core idea: Three real options, scored before they're sized. Teach steps 3 Size Costs and Benefits, 4 Build the One-Page Business Case with success criteria. Homework check-in (first 5 minutes)."
+      "label": "19:00–19:30 · Concept and playbook step",
+      "minutes": 30,
+      "notes": "Core idea: Three real options, scored before they're sized. Teach steps 3 Size Costs and Benefits, 4 Build the One-Page Business Case with success criteria. Between-session task check-in (first 5 minutes)."
      },
      {
-      "label": "19:45–20:30 · Live AI demo",
-      "minutes": 45,
+      "label": "19:30–19:55 · Live AI demo",
+      "minutes": 25,
       "notes": "Live demo on the Outpatient access case (fictional Riverside Health Network, synthetic data only) using the script in the facilitation notes. Model critique: catch one invented fact and one missing stakeholder or step."
      },
      {
-      "label": "20:30–21:30 · Build on your initiative",
-      "minutes": 60,
-      "notes": "Breakout build on participants' own initiatives: 40 min build, 10 min peer role-play challenge, 10 min fix. Broadcast the curveball at 21:10."
+      "label": "19:55–20:40 · Build on your initiative",
+      "minutes": 45,
+      "notes": "Breakout build on participants' own initiatives: 30 min build, 8 min peer role-play challenge, 7 min fix. Broadcast the curveball at 20:25."
      },
      {
-      "label": "21:30–22:00 · Share back, set the task",
-      "minutes": 30,
+      "label": "20:40–21:00 · Share back, set the task",
+      "minutes": 20,
       "notes": "Two screen-share showcases, debrief questions, quiz in the portal, set the task and next session's inputs."
      }
     ],
-    "facilitationNotes": "**Run of show (Zoom, 19:00–22:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:44.\n\n**19:00–19:45 Concept.** Open with the core idea, then walk the playbook steps (Size Costs and Benefits, Build the One-Page Business Case) using the success criteria as the teaching spine. Cold-call two participants on their homework from last session.\n\n**19:45–20:30 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 3 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Cost-Benefit Model*: Option B: 3-year cost $6.8m ($3.1m / $2.0m / $1.7m — licences, FHIR integration, privacy impact assessment, change). Benefits at conservative ramp 40/80/100%: the $2.0m/yr addressable value from the Value Leak Analysis plus $2.2m/yr of freed clinic capacity (≈…\n   - *One-Page Business Case*: The ask: approve $3.1m year-1 to implement Option B and cut Category 2 referral-to-first-appointment from 74 to ≤45 days. Headline numbers: $2.0m/yr addressable value ($4.2m/yr total benefit at full run rate), NPV $1.9m, payback ~25 months. Top 3 risks: clinic…\n6. Close the demo with the challenger move: *\"Act as a sceptical CFO. Give me the three hardest questions about this.\"*\n\n**20:30–21:30 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 21:10 drop the curveball into the breakouts via broadcast.\n\n**21:30–22:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each; run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
+    "facilitationNotes": "**Run of show (Zoom, 19:00–21:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:29.\n\n**19:00–19:30 Concept.** Open with the core idea, then walk the playbook steps (Size Costs and Benefits, Build the One-Page Business Case) using the success criteria as the teaching spine. Cold-call two participants on their task from the previous session.\n\n**19:30–19:55 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 3 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Cost-Benefit Model*: Option B: 3-year cost $6.8m ($3.1m / $2.0m / $1.7m — licences, FHIR integration, privacy impact assessment, change). Benefits at conservative ramp 40/80/100%: the $2.0m/yr addressable value from the Value Leak Analysis plus $2.2m/yr of freed clinic capacity (≈…\n   - *One-Page Business Case*: The ask: approve $3.1m year-1 to implement Option B and cut Category 2 referral-to-first-appointment from 74 to ≤45 days. Headline numbers: $2.0m/yr addressable value ($4.2m/yr total benefit at full run rate), NPV $1.9m, payback ~25 months. Top 3 risks: clinic…\n6. Close the demo with the challenger move: *\"Act as a sceptical CFO. Give me the three hardest questions about this.\"*\n\n**19:55–20:40 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 20:25 drop the curveball into the breakouts via broadcast.\n\n**20:40–21:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each (keep it to two); run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
     "roleplay": {
      "persona": "The CFO",
      "line": "“Why not do the cheap option first and see?”",
@@ -2117,7 +2171,7 @@
     "commonFailure": "Participants accept the AI's fluent first draft and present it as fact, including invented numbers, names or decision owners. Fix: make them run the 'list every assumption you made' prompt and show you three lines they changed before peer review.",
     "debrief": [
      "Where did the AI save you the most time tonight, and where did it mislead you?",
-     "Which line of your One-Page Business Case are you least confident in, and who will confirm it this week?",
+     "Which line of your One-Page Business Case are you least confident in, and who will confirm it before the next session?",
      "What are we NOT choosing, and why? How did you answer that for your initiative?",
      "What did you remove or anonymise before pasting into your agent?"
     ],
@@ -2127,19 +2181,19 @@
      "Enterprise AI workspace for the live demo (Copilot, ChatGPT Enterprise/Team or Gemini for Workspace)",
      "Playbook 05 — Solution Design & Business Cases",
      "Outpatient access worked example — Riverside Health Network (illustrative, fictional)",
-     "Tonight's AI prompt (post in chat at 19:44)",
+     "Tonight's AI prompt (post in chat at 19:29)",
      "Role-play persona and curveball cards"
     ]
    }
   },
   {
    "id": "wk6-mon",
-   "num": "Wk 6 · Mon",
+   "num": "S11",
    "title": "Roadmap and change plan",
    "subtitle": "Sequence releases with standalone value, assess change impact and build an ADKAR plan",
-   "dayId": "wk6",
-   "time": "Mon 19:00–22:00",
-   "minutes": 180,
+   "dayId": "w11",
+   "time": "19:00–21:00",
+   "minutes": 120,
    "participant": {
     "bigIdea": "Delivery ships the solution. Change makes it stick.",
     "overview": "In the final week you make the benefits land. Tonight you sequence a delivery roadmap where every release delivers standalone value, assess the change impact on each affected group, and build an ADKAR-mapped change plan sequenced ahead of each release.\n\nAI helps by drafting impact assessments per role, generating role-specific communications and spotting ADKAR stages you skipped. It can't tell you how change-fatigued your agents are; that comes from the conversations you role-play tonight.",
@@ -2193,8 +2247,8 @@
      {
       "id": "wk6-mon-build",
       "title": "Build: Delivery Roadmap, Change Impact Assessment, Change Plan for your initiative",
-      "minutes": 60,
-      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and last week's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 10 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 40 minutes build, 10 minutes peer challenge, 10 minutes fix.",
+      "minutes": 45,
+      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and the previous session's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 8 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 30 minutes build, 8 minutes peer challenge, 7 minutes fix.",
       "prompts": [
        {
         "id": "wk6-mon-o0",
@@ -2221,8 +2275,8 @@
      {
       "id": "wk6-mon-task",
       "title": "Set the task: before next session",
-      "minutes": 30,
-      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session; your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
+      "minutes": 20,
+      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session (allow 60–90 minutes; that's one week away on the 12-week schedule, two to five days on the 6-week intensive); your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
       "prompts": [
        {
         "id": "wk6-mon-hw-imp",
@@ -2285,27 +2339,27 @@
     "openingLine": "“Delivery ships the solution. Change makes it stick. Tonight we prove that on your own initiative, and the AI is going to help, but it's not going to be in charge.”",
     "beats": [
      {
-      "label": "19:00–19:45 · Concept and playbook step",
-      "minutes": 45,
-      "notes": "Core idea: Delivery ships the solution. Change makes it stick. Teach steps 1 Sequence the Delivery Roadmap, 2 Run the Change Impact Assessment, 3 Build the Change Plan with success criteria. Homework check-in (first 5 minutes)."
+      "label": "19:00–19:30 · Concept and playbook step",
+      "minutes": 30,
+      "notes": "Core idea: Delivery ships the solution. Change makes it stick. Teach steps 1 Sequence the Delivery Roadmap, 2 Run the Change Impact Assessment, 3 Build the Change Plan with success criteria. Between-session task check-in (first 5 minutes)."
      },
      {
-      "label": "19:45–20:30 · Live AI demo",
-      "minutes": 45,
+      "label": "19:30–19:55 · Live AI demo",
+      "minutes": 25,
       "notes": "Live demo on the Outpatient access case (fictional Riverside Health Network, synthetic data only) using the script in the facilitation notes. Model critique: catch one invented fact and one missing stakeholder or step."
      },
      {
-      "label": "20:30–21:30 · Build on your initiative",
-      "minutes": 60,
-      "notes": "Breakout build on participants' own initiatives: 40 min build, 10 min peer role-play challenge, 10 min fix. Broadcast the curveball at 21:10."
+      "label": "19:55–20:40 · Build on your initiative",
+      "minutes": 45,
+      "notes": "Breakout build on participants' own initiatives: 30 min build, 8 min peer role-play challenge, 7 min fix. Broadcast the curveball at 20:25."
      },
      {
-      "label": "21:30–22:00 · Share back, set the task",
-      "minutes": 30,
+      "label": "20:40–21:00 · Share back, set the task",
+      "minutes": 20,
       "notes": "Two screen-share showcases, debrief questions, quiz in the portal, set the task and next session's inputs."
      }
     ],
-    "facilitationNotes": "**Run of show (Zoom, 19:00–22:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:44.\n\n**19:00–19:45 Concept.** Open with the core idea, then walk the playbook steps (Sequence the Delivery Roadmap, Run the Change Impact Assessment, Build the Change Plan) using the success criteria as the teaching spine. Cold-call two participants on their homework from last session.\n\n**19:45–20:30 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 1 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Delivery Roadmap*: R1 (weeks 1–12): e-referral MVP with submission validation and patient SMS acknowledgement in two pilot clinics (cardiology, orthopaedics) — standalone value: removes the fax-inbox wait and most returned referrals for pilot volume. R2 (weeks 13–20): daily prot…\n   - *Change Impact Assessment*: Triage clinicians (consultants and clinical nurse consultants) — high impact: new daily queue, protocol-led triage, changed measure; training + clinical supervision. Referral Hub and bookings admin — high: re-keying disappears, validation exceptions and SMS of…\n   - *Change Plan*: ADKAR-mapped and sequenced ahead of each release. Awareness: grand-rounds briefing with Heads of Unit, not a memo. Desire: clinicians co-design the triage protocols; wait-time measure on unit dashboards. Knowledge: role-based training two weeks before R1. Abil…\n6. Close the demo with the challenger move: *\"Act as a sceptical change manager. Give me the three hardest questions about this.\"*\n\n**20:30–21:30 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 21:10 drop the curveball into the breakouts via broadcast.\n\n**21:30–22:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each; run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
+    "facilitationNotes": "**Run of show (Zoom, 19:00–21:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:29.\n\n**19:00–19:30 Concept.** Open with the core idea, then walk the playbook steps (Sequence the Delivery Roadmap, Run the Change Impact Assessment, Build the Change Plan) using the success criteria as the teaching spine. Cold-call two participants on their task from the previous session.\n\n**19:30–19:55 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 1 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Delivery Roadmap*: R1 (weeks 1–12): e-referral MVP with submission validation and patient SMS acknowledgement in two pilot clinics (cardiology, orthopaedics) — standalone value: removes the fax-inbox wait and most returned referrals for pilot volume. R2 (weeks 13–20): daily prot…\n   - *Change Impact Assessment*: Triage clinicians (consultants and clinical nurse consultants) — high impact: new daily queue, protocol-led triage, changed measure; training + clinical supervision. Referral Hub and bookings admin — high: re-keying disappears, validation exceptions and SMS of…\n   - *Change Plan*: ADKAR-mapped and sequenced ahead of each release. Awareness: grand-rounds briefing with Heads of Unit, not a memo. Desire: clinicians co-design the triage protocols; wait-time measure on unit dashboards. Knowledge: role-based training two weeks before R1. Abil…\n6. Close the demo with the challenger move: *\"Act as a sceptical change manager. Give me the three hardest questions about this.\"*\n\n**19:55–20:40 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 20:25 drop the curveball into the breakouts via broadcast.\n\n**20:40–21:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each (keep it to two); run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
     "roleplay": {
      "persona": "The Blocker",
      "line": "“That won't get past audit. We've tried something like this before.”",
@@ -2316,7 +2370,7 @@
     "commonFailure": "Participants accept the AI's fluent first draft and present it as fact, including invented numbers, names or decision owners. Fix: make them run the 'list every assumption you made' prompt and show you three lines they changed before peer review.",
     "debrief": [
      "Where did the AI save you the most time tonight, and where did it mislead you?",
-     "Which line of your Change Plan are you least confident in, and who will confirm it this week?",
+     "Which line of your Change Plan are you least confident in, and who will confirm it before the next session?",
      "Who has to work differently, and do they know? How did you answer that for your initiative?",
      "What did you remove or anonymise before pasting into your agent?"
     ],
@@ -2326,19 +2380,19 @@
      "Enterprise AI workspace for the live demo (Copilot, ChatGPT Enterprise/Team or Gemini for Workspace)",
      "Playbook 06 — Delivery & Change",
      "Outpatient access worked example — Riverside Health Network (illustrative, fictional)",
-     "Tonight's AI prompt (post in chat at 19:44)",
+     "Tonight's AI prompt (post in chat at 19:29)",
      "Role-play persona and curveball cards"
     ]
    }
   },
   {
    "id": "wk6-wed",
-   "num": "Wk 6 · Wed",
+   "num": "S12",
    "title": "Benefits plan and showcase",
    "subtitle": "Define how benefits are measured and owned, then showcase the full chain",
-   "dayId": "wk6",
-   "time": "Wed 19:00–22:00",
-   "minutes": 180,
+   "dayId": "w12",
+   "time": "19:00–21:00",
+   "minutes": 120,
    "participant": {
     "bigIdea": "Diarise the benefits review before go-live, not after.",
     "overview": "The final session closes the loop. You build a Benefits Realisation Plan where each benefit has a measure, baseline, target, owner and a review date diarised before go-live, plus a guardrail metric. Then each participant showcases their initiative end-to-end, from problem statement to benefits plan, in five minutes.\n\nAI helps you check that every benefit traces back to a value leak and forward to a measure someone owns. It also makes a good rehearsal audience. You leave with a 14-day commitment: the one artefact you'll take to a real stakeholder next.",
@@ -2392,8 +2446,8 @@
      {
       "id": "wk6-wed-build",
       "title": "Build: Benefits Realisation Plan for your initiative",
-      "minutes": 60,
-      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and last week's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 10 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 40 minutes build, 10 minutes peer challenge, 10 minutes fix.",
+      "minutes": 35,
+      "instructions": "Work in pairs, but each person builds on their **own** initiative.\n\n1. Open your course agent and paste tonight's AI prompt with your sanitised inputs (and the previous session's artefacts).\n2. Run one step at a time. After each step, check the draft against the success criteria above and mark every line **confirmed**, **assumption** or **to validate**.\n3. Swap with your partner for 8 minutes: they play a stakeholder and challenge your draft (see the role-play card).\n4. Fix the draft. Paste the final version into the boxes below.\n\nTimebox: 30 minutes build, 8 minutes peer challenge, 7 minutes fix.",
       "prompts": [
        {
         "id": "wk6-wed-o0",
@@ -2410,8 +2464,8 @@
      {
       "id": "wk6-wed-task",
       "title": "Set the task: before next session",
-      "minutes": 30,
-      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session; your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
+      "minutes": 45,
+      "instructions": "Share back one insight from your build (60 seconds each in breakouts, two volunteers to the main room). Then commit to the tasks below. These are due before the next session (allow 60–90 minutes; that's one week away on the 12-week schedule, two to five days on the 6-week intensive); your facilitator will ask for one in the first five minutes.\n\nKeep your AI workspace up to date: add the finished artefact to your agent's knowledge so it carries forward.",
       "prompts": [
        {
         "id": "wk6-wed-hw-14",
@@ -2475,27 +2529,27 @@
     "openingLine": "“Diarise the benefits review before go-live, not after. Tonight we prove that on your own initiative, and the AI is going to help, but it's not going to be in charge.”",
     "beats": [
      {
-      "label": "19:00–19:45 · Concept and playbook step",
-      "minutes": 45,
-      "notes": "Core idea: Delivery ships the solution. Change makes it stick. Teach steps 4 Define the Benefits Realisation Plan with success criteria. Homework check-in (first 5 minutes)."
+      "label": "19:00–19:20 · Concept and playbook step",
+      "minutes": 20,
+      "notes": "Core idea: Delivery ships the solution. Change makes it stick. Teach (compressed to leave room for showcases) steps 4 Define the Benefits Realisation Plan with success criteria. Between-session task check-in (first 5 minutes)."
      },
      {
-      "label": "19:45–20:30 · Live AI demo",
-      "minutes": 45,
+      "label": "19:20–19:40 · Live AI demo",
+      "minutes": 20,
       "notes": "Live demo on the Outpatient access case (fictional Riverside Health Network, synthetic data only) using the script in the facilitation notes. Model critique: catch one invented fact and one missing stakeholder or step."
      },
      {
-      "label": "20:30–21:30 · Build on your initiative",
-      "minutes": 60,
-      "notes": "Breakout build on participants' own initiatives: 40 min build, 10 min peer role-play challenge, 10 min fix. Broadcast the curveball at 21:10."
+      "label": "19:40–20:15 · Build on your initiative",
+      "minutes": 35,
+      "notes": "Breakout build: 25 min build, 5 min peer challenge, 5 min fix. Broadcast the curveball at 20:00."
      },
      {
-      "label": "21:30–22:00 · Share back, set the task",
-      "minutes": 30,
-      "notes": "Two screen-share showcases, debrief questions, quiz in the portal, set the task and next session's inputs."
+      "label": "20:15–21:00 · Showcases and close",
+      "minutes": 45,
+      "notes": "Five-minute showcases (problem and North Star, To-Be, case, roadmap, benefits plan). Up to 8 participants: main room. Larger cohorts: two parallel breakout rooms with a co-facilitator, then a 5-minute whole-group close and the 14-day commitment."
      }
     ],
-    "facilitationNotes": "**Run of show (Zoom, 19:00–22:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:44.\n\n**19:00–19:45 Concept.** Open with the core idea, then walk the playbook steps (Define the Benefits Realisation Plan) using the success criteria as the teaching spine. Cold-call two participants on their homework from last session.\n\n**19:45–20:30 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 4 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Benefits Realisation Plan*: Benefit 1: shorter wait — measure: days referral→first appointment (Category 2); baseline 74; target ≤45; owner: Executive Director Ambulatory Care; monthly review from R1 go-live (diarised before go-live). Benefit 2: ‘where is my referral’ calls −40% — owner:…\n6. Close the demo with the challenger move: *\"Act as a sceptical change manager. Give me the three hardest questions about this.\"*\n\n**20:30–21:30 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 21:10 drop the curveball into the breakouts via broadcast.\n\n**21:30–22:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each; run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
+    "facilitationNotes": "**Run of show (Zoom, 19:00–21:00 Sydney).** Breakout rooms of pairs for the build; keep the main room for demo and share back. Post tonight's prompt in the chat at 19:19.\n\n**19:00–19:20 Concept.** Open with the core idea, then walk the playbook steps (Define the Benefits Realisation Plan) using the success criteria as the teaching spine. Cold-call two participants on their task from the previous session.\n\n**19:20–19:40 Live AI demo script.** Share your screen in your enterprise AI workspace (never a consumer tool with real data).\n1. Show the agent instructions: the BAS playbook prompt already loaded.\n2. Type: *\"Here is our sanitised initiative: shorter waits for specialist outpatient appointments at Riverside Health Network (fictional). Category 2 patients wait ~74 days from referral receipt to first specialist appointment; 34% of outpatient calls are 'where is my referral'. No patient data is included. Run Step 4 only.\"*\n3. Read the output aloud and critique it against the success criteria. Deliberately find one invented fact and say: *\"Where did that come from? Mark it ASSUMPTION.\"*\n4. Type: *\"List every assumption you made and the stakeholder who could confirm each.\"*\n5. Run the remaining step(s), then reveal the finished worked-example version and compare:\n   - *Benefits Realisation Plan*: Benefit 1: shorter wait — measure: days referral→first appointment (Category 2); baseline 74; target ≤45; owner: Executive Director Ambulatory Care; monthly review from R1 go-live (diarised before go-live). Benefit 2: ‘where is my referral’ calls −40% — owner:…\n6. Close the demo with the challenger move: *\"Act as a sceptical change manager. Give me the three hardest questions about this.\"*\n\n**19:40–20:15 Build.** Send to breakouts. Visit every room once; ask \"show me one line the AI wrote that you changed\". At 20:00 drop the curveball into the breakouts via broadcast.\n\n**20:15–21:00 Share back, set the task.** Two volunteers screen-share for 3 minutes each (keep it to two); run the debrief questions; read out the homework and the next-session inputs. Finish on time.\n\n**Guardrail check.** Ask at least once: \"What did you remove before you pasted that in?\" If anyone pasted personal or confidential data into a consumer tool, address it privately and have them delete the chat. In tonight's demo case that means no patient names, URNs, Medicare numbers, dates of birth or clinical notes — synthetic referrals only.",
     "roleplay": {
      "persona": "The Executive Sponsor",
      "line": "“Great work. We'll check benefits once it's all bedded in.”",
@@ -2506,7 +2560,7 @@
     "commonFailure": "Participants accept the AI's fluent first draft and present it as fact, including invented numbers, names or decision owners. Fix: make them run the 'list every assumption you made' prompt and show you three lines they changed before peer review.",
     "debrief": [
      "Where did the AI save you the most time tonight, and where did it mislead you?",
-     "Which line of your Benefits Realisation Plan are you least confident in, and who will confirm it this week?",
+     "Which line of your Benefits Realisation Plan are you least confident in, and who will confirm it before the next session?",
      "Who has to work differently, and do they know? How did you answer that for your initiative?",
      "What did you remove or anonymise before pasting into your agent?"
     ],
@@ -2516,7 +2570,7 @@
      "Enterprise AI workspace for the live demo (Copilot, ChatGPT Enterprise/Team or Gemini for Workspace)",
      "Playbook 06 — Delivery & Change",
      "Outpatient access worked example — Riverside Health Network (illustrative, fictional)",
-     "Tonight's AI prompt (post in chat at 19:44)",
+     "Tonight's AI prompt (post in chat at 19:19)",
      "Role-play persona and curveball cards"
     ]
    }
@@ -2530,7 +2584,7 @@
   },
   {
    "title": "Agent setup guide",
-   "description": "How to configure a ChatGPT Project, Gemini Gem or Microsoft 365 Copilot agent with the playbooks, and how to carry artefacts forward week to week.",
+   "description": "How to configure a ChatGPT Project, Gemini Gem or Microsoft 365 Copilot agent with the playbooks, and how to carry artefacts forward session to session.",
    "audience": "participant"
   },
   {
@@ -2558,6 +2612,142 @@
    "title": "Demo workspace checklist",
    "description": "Before each session: enterprise AI workspace open, playbook loaded, worked example artefacts ready to reveal, prompt ready to paste into chat, breakout rooms pre-assigned.",
    "audience": "presenter"
+  }
+ ],
+ "schedules": [
+  {
+   "id": "12wk",
+   "label": "12 weeks · 1 session a week",
+   "short": "12 weeks",
+   "note": "One 2-hour session every Monday. A week between sessions to take each artefact to a real stakeholder.",
+   "format": "Flagship · 12 weeks",
+   "duration": "12 weeks · 12 × 2-hour sessions",
+   "delivery": "Live on Zoom · Mondays 19:00–21:00 Sydney · one global intake"
+  },
+  {
+   "id": "6wk",
+   "label": "6 weeks · 2 sessions a week",
+   "short": "6 weeks",
+   "note": "Intensive: two 2-hour sessions a week, Monday and Wednesday. Same twelve sessions, same artefacts.",
+   "format": "Flagship · 6-week intensive",
+   "duration": "6 weeks · 12 × 2-hour sessions",
+   "delivery": "Live on Zoom · Mon + Wed 19:00–21:00 Sydney · one global intake",
+   "days": [
+    {
+     "id": "i1",
+     "label": "Week 1",
+     "title": "Discovery",
+     "blocks": [
+      {
+       "time": "Mon 19:00–21:00",
+       "title": "Frame the problem with AI",
+       "type": "session",
+       "moduleId": "wk1-mon"
+      },
+      {
+       "time": "Wed 19:00–21:00",
+       "title": "Stakeholders and decisions",
+       "type": "session",
+       "moduleId": "wk1-wed"
+      }
+     ]
+    },
+    {
+     "id": "i2",
+     "label": "Week 2",
+     "title": "Process",
+     "blocks": [
+      {
+       "time": "Mon 19:00–21:00",
+       "title": "AI-assisted As-Is BPMN",
+       "type": "session",
+       "moduleId": "wk2-mon"
+      },
+      {
+       "time": "Wed 19:00–21:00",
+       "title": "Design the To-Be",
+       "type": "session",
+       "moduleId": "wk2-wed"
+      }
+     ]
+    },
+    {
+     "id": "i3",
+     "label": "Week 3",
+     "title": "Data and KPIs",
+     "blocks": [
+      {
+       "time": "Mon 19:00–21:00",
+       "title": "North Star and KPI tree",
+       "type": "session",
+       "moduleId": "wk3-mon"
+      },
+      {
+       "time": "Wed 19:00–21:00",
+       "title": "Value leaks and fix list",
+       "type": "session",
+       "moduleId": "wk3-wed"
+      }
+     ]
+    },
+    {
+     "id": "i4",
+     "label": "Week 4",
+     "title": "Requirements",
+     "blocks": [
+      {
+       "time": "Mon 19:00–21:00",
+       "title": "Requirements and stories",
+       "type": "session",
+       "moduleId": "wk4-mon"
+      },
+      {
+       "time": "Wed 19:00–21:00",
+       "title": "AC and traceability",
+       "type": "session",
+       "moduleId": "wk4-wed"
+      }
+     ]
+    },
+    {
+     "id": "i5",
+     "label": "Week 5",
+     "title": "Solution and case",
+     "blocks": [
+      {
+       "time": "Mon 19:00–21:00",
+       "title": "Generate and score options",
+       "type": "session",
+       "moduleId": "wk5-mon"
+      },
+      {
+       "time": "Wed 19:00–21:00",
+       "title": "One-page business case",
+       "type": "session",
+       "moduleId": "wk5-wed"
+      }
+     ]
+    },
+    {
+     "id": "i6",
+     "label": "Week 6",
+     "title": "Delivery and change",
+     "blocks": [
+      {
+       "time": "Mon 19:00–21:00",
+       "title": "Roadmap and change plan",
+       "type": "session",
+       "moduleId": "wk6-mon"
+      },
+      {
+       "time": "Wed 19:00–21:00",
+       "title": "Benefits plan and showcase",
+       "type": "session",
+       "moduleId": "wk6-wed"
+      }
+     ]
+    }
+   ]
   }
  ]
 }

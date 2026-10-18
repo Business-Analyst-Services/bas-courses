@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
+import { getScheduledCourse } from "@/lib/schedule";
 import CourseSidebar from "@/components/CourseSidebar";
 import { slugify } from "@/lib/slug";
 import Md from "@/components/Md";
@@ -9,7 +10,7 @@ import Quiz from "@/components/Quiz";
 import SampleKit from "@/components/SampleKit";
 import { CompleteButton, CopyButton } from "@/components/Buttons";
 import { requireCourseRole } from "@/lib/access";
-import { getCourse, getModule, moduleNeighbours } from "@/lib/courses";
+import { getModule, moduleNeighbours } from "@/lib/courses";
 import { getProgress, getQuizAnswers, getResponses } from "@/lib/data";
 
 export const dynamic = "force-dynamic";
@@ -19,7 +20,7 @@ export default async function ModulePage({
 }: { params: Promise<{ slug: string; id: string }>; searchParams: Promise<{ view?: string }> }) {
   const { slug, id } = await params;
   const { view } = await searchParams;
-  const course = getCourse(slug);
+  const { course, schedule } = await getScheduledCourse(slug);
   const m = course && getModule(course, id);
   if (!course || !m) notFound();
   const { viewer, role, enrolments } = await requireCourseRole(slug);
@@ -38,7 +39,7 @@ export default async function ModulePage({
   return (
     <>
       <Nav enrolments={enrolments} current={slug} isAdmin={viewer.isAdmin} />
-      <CourseSidebar course={course} currentId={m.id} done={done} view={presenterView ? "presenter" : undefined} role={role} />
+      <CourseSidebar course={course} schedule={schedule} here={`/c/${slug}/m/${m.id}${q}`} currentId={m.id} done={done} view={presenterView ? "presenter" : undefined} role={role} />
         <div className="shell">
         <main className="main">
         <div style={{ display: "flex", justifyContent: "space-between", gap: 12, flexWrap: "wrap", alignItems: "center", marginBottom: 14 }}>
