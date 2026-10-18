@@ -2,59 +2,64 @@
  "slug": "horizons-delivery",
  "title": "Horizons: Delivery",
  "shortTitle": "Delivery Horizon",
- "tagline": "The Delivery Horizon, then practice and competencies to close the series (Ch 7–9).",
- "format": "One-day course · Day 3 of 3 · sold singly or as a 3-day bundle",
+ "tagline": "A full day on the Delivery Horizon: elaborating, verifying and delivering the right things, built correctly (Ch 7).",
+ "format": "One-day course",
  "duration": "1 day",
  "delivery": "Live online · APAC · Times Sydney",
- "audience": "Business analysts, product owners and team members who refine backlogs and work inside delivery teams — and BA leads who want a practical competency map to develop themselves and others.",
+ "audience": "Business analysts, product owners, testers and team members who refine backlogs and work inside agile delivery teams.",
  "order": 5,
- "series": "Horizon Series",
  "outcomes": [
-  "Describe the analyst's role inside a delivery team and across agile events.",
-  "Split a feature into valuable stories and elaborate one with examples, acceptance criteria, NFRs and a value metric.",
-  "Plan a week that balances Delivery work with Initiative and Strategy work.",
-  "Apply techniques across horizons and in scaled settings.",
-  "Diagnose common agile BA challenges and build a personal development map."
+  "Explain the purpose of analysis at the Delivery Horizon and the analyst's role in the Agile Product Team.",
+  "Produce the five outcomes of Delivery analysis, from well-elaborated items to validated increments.",
+  "Apply just-in-time elaboration and turn delivery feedback into action.",
+  "Apply the nine principles of agile business analysis in day-to-day delivery.",
+  "Use the book's Delivery analysis, planning and delivery techniques — including story decomposition, story elaboration and the Three Amigos."
  ],
  "leaveWith": [
-  "One story fully elaborated, with NFRs and a value metric",
-  "A one-week horizon calendar",
-  "A personal development map"
+  "One backlog item fully elaborated, with examples, criteria, NFRs and a measurable indicator",
+  "A technique-to-ambiguity plan for your item",
+  "Commitments for your next iteration"
  ],
  "caseStudy": {
-  "title": "Delivered right first time: last-mile reliability",
+  "title": "Delivered right first time: receiver confirmation",
   "org": "Southern Cross Freight (fictional)",
-  "summary": "Southern Cross Freight is a fictional national parcel and freight carrier moving around 38,000 consignments a day through 14 depots. Only 79% of consignments arrive within their promised delivery window, 9% fail at the first delivery attempt, and receivers and shippers chase status through the contact centre. The target outcome is on-time last-mile delivery of 92% or better within 12 months, with 'where is my consignment' calls down 40%. Across the three days we follow this one idea from investment decision (Strategy), through a funded initiative and product (Initiative), to a single elaborated backlog item (Delivery).",
+  "summary": "Southern Cross Freight is a fictional national parcel carrier moving around 38,000 consignments a day through 14 depots. Only 79% of consignments arrive within their promised window and 9% fail at the first delivery attempt. The product team's goal is on-time last-mile delivery of 92% or better. Throughout the day we take the top backlog item — receiver delivery-window confirmation — from a feature to a story the team can build, verify and measure.",
   "disclaimer": "Illustrative worked example using a fictional organisation."
  },
  "days": [
   {
    "id": "d1",
-   "label": "Day 3 of 3",
-   "title": "Delivery Horizon — practice and competencies to close the series",
+   "label": "One day",
+   "title": "The Delivery Horizon — building the right things, correctly",
    "blocks": [
     {
      "time": "09:00–09:30",
-     "title": "Day 2 recap · horizon bridge",
+     "title": "Welcome · the Delivery Horizon",
      "type": "welcome",
      "moduleId": "hd-s1"
     },
     {
-     "time": "09:30–10:30",
-     "title": "The analyst at the Delivery Horizon",
+     "time": "09:30–10:15",
+     "title": "The Agile Business Analyst at this horizon",
      "type": "session",
      "moduleId": "hd-s2"
     },
     {
-     "time": "10:30–10:45",
+     "time": "10:15–10:30",
      "title": "Morning break",
      "type": "break"
     },
     {
-     "time": "10:45–12:15",
-     "title": "Outcomes · time frame · feedback",
+     "time": "10:30–11:30",
+     "title": "Outcomes of analysis",
      "type": "session",
      "moduleId": "hd-s3"
+    },
+    {
+     "time": "11:30–12:15",
+     "title": "Time frame · context, feedback and learning",
+     "type": "session",
+     "moduleId": "hd-s4"
     },
     {
      "time": "12:15–13:00",
@@ -63,32 +68,38 @@
     },
     {
      "time": "13:00–13:45",
-     "title": "Principles applied · agile events",
-     "type": "session",
-     "moduleId": "hd-s4"
-    },
-    {
-     "time": "13:45–15:15",
-     "title": "Techniques · across horizons and scaling",
+     "title": "Applying the nine principles",
      "type": "session",
      "moduleId": "hd-s5"
     },
     {
-     "time": "15:15–15:30",
+     "time": "13:45–14:45",
+     "title": "Analysis techniques: stories and elaboration",
+     "type": "session",
+     "moduleId": "hd-s6"
+    },
+    {
+     "time": "14:45–15:00",
      "title": "Afternoon break",
      "type": "break"
     },
     {
-     "time": "15:30–16:30",
-     "title": "Common challenges · competencies",
+     "time": "15:00–15:45",
+     "title": "Analysis techniques: understanding and uncertainty",
      "type": "session",
-     "moduleId": "hd-s6"
+     "moduleId": "hd-s7"
+    },
+    {
+     "time": "15:45–16:30",
+     "title": "Planning and delivery techniques",
+     "type": "session",
+     "moduleId": "hd-s8"
     },
     {
      "time": "16:30–17:00",
      "title": "Exercise: elaborate one backlog item · close",
      "type": "exercise",
-     "moduleId": "hd-s7"
+     "moduleId": "hd-s9"
     }
    ]
   }
@@ -96,1159 +107,1508 @@
  "modules": [
   {
    "id": "hd-s1",
-   "num": "3.1",
-   "title": "Day 2 recap · horizon bridge",
-   "subtitle": "From an ordered feature set to the next valuable slice",
+   "num": "1",
+   "title": "Welcome · the Delivery Horizon",
+   "subtitle": "Building the right things, correctly",
    "dayId": "d1",
    "time": "09:00–09:30",
    "minutes": 30,
    "participant": {
-    "bigIdea": "Delivery is where hypotheses meet reality — in days, not quarters.",
-    "overview": "We recap Day 2 — product vision, impact map and ordered features with hypotheses — and cross into the Delivery Horizon. For the running case, the top feature is **receiver delivery-window confirmation**: the evening before delivery, the receiver is asked directly to confirm they'll be in or choose a safe drop, rather than the driver finding out at the door. Today that feature becomes a backlog item that's genuinely ready, built and measured.\n\nNew to the series? You'll get the horizons model and the case in the next few minutes. Illustrative worked example using a fictional organisation.",
+    "bigIdea": "The Delivery Horizon is where the right things get built correctly — in days, not months.",
+    "overview": "Analysis at the Delivery Horizon ensures that **the right things are built correctly**. The question here is how each backlog item should be understood, elaborated and verified. This is where a product vision becomes tangible: working software, validated business rules and real user experiences.\n\nToday follows the structure of the Delivery Horizon chapter of *Agile Business Analysis: A Guide to Product Thinking and Delivery*: the analyst's role, outcomes of analysis, time frame, context and feedback, the nine principles, then analysis techniques and planning and delivery techniques. You'll finish with one backlog item fully elaborated.\n\n![The delivery iteration cycle](/visuals/horizons-delivery/delivery-cycle.svg)",
     "objectives": [
-     "Recall the three horizons and the artefacts from Days 1 and 2.",
-     "Identify the feature you'll elaborate today.",
-     "Describe what changes at the Delivery Horizon."
+     "Explain the purpose of analysis at the Delivery Horizon.",
+     "Describe the iteration cycle and where analysis happens in it.",
+     "Choose the backlog item you'll elaborate today."
     ],
     "keyPoints": [
      {
-      "title": "The thread so far",
-      "body": "Strategy: ≥92% on-time last-mile delivery. Initiative: Right First Time, impact map, ordered features. Delivery: the first slice."
+      "title": "Purpose",
+      "body": "Ensure the right things are built correctly."
      },
      {
-      "title": "Feedback in days",
-      "body": "Working software, demos, acceptance and early usage data every iteration."
+      "title": "Continuous",
+      "body": "Analysis is embedded in the rhythm of iterative delivery, not done up front."
      },
      {
-      "title": "Still connected",
-      "body": "Each story should trace back to a feature hypothesis and the strategic outcome."
+      "title": "Collaborative",
+      "body": "Shared understanding is built through conversation, then captured."
      }
     ],
     "sections": [
      {
-      "heading": "Days 1 and 2 in brief",
-      "body": "| Horizon | Question | Artefacts (running case, illustrative) |\n|---|---|---|\n| Strategy | Should we invest? | Problem statement; outcome 79% → ≥92% on time; lean case; Option B phased |\n| Initiative | What will we build, for whom, in what order? | Right First Time vision; impact map; top five: receiver confirmation, real-time booking, middleware run data, at-risk flag, SMS tracking |\n| Delivery | What's the next slice, and is it done? | *Today:* stories, examples, acceptance criteria, NFRs, value metric |\n\n*Illustrative worked example using a fictional organisation.*"
+      "heading": "How today runs",
+      "body": "| # | Session | Book section |\n|---|---|---|\n| 1 | Welcome · the Delivery Horizon | 7.1 |\n| 2 | The Agile Business Analyst at this horizon | 7.2 |\n| 3 | Outcomes of analysis | 7.3 |\n| 4 | Time frame · context, feedback and learning | 7.4–7.5 |\n| 5 | Applying the nine principles | 7.6 |\n| 6 | Analysis techniques: stories and elaboration | 7.7.1 |\n| 7 | Analysis techniques: understanding and uncertainty | 7.7.1 |\n| 8 | Planning and delivery techniques | 7.7.2 |\n| 9 | Exercise: elaborate one backlog item · close | — |"
      },
      {
-      "heading": "What changes at Delivery",
-      "body": "The time frame shrinks to an iteration (often one to two weeks) or a continuous flow. Analysis becomes **just-in-time and just-enough**: the team needs shared understanding of the next few items, not the whole backlog. The analyst's attention shifts to conversations, examples and acceptance — while keeping one eye on the Initiative and Strategy horizons so the team doesn't optimise the wrong thing."
+      "heading": "The running case",
+      "body": "**Southern Cross Freight** (fictional) moves about 38,000 consignments a day through 14 depots. Only 79% arrive within their promised window and 9% fail at the first delivery attempt. The product team's goal is on-time last-mile delivery of 92% or better.\n\nThe top item on the product backlog is **receiver delivery-window confirmation**: the evening before delivery, the receiver is asked to confirm they'll be in, or choose a safe drop, before routes lock at 5 am. Today we take that item from a feature on the backlog to a story the team can build and verify.\n\n*Illustrative worked example using a fictional organisation.*"
      }
     ],
     "activities": [
      {
-      "title": "Choose your item",
-      "instructions": "Write the feature you'll work on today (or adopt 'receiver delivery-window confirmation'), its hypothesis and signal from Day 2, and the strategic outcome it traces to.",
+      "id": "hd-s1-act1",
+      "title": "Choose your backlog item",
+      "instructions": "Write down a backlog item from your own work that's coming up soon (or adopt 'receiver delivery-window confirmation'). Note who it's for and the value it should create.",
       "minutes": 6,
       "prompts": [
        {
-        "label": "Feature",
-        "placeholder": "",
-        "id": "hd-s1-act1-p1"
+        "id": "hd-s1-act1-p1",
+        "label": "Backlog item",
+        "placeholder": ""
        },
        {
-        "label": "Hypothesis and signal",
-        "placeholder": "",
-        "id": "hd-s1-act1-p2"
+        "id": "hd-s1-act1-p2",
+        "label": "Who it serves",
+        "placeholder": ""
        },
        {
-        "label": "Strategic outcome it traces to",
-        "placeholder": "",
-        "id": "hd-s1-act1-p3"
+        "id": "hd-s1-act1-p3",
+        "label": "The value it should create",
+        "placeholder": ""
        }
-      ],
-      "id": "hd-s1-act1"
+      ]
      }
     ],
-    "aiPrompt": "I'm taking a feature from the Initiative Horizon into delivery. From the feature, hypothesis and context below, summarise in five bullet points what the delivery team needs to understand before splitting it into stories: the actor, the behaviour change, the signal, key constraints (legal, data, integration) and open questions. Feature and context:",
+    "aiPrompt": "I'm a business analyst preparing a backlog item for delivery. From the item and context below, summarise in five bullets what the delivery team needs to understand before work begins: the user, their context, the behaviour the product should exhibit, how success will be judged, and open questions. Item and context:",
     "quiz": [
      {
-      "q": "Typical feedback cycle at the Delivery Horizon is…",
+      "q": "The purpose of analysis at the Delivery Horizon is to…",
       "opts": [
-       "Quarterly",
-       "Days to an iteration",
-       "Annually",
-       "Only at go-live"
+       "Decide which investments to fund",
+       "Ensure the right things are built correctly",
+       "Write the full specification before delivery starts",
+       "Approve the team's work"
       ],
       "a": 1,
-      "why": "Delivery feedback comes from working increments every few days or each iteration."
+      "why": "Delivery analysis asks how each backlog item should be understood, elaborated and verified."
      },
      {
-      "q": "Why should stories trace back to a feature hypothesis?",
+      "q": "When does analysis happen at the Delivery Horizon?",
       "opts": [
-       "For audit only",
-       "So the team can tell whether delivery is moving the intended outcome",
-       "To increase backlog size",
-       "Because tools require it"
+       "Only before the iteration",
+       "Continuously, just ahead of the work that needs it",
+       "Only at the review",
+       "After release"
       ],
       "a": 1,
-      "why": "Traceability keeps delivery aimed at outcomes, not just output."
+      "why": "Analysis is continuous and embedded in the iteration rhythm."
      }
     ],
     "takeaways": [
-     "The thread runs from outcome to story.",
-     "Delivery analysis is just-in-time and just-enough.",
-     "Keep an eye on the higher horizons."
+     "Right things, built correctly.",
+     "Analysis is continuous and collaborative.",
+     "You'll leave with one item fully elaborated."
     ]
    },
    "presenter": {
-    "purpose": "Reconnect the series thread and select the feature for the day.",
-    "openingLine": "\"Two days ago this was an 18-day wait. Yesterday it became a product. Today it becomes something a team can build by Friday.\"",
+    "purpose": "Set the frame for the day and choose a backlog item.",
+    "openingLine": "\"By five o'clock, one item from your backlog will be so clear that a developer, a tester and a customer would all describe it the same way.\"",
     "beats": [
      {
       "label": "Welcome and outcomes",
-      "minutes": 5,
-      "notes": "Day 3 leave-with artefacts."
+      "minutes": 6,
+      "notes": "Leave-with artefacts; show the day map."
      },
      {
-      "label": "Days 1–2 recap",
-      "minutes": 10,
-      "notes": "Walk the table; read disclaimer."
+      "label": "Purpose and the iteration cycle",
+      "minutes": 8,
+      "notes": "Walk the cycle diagram; stress 'continuous'."
      },
      {
-      "label": "What changes at Delivery",
-      "minutes": 7,
-      "notes": "Just-in-time, just-enough."
+      "label": "Running case",
+      "minutes": 6,
+      "notes": "Read the case and disclaimer."
      },
      {
       "label": "Choose your item",
-      "minutes": 8,
-      "notes": "Six minutes; chat waterfall of features."
+      "minutes": 10,
+      "notes": "Six minutes; chat waterfall of items."
      }
     ],
-    "facilitationNotes": "Newcomers can adopt the running case feature. Keep the recap tight — the meat of the day is ahead.",
-    "whatGood": "Every participant has a feature with a hypothesis and signal.",
-    "commonFailure": "Bringing a feature that's really an epic spanning months — the fix: pick the thinnest slice and name it.",
+    "facilitationNotes": "Keep it brisk. Participants without a suitable item adopt the running case. Point out that the course follows chapter 7 of the book section by section.",
+    "whatGood": "Every participant has an item, a user and a value statement.",
+    "commonFailure": "Choosing an item that's really months of work — the fix: we'll decompose it in session 6; for now name it.",
     "debrief": [
-     "Whose feature looks too big to finish in a week?",
-     "What's still unknown about yours?"
+     "Whose item looks too big for one iteration?",
+     "What's the biggest unknown about yours?"
     ],
-    "answerKey": "Running case: feature = receiver delivery-window confirmation; hypothesis = receivers confirm availability or a safe drop when asked directly; signal = ≥70% respond before route lock; traces to ≥92% on-time last-mile delivery.",
+    "answerKey": "Running case: item = receiver delivery-window confirmation; serves receivers (and drivers indirectly); value = fewer failed first attempts, contributing to ≥92% on-time delivery.",
     "materials": [
-     "Series thread slide"
+     "Day map slide",
+     "Delivery cycle diagram"
     ]
    }
   },
   {
    "id": "hd-s2",
-   "num": "3.2",
-   "title": "The analyst at the Delivery Horizon",
-   "subtitle": "Inside the team: conversations, examples and acceptance",
+   "num": "2",
+   "title": "The Agile Business Analyst at this horizon",
+   "subtitle": "A full member of the team, not a gatekeeper",
    "dayId": "d1",
-   "time": "09:30–10:30",
-   "minutes": 60,
+   "time": "09:30–10:15",
+   "minutes": 45,
    "participant": {
-    "bigIdea": "In a delivery team the analyst's job is shared understanding — the story card is just a reminder of a conversation.",
-    "overview": "At the Delivery Horizon the analyst works inside or alongside the team, helping it understand the next few backlog items well enough to build and test them. That means facilitating conversations, finding examples, clarifying rules, uncovering non-functional needs and confirming that what's built delivers the intended value. This block defines the role and the 'ready' and 'done' boundaries.",
+    "bigIdea": "At Delivery the analyst is a participant in delivery itself — not a gatekeeper between the business and the team.",
+    "overview": "For most Agile Business Analysts, the Delivery Horizon is where most working time is spent: closest to the customer, closest to the code, and closest to the moment of truth when an increment reaches users. The analyst is a **full member of the Agile Product Team**, working just ahead of the work that needs it, bringing depth of understanding and keeping a clear line of sight to the *why* behind each item.",
     "objectives": [
-     "Describe the analyst's contribution inside a delivery team.",
-     "Use the card–conversation–confirmation idea to frame stories.",
-     "Agree a lightweight definition of ready and definition of done."
+     "Describe what the Agile BA does at the Delivery Horizon.",
+     "Explain the analyst's relationship with the Product Owner, Delivery Team and Iteration Manager.",
+     "Identify the analyst's role as a bridge to stakeholders."
     ],
     "keyPoints": [
      {
-      "title": "Card, conversation, confirmation",
-      "body": "The card names it, the conversation builds understanding, the confirmation (examples, criteria) proves it."
+      "title": "Full team member",
+      "body": "Attends planning and refinement, writes and refines stories, defines acceptance criteria, works with developers and testers, joins reviews."
      },
      {
-      "title": "Ready enough",
-      "body": "Small, valuable, understood, testable — not fully specified."
+      "title": "Depth of understanding",
+      "body": "Everyone contributes analysis; the Agile BA brings sustained focus on the 'why'."
      },
      {
-      "title": "Done means valuable",
-      "body": "Built, tested, accepted — and, where possible, measured."
+      "title": "Bridge to stakeholders",
+      "body": "With the Product Owner, translates needs into backlog items and feeds back what the team learned."
      },
      {
-      "title": "The analyst as team member",
-      "body": "You may test, demo, write examples or pair with developers. Titles matter less than outcomes."
+      "title": "Recognise false clarity",
+      "body": "Notice when apparent clarity is concealing genuine ambiguity."
      }
     ],
     "sections": [
      {
-      "heading": "What the analyst does at Delivery",
-      "body": "1. **Refine** upcoming items with the PO and team.\n2. **Split** features into thin, valuable stories.\n3. **Elaborate** with examples, rules and acceptance criteria.\n4. **Surface NFRs** — security, privacy, accessibility, performance.\n5. **Support build and test** — answer questions fast, review increments.\n6. **Validate value** — check the signal after release and feed back to the PO."
+      "heading": "What the Agile BA does",
+      "body": "- Attends **iteration planning** and contributes to **backlog refinement**.\n- Writes and refines **user stories** and defines **acceptance criteria**.\n- Collaborates with **developers and testers** throughout the iteration.\n- Participates in **iteration reviews**.\n- Keeps a line of sight from each item to the user need and the value it should create — so the team avoids solving the wrong problem even when requirements are technically correct."
      },
      {
-      "heading": "Ready and done",
-      "body": "| Definition of ready (lightweight) | Definition of done (example) |\n|---|---|\n| Traces to a feature hypothesis | Acceptance criteria pass |\n| Small enough to finish in the iteration | NFRs met and verified |\n| Key examples agreed | Accessibility checked (WCAG 2.2 AA) |\n| Dependencies known | Privacy impact considered |\n| Acceptance criteria drafted | Demonstrated to PO and accepted |\n| | Value metric instrumented |\n\nBeware turning 'ready' into a stage gate — it's a conversation checklist."
+      "heading": "The Agile Product Team",
+      "body": "| Role | Focus | The Agile BA's relationship |\n|---|---|---|\n| Product Owner | *What* the team builds; voice of the customer; owns prioritisation | Supports by elaborating, documenting and facilitating; surfaces analysis that informs priority calls |\n| Delivery Team | *How* it builds — developers, testers and others | Works alongside as a member; builds shared understanding |\n| Iteration Manager | *How the team works together* (Scrum Master in Scrum) | Partners on effective events and continuous improvement |\n\nAnalysis is a **shared capability**: everyone asks questions and challenges assumptions. The dedicated analyst adds depth and continuity."
      },
      {
-      "heading": "The running case at Delivery",
-      "body": "For **receiver delivery-window confirmation**, the analyst would confirm with Legal what the SMS may contain and what consent is needed, work with a depot route planner on when the window must be confirmed (before the 5 am route lock), find examples (house with a safe porch, apartment with a concierge, small business receiver closed on Saturdays) and ensure the notice is accessible and privacy-safe — the receiver's details must not be over-shared with drivers, and safe-drop choices must not create WHS hazards for drivers."
+      "heading": "The bridge to stakeholders",
+      "body": "Many stakeholders sit outside the team: in the running case, depot route planners, the WHS lead, Legal, the contact centre and key shippers. With the Product Owner, the Agile BA elicits and clarifies needs, turns them into backlog items, and reports back what the team learned and delivered.\n\n*Illustrative worked example using a fictional organisation.*"
      }
     ],
     "activities": [
      {
-      "title": "Ready check",
-      "instructions": "Apply the definition of ready to your chosen feature. What's missing? Draft one sentence for each missing element.",
-      "minutes": 15,
+      "id": "hd-s2-act1",
+      "title": "Where I add value",
+      "instructions": "For your item, list who you'll need to talk to, what each needs from you, and one place where 'apparent clarity' might be hiding ambiguity.",
+      "minutes": 12,
       "prompts": [
        {
-        "label": "Ready criteria met",
-        "placeholder": "",
-        "id": "hd-s2-act1-p1"
+        "id": "hd-s2-act1-p1",
+        "label": "People and roles I'll work with on this item",
+        "placeholder": ""
        },
        {
-        "label": "Ready criteria missing, and how I'll close each gap",
-        "placeholder": "",
-        "id": "hd-s2-act1-p2"
+        "id": "hd-s2-act1-p2",
+        "label": "What each needs from me",
+        "placeholder": ""
        },
        {
-        "label": "One privacy or accessibility consideration",
-        "placeholder": "",
-        "id": "hd-s2-act1-p3"
+        "id": "hd-s2-act1-p3",
+        "label": "Where apparent clarity might be hiding ambiguity",
+        "placeholder": ""
        }
-      ],
-      "id": "hd-s2-act1"
+      ]
      }
     ],
-    "aiPrompt": "Act as a delivery-team business analyst. For the feature below, check it against this definition of ready: traces to a hypothesis; small enough for one iteration; key examples agreed; dependencies known; acceptance criteria drafted. List what's missing, propose three concrete examples (including an edge case), and flag privacy, security and accessibility considerations. Feature:",
+    "aiPrompt": "Act as an experienced agile business analyst. For the backlog item below, list the roles inside and outside the team I should involve, what each needs from me, and five questions that would expose ambiguity hiding behind apparently clear requirements. Item:",
     "quiz": [
      {
-      "q": "In card–conversation–confirmation, the confirmation is…",
+      "q": "Who owns prioritisation of the product backlog?",
       "opts": [
-       "The sponsor's sign-off",
-       "Examples and acceptance criteria that prove shared understanding",
-       "The sprint plan",
-       "A test environment"
+       "The Agile Business Analyst",
+       "The Product Owner",
+       "The Iteration Manager",
+       "The developers"
       ],
       "a": 1,
-      "why": "Confirmation makes the agreed understanding testable."
+      "why": "The Agile BA informs priority calls; the Product Owner makes them."
      },
      {
-      "q": "A definition of ready should be treated as…",
+      "q": "The Agile BA's distinctive contribution at Delivery is…",
       "opts": [
-       "A strict stage gate",
-       "A conversation checklist",
-       "The PO's private list",
-       "Optional documentation"
+       "Being the only person who does analysis",
+       "Sustained focus on the 'why' behind each item",
+       "Approving the team's work",
+       "Running the daily standup"
       ],
       "a": 1,
-      "why": "As a gate it creates waiting; as a checklist it improves conversations."
+      "why": "Analysis is shared; the dedicated analyst brings depth and context."
      }
     ],
     "takeaways": [
-     "The card is a reminder; the conversation is the work.",
-     "Ready enough, not fully specified.",
-     "Done includes value measurement where possible."
+     "Participant, not gatekeeper.",
+     "Hold the 'why' for the team.",
+     "Bridge to stakeholders, with the Product Owner."
     ]
    },
    "presenter": {
-    "purpose": "Define the delivery role and set up the elaboration work.",
-    "openingLine": "\"Show of hands: who's had a story 'signed off' that the developers understood completely differently? Let's fix that.\"",
+    "purpose": "Define the analyst's role and relationships at Delivery.",
+    "openingLine": "\"Who here has been described as 'the person between the business and IT'? Today we retire that description.\"",
     "beats": [
      {
-      "label": "Role at Delivery",
+      "label": "What the Agile BA does",
+      "minutes": 10,
+      "notes": "Walk the list."
+     },
+     {
+      "label": "The three roles",
+      "minutes": 10,
+      "notes": "Product Owner, Delivery Team, Iteration Manager; analysis as a shared capability."
+     },
+     {
+      "label": "Bridge to stakeholders",
+      "minutes": 6,
+      "notes": "Running-case stakeholders."
+     },
+     {
+      "label": "Activity",
       "minutes": 12,
-      "notes": "Walk six contributions."
-     },
-     {
-      "label": "Card, conversation, confirmation",
-      "minutes": 8,
-      "notes": "Short example from the running case."
-     },
-     {
-      "label": "Ready and done",
-      "minutes": 12,
-      "notes": "Discuss gate vs checklist."
-     },
-     {
-      "label": "Running case at Delivery",
-      "minutes": 8,
-      "notes": "Highlight privacy and WHS: receiver details and safe-drop locations."
-     },
-     {
-      "label": "Ready check activity",
-      "minutes": 15,
       "notes": "Individual."
      },
      {
       "label": "Debrief",
-      "minutes": 5,
-      "notes": "Two shares of missing elements."
+      "minutes": 7,
+      "notes": "Two shares of 'false clarity'."
      }
     ],
-    "facilitationNotes": "Many participants will have strong opinions about definition of ready — allow brief debate, then refocus on the checklist framing.",
-    "whatGood": "A list of ready gaps with concrete closing actions; at least one privacy or accessibility note.",
-    "commonFailure": "Treating ready as 'fully specified' — the fix: what's the minimum the team needs to start?",
+    "facilitationNotes": "Use the book's framework-neutral terms (Iteration Manager, iteration). If participants use Scrum terms, map them and move on.",
+    "whatGood": "A specific stakeholder list with needs, and one concrete ambiguity.",
+    "commonFailure": "Positioning the BA as owner of priorities — the fix: the BA informs; the Product Owner decides.",
     "debrief": [
-     "What's most often missing when items reach your team?",
-     "Which NFR do you usually discover late?"
+     "Where does your team expect you to be a gatekeeper?",
+     "What ambiguity did you find?"
     ],
-    "answerKey": "Running case gaps: SMS content and consent rules unconfirmed; receiver contact data quality unknown; examples not agreed; WHS limits on safe drops undefined. Close by: 30-min Legal session; data profiling of receiver contacts from pilot shippers; three examples workshop; WHS review with the depot safety lead.",
+    "answerKey": "Running case ambiguity: 'confirm delivery window' — does a confirmation lock the window, or can the receiver change it after route lock? Stakeholders: route planner (timing), WHS lead (safe-drop limits), Legal (SMS content and consent), contact centre (expired links).",
     "materials": [
-     "Ready/done cards"
+     "Roles table",
+     "Stakeholder prompt card"
     ]
    }
   },
   {
    "id": "hd-s3",
-   "num": "3.3",
-   "title": "Outcomes · time frame · feedback",
-   "subtitle": "Iteration outcomes, value metrics and the one-week horizon calendar",
+   "num": "3",
+   "title": "Outcomes of analysis",
+   "subtitle": "Five outcomes that let the team build the right thing",
    "dayId": "d1",
-   "time": "10:45–12:15",
-   "minutes": 90,
+   "time": "10:30–11:30",
+   "minutes": 60,
    "participant": {
-    "bigIdea": "A story isn't finished when it ships — it's finished when you know whether it worked.",
-    "overview": "At Delivery, outcomes are working increments that move product metrics. The time frame is an iteration or continuous flow, and feedback comes from demos, tests and usage data. In this 90-minute block you'll define a **value metric** for a story, link it to the feature signal, and build a **one-week horizon calendar** that keeps your Strategy and Initiative work alive alongside delivery.",
+    "bigIdea": "Delivery analysis produces understanding, not documents — and it shows up in five outcomes.",
+    "overview": "Analysis at this horizon produces outputs that let the team build the right thing, with shared understanding, within the time available — shaped by **team capacity** and **velocity**. These outputs emerge through collaboration and are refined as the work progresses.\n\n![Five outcomes of Delivery Horizon analysis](/visuals/horizons-delivery/outcomes.svg)",
     "objectives": [
-     "Define delivery outcomes and value metrics.",
-     "Link a story's value metric to the feature signal and strategic outcome.",
-     "Build a one-week horizon calendar balancing all three horizons."
+     "Describe the five outcomes of analysis at the Delivery Horizon.",
+     "Recognise a well-elaborated backlog item and a well-prepared backlog.",
+     "Explain how validation and value-focus happen during the iteration."
     ],
     "keyPoints": [
      {
-      "title": "Value metric",
-      "body": "A measure the story should move, with a baseline, expected change and how it's captured."
+      "title": "Well-elaborated items",
+      "body": "Small enough for an iteration, clear enough to start, testable enough to verify."
      },
      {
-      "title": "Fast feedback",
-      "body": "Demo every iteration; instrument releases; review metrics within days."
+      "title": "Well-prepared backlog",
+      "body": "Decomposed, elaborated and ordered — continuously, not as an event."
      },
      {
-      "title": "Horizon balance",
-      "body": "Analysts who only do Delivery let strategy drift; plan time for each horizon."
+      "title": "Shared understanding",
+      "body": "Invisible when present, expensive when absent."
+     },
+     {
+      "title": "Validated increments",
+      "body": "Potentially releasable, verified against acceptance criteria."
+     },
+     {
+      "title": "Vision, customer, value",
+      "body": "Counteract the gravitational pull of detail."
      }
     ],
     "sections": [
      {
-      "heading": "Delivery outcomes and value metrics",
-      "body": "| Level | Running case example |\n|---|---|\n| Strategic | On-time last-mile delivery ≥92% |\n| Feature signal | ≥70% of receivers respond before route lock |\n| Story value metric | % of notifications opened within 4 hours; % confirmed via one-click link |\n\nA story value metric should be **observable soon after release**, **instrumented as part of done**, and **causally linked** to the feature signal."
+      "heading": "7.3.1 Well-elaborated backlog items",
+      "body": "The team shares a picture of **the user, the context, the behaviour** and **how success will be judged**. Acceptance criteria are integral, not added afterwards: they cover typical and edge cases and are best derived from concrete examples. The item also carries everything learned in discussion — clarifications, constraints, testability concerns — and, where useful, **diagrams, models, prototypes, wireframes or process flows**."
      },
      {
-      "heading": "Feedback in the iteration",
-      "body": "- **Daily:** questions answered, examples refined.\n- **Mid-iteration:** show work-in-progress to the PO.\n- **End of iteration:** demo against acceptance criteria; agree what's done.\n- **Post-release (days):** check the value metric; feed back to the feature hypothesis."
+      "heading": "7.3.2 Well-prepared product backlog",
+      "body": "**Decomposition, elaboration and prioritisation** are the main tools. Items for the next one or two iterations are ready to estimate and start; items further out need only be understood well enough to order and roughly size.\n\n![Backlog readiness by distance from delivery](/visuals/horizons-delivery/backlog-readiness.svg)"
      },
      {
-      "heading": "The one-week horizon calendar",
-      "body": "An illustrative week for a BA on the running case:\n\n| | Mon | Tue | Wed | Thu | Fri |\n|---|---|---|---|---|---|\n| Delivery (≈60%) | Refinement; examples | Pair with tester | Answer questions; review increment | Refinement | Demo; check value metric |\n| Initiative (≈30%) | — | Subcontractor driver interview | Impact map update | — | Monthly review prep |\n| Strategy (≈10%) | — | — | — | Evidence pack for quarterly review (1h) | — |\n\nRatios vary by role; the point is that every horizon gets time on purpose."
+      "heading": "7.3.3 Shared understanding and 7.3.4 validated increments",
+      "body": "Much shared-understanding work is quiet: the conversation that prevents a misunderstanding, the edge case resolved before it's a defect. Each iteration ends with an increment that is **functionally complete, tested and verified against its acceptance criteria** — but validation is continuous, not a gate at the end. The analyst watches emerging work and raises deviations early."
+     },
+     {
+      "heading": "7.3.5 Focus on product vision, customer and value",
+      "body": "Detail has a gravitational pull. The analyst keeps the team connected to the vision (which of two equivalent implementations better serves the customer?), the customer (criteria written as user outcomes) and value (is this the most valuable work, and is it landing with users?)."
      }
     ],
     "activities": [
      {
-      "title": "Value metric for my story",
-      "instructions": "For your feature, pick one story and define its value metric: baseline, expected change, capture method and link to the feature signal.",
+      "id": "hd-s3-act1",
+      "title": "Outcome check",
+      "instructions": "Rate your item against the five outcomes (red / amber / green) and write the single action that would most improve the weakest one.",
       "minutes": 20,
       "prompts": [
        {
-        "label": "Story",
-        "placeholder": "",
-        "id": "hd-s3-act1-p1"
+        "id": "hd-s3-act1-p1",
+        "label": "7.3.1 Well-elaborated item — rating and why",
+        "placeholder": ""
        },
        {
-        "label": "Value metric — baseline → expected change",
-        "placeholder": "",
-        "id": "hd-s3-act1-p2"
+        "id": "hd-s3-act1-p2",
+        "label": "7.3.2 Backlog preparation — rating and why",
+        "placeholder": ""
        },
        {
-        "label": "How it will be captured (instrumentation)",
-        "placeholder": "",
-        "id": "hd-s3-act1-p3"
+        "id": "hd-s3-act1-p3",
+        "label": "7.3.3 Shared understanding — rating and why",
+        "placeholder": ""
        },
        {
-        "label": "Link to feature signal and strategic outcome",
-        "placeholder": "",
-        "id": "hd-s3-act1-p4"
+        "id": "hd-s3-act1-p4",
+        "label": "7.3.4 Validation plan — rating and why",
+        "placeholder": ""
+       },
+       {
+        "id": "hd-s3-act1-p5",
+        "label": "7.3.5 Vision, customer and value — rating and why",
+        "placeholder": ""
+       },
+       {
+        "id": "hd-s3-act1-p6",
+        "label": "Weakest outcome and my next action",
+        "placeholder": ""
        }
-      ],
-      "id": "hd-s3-act1"
+      ]
      },
      {
-      "title": "One-week horizon calendar",
-      "instructions": "Draft next week's calendar. Allocate time to each horizon and name the specific activity in each slot.",
-      "minutes": 25,
+      "id": "hd-s3-act2",
+      "title": "What belongs on the item",
+      "instructions": "List what you'd capture on your backlog item beyond the story statement: clarifications, constraints, and any diagram, model, prototype or process flow that would cut ambiguity.",
+      "minutes": 12,
       "prompts": [
        {
-        "label": "Delivery slots and activities",
-        "placeholder": "",
-        "id": "hd-s3-act2-p1"
+        "id": "hd-s3-act2-p1",
+        "label": "Clarifications and constraints to record",
+        "placeholder": ""
        },
        {
-        "label": "Initiative slots and activities",
-        "placeholder": "",
-        "id": "hd-s3-act2-p2"
-       },
-       {
-        "label": "Strategy slots and activities",
-        "placeholder": "",
-        "id": "hd-s3-act2-p3"
-       },
-       {
-        "label": "One thing I'll stop doing to make room",
-        "placeholder": "",
-        "id": "hd-s3-act2-p4"
+        "id": "hd-s3-act2-p2",
+        "label": "Supporting artefact(s) and why",
+        "placeholder": ""
        }
-      ],
-      "id": "hd-s3-act2"
+      ]
      }
     ],
-    "aiPrompt": "Help me plan a one-week calendar as a business analyst working across three horizons: Strategy (investment decisions, evidence for portfolio reviews), Initiative (product vision, impact maps, roadmaps, user research) and Delivery (refinement, examples, acceptance, demos). Given my current commitments below, propose a Monday–Friday plan with time blocks for each horizon, a suggested ratio, and one activity I should stop or delegate. My commitments:",
+    "aiPrompt": "Review the backlog item below against five outcomes of delivery analysis: (1) well-elaborated — user, context, behaviour, testable acceptance criteria covering edge cases; (2) fits a well-prepared backlog — small enough for one iteration, dependencies known; (3) shared understanding — open questions; (4) validation — how we'll verify it; (5) connection to the product vision, customer and value. Rate each red/amber/green with reasons and suggest one supporting artefact (diagram, wireframe, process flow) that would reduce ambiguity. Item:",
     "quiz": [
      {
-      "q": "A good story value metric is…",
+      "q": "Acceptance criteria are best treated as…",
       "opts": [
-       "Number of story points delivered",
-       "Observable soon after release and linked to the feature signal",
-       "The sprint velocity",
-       "Defect count only"
+       "A separate artefact added after the story",
+       "An integral part of a well-elaborated item",
+       "Optional for small stories",
+       "The tester's responsibility only"
       ],
       "a": 1,
-      "why": "It should show whether the story moved the behaviour intended."
+      "why": "The book treats acceptance criteria as integral, ideally derived from examples."
      },
      {
-      "q": "Why plan time for Strategy and Initiative during delivery?",
+      "q": "How far should items 'much later' in the backlog be elaborated?",
       "opts": [
-       "To look busy",
-       "So the team keeps building the right thing as evidence changes",
-       "Because Scrum requires it",
-       "It isn't necessary"
+       "Fully, to save time later",
+       "Only enough to order and roughly size",
+       "Not at all",
+       "To the same level as the current iteration"
       ],
       "a": 1,
-      "why": "Higher-horizon work keeps delivery aligned with outcomes."
+      "why": "Over-elaborating items that may change or never be built is waste."
      },
      {
-      "q": "When is a story's value metric best instrumented?",
+      "q": "Validation at the Delivery Horizon is…",
       "opts": [
-       "After the project ends",
-       "As part of the definition of done",
-       "Only if the PO asks",
-       "Never — it's too hard"
+       "A gate at the end of the iteration",
+       "A continuous activity throughout the iteration",
+       "Done only by testers",
+       "Done after release"
       ],
       "a": 1,
-      "why": "Instrumenting as part of done ensures feedback actually arrives."
+      "why": "The analyst monitors emerging work and raises deviations early."
      }
     ],
     "takeaways": [
-     "Instrument value as part of done.",
-     "Link story → feature signal → outcome.",
-     "Put every horizon on your calendar on purpose."
+     "Five outcomes, not five documents.",
+     "Elaborate near-term items; order and size the rest.",
+     "Keep detail anchored to vision, customer and value."
     ]
    },
    "presenter": {
-    "purpose": "Teach value metrics and produce the one-week horizon calendar leave-with artefact.",
-    "openingLine": "\"Your last story shipped. Did it work? How would you know by Friday?\"",
+    "purpose": "Teach the five outcomes and diagnose participants' items.",
+    "openingLine": "\"If I asked your team what 'ready' means for the next story, would you all give the same answer?\"",
     "beats": [
      {
-      "label": "Outcome levels and value metrics",
-      "minutes": 15,
-      "notes": "Walk the table; stress observable, instrumented, causal."
+      "label": "Five outcomes overview",
+      "minutes": 8,
+      "notes": "Walk the outcomes diagram."
      },
      {
-      "label": "Feedback rhythm",
+      "label": "Well-elaborated items and backlog readiness",
       "minutes": 10,
-      "notes": "Daily to post-release."
+      "notes": "Backlog readiness diagram; just in time."
      },
      {
-      "label": "Activity: value metric",
+      "label": "Shared understanding, validation, value",
+      "minutes": 6,
+      "notes": "Use the running case."
+     },
+     {
+      "label": "Activity: outcome check",
       "minutes": 20,
-      "notes": "Individual; two shares."
+      "notes": "Individual."
      },
      {
-      "label": "Horizon calendar teach",
-      "minutes": 10,
-      "notes": "Show the example week."
-     },
-     {
-      "label": "Activity: calendar",
-      "minutes": 25,
-      "notes": "Individual; then pair to challenge ratios."
+      "label": "Activity: what belongs on the item",
+      "minutes": 12,
+      "notes": "Pairs."
      },
      {
       "label": "Debrief",
-      "minutes": 10,
-      "notes": "What did you stop doing?"
+      "minutes": 4,
+      "notes": "Which outcome is weakest across the room?"
      }
     ],
-    "facilitationNotes": "Many BAs find they spend 95% on delivery. Don't moralise — the calendar exercise makes it visible. Encourage small, specific Strategy slots (even one hour).",
-    "whatGood": "Value metric with baseline and capture method; calendar with named activities on every horizon.",
-    "commonFailure": "Calendars with 'strategy time' as a vague block — the fix: name the artefact or meeting.",
+    "facilitationNotes": "Expect 7.3.5 to be the weakest for most people. Point to session 5 for 'think as a customer' and session 6 for decomposition.",
+    "whatGood": "Honest ratings with a concrete next action; a supporting artefact that genuinely reduces ambiguity.",
+    "commonFailure": "Rating everything green — the fix: ask 'could a tester write tests from it today?'",
     "debrief": [
-     "What's your current horizon ratio, honestly?",
-     "What will you stop doing?",
-     "Which value metric is hardest to instrument?"
+     "Which outcome is weakest in your team?",
+     "What artefact would save your team the most rework?"
     ],
-    "answerKey": "Running case story: 'Receiver confirms delivery window or chooses a safe drop via one-click link'. Value metric: % of notified receivers confirming within 4 hours; baseline n/a (new channel) — compare to the current first-attempt failure rate of ~9% (illustrative); capture: link click, confirmation and safe-drop events logged; links to feature signal ≥70% before route lock.",
+    "answerKey": "Running case: 7.3.1 amber (criteria not agreed); 7.3.2 red (feature too big — needs decomposition); 7.3.3 amber (route-lock rule unclear); 7.3.4 amber (no plan to verify the run-sheet update); 7.3.5 green (clear link to on-time delivery). Supporting artefact: a state diagram for the consignment (notified → confirmed / safe drop / no response → route locked).",
     "materials": [
-     "Value metric worksheet",
-     "Horizon calendar template"
+     "Outcomes diagram",
+     "Backlog readiness diagram",
+     "Outcome check worksheet"
     ]
    }
   },
   {
    "id": "hd-s4",
-   "num": "3.4",
-   "title": "Principles applied · agile events",
-   "subtitle": "The principles in refinement, planning, stand-up, review and retrospective",
+   "num": "4",
+   "title": "Time frame · context, feedback and learning",
+   "subtitle": "Just in time, and the engine of agile delivery",
    "dayId": "d1",
-   "time": "13:00–13:45",
+   "time": "11:30–12:15",
    "minutes": 45,
    "participant": {
-    "bigIdea": "Agile events are where the principles either live or die.",
-    "overview": "Delivery teams meet in a predictable set of events. Each one is an opportunity for the analyst to apply a principle: seeing the whole in planning, getting real in refinement, thinking as a customer in review, and continuous improvement in retrospectives. This block maps where you add the most value in each event.",
+    "bigIdea": "Elaborate close to delivery, and treat every iteration's feedback as the engine of learning.",
+    "overview": "The Delivery Horizon has the shortest time frame: a **one-to-four-week iteration**, or continuous flow in Kanban. Analysis is spread across the whole time box. It also produces the most frequent and concrete feedback: without it, iteration is merely repetition.",
     "objectives": [
-     "Describe the analyst's contribution to each common agile event.",
-     "Apply a specific principle in each event.",
-     "Identify one event where you'll change how you participate."
+     "Describe the Delivery time frame for iterative and flow-based teams.",
+     "Apply just-in-time elaboration.",
+     "Identify the sources of feedback at Delivery and turn them into action."
     ],
     "keyPoints": [
      {
-      "title": "Refinement",
-      "body": "Get real using examples; split stories; surface NFRs."
+      "title": "Shortest time frame",
+      "body": "1–4 week iterations, or continuous flow."
      },
      {
-      "title": "Planning",
-      "body": "See the whole: dependencies, the iteration goal and how it links to the feature hypothesis."
+      "title": "Just in time",
+      "body": "Requirements specified too early go stale; elaborate close to delivery."
      },
      {
-      "title": "Review",
-      "body": "Think as a customer: demo the worker's experience, not the screens."
+      "title": "Context shapes everything",
+      "body": "The product vision, iteration goal and ordered backlog give each item meaning."
      },
      {
-      "title": "Retrospective",
-      "body": "Improve analysis practices, not only the team's."
+      "title": "Feedback is the engine",
+      "body": "Questions, refinement, reviews and retrospectives all surface learning."
      }
     ],
     "sections": [
      {
-      "heading": "The analyst in each event",
-      "body": "| Event | Principle in focus | What the analyst does |\n|---|---|---|\n| Backlog refinement | Get real using examples | Brings examples and questions; facilitates splitting |\n| Iteration planning | See the whole | Connects the iteration goal to the feature hypothesis; flags dependencies |\n| Daily stand-up | Collaborate | Unblocks questions fast; spots misunderstanding early |\n| Iteration review | Think as a customer | Frames the demo around the receiver's or driver's journey; shows the value metric |\n| Retrospective | Continuous improvement | Raises analysis-related improvements (late NFRs, unclear examples) |"
+      "heading": "7.4 Time frame",
+      "body": "| | Iteration-based | Flow-based (e.g. Kanban) |\n|---|---|---|\n| Cycle | 1–4 week iteration | Items move as capacity allows |\n| Current work | Elaborated just before or just after it's picked up | Elaborated as it reaches the top of the queue |\n| Future work | Refined enough for confident planning | Refined enough to keep the queue flowing |\n\nRequirements specified far in advance go stale: priorities shift, users give feedback, constraints emerge. Elaborating close to delivery uses the most current understanding and reduces waste."
      },
      {
-      "heading": "Running case: a review that thinks as a customer",
-      "body": "Rather than 'here's the notification email template', demo it as Ravi the payroll officer: receive the notice on a Tuesday afternoon, see what's asked, confirm with one click. Then show the early value metric. The conversation shifts from 'does it look right?' to 'will Ravi act on it?'"
+      "heading": "7.5 Context, feedback and learning",
+      "body": "**Context** — the product vision, the iteration goal, the ordered backlog and the understanding of user needs — gives each story its meaning. When context is unclear, the team makes assumptions, and assumptions are a primary source of rework.\n\n![Feedback sources at the Delivery Horizon](/visuals/horizons-delivery/feedback-loops.svg)\n\nThe analyst listens for signals — questions that reveal misunderstandings, defects that point to unclear requirements, stories that fall short of expectations — and uses them to improve the next items. When a pattern appears (a feature is far more complex than expected, users aren't engaging), it goes to the Product Owner because it may change what's built next."
      }
     ],
     "activities": [
      {
-      "title": "Event upgrade",
-      "instructions": "Pick the event where you currently add least. Write what you'll do differently next time, which principle it applies, and how you'll know it helped.",
-      "minutes": 12,
+      "id": "hd-s4-act1",
+      "title": "Signals and actions",
+      "instructions": "List three recent feedback signals from your team (a question, a defect, a review reaction). For each, name what it reveals and the action it should trigger.",
+      "minutes": 15,
       "prompts": [
        {
-        "label": "Event",
-        "placeholder": "",
-        "id": "hd-s4-act1-p1"
+        "id": "hd-s4-act1-p1",
+        "label": "Signal 1 — what it reveals — action",
+        "placeholder": ""
        },
        {
-        "label": "What I'll do differently",
-        "placeholder": "",
-        "id": "hd-s4-act1-p2"
+        "id": "hd-s4-act1-p2",
+        "label": "Signal 2 — what it reveals — action",
+        "placeholder": ""
        },
        {
-        "label": "Principle applied",
-        "placeholder": "",
-        "id": "hd-s4-act1-p3"
+        "id": "hd-s4-act1-p3",
+        "label": "Signal 3 — what it reveals — action",
+        "placeholder": ""
        },
        {
-        "label": "How I'll know it helped",
-        "placeholder": "",
-        "id": "hd-s4-act1-p4"
+        "id": "hd-s4-act1-p4",
+        "label": "Context my team is missing (vision, iteration goal, user needs)",
+        "placeholder": ""
        }
-      ],
-      "id": "hd-s4-act1"
+      ]
      }
     ],
-    "aiPrompt": "I'm a business analyst in an agile team. For the event below (refinement, planning, stand-up, review or retrospective), suggest three specific things I can do to apply the agile BA principles more effectively, a short agenda adjustment I could propose to the team, and one signal that would show it's working. Event and current situation:",
+    "aiPrompt": "I'm an agile business analyst. Below are feedback signals from my team's last iterations (questions, defects, review reactions, retrospective notes). Group them into patterns, explain what each pattern reveals about our requirements or analysis process, and propose concrete changes to how we elaborate the next backlog items. Flag any pattern the Product Owner should hear about. Signals:",
     "quiz": [
      {
-      "q": "Which principle is most at home in backlog refinement?",
+      "q": "Why elaborate close to delivery?",
       "opts": [
-       "Avoid waste only",
-       "Get real using examples",
-       "See the whole only",
-       "None"
+       "It's faster to type",
+       "Requirements specified far in advance risk becoming obsolete",
+       "Teams dislike documentation",
+       "The tool requires it"
       ],
       "a": 1,
-      "why": "Refinement is where examples build shared understanding."
+      "why": "Priorities, feedback and constraints change; early detail is often discarded."
      },
      {
-      "q": "An iteration review that 'thinks as a customer' would…",
+      "q": "A defect that traces to an unclear requirement is best treated as…",
       "opts": [
-       "List completed tickets",
-       "Walk the customer's journey through the increment and show the value metric",
-       "Report velocity",
-       "Discuss team morale"
+       "The developer's mistake",
+       "A signal to improve how following items are elaborated",
+       "Noise",
+       "A reason to write longer specifications"
       ],
       "a": 1,
-      "why": "It focuses on the experience and value delivered."
+      "why": "The analyst turns signals into better backlog items."
+     },
+     {
+      "q": "What gives an individual story its meaning?",
+      "opts": [
+       "Its story points",
+       "The context: product vision, iteration goal, ordered backlog and user needs",
+       "The ticket template",
+       "The sprint length"
+      ],
+      "a": 1,
+      "why": "Without context the team makes assumptions — a major source of rework."
      }
     ],
     "takeaways": [
-     "Each event is a chance to apply a principle.",
-     "Demo journeys, not screens.",
-     "Bring analysis improvements to the retro."
+     "Elaborate just in time.",
+     "Hold the context consciously.",
+     "Feedback is information — act on it."
     ]
    },
    "presenter": {
-    "purpose": "Make the analyst's contribution to each event explicit and commit to one change.",
-    "openingLine": "\"Which meeting do you sit in where, honestly, you could be replaced by a note-taker? Let's change that.\"",
+    "purpose": "Teach the time frame and the feedback discipline.",
+    "openingLine": "\"How old is the oldest fully specified story in your backlog? What's the chance it's still right?\"",
     "beats": [
      {
-      "label": "Events table",
-      "minutes": 15,
-      "notes": "Walk each row; poll which event they find hardest."
-     },
-     {
-      "label": "Customer-focused review example",
+      "label": "Time frame: iteration vs flow",
       "minutes": 8,
-      "notes": "Roleplay Ravi briefly."
+      "notes": "Poll: who works in iterations, who in flow?"
      },
      {
-      "label": "Event upgrade activity",
-      "minutes": 12,
+      "label": "Context",
+      "minutes": 6,
+      "notes": "What happens when context is missing."
+     },
+     {
+      "label": "Feedback sources",
+      "minutes": 8,
+      "notes": "Walk the feedback diagram."
+     },
+     {
+      "label": "Activity",
+      "minutes": 15,
       "notes": "Individual."
      },
      {
       "label": "Debrief",
-      "minutes": 10,
-      "notes": "Collect commitments."
+      "minutes": 8,
+      "notes": "Collect patterns in chat."
      }
     ],
-    "facilitationNotes": "Post-lunch — use the poll and a quick roleplay to keep energy. Teams vary (Scrum, Kanban, SAFe); keep language framework-neutral.",
-    "roleplay": {
-     "persona": "Ravi, payroll officer (illustrative)",
-     "line": "\"I got this text — is it a scam? It mentions a Southern Cross Freight delivery I didn't know about.\"",
-     "curveball": "\"Why wasn't I told before the retailer sent it?\"",
-     "move": "Show the trust cues in the notice (sender name, retailer and order reference, no request to log in or pay), and explain that the notice is designed to let receivers act before the driver arrives — then capture the trust concern as a new example for refinement."
-    },
-    "whatGood": "Specific commitments tied to a principle with a measurable signal.",
-    "commonFailure": "Commitments like 'be more engaged' — the fix: which action, in which event, next week?",
+    "facilitationNotes": "Pre-lunch: keep the teach short and the activity concrete. Expect many to say their team lacks a clear iteration goal — note it for session 8.",
+    "whatGood": "Specific signals linked to specific changes in elaboration practice.",
+    "commonFailure": "Generic actions ('communicate better') — the fix: what will you do differently on the next item?",
     "debrief": [
-     "Which event did you choose and why?",
-     "What did the roleplay reveal about the notice design?"
+     "What signal does your team most often ignore?",
+     "Who needs to hear your pattern?"
     ],
-    "answerKey": "Strong commitments: bring three examples per item to refinement; open review with a 2-minute journey demo; add 'late NFRs found' to the retro board.",
+    "answerKey": "Running case signals: developers asked twice whether an expired link should reveal consignment details (→ privacy rule unclear; add explicit criterion); review showed drivers ignoring safe-drop notes on the run sheet (→ usability issue; involve drivers in refinement); confirmations lower on Mondays (→ pattern for the Product Owner).",
     "materials": [
-     "Events table",
-     "Roleplay card"
+     "Feedback diagram",
+     "Signals worksheet"
     ]
    }
   },
   {
    "id": "hd-s5",
-   "num": "3.5",
-   "title": "Techniques · across horizons and scaling",
-   "subtitle": "Story splitting, examples and acceptance criteria, NFRs — and working at scale",
+   "num": "5",
+   "title": "Applying the nine principles",
+   "subtitle": "Habits of thinking, most visible in day-to-day delivery",
    "dayId": "d1",
-   "time": "13:45–15:15",
-   "minutes": 90,
+   "time": "13:00–13:45",
+   "minutes": 45,
    "participant": {
-    "bigIdea": "Thin, testable slices with real examples are the analyst's highest-leverage delivery technique.",
-    "overview": "This is the main technique block of Day 3. You'll split the running-case feature into stories, elaborate one with **examples (specification by example)**, **acceptance criteria** and **non-functional requirements**, and attach a **value metric**. Then we look at techniques that work across all three horizons and how analysis changes when multiple teams work on one product.",
+    "bigIdea": "The nine principles aren't a checklist — at Delivery they're habits you can see in every conversation.",
+    "overview": "The book's nine principles of agile business analysis — remembered as **STAG US Pursue, Avoid and Embrace** — shape how the analyst works. At the Delivery Horizon, where work is concrete and fast-moving, they're most visible in practice.\n\n![The nine principles of agile business analysis](/visuals/horizons-delivery/principles.svg)",
     "objectives": [
-     "Split a feature into thin, valuable stories using splitting patterns.",
-     "Elaborate a story with examples and Given/When/Then acceptance criteria.",
-     "Identify NFRs relevant to the story.",
-     "Explain techniques that span horizons and how analysis adapts at scale."
+     "Name the nine principles in order.",
+     "Describe how each shows up at the Delivery Horizon.",
+     "Apply three principles to your own backlog item."
     ],
     "keyPoints": [
      {
-      "title": "Split by value, not layer",
-      "body": "Split by workflow step, rule, data variation or happy/unhappy path — never 'front end' and 'back end'."
+      "title": "Get Real Using Examples",
+      "body": "Perhaps the most practically powerful principle at Delivery."
      },
      {
-      "title": "Examples first",
-      "body": "Agree concrete examples; criteria follow naturally."
+      "title": "Avoid Waste",
+      "body": "Just in time, not just in case."
      },
      {
-      "title": "NFRs are requirements",
-      "body": "Privacy, security, accessibility, performance and audit belong in the story or definition of done."
-     },
-     {
-      "title": "Same techniques, different altitude",
-      "body": "Examples, impact thinking and hypotheses work at every horizon — the grain size changes."
+      "title": "Embrace Uncertainty and Change",
+      "body": "Misunderstandings and surprises are information."
      }
     ],
     "sections": [
      {
-      "heading": "Splitting the feature",
-      "body": "Feature: **receiver delivery-window confirmation**. Possible stories:\n\n1. Notify receiver by SMS the evening before delivery (happy path).\n2. Receiver confirms the window or chooses a safe drop via one-click link.\n3. Notify by email when no mobile number is on file.\n4. Flag to the depot when a receiver hasn't responded by route lock.\n5. Handle consignments with no receiver contact details.\n\nStory 2 is a good first candidate: it directly drives the feature signal and is thin."
+      "heading": "The principles at Delivery",
+      "body": "| Principle | At the Delivery Horizon | Running case |\n|---|---|---|\n| **S** See the Whole | Keep the story → iteration goal → product outcome in view while working on detail | The confirmation only matters if the driver's run sheet updates |\n| **T** Think as a Customer | Write criteria from the user's perspective; bring stories to life with examples | What does a receiver see at 6 am, after route lock? |\n| **A** Analyze to Determine What is Valuable | Focus elaboration on the parts carrying the most risk or uncertainty | Route-lock timing and safe-drop rules, not button colours |\n| **G** Get Real Using Examples | Replace abstract statements with concrete examples | House / apartment with concierge / closed small business |\n| **U** Understand What is Feasible | Find the simplest implementation that satisfies the need; avoid gold-plating | SMS first; email fallback later |\n| **S** Stimulate Collaboration | Come to events with examples and questions; make sure everyone is heard | Route planner and tester in refinement |\n| **P** Pursue Continuous Improvement | Ask in the retro whether analysis is serving the team | Are criteria consistently testable? |\n| **A** Avoid Waste | Just in time, not just in case; criteria sufficient, not exhaustive | Defer email-fallback wording |\n| **E** Embrace Uncertainty and Change | Treat surprises as information, not failure | Low Monday confirmations → learn why |\n\n*Illustrative worked example using a fictional organisation.*"
      },
      {
-      "heading": "Elaborating with examples",
-      "body": "**Story:** *As a receiver, I want to confirm my delivery window or choose a safe drop from the notification, so that my consignment arrives on the first attempt.*\n\n| Example | Receiver | Consignment | Expected |\n|---|---|---|---|\n| 1 | House, mobile on file, home | Standard parcel | One-click confirm; driver run updated |\n| 2 | House, out at work | Standard parcel | Chooses 'front porch' safe drop; instruction shown to driver |\n| 3 | Small business | Two cartons | Confirm without creating an account |\n| 4 | Any | Link opened after 5 am route lock | Link expired; prompted to contact us; no consignment data shown |\n\n**Acceptance criteria:**\n\n- *Given* a notified receiver, *when* they select Confirm, *then* the consignment is marked 'receiver confirmed' and the driver's run is updated within 5 minutes.\n- *Given* the receiver chooses a safe drop, *when* they submit, *then* the instruction is recorded with the original delivery preference and shown on the driver's run sheet.\n- *Given* a link opened after route lock, *when* it loads, *then* the receiver sees an expiry message and contact details, and no consignment data is shown."
-     },
-     {
-      "heading": "Non-functional requirements",
-      "body": "| NFR | Story-level requirement (illustrative) |\n|---|---|\n| Privacy | Receiver sees only their own consignment and window; driver sees only the address and safe-drop instruction |\n| Security | Single-use, time-limited link; no login credentials or payment requested |\n| Accessibility | Page meets WCAG 2.2 AA; works on mobile |\n| Performance | Confirmation page loads in <2 seconds on 4G |\n| WHS | Safe-drop options never require the driver to climb, enter premises or lift over a fence; items over 25 kg are not offered safe drop |\n| Audit | Every confirmation and change logged with timestamp and source |\n| Trust | Notice includes retailer name, consignment reference and verifiable sender to reduce scam concerns |\n\n**Value metric:** % of notified receivers confirming within 4 hours (target trajectory to ≥70% before route lock at feature level)."
-     },
-     {
-      "heading": "Techniques across horizons and at scale",
-      "body": "| Technique | Strategy | Initiative | Delivery |\n|---|---|---|---|\n| Examples | Walk real consignments through options | Journey walk-throughs | Specification by example |\n| Hypotheses | Investment hypothesis | Feature hypotheses | Story value metrics |\n| Impact thinking | Outcome tree | Impact map | Story 'so that' |\n| Visual models | Value stream | Story map | Process or state model for one flow |\n\n**At scale** — several teams on one product (for example booking, notification and middleware teams) — the analyst adds: a shared product backlog and impact map, cross-team refinement for dependent items, consistent examples and data definitions, and a joint review focused on the end-to-end receiver journey rather than each team's component."
+      "heading": "From abstract to concrete",
+      "body": "*Abstract:* 'The system shall allow receivers to choose a safe drop.'\n\n*Concrete:* 'When a receiver at a house selects **Front porch**, the instruction appears on the driver's run sheet; items over 25 kg are not offered a safe drop, and the receiver is told why.'\n\nThe second version leaves far less room for misinterpretation and gives developers and testers an unambiguous target."
      }
     ],
     "activities": [
      {
-      "title": "Split the feature",
-      "instructions": "Split your feature into at least four stories using value-based patterns. Mark the one to elaborate first and why.",
-      "minutes": 15,
+      "id": "hd-s5-act1",
+      "title": "Three principles on my item",
+      "instructions": "Pick the three principles most at risk for your backlog item. For each, write what applying it would look like this iteration.",
+      "minutes": 14,
       "prompts": [
        {
-        "label": "Stories (4+) and splitting pattern used",
-        "placeholder": "",
-        "id": "hd-s5-act1-p1"
+        "id": "hd-s5-act1-p1",
+        "label": "Principle 1 — what applying it looks like",
+        "placeholder": ""
        },
        {
-        "label": "First story and reason",
-        "placeholder": "",
-        "id": "hd-s5-act1-p2"
+        "id": "hd-s5-act1-p2",
+        "label": "Principle 2 — what applying it looks like",
+        "placeholder": ""
+       },
+       {
+        "id": "hd-s5-act1-p3",
+        "label": "Principle 3 — what applying it looks like",
+        "placeholder": ""
+       },
+       {
+        "id": "hd-s5-act1-p4",
+        "label": "One abstract statement rewritten as a concrete example",
+        "placeholder": ""
        }
-      ],
-      "id": "hd-s5-act1"
-     },
-     {
-      "title": "Elaborate one story",
-      "instructions": "For your chosen story, write: the story statement, at least four examples (including edge cases), three Given/When/Then criteria, relevant NFRs and a value metric.",
-      "minutes": 35,
-      "prompts": [
-       {
-        "label": "Story statement",
-        "placeholder": "As a… I want… so that…",
-        "id": "hd-s5-act2-p1"
-       },
-       {
-        "label": "Examples table",
-        "placeholder": "",
-        "id": "hd-s5-act2-p2"
-       },
-       {
-        "label": "Acceptance criteria (Given/When/Then)",
-        "placeholder": "",
-        "id": "hd-s5-act2-p3"
-       },
-       {
-        "label": "NFRs",
-        "placeholder": "",
-        "id": "hd-s5-act2-p4"
-       },
-       {
-        "label": "Value metric",
-        "placeholder": "",
-        "id": "hd-s5-act2-p5"
-       }
-      ],
-      "id": "hd-s5-act2"
+      ]
      }
     ],
-    "aiPrompt": "Act as an agile business analyst. For the story below: (1) propose at least five concrete examples in a table including edge cases and an unhappy path; (2) write three to five Given/When/Then acceptance criteria derived from the examples; (3) list non-functional requirements across privacy, security, accessibility, performance, audit and trust; (4) suggest a value metric that is observable within days of release and links to the feature hypothesis. Point out any ambiguity I need to resolve with the product owner or a subject-matter expert. Story and context:",
+    "aiPrompt": "Act as an agile business analysis coach. For the backlog item below, apply each of the nine principles of agile business analysis (See the Whole; Think as a Customer; Analyze to Determine What is Valuable; Get Real Using Examples; Understand What is Feasible; Stimulate Collaboration; Pursue Continuous Improvement; Avoid Waste; Embrace Uncertainty and Change) and tell me, for each, one specific thing I should do this iteration. Then rewrite any abstract requirement as a concrete example. Item:",
     "quiz": [
      {
-      "q": "Which is a value-based way to split a story?",
+      "q": "What does the mnemonic 'STAG US Pursue, Avoid and Embrace' help you remember?",
       "opts": [
-       "Front end / back end",
-       "By business rule or data variation",
-       "By developer",
-       "By sprint"
+       "Scrum events",
+       "The nine principles, in order",
+       "Story splitting patterns",
+       "Definition of done"
       ],
       "a": 1,
-      "why": "Splitting by rule or variation keeps each slice valuable and testable."
+      "why": "Each letter is a principle, in the book's order."
      },
      {
-      "q": "In specification by example, which comes first?",
+      "q": "'Understand What is Feasible' at Delivery means…",
       "opts": [
-       "Acceptance criteria",
-       "Concrete examples agreed with the team",
-       "Test scripts",
-       "UI design"
+       "Reducing quality to fit the iteration",
+       "Finding the simplest implementation that genuinely satisfies the need",
+       "Letting developers decide scope",
+       "Avoiding hard stories"
       ],
       "a": 1,
-      "why": "Examples build shared understanding; criteria are distilled from them."
+      "why": "It keeps work moving and prevents gold-plating — not a licence to cut quality."
      },
      {
-      "q": "An NFR for the receiver confirmation story should include…",
+      "q": "Which is the best expression of 'Avoid Waste' at Delivery?",
       "opts": [
-       "Showing the receiver's full order history to the driver",
-       "Privacy: driver sees only the address and safe-drop instruction",
-       "No logging",
-       "Requiring the receiver to create a new account password"
+       "Specify every scenario up front",
+       "Elaborate only what is needed, when it is needed",
+       "Skip acceptance criteria",
+       "Skip refinement"
       ],
       "a": 1,
-      "why": "Minimising what each party sees is essential; the others are wrong or add friction."
-     },
-     {
-      "q": "At scale, a key analyst addition is…",
-      "opts": [
-       "Separate backlogs per team with no shared view",
-       "Consistent examples and data definitions across teams",
-       "Removing reviews",
-       "Writing everything upfront"
-      ],
-      "a": 1,
-      "why": "Consistency across teams keeps the end-to-end journey coherent."
+      "why": "Just in time, not just in case."
      }
     ],
     "takeaways": [
-     "Split by value, not by layer.",
-     "Examples first, criteria second.",
-     "NFRs belong in the story or done.",
-     "Same techniques at every horizon — different grain."
+     "Nine principles, STAG US Pursue, Avoid and Embrace.",
+     "Reach for examples whenever a requirement feels abstract.",
+     "Surprises are information."
     ]
    },
    "presenter": {
-    "purpose": "Produce the main leave-with artefact — one story fully elaborated with NFRs and a value metric — and broaden to cross-horizon and scaled practice.",
-    "openingLine": "\"Let's take one small piece of this and make it so clear that a developer, a tester and Ravi the payroll officer would all describe it the same way.\"",
+    "purpose": "Make the nine principles concrete at Delivery.",
+    "openingLine": "\"Which of these nine would your developers say you already live — and which would they say you don't?\"",
     "beats": [
      {
-      "label": "Splitting patterns",
-      "minutes": 10,
-      "notes": "Show the five stories; ask which they'd do first."
+      "label": "Mnemonic and overview",
+      "minutes": 6,
+      "notes": "Principles diagram."
      },
      {
-      "label": "Activity: split",
-      "minutes": 15,
-      "notes": "Pairs."
+      "label": "Walk the table",
+      "minutes": 14,
+      "notes": "Two or three rows in depth; ask for examples from the room."
      },
      {
-      "label": "Examples, criteria and NFRs demo",
-      "minutes": 15,
-      "notes": "Walk the running case story; derive criteria from examples live."
+      "label": "Abstract to concrete demo",
+      "minutes": 5,
+      "notes": "Rewrite live."
      },
      {
-      "label": "Activity: elaborate one story",
-      "minutes": 35,
-      "notes": "Pairs or trios; visit rooms at 15 and 30 minutes."
-     },
-     {
-      "label": "Across horizons and scale",
-      "minutes": 10,
-      "notes": "Walk the comparison table and scaling additions."
+      "label": "Activity",
+      "minutes": 14,
+      "notes": "Individual."
      },
      {
       "label": "Debrief",
-      "minutes": 5,
-      "notes": "One group shares their trickiest example."
+      "minutes": 6,
+      "notes": "Share one rewritten example."
      }
     ],
-    "facilitationNotes": "Groups often write criteria before examples — redirect. Push for at least one unhappy path and a privacy NFR. If time runs short, cut the scaling teach to the key line and point to the resource.",
-    "whatGood": "Four or more examples incl. edge cases; criteria traceable to examples; NFRs covering privacy and accessibility; a value metric observable within days.",
-    "commonFailure": "Criteria that restate the story ('the receiver can confirm') — the fix: what exact observable result, for which example?",
+    "facilitationNotes": "Post-lunch energy: use a quick poll on 'which principle is hardest'. Be precise that the book has nine principles, including Pursue Continuous Improvement and Embrace Uncertainty and Change as separate principles.",
+    "roleplay": {
+     "persona": "Mei, receiver and shift-working nurse (illustrative)",
+     "line": "\"I got a text at 9 pm asking if I'll be home tomorrow — I'm on night shift, so what do I pick?\"",
+     "curveball": "\"And is this text even real? It's got a link.\"",
+     "move": "Think as a Customer: capture 'night-shift receiver' as a new example and the trust concern as a criterion (sender name, retailer and consignment reference, no login or payment requested)."
+    },
+    "whatGood": "Three principles applied with specific actions; a genuinely concrete example.",
+    "commonFailure": "Restating the principle as the action ('I'll see the whole') — the fix: what will you check, with whom, this week?",
     "debrief": [
-     "Which example changed your understanding?",
-     "What NFR would you normally have missed?",
-     "How would this look with three teams?"
+     "Which principle is hardest in your team?",
+     "What did the roleplay add to the examples?"
     ],
-    "answerKey": "Model elaboration as in sections 2–3. Additional strong examples: receiver in an apartment with a concierge; consignment split across two deliveries; a safe-drop request for a 30 kg item (rejected under the WHS rule); duplicate notification for the same consignment.",
+    "answerKey": "Running case: Get Real — agree four receiver examples with the route planner; Avoid Waste — defer email fallback; Embrace Uncertainty — treat low Monday confirmation rates as a question to investigate.",
     "materials": [
-     "Story splitting cheat sheet",
-     "Examples and criteria template",
-     "NFR checklist"
+     "Principles diagram",
+     "Roleplay card"
     ]
    }
   },
   {
    "id": "hd-s6",
-   "num": "3.6",
-   "title": "Common challenges · competencies",
-   "subtitle": "What gets in the way, and the competencies that get you through",
+   "num": "6",
+   "title": "Analysis techniques: stories and elaboration",
+   "subtitle": "User stories, job stories, story decomposition and elaboration, NFRs, metrics and KPIs",
    "dayId": "d1",
-   "time": "15:30–16:30",
+   "time": "13:45–14:45",
    "minutes": 60,
    "participant": {
-    "bigIdea": "Agile analysis fails for predictable reasons — and the competencies that fix them can be deliberately developed.",
-    "overview": "We close the teaching content of the series with practice and people. First, the challenges analysts commonly meet in agile settings and practical responses. Then the competencies that matter most across horizons — and your **personal development map**.",
+    "bigIdea": "Thin, valuable slices with concrete examples are the analyst's highest-leverage Delivery technique.",
+    "overview": "Section 7.7.1 lists the analysis techniques commonly applied at the Delivery Horizon. This session covers the ones you'll use on every item: **User Stories**, **Job Stories**, **Story Decomposition**, **Story Elaboration**, **Non-Functional Requirements** and **Metrics and KPIs**. Session 7 covers the rest.",
     "objectives": [
-     "Recognise common challenges for analysts in agile environments.",
-     "Choose a practical response to each challenge.",
-     "Self-assess against key agile BA competencies.",
-     "Build a personal development map with concrete actions."
+     "Express a backlog item as a user story or a job story.",
+     "Decompose a feature into independently valuable stories.",
+     "Elaborate a story with examples, acceptance criteria and NFRs.",
+     "Anchor a story to a measurable indicator."
     ],
     "keyPoints": [
      {
-      "title": "Common challenges",
-      "body": "Unclear role, delivery-only focus, documentation pressure, distributed teams, governance that expects waterfall artefacts."
+      "title": "User Stories",
+      "body": "As a [user], I want [capability], so that [benefit]."
      },
      {
-      "title": "Competencies",
-      "body": "Analytical thinking, facilitation, communication, domain knowledge, product thinking, comfort with ambiguity, and responsible use of AI."
+      "title": "Job Stories",
+      "body": "When [situation], I want to [motivation], so I can [outcome]."
      },
      {
-      "title": "Development is a practice",
-      "body": "Pick one or two competencies, practise deliberately, get feedback."
+      "title": "Decompose by value",
+      "body": "Each slice independently valuable, testable and demonstrable."
+     },
+     {
+      "title": "Elaborate",
+      "body": "User, context, goal, behaviour and acceptance criteria — the central Delivery activity."
+     },
+     {
+      "title": "NFRs and metrics",
+      "body": "In criteria or the definition of done; measurable indicators at story level."
      }
     ],
     "sections": [
      {
-      "heading": "Challenges and responses",
-      "body": "| Challenge | Symptom | Practical response |\n|---|---|---|\n| Role ambiguity | 'Do we still need a BA?' | Show value in outcomes: examples that prevented rework; signals you set up |\n| Delivery-only trap | All time in refinement | Horizon calendar; protect a Strategy hour each week |\n| Documentation pressure | Governance wants 80-page specs | Lean artefacts plus a traceability view; agree what's really needed |\n| Distributed teams | Misunderstanding across time zones | Examples in writing; short recorded walkthroughs |\n| Waterfall governance | Gates that expect full requirements | Map gate questions to horizon artefacts (lean case, impact map, ready items) |\n| AI-generated drafts | Plausible but wrong content | You direct, the agent drafts; you verify every figure and rule |"
+      "heading": "User Stories and Job Stories",
+      "body": "**User story:** *As a receiver, I want to confirm my delivery window or choose a safe drop from the notification, so that my consignment arrives on the first attempt.*\n\n**Job story:** *When I get a delivery notice the evening before and I'll be at work, I want to tell the driver where to leave it safely, so I can get my parcel without rearranging my day.*\n\nJob stories help when the **situation and motivation** drive behaviour more than the user's role does."
      },
      {
-      "heading": "Competencies across horizons",
-      "body": "| Competency | Strategy | Initiative | Delivery |\n|---|---|---|---|\n| Analytical thinking | Assumption mapping, value models | Impact maps, prioritisation | Splitting, examples |\n| Facilitation | Executive workshops | Co-design with drivers and receivers | Refinement and reviews |\n| Communication | Lean cases, decision framing | Visions, roadmaps | Stories, criteria |\n| Domain knowledge | Network economics, transport and WHS obligations | Customer journeys | Rules, data |\n| Product thinking | Outcomes vs outputs | Hypotheses and signals | Value metrics |\n| Comfort with ambiguity | Deciding with incomplete evidence | Changing the roadmap | Just-enough detail |\n| Responsible AI use | Checking invented figures | Validating synthesised research | Reviewing generated criteria |\n\nRate yourself 1–5 on each, per horizon. Look for the lowest score on the horizon you most need."
+      "heading": "Story Decomposition",
+      "body": "![Splitting by value versus by layer](/visuals/horizons-delivery/decomposition.svg)\n\nFeature: **receiver delivery-window confirmation**. Value slices:\n\n1. Notify receiver by SMS the evening before (happy path).\n2. Receiver confirms the window or chooses a safe drop via a one-click link.\n3. Notify by email when no mobile number is on file.\n4. Flag to the depot when a receiver hasn't responded by route lock.\n5. Handle consignments with no receiver contact details.\n\nSplitting along technical lines creates dependencies and many 'done' stories with nothing to show users."
      },
      {
-      "heading": "Building a development map",
-      "body": "A personal development map has: (1) two focus competencies; (2) a target level and horizon for each; (3) three practice actions over the next 90 days; (4) a feedback source; (5) a check-in date. Example: *Facilitation at Strategy — from 2 to 3. Actions: co-facilitate the next quarterly review; run a 30-min assumption-mapping session with my PO; observe a senior colleague's executive workshop. Feedback: PO and BA lead. Check-in: 90 days.*"
+      "heading": "Story Elaboration",
+      "body": "![From examples to acceptance criteria](/visuals/horizons-delivery/examples-to-criteria.svg)\n\n| Example | Receiver | Expected |\n|---|---|---|\n| 1 | House, at home | One-click confirm; driver run updated |\n| 2 | House, at work | Chooses 'front porch'; instruction on run sheet |\n| 3 | Small business | Confirms without creating an account |\n| 4 | Link opened after 5 am route lock | Expiry message and contact details; no consignment data shown |\n\n- *Given* a notified receiver, *when* they select Confirm, *then* the consignment is marked 'receiver confirmed' and the driver's run updates within 5 minutes.\n- *Given* the receiver chooses a safe drop, *when* they submit, *then* the instruction appears on the driver's run sheet.\n- *Given* a link opened after route lock, *when* it loads, *then* the receiver sees an expiry message and no consignment data.\n\n*Illustrative worked example using a fictional organisation.*"
+     },
+     {
+      "heading": "Non-Functional Requirements, Metrics and KPIs",
+      "body": "| NFR | Story-level requirement (illustrative) |\n|---|---|\n| Privacy | Receiver sees only their own consignment; driver sees only address and safe-drop instruction |\n| Security | Single-use, time-limited link; no login or payment requested |\n| Accessibility | Meets WCAG 2.2 AA; works on mobile |\n| Performance | Page loads in under 2 seconds on 4G |\n| Safety | Safe drop never requires climbing, entering premises or lifting over a fence; items over 25 kg not offered |\n| Audit | Every confirmation logged with timestamp and source |\n\nNFRs go in explicit acceptance criteria or the definition of done, so they aren't deferred indefinitely.\n\n**Story-level indicator:** % of notified receivers who confirm or choose a safe drop within 4 hours — anchored to the product's measure of fewer failed first attempts."
      }
     ],
     "activities": [
      {
-      "title": "Personal development map",
-      "instructions": "Self-assess on the competency table (1–5 per horizon). Choose two focus competencies and build your 90-day map.",
+      "id": "hd-s6-act1",
+      "title": "Decompose",
+      "instructions": "Split your item into at least four independently valuable stories. Mark the first to elaborate and why.",
+      "minutes": 12,
+      "prompts": [
+       {
+        "id": "hd-s6-act1-p1",
+        "label": "Stories (4+)",
+        "placeholder": ""
+       },
+       {
+        "id": "hd-s6-act1-p2",
+        "label": "First story and why",
+        "placeholder": ""
+       }
+      ]
+     },
+     {
+      "id": "hd-s6-act2",
+      "title": "Elaborate one story",
+      "instructions": "For your first story write: the user or job story, four or more examples (including an unhappy path), three Given/When/Then criteria, relevant NFRs and a measurable indicator. You'll finish it in session 9.",
       "minutes": 25,
       "prompts": [
        {
-        "label": "Self-assessment highlights (strongest and weakest)",
-        "placeholder": "",
-        "id": "hd-s6-act1-p1"
+        "id": "hd-s6-act2-p1",
+        "label": "User story or job story",
+        "placeholder": ""
        },
        {
-        "label": "Focus competency 1 — target, horizon, three actions",
-        "placeholder": "",
-        "id": "hd-s6-act1-p2"
+        "id": "hd-s6-act2-p2",
+        "label": "Examples",
+        "placeholder": ""
        },
        {
-        "label": "Focus competency 2 — target, horizon, three actions",
-        "placeholder": "",
-        "id": "hd-s6-act1-p3"
+        "id": "hd-s6-act2-p3",
+        "label": "Acceptance criteria (Given/When/Then)",
+        "placeholder": ""
        },
        {
-        "label": "Feedback source and check-in date",
-        "placeholder": "",
-        "id": "hd-s6-act1-p4"
+        "id": "hd-s6-act2-p4",
+        "label": "NFRs",
+        "placeholder": ""
        },
        {
-        "label": "Challenge I face most, and my response",
-        "placeholder": "",
-        "id": "hd-s6-act1-p5"
+        "id": "hd-s6-act2-p5",
+        "label": "Metric / KPI",
+        "placeholder": ""
        }
-      ],
-      "id": "hd-s6-act1"
+      ]
      }
     ],
-    "aiPrompt": "Act as a business analysis career coach. Based on my self-assessment below across these competencies — analytical thinking, facilitation, communication, domain knowledge, product thinking, comfort with ambiguity, responsible AI use — at the Strategy, Initiative and Delivery horizons, recommend two focus competencies, explain why, and propose a 90-day development plan with three practical actions each, a feedback source and a check-in date. Keep actions achievable within my normal work. Self-assessment and context:",
+    "aiPrompt": "Act as an agile business analyst. For the feature below: (1) decompose it into four to six independently valuable stories (not technical layers); (2) for the first story, write it as a user story and as a job story; (3) propose at least five concrete examples including edge cases and an unhappy path; (4) derive three to five Given/When/Then acceptance criteria from the examples; (5) list NFRs (privacy, security, accessibility, performance, audit, safety) and a measurable indicator of success. Flag ambiguities for the Product Owner. Feature:",
     "quiz": [
      {
-      "q": "A good response to the 'delivery-only trap' is…",
+      "q": "Which is a value-based way to decompose a story?",
       "opts": [
-       "Stop attending refinement",
-       "Plan horizon time deliberately, e.g. a protected Strategy hour",
-       "Ask the PO to do strategy",
-       "Ignore it"
+       "Front end / back end",
+       "By business rule, data variation or happy/unhappy path",
+       "By developer",
+       "By sprint"
       ],
       "a": 1,
-      "why": "Deliberate calendar allocation keeps higher horizons alive."
+      "why": "Each slice must be independently valuable and testable."
      },
      {
-      "q": "When using an AI agent to draft analysis, the BA should…",
+      "q": "A job story frames a requirement in terms of…",
       "opts": [
-       "Accept drafts as-is",
-       "Direct the agent and verify every figure and rule",
-       "Avoid AI entirely",
-       "Let the agent decide priorities"
+       "Role, capability and benefit",
+       "Situation, motivation and expected outcome",
+       "Inputs and outputs",
+       "Epic and theme"
       ],
       "a": 1,
-      "why": "The agent removes the blank page; judgement and verification stay with the BA."
+      "why": "That's what distinguishes it from a user story."
      },
      {
-      "q": "A personal development map should include…",
+      "q": "Where should NFRs live so they aren't deferred?",
       "opts": [
-       "Every competency at once",
-       "Two focus competencies with actions, feedback and a check-in date",
-       "Only training courses",
-       "A job title change"
+       "In a separate document for later",
+       "In explicit acceptance criteria or the definition of done",
+       "Only in the test plan",
+       "Nowhere — they're implied"
       ],
       "a": 1,
-      "why": "Focus and deliberate practice with feedback drive growth."
+      "why": "Section 7.7.1: represent them in criteria or the definition of done."
      }
     ],
     "takeaways": [
-     "Challenges are predictable — prepare responses.",
-     "Assess competencies per horizon.",
-     "Focus on two, practise deliberately, get feedback."
+     "Decompose by value.",
+     "Examples first, criteria second.",
+     "NFRs and metrics belong on the item."
     ]
    },
    "presenter": {
-    "purpose": "Address real-world obstacles and produce the personal development map.",
-    "openingLine": "\"We've spent three days on what good looks like. Now let's talk honestly about what gets in the way — and what you'll work on next.\"",
+    "purpose": "Produce the main leave-with artefact: one story decomposed and elaborated.",
+    "openingLine": "\"Let's take one small slice and make it so clear that nobody could build the wrong thing.\"",
     "beats": [
      {
-      "label": "Challenges and responses",
-      "minutes": 15,
-      "notes": "Walk the table; ask for one more challenge from the room."
+      "label": "User stories and job stories",
+      "minutes": 6,
+      "notes": "Read both forms."
      },
      {
-      "label": "Competencies across horizons",
+      "label": "Decomposition",
+      "minutes": 6,
+      "notes": "Decomposition diagram."
+     },
+     {
+      "label": "Activity: decompose",
       "minutes": 12,
-      "notes": "Explain self-rating per horizon."
+      "notes": "Pairs."
      },
      {
-      "label": "Development map example",
-      "minutes": 3,
-      "notes": "Read the example."
+      "label": "Elaboration, NFRs and metrics demo",
+      "minutes": 8,
+      "notes": "Derive criteria from examples live."
      },
      {
-      "label": "Activity: development map",
+      "label": "Activity: elaborate",
       "minutes": 25,
-      "notes": "Individual; quiet time."
+      "notes": "Pairs or trios; visit rooms at 10 and 20 minutes."
      },
      {
       "label": "Debrief",
-      "minutes": 5,
-      "notes": "Two volunteers share a focus competency and first action."
+      "minutes": 3,
+      "notes": "Trickiest example."
      }
     ],
-    "facilitationNotes": "This is reflective — give quiet time and don't rush. Some participants may be anxious about role security; acknowledge it and redirect to demonstrable outcomes.",
-    "whatGood": "Two focus competencies with concrete actions, a feedback source and a date.",
-    "commonFailure": "Development maps that are a list of courses — the fix: what will you practise in your current work?",
+    "facilitationNotes": "Groups write criteria before examples — redirect. Insist on one unhappy path and one privacy NFR. Unfinished work is fine: session 9 completes it.",
+    "whatGood": "Value slices; four or more examples incl. an unhappy path; criteria traceable to examples; NFRs; a measurable indicator.",
+    "commonFailure": "Criteria that restate the story — the fix: what exact observable result, for which example?",
     "debrief": [
-     "Which challenge do you face most?",
-     "What's your first action on Monday?"
+     "Which example changed your understanding?",
+     "Which NFR would you normally miss?"
     ],
-    "answerKey": "Strong maps tie actions to existing work (e.g. 'run the examples workshop for story 3 next sprint'), name a specific person for feedback and set a date.",
+    "answerKey": "Model slices and elaboration as in the sections. Extra examples: apartment with concierge; consignment split across two days; 30 kg safe-drop request (rejected); duplicate notification for the same consignment.",
     "materials": [
-     "Competency self-assessment sheet",
-     "Development map template"
+     "Decomposition diagram",
+     "Examples-to-criteria diagram",
+     "Story elaboration template",
+     "NFR checklist"
     ]
    }
   },
   {
    "id": "hd-s7",
-   "num": "3.7",
+   "num": "7",
+   "title": "Analysis techniques: understanding and uncertainty",
+   "subtitle": "Keeping the user in view, resolving ambiguity, and deciding at the right moment",
+   "dayId": "d1",
+   "time": "15:00–15:45",
+   "minutes": 45,
+   "participant": {
+    "bigIdea": "Pick the technique that resolves the specific ambiguity in front of you — not the one you always use.",
+    "overview": "The remaining analysis techniques from section 7.7.1 fall into three jobs: **keeping the user in view**, **resolving ambiguity and complexity**, and **managing uncertainty and scope**. Each is a precision tool, not overhead.",
+    "objectives": [
+     "Describe each remaining Delivery analysis technique and when to use it.",
+     "Match a technique to a specific ambiguity.",
+     "Plan a spike or real-options decision for your item."
+    ],
+    "keyPoints": [
+     {
+      "title": "Keep the user in view",
+      "body": "Personas, Customer Journey Maps, Story Mapping, Storyboarding, Prototyping."
+     },
+     {
+      "title": "Resolve ambiguity",
+      "body": "Discovery Workshops, Event Storming, Stakeholder Analysis, Problem Definition."
+     },
+     {
+      "title": "Manage uncertainty",
+      "body": "Spikes, Real Options, MVP, Root Cause Analysis."
+     }
+    ],
+    "sections": [
+     {
+      "heading": "The toolkit",
+      "body": "| Technique | Use it at Delivery when… |\n|---|---|\n| **Personas** | The team is deep in detail and needs the user's goals and context in view |\n| **Customer Journey Maps** | Optimising one story risks creating friction elsewhere in the user's experience |\n| **Story Mapping** | You need to see where the item sits in the user journey and what can be deferred (maintain the existing map; don't build a new one) |\n| **Storyboarding** | You need to walk stakeholders through an interaction flow |\n| **Prototyping, Mock-ups and Wireframes** | A rough visual would resolve an ambiguity faster than words |\n| **Discovery Workshops** | A complex or contested requirement can't be resolved in informal conversation |\n| **Event Storming** | Complex domain behaviour needs modelling (events, commands, aggregates) |\n| **Spikes** | Uncertainty blocks elaboration or estimation — time-box an investigation |\n| **Real Options** | You can defer a decision to the last responsible moment |\n| **Minimum Viable Product** | Scoping the simplest implementation that delivers value |\n| **Problem Definition and Analysis** | A requirement is drifting from the original problem |\n| **Root Cause Analysis** | Recurring defects or missed outcomes signal a systemic issue |\n| **Stakeholder Analysis** | You need to know who to consult, who accepts, and who is affected |"
+     },
+     {
+      "heading": "Running case: choosing the technique",
+      "body": "| Ambiguity | Technique |\n|---|---|\n| What may the SMS contain, and what consent is needed? | **Spike** with Legal, time-boxed to two days |\n| Drivers ignore safe-drop notes on the run sheet | **Prototyping** a revised run-sheet line with three drivers |\n| Should a confirmation lock the window or allow changes until route lock? | **Real Options** — decide when the route-lock integration is understood |\n| Where does confirmation sit relative to tracking and redelivery? | **Story Mapping** — check the existing map |\n| Failed first attempts rising at one depot despite confirmations | **Root Cause Analysis**, findings to the Product Owner |\n\n*Illustrative worked example using a fictional organisation.*"
+     }
+    ],
+    "activities": [
+     {
+      "id": "hd-s7-act1",
+      "title": "Match the technique",
+      "instructions": "List the two or three biggest ambiguities or uncertainties on your item. For each, choose a technique from the toolkit, say why, and what you'd do first.",
+      "minutes": 18,
+      "prompts": [
+       {
+        "id": "hd-s7-act1-p1",
+        "label": "Ambiguity 1 — technique — first step",
+        "placeholder": ""
+       },
+       {
+        "id": "hd-s7-act1-p2",
+        "label": "Ambiguity 2 — technique — first step",
+        "placeholder": ""
+       },
+       {
+        "id": "hd-s7-act1-p3",
+        "label": "Ambiguity 3 — technique — first step",
+        "placeholder": ""
+       },
+       {
+        "id": "hd-s7-act1-p4",
+        "label": "A decision I can defer (real options) and until when",
+        "placeholder": ""
+       }
+      ]
+     }
+    ],
+    "aiPrompt": "I'm an agile business analyst. For each ambiguity or uncertainty on my backlog item below, recommend the most suitable technique from: Personas, Customer Journey Maps, Story Mapping, Storyboarding, Prototyping/Mock-ups/Wireframes, Discovery Workshops, Event Storming, Spikes, Real Options, Minimum Viable Product, Problem Definition and Analysis, Root Cause Analysis, Stakeholder Analysis. Explain why, and give a concrete first step and time-box. Item and ambiguities:",
+    "quiz": [
+     {
+      "q": "A spike is…",
+      "opts": [
+       "A sudden rise in velocity",
+       "A time-boxed investigation to resolve uncertainty blocking elaboration or estimation",
+       "A large story",
+       "A production incident"
+      ],
+      "a": 1,
+      "why": "It explores the question without committing to full delivery."
+     },
+     {
+      "q": "At the Delivery Horizon, Story Mapping means…",
+      "opts": [
+       "Building a new map for each iteration",
+       "Referencing and maintaining the existing map",
+       "Replacing the backlog",
+       "Mapping technical components"
+      ],
+      "a": 1,
+      "why": "Delivery maintains the map and feeds observations back."
+     },
+     {
+      "q": "Real options thinking helps the analyst…",
+      "opts": [
+       "Make every decision now",
+       "Defer decisions to the last responsible moment",
+       "Avoid decisions",
+       "Estimate faster"
+      ],
+      "a": 1,
+      "why": "It avoids committing before the team understands enough to choose well."
+     }
+    ],
+    "takeaways": [
+     "Name the ambiguity, then pick the tool.",
+     "Spikes and real options tame uncertainty.",
+     "Keep the user visible with personas, journeys and prototypes."
+    ]
+   },
+   "presenter": {
+    "purpose": "Cover the remaining analysis techniques and match them to real ambiguities.",
+    "openingLine": "\"What's the one question on your item that nobody in the team can answer yet?\"",
+    "beats": [
+     {
+      "label": "Three jobs and the toolkit",
+      "minutes": 12,
+      "notes": "Walk the table by job, not alphabetically."
+     },
+     {
+      "label": "Running case matches",
+      "minutes": 6,
+      "notes": "Read the matching table."
+     },
+     {
+      "label": "Activity",
+      "minutes": 18,
+      "notes": "Individual, then pair to challenge choices."
+     },
+     {
+      "label": "Debrief",
+      "minutes": 9,
+      "notes": "Most-chosen technique and why."
+     }
+    ],
+    "facilitationNotes": "Don't try to teach every technique in depth — the full descriptions are in the book's technique chapters. Focus on choosing the right one.",
+    "whatGood": "Each ambiguity matched to a technique with a concrete, time-boxed first step.",
+    "commonFailure": "Defaulting to 'a workshop' for everything — the fix: would a two-hour spike or a rough sketch resolve it faster?",
+    "debrief": [
+     "Which technique was new to you?",
+     "What decision can you defer?"
+    ],
+    "answerKey": "As in the running-case table. Real option: whether confirmation locks the window — defer until the route-lock integration spike reports.",
+    "materials": [
+     "Technique toolkit card"
+    ]
+   }
+  },
+  {
+   "id": "hd-s8",
+   "num": "8",
+   "title": "Planning and delivery techniques",
+   "subtitle": "Three Amigos, Planning Workshops, Relative Estimation, Collaborative Games, the Kanban Board and the Product Roadmap",
+   "dayId": "d1",
+   "time": "15:45–16:30",
+   "minutes": 45,
+   "participant": {
+    "bigIdea": "The best planning techniques are structured conversations that surface misunderstanding early.",
+    "overview": "Section 7.7.2 names six planning and delivery techniques for the Delivery Horizon. Each one turns a team event into a chance to build shared understanding — the Three Amigos above all.\n\n![The Three Amigos](/visuals/horizons-delivery/three-amigos.svg)",
+    "objectives": [
+     "Run a Three Amigos conversation on a backlog item.",
+     "Prepare items for a Planning Workshop and contribute to Relative Estimation.",
+     "Use Collaborative Games, the Kanban Board and the Product Roadmap at Delivery."
+    ],
+    "keyPoints": [
+     {
+      "title": "Three Amigos",
+      "body": "Analyst, developer and tester mindsets on one item before the team commits."
+     },
+     {
+      "title": "Planning Workshops",
+      "body": "Iteration planning: items elaborated, criteria clear, risks known."
+     },
+     {
+      "title": "Relative Estimation",
+      "body": "Hard to estimate usually means not yet elaborated."
+     },
+     {
+      "title": "Collaborative Games",
+      "body": "E.g. Planning Poker — surface hidden differences in understanding."
+     },
+     {
+      "title": "Kanban Board",
+      "body": "A story stuck for days often signals an unresolved ambiguity."
+     },
+     {
+      "title": "Product Roadmap",
+      "body": "Context for where this iteration fits; delivery learning can revise it."
+     }
+    ],
+    "sections": [
+     {
+      "heading": "The six techniques",
+      "body": "| Technique | The Agile BA's contribution |\n|---|---|\n| **Three Amigos** | Brings the analyst mindset; facilitates; captures examples and criteria |\n| **Planning Workshops** | Prepares items so the team can estimate and commit; resolves elaboration questions during the session |\n| **Relative Estimation** | Makes sure items are understood well enough to estimate; surfaces hidden complexity |\n| **Collaborative Games** | Uses games such as Planning Poker to make differences in understanding visible |\n| **Kanban Board** | Monitors flow; spots items blocked by analysis questions |\n| **Product Roadmap** | Uses it as context; feeds back when delivery learning should change it |"
+     },
+     {
+      "heading": "Running a Three Amigos session",
+      "body": "1. **Pick one item** due in the next iteration.\n2. **Bring 3–5 people** covering the analyst, developer and tester mindsets.\n3. **Start from examples**: walk the happy path, then ask 'what could go wrong?'\n4. **Capture** agreed examples, new questions and acceptance criteria on the item.\n5. **Stop** when the team can estimate and start — not when every scenario is written.\n\nThe output is shared understanding plus examples and criteria — not a document."
+     },
+     {
+      "heading": "Where the techniques live in agile events",
+      "body": "| Event | Techniques in play |\n|---|---|\n| Backlog refinement | Three Amigos, Story Elaboration, Relative Estimation |\n| Iteration planning | Planning Workshop, Relative Estimation, Collaborative Games |\n| Daily standup | Kanban Board — spot items stuck on questions |\n| Iteration review | Validate the increment; capture feedback as backlog items |\n| Retrospective | Pursue Continuous Improvement in the analysis process |"
+     }
+    ],
+    "activities": [
+     {
+      "id": "hd-s8-act1",
+      "title": "Three Amigos roleplay",
+      "instructions": "In trios (analyst, developer, tester), run a 12-minute Three Amigos on one participant's story. Swap roles if time allows. Capture what changed.",
+      "minutes": 18,
+      "prompts": [
+       {
+        "id": "hd-s8-act1-p1",
+        "label": "New examples surfaced",
+        "placeholder": ""
+       },
+       {
+        "id": "hd-s8-act1-p2",
+        "label": "Questions we couldn't answer",
+        "placeholder": ""
+       },
+       {
+        "id": "hd-s8-act1-p3",
+        "label": "Acceptance criteria added or changed",
+        "placeholder": ""
+       },
+       {
+        "id": "hd-s8-act1-p4",
+        "label": "Would we estimate it now? Why / why not?",
+        "placeholder": ""
+       }
+      ]
+     },
+     {
+      "id": "hd-s8-act2",
+      "title": "Planning readiness",
+      "instructions": "Is your story ready for a Planning Workshop? Note what's still needed and which collaborative game you'd use in estimation.",
+      "minutes": 5,
+      "prompts": [
+       {
+        "id": "hd-s8-act2-p1",
+        "label": "Still needed before planning",
+        "placeholder": ""
+       },
+       {
+        "id": "hd-s8-act2-p2",
+        "label": "Game or estimation approach",
+        "placeholder": ""
+       }
+      ]
+     }
+    ],
+    "aiPrompt": "Play the developer and tester in a Three Amigos conversation about the backlog item below. As the developer, ask how it could be built and what's technically unclear. As the tester, ask what could go wrong, including edge cases and unhappy paths. Ask one question at a time and wait for my answer; after ten exchanges, summarise the agreed examples, open questions and acceptance criteria. Item:",
+    "quiz": [
+     {
+      "q": "Who takes part in a Three Amigos conversation?",
+      "opts": [
+       "The sponsor, PO and architect",
+       "People representing the analyst, developer and tester mindsets",
+       "The whole department",
+       "Only testers"
+      ],
+      "a": 1,
+      "why": "Three to five people bringing the three mindsets."
+     },
+     {
+      "q": "An item is very hard to estimate. That most likely signals…",
+      "opts": [
+       "The team is slow",
+       "The item hasn't been adequately elaborated",
+       "Estimation is useless",
+       "The PO should decide the estimate"
+      ],
+      "a": 1,
+      "why": "A signal for more analysis, not a reason to proceed."
+     },
+     {
+      "q": "A story has sat 'in progress' on the Kanban Board for days. The analyst should…",
+      "opts": [
+       "Ignore it",
+       "Check for an unresolved ambiguity they can help address",
+       "Move it back to the backlog",
+       "Escalate to the sponsor"
+      ],
+      "a": 1,
+      "why": "Stuck items often signal analysis questions."
+     }
+    ],
+    "takeaways": [
+     "Three Amigos before commitment.",
+     "Hard to estimate = not yet elaborated.",
+     "Use the board to spot stuck questions."
+    ]
+   },
+   "presenter": {
+    "purpose": "Practise the Three Amigos and connect the six techniques to team events.",
+    "openingLine": "\"Fifteen minutes of three people arguing about examples saves days of rework. Let's prove it.\"",
+    "beats": [
+     {
+      "label": "Six techniques",
+      "minutes": 8,
+      "notes": "Walk the table."
+     },
+     {
+      "label": "Three Amigos how-to",
+      "minutes": 5,
+      "notes": "Five steps; Three Amigos diagram."
+     },
+     {
+      "label": "Activity: Three Amigos roleplay",
+      "minutes": 18,
+      "notes": "Trios in breakouts."
+     },
+     {
+      "label": "Activity: planning readiness",
+      "minutes": 5,
+      "notes": "Individual."
+     },
+     {
+      "label": "Events table and debrief",
+      "minutes": 9,
+      "notes": "Where do these live in your team?"
+     }
+    ],
+    "facilitationNotes": "Assign trio roles explicitly; give testers licence to be awkward. Keep event language framework-neutral.",
+    "roleplay": {
+     "persona": "Dev, a developer in the trio",
+     "line": "\"What happens if the receiver confirms, then the retailer splits the order into two consignments?\"",
+     "curveball": "\"And the run sheet is generated by a vendor system — we can't change its layout this iteration.\"",
+     "move": "Capture the split-consignment case as a new example and probably a new story; treat the vendor constraint with Understand What is Feasible — show the instruction in the existing notes field for now."
+    },
+    "whatGood": "New examples and questions surfaced, criteria changed, a clear call on estimability.",
+    "commonFailure": "The analyst presenting the story rather than discussing it — the fix: open with an example and a question.",
+    "debrief": [
+     "What did the tester find that you'd missed?",
+     "Would you estimate it now?"
+    ],
+    "answerKey": "Typical Three Amigos additions in the running case: split consignments; receiver changes mind after confirming; link forwarded to someone else; vendor run-sheet constraint.",
+    "materials": [
+     "Three Amigos diagram",
+     "Trio role cards",
+     "Planning readiness checklist"
+    ]
+   }
+  },
+  {
+   "id": "hd-s9",
+   "num": "9",
    "title": "Exercise: elaborate one backlog item · close",
-   "subtitle": "Finish your story, check the thread, close the series",
+   "subtitle": "Finish your item, check it against the outcomes, commit",
    "dayId": "d1",
    "time": "16:30–17:00",
    "minutes": 30,
    "participant": {
-    "bigIdea": "One item, fully understood and measured, tells you more than a hundred specified ones.",
-    "overview": "Finalise the backlog item you started earlier: story, examples, criteria, NFRs and value metric. Then trace it all the way back to the strategic outcome — closing the thread that started with an 18-day wait on Day 1. We finish with commitments and close the Horizon Series.",
+    "bigIdea": "One item, fully understood, beats a hundred specified ones.",
+    "overview": "Finalise the item you've been building all day: story, examples, criteria, NFRs and a measurable indicator, plus anything the Three Amigos surfaced. Check it against the five outcomes, then commit to what you'll do differently next iteration.",
     "objectives": [
      "Finalise one fully elaborated backlog item.",
-     "Trace it from story to strategic outcome.",
-     "Commit to next actions from your horizon calendar and development map."
+     "Check it against the five outcomes of analysis.",
+     "Commit to one change in your delivery practice."
     ],
     "keyPoints": [
      {
       "title": "Complete the item",
-      "body": "Story, examples, criteria, NFRs, value metric."
+      "body": "Story, examples, criteria, NFRs, indicator, supporting artefacts."
      },
      {
-      "title": "Trace the thread",
-      "body": "Story → feature signal → product outcome → strategic outcome."
+      "title": "Check it",
+      "body": "Against the five outcomes."
      },
      {
       "title": "Commit",
-      "body": "One action from each leave-with artefact."
+      "body": "One technique and one principle you'll apply next iteration."
      }
     ],
     "sections": [
      {
       "heading": "Exercise brief",
-      "body": "1. Finalise your elaborated story.\n2. Write the full trace: story value metric → feature signal → product outcome → strategic outcome.\n3. Check it against your definition of ready.\n4. Commit to one action from your horizon calendar and one from your development map."
+      "body": "1. Finalise your story with everything learned today.\n2. Check it against the five outcomes (7.3.1–7.3.5).\n3. Name one technique and one principle you'll apply next iteration."
      },
      {
-      "heading": "The thread, complete (running case)",
-      "body": "| Horizon | Artefact |\n|---|---|\n| Strategy | On-time last-mile delivery 79% → ≥92% |\n| Initiative | Product outcome: ≥70% of receivers confirm before route lock |\n| Delivery | Story: receiver confirms window or safe drop via one-click link; value metric: % confirming within 4 hours |\n\n*Illustrative worked example using a fictional organisation.*"
+      "heading": "The finished running-case item",
+      "body": "| Element | Content |\n|---|---|\n| Story | Receiver confirms window or chooses a safe drop via one-click link |\n| Examples | House at home; house at work → porch; small business; link after route lock; 30 kg safe drop rejected; split consignment |\n| Criteria | Run updated within 5 min; safe drop on run sheet; expired link shows no data |\n| NFRs | Privacy, security, WCAG 2.2 AA, < 2 s load, safety limits, audit log |\n| Indicator | % confirming or choosing safe drop within 4 hours |\n| Artefacts | Consignment state diagram; run-sheet line prototype |\n\n*Illustrative worked example using a fictional organisation.*"
      }
     ],
     "activities": [
      {
-      "title": "Final elaboration and trace",
+      "id": "hd-s9-act1",
+      "title": "Final elaboration and commitments",
       "instructions": "Complete each box.",
       "minutes": 18,
       "prompts": [
        {
+        "id": "hd-s9-act1-p1",
         "label": "Final story with examples, criteria and NFRs",
-        "placeholder": "",
-        "id": "hd-s7-act1-p1"
+        "placeholder": ""
        },
        {
-        "label": "Value metric",
-        "placeholder": "",
-        "id": "hd-s7-act1-p2"
+        "id": "hd-s9-act1-p2",
+        "label": "Measurable indicator",
+        "placeholder": ""
        },
        {
-        "label": "Full trace to strategic outcome",
-        "placeholder": "",
-        "id": "hd-s7-act1-p3"
+        "id": "hd-s9-act1-p3",
+        "label": "Outcome check (7.3.1–7.3.5)",
+        "placeholder": ""
        },
        {
-        "label": "Ready check result",
-        "placeholder": "",
-        "id": "hd-s7-act1-p4"
+        "id": "hd-s9-act1-p4",
+        "label": "Commitment: a technique I'll apply next iteration",
+        "placeholder": ""
        },
        {
-        "label": "Commitment: horizon calendar action",
-        "placeholder": "",
-        "id": "hd-s7-act1-p5"
-       },
-       {
-        "label": "Commitment: development map action",
-        "placeholder": "",
-        "id": "hd-s7-act1-p6"
+        "id": "hd-s9-act1-p5",
+        "label": "Commitment: a principle I'll practise next iteration",
+        "placeholder": ""
        }
-      ],
-      "id": "hd-s7-act1"
+      ]
      }
     ],
-    "aiPrompt": "Review my elaborated backlog item below as a peer business analyst. Check that: examples include edge and unhappy cases; acceptance criteria derive from the examples and are observable; NFRs cover privacy, security, accessibility, performance and audit where relevant; the value metric is observable within days; and the trace to the strategic outcome is explicit. List the three most important improvements. Backlog item:",
+    "aiPrompt": "Review my elaborated backlog item below as a peer agile business analyst. Check: examples include edge and unhappy cases; acceptance criteria derive from the examples and are observable; NFRs are explicit; there is a measurable indicator; it is small enough for one iteration; and it is connected to the product vision, customer and value. List the three most important improvements. Item:",
     "quiz": [
      {
-      "q": "What closes the 'thread' across horizons?",
+      "q": "Which belongs in a fully elaborated item in this course?",
       "opts": [
-       "Story points",
-       "A trace from story value metric to strategic outcome",
-       "A Gantt chart",
-       "Sign-off"
+       "Detailed UI designs for every screen",
+       "Examples, criteria, NFRs and a measurable indicator",
+       "The project budget",
+       "The team roster"
       ],
       "a": 1,
-      "why": "Traceability from story to outcome connects all three horizons."
+      "why": "These are the elements built today."
      },
      {
-      "q": "Which item is part of a fully elaborated story in this course?",
+      "q": "The best final check of an item is…",
       "opts": [
-       "Detailed UI mock-ups for all screens",
-       "Examples, criteria, NFRs and a value metric",
-       "Project budget",
-       "Team roster"
+       "Story point count",
+       "The five outcomes of analysis",
+       "Sponsor sign-off",
+       "Word count"
       ],
       "a": 1,
-      "why": "These are the elements we defined for a fully elaborated item."
+      "why": "The outcomes describe what good delivery analysis produces."
      }
     ],
     "takeaways": [
-     "You now have: an elaborated story, a horizon calendar and a development map.",
-     "Every story should trace to the strategic outcome.",
-     "Keep working across all three horizons."
+     "You leave with one item fully elaborated.",
+     "Check items against the five outcomes.",
+     "Practise one technique and one principle next iteration."
     ]
    },
    "presenter": {
-    "purpose": "Consolidate the final artefact, close the series thread and secure commitments.",
-    "openingLine": "\"Three days ago this was an 18-day wait. Let's finish by tracing your story all the way back.\"",
+    "purpose": "Consolidate the artefact and secure commitments.",
+    "openingLine": "\"This morning it was a line on a backlog. Let's see what it is now.\"",
     "beats": [
      {
       "label": "Brief",
       "minutes": 2,
-      "notes": "Explain steps."
+      "notes": "Three steps."
      },
      {
       "label": "Individual work",
       "minutes": 18,
-      "notes": "Circulate; check traces."
+      "notes": "Circulate; check criteria trace to examples."
      },
      {
       "label": "Commitments round",
       "minutes": 7,
-      "notes": "Everyone shares one commitment in chat; read a few aloud."
+      "notes": "Everyone posts one commitment in chat."
      },
      {
-      "label": "Series close",
+      "label": "Close",
       "minutes": 3,
-      "notes": "Thank, point to resources, invite feedback survey."
+      "notes": "Resources and feedback survey."
      }
     ],
-    "facilitationNotes": "End on time and on a high. Read the running-case thread table aloud as the final moment. Share the feedback survey link and the resources.",
-    "whatGood": "A complete item and trace from every participant; specific commitments.",
-    "commonFailure": "Running out of time — the fix: prioritise the trace and commitments over polishing examples.",
+    "facilitationNotes": "End on time. Read the finished running-case table aloud as the final moment.",
+    "whatGood": "A complete item and specific commitments.",
+    "commonFailure": "Running out of time — the fix: prioritise the outcome check and commitments over polishing.",
     "debrief": [
-     "What's your one commitment for next week?",
-     "What will you do differently at each horizon?"
+     "What's your commitment for next iteration?",
+     "Which principle will you practise?"
     ],
-    "answerKey": "Model trace as in section 2. Ready check: traces to hypothesis ✓; fits in iteration ✓; examples agreed ✓; dependencies (email service, middleware event) known ✓; criteria drafted ✓.",
+    "answerKey": "Model item as in the table. Outcome check: all five amber-to-green; remaining risk is the route-lock integration, covered by a spike.",
     "materials": [
      "Final exercise template",
      "Feedback survey",
-     "Series resource pack"
+     "Resource pack"
     ]
    }
   }
@@ -1256,32 +1616,32 @@
  "resources": [
   {
    "title": "Story elaboration template",
-   "description": "Story, examples table, Given/When/Then criteria, NFR checklist and value metric.",
+   "description": "User or job story, examples table, Given/When/Then criteria, NFR checklist and indicator.",
    "audience": "participant"
   },
   {
-   "title": "One-week horizon calendar",
-   "description": "Monday–Friday template with Strategy, Initiative and Delivery lanes.",
+   "title": "Delivery technique toolkit",
+   "description": "All 17 analysis and 6 planning and delivery techniques from section 7.7, with when to use each.",
    "audience": "participant"
   },
   {
-   "title": "Competency self-assessment and development map",
-   "description": "Rate seven competencies per horizon and plan 90 days of deliberate practice.",
+   "title": "Three Amigos guide",
+   "description": "Five-step guide and trio role cards.",
    "audience": "participant"
   },
   {
-   "title": "Running case — the complete thread",
-   "description": "Strategy to Delivery artefacts for 'Delivered right first time', with disclaimer.",
+   "title": "Running case — the finished item",
+   "description": "Receiver confirmation, fully elaborated, with disclaimer.",
    "audience": "participant"
   },
   {
-   "title": "Facilitator timing sheet — Day 3",
+   "title": "Facilitator timing sheet",
    "description": "Timings, roleplay setup and fallback cuts.",
    "audience": "presenter"
   },
   {
-   "title": "Answer key pack — Day 3",
-   "description": "Model story split, examples, criteria, NFRs, value metric and trace.",
+   "title": "Answer key pack",
+   "description": "Model decomposition, examples, criteria, NFRs and technique matches.",
    "audience": "presenter"
   }
  ]

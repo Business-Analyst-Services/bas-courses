@@ -254,6 +254,7 @@ a.agrow:hover{background:var(--light)}
 .md h3,.md h4{color:var(--navy);margin:14px 0 6px}
 .md code{background:var(--light);padding:1px 5px;border-radius:5px;font-size:.92em}
 .md blockquote{border-left:4px solid var(--teal);padding:4px 14px;color:var(--grey);margin:0 0 12px}
+.md img{display:block;max-width:100%;height:auto;margin:14px auto;border:1px solid var(--line);border-radius:12px}
 .panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:16px}
 .panel h3{color:var(--navy);font-size:16px;margin-bottom:10px}
 .bigidea{font-size:20px;font-weight:600;color:var(--navy);border-left:5px solid var(--teal);padding:6px 16px;margin:6px 0 20px;line-height:1.35}
