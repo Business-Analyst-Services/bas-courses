@@ -9,23 +9,23 @@
  "audience": "BA practice leads, lead and senior business analysts stepping into practice leadership, and managers accountable for a BA team or Centre of Excellence.",
  "order": 1,
  "outcomes": [
-  "Make a defensible case for BA value using the Sammy Value Model and the upstream/downstream economics",
-  "Design a practice around four jobs, four roles and four services, and assess BACOE readiness honestly",
-  "Set governance — boundaries, forums and decision rights — that gives the practice real influence",
-  "Lead the practice's use of AI with banded guardrails, review and provenance rules",
-  "Calibrate delivery with two foundations, three tiers and practical quality gates",
-  "Measure practice value through three mechanisms and pitch a 90-day plan to a sponsor"
+  "Make a defensible case for BA value using the Sammy Value Model and the upstream/downstream economics (Chapter 1)",
+  "Design a practice around the four jobs, four roles and four services, and assess BACOE readiness honestly (Chapter 3)",
+  "Set boundaries, governance forums and decision rights that give the practice real influence (Chapter 3)",
+  "Run the twelve companion playbooks and the Part III Visual Library as the practice's operating layer",
+  "Calibrate delivery with two foundations, three tiers and the book's templates (Chapter 2)",
+  "Measure practice value through the three mechanisms and take a five-part executive business case to a sponsor"
  ],
  "leaveWith": [
-  "A value-optimised Jobs To Be Done reframe of a real BA position description",
+  "A value-optimised Jobs To Be Done reframe of a real BA position description (Business Analyst Value Generator)",
   "A BACOE readiness diagnostic with a Go / Hold / No-Go recommendation",
-  "A decision-rights RACI and escalation path",
-  "A one-page AI guardrail standard for your practice",
-  "A six-dimension maturity check and sponsor message",
-  "Tiering for a real initiative and three quality gates",
-  "A 12-month capability plan with pairings",
+  "A boundaries RACI and escalation path (BACOE Boundary Negotiator)",
+  "A Visual Library coverage map of your practice's current templates, and rules for running playbooks with an AI assistant",
+  "A three-layer check and phase position for your practice",
+  "A tiered initiative with its Project Vision and the tier's template set from Part III",
+  "A 12-month capability plan with pairings and career pathways",
   "A staged practice scorecard and quarterly value report outline",
-  "A pitched 90-day practice plan and a Monday commitment"
+  "A five-part executive business case pitched for feedback, and a Monday commitment"
  ],
  "caseStudy": {
   "title": "Faster claim settlement for home and motor customers",
@@ -80,13 +80,13 @@
     },
     {
      "time": "14:45–16:15",
-     "title": "Leading BA through AI: guardrails",
+     "title": "The operating layer: playbooks, templates and AI",
      "type": "session",
      "moduleId": "d1-s5"
     },
     {
      "time": "16:15–17:00",
-     "title": "Exercise: practice maturity check and close",
+     "title": "Exercise: three-layer check and close",
      "type": "exercise",
      "moduleId": "d1-s6"
     }
@@ -144,7 +144,7 @@
     },
     {
      "time": "16:15–17:00",
-     "title": "Pitch your plan, feedback and course close",
+     "title": "Pitch your business case, feedback and course close",
      "type": "close",
      "moduleId": "d2-s6"
     }
@@ -194,7 +194,7 @@
      },
      {
       "heading": "How the two days fit together",
-      "body": "- **Day 1 · Leading the practice** — the value proposition, the Practice Model (roles, services, maturity), governance and decision rights, and leading BA through AI. It closes with a maturity check on your own practice.\n- **Day 2 · Growing the practice** — standards and quality gates, coaching and career paths, measuring practice value, and a 90-day practice plan that you pitch for feedback.\n\nEach module leaves a saved artefact in this portal. By 16:15 on Day 2 those artefacts become the inputs to your plan."
+      "body": "The course follows the book's three layers — individual leverage (Chapter 1), disciplined delivery (Chapter 2) and institutional capability (Chapter 3) — and runs the companion playbooks as you go.\n\n- **Day 1 · Leading the practice** — the value proposition (Ch 1), the Practice Model: four jobs, roles and services and BACOE readiness (Ch 3), boundaries and governance (Ch 3), and the operating layer: the twelve playbooks and the Visual Library. It closes with a three-layer check on your own practice.\n- **Day 2 · Growing the practice** — foundations, tiers and templates (Ch 2), roles and career paths (Ch 3), the three value mechanisms (Ch 3), a 90-day Readiness-phase plan, and a five-part executive business case you pitch for feedback.\n\nEach module leaves a saved artefact in this portal. By 16:15 on Day 2 those artefacts become the inputs to your plan. The book's templates and worked examples are in **Downloads**."
      }
     ],
     "activities": [
@@ -339,7 +339,7 @@
      },
      {
       "heading": "Delivery support versus investment shaping",
-      "body": "The difference is structural, not a matter of better documentation. It shows up on six axes that travel together:\n\n| Axis | Delivery-support BA | Investment-shaping BA |\n|---|---|---|\n| Position | Enters after funding is approved | Enters before |\n| Mandate | Make a defined initiative succeed | Ensure the right initiatives are chosen |\n| Counterparty | Delivery management | Executive sponsor and finance |\n| Decision authority | Recommends within scope | Challenges scope — including stop |\n| Accountability | Delivery artefacts | Benefits integrity |\n| Capability profile | Requirements, modelling, facilitation | Plus commercial judgement and seniority |\n\nThe six move together. Putting a delivery-focused BA into an upstream seat without changing mandate, counterparty and accountability produces a frustrated analyst with the wrong job description. As a leader, your job is to change the configuration, not just the person."
+      "body": "The difference is structural, not a matter of better documentation. It shows up on six axes that travel together:\n\n| Axis | Delivery-support BA | Investment-shaping BA |\n|---|---|---|\n| Position | Enters after funding is approved | Enters before |\n| Mandate | Make a defined initiative succeed | Ensure the right initiatives are chosen |\n| Counterparty | Delivery management | Executive sponsor and finance |\n| Decision authority | Recommends within scope | Challenges scope — including stop |\n| Accountability | Delivery artefacts | Benefits integrity |\n| Capability profile | Requirements, modelling, facilitation | Plus commercial judgement and seniority |\n\nThe six move together. Putting a delivery-focused BA into an upstream seat without changing mandate, counterparty and accountability produces a frustrated analyst with the wrong job description. As a leader, your job is to change the configuration, not just the person.\n\n![Figure 1.1 — Where the Business Analyst Operates Determines the Return](/files/ba-leadership/Fig_1-1_Where_the_BA_Operates.png)\n\n*Figure 1.1 — Where the Business Analyst Operates Determines the Return — from the book.*"
      },
      {
       "heading": "The economics — and how to read them honestly",
@@ -474,7 +474,8 @@
      "Six axes table",
      "7.5× economics table",
      "Persona and curveball card",
-     "Business Analyst Value Generator playbook"
+     "Business Analyst Value Generator playbook",
+     "Figure 1.1 (Downloads)"
     ]
    }
   },
@@ -532,7 +533,11 @@
      },
      {
       "heading": "Maturity as a pathway, not a score",
-      "body": "Maturity in this model is a pathway rather than a ladder of adjectives. A BACOE is built over roughly **24 months in three phases**, each with a decision gate:\n\n| Phase | Months | Gate question |\n|---|---|---|\n| Readiness | 0–3 | Three-year funding committed and reporting line confirmed? |\n| Pilot | 3–9 | Quantified value on at least three pilots, stable operating model? |\n| Scale and embed | 9–24 | Portfolio-level reporting, practice independent of any one person? |\n\nOrganisations that compress this below twelve months usually skip Readiness or Pilot and pay for it with a defunding decision in Year 2. Your 90-day plan on Day 2 is, in effect, a Readiness phase — or the lighter intervention that builds towards one."
+      "body": "Maturity in this model is a pathway rather than a ladder of adjectives. A BACOE is built over roughly **24 months in three phases**, each with a decision gate:\n\n| Phase | Months | Gate question |\n|---|---|---|\n| Readiness | 0–3 | Three-year funding committed and reporting line confirmed? |\n| Pilot | 3–9 | Quantified value on at least three pilots, stable operating model? |\n| Scale and embed | 9–24 | Portfolio-level reporting, practice independent of any one person? |\n\nOrganisations that compress this below twelve months usually skip Readiness or Pilot and pay for it with a defunding decision in Year 2. Your 90-day plan on Day 2 is, in effect, a Readiness phase — or the lighter intervention that builds towards one.\n\n![Figure 3.1 — The BACOE Phased Implementation Pathway](/files/ba-leadership/Fig_3-1_BACOE_Phased_Pathway.png)\n\n*Figure 3.1 — The BACOE Phased Implementation Pathway — from the book.*"
+     },
+     {
+      "heading": "What it looks like in practice: the financial services mutual",
+      "body": "The book's first case study (a composite) shows the model at mid-size scale. A regional mutual — $800M revenue, 1,200 staff, $52M change portfolio — had BAs spread across IT, operations and transformation with no shared standards; rework averaged 32% and fewer than half of initiatives tracked benefits. After three failed initiatives worth $9M, the CEO sponsored a BACOE: $6.4M over three years, reporting to the **CFO** because investment quality was the main value driver.\n\nIn the pilot, five initiatives ran through Project Vision and tier classification: a $14M core banking upgrade was descoped into three tranches (about $2.1M saved), a $6M data warehouse was paused when its benefits assumptions failed, and a regulatory build cut rework from 35% to 14%. Year-2 value was $6.9M against $2.0M cost — **3.45×** — and four years on the BACOE has outlived the CFO who founded it (4.1×).\n\nUse it to test your own diagnostic: which of the six preconditions did this organisation have on day one, and which did the CEO have to create?\n\n![Figure 3.4 — What a BACOE Costs · small, mid-size and large enterprises](/files/ba-leadership/Fig_3-4_What_a_BACOE_Costs.png)\n\n*Figure 3.4 — What a BACOE Costs · small, mid-size and large enterprises — from the book.*"
      }
     ],
     "activities": [
@@ -660,7 +665,9 @@
      "Six preconditions checklist",
      "Fallback ladder slide",
      "BACOE Readiness Diagnostic playbook",
-     "Persona and curveball card"
+     "Persona and curveball card",
+     "Figure 3.1 and Figure 3.4 (Downloads)",
+     "Case Study 1 summary (book, Chapter 3)"
     ]
    }
   },
@@ -715,6 +722,10 @@
      {
       "heading": "Influence without formal authority",
       "body": "Most practice leads start without stop authority. Influence then comes from three sources you can build deliberately:\n\n- **Evidence** — a Project Vision with a baseline, target and measurement plan is harder to ignore than an opinion. In the worked example, showing that the assessor-report handoff (p95 8.7 days) was the largest leak reframed the conversation from “buy a portal” to “stop sending every claim to an assessor”.\n- **Stakeholder positioning** — map influence and interest, and engage early anyone who becomes a blocker when consulted late (in the example, the fraud investigations unit and key broker partners).\n- **Cadence** — a predictable rhythm (weekly 30-minute steering for high-influence/high-interest stakeholders, a monthly one-pager for the CFO) builds the track record that later justifies formal authority.\n\nThe aim is to earn the precondition, not to work around it."
+     },
+     {
+      "heading": "What authority looks like when it is tested",
+      "body": "The book's second case study — a national utility with a $240M portfolio — shows the moment a BACOE's authority becomes real. Analysis of a $45M substation automation programme found 30% of proposed sites had an insufficient business case; the programme was rephased and $13M deferred pending evidence. One programme director had publicly committed to dates the BACOE said were unachievable. The dispute went to the CEO, who backed the BACOE. *Politically expensive — and the event that established the BACOE's real authority.*\n\nThe mutual's resistance was quieter: the PMO read the BACOE as duplicate governance. It was resolved by **jointly publishing the boundaries agreement** and structuring the Investment Quality Forum to feed existing portfolio governance rather than override it.\n\nThe lesson for your RACI: boundaries are signed *before* launch, and the escalation path for an overruled stop recommendation must end with someone who has authority over the portfolio."
      }
     ],
     "activities": [
@@ -842,187 +853,208 @@
      "Worked example decision log D1–D3",
      "BACOE Boundary Negotiator playbook",
      "BACOE Operating Model Designer playbook",
-     "Persona and curveball card"
+     "Persona and curveball card",
+     "Case Study 2 resistance notes (book, Chapter 3)"
     ]
    }
   },
   {
    "id": "d1-s5",
    "num": "1.4",
-   "title": "Leading BA through AI: guardrails",
-   "subtitle": "You direct, the agent drafts — and the practice sets the rules",
+   "title": "The operating layer: playbooks, templates and AI",
+   "subtitle": "Twelve playbooks, twenty-six templates — run by a BA who directs and an assistant that drafts",
    "dayId": "d1",
    "time": "14:45–16:15",
    "minutes": 90,
    "participant": {
-    "bigIdea": "AI removes the blank page and the typing; it does not remove the judgement — and the practice lead is accountable for where that line sits.",
-    "overview": "AI agents are now part of how analysis gets done, whether the practice has sanctioned it or not. The leader's job is not to ban or to cheerlead, but to set **guardrails**: what the agent may draft, what data it may see, who reviews what, and how the practice proves its outputs are still analysis rather than plausible text.\n\nThe BAS playbooks are structured specs — inputs, steps, success criteria, outputs — which is exactly what an agent needs. This module turns that into a practice-level operating rule and a one-page guardrail standard you can take back.",
+    "bigIdea": "The chapters explain the logic; the playbooks produce the outputs. A practice runs on its operating layer, not on its slide decks.",
+    "overview": "The book closes by naming its executable layer: twelve companion playbooks and a Visual Library of twenty-six template and worked-example pairs. A reader who wants to act on the book does not need to design their own templates — *the playbooks are the templates.*\n\nThis module turns that layer into your practice's standard toolkit. You will map the playbooks to the three workflows, compare your practice's current templates with Part III, and agree how your BAs run playbooks with an AI assistant without handing over the judgement.",
     "objectives": [
-     "Explain the 'you direct, the agent drafts' model and where judgement must stay human",
-     "Classify BA tasks by the level of AI assistance appropriate to each",
-     "Draft a one-page AI guardrail standard for your practice",
-     "Define review and provenance rules that keep AI-assisted artefacts defensible"
+     "Name the three playbook workflows and when each one is run",
+     "Use the Part III Visual Library to set the template standard for each tier",
+     "Find the gaps between your practice's current templates and the book's twenty-six",
+     "Set practice rules for running a playbook with an AI assistant"
     ],
     "keyPoints": [
      {
-      "title": "Playbooks are agent specs",
-      "body": "Defined inputs, steps, success criteria and outputs make a playbook an instruction set an agent can execute."
+      "title": "Three workflows",
+      "body": "Assess roles for value (1 playbook) · Deliver an initiative at the right depth (6) · Build and operate a BACOE (5)."
      },
      {
-      "title": "The agent doesn't know your organisation",
-      "body": "It knows nothing you haven't fed it. The BA supplies the real inputs and challenges every assumption."
+      "title": "Same structure every time",
+      "body": "Each playbook has defined inputs, structured steps with success criteria and examples, and defined outputs."
      },
      {
-      "title": "Judgement stays human",
-      "body": "Tier choice, stop recommendations, benefit claims and stakeholder positions are decisions — the agent may draft options, never decide."
+      "title": "Template plus worked example",
+      "body": "Part III gives every artefact twice: the empty structure, and the same structure filled in for a named industry."
      },
      {
-      "title": "Provenance is the new traceability",
-      "body": "Every AI-assisted artefact should show its inputs, the reviewer and what the reviewer changed."
+      "title": "Coverage, not document count",
+      "body": "Twelve Gold areas can live in one controlled handbook. Documents are evidence of the analysis, not the analysis."
+     },
+     {
+      "title": "You direct, the assistant drafts",
+      "body": "The playbooks are built to be run by a senior practitioner with an AI assistant. The judgement stays with the BA."
      }
     ],
     "sections": [
      {
-      "heading": "The operating model: you direct, the agent drafts",
-      "body": "In the BAS model, the playbook is the agent's instruction set and the BA is the director. The BA brings the real inputs (a position description, a concept paper, process data) and the judgement. The agent removes the blank-page problem — drafting the Jobs To Be Done list, the Readiness Diagnostic, the Project Vision, the As-Is/To-Be, the Tier Classification. The BA then challenges the draft against reality, fixes the gaps and owns the decision.\n\nThis model only works if two conditions hold. First, the inputs are real: an agent fed a generic description produces a generic Vision. Second, review is genuine: the BA must be able to defend every line in front of a sponsor without saying “the AI wrote that”. A leader's guardrails exist to protect both conditions at scale."
+      "heading": "Twelve playbooks, three workflows",
+      "body": "| Workflow | Playbooks, in order | Who runs it | Book |\n|---|---|---|---|\n| 1 · Assess your BA roles for value | Business Analyst Value Generator | Practitioner or Practice Lead, on each PD | Ch 1 |\n| 2 · Deliver an initiative at the right depth | Project Vision Builder → As-Is To-Be Analyser → Tier Classifier → Bronze, Silver or Gold Delivery Pack | Practitioner, on every initiative | Ch 2 |\n| 3 · Build and operate a BACOE | Readiness Diagnostic → Business Case Builder → Boundary Negotiator → Operating Model Designer, then Value Reporting Generator every quarter | Practice Lead | Ch 3 |\n\nIn Workflows 2 and 3 each playbook's output is the next one's input. Each playbook is 8–25 pages and is designed to be run by a senior practitioner with an AI assistant, or by a Practice Lead facilitating a working session. As the book says, *the playbooks are not training material; they are operating tools.*\n\n![Figure P2.1 — Companion Playbooks Library](/files/ba-leadership/Fig_P2-1_Companion_Playbooks_Library.png)\n\n*Figure P2.1 — Companion Playbooks Library — from the book.*"
      },
      {
-      "heading": "Classifying BA work by AI suitability",
-      "body": "Not all BA work carries the same risk. A simple three-band classification gives your practice a shared language:\n\n| Band | Agent role | Examples | Review |\n|---|---|---|---|\n| **Draft freely** | Produce first drafts from supplied inputs | Meeting summaries, Bronze Requirements Summary, user-story first cuts, glossary | Author review |\n| **Draft with evidence** | Draft, but every claim must trace to a supplied source | Project Vision, As-Is pain-point inventory, stakeholder map, business case numbers | Author plus peer review; sources attached |\n| **Human decides** | May frame options; must not recommend as final | Tier classification, fund/reshape/stop recommendation, benefit attribution, anything about individuals | Senior or Lead BA sign-off; decision minuted with rationale |\n\nIn the worked example, an agent can draft the five-lane swim-lane from interview notes (draft with evidence), but the 27% first-notice rework figure must trace to the claims data warehouse, and the straight-through settlement threshold (decision D2) is a human decision owned by Harbourline's Head of Claims."
+      "heading": "The Visual Library is your template standard",
+      "body": "Part III contains a template and a worked example for every deliverable named in the tiers: 2 foundations, 4 Bronze, 8 Silver and 12 Gold. The worked examples rotate across nine industries, from retail banking to utilities, to show the pattern holds in any sector.\n\nUse it the way the book says: consult it when you are about to produce a specific artefact. Look at the template for the structure, look at the worked example to calibrate depth, then return to your own work. For a practice lead, Part III answers the question every new BA asks: *what is this artefact actually meant to look like?*\n\n**Downloads:** Foundations, Bronze, Silver and Gold packs, plus each template and worked example on its own.\n\nTwo rules from Chapter 2 keep the library from becoming paperwork:\n\n- **Artefacts may be combined.** The tier defines analytical *coverage*, not the number of documents. Twelve Gold areas can be twelve documents, twelve sections in one programme handbook, or twelve structured outputs in Jira/Confluence.\n- **Documents are evidence, not substance.** A team with one traceable twenty-page handbook covering all twelve areas has met the Gold standard; a team with twelve elegant documents nobody reads has not."
      },
      {
-      "heading": "Data and privacy guardrails",
-      "body": "The practice lead must agree with privacy, security and legal teams what may be put into which tool. A practical default:\n\n- **Approved tools only** — enterprise-licensed agents with data-retention controls; no personal accounts for work content.\n- **Classify before you paste** — public and internal content may be used; confidential content only in approved enterprise tools; personal or sensitive information (in the example, policyholders' claim details, photos and fraud flags) never, unless de-identified and approved.\n- **Synthetic or aggregated data** for worked examples and training — the Harbourline case in this course is itself fictional.\n- **Record the tool and version** used on any artefact that goes to a governance forum.\n\nAlign these rules to the applicable privacy legislation, your regulator's expectations (for an insurer, APRA's information-security and operational-risk standards) and the organisation's information-security classification scheme rather than inventing a parallel one. A hospital network would anchor the same rules in health-records law and clinical governance; a government agency in its protective security framework."
+      "heading": "Running a playbook with an AI assistant",
+      "body": "Because each playbook already defines inputs, steps, success criteria and outputs, it works as an assistant's instruction set. The BA brings the real inputs (a position description, a concept paper, process data) and the judgement. The assistant removes the blank page — drafting the Jobs To Be Done list, the Readiness Diagnostic, the Vision, the As-Is/To-Be, the tier classification.\n\nThe assistant does not know your organisation. Drafts fail in recognisable ways that the book's own tests catch:\n\n| Failure | Book test that catches it |\n|---|---|\n| Confident numbers with no source | *When in doubt, halve the attribution* and separate cashable, avoided and protected value (Ch 1) |\n| Activity verbs dressed as outcomes | Jobs To Be Done are decisions, outcomes and risk reduction (Ch 1) |\n| Measures with no baseline | Every measure needs a baseline, a target and a measurement plan (Ch 2) |\n| A To-Be that doesn't answer the As-Is | Stakeholders should see the improvement side by side (Ch 2) |\n| A tier chosen to look cheaper | Default up in borderline cases (Ch 2) |"
      },
      {
-      "heading": "Review, provenance and quality",
-      "body": "AI-assisted artefacts fail in recognisable ways: confident numbers with no source, activity verbs dressed as outcomes, To-Be designs that don't connect to the As-Is, stakeholders who don't exist. Your quality standard should name these and check for them.\n\nA lightweight provenance block on every Silver or Gold artefact answers four questions: **What inputs were supplied? Which playbook step was run? Who reviewed it? What did the reviewer change?** If the reviewer changed nothing, ask why — a draft that survives review untouched has usually not been reviewed.\n\nFinally, keep a **practice prompt library**: the agreed prompts for each playbook step, versioned and owned by a Senior or Lead BA. It turns individual prompting skill into a practice asset, exactly as templates once did."
+      "heading": "Practice rules for assistant-run playbooks",
+      "body": "These rules are BAS practice guidance alongside the book. Agree them with your privacy, security and legal teams:\n\n- **Approved tools only:** enterprise-licensed assistants with data-retention controls; no personal accounts for work content.\n- **Classify before you paste:** no customer personal information or commercially sensitive figures in tools that are not approved for them.\n- **A named human signs:** the sponsor and business owner sign the Vision; the Lead BA signs the tier; no assistant output goes to an investment forum unreviewed.\n- **Record what was drafted:** on Silver and Gold artefacts, note which playbook was run, the inputs given, who reviewed it and what they changed."
      }
     ],
     "activities": [
      {
       "id": "d1-s5-act1",
-      "title": "Draft your one-page AI guardrail standard",
-      "minutes": 35,
-      "instructions": "Using the three-band classification, list six to ten common BA tasks in your practice and assign each to a band. Then write your data rules (approved tools, what may and may not be pasted), your review rule for each band, and the provenance block every governance-bound artefact must carry. Keep it to one page — if it doesn't fit, it won't be followed.",
+      "title": "Map your templates to the Visual Library",
+      "minutes": 25,
+      "instructions": "Open the Foundations, Bronze, Silver and Gold packs in Downloads. For each tier, list the templates your practice uses today and match them to the book's artefacts. Mark each book artefact **Have** (equivalent exists), **Partial** (exists but is missing sections) or **Missing**. Then choose the three gaps that would most improve decision quality if they were closed first.",
       "prompts": [
        {
-        "id": "bands",
-        "label": "Tasks by band — Draft freely / Draft with evidence / Human decides"
+        "id": "foundations",
+        "label": "Foundations — Project Vision and As-Is/To-Be: Have / Partial / Missing, with notes"
        },
        {
-        "id": "data",
-        "label": "Data rules — approved tools, allowed and prohibited content"
+        "id": "tiers",
+        "label": "Bronze, Silver and Gold artefacts: Have / Partial / Missing (list the Partial and Missing ones)"
        },
        {
-        "id": "review",
-        "label": "Review rule for each band"
+        "id": "priorities",
+        "label": "Three gaps to close first, and why"
+       }
+      ]
+     },
+     {
+      "id": "d1-s5-act2",
+      "title": "Draft your practice rules for assistant-run playbooks",
+      "minutes": 15,
+      "instructions": "Using the four practice rules, write the version your practice will adopt. Name the approved tools, what may not be pasted, who signs each artefact type, and the record kept for Silver and Gold work.",
+      "prompts": [
+       {
+        "id": "tools",
+        "label": "Approved tools and prohibited content"
        },
        {
-        "id": "provenance",
-        "label": "Provenance block (the four questions, in your words)"
+        "id": "signoff",
+        "label": "Who signs what — Vision, tier, business case, value report"
+       },
+       {
+        "id": "record",
+        "label": "The record kept on Silver and Gold artefacts"
        }
       ]
      }
     ],
-    "aiPrompt": "Help me draft a one-page AI guardrail standard for my BA practice. Use three bands: Draft freely (author review), Draft with evidence (every claim traced to a supplied source; peer review), Human decides (agent may frame options only; Senior or Lead BA sign-off). Here are our common BA tasks: [list]. Here are our approved tools and data classification levels: [describe]. Produce: (1) a table of tasks by band with a one-line rationale; (2) data rules — what may and may not be pasted into each tool; (3) a provenance block with four questions (inputs supplied, playbook step run, reviewer, what the reviewer changed); (4) five tell-tale signs of an unreviewed AI draft. Do not invent our policies — mark anything you are assuming as [CONFIRM].",
+    "aiPrompt": "You are helping me compare my BA practice's templates against the Visual Library in the Business Analyst Practice Leadership Model. The book's artefacts are: Foundations — Project Vision, As-Is/To-Be Analysis. Bronze — Project Brief, Requirements Summary, Configuration Guide, Handover Package. Silver — Business Case, Stakeholder Analysis, Requirements Specification, As-Is and To-Be Process Models, Solution Design, Data Contracts, Test Plan, Training and Benefits Tracking. Gold — Strategic Business Case, Enterprise Stakeholder Plan, Enterprise As-Is, Enterprise To-Be, Enterprise Requirements, Solution Architecture, Data Strategy and Governance, Implementation Roadmap, Quality Assurance Framework, Change Management Plan, Operations Handbook, Benefits and Risk Management. Here is the list of templates my practice uses today [paste]. Match each of mine to the book's artefacts, mark each book artefact Have / Partial / Missing, and flag where one of my documents covers several artefacts (which the book allows). Do not invent templates I have not listed. Then recommend three gaps to close first, ranked by effect on investment-decision quality.",
     "quiz": [
      {
-      "q": "Which task belongs in the 'Human decides' band?",
+      "q": "Which playbook chain does a practitioner run when starting a new initiative?",
       "opts": [
-       "Summarising workshop notes",
-       "Drafting a glossary",
-       "Recommending whether to stop an initiative",
-       "Formatting a Requirements Summary"
-      ],
-      "a": 2,
-      "why": "Fund, reshape and stop recommendations are decisions; the agent may frame options but a senior BA decides and the rationale is minuted."
-     },
-     {
-      "q": "An AI-drafted Project Vision passes review with no changes. What should the practice lead conclude?",
-      "opts": [
-       "The agent is excellent",
-       "It probably has not been genuinely reviewed",
-       "Review can be skipped next time",
-       "The playbook is too simple"
+       "Readiness Diagnostic → Business Case Builder → Boundary Negotiator",
+       "Project Vision Builder → As-Is To-Be Analyser → Tier Classifier → Delivery Pack",
+       "Value Generator → Tier Classifier → Value Reporting Generator",
+       "Delivery Pack → Tier Classifier → Project Vision Builder"
       ],
       "a": 1,
-      "why": "A draft that survives review untouched has usually not been challenged against reality. Ask what the reviewer checked."
+      "why": "Workflow 2 (Chapter 2): each playbook's output is the next one's input."
      },
      {
-      "q": "Why are BAS playbooks well suited to agents?",
+      "q": "A Gold programme keeps all twelve Gold areas in one traceable programme handbook. Has it met the standard?",
       "opts": [
-       "They are short",
-       "They define inputs, steps, success criteria and outputs",
-       "They avoid numbers",
-       "They are written for AI only"
+       "No — Gold needs twelve separate documents",
+       "Yes — the tier defines analytical coverage, not document count",
+       "Only if the board approves the exception",
+       "Only for agile deliveries"
       ],
       "a": 1,
-      "why": "A structured spec with defined inputs and success criteria is exactly what an agent needs to execute — and what a reviewer needs to check against."
+      "why": "'Artefacts may be combined': coverage, traceability and decision usefulness matter, not document proliferation."
+     },
+     {
+      "q": "What does each Part III entry contain?",
+      "opts": [
+       "A checklist and a RACI",
+       "A template and a worked example from a named industry",
+       "A slide and speaker notes",
+       "A playbook and a quiz"
+      ],
+      "a": 1,
+      "why": "The template shows the structure; the worked example calibrates the depth."
      }
     ],
     "takeaways": [
-     "Set guardrails by task risk, not by tool enthusiasm",
-     "Real inputs and genuine review are the two conditions that make AI drafting safe",
-     "Provenance is the new traceability",
-     "A versioned prompt library is a practice asset"
+     "The playbooks are the templates: three workflows cover every operational moment",
+     "Part III is the practice's template standard: template for structure, worked example for depth",
+     "Coverage, not document count",
+     "The assistant drafts; a named human signs"
     ]
    },
    "presenter": {
-    "purpose": "Have participants leave with a practical, one-page AI guardrail standard for their practice.",
-    "openingLine": "“Your BAs are already using AI — the only question is whether your practice has decided how. This session, you decide.”",
+    "purpose": "Establish the book's twelve playbooks and twenty-six Part III artefacts as the practice's standard toolkit, and agree how BAs run them with an AI assistant.",
+    "openingLine": "“The book is three chapters of argument and then an operating layer: twelve playbooks and twenty-six templates. The argument gets you funded. The operating layer is what your BAs use on Monday.”",
     "beats": [
      {
-      "label": "TEACH — direct vs draft, playbooks as agent specs",
-      "minutes": 12,
-      "notes": "Show one playbook step and the matching prompt side by side."
-     },
-     {
-      "label": "TEACH — three bands and data guardrails",
+      "label": "TEACH — three workflows and the playbook structure",
       "minutes": 15,
-      "notes": "Walk the worked-example classification; stress the personal-information line."
+      "notes": "Show Figure P2.1. Walk one playbook's inputs → steps → outputs. Emphasise that each output feeds the next."
      },
      {
-      "label": "DEMO — spot the unreviewed draft",
-      "minutes": 8,
-      "notes": "Show an agent-drafted pain-point inventory with three planted errors; room finds them."
+      "label": "TEACH — the Visual Library",
+      "minutes": 10,
+      "notes": "Open the Silver pack and show one template next to its worked example (e.g. C.1 Business Case, insurance). Make the point about calibrating depth."
      },
      {
-      "label": "BUILD — one-page guardrail standard (activity)",
-      "minutes": 35,
-      "notes": "Agent drafts; participant replaces every [CONFIRM] with their reality or an action."
+      "label": "BUILD — template coverage map (activity 1)",
+      "minutes": 25,
+      "notes": "Solo with the assistant, using the module prompt. Circulate; push for honest Partials."
      },
      {
-      "label": "PEER REVIEW — would your CISO sign it?",
-      "minutes": 12,
-      "notes": "Pairs test data rules and the Human-decides band."
+      "label": "TEACH — running playbooks with an assistant",
+      "minutes": 10,
+      "notes": "Use the failure table: each failure is caught by a test the book already gives them."
      },
      {
-      "label": "DEBRIEF — the line you won't cross",
-      "minutes": 8,
-      "notes": "Each participant names one task they moved bands during the session."
+      "label": "BUILD — practice rules (activity 2)",
+      "minutes": 15,
+      "notes": "Pairs draft, then swap and challenge each other's sign-off rules."
+     },
+     {
+      "label": "PEER REVIEW and DEBRIEF",
+      "minutes": 15,
+      "notes": "Three participants share their top gap. Name the transferable move: standardise on coverage, not documents."
      }
     ],
-    "facilitationNotes": "Expect a split room: enthusiasts and sceptics. Use the bands to give both a place. The demo is the energy point — prepare the planted errors in advance: an unsourced percentage, a non-existent stakeholder role, and a To-Be step that addresses no As-Is pain point. Do not give legal advice on privacy; direct participants to their own privacy and security teams and keep the standard as a draft for that conversation.",
+    "facilitationNotes": "Have the four Visual Library PDFs open before the session. Participants without templates of their own can map the template list from a previous employer, or use the worked example's practice (Visions sometimes written, no business case template, no benefits tracking).\n\nKeep the AI rules practical and short. Some participants will want to debate AI policy at length; park it and bring them back to the book's tests, which already catch the common failures.",
     "roleplay": {
-     "persona": "The Cautious Risk Manager",
-     "line": "“We can't have analysts putting policyholder claims data into a chatbot.”",
-     "curveball": "Reveals that two BAs already use personal AI accounts for meeting notes.",
-     "move": "Agree on the risk, propose approved tools and the classify-before-you-paste rule, and offer the guardrail standard as the remedy rather than a ban that drives use underground."
+     "persona": "The Template Collector",
+     "line": "“We've got forty templates on SharePoint — we're very mature.”",
+     "curveball": "None of the forty has a Measures of Success section with a baseline, and no one can say which tier each belongs to.",
+     "move": "Map their forty to the book's twenty-six by tier, then ask which ones carry the Project Vision's six elements. Coverage beats count."
     },
-    "whatGood": "A one-page standard with tasks in bands, explicit data rules, a review rule per band, a four-question provenance block and no unresolved [CONFIRM] tags without an owner.",
-    "commonFailure": "Standards become long policy documents nobody reads — and the fix is the one-page limit and a table, not prose.",
+    "whatGood": "A coverage map with honest Partials, three gaps ranked by effect on decision quality, and practice rules that name tools, prohibited content, signatories and the record kept.",
+    "commonFailure": "Participants mark everything 'Have' because a document with the same name exists — and the fix is to compare section by section against the Part III template.",
     "debrief": [
-     "Which task did you move from 'Draft freely' to a stricter band, and why?",
-     "What is the first conversation you need with privacy or security?",
-     "Who in your practice should own the prompt library?"
+     "Which tier has the biggest template gap across the room?",
+     "Which of your current documents already covers several book artefacts?",
+     "Who will sign assistant-drafted artefacts in your practice?"
     ],
-    "answerKey": "**Model bands (worked example practice).** Draft freely: workshop summaries; glossary; Bronze Requirements Summary first draft; user-story first cuts. Draft with evidence: Project Vision; As-Is pain-point inventory (each figure traced to the claims data warehouse or the assessor panel monthly file); stakeholder map; benefits model. Human decides: tier classification; D2 straight-through settlement threshold; fund/reshape/stop; benefit attribution; any assessment of a named individual.\n\n**Data rules:** enterprise-licensed agent only; no policyholder personal information, claim photos or fraud flags; use aggregated volumes and de-identified samples; record tool and version on governance artefacts.\n\n**Provenance block:** Inputs · Playbook step · Reviewer · Changes made.\n\n**Planted errors in the demo:** unsourced “35% of claims are low-risk”; a “Claims Innovation Board” that does not exist; To-Be step “AI chatbot triage” that addresses no As-Is pain point.",
+    "answerKey": "**Worked example (illustrative):** Foundations — Project Vision Partial (no Measures of Success, no sign-off panel); As-Is/To-Be Partial (process maps without pain points or workarounds). Bronze — Have for Requirements Summary and Handover; Missing Project Brief. Silver — Missing Business Case template, Stakeholder Analysis Partial, Training and Benefits Tracking Missing. Gold — mostly Missing. **Priority gaps:** (1) Project Vision to the A.1 standard; (2) the C.1 Business Case; (3) C.8 Training and Benefits Tracking. All three bear directly on investment decisions and benefits integrity.",
     "materials": [
-     "Playbook-as-spec slide",
-     "Three bands table",
-     "Demo artefact with planted errors",
-     "Guardrail standard template",
+     "Figure P2.1 Companion Playbooks Library",
+     "Visual Library packs — Foundations, Bronze, Silver, Gold (Downloads)",
+     "Playbook structure slide (inputs → steps → outputs)",
+     "Assistant failure table",
      "Persona and curveball card"
     ]
    }
@@ -1030,114 +1062,118 @@
   {
    "id": "d1-s6",
    "num": "1.5",
-   "title": "Exercise: practice maturity check and close",
-   "subtitle": "Bring Day 1 together into one honest picture of your practice",
+   "title": "Exercise: three-layer check and close",
+   "subtitle": "Test your practice against the book's three layers and place it on the pathway",
    "dayId": "d1",
    "time": "16:15–17:00",
    "minutes": 45,
    "participant": {
-    "bigIdea": "You can't plan a practice you haven't honestly diagnosed.",
-    "overview": "This exercise consolidates Day 1 into a single maturity check across the four jobs of a practice — standard, people, governance and leverage — plus the AI guardrails you drafted. It becomes the baseline for your 90-day plan tomorrow.\n\nYou will also prepare a two-minute sponsor conversation: the one thing you would say to your sponsor on Monday about where the practice stands.",
+    "bigIdea": "Each layer compounds the one below it — and they must be built in order: leverage, then discipline, then institution.",
+    "overview": "The book closes with one thesis and three layers: individual leverage (Chapter 1), disciplined delivery (Chapter 2) and institutional capability (Chapter 3). *A high-leverage BA without delivery discipline is a brilliant individual whose work cannot be verified or scaled. Disciplined delivery without high-leverage positioning is methodological perfection applied to the wrong initiatives. Institutional capability without either is a function that produces governance ceremony rather than enterprise value.*\n\nThis exercise tests your practice against each layer using the book's own evidence, places it on the BACOE pathway, and prepares the first part of tomorrow's executive business case: the Problem.",
     "objectives": [
-     "Rate your practice on the four jobs plus AI readiness using evidence",
-     "Identify the two biggest gaps and their likely cause",
-     "Prepare a two-minute sponsor message grounded in Day 1 evidence"
+     "Test your practice against the three layers using the book's evidence tests",
+     "Place your practice on the phased pathway, or name the fallback model that fits",
+     "Write the Problem section of a five-part executive business case"
     ],
     "keyPoints": [
      {
+      "title": "Three layers, in order",
+      "body": "Leverage first, because without it there is nothing to institutionalise. Discipline second. Institution third."
+     },
+     {
       "title": "Evidence over adjectives",
-      "body": "Each rating needs a fact: a date, a document, a forum, a number."
+      "body": "Each layer is tested with the book's own evidence: a funding-line position, a signed Vision, a value report."
      },
      {
-      "title": "Two gaps, not ten",
-      "body": "A plan that addresses everything addresses nothing. Pick the two that unlock the most."
-     },
-     {
-      "title": "Talk to the sponsor in their language",
-      "body": "Value, risk and decisions — not methodology."
+      "title": "A stage, not a defeat",
+      "body": "If the preconditions are not met, a Community of Practice or embedded seniors is the right stage, not a failure."
      }
     ],
     "sections": [
      {
-      "heading": "The maturity check",
-      "body": "Rate each dimension **1 (absent), 2 (ad hoc), 3 (defined), 4 (operating), 5 (embedded)** with one line of evidence:\n\n| Dimension | What 'operating' (4) looks like |\n|---|---|\n| Set the standard | Project Vision and As-Is/To-Be required on every initiative; tiers applied at intake |\n| Develop the people | Four roles defined; Senior/Lead ≥60%; every BA paired; Community of Practice meets monthly |\n| Govern the practice | Boundaries agreed; Investment Quality Forum runs; at least one reshape or stop in the last year |\n| Deliver where leverage is highest | Senior BAs placed upstream on the highest-value initiatives |\n| Value reporting | Quarterly value report against the three mechanisms |\n| AI guardrails | Banded standard, approved tools, provenance on governance artefacts |\n\nIn the worked example (illustrative), the practice scores roughly 2 · 2 · 1 · 1 · 1 · 2: competent analysts, no upstream placement, no value reporting."
+      "heading": "The three-layer check",
+      "body": "For each layer, answer the book's test with **Yes / Partly / No** and one line of evidence:\n\n| Layer | Book test | Evidence that counts |\n|---|---|---|\n| 1 · Individual leverage (Ch 1) | Are senior BAs placed *before* the funding decision, with a mandate to recommend stop, descope or reshape? | A named initiative where a BA changed scope, sequencing or cancellation in the last 24 months |\n| 2 · Disciplined delivery (Ch 2) | Does every initiative have a signed Project Vision and an As-Is/To-Be, and is it tiered at intake? | Signed Visions; a tier recorded for each initiative; tier-appropriate artefacts |\n| 3 · Institutional capability (Ch 3) | Would the practice survive its best BA leaving? Is value reported quarterly against the three mechanisms? | Published standards and service catalogue; governance forums that meet; a value report |\n\nThen use the three internal evidence checks from Chapter 1: a review of investments approved in the last 24 months that missed their benefits; a sample of initiatives where a senior BA materially changed the outcome; and rework on initiatives with and without senior BA engagement. If you cannot find these, your first job is to collect them."
      },
      {
-      "heading": "From diagnosis to the sponsor conversation",
-      "body": "Choose the two lowest-scoring dimensions that, if improved, would most change the practice's value. Usually one is structural (upstream placement, reporting line, stop authority) and one is foundational (standards, value reporting).\n\nThen prepare a two-minute message: **what we found** (one fact), **what it costs** (in the sponsor's terms — delay, rework, unrealised benefits), **what we propose to test** (one pilot), and **what we need from you** (one decision). In the worked example: “Our BAs joined *Faster claim settlement* after the funding decision. The largest leak — the assessor-report wait — was only found in delivery. I'd like to place a senior BA upstream on the next two claims initiatives and report the value in a quarter. I need you to invite them to investment committee.”\n\nThe maturity contrast is instructive: a hospital network whose clinical BAs already sit on the digital health investment panel would score high on upstream placement but often low on value reporting — the opposite pair to Harbourline."
+      "heading": "Where you are on the pathway",
+      "body": "Use your readiness diagnostic from Module 1.2. If three or more preconditions are unmet, the book is clear: *do not establish a BACOE* — run a lighter intervention (Community of Practice, standards working group, or embedded senior BAs) and revisit. Otherwise you are in Phase 1, Readiness (months 0–3), and the gate is three-year funding and a confirmed reporting line.\n\nIn the worked example (illustrative), Harbourline answers: Layer 1 **No** (BAs joined after funding), Layer 2 **Partly** (Visions sometimes written, no tiering), Layer 3 **No** (no value reporting). Three preconditions unmet → **Hold**: embedded senior BAs on the next two claims initiatives as a lighter intervention."
+     },
+     {
+      "heading": "The Problem section of your business case",
+      "body": "Tomorrow you pitch a five-part executive business case (Chapter 3). Start now with Part 1, **Problem**: *state, in two paragraphs, the cost of the current state. Quantify the proportion of change spend lost to poor investment decisions, rework and unrealised benefits. Use the organisation's own data where possible.*\n\nIn the worked example: “Our BAs joined *Faster claim settlement* after it was funded. The largest leak — an assessor-report wait of up to 8.7 days — was only found in delivery, alongside 27% rework from incomplete first notice of loss. Neither cost was visible when the investment was approved.”"
      }
     ],
     "activities": [
      {
       "id": "d1-s6-act1",
-      "title": "Maturity check and sponsor message",
+      "title": "Three-layer check and the Problem statement",
       "minutes": 25,
-      "instructions": "Rate your practice on the six dimensions with one line of evidence each. Select your two priority gaps. Then write your two-minute sponsor message using the four-part structure: found, costs, test, need.",
+      "instructions": "Answer the test for each layer with Yes / Partly / No and one line of evidence. State your pathway position or fallback model. Then write the two-paragraph Problem section of your executive business case.",
       "prompts": [
        {
-        "id": "ratings",
-        "label": "Six ratings (1–5) with evidence"
+        "id": "layers",
+        "label": "Three layers — Yes / Partly / No with evidence"
        },
        {
-        "id": "gaps",
-        "label": "Two priority gaps and why they unlock the most"
+        "id": "position",
+        "label": "Pathway position or fallback model, and why"
        },
        {
-        "id": "message",
-        "label": "Two-minute sponsor message — found / costs / test / need"
+        "id": "problem",
+        "label": "Business case Part 1 — Problem (two paragraphs)"
        }
       ]
      }
     ],
-    "aiPrompt": "Here are my Day 1 outputs: value proposition JTBDs, readiness diagnostic, decision-rights RACI and AI guardrail standard [paste]. Rate my practice 1–5 on six dimensions (set the standard, develop the people, govern the practice, deliver where leverage is highest, value reporting, AI guardrails), citing the evidence from my outputs for each rating and flagging where evidence is missing. Recommend the two gaps that would most increase practice value and draft a two-minute sponsor message in four parts: what we found, what it costs, what we propose to test, what we need from you.",
+    "aiPrompt": "Here are my Day 1 outputs: value proposition JTBDs, BACOE readiness diagnostic, boundaries RACI and Visual Library coverage map [paste]. Using the Business Analyst Practice Leadership Model's three layers — individual leverage (senior BAs upstream of funding with a mandate to stop or reshape), disciplined delivery (signed Project Vision and As-Is/To-Be on every initiative, tiered at intake) and institutional capability (published standards, working governance forums, quarterly value reporting on the three mechanisms) — answer Yes / Partly / No for each layer, citing evidence from my outputs and flagging where evidence is missing. Count my unmet preconditions and say whether the book would recommend a BACOE or a lighter intervention. Then draft Part 1 (Problem) of a five-part executive business case in two paragraphs, using only figures I have supplied.",
     "quiz": [
      {
-      "q": "What makes a maturity rating credible?",
+      "q": "Why must the three layers be built in order?",
       "opts": [
-       "A consensus of the BA team",
-       "A specific piece of evidence such as a date, forum or number",
-       "The highest score you can justify",
-       "Alignment with an industry average"
+       "Because the book's chapters are in that order",
+       "Without leverage there is nothing to institutionalise; discipline makes leverage repeatable; the institution scales and protects it",
+       "Because BACOEs take 24 months",
+       "Because sponsors prefer it"
       ],
       "a": 1,
-      "why": "Ratings without evidence are opinions; the plan built on them will not survive a sponsor's first question."
+      "why": "Each layer compounds the one below it (book Closing)."
      },
      {
-      "q": "Which is the strongest 'need' in a sponsor message?",
+      "q": "Four of the six preconditions are unmet. What does the book recommend?",
       "opts": [
-       "Support for the BA team",
-       "More recognition",
-       "An invitation for a senior BA to attend investment committee",
-       "A bigger budget"
+       "Establish a smaller BACOE",
+       "Do not establish a BACOE; run a lighter intervention and revisit",
+       "Establish the BACOE inside the PMO",
+       "Wait three years"
       ],
-      "a": 2,
-      "why": "A specific, actionable decision the sponsor can make this week."
+      "a": 1,
+      "why": "If three or more preconditions are not met, establish a Community of Practice, standards working group or embedded senior BAs instead."
      }
     ],
     "takeaways": [
-     "Your baseline is the input to tomorrow's plan",
-     "Pick two gaps — one structural, one foundational",
-     "Ask the sponsor for one specific decision"
+     "Test leverage, discipline and institution, in that order",
+     "No evidence? Collecting it is the first job",
+     "Your Problem statement is Part 1 of tomorrow's business case"
     ]
    },
    "presenter": {
-    "purpose": "Consolidate Day 1 into an evidence-based baseline and a sponsor message; close the day.",
-    "openingLine": "“You've spent today looking at your practice through five lenses. Now we put them on one page — honestly — because tomorrow's plan is only as good as today's diagnosis.”",
+    "purpose": "Consolidate Day 1 into the book's three-layer check, a pathway position and Part 1 of the executive business case; close the day.",
+    "openingLine": "“The book ends with one sentence for each layer. Let's hold your practice up against all three — honestly — because tomorrow's business case starts from today's Problem statement.”",
     "beats": [
      {
-      "label": "Frame the maturity check",
+      "label": "Frame the three layers",
       "minutes": 5,
-      "notes": "Show the six-dimension table and the worked-example scores."
+      "notes": "Read the three 'without' sentences from the book Closing. Show the worked-example answers."
      },
      {
-      "label": "Maturity check and sponsor message (activity)",
+      "label": "Three-layer check and Problem statement (activity)",
       "minutes": 25,
-      "notes": "Solo work with the agent. Circulate; challenge any 4 or 5 without evidence."
+      "notes": "Solo with the assistant. Challenge any 'Yes' without a named initiative or document."
      },
      {
-      "label": "Share — three sponsor messages",
+      "label": "Share — three Problem statements",
       "minutes": 10,
-      "notes": "Three volunteers read their message; room scores it on found / costs / test / need."
+      "notes": "Three volunteers read their Problem; the room checks it is quantified and in the sponsor's terms."
      },
      {
       "label": "Close Day 1 and preview Day 2",
@@ -1145,18 +1181,19 @@
       "notes": "Ask everyone to bring one real initiative and their practice's current templates tomorrow."
      }
     ],
-    "facilitationNotes": "Energy is lowest now — keep it brisk and personal. The sponsor messages are the payoff: pick volunteers whose practices differ (one large, one small, one public sector). Remind participants their outputs are saved in the portal and will be pulled into the 90-day plan.",
-    "whatGood": "Six evidenced ratings, two gaps (one structural, one foundational) and a sponsor message with a single, specific ask.",
-    "commonFailure": "Sponsor messages slide into methodology (“we need a Project Vision template”) — and the fix is to ask “what does that cost the sponsor?” until the message is in their terms.",
+    "facilitationNotes": "Energy is lowest now — keep it brisk and personal. Pick Problem-statement volunteers whose practices differ (one large, one small, one public sector). Remind participants their outputs are saved in the portal and feed straight into tomorrow's business case.",
+    "whatGood": "Three evidenced layer answers, a pathway position consistent with the precondition count, and a quantified two-paragraph Problem.",
+    "commonFailure": "The Problem slides into methodology (“we lack templates”) — and the fix is to ask what that costs in rework, wrong investments or unrealised benefits.",
     "debrief": [
-     "Which dimension scored lowest across the room?",
-     "What is the one decision you will ask your sponsor for?",
-     "What do you need to bring tomorrow to make the plan real?"
+     "Which layer is weakest across the room?",
+     "How many of you landed on a lighter intervention rather than a BACOE — and why is that a stage, not a defeat?",
+     "What do you need to bring tomorrow to make the business case real?"
     ],
-    "answerKey": "**Worked example ratings (illustrative):** Standard 2 (Visions sometimes written, not required); People 2 (45% Senior/Lead, no pairing model); Governance 1 (no forum, never stopped work); Leverage 1 (all BAs post-funding); Value reporting 1 (none); AI 2 (tools in use, no standard).\n\n**Priority gaps:** Leverage (structural) and Value reporting (foundational) — upstream placement creates the value; reporting proves it.\n\n**Model message:** see section two of this module.",
+    "answerKey": "**Worked example (illustrative):** Layer 1 No — all BAs engaged post-funding; Layer 2 Partly — Visions sometimes written, no tier recorded; Layer 3 No — no forums, no value reporting. Preconditions unmet: upstream placement, stop authority, benefits ownership → **Hold**; embedded senior BAs on two claims initiatives. **Model Problem:** see section three of this module.",
     "materials": [
-     "Maturity check table",
-     "Sponsor message template",
+     "Three-layer check table",
+     "Book Closing quote slide",
+     "Business case Part 1 template",
      "Day 2 preparation note"
     ]
    }
@@ -1171,10 +1208,10 @@
    "minutes": 15,
    "participant": {
     "bigIdea": "Yesterday diagnosed the practice; today grows it.",
-    "overview": "A short recap of Day 1 — value proposition, Practice Model, governance, AI guardrails and your maturity check — followed by open questions. We then preview the Day 2 chain: standards, capability, value measures and a 90-day plan you will pitch at the end of the day.",
+    "overview": "A short recap of Day 1 — value proposition, Practice Model, governance, the operating layer (playbooks and templates) and your three-layer check — followed by open questions. We then preview the Day 2 chain: standards, capability, value measures and a 90-day plan you will pitch at the end of the day.",
     "objectives": [
      "Recall the four jobs, six preconditions and three forums",
-     "Restate your two priority gaps from the maturity check",
+     "Restate your three-layer check result and your Problem statement",
      "Connect today's modules to your 90-day plan"
     ],
     "keyPoints": [
@@ -1194,11 +1231,11 @@
     "sections": [
      {
       "heading": "Day 1 in five lines",
-      "body": "1. **Value** is an interaction (Person, Thing, Context, Value), and BA return is set by position relative to the funding line.\n2. **The Practice Model** runs on four jobs, four roles and four services; a BACOE needs six preconditions.\n3. **Governance** is designed: boundaries, three forums, explicit decision rights.\n4. **AI** drafts; humans decide — guardrails are banded by task risk.\n5. **Your baseline** is six evidenced ratings and two priority gaps."
+      "body": "1. **Value** is an interaction (Person, Thing, Context, Value), and BA return is set by position relative to the funding line (Ch 1).\n2. **The Practice Model** runs on four jobs, four roles and four services; a BACOE needs six preconditions (Ch 3).\n3. **Governance** is designed: boundaries, three forums, explicit decision rights (Ch 3).\n4. **The operating layer** is twelve playbooks and the Part III Visual Library; the assistant drafts, a named human signs.\n5. **Three layers** — leverage, discipline, institution — must be built in that order."
      },
      {
       "heading": "How today builds your plan",
-      "body": "Each Day 2 module adds one component to the 90-day plan: a **standard** (minimum quality gates), a **people move** (pairings and pathways), a **measure** (what you will report in 90 days) and finally the **plan** itself, which you pitch for feedback. Keep your Day 1 outputs open — you will reuse them."
+      "body": "Each Day 2 module adds one part of the five-part executive business case you pitch at 16:15: a **standard** (foundations, tiers and templates), a **people** design (roles, pairings and pathways), the **Expected Return** (three mechanisms), and the **plan**. Keep your Day 1 outputs open — you wrote Part 1, the Problem, yesterday."
      }
     ],
     "activities": [
@@ -1325,19 +1362,23 @@
     "sections": [
      {
       "heading": "The two foundations",
-      "body": "**The Project Vision** proves, on a single page, that the analyst understands the problem. Most initiatives fail in framing, not execution: stakeholders agree on a name and a budget but not on the problem. The Vision has six elements: **Problem**, **Desired Outcome**, **Scope Boundaries**, **Stakeholders**, **Early View of the Solution** and **Measures of Success**. A measure counts only if it has a **baseline**, a **target** and a **measurement plan** — otherwise it is a statement of hope.\n\nIn the worked example: baseline 21.6 days notification-to-settlement for home and motor claims; target ≤10 days within 12 months of Release 1; measured from the policyholder's first notice of loss to settlement paid, owned by Harbourline's Head of Claims, with a fraud-leakage watch metric that must not rise.\n\n**As-Is before To-Be.** Initiatives stall when the future is designed before the present is understood. The As-Is is evidence of operational reality — delays, errors, data breaks and workarounds — and it defines the scope of impact. The test: a stakeholder should see the improvement by looking at As-Is and To-Be side by side, from their own vantage point. In the example, the As-Is revealed the assessor-report wait (p95 8.7 days) and 27% rework from incomplete first notice of loss re-keyed into the legacy policy admin system — the two problems the To-Be had to solve."
+      "body": "**The Project Vision** proves, on a single page, that the analyst understands the problem. Most initiatives fail in framing, not execution: stakeholders agree on a name and a budget but not on the problem. The Vision has six elements: **Problem**, **Desired Outcome**, **Scope Boundaries**, **Stakeholders**, **Early View of the Solution** and **Measures of Success**. A measure counts only if it has a **baseline**, a **target** and a **measurement plan** — otherwise it is a statement of hope.\n\nIn the worked example: baseline 21.6 days notification-to-settlement for home and motor claims; target ≤10 days within 12 months of Release 1; measured from the policyholder's first notice of loss to settlement paid, owned by Harbourline's Head of Claims, with a fraud-leakage watch metric that must not rise.\n\n**As-Is before To-Be.** Initiatives stall when the future is designed before the present is understood. The As-Is is evidence of operational reality — delays, errors, data breaks and workarounds — and it defines the scope of impact. The test: a stakeholder should see the improvement by looking at As-Is and To-Be side by side, from their own vantage point. In the example, the As-Is revealed the assessor-report wait (p95 8.7 days) and 27% rework from incomplete first notice of loss re-keyed into the legacy policy admin system — the two problems the To-Be had to solve.\n\nTemplates: [Project Vision template](/files/ba-leadership/A1_Project_Vision_Template.png) · [worked example](/files/ba-leadership/A1_Project_Vision_Worked_Example.png) · [As-Is To-Be Analysis template](/files/ba-leadership/A2_As-Is_To-Be_Analysis_Template.png) · [worked example](/files/ba-leadership/A2_As-Is_To-Be_Analysis_Worked_Example.png)."
      },
      {
       "heading": "Bronze, Silver, Gold",
-      "body": "| Tier | Typical work | Duration and effort | Artefacts | Approval |\n|---|---|---|---|---|\n| **Bronze** | Dashboards, minor enhancements, single-team workflows | 2–6 weeks; ¼–½ BA | 4: Project Brief, Requirements Summary, Configuration Guide, Handover Package | Operational sign-off |\n| **Silver** | Cross-team change, integrations, process redesign | 3–9 months; ½–1 BA | 12: Bronze + Business Case, Stakeholder Analysis, Requirements Specification, As-Is/To-Be Models, Solution Design, Data Contracts, Test Plan, Training and Benefits Tracking | Investment committee |\n| **Gold** | Platform replacement, multi-year, regulatory, cross-agency | 12–36 months; 2–5 BAs + lead | 24: Silver + Strategic Business Case, Enterprise Stakeholder Plan, Enterprise As-Is/To-Be, Enterprise Requirements, Solution Architecture, Data Strategy, Roadmap, QA Framework, Change Plan, Operations Handbook, Benefits and Risk | Board |\n\nBronze is a discipline of restraint; Silver is rigour without ceremony; Gold is a defensible foundation and assurance trail for the largest investments. **Artefacts may be combined** — twelve areas of analysis can live in one well-structured Confluence space."
+      "body": "| Tier | Typical work | Duration and effort | Artefacts | Approval |\n|---|---|---|---|---|\n| **Bronze** | Dashboards, minor enhancements, single-team workflows | 2–6 weeks; ¼–½ BA | 4: Project Brief, Requirements Summary, Configuration Guide, Handover Package | Operational sign-off |\n| **Silver** | Cross-team change, integrations, process redesign | 3–9 months; ½–1 BA | 12: Bronze + Business Case, Stakeholder Analysis, Requirements Specification, As-Is/To-Be Models, Solution Design, Data Contracts, Test Plan, Training and Benefits Tracking | Investment committee |\n| **Gold** | Platform replacement, multi-year, regulatory, cross-agency | 12–36 months; 2–5 BAs + lead | 24: Silver + Strategic Business Case, Enterprise Stakeholder Plan, Enterprise As-Is/To-Be, Enterprise Requirements, Solution Architecture, Data Strategy, Roadmap, QA Framework, Change Plan, Operations Handbook, Benefits and Risk | Board |\n\nBronze is a discipline of restraint; Silver is rigour without ceremony; Gold is a defensible foundation and assurance trail for the largest investments. **Artefacts may be combined** — twelve areas of analysis can live in one well-structured Confluence space.\n\n![Figure 2.1 — BA Deliverables by Project Type](/files/ba-leadership/Fig_2-1_BA_Deliverables_by_Project_Type.png)\n\n*Figure 2.1 — BA Deliverables by Project Type — from the book.*"
      },
      {
       "heading": "Choosing the tier",
       "body": "Score five factors as small, medium or large: **Cost** (including five-year run cost), **Risk** (reversible / recoverable / strategic damage), **Reach** (teams, systems, processes, customers), **Reversibility** and **Strategic visibility**. Mostly small → Bronze; mostly medium → Silver; mostly large, **or any two large** → Gold. In borderline cases, **default up** — the bias is always towards lighter, and its cost is paid later by someone else.\n\nWorked example: Cost medium ($6.8m three-year), Risk large (claims payments, fraud exposure and conduct obligations to policyholders), Reach large (policyholders, brokers, assessors, repairers, contact centre), Reversibility medium, Visibility large → **Gold** by the any-two-large rule, even though it might be argued as Silver on cost alone. Contrast a university's enrolment-form redesign: mostly small or medium → Silver at most."
      },
      {
+      "heading": "The tier's templates — Part III",
+      "body": "Once the tier is set, the Visual Library gives the artefact set. Tiers are cumulative: Silver produces the Bronze four plus eight, and Gold adds twelve more.\n\n| Tier | Templates (each with a worked example) | Download |\n|---|---|---|\n| Foundations | A.1 Project Vision · A.2 As-Is/To-Be Analysis | [Foundations pack](/files/ba-leadership/Visual_Library_A_Foundations.pdf) |\n| Bronze | B.1 Project Brief · B.2 Requirements Summary · B.3 Configuration Guide · B.4 Handover Package | [Bronze pack](/files/ba-leadership/Visual_Library_B_Bronze.pdf) |\n| Silver | C.1 Business Case · C.2 Stakeholder Analysis · C.3 Requirements Specification · C.4 As-Is and To-Be Process Models · C.5 Solution Design · C.6 Data Contracts · C.7 Test Plan · C.8 Training and Benefits Tracking | [Silver pack](/files/ba-leadership/Visual_Library_C_Silver.pdf) |\n| Gold | D.1 Strategic Business Case · D.2 Enterprise Stakeholder Plan · D.3 Enterprise As-Is · D.4 Enterprise To-Be · D.5 Enterprise Requirements · D.6 Solution Architecture · D.7 Data Strategy and Governance · D.8 Implementation Roadmap · D.9 Quality Assurance Framework · D.10 Change Management Plan · D.11 Operations Handbook · D.12 Benefits and Risk Management | [Gold pack](/files/ba-leadership/Visual_Library_D_Gold.pdf) |\n\nThe worked examples are a practical calibration tool for reviewers: compare a BA's draft against the worked example's depth, not its industry.\n\n![Figure 2.2 — Delivery Tiers at a Glance](/files/ba-leadership/Fig_2-2_Delivery_Tiers_at_a_Glance.png)\n\n*Figure 2.2 — Delivery Tiers at a Glance — from the book.*"
+     },
+     {
       "heading": "Quality gates a leader can run",
-      "body": "Quality gates turn the standard into practice. Keep them few and tied to decisions:\n\n1. **Gate 1 — Vision signed** (all tiers): six elements present; measures have baseline, target, measurement plan; sponsor and business owner signed. *Before any requirements work.*\n2. **Gate 2 — Tier confirmed** (all tiers): five-factor score recorded; As-Is evidenced; To-Be addresses each As-Is pain point. *Before business case or build.*\n3. **Gate 3 — Benefits handed over** (Silver and Gold): benefit measure live, business owner accepts ownership. *Before project closure.*\n\nDelivery assurance reviews Silver and Gold at these gates without duplicating PMO stage gates. Bronze is assured by template and spot-check."
+      "body": "Quality gates turn the standard into practice. Keep them few and tied to decisions:\n\n1. **Gate 1 — Vision signed** (all tiers): six elements present, checked against the A.1 template; measures have baseline, target, measurement plan; sponsor and business owner signed. *Before any requirements work.*\n2. **Gate 2 — Tier confirmed** (all tiers): five-factor score recorded; As-Is evidenced; To-Be addresses each As-Is pain point (the A.2 side-by-side test). *Before business case or build.*\n3. **Gate 3 — Benefits handed over** (Silver and Gold): benefit measure live (C.8 or D.12), business owner accepts ownership. *Before project closure.*\n\nDelivery assurance reviews Silver and Gold at these gates without duplicating PMO stage gates. Bronze is assured by template and spot-check.\n\nThese gates are how a practice runs the book's *Delivery assurance* service. They are BAS practice guidance built on the book's tests, not a separate methodology."
      }
     ],
     "activities": [
@@ -1345,7 +1386,7 @@
       "id": "d2-s2-act1",
       "title": "Tier your initiative and set your gates",
       "minutes": 22,
-      "instructions": "Take one real initiative (or the worked example). Score it on the five factors with a one-line rationale each and state the tier. Then write the three quality gates for your practice in your own words, including who checks each and what evidence passes it.",
+      "instructions": "Take one real initiative (or the worked example). Score it on the five factors with a one-line rationale each and state the tier. List the Part III templates that tier requires. Then write the three quality gates for your practice in your own words, including who checks each and what evidence passes it.",
       "prompts": [
        {
         "id": "factors",
@@ -1354,6 +1395,10 @@
        {
         "id": "tier",
         "label": "Tier and whether you defaulted up"
+       },
+       {
+        "id": "templates",
+        "label": "The tier's Part III templates — and which you will combine"
        },
        {
         "id": "gates",
@@ -1456,9 +1501,10 @@
     ],
     "answerKey": "**Worked example tiering:** Cost medium ($6.8m three-year incl. licences, integration with the legacy policy admin system, change); Risk large (claims payments, fraud controls, APRA-style operational-risk and consumer obligations); Reach large (policyholders, brokers, assessors, repairers, contact centre, payments); Reversibility medium (phased releases with a pilot motor-claims segment); Visibility large (CDO and Head of Claims sponsorship, board risk committee interest likely). → **Gold** (any two large).\n\n**Model gates:** G1 Vision signed — checked by Lead BA — evidence: signed one-page Vision with baseline 21.6 days, target ≤10, measurement plan. G2 Tier confirmed — Practice Lead — evidence: five-factor record; each To-Be step traced to an As-Is pain point. G3 Benefits handed over — Practice Lead with business owner — evidence: benefit dashboard live; Head of Claims accepts ownership in writing.",
     "materials": [
-     "Project Vision template",
-     "As-Is To-Be side-by-side slide",
-     "Tier table",
+     "Project Vision template and worked example (A.1)",
+     "As-Is/To-Be template and worked example (A.2)",
+     "Figures 2.1 and 2.2",
+     "Visual Library tier packs (Downloads)",
      "Five-factor scoring card",
      "Tier Classifier playbook",
      "Persona and curveball card"
@@ -1507,11 +1553,15 @@
      },
      {
       "heading": "The role family and adjacent families",
-      "body": "The four practice roles map onto the BA role family first published by Clare (2008) and maintained by IIBA as the Business Analyst Career Road Map. Business Analyst and Senior BA sit on the career spine; the Lead BA sits at the transition into the BA leadership family; the Practice Lead sits in that leadership family as the COE leader role, interfacing upward into senior leadership.\n\nThe extended family makes adjacent paths explicit — **Product Management, Agile/Delivery, Data and Analytics, UX/Service Design**, as well as project management, testing and business operations. A capability framework should name the legitimate exits and re-entries: a strong BA who moves into product ownership for two years often returns as a better Lead. Retention is about pathways, not just pay."
+      "body": "The four practice roles map onto the BA role family first published by Clare (2008) and maintained by IIBA as the Business Analyst Career Road Map. Business Analyst and Senior BA sit on the career spine; the Lead BA sits at the transition into the BA leadership family; the Practice Lead sits in that leadership family as the COE leader role, interfacing upward into senior leadership.\n\nThe extended family makes adjacent paths explicit — **Product Management, Agile/Delivery, Data and Analytics, UX/Service Design**, as well as project management, testing and business operations. A capability framework should name the legitimate exits and re-entries: a strong BA who moves into product ownership for two years often returns as a better Lead. Retention is about pathways, not just pay.\n\n![Figure 3.2 — The BA Role Family (extended)](/files/ba-leadership/Fig_3-2_BA_Role_Family.png)\n\n*Figure 3.2 — The BA Role Family (extended) — from the book.*"
      },
      {
       "heading": "Pairing and coaching models",
-      "body": "A practical working ratio is **one Business Analyst per Senior**, with each **Lead anchoring three to five pairings**. Too many juniors produces output that looks like analysis but cannot challenge a sponsor, and consumes the seniors' mentoring time.\n\nUse three coaching mechanisms:\n\n- **Pairing on live work** — the BA drafts, the Senior reviews and explains the judgement. In the worked example, a BA drafts the As-Is pain-point inventory; the Senior shows why the forwarding wait matters more than the payment batch run.\n- **Structured peer review** — every Silver and Gold Vision is peer-reviewed against the six elements before Gate 1.\n- **Shadowing upward** — BAs attend one sponsor or Investment Quality Forum meeting a quarter to see challenge modelled.\n\nIn a coaching conversation, use **GROW**-style structure but anchor it to the practice: *Goal* (which upstream job), *Reality* (evidence from recent work), *Options* (next assignment that stretches counterparty), *Will* (one commitment, reviewed in four weeks)."
+      "body": "A practical working ratio is **one Business Analyst per Senior**, with each **Lead anchoring three to five pairings**. Too many Business Analysts relative to Seniors and Leads produces output that looks like analysis but cannot challenge a sponsor, and reduces the mentoring time of the most experienced people. A BACOE needs **at least 60% Senior or Lead** if it is mandated for investment shaping; below that, mandate it for capability development first.\n\nThe **Practice Lead's own time** is part of the design. The book's split: roughly **40%** governance and executive engagement, **30%** capability and team leadership, **20%** standards and quality, **10%** hands-on work where strategic visibility needs it.\n\nDevelopment happens through the work:\n\n- **Pairing on live work** — the BA drafts, the Senior reviews and explains the judgement. In the worked example, a BA drafts the As-Is pain-point inventory; the Senior shows why the assessor-report wait matters more than the payment batch run.\n- **Lead quality review** — Lead BAs review the work of Seniors and BAs on their initiatives; they are *the people standards are calibrated against*.\n- **The Community of Practice** — monthly and open to all BAs: knowledge sharing, capability development, standards updates.\n- **Stretch by counterparty** — the next assignment moves a BA closer to the funding decision: observing the Investment Quality Forum, then presenting to it."
+     },
+     {
+      "heading": "Career pathways and what they retain",
+      "body": "In Phase 3 the book's pathway includes a capability framework: careers, training and accreditation. The national utility case published three pathways in month sixteen — **delivery BA**, **investment BA** and **practice BA** — and appointed its most influential sceptical seniors as Standards Working Group leads.\n\nThe result was not in the original business case: BA attrition to consultancies fell from **18% to 7% a year**, and the utility began attracting senior BAs from competitors. A visible pathway is a retention strategy as well as a capability one."
      },
      {
       "heading": "A capability plan for your practice",
@@ -1545,17 +1595,17 @@
      },
      {
       "id": "d2-s3-act2",
-      "title": "Coaching conversation practice",
+      "title": "Design your career pathways",
       "minutes": 15,
-      "instructions": "In trios (coach, BA, observer), run a ten-minute coaching conversation using Goal–Reality–Options–Will anchored to one upstream job. The observer notes the moment the BA committed to something specific. Rotate if time allows.",
+      "instructions": "Using the utility's three pathways (delivery BA, investment BA, practice BA) as a starting point, define the pathways your practice will offer. For each, name the counterparty a BA works towards and one assignment that proves readiness to move. Then set your own time split as Practice Lead against the book's 40 / 30 / 20 / 10.",
       "prompts": [
        {
-        "id": "commitment",
-        "label": "The commitment agreed and when it will be reviewed"
+        "id": "pathways",
+        "label": "Pathways — name, counterparty, proving assignment"
        },
        {
-        "id": "observer",
-        "label": "Observer note — what moved the conversation forward?"
+        "id": "split",
+        "label": "My time split today vs the book's 40 / 30 / 20 / 10 — and what I will change"
        }
       ]
      }
@@ -1610,22 +1660,22 @@
      {
       "label": "TEACH — four roles as a career path",
       "minutes": 12,
-      "notes": "Emphasise counterparty shift; link back to the six axes."
+      "notes": "Emphasise the counterparty shift; link back to the six axes."
      },
      {
-      "label": "TEACH — role family, ratios and coaching mechanisms",
+      "label": "TEACH — role family, ratios and development through the work",
       "minutes": 13,
-      "notes": "Show the role-family figure; walk the worked-example pairing."
+      "notes": "Show Figure 3.2; walk the worked-example pairing and the 40/30/20/10 split."
      },
      {
       "label": "BUILD — capability plan (activity 1)",
       "minutes": 30,
-      "notes": "Agent drafts the mix and pairings; participant decides promotions and stretch assignments."
+      "notes": "Assistant drafts the mix and pairings; participant decides promotions and stretch assignments."
      },
      {
-      "label": "PRACTICE — coaching trios (activity 2)",
+      "label": "BUILD — career pathways (activity 2)",
       "minutes": 15,
-      "notes": "Ten-minute conversation plus five for observer feedback. Broadcast a time check at 8 minutes."
+      "notes": "Tell the utility story (18% → 7% attrition) before they start."
      },
      {
       "label": "PEER REVIEW — is the ratio realistic?",
@@ -1635,29 +1685,29 @@
      {
       "label": "DEBRIEF — the stretch assignment",
       "minutes": 8,
-      "notes": "Three participants share their stretch assignment."
+      "notes": "Three participants share a stretch assignment and a pathway."
      }
     ],
-    "facilitationNotes": "Remind participants to use initials and roles only — no personal or performance information in the agent or the portal. The coaching trios need clear instructions on screen and a visible timer. If numbers do not divide into trios, form a pair with the facilitator observing. Watch for capability plans that are all training courses — push for assignments and pairings, which build judgement faster.",
+    "facilitationNotes": "Remind participants to use initials and roles only — no personal or performance information in the agent or the portal. Watch for capability plans that are all training courses — push for assignments and pairings, which build judgement faster.",
     "roleplay": {
      "persona": "The Comfortable Senior BA",
      "line": "“I like delivery work. I don't really want to sit in funding meetings.”",
      "curveball": "They are the most respected analyst in the practice and the obvious Lead candidate.",
      "move": "Explore what they value in delivery, reframe upstream work as protecting the delivery they care about, and agree one low-risk step — attending one Investment Quality Forum as an observer."
     },
-    "whatGood": "A mix with a realistic 12-month target, named pairings, three capabilities each with a measure, and a stretch assignment that changes counterparty; a coaching conversation that ends in a specific, dated commitment.",
+    "whatGood": "A mix with a realistic 12-month target, named pairings, three capabilities each with a measure, pathways defined by counterparty, and an honest Practice Lead time split.",
     "commonFailure": "Capability plans become training calendars — and the fix is to require at least one assignment-based and one pairing-based development activity per capability.",
     "debrief": [
      "What is your Senior + Lead percentage — and is investment shaping realistic with it?",
-     "What made the coaching conversation land a commitment?",
-     "Which adjacent family do your best BAs leave for — and how could you bring them back?"
+     "Which pathway would have kept the last senior BA you lost?",
+     "How far is your own time from 40 / 30 / 20 / 10?"
     ],
     "answerKey": "**Worked example (illustrative, 11 BAs):** current 1 Practice Lead plus 10 delivery staff: 1 Lead, 3 Senior, 6 BA → Senior + Lead 40% of delivery staff (45% including the Practice Lead). 12-month target: promote 2 BAs to Senior and recruit 1 Lead → 2 Leads, 5 Seniors, 4 BAs = 64% of 11 delivery staff. Pairings: each Senior with up to one BA; each Lead anchoring 2–3 pairings plus the claims portfolio.\n\nCapabilities: value quantification (measure: Visions with baseline/target/plan at Gate 1); facilitating difficult decisions (measure: BAs who have presented a reshape option); commercial judgement (measure: Seniors who have co-authored a business case with finance).\n\nStretch assignment: Senior BA on *Faster claim settlement* co-presents the D2 straight-through settlement threshold options to the Head of Claims, with the fraud team in the room.\n\n**Coaching:** a good conversation ends with a specific action and date, e.g. “I'll attend the next Investment Quality Forum on the 14th and debrief with you on the 15th.”",
     "materials": [
      "Career path table",
-     "BA role family figure",
+     "Figure 3.2 BA Role Family",
      "Pairing model slide",
-     "GROW coaching card",
+     "Utility case pathway notes",
      "Persona and curveball card"
     ]
    }
@@ -1701,6 +1751,10 @@
      {
       "heading": "The three value mechanisms",
       "body": "**Mechanism 1 — Investment decision quality.** Senior BAs before funding reshape, descope or stop initiatives that would consume capital without benefit. On a mid-size portfolio this is typically 3–5% of annual change spend — consistent with PMI's finding that 11.4% of investment is wasted through poor project performance.\n\n**Mechanism 2 — Delivery efficiency and rework.** Standards and assurance reduce rework from 25–40% of project cost to 10–15% in mature practices. Only a portion is practice-attributable.\n\n**Mechanism 3 — Benefits integrity.** 30–50% of claimed benefits are never measured after implementation. A practice that owns benefits tracking turns invisible value into evidenced value.\n\n| Mechanism ($60m portfolio, $2.0m BACOE) | Conservative annual value |\n|---|---|\n| Investment decisions reshaped or stopped | $1,800,000 |\n| Rework and delivery efficiency (attributable) | $1,500,000 |\n| Benefits integrity and capital redirection | $1,200,000 |\n| **Total** | **$4,500,000 — 2.25×** |"
+     },
+     {
+      "heading": "The conservative calculation — and the case studies",
+      "body": "The book's conservative model for a mid-size enterprise ($60M portfolio, $2.0M BACOE):\n\n| Mechanism | Conservative annual value |\n|---|---|\n| Investment decisions reshaped or stopped | $1,800,000 |\n| Rework and delivery efficiency (BACOE-attributable share) | $1,500,000 |\n| Benefits integrity and capital redirection | $1,200,000 |\n| **Total** | **$4,500,000** — net $2.5M, **2.25×** |\n\nThe two case studies report Year-2 value the same way, mechanism by mechanism:\n\n| | Mechanism 1 | Mechanism 2 | Mechanism 3 | Total vs cost |\n|---|---|---|---|---|\n| Financial services mutual | $4.2M | $1.8M | $0.9M | $6.9M vs $2.0M — 3.45× |\n| National utility | $14M | $7.2M | $4.8M | $26M vs $4.0M — 6.5× |\n\nYour quarterly value report should use this structure from day one, even when early figures are small. The case-study figures are composites and illustrative ratios, as the book notes."
      },
      {
       "heading": "Building KPIs that survive scrutiny",
@@ -1862,7 +1916,7 @@
    "minutes": 90,
    "participant": {
     "bigIdea": "Ninety days is a Readiness phase: long enough to prove one thing, short enough that nobody loses interest.",
-    "overview": "In the BAS pathway the first phase of building a practice — **Readiness, months 0–3** — confirms preconditions, secures backing, agrees boundaries and builds the case. Your 90-day plan is that phase, or the lighter intervention that builds towards it.\n\nThis module assembles everything you have produced — value proposition, readiness diagnostic, decision rights, AI guardrails, maturity check, quality gates, capability plan and scorecard — into one plan with three workstreams, a pilot, a decision gate and an ask.",
+    "overview": "In the BAS pathway the first phase of building a practice — **Readiness, months 0–3** — confirms preconditions, secures backing, agrees boundaries and builds the case. Your 90-day plan is that phase, or the lighter intervention that builds towards it.\n\nThis module assembles everything you have produced — value proposition, readiness diagnostic, boundaries and decision rights, Visual Library coverage map and practice rules, three-layer check, tier and quality gates, capability plan and scorecard — into one plan with three workstreams, a pilot, a decision gate and an ask.",
     "objectives": [
      "Structure a 90-day plan around your two priority gaps",
      "Select one pilot initiative that can evidence a value mechanism",
@@ -1890,7 +1944,7 @@
     "sections": [
      {
       "heading": "The shape of the plan",
-      "body": "A 90-day plan has five parts:\n\n1. **Starting point** — your maturity ratings and two priority gaps (Day 1 close).\n2. **Model choice** — full BACOE track, conditional PMO-hosted model, or lighter intervention (readiness diagnostic).\n3. **Three workstreams over three months**:\n\n| Workstream | Days 1–30 | Days 31–60 | Days 61–90 |\n|---|---|---|---|\n| Position | Agree pilot initiative; senior BA placed upstream | Project Vision signed; tier confirmed | Investment Quality review held on pilot |\n| Standard | Gate 1 published; AI guardrail standard agreed with privacy/security | Gate 2 in use; prompt library v1 | Gate 3 drafted; boundaries discussion with PMO |\n| People and proof | Baselines captured; pairings agreed | Community of Practice launched; first coaching cycle | 90-day value report delivered |\n\n4. **Day-90 decision gate** — what you will ask for and the evidence.\n5. **Risks and asks** — preconditions at threat and the decisions needed from your sponsor."
+      "body": "A 90-day plan has five parts:\n\n1. **Starting point** — your three-layer check and pathway position (Day 1 close).\n2. **Model choice** — full BACOE track, conditional PMO-hosted model, or lighter intervention (readiness diagnostic).\n3. **Three workstreams over three months**:\n\n| Workstream | Days 1–30 | Days 31–60 | Days 61–90 |\n|---|---|---|---|\n| Position | Agree pilot initiative; senior BA placed upstream | Project Vision signed; tier confirmed | Investment Quality review held on pilot |\n| Standard | Gate 1 published with the A.1 Project Vision template; practice rules for assistant-run playbooks agreed with privacy/security | Gate 2 in use; tier template set adopted from Part III | Gate 3 drafted; boundaries discussion with PMO |\n| People and proof | Baselines captured; pairings agreed | Community of Practice launched; first coaching cycle | 90-day value report delivered |\n\n4. **Day-90 decision gate** — what you will ask for and the evidence.\n5. **Risks and asks** — preconditions at threat and the decisions needed from your sponsor.\n\nIf you are on the BACOE track, Phase 1 of the book's pathway names the artefacts your 90 days should produce: **Readiness Diagnostic, capability heat-map, Boundary Negotiator agreement, Business Case Builder output and a funding decision.** If you are on a lighter intervention, the plan builds the evidence that later justifies the business case."
      },
      {
       "heading": "Choosing the pilot",
@@ -1931,7 +1985,7 @@
       ]
      }
     ],
-    "aiPrompt": "Using my saved course outputs below — value JTBDs, readiness diagnostic, decision-rights RACI, AI guardrail standard, maturity check and sponsor message, tier and quality gates, capability plan, and practice scorecard — draft a 90-day BA practice plan in five parts: (1) starting point and two priority gaps; (2) model choice (BACOE, conditional PMO-hosted, or lighter intervention) with rationale tied to the six preconditions; (3) a table of three workstreams (Position; Standard; People and proof) across days 1–30, 31–60, 61–90; (4) a day-90 decision gate with the specific ask and the evidence I will have; (5) risks and asks. Keep it to one page plus the table. Do not add activities I have not supported with an output — list them as gaps instead. Outputs: [paste].",
+    "aiPrompt": "Using my saved course outputs below — value JTBDs, readiness diagnostic, boundaries RACI, Visual Library coverage map and practice rules, three-layer check and Problem statement, tier and quality gates, capability plan, and practice scorecard — draft a 90-day BA practice plan in five parts: (1) starting point — three-layer check and pathway position; (2) model choice (BACOE, conditional PMO-hosted, or lighter intervention) with rationale tied to the six preconditions; (3) a table of three workstreams (Position; Standard; People and proof) across days 1–30, 31–60, 61–90; (4) a day-90 decision gate with the specific ask and the evidence I will have; (5) risks and asks. Keep it to one page plus the table. Do not add activities I have not supported with an output — list them as gaps instead. Outputs: [paste].",
     "quiz": [
      {
       "q": "Which makes the best pilot for demonstrating Mechanism 1?",
@@ -2006,7 +2060,7 @@
      "Is your pilot genuinely pre-funding?",
      "What is the one sentence your sponsor must remember?"
     ],
-    "answerKey": "**Worked example plan (illustrative).** 1 Starting point: Leverage 1, Value reporting 1. 2 Model: lighter intervention — Community of Practice with two senior anchors plus one embedded senior BA (three unmet preconditions). 3 Workstreams: Position — senior BA placed on fraud-detection rules modernisation before investment committee (day 20); Vision signed (day 50); Investment Quality review held (day 80). Standard — Gate 1 and AI guardrail standard (day 30); Gate 2 and prompt library (day 60); boundaries meeting with PMO (day 75). People and proof — baselines and pairings (day 30); Community of Practice launch (day 45); 90-day value report (day 90). 4 Gate: “Make senior BA placement before investment committee the default for Silver/Gold claims initiatives.” Evidence: the pilot's reshape recommendation and leading indicators. 5 Risks: benefits ownership still unassigned; ask the Head of Claims to accept benefits ownership for the pilot.",
+    "answerKey": "**Worked example plan (illustrative).** 1 Starting point: Layer 1 No, Layer 2 Partly, Layer 3 No. 2 Model: lighter intervention — Community of Practice with two senior anchors plus one embedded senior BA (three unmet preconditions). 3 Workstreams: Position — senior BA placed on fraud-detection rules modernisation before investment committee (day 20); Vision signed (day 50); Investment Quality review held (day 80). Standard — Gate 1 with the A.1 template and practice rules for assistant-run playbooks (day 30); Gate 2 and the Silver template set (day 60); boundaries meeting with PMO (day 75). People and proof — baselines and pairings (day 30); Community of Practice launch (day 45); 90-day value report (day 90). 4 Gate: “Make senior BA placement before investment committee the default for Silver/Gold claims initiatives.” Evidence: the pilot's reshape recommendation and leading indicators. 5 Risks: benefits ownership still unassigned; ask the Head of Claims to accept benefits ownership for the pilot.",
     "materials": [
      "Plan template",
      "Workstream table",
@@ -2018,27 +2072,27 @@
   {
    "id": "d2-s6",
    "num": "2.5",
-   "title": "Pitch your plan, feedback and course close",
-   "subtitle": "Three minutes to win a sponsor — then commit to Monday",
+   "title": "Pitch your business case, feedback and course close",
+   "subtitle": "Five parts, five minutes — then commit to Monday",
    "dayId": "d2",
    "time": "16:15–17:00",
    "minutes": 45,
    "participant": {
-    "bigIdea": "A plan you can't pitch in three minutes is a plan your sponsor won't fund.",
-    "overview": "You pitch your 90-day plan to a small group playing your sponsor. Each pitch is three minutes, followed by structured feedback. We then close the course with your Monday commitment and the resources to keep going.",
+    "bigIdea": "A business case longer than it needs to be is usually hiding a weak recommendation behind volume.",
+    "overview": "You pitch your plan as the book's **five-part executive business case** — the format an executive sponsor takes to the board — to a small group playing your sponsor. Each pitch is five minutes, followed by structured feedback. We then close the course with your Monday commitment and the playbooks to keep going.",
     "objectives": [
-     "Pitch a 90-day plan in three minutes using found / costs / test / need",
-     "Give and receive structured feedback on a peer's plan",
+     "Pitch a plan in the book's five-part executive business case format",
+     "Give and receive structured feedback on a peer's case",
      "Commit to one action you will take on Monday"
     ],
     "keyPoints": [
      {
-      "title": "Three minutes",
-      "body": "Found, costs, test, need — the same structure as your Day 1 sponsor message, now with a plan behind it."
+      "title": "Five parts",
+      "body": "Problem · Proposed Investment · Expected Return · Risks and Failure Conditions · Recommendation."
      },
      {
-      "title": "Feedback in three lines",
-      "body": "What will land; what the sponsor will challenge; what to cut."
+      "title": "Short is strong",
+      "body": "Four to six pages on paper; five minutes out loud. Volume hides weak recommendations."
      },
      {
       "title": "Monday matters",
@@ -2047,8 +2101,8 @@
     ],
     "sections": [
      {
-      "heading": "The pitch structure",
-      "body": "**Found** (30 seconds) — one evidenced fact about your practice. **Costs** (45 seconds) — what that costs in the sponsor's terms: delay, rework, unrealised benefits, risk. **Test** (60 seconds) — your pilot and the 90-day workstreams in one sentence each. **Need** (45 seconds) — the specific decision and the date.\n\nThe worked-example pitch opens: “Our BAs joined *Faster claim settlement* after it was funded — and the biggest leak, an assessor-report wait of up to 8.7 days on claims that didn't need an assessor, was only found in delivery. Imagine finding that before the business case.”"
+      "heading": "The pitch structure — the five-part executive business case",
+      "body": "| Part | What the book asks for | Pitch time |\n|---|---|---|\n| 1 · Problem | The cost of the current state: change spend lost to poor investment decisions, rework and unrealised benefits — your own data where possible | 60 s |\n| 2 · Proposed Investment | Structure, staffing and cost over three years, including year-one setup and steady state — or the lighter intervention and its cost | 45 s |\n| 3 · Expected Return | The three mechanisms, the conservative annual value, the net return, and the preconditions it depends on | 75 s |\n| 4 · Risks and Failure Conditions | When it will fail, and the mitigations the sponsor commits to | 45 s |\n| 5 · Recommendation | The decision, the funding, the reporting line, the sponsor, the launch date and the first review point | 45 s |\n\nYou wrote Part 1 at the end of Day 1, and your scorecard gives you Part 3. For a 90-day Readiness plan, the Recommendation is usually the day-90 gate: the decision you want, and the evidence that will justify it.\n\nThe worked-example pitch opens with the Problem: “Our BAs joined *Faster claim settlement* after it was funded — and the biggest leak, an assessor-report wait of up to 8.7 days, was only found in delivery. Imagine finding that before the business case.”"
      },
      {
       "heading": "Giving useful feedback",
@@ -2056,7 +2110,7 @@
      },
      {
       "heading": "After the course",
-      "body": "Your saved outputs remain in this portal. Run the relevant playbooks with your agent as you implement: the Readiness Diagnostic before any business case, the Tier Classifier at intake, the Value Reporting Generator each quarter. Revisit your maturity check at day 90 and compare."
+      "body": "Your saved outputs remain in this portal, and the book's templates are in Downloads. Run the playbooks as you implement: the Readiness Diagnostic before any business case, the Business Case Builder to turn today's pitch into the full document, the Tier Classifier at intake, and the Value Reporting Generator each quarter. Repeat your three-layer check at day 90 and compare."
      }
     ],
     "activities": [
@@ -2064,7 +2118,7 @@
       "id": "d2-s6-act1",
       "title": "Pitch and feedback",
       "minutes": 25,
-      "instructions": "In groups of three, each person pitches for three minutes while the others play the sponsor. After each pitch, the listeners give three lines of feedback. Record the feedback you received and your revised opening line.",
+      "instructions": "In groups of three, each person pitches their five-part business case in five minutes while the others play the sponsor. After each pitch, the listeners give three lines of feedback: what will land, what the sponsor will challenge first, what to cut. Record the feedback you received and your revised Recommendation.",
       "prompts": [
        {
         "id": "feedback",
@@ -2072,7 +2126,7 @@
        },
        {
         "id": "opening",
-        "label": "My revised opening line"
+        "label": "My revised Recommendation — decision, funding, reporting line, date, review point"
        }
       ]
      },
@@ -2089,55 +2143,55 @@
       ]
      }
     ],
-    "aiPrompt": "Here is my 90-day BA practice plan [paste]. Play my executive sponsor — a busy senior leader focused on budget, risk and delivery dates. First, ask me the three hardest questions you would ask after a three-minute pitch. Then step out of role and give me three lines of feedback: what will land, what you would challenge first, and what I should cut. Finally, suggest a sharper 30-second opening based on the strongest evidence in my plan.",
+    "aiPrompt": "Here is my 90-day BA practice plan and my Day 1 Problem statement [paste]. Assemble a five-part executive business case in the format of the Business Analyst Practice Leadership Model: 1 Problem, 2 Proposed Investment, 3 Expected Return (three mechanisms, conservative annual value, net return, preconditions it depends on), 4 Risks and Failure Conditions with mitigations, 5 Recommendation (decision, funding, reporting line, sponsor, launch date, first review point). Use only figures I have given you and mark any gap as [needs data]. Then play my executive sponsor: ask the three hardest questions you would ask after a five-minute pitch, and give three lines of feedback — what will land, what you would challenge first, and what I should cut.",
     "quiz": [
      {
-      "q": "What are the four parts of the pitch?",
+      "q": "What are the five parts of the executive business case?",
       "opts": [
-       "Problem, solution, cost, timeline",
-       "Found, costs, test, need",
-       "Vision, scope, tier, gates",
-       "Why, what, how, when"
+       "Vision, scope, tier, gates, benefits",
+       "Problem, Proposed Investment, Expected Return, Risks and Failure Conditions, Recommendation",
+       "Found, costs, test, need, ask",
+       "Why, what, how, when, who"
       ],
       "a": 1,
-      "why": "The same structure as the Day 1 sponsor message — now backed by a plan."
+      "why": "The Chapter 3 format the sponsor takes to the board."
      },
      {
-      "q": "Which is the best 'need'?",
+      "q": "Which is the strongest Recommendation?",
       "opts": [
-       "Your ongoing support",
-       "A senior BA invited to the 12 March investment committee",
-       "More resources for BA",
+       "Continued support for the BA team",
+       "Approve two embedded senior BAs on the next two claims initiatives from 1 March, reporting to the CFO, reviewed at day 90",
+       "More resources for business analysis",
        "Recognition of the BA team's work"
       ],
       "a": 1,
-      "why": "Specific, dated and within the sponsor's authority."
+      "why": "It states the decision, funding, reporting line, date and first review point."
      }
     ],
     "takeaways": [
-     "Three minutes, four parts, one ask",
-     "Use feedback to sharpen the opening",
-     "Take one action on Monday"
+     "Five parts, one clear recommendation",
+     "Use feedback to sharpen the Recommendation",
+     "Run the Business Case Builder playbook next — then take one action on Monday"
     ]
    },
    "presenter": {
     "purpose": "Have every participant pitch their plan, receive structured feedback, commit to a first action, and close the course.",
-    "openingLine": "“Your sponsor won't read your plan. They'll listen to three minutes of it. Let's make those three minutes count.”",
+    "openingLine": "“Your sponsor won't read your plan. They'll take five parts of it to the board. Let's make those five parts count.”",
     "beats": [
      {
       "label": "Pitch format and groups",
       "minutes": 4,
-      "notes": "Show the four-part structure and the three-line feedback card; move to breakout trios."
+      "notes": "Show the five-part table and the three-line feedback card; move to breakout trios."
      },
      {
       "label": "Pitch and feedback (activity 1)",
       "minutes": 25,
-      "notes": "Three rounds of about eight minutes: three-minute pitch, two minutes of sponsor questions, three lines of feedback. Broadcast time checks."
+      "notes": "Three rounds of about eight minutes: five-minute pitch, one minute of sponsor questions, three lines of feedback. Broadcast time checks."
      },
      {
-      "label": "Plenary — two best openings",
+      "label": "Plenary — two best Recommendations",
       "minutes": 5,
-      "notes": "Ask each trio to nominate one opening line; read two aloud."
+      "notes": "Ask each trio to nominate one Recommendation; read two aloud and check them against the five elements."
      },
      {
       "label": "Monday commitment (activity 2)",
@@ -2155,7 +2209,7 @@
      "persona": "The Distracted Sponsor",
      "line": "“Sorry — can you give me the short version?”",
      "curveball": "Interrupts after 45 seconds to ask what it costs.",
-     "move": "Go straight to the need: the specific decision, the date and the cost of not deciding — then fill in the evidence if asked."
+     "move": "Go straight to Part 5, the Recommendation: the decision, the date and the cost of not deciding — then fill in the evidence if asked."
     },
     "whatGood": "Every participant pitches within three minutes with a specific, dated ask, receives three lines of feedback and records a Monday action with evidence of completion.",
     "commonFailure": "Pitches run long on methodology — and the fix is a visible three-minute timer and a sponsor who interrupts at 90 seconds.",
@@ -2166,9 +2220,10 @@
     ],
     "answerKey": "**Model pitch (worked example).** Found: “Our BAs joined *Faster claim settlement* after funding; the assessor-report wait — up to 8.7 days — was only found in delivery.” Costs: “That one finding is worth about $1.1m a year in assessor fees and duplicated contact demand; finding it before funding would have shaped the business case.” Test: “For 90 days, one senior BA joins the fraud-detection rules modernisation initiative before investment committee, with a signed Vision and a value report at day 90.” Need: “I need you to invite them to the next investment committee and to own the benefits for that pilot.”\n\n**Model Monday action:** “Email the Head of Claims proposing the pilot and requesting a 20-minute meeting this week; done when the meeting is in the calendar.”",
     "materials": [
-     "Pitch structure slide",
+     "Five-part business case slide",
      "Feedback card",
      "Breakout timer",
+     "BACOE Business Case Builder playbook",
      "Course evaluation link",
      "Resources list"
     ]
@@ -2177,8 +2232,392 @@
  ],
  "resources": [
   {
-   "title": "Business Analyst Practice Leadership Model (book)",
-   "description": "The source text for this course: value theory, the delivery model and the BACOE, by Chale Dodge.",
+   "title": "Business Analyst Practice Leadership Model — Volume 1 (book)",
+   "description": "The source text for this course: Chapter 1 value theory, Chapter 2 delivery model, Chapter 3 BACOE, the twelve playbooks and the Part III Visual Library. Business Analyst Services, 2026.",
+   "audience": "participant"
+  },
+  {
+   "title": "All templates and figures (PDF)",
+   "description": "The chapter figures plus all 26 Part III templates, each followed by its worked example.",
+   "href": "/files/ba-leadership/BA_Practice_Leadership_Templates_and_Figures.pdf",
+   "audience": "participant"
+  },
+  {
+   "title": "Visual Library — Foundations",
+   "description": "A.1 Project Vision and A.2 As-Is/To-Be Analysis: templates and worked examples.",
+   "href": "/files/ba-leadership/Visual_Library_A_Foundations.pdf",
+   "audience": "participant"
+  },
+  {
+   "title": "Visual Library — Bronze tier",
+   "description": "B.1–B.4: Project Brief, Requirements Summary, Configuration Guide, Handover Package.",
+   "href": "/files/ba-leadership/Visual_Library_B_Bronze.pdf",
+   "audience": "participant"
+  },
+  {
+   "title": "Visual Library — Silver tier",
+   "description": "C.1–C.8: Business Case through Training and Benefits Tracking.",
+   "href": "/files/ba-leadership/Visual_Library_C_Silver.pdf",
+   "audience": "participant"
+  },
+  {
+   "title": "Visual Library — Gold tier",
+   "description": "D.1–D.12: Strategic Business Case through Benefits and Risk Management.",
+   "href": "/files/ba-leadership/Visual_Library_D_Gold.pdf",
+   "audience": "participant"
+  },
+  {
+   "title": "Figure 1.1 — Where the BA Operates Determines the Return",
+   "description": "Book figure.",
+   "href": "/files/ba-leadership/Fig_1-1_Where_the_BA_Operates.png",
+   "audience": "participant"
+  },
+  {
+   "title": "Figure 2.1 — BA Deliverables by Project Type",
+   "description": "Book figure.",
+   "href": "/files/ba-leadership/Fig_2-1_BA_Deliverables_by_Project_Type.png",
+   "audience": "participant"
+  },
+  {
+   "title": "Figure 2.2 — Delivery Tiers at a Glance",
+   "description": "Book figure.",
+   "href": "/files/ba-leadership/Fig_2-2_Delivery_Tiers_at_a_Glance.png",
+   "audience": "participant"
+  },
+  {
+   "title": "Figure 3.1 — The BACOE Phased Implementation Pathway",
+   "description": "Book figure.",
+   "href": "/files/ba-leadership/Fig_3-1_BACOE_Phased_Pathway.png",
+   "audience": "participant"
+  },
+  {
+   "title": "Figure 3.2 — The BA Role Family (extended)",
+   "description": "Book figure.",
+   "href": "/files/ba-leadership/Fig_3-2_BA_Role_Family.png",
+   "audience": "participant"
+  },
+  {
+   "title": "Figure 3.4 — What a BACOE Costs",
+   "description": "Book figure.",
+   "href": "/files/ba-leadership/Fig_3-4_What_a_BACOE_Costs.png",
+   "audience": "participant"
+  },
+  {
+   "title": "Figure P2.1 — Companion Playbooks Library",
+   "description": "Book figure.",
+   "href": "/files/ba-leadership/Fig_P2-1_Companion_Playbooks_Library.png",
+   "audience": "participant"
+  },
+  {
+   "title": "A.1 Project Vision — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/A1_Project_Vision_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "A.1 Project Vision — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/A1_Project_Vision_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "A.2 As-Is To-Be Analysis — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/A2_As-Is_To-Be_Analysis_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "A.2 As-Is To-Be Analysis — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/A2_As-Is_To-Be_Analysis_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "B.1 Project Brief — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/B1_Project_Brief_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "B.1 Project Brief — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/B1_Project_Brief_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "B.2 Requirements Summary — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/B2_Requirements_Summary_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "B.2 Requirements Summary — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/B2_Requirements_Summary_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "B.3 Configuration Guide — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/B3_Configuration_Guide_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "B.3 Configuration Guide — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/B3_Configuration_Guide_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "B.4 Handover Package — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/B4_Handover_Package_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "B.4 Handover Package — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/B4_Handover_Package_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.1 Business Case — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/C1_Business_Case_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.1 Business Case — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/C1_Business_Case_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.2 Stakeholder Analysis — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/C2_Stakeholder_Analysis_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.2 Stakeholder Analysis — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/C2_Stakeholder_Analysis_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.3 Requirements Specification — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/C3_Requirements_Specification_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.3 Requirements Specification — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/C3_Requirements_Specification_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.4 As-Is and To-Be Process Models — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/C4_As-Is_and_To-Be_Process_Models_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.4 As-Is and To-Be Process Models — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/C4_As-Is_and_To-Be_Process_Models_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.5 Solution Design — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/C5_Solution_Design_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.5 Solution Design — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/C5_Solution_Design_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.6 Data Contracts — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/C6_Data_Contracts_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.6 Data Contracts — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/C6_Data_Contracts_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.7 Test Plan — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/C7_Test_Plan_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.7 Test Plan — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/C7_Test_Plan_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.8 Training and Benefits Tracking — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/C8_Training_and_Benefits_Tracking_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "C.8 Training and Benefits Tracking — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/C8_Training_and_Benefits_Tracking_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.1 Strategic Business Case — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/D1_Strategic_Business_Case_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.1 Strategic Business Case — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/D1_Strategic_Business_Case_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.2 Enterprise Stakeholder Plan — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/D2_Enterprise_Stakeholder_Plan_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.2 Enterprise Stakeholder Plan — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/D2_Enterprise_Stakeholder_Plan_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.3 Enterprise As-Is — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/D3_Enterprise_As-Is_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.3 Enterprise As-Is — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/D3_Enterprise_As-Is_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.4 Enterprise To-Be — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/D4_Enterprise_To-Be_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.4 Enterprise To-Be — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/D4_Enterprise_To-Be_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.5 Enterprise Requirements — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/D5_Enterprise_Requirements_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.5 Enterprise Requirements — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/D5_Enterprise_Requirements_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.6 Solution Architecture — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/D6_Solution_Architecture_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.6 Solution Architecture — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/D6_Solution_Architecture_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.7 Data Strategy and Governance — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/D7_Data_Strategy_and_Governance_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.7 Data Strategy and Governance — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/D7_Data_Strategy_and_Governance_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.8 Implementation Roadmap — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/D8_Implementation_Roadmap_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.8 Implementation Roadmap — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/D8_Implementation_Roadmap_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.9 Quality Assurance Framework — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/D9_Quality_Assurance_Framework_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.9 Quality Assurance Framework — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/D9_Quality_Assurance_Framework_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.10 Change Management Plan — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/D10_Change_Management_Plan_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.10 Change Management Plan — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/D10_Change_Management_Plan_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.11 Operations Handbook — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/D11_Operations_Handbook_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.11 Operations Handbook — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/D11_Operations_Handbook_Worked_Example.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.12 Benefits and Risk Management — template",
+   "description": "Part III template.",
+   "href": "/files/ba-leadership/D12_Benefits_and_Risk_Management_Template.png",
+   "audience": "participant"
+  },
+  {
+   "title": "D.12 Benefits and Risk Management — worked example",
+   "description": "Part III worked example.",
+   "href": "/files/ba-leadership/D12_Benefits_and_Risk_Management_Worked_Example.png",
    "audience": "participant"
   },
   {
@@ -2198,7 +2637,7 @@
   },
   {
    "title": "Tier Classifier",
-   "description": "Playbook: five-factor test producing a defensible Bronze / Silver / Gold recommendation.",
+   "description": "Playbook: five-factor test (Cost, Risk, Reach, Reversibility, Strategic visibility) producing a defensible Bronze / Silver / Gold recommendation.",
    "audience": "participant"
   },
   {
@@ -2232,11 +2671,6 @@
    "audience": "participant"
   },
   {
-   "title": "Practice templates pack",
-   "description": "One-page Project Vision, maturity check, AI guardrail standard, quality gates, capability plan, scorecard and 90-day plan templates.",
-   "audience": "participant"
-  },
-  {
    "title": "Facilitator run sheet",
    "description": "Minute-by-minute timings, beats and room management for both days.",
    "audience": "presenter"
@@ -2252,9 +2686,9 @@
    "audience": "presenter"
   },
   {
-   "title": "AI demo artefact with planted errors",
-   "description": "Agent-drafted pain-point inventory with three planted errors for the guardrails module.",
-   "audience": "presenter"
+   "title": "Course worksheets",
+   "description": "Three-layer check, Visual Library coverage map, practice rules for assistant-run playbooks, capability plan, scorecard, 90-day plan and five-part business case — saved in each module.",
+   "audience": "participant"
   }
  ]
 }
