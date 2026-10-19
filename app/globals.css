@@ -432,7 +432,7 @@ a.agrow:hover{background:var(--light)}
 
 /* ===== Session page: hero, tabs, visual content ===== */
 :root{--amber:#d97706;--amberbg:#fff7e6;--violet:#6d4fc2;--violetbg:#f3efff;--rose:#c2416b;--rosebg:#fff0f4}
-.shero{position:relative;display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:start;background:linear-gradient(125deg,var(--navy) 0%,var(--navy2) 50%,var(--tealdk) 120%);color:#fff;border-radius:20px;padding:26px 28px;margin:4px 0 18px;overflow:visible}
+.shero{position:relative;display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:start;background:linear-gradient(125deg,var(--navy) 0%,var(--navy2) 50%,var(--tealdk) 120%);color:#fff;border-radius:20px;padding:26px 28px;margin:4px 0 18px;overflow:visible;z-index:40}
 .shero::after{content:"";position:absolute;inset:0;border-radius:20px;pointer-events:none;background:radial-gradient(circle at 92% -10%,#23a6bc55 0,transparent 45%),radial-gradient(circle at 0% 120%,#23a6bc33 0,transparent 40%)}
 .shero.pres{background:linear-gradient(125deg,#2a1d4f 0%,#3d2c74 50%,var(--violet) 130%)}
 .shnum{position:relative;z-index:1;width:92px;height:92px;border-radius:22px;background:#ffffff14;border:1px solid #ffffff2e;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:40px;font-weight:700;line-height:1}
@@ -450,7 +450,7 @@ a.agrow:hover{background:var(--light)}
 .viewdrop summary::-webkit-details-marker{display:none}
 .viewdrop .car{font-size:8px;opacity:.6}
 .viewdrop[open] .car{transform:rotate(180deg)}
-.vdpanel{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 30px #0f1e3f2e;padding:8px;width:340px;color:var(--ink)}
+.vdpanel{position:absolute;z-index:45;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 30px #0f1e3f2e;padding:8px;width:340px;color:var(--ink)}
 .vdpanel .cbitem{grid-template-columns:28px 1fr 0}
 
 .tabbar{position:sticky;top:110px;z-index:30;display:flex;gap:4px;overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:16px;padding:5px;margin-bottom:18px;box-shadow:0 4px 14px #14283f0f}
