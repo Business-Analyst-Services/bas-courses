@@ -4,9 +4,12 @@ import { usePathname } from "next/navigation";
 
 const TABS = [
   { href: "/admin", label: "Dashboard" },
+  { href: "/admin/programs", label: "Programs" },
+  { href: "/admin/intakes", label: "Intakes" },
   { href: "/admin/courses", label: "Courses" },
   { href: "/admin/cohorts", label: "Cohorts" },
   { href: "/admin/enrolments", label: "Enrolments" },
+  { href: "/admin/clients", label: "Clients" },
   { href: "/admin/feedback", label: "Feedback" },
   { href: "/admin/reports", label: "Reports" },
 ];

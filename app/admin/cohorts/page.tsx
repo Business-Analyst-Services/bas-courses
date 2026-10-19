@@ -2,9 +2,12 @@ import { getAllCourses } from "@/lib/courses";
 import { getCohortStats } from "@/lib/admin";
 import { CohortTable } from "@/components/AdminBits";
 import CohortForm from "@/components/CohortForm";
+import BulkCohorts from "@/components/BulkCohorts";
+import { getClients } from "@/lib/programs";
 
-export default async function AdminCohorts({ searchParams }: { searchParams: Promise<{ course?: string }> }) {
-  const { course } = await searchParams;
+export default async function AdminCohorts({ searchParams }: { searchParams: Promise<{ course?: string; created?: string }> }) {
+  const { course, created } = await searchParams;
+  const clients = await getClients();
   const courses = await getAllCourses();
   const titles = Object.fromEntries(courses.map((c) => [c.slug, c.shortTitle]));
   const all = await getCohortStats(Object.fromEntries(courses.map((c) => [c.slug, c.modules.length])));
@@ -18,6 +21,8 @@ export default async function AdminCohorts({ searchParams }: { searchParams: Pro
       <div className="kicker">Admin</div>
       <h1 className="pagetitle">Cohorts</h1>
       <p className="lead">Each delivery of a course is a cohort, with its own dates, capacity, presenter, enrolments and attendance.</p>
+      {created && <div className="okband">✓ Created {created} cohorts.</div>}
+      <BulkCohorts courses={courses} clients={clients} />
       <form className="filters">
         <select name="course" defaultValue={course ?? ""}><option value="">All courses</option>{courses.map((c) => <option key={c.slug} value={c.slug}>{c.shortTitle}</option>)}</select>
         <button className="btn ghost" style={{ padding: "7px 14px" }}>Filter</button>
@@ -27,7 +32,7 @@ export default async function AdminCohorts({ searchParams }: { searchParams: Pro
         if (l === "cancelled" && !r.length) return null;
         return <section key={l}><h2 className="sec">{h} <span style={{ color: "var(--grey)", fontWeight: 400 }}>({r.length})</span></h2><CohortTable rows={l === "delivered" ? [...r].reverse() : r} titles={titles} empty={e} /></section>;
       })}
-      <h2 className="sec">Add a cohort</h2>
+      <h2 className="sec">Add a single cohort</h2>
       <CohortForm courses={courses} />
     </>
   );

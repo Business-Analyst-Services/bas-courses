@@ -20,9 +20,14 @@ Each person is enrolled per course as a **participant** or a **presenter**.
 - **Feedback:** each course has a 10-question feedback form (`feedback` in the course JSON: 7 ratings, 1 likelihood-to-recommend, 2 open questions). Participants only ever see their own answers; presenters see anonymised results.
 - **Admins** (emails in `ADMIN_EMAILS`): presenter access to every course, plus `/admin`:
   - **Dashboard:** running, upcoming, forecast and delivered cohorts, seat fill, attendance, completion, quiz averages, booked revenue.
+  - **Programs:** bundle courses in order (the Horizon Series is created automatically). Typing course titles that don't exist yet creates them as hidden drafts. Participants get a program home page at `/p/<slug>`.
+  - **Intakes:** plan one or many runs of a program at once (start date, gap between courses, repeat every N weeks). A cohort is created for every course automatically. Enrolling someone into an intake places them in every cohort, and capacity counts people across the intake.
+  - **Clients:** group intakes and cohorts by organisation. A client is created automatically when you type a new name.
   - **Courses:** status (published, hidden or archived), per-course menu toggles (outline, resources, AI prompts, quizzes, roster, catalogue), hide individual sessions, title and tagline overrides, sort order. Add courses by importing JSON (validated), downloading the template, exporting or duplicating an existing course.
-  - **Cohorts:** dates, capacity, forecast seats, price, delivery and lead presenter. Status is worked out from the dates. Each cohort has a roster, waitlist and attendance grid.
-  - **Enrolments:** bulk enrol into a cohort (over capacity goes to the waitlist) or straight into a course; filter, give a waitlisted person a seat, remove.
+  - **Cohorts:** bulk-create cohorts for several courses on a repeating cadence, or add them one at a time.
+  - **Cohort details:** dates, capacity, forecast seats, price, delivery and lead presenter. Status is worked out from the dates. Each cohort has a roster, waitlist and attendance grid.
+  - **Enrolments:** paste a list, one person per line: `email[, presenter][, intake/cohort/course]`.
+  - **Enrolment management:** bulk enrol into a cohort (over capacity goes to the waitlist) or straight into a course; filter, give a waitlisted person a seat, remove.
   - **Reports:** by course and by cohort, with a date range; CSV exports for cohorts, enrolments, attendance, completion and quiz answers.
 - **Presenters** mark attendance per cohort and session on the course Roster page.
 

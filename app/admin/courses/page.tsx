@@ -2,9 +2,11 @@ import Link from "next/link";
 import { getAllCourses } from "@/lib/courses";
 import { ensureSchema, sql } from "@/lib/db";
 import { duplicateCourse } from "@/lib/admin-actions";
+import { createDraftCourses } from "@/lib/program-actions";
 import ImportCourse from "@/components/ImportCourse";
 
-export default async function AdminCourses() {
+export default async function AdminCourses({ searchParams }: { searchParams: Promise<{ created?: string }> }) {
+  const { created } = await searchParams;
   const courses = await getAllCourses();
   await ensureSchema();
   const counts = (await sql`SELECT course_slug, count(*) FILTER (WHERE role='participant' AND status='active')::int AS p, count(*) FILTER (WHERE role='presenter')::int AS t FROM enrolments GROUP BY course_slug`) as { course_slug: string; p: number; t: number }[];
@@ -47,6 +49,13 @@ export default async function AdminCourses() {
           <div className="btnrow2"><span style={{ fontSize: 12.5, color: "var(--grey)" }}>Export from each course&apos;s Settings page.</span></div></div>
         <div className="card"><span className="stepchip">3</span><h3>Import, review, publish</h3><p>Import as hidden, review it as a presenter, then switch its status to Published.</p></div>
       </div>
+      {created && <div className="okband">✓ Created {created} draft course(s). They&apos;re hidden until you publish them.</div>}
+      <form action={createDraftCourses} className="panel">
+        <h3>Create draft courses in bulk</h3>
+        <p style={{ fontSize: 13.5, color: "var(--grey)", marginBottom: 10 }}>One title per line. Each becomes a hidden one-session draft you can fill in by exporting, editing and re-importing, or by asking Claude to write the content.</p>
+        <div className="fld"><textarea name="titles" rows={3} required placeholder={"Stakeholder Influence Masterclass\nBA Coaching Clinic\nProcess Mining Fundamentals"} /></div>
+        <div className="btnrow2"><button className="btn">Create drafts</button></div>
+      </form>
       <ImportCourse />
       <form action={duplicateCourse} className="panel">
         <h3>Duplicate a course as a hidden draft</h3>

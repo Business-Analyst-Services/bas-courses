@@ -123,6 +123,45 @@ CREATE TABLE IF NOT EXISTS cohort_reviews (
   generated_by TEXT,
   summary      JSONB
 );
+CREATE TABLE IF NOT EXISTS clients (
+  id            SERIAL PRIMARY KEY,
+  name          TEXT NOT NULL UNIQUE,
+  contact_email TEXT,
+  notes         TEXT,
+  created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE TABLE IF NOT EXISTS programs (
+  slug         TEXT PRIMARY KEY,
+  title        TEXT NOT NULL,
+  short_title  TEXT,
+  description  TEXT,
+  course_slugs TEXT[] NOT NULL DEFAULT '{}',
+  gap_days     INT NOT NULL DEFAULT 7,
+  status       TEXT NOT NULL DEFAULT 'published',
+  price        NUMERIC(10,2),
+  created_at   TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE TABLE IF NOT EXISTS intakes (
+  id              SERIAL PRIMARY KEY,
+  program_slug    TEXT NOT NULL,
+  client_id       INT,
+  name            TEXT NOT NULL,
+  status          TEXT NOT NULL DEFAULT 'scheduled',
+  start_date      DATE,
+  capacity        INT NOT NULL DEFAULT 20,
+  forecast_seats  INT NOT NULL DEFAULT 0,
+  price           NUMERIC(10,2),
+  delivery        TEXT,
+  presenter_email TEXT,
+  notes           TEXT,
+  created_at      TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+ALTER TABLE cohorts ADD COLUMN IF NOT EXISTS intake_id INT;
+ALTER TABLE cohorts ADD COLUMN IF NOT EXISTS client_id INT;
+CREATE TABLE IF NOT EXISTS app_flags (
+  key        TEXT PRIMARY KEY,
+  set_at     TIMESTAMPTZ NOT NULL DEFAULT now()
+);
 `;
 
 let ready: Promise<void> | null = null;

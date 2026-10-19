@@ -2,12 +2,16 @@ import Link from "next/link";
 import { getAllCourses } from "@/lib/courses";
 import { getCohortStats, pct, todaySydney } from "@/lib/admin";
 import { sql } from "@/lib/db";
-import { CohortTable, Tile } from "@/components/AdminBits";
+import { CohortTable, Tile, LifePill } from "@/components/AdminBits";
+import { getPrograms, getIntakeStats } from "@/lib/programs";
+import { fmtDate } from "@/lib/admin";
 
 export default async function AdminDashboard() {
   const courses = await getAllCourses();
   const titles = Object.fromEntries(courses.map((c) => [c.slug, c.shortTitle]));
   const cohorts = await getCohortStats(Object.fromEntries(courses.map((c) => [c.slug, c.modules.length])));
+  const [programs, intakes] = await Promise.all([getPrograms(), getIntakeStats(cohorts)]);
+  const openIntakes = intakes.filter((i) => ["running", "upcoming", "forecast"].includes(i.lifecycle));
   const by = (l: string) => cohorts.filter((c) => c.lifecycle === l);
   const running = by("running"), upcoming = by("upcoming"), forecast = by("forecast");
   const yearAgo = new Date(Date.now() - 365 * 864e5).toISOString().slice(0, 10);
@@ -41,6 +45,18 @@ export default async function AdminDashboard() {
       {cohorts.length === 0 && (
         <div className="notice">No cohorts yet. <Link href="/admin/cohorts" style={{ color: "var(--tealdk)", fontWeight: 600 }}>Create your first cohort →</Link></div>
       )}
+      <h2 className="sec">Program intakes: running, upcoming and forecast</h2>
+      <div className="tablewrap" style={{ marginBottom: 18 }}>
+        <table className="tbl">
+          <thead><tr><th>Intake</th><th>Program</th><th>Dates</th><th>Status</th><th>Seats</th><th>Cohorts</th></tr></thead>
+          <tbody>
+            {openIntakes.length === 0 && <tr><td colSpan={6} style={{ color: "var(--grey)" }}>No open intakes. <Link href="/admin/intakes" style={{ color: "var(--tealdk)" }}>Plan intakes →</Link></td></tr>}
+            {openIntakes.map((i) => (<tr key={i.id}><td><Link href={`/admin/intakes/${i.id}`} style={{ color: "var(--tealdk)", fontWeight: 600 }}>{i.name}</Link></td>
+              <td>{programs.find((p) => p.slug === i.program_slug)?.title ?? i.program_slug}</td><td style={{ whiteSpace: "nowrap" }}>{fmtDate(i.start_date)} – {fmtDate(i.endDate)}</td>
+              <td><LifePill l={i.lifecycle} /></td><td>{i.lifecycle === "forecast" ? `~${i.forecast_seats} fcst` : `${i.participants}/${i.capacity}`}</td><td>{i.cohorts.length}</td></tr>))}
+          </tbody>
+        </table>
+      </div>
       <h2 className="sec">Running now</h2>
       <CohortTable rows={running} titles={titles} empty="Nothing running today." />
       <h2 className="sec">Upcoming</h2>

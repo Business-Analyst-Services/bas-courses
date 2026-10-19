@@ -2,6 +2,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import { getViewer, getEnrolments } from "@/lib/access";
 import { getAllCourses } from "@/lib/courses";
+import { getPrograms } from "@/lib/programs";
 import { getProgress } from "@/lib/data";
 
 export const dynamic = "force-dynamic";
@@ -12,6 +13,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ d
   const enr = await getEnrolments(v);
   const courses = await getAllCourses();
   const mine = courses.filter((c) => enr[c.slug]);
+  const myPrograms = (await getPrograms()).filter((p) => (p.status !== "hidden" || v.isAdmin) && p.course_slugs.some((s) => enr[s]));
   const progress = Object.fromEntries(
     await Promise.all(mine.map(async (c) => [c.slug, (await getProgress(v.userId, c.slug)).size] as const)),
   );
@@ -33,6 +35,21 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ d
 
         {denied && <div className="notice">You&apos;re not enrolled in that course yet. Contact gday@business-analyst.services for access.</div>}
 
+        {myPrograms.length > 0 && (
+          <>
+            <h2 className="sec">My programs</h2>
+            <div className="coursegrid" style={{ marginBottom: 8 }}>
+              {myPrograms.map((p) => (
+                <Link key={p.slug} href={`/p/${p.slug}`} className="ccard" style={{ borderColor: "var(--teal)" }}>
+                  <div className="meta">Program · {p.course_slugs.length} courses</div>
+                  <h3>{p.title}</h3>
+                  <p>{p.course_slugs.map((s) => courses.find((c) => c.slug === s)?.shortTitle ?? s).join(" → ")}</p>
+                  <div className="foot"><span className="tealtag">Open program</span></div>
+                </Link>
+              ))}
+            </div>
+          </>
+        )}
         <h2 className="sec">My courses</h2>
         {mine.length === 0 ? (
           <div className="panel">

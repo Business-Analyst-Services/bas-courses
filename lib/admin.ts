@@ -6,6 +6,7 @@ export type CohortRow = {
   id: number; course_slug: string; name: string; status: string;
   start_date: string | null; end_date: string | null; capacity: number; forecast_seats: number;
   price: string | null; delivery: string | null; presenter_email: string | null; notes: string | null;
+  intake_id: number | null; client_id: number | null;
 };
 
 export type CohortStats = CohortRow & {
@@ -33,7 +34,7 @@ export function lifecycle(c: Pick<CohortRow, "status" | "start_date" | "end_date
 export async function getCohortStats(moduleCounts: Record<string, number>): Promise<CohortStats[]> {
   await ensureSchema();
   const [cohorts, counts, att, prog, quiz] = (await Promise.all([
-    sql`SELECT id, course_slug, name, status, start_date::text, end_date::text, capacity, forecast_seats, price::text, delivery, presenter_email, notes FROM cohorts ORDER BY start_date NULLS LAST, id`,
+    sql`SELECT id, course_slug, name, status, start_date::text, end_date::text, capacity, forecast_seats, price::text, delivery, presenter_email, notes, intake_id, client_id FROM cohorts ORDER BY start_date NULLS LAST, id`,
     sql`SELECT cohort_id,
           count(*) FILTER (WHERE role='participant' AND status='active')::int AS enrolled,
           count(*) FILTER (WHERE status='waitlist')::int AS waitlist,

@@ -1,13 +1,17 @@
 import { getAllCourses } from "@/lib/courses";
 import { ensureSchema, sql } from "@/lib/db";
-import { enrolPeople, removeEnrolment, setEnrolmentStatus } from "@/lib/admin-actions";
+import { removeEnrolment, setEnrolmentStatus } from "@/lib/admin-actions";
+import { getCohortStats } from "@/lib/admin";
+import { getPrograms, getIntakeStats } from "@/lib/programs";
+import { enrolTargets } from "@/lib/targets";
+import BulkEnrol from "@/components/BulkEnrol";
 
 export default async function AdminEnrolments({ searchParams }: { searchParams: Promise<{ course?: string; status?: string; q?: string }> }) {
   const { course, status, q } = await searchParams;
   const courses = await getAllCourses();
   await ensureSchema();
-  const cohorts = (await sql`SELECT id, course_slug, name, capacity, (SELECT count(*) FROM enrolments e WHERE e.cohort_id = c.id AND e.role='participant' AND e.status='active')::int AS n
-                             FROM cohorts c WHERE status <> 'cancelled' ORDER BY start_date NULLS LAST`) as { id: number; course_slug: string; name: string; capacity: number; n: number }[];
+  const cstats = await getCohortStats(Object.fromEntries(courses.map((c) => [c.slug, c.modules.length])));
+  const [programs, istats] = await Promise.all([getPrograms(), getIntakeStats(cstats)]);
   const rows = (await sql`
     SELECT e.email, e.course_slug, e.role, e.status, e.cohort_id, c.name AS cohort_name, e.created_at,
       (SELECT count(*) FROM progress p WHERE p.email = e.email AND p.course_slug = e.course_slug)::int AS done,
@@ -26,18 +30,9 @@ export default async function AdminEnrolments({ searchParams }: { searchParams: 
     <>
       <div className="kicker">Admin</div>
       <h1 className="pagetitle">Enrolments</h1>
-      <p className="lead">Enrol people into a cohort (recommended, so capacity and attendance are tracked) or straight into a course. They get access when they sign in with that email.</p>
-      <form action={enrolPeople} className="panel">
-        <div className="formgrid">
-          <div className="wide"><label>Emails (comma, space or new line separated; paste a column from a spreadsheet)</label><textarea name="emails" rows={3} required placeholder="jane@company.com&#10;sam@company.com" /></div>
-          <div><label>Cohort</label><select name="cohort_id" defaultValue=""><option value="">No cohort (course only)</option>
-            {cohorts.map((c) => <option key={c.id} value={c.id}>{title(c.course_slug)} · {c.name} ({c.n}/{c.capacity})</option>)}</select></div>
-          <div><label>Course (if no cohort)</label><select name="course">{courses.map((c) => <option key={c.slug} value={c.slug}>{c.shortTitle}</option>)}</select></div>
-          <div><label>Role</label><select name="role"><option value="participant">Participant</option><option value="presenter">Presenter</option></select></div>
-        </div>
-        <label className="check" style={{ marginTop: 10, maxWidth: 420 }}><input type="checkbox" name="override" /><span>Allow over capacity<small>Otherwise extra participants go on the cohort waitlist.</small></span></label>
-        <div className="btnrow2"><button className="btn">Enrol</button><a className="btn ghost" href="/admin/export/enrolments">⬇ Export CSV</a></div>
-      </form>
+      <p className="lead">Paste a list of people and enrol them into an intake (every course in the program), a single cohort, or a course. They get access when they sign in with that email.</p>
+      <BulkEnrol targets={enrolTargets(istats, cstats, courses, programs)} />
+      <div className="btnrow2" style={{ margin: "-6px 0 14px" }}><a className="btn ghost" href="/admin/export/enrolments">⬇ Export CSV</a></div>
 
       <form className="filters">
         <select name="course" defaultValue={course ?? ""}><option value="">All courses</option>{courses.map((c) => <option key={c.slug} value={c.slug}>{c.shortTitle}</option>)}</select>
