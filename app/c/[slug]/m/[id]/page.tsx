@@ -229,6 +229,8 @@ export default async function ModulePage({
                   </div>
                 </div>
                 {role === "presenter" && (
+                  <div className="shactions">
+                  <Link href={`/c/${slug}/m/${m.id}/present`} target="_blank" className="presentbtn">🖥️ Present slides</Link>
                   <details className="viewdrop">
                     <summary>{presenterView ? "🎤 Presenter view" : "👥 Participant view"} <span className="car">▼</span></summary>
                     <div className="vdpanel">
@@ -244,6 +246,7 @@ export default async function ModulePage({
                       </Link>
                     </div>
                   </details>
+                  </div>
                 )}
               </header>
               {isHidden && <div className="notice">This session is hidden from participants. Only presenters and admins can see it.</div>}

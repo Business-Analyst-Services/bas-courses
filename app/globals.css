@@ -632,3 +632,6 @@ a.agrow:hover{background:var(--light)}
 .blev,.bldet{font-size:13.5px;margin-top:8px;color:var(--ink)}.blev b,.bldet b{color:var(--navy)}
 
 .slide-content{font-size:clamp(14px,1.2vw,19px);justify-content:flex-start}.slide-content h1{font-size:clamp(24px,2.6vw,40px)}.slide-content .sbody .md img{max-height:40vh}
+.shactions{display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.presentbtn{background:var(--teal);color:#fff;font-weight:700;font-size:13px;padding:9px 14px;border-radius:99px;white-space:nowrap;box-shadow:0 4px 14px #0003}
+.presentbtn:hover{background:var(--tealdk)}

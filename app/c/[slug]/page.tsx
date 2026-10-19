@@ -38,6 +38,7 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
           {first && <Link className="btn" href={`/c/${slug}/m/${first.id}`}>Start / continue →</Link>}
           {(S.showOutline || isP) && <Link className="btn ghost" href={`/c/${slug}/outline`}>Full outline</Link>}
           {role === "presenter" && first && <Link className="btn ghost" href={`/c/${slug}/m/${first.id}?view=presenter`}>Presenter run sheet</Link>}
+          {role === "presenter" && first && <Link className="btn" href={`/c/${slug}/m/${first.id}/present`} target="_blank">🖥️ Present slides</Link>}
           {isP && S.showRoster && <Link className="btn ghost" href={`/c/${slug}/roster`}>Participant roster</Link>}
           <span className={`rolepill ${role}`}>You are a {role}</span>
         </div>
