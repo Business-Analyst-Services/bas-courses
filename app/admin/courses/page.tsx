@@ -19,7 +19,7 @@ export default async function AdminCourses({ searchParams }: { searchParams: Pro
       <p className="lead">Publish or hide courses, choose which menu items participants see, hide individual sessions, and add new courses.</p>
       <div className="tablewrap" style={{ marginBottom: 24 }}>
         <table className="tbl">
-          <thead><tr><th>Course</th><th>Status</th><th>Menu</th><th>Sessions</th><th>Cohorts</th><th>Participants</th><th>Source</th><th /></tr></thead>
+          <thead><tr><th>Course</th><th>Status</th><th>Menu</th><th>Sessions</th><th>Cohorts</th><th>Participants</th><th>Live version</th><th /></tr></thead>
           <tbody>
             {courses.map((c) => {
               const S = c.settings;
@@ -32,7 +32,7 @@ export default async function AdminCourses({ searchParams }: { searchParams: Pro
                   <td>{c.modules.length - S.hiddenModules.length}{S.hiddenModules.length > 0 && <span style={{ color: "var(--grey)" }}> (+{S.hiddenModules.length} hidden)</span>}</td>
                   <td>{cohorts.find((x) => x.course_slug === c.slug)?.n ?? 0}</td>
                   <td>{counts.find((x) => x.course_slug === c.slug)?.p ?? 0}</td>
-                  <td>{S.source === "imported" ? "Imported" : "Repo"}</td>
+                  <td>v{c.version.n}<div style={{ fontSize: 11.5, color: "var(--grey)" }}>{S.source === "imported" ? "Imported" : "Repo"}</div></td>
                   <td style={{ whiteSpace: "nowrap" }}><Link className="btn ghost" style={{ padding: "6px 12px", fontSize: 12.5 }} href={`/admin/courses/${c.slug}`}>Settings</Link></td>
                 </tr>
               );

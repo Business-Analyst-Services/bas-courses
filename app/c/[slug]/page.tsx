@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import CourseSidebar from "@/components/CourseSidebar";
+import VersionBanner from "@/components/VersionBanner";
 import { withSchedule } from "@/lib/schedule";
 import { requireCourseRole } from "@/lib/access";
 import { getProgress } from "@/lib/data";
@@ -22,6 +23,7 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
       <CourseSidebar course={course} schedule={schedule} here={`/c/${slug}`} done={done} role={role} />
         <div className="shell">
         <main className="main">
+        <VersionBanner course={course} role={role} />
         <section className="hero">
           <img className="hero-logo" src="/bas-logo.svg" alt="" />
           <div className="hk">{course.format.toUpperCase()}{course.series ? ` · ${course.series.toUpperCase()}` : ""}</div>

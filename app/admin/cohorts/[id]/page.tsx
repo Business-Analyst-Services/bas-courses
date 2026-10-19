@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllCourses } from "@/lib/courses";
+import { getAllCourses, versionOptions } from "@/lib/courses";
 import { sql } from "@/lib/db";
 import { fmtDate, getCohortStats, pct } from "@/lib/admin";
 import { Fill, LifePill, Tile } from "@/components/AdminBits";
@@ -14,6 +14,7 @@ export default async function CohortPage({ params }: { params: Promise<{ id: str
   const c = all.find((x) => x.id === id);
   if (!c) notFound();
   const course = courses.find((x) => x.slug === c.course_slug);
+  const vopts = (await versionOptions())[c.course_slug] ?? [];
   const people = (await sql`
     SELECT e.email, e.role, e.status, e.created_at,
       (SELECT count(*) FROM progress p WHERE p.email = e.email AND p.course_slug = e.course_slug)::int AS done
@@ -28,7 +29,7 @@ export default async function CohortPage({ params }: { params: Promise<{ id: str
     <>
       <div className="crumbs"><Link href="/admin/cohorts">Cohorts</Link><span>›</span><span>{c.name}</span></div>
       <h1 className="pagetitle">{c.name} <LifePill l={c.lifecycle} /></h1>
-      <p className="lead">{course?.title ?? c.course_slug} · {fmtDate(c.start_date)}{c.end_date && c.end_date !== c.start_date ? ` – ${fmtDate(c.end_date)}` : ""}{c.delivery ? ` · ${c.delivery}` : ""}</p>
+      <p className="lead">{course?.title ?? c.course_slug} · {fmtDate(c.start_date)}{c.end_date && c.end_date !== c.start_date ? ` – ${fmtDate(c.end_date)}` : ""}{c.delivery ? ` · ${c.delivery}` : ""} · content: {c.course_version == null ? `live (v${course?.version.n ?? 0})` : `pinned to v${c.course_version}`}</p>
       <div className="btnrow2" style={{ margin: "0 0 14px" }}>
         <Link className={`btn ${c.lifecycle === "delivered" ? "" : "ghost"}`} href={`/admin/feedback/review/${id}`}>{c.lifecycle === "delivered" ? "Review feedback & improvement backlog →" : "Feedback & backlog"}</Link>
       </div>
@@ -97,7 +98,7 @@ export default async function CohortPage({ params }: { params: Promise<{ id: str
         </table>
       </div>
 
-      <CohortForm courses={courses} c={c} />
+      <CohortForm courses={courses} c={c} versions={vopts} />
       <form action={deleteCohort} className="panel">
         <h3>Delete cohort</h3>
         <p style={{ fontSize: 13.5, color: "var(--grey)" }}>Removes the cohort and its attendance records. People stay enrolled in the course, just without a cohort.</p>

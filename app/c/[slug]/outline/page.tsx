@@ -2,6 +2,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import Nav from "@/components/Nav";
 import CourseSidebar from "@/components/CourseSidebar";
+import VersionBanner from "@/components/VersionBanner";
 import { withSchedule } from "@/lib/schedule";
 import { requireCourseRole } from "@/lib/access";
 import { getProgress } from "@/lib/data";
@@ -32,6 +33,7 @@ export default async function Outline({ params }: { params: Promise<{ slug: stri
       <CourseSidebar course={course} schedule={schedule} here={`/c/${slug}/outline`} currentId="__outline" done={done} role={role} />
         <div className="shell">
         <main className="main">
+        <VersionBanner course={course} role={role} />
           <div className="kicker">{course.title}</div>
           <h1 className="pagetitle">Full course outline</h1>
           <p className="lead">Every session, its teaching sections, activities and knowledge checks on one page. Click any line to jump straight to it.</p>

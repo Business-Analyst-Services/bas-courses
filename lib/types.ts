@@ -120,6 +120,10 @@ export type CourseSettings = {
   shortTitle: string | null;
   tagline: string | null;
   source: "file" | "imported";
+  liveVersion: number;           // 0 = base content (repo file or first import)
 };
 
-export type LoadedCourse = Course & { settings: CourseSettings };
+/** Which version of a course is being shown, and why. */
+export type VersionInfo = { n: number; label: string; live: boolean; reason: "live" | "pinned" | "preview" | "requested" };
+
+export type LoadedCourse = Course & { settings: CourseSettings; version: VersionInfo };

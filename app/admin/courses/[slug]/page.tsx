@@ -1,15 +1,18 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getCourse, getFileCourses } from "@/lib/courses";
+import { getCourse, getFileCourses, listVersions } from "@/lib/courses";
+import VersionsPanel from "@/components/VersionsPanel";
+import ImportCourse from "@/components/ImportCourse";
 import { validateCourse } from "@/lib/validate";
 import { saveCourseSettings, removeImportedCourse } from "@/lib/admin-actions";
 
-export default async function CourseSettingsPage({ params, searchParams }: { params: Promise<{ slug: string }>; searchParams: Promise<{ saved?: string }> }) {
+export default async function CourseSettingsPage({ params, searchParams }: { params: Promise<{ slug: string }>; searchParams: Promise<{ saved?: string; published?: string; pinned?: string }> }) {
   const { slug } = await params;
-  const { saved } = await searchParams;
+  const { saved, published, pinned } = await searchParams;
   const c = await getCourse(slug, { includeHidden: true });
   if (!c) notFound();
   const S = c.settings;
+  const versions = await listVersions(slug);
   const problems = validateCourse(c);
   const hasRepoVersion = getFileCourses().some((x) => x.slug === slug);
   const toggles: [keyof typeof S, string, string][] = [
@@ -25,8 +28,10 @@ export default async function CourseSettingsPage({ params, searchParams }: { par
     <>
       <div className="crumbs"><Link href="/admin/courses">Courses</Link><span>›</span><span>{c.shortTitle}</span></div>
       <h1 className="pagetitle">{c.title}</h1>
-      <p className="lead">{c.format} · {c.modules.length} sessions · {S.source === "imported" ? "imported via admin" : "from the GitHub repo"}</p>
+      <p className="lead">{c.format} · {c.modules.length} sessions · live: <b>v{c.version.n}</b> {c.version.label} · {versions.length} version{versions.length === 1 ? "" : "s"}</p>
       {saved && <div className="okband">✓ Saved. Changes are live now.</div>}
+      {published && <div className="okband">✓ Version {published} is now live. Pinned cohorts keep their own version.</div>}
+      {pinned && <div className="okband">✓ Cohort versions updated.</div>}
       {problems.length > 0 && <div className="errband"><b>Content checks:</b><ul style={{ margin: "6px 0 0 18px" }}>{problems.slice(0, 10).map((p) => <li key={p}>{p}</li>)}</ul></div>}
 
       <form action={saveCourseSettings}>
@@ -75,9 +80,13 @@ export default async function CourseSettingsPage({ params, searchParams }: { par
         <div className="btnrow2" style={{ marginBottom: 24 }}>
           <button className="btn">Save settings</button>
           <Link className="btn ghost" href={`/c/${slug}`}>Open course</Link>
-          <a className="btn ghost" href={`/admin/courses/${slug}/export`}>⬇ Export JSON</a>
+          <a className="btn ghost" href={`/admin/courses/${slug}/export`}>⬇ Export live JSON</a>
+          <a className="btn ghost" href="#versions">Versions ↓</a>
         </div>
       </form>
+      <VersionsPanel slug={slug} versions={versions} live={S.liveVersion} />
+      <h2 className="sec">Upload a new version</h2>
+      <ImportCourse existingSlug={slug} />
       {S.source === "imported" && (
         <form action={removeImportedCourse} className="panel">
           <h3>Imported content</h3>

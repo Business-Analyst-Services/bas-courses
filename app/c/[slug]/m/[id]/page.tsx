@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
 import CourseSidebar from "@/components/CourseSidebar";
+import VersionBanner from "@/components/VersionBanner";
 import { withSchedule } from "@/lib/schedule";
 import { slugify } from "@/lib/slug";
 import Md from "@/components/Md";
@@ -48,6 +49,7 @@ export default async function ModulePage({
       <CourseSidebar course={course} schedule={schedule} here={`/c/${slug}/m/${m.id}${q}`} currentId={m.id} done={done} view={presenterView ? "presenter" : undefined} role={role} />
         <div className="shell">
         <main className="main">
+        <VersionBanner course={course} role={role} />
         {(() => {
           const idx = course.modules.findIndex((x) => x.id === m.id) + 1;
           const total = T.beats.reduce((x, y) => x + y.minutes, 0) || m.minutes;

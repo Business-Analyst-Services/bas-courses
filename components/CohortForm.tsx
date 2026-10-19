@@ -1,7 +1,7 @@
 import { saveCohort } from "@/lib/admin-actions";
 import type { CohortRow } from "@/lib/admin";
 
-export default function CohortForm({ courses, c }: { courses: { slug: string; shortTitle: string }[]; c?: CohortRow }) {
+export default function CohortForm({ courses, c, versions }: { courses: { slug: string; shortTitle: string }[]; c?: CohortRow; versions?: { v: number; label: string }[] }) {
   return (
     <form action={saveCohort} className="panel">
       <h3>{c ? "Edit cohort" : "New cohort"}</h3>
@@ -18,6 +18,8 @@ export default function CohortForm({ courses, c }: { courses: { slug: string; sh
         <div><label>Price per seat (AUD)</label><input type="number" step="0.01" name="price" defaultValue={c?.price ?? ""} /></div>
         <div><label>Delivery</label><input name="delivery" defaultValue={c?.delivery ?? ""} placeholder="Zoom · Mon+Wed 19:00 Sydney" /></div>
         <div><label>Lead presenter email</label><input type="email" name="presenter_email" defaultValue={c?.presenter_email ?? ""} /></div>
+        {c && versions && <div><label>Course version</label><select name="course_version" defaultValue={c.course_version ?? ""}>
+          <option value="">Follow live version</option>{versions.map((v) => <option key={v.v} value={v.v}>Pin to v{v.v} · {v.label}</option>)}</select></div>}
         <div className="wide"><label>Notes</label><textarea name="notes" rows={2} defaultValue={c?.notes ?? ""} placeholder="Client, venue, special requirements…" /></div>
       </div>
       <div className="btnrow2"><button className="btn">{c ? "Save cohort" : "Create cohort"}</button>

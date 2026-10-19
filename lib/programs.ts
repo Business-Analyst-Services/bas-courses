@@ -6,6 +6,7 @@ import type { Course } from "./types";
 export type Program = {
   slug: string; title: string; short_title: string | null; description: string | null;
   course_slugs: string[]; gap_days: number; status: string; price: string | null;
+  course_versions: Record<string, number>;
 };
 export type Intake = {
   id: number; program_slug: string; client_id: number | null; name: string; status: string; start_date: string | null;
@@ -39,8 +40,7 @@ export async function seedPrograms() {
   const series = new Map<string, string[]>();
   const sorted = [...courses].sort((a, b) => a.order - b.order);
   for (const c of sorted) {
-    // Horizons courses belong to the Horizon Series even if a file has lost its series tag.
-    const name = c.slug.startsWith("horizons-") ? "Horizon Series" : c.series;
+    const name = c.series;
     if (name && name !== "Flagship") series.set(name, [...(series.get(name) ?? []), c.slug]);
   }
   for (const [name, slugs] of series) {
@@ -51,9 +51,18 @@ export async function seedPrograms() {
   await sql`INSERT INTO app_flags (key) VALUES ('programs_seeded') ON CONFLICT DO NOTHING`;
 }
 
+/** Horizons courses became stand-alone days: drop the auto-seeded Horizon Series program once, unless it's in use. */
+async function retireHorizonSeries() {
+  const done = (await sql`SELECT 1 FROM app_flags WHERE key = 'horizon_series_retired'`) as unknown[];
+  if (done.length) return;
+  await sql`DELETE FROM programs WHERE slug = 'horizon-series' AND NOT EXISTS (SELECT 1 FROM intakes WHERE program_slug = 'horizon-series')`;
+  await sql`INSERT INTO app_flags (key) VALUES ('horizon_series_retired') ON CONFLICT DO NOTHING`;
+}
+
 export async function getPrograms(): Promise<Program[]> {
   await seedPrograms();
-  return (await sql`SELECT slug, title, short_title, description, course_slugs, gap_days, status, price::text FROM programs ORDER BY title`) as Program[];
+  await retireHorizonSeries();
+  return (await sql`SELECT slug, title, short_title, description, course_slugs, gap_days, status, price::text, course_versions FROM programs ORDER BY title`) as Program[];
 }
 export async function getClients(): Promise<Client[]> {
   await ensureSchema();

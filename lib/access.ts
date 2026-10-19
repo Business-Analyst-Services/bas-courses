@@ -1,4 +1,5 @@
 import { currentUser } from "@clerk/nextjs/server";
+import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { ensureSchema, sql } from "./db";
 import { getAllCourses, getCourse } from "./courses";
@@ -39,14 +40,31 @@ export async function getEnrolments(v: Viewer): Promise<Record<string, Role>> {
   return out;
 }
 
-/** Gate a course page. Presenters/admins get hidden sessions too. */
+export const previewCookie = (slug: string) => `preview_${slug}`;
+
+/** The course version this viewer should see: presenter preview → their cohort's pinned version → live. */
+async function versionFor(v: Viewer, slug: string, role: Role): Promise<{ version: number | null; reason: "preview" | "pinned" | "live" }> {
+  if (role === "presenter") {
+    const p = (await cookies()).get(previewCookie(slug))?.value;
+    if (p != null && p !== "" && !isNaN(Number(p))) return { version: Number(p), reason: "preview" };
+  }
+  try {
+    const r = (await sql`SELECT c.course_version FROM enrolments e JOIN cohorts c ON c.id = e.cohort_id
+                         WHERE e.email = ${v.email} AND e.course_slug = ${slug} AND c.course_version IS NOT NULL`) as { course_version: number }[];
+    if (r[0]) return { version: r[0].course_version, reason: "pinned" };
+  } catch { /* no cohort */ }
+  return { version: null, reason: "live" };
+}
+
+/** Gate a course page and load the right version. Presenters/admins get hidden sessions too. */
 export async function requireCourseRole(slug: string, need: Role = "participant") {
   const v = await getViewer();
   const enr = await getEnrolments(v);
   const role = enr[slug];
   if (!role) redirect("/?denied=" + encodeURIComponent(slug));
   if (need === "presenter" && role !== "presenter") redirect(`/c/${slug}`);
-  const course = await getCourse(slug, { includeHidden: role === "presenter" });
+  const pick = await versionFor(v, slug, role);
+  const course = await getCourse(slug, { includeHidden: role === "presenter", version: pick.version, reason: pick.reason });
   if (!course) redirect("/");
   return { viewer: v, role, enrolments: enr, course };
 }

@@ -2,13 +2,12 @@
  "slug": "horizons-strategy",
  "title": "Horizons: Strategy",
  "shortTitle": "Strategy Horizon",
- "tagline": "A foundations bridge, then a full day on analysis before money is committed (Ch 1–3, 5)",
- "format": "One-day course · Day 1 of 3 · sold singly or as a 3-day bundle",
+ "tagline": "A foundations primer, then a full day on analysis before money is committed (Ch 1–3, 5)",
+ "format": "One-day course",
  "duration": "1 day",
  "delivery": "Live online · APAC · Times Sydney",
  "audience": "Business analysts, product owners, portfolio and strategy analysts, and BA leads who are asked to shape investment ideas before funding is approved — and who want an agile way to do it without writing a 60-page business case.",
  "order": 3,
- "series": "Horizon Series",
  "outcomes": [
   "Explain the agile mindset and the three planning horizons, and place any piece of your own work on the right horizon.",
   "Frame a strategic problem without smuggling a solution into it.",
@@ -24,13 +23,13 @@
  "caseStudy": {
   "title": "Delivered right first time: last-mile reliability",
   "org": "Southern Cross Freight (fictional)",
-  "summary": "Southern Cross Freight is a fictional national parcel and freight carrier moving around 38,000 consignments a day through 14 depots. Only 79% of consignments arrive within their promised delivery window, 9% fail at the first delivery attempt, and receivers and shippers chase status through the contact centre. The target outcome is on-time last-mile delivery of 92% or better within 12 months, with 'where is my consignment' calls down 40%. Across the three days we follow this one idea from investment decision (Strategy), through a funded initiative and product (Initiative), to a single elaborated backlog item (Delivery).",
+  "summary": "Southern Cross Freight is a fictional national parcel and freight carrier moving around 38,000 consignments a day through 14 depots. Only 79% of consignments arrive within their promised delivery window, 9% fail at the first delivery attempt, and receivers and shippers chase status through the contact centre. The target outcome is on-time last-mile delivery of 92% or better within 12 months, with 'where is my consignment' calls down 40%. Throughout the day we take this one idea to an investment decision: a solution-free problem statement, tested assumptions and a lean business case.",
   "disclaimer": "Illustrative worked example using a fictional organisation."
  },
  "days": [
   {
    "id": "d1",
-   "label": "Day 1 of 3",
+   "label": "One day",
    "title": "Strategy Horizon — analysis before money is committed",
    "blocks": [
     {
@@ -104,7 +103,7 @@
    "minutes": 30,
    "participant": {
     "bigIdea": "Agile analysis is not a smaller version of waterfall analysis — it is analysis sized to the decision in front of you.",
-    "overview": "This opening block is a bridge. Some of you have worked in agile teams for years; others have spent a career in stage-gated programmes. Either way, we need a shared language before we spend the day at the Strategy Horizon.\n\nWe cover three foundations quickly: the **agile mindset** (why we value learning over certainty), the **principles of agile business analysis** (the ideas that steer every technique you will use today), and the **planning horizons** model — Strategy, Initiative and Delivery — which describes how the *questions* an analyst asks change as the time frame shortens and the feedback gets faster.\n\nThe running case for the whole series is introduced here: *Delivered right first time* at Southern Cross Freight, a fictional parcel and freight carrier. Illustrative worked example using a fictional organisation.",
+    "overview": "This opening block is a primer. Some of you have worked in agile teams for years; others have spent a career in stage-gated programmes. Either way, we need a shared language before we spend the day at the Strategy Horizon.\n\nWe cover three foundations quickly: the **agile mindset** (why we value learning over certainty), the **principles of agile business analysis** (the ideas that steer every technique you will use today), and the **planning horizons** model — Strategy, Initiative and Delivery — which describes how the *questions* an analyst asks change as the time frame shortens and the feedback gets faster.\n\nThe running case for the day is introduced here: *Delivered right first time* at Southern Cross Freight, a fictional parcel and freight carrier. Illustrative worked example using a fictional organisation.",
     "objectives": [
      "Describe the agile mindset in your own words and contrast it with a predictive mindset.",
      "Name the core principles of agile business analysis and give an example of each.",
@@ -140,11 +139,11 @@
      },
      {
       "heading": "The three planning horizons",
-      "body": "Think of the horizons as three zoom levels on the same landscape.\n\n| | Strategy | Initiative | Delivery |\n|---|---|---|---|\n| Core question | Should we invest, and why? | What will we change or build to realise the strategy? | What is the next most valuable slice, and is it done? |\n| Typical time frame | 1–5 years; reviewed quarterly | Months to a year; reviewed every few weeks | Days to weeks; reviewed every iteration |\n| Feedback | Slow, lagging, business-level | Product metrics, customer response | Working software, demos, acceptance |\n| Typical artefacts | Problem statement, lean case, value model | Product vision, impact map, feature roadmap | Stories, examples, acceptance criteria |\n\nToday is Day 1: the Strategy Horizon. Day 2 takes the same case into the Initiative Horizon; Day 3 into Delivery."
+      "body": "Think of the horizons as three zoom levels on the same landscape.\n\n| | Strategy | Initiative | Delivery |\n|---|---|---|---|\n| Core question | Should we invest, and why? | What will we change or build to realise the strategy? | What is the next most valuable slice, and is it done? |\n| Typical time frame | 1–5 years; reviewed quarterly | Months to a year; reviewed every few weeks | Days to weeks; reviewed every iteration |\n| Feedback | Slow, lagging, business-level | Product metrics, customer response | Working software, demos, acceptance |\n| Typical artefacts | Problem statement, lean case, value model | Product vision, impact map, feature roadmap | Stories, examples, acceptance criteria |\n\nToday we work at the Strategy Horizon. If you later want to take the same thinking further, the standalone **Horizons: Initiative** and **Horizons: Delivery** courses each spend a full day on one of the other two horizons — optional, not prerequisites."
      },
      {
       "heading": "Meet the running case",
-      "body": "Our illustrative case: Southern Cross Freight delivers only **79%** of consignments within the promised delivery window. Around 9% fail at the first attempt — nobody is home, the address is incomplete, or the item can't be left safely — and each failure adds two to three days plus a re-delivery cost. Receivers and shippers chase status through the contact centre. A strategic outcome has been proposed: **on-time last-mile delivery of 92% or better within 12 months, and 'where is my consignment' calls down 40%.**\n\nAt the Strategy Horizon our job is *not* to design a tracking app. It is to decide whether this is worth investing in, what we would need to believe for it to succeed, and how we would find out quickly if we are wrong.\n\n*Illustrative worked example using a fictional organisation.*"
+      "body": "Our illustrative case: Southern Cross Freight delivers only **79%** of consignments within the promised delivery window. Around 9% fail at the first attempt — nobody is home, the address is incomplete, or the item can't be left safely — and each failure adds two or three extra days plus a re-delivery cost. Receivers and shippers chase status through the contact centre. A strategic outcome has been proposed: **on-time last-mile delivery of 92% or better within 12 months, and 'where is my consignment' calls down 40%.**\n\nAt the Strategy Horizon our job is *not* to design a tracking app. It is to decide whether this is worth investing in, what we would need to believe for it to succeed, and how we would find out quickly if we are wrong.\n\n*Illustrative worked example using a fictional organisation.*"
      }
     ],
     "activities": [
@@ -227,7 +226,7 @@
      {
       "label": "Welcome, outcomes, logistics",
       "minutes": 5,
-      "notes": "Introduce yourself, the three-day series and today's three leave-with artefacts. Cameras-on norm, chat for parking-lot questions."
+      "notes": "Introduce yourself, the day's shape and today's three leave-with artefacts. Cameras-on norm, chat for parking-lot questions."
      },
      {
       "label": "Mindset and principles",
@@ -247,7 +246,7 @@
     ],
     "facilitationNotes": "Keep this tight — 30 minutes goes fast. Experienced agile practitioners may want to debate definitions; acknowledge and park. The purpose is shared language, not a lecture.\n\nRead the disclaimer aloud the first time the Southern Cross Freight case appears, and again whenever a participant treats a figure as fact. Explain the AI pattern: participants bring the real inputs and judgement, the agent removes the blank page, and the BA reviews and owns the decision.",
     "whatGood": "Participants can name all three horizons and have at least one 'mismatch' noted from their own work.",
-    "commonFailure": "Turning the foundations bridge into a 30-minute agile 101 lecture — the fix is to stop at the horizon table and let the case carry the rest of the day.",
+    "commonFailure": "Turning the foundations primer into a 30-minute agile 101 lecture — the fix is to stop at the horizon table and let the case carry the rest of the day.",
     "debrief": [
      "Who found a piece of work at the wrong altitude?",
      "Which principle do you most often break under pressure?",
@@ -307,7 +306,7 @@
      },
      {
       "heading": "Writing a solution-free problem statement",
-      "body": "A good strategic problem statement has four parts: **who** is affected, **what** is happening, the **impact**, and the **evidence**. It deliberately avoids naming a solution.\n\n**Weak:** *We need a new customer tracking app so receivers can see where their parcel is.*\n\n**Strong:** *One in five consignments (21%) misses its promised delivery window, and around 9% fail at the first attempt. Receivers and shippers contact us repeatedly to check status, and every failed attempt adds two to three days and a re-delivery cost. We want to understand where the delay comes from and what it would take to deliver 92% of consignments on time.*\n\nThe strong version leaves room for many options: earlier booking data from shippers, address validation, asking receivers to confirm a window, better depot sort rules — or yes, an app."
+      "body": "A good strategic problem statement has four parts: **who** is affected, **what** is happening, the **impact**, and the **evidence**. It deliberately avoids naming a solution.\n\n**Weak:** *We need a new customer tracking app so receivers can see where their parcel is.*\n\n**Strong:** *One in five consignments (21%) misses its promised delivery window, and around 9% fail at the first attempt. Receivers and shippers contact us repeatedly to check status, and every failed attempt adds two or three extra days and a re-delivery cost. We want to understand where the delay comes from and what it would take to deliver 92% of consignments on time.*\n\nThe strong version leaves room for many options: earlier booking data from shippers, address validation, asking receivers to confirm a window, better depot sort rules — or yes, an app."
      },
      {
       "heading": "Outcome versus output",
@@ -436,7 +435,7 @@
      "Which stakeholder would push back hardest on a solution-free statement?",
      "What evidence would you need to make the statement credible?"
     ],
-    "answerKey": "**Model problem statement:** One in five consignments (21%, illustrative) misses its promised delivery window, and around 9% fail at the first attempt. Receivers and shippers contact us repeatedly to check status, and each failed attempt adds two to three days and a re-delivery cost. We want to understand where the delay comes from and what it would take to deliver 92% of consignments on time.\n\n**Outcome:** on-time last-mile delivery ≥92% within 12 months; 'where is my consignment' calls down 40%.\n\n**Leading indicators:** % of consignments booked with a validated address and receiver contact; % of receivers confirming availability or a safe drop before route lock; first-attempt failure rate.\n\n**Options still allowed:** receiver notification and confirmation; real-time booking from shippers; address validation; depot sort and route-planning rules; parcel-locker or collection-point options; a tracking app.",
+    "answerKey": "**Model problem statement:** One in five consignments (21%, illustrative) misses its promised delivery window, and around 9% fail at the first attempt. Receivers and shippers contact us repeatedly to check status, and each failed attempt adds two or three extra days and a re-delivery cost. We want to understand where the delay comes from and what it would take to deliver 92% of consignments on time.\n\n**Outcome:** on-time last-mile delivery ≥92% within 12 months; 'where is my consignment' calls down 40%.\n\n**Leading indicators:** % of consignments booked with a validated address and receiver contact; % of receivers confirming availability or a safe drop before route lock; first-attempt failure rate.\n\n**Options still allowed:** receiver notification and confirmation; real-time booking from shippers; address validation; depot sort and route-planning rules; parcel-locker or collection-point options; a tracking app.",
     "materials": [
      "Executive brief card",
      "Problem statement template",
@@ -1139,7 +1138,7 @@
       "notes": "Individual; share two hypotheses."
      },
      {
-      "label": "Bridge to final exercise",
+      "label": "Lead-in to final exercise",
       "minutes": 5,
       "notes": "Explain the exercise and that they'll use their own investment idea."
      }
@@ -1162,13 +1161,13 @@
    "id": "hs-s7",
    "num": "1.7",
    "title": "Exercise: apply to a live investment idea · close",
-   "subtitle": "Your own lean business case, and a bridge to the Initiative Horizon",
+   "subtitle": "Your own lean business case, and what happens after the investment decision",
    "dayId": "d1",
    "time": "16:30–17:00",
    "minutes": 30,
    "participant": {
     "bigIdea": "Leave with a case that someone could say no to — that is what makes it worth saying yes to.",
-    "overview": "Apply today's techniques to a real investment idea from your own work (or continue with the running case if you have none). In 20 minutes you will assemble a lean business case that names what would prove it wrong, finalise your solution-free problem statement and update your horizon map. Then we close and bridge to Day 2.",
+    "overview": "Apply today's techniques to a real investment idea from your own work (or continue with the running case if you have none). In 20 minutes you will assemble a lean business case that names what would prove it wrong, finalise your solution-free problem statement and update your horizon map. Then we close with a look at what happens once an investment is approved.",
     "objectives": [
      "Assemble a lean business case for a live investment idea.",
      "Finalise a solution-free problem statement.",
@@ -1184,8 +1183,8 @@
       "body": "Use the AI prompt to draft, then challenge every number and assumption."
      },
      {
-      "title": "Bridge to Initiative",
-      "body": "Tomorrow the funded case becomes a product vision and an impact map."
+      "title": "After the decision",
+      "body": "Once funded, the case becomes a product vision and an impact map at the Initiative Horizon."
      }
     ],
     "sections": [
@@ -1194,8 +1193,8 @@
       "body": "1. Choose a live investment idea (or use the running case).\n2. Write the solution-free problem statement.\n3. Complete the lean business case: outcome, hypothesis, options, first step, cost of delay, top assumptions, **what would prove us wrong**, review.\n4. Update your horizon map from this morning: what will you do differently on Monday?\n\nYou may use your AI agent to draft from your notes. Review the draft as the BA: delete invented figures, sharpen the stop signals, and check that the problem statement is still solution-free."
      },
      {
-      "heading": "Bridge to Day 2",
-      "body": "If the board approves Option B (phased), the question changes from *should we?* to *what exactly will we change or build, for whom, and in what order?* That is the Initiative Horizon — tomorrow's focus — where we build a product vision, an impact map and an ordered set of features, each with a hypothesis and a signal."
+      "heading": "After the investment decision",
+      "body": "If the board approves Option B (phased), the question changes from *should we?* to *what exactly will we change or build, for whom, and in what order?* That is the Initiative Horizon, where the analyst builds a product vision, an impact map and an ordered set of features, each with a hypothesis and a signal.\n\n**See also:** if you want to go deeper on that next step, the standalone **Horizons: Initiative** course spends a full day on it; **Horizons: Delivery** covers elaborating and verifying individual backlog items. Both are optional and self-contained."
      }
     ],
     "activities": [
@@ -1271,11 +1270,11 @@
     "takeaways": [
      "You now have three artefacts: lean case, problem statement, horizon map.",
      "The best cases name their own failure conditions.",
-     "Tomorrow: from investment to product."
+     "Next, once funded: from investment to product."
     ]
    },
    "presenter": {
-    "purpose": "Consolidate learning into the three leave-with artefacts and bridge to Day 2.",
+    "purpose": "Consolidate learning into the three leave-with artefacts and show where the work goes after an investment decision.",
     "openingLine": "\"Last block. Bring a real investment idea — the messier the better — and let's make it something a board could say no to.\"",
     "beats": [
      {
@@ -1294,12 +1293,12 @@
       "notes": "Two volunteers read their 'what would prove us wrong'."
      },
      {
-      "label": "Bridge to Day 2",
+      "label": "After the decision · see also",
       "minutes": 2,
       "notes": "Preview the Initiative Horizon; remind them to bring a funded initiative."
      }
     ],
-    "facilitationNotes": "Keep the clock visible. If people finish early, ask them to run the AI self-critique prompt on their case. End on time — it's 17:00.\n\nAsk participants to bring a funded initiative (or keep the running case) to Day 2.",
+    "facilitationNotes": "Keep the clock visible. If people finish early, ask them to run the AI self-critique prompt on their case. End on time — it's 17:00.\n\nPoint anyone who wants to continue to the standalone Horizons: Initiative and Horizons: Delivery courses — optional, not required.",
     "whatGood": "Every participant has at least the problem statement and the 'what would prove us wrong' box completed.",
     "commonFailure": "Stop signals that are aspirations ('if stakeholders lose interest') — the fix is to tie each to a number and a date.",
     "debrief": [
@@ -1309,7 +1308,7 @@
     "answerKey": "**Model 'what would prove us wrong' (running case):** <40% of sampled failed attempts avoidable with receiver contact by week 3 → stop the notification-led approach; Legal advises SMS contact with shipper-supplied details is not permissible without consent → pivot to shipper-side opt-in at checkout; <50% complete at booking in pilot by week 10 → pause platform phase 2; first-attempt failure rate not below 6% by week 12 → return to board with revised options.",
     "materials": [
      "Lean business case template (fillable)",
-     "Day 2 pre-work note"
+     "Next-steps and further-learning note"
     ]
    }
   }
@@ -1336,12 +1335,12 @@
    "audience": "participant"
   },
   {
-   "title": "Facilitator timing sheet — Day 1",
+   "title": "Facilitator timing sheet",
    "description": "Block-by-block timings, breakout plan and fallback cuts if running late.",
    "audience": "presenter"
   },
   {
-   "title": "Answer key pack — Day 1",
+   "title": "Answer key pack",
    "description": "Model problem statement, outcome tree, thresholds, tests and lean case for the running case.",
    "audience": "presenter"
   }

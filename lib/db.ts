@@ -158,6 +158,20 @@ CREATE TABLE IF NOT EXISTS intakes (
 );
 ALTER TABLE cohorts ADD COLUMN IF NOT EXISTS intake_id INT;
 ALTER TABLE cohorts ADD COLUMN IF NOT EXISTS client_id INT;
+CREATE TABLE IF NOT EXISTS course_versions (
+  slug         TEXT NOT NULL,
+  version      INT  NOT NULL,
+  label        TEXT,
+  notes        TEXT,
+  body         JSONB NOT NULL,
+  created_by   TEXT,
+  created_at   TIMESTAMPTZ NOT NULL DEFAULT now(),
+  published_at TIMESTAMPTZ,
+  PRIMARY KEY (slug, version)
+);
+ALTER TABLE course_settings ADD COLUMN IF NOT EXISTS live_version INT NOT NULL DEFAULT 0;
+ALTER TABLE cohorts ADD COLUMN IF NOT EXISTS course_version INT;
+ALTER TABLE programs ADD COLUMN IF NOT EXISTS course_versions JSONB NOT NULL DEFAULT '{}'::jsonb;
 CREATE TABLE IF NOT EXISTS app_flags (
   key        TEXT PRIMARY KEY,
   set_at     TIMESTAMPTZ NOT NULL DEFAULT now()

@@ -51,6 +51,17 @@ export async function importCourse(_prev: ImportState, f: FormData): Promise<Imp
   if (slugOverride) body.slug = slugOverride;
   const errors = validateCourse(body);
   if (errors.length) return { errors };
+  const exists = (await getAllCourses()).some((c) => c.slug === body.slug);
+  if (exists) {
+    const n = ((await sql`SELECT coalesce(max(version), 0)::int + 1 AS n FROM course_versions WHERE slug = ${body.slug}`) as { n: number }[])[0].n;
+    await sql`INSERT INTO course_versions (slug, version, label, notes, body, created_by) VALUES (${body.slug}, ${n}, ${str(f, "label") || `Imported ${new Date().toLocaleDateString("en-AU")}`}, ${optStr(f, "notes")}, ${JSON.stringify(body)}::jsonb, ${v.email})`;
+    if (bool(f, "publishNow")) {
+      await sql`INSERT INTO course_settings (slug, live_version) VALUES (${body.slug}, ${n}) ON CONFLICT (slug) DO UPDATE SET live_version = EXCLUDED.live_version`;
+      await sql`UPDATE course_versions SET published_at = now() WHERE slug = ${body.slug} AND version = ${n}`;
+    }
+    revalidatePath("/", "layout");
+    return { ok: `Saved "${body.title}" as version ${n} of /c/${body.slug}${bool(f, "publishNow") ? " and made it live" : " (draft: preview and publish it from the course's Versions panel)"}.` };
+  }
   await sql`INSERT INTO custom_courses (slug, body, updated_by, updated_at) VALUES (${body.slug}, ${JSON.stringify(body)}::jsonb, ${v.email}, now())
             ON CONFLICT (slug) DO UPDATE SET body = EXCLUDED.body, updated_by = EXCLUDED.updated_by, updated_at = now()`;
   if (bool(f, "startHidden")) {
@@ -67,7 +78,7 @@ export async function duplicateCourse(f: FormData) {
   const slug = str(f, "slug").toLowerCase().replace(/[^a-z0-9-]+/g, "-");
   if (!from || !slug) throw new Error("Choose a course and a new slug");
   if ((await getAllCourses()).some((c) => c.slug === slug)) throw new Error("That slug is already used");
-  const { settings: _s, ...plain } = from;
+  const { settings: _s, version: _v, ...plain } = from;
   const body = { ...plain, slug, title: str(f, "title") || `${from.title} (copy)`, shortTitle: str(f, "title") || `${from.shortTitle} (copy)` };
   await sql`INSERT INTO custom_courses (slug, body, updated_by) VALUES (${slug}, ${JSON.stringify(body)}::jsonb, ${v.email})`;
   await sql`INSERT INTO course_settings (slug, status) VALUES (${slug}, 'hidden') ON CONFLICT (slug) DO NOTHING`;
@@ -94,17 +105,18 @@ export async function saveCohort(f: FormData) {
     start: optStr(f, "start_date"), end: optStr(f, "end_date") ?? optStr(f, "start_date"),
     capacity: num(f, "capacity", 20)!, forecast: num(f, "forecast_seats", 0)!, price: num(f, "price"),
     delivery: optStr(f, "delivery"), presenter: optStr(f, "presenter_email")?.toLowerCase() ?? null, notes: optStr(f, "notes"),
+    version: str(f, "course_version") === "" || isNaN(Number(str(f, "course_version"))) ? null : Number(str(f, "course_version")),
   };
   if (!vals.course || !vals.name) throw new Error("Course and cohort name are required");
   let cohortId = id;
   if (id) {
     await sql`UPDATE cohorts SET course_slug=${vals.course}, name=${vals.name}, status=${vals.status}, start_date=${vals.start}, end_date=${vals.end},
               capacity=${vals.capacity}, forecast_seats=${vals.forecast}, price=${vals.price}, delivery=${vals.delivery},
-              presenter_email=${vals.presenter}, notes=${vals.notes} WHERE id=${id}`;
+              presenter_email=${vals.presenter}, notes=${vals.notes}, course_version=${vals.version} WHERE id=${id}`;
   } else {
-    const r = (await sql`INSERT INTO cohorts (course_slug, name, status, start_date, end_date, capacity, forecast_seats, price, delivery, presenter_email, notes)
+    const r = (await sql`INSERT INTO cohorts (course_slug, name, status, start_date, end_date, capacity, forecast_seats, price, delivery, presenter_email, notes, course_version)
               VALUES (${vals.course}, ${vals.name}, ${vals.status}, ${vals.start}, ${vals.end}, ${vals.capacity}, ${vals.forecast}, ${vals.price},
-                      ${vals.delivery}, ${vals.presenter}, ${vals.notes}) RETURNING id`) as { id: number }[];
+                      ${vals.delivery}, ${vals.presenter}, ${vals.notes}, ${vals.version}) RETURNING id`) as { id: number }[];
     cohortId = r[0].id;
   }
   if (vals.presenter) {

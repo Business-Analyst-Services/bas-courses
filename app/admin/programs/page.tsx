@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllCourses } from "@/lib/courses";
+import { getAllCourses, versionOptions } from "@/lib/courses";
 import { getPrograms, getIntakes } from "@/lib/programs";
 import ProgramForm from "@/components/ProgramForm";
 
@@ -30,7 +30,7 @@ export default async function AdminPrograms() {
         </table>
       </div>
       <h2 className="sec">New program</h2>
-      <ProgramForm courses={courses} />
+      <ProgramForm courses={courses} versions={await versionOptions()} />
     </>
   );
 }

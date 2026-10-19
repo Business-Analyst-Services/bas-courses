@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllCourses } from "@/lib/courses";
+import { getAllCourses, versionOptions } from "@/lib/courses";
+import { pinCohortVersion } from "@/lib/version-actions";
 import { sql } from "@/lib/db";
 import { getPrograms, getClients, getIntakeStats } from "@/lib/programs";
 import { getCohortStats, pct, fmtDate } from "@/lib/admin";
@@ -28,6 +29,7 @@ export default async function IntakePage({ params, searchParams }: { params: Pro
     { email: string; role: string; status: string; courses: number; done: number; present: number; marked: number }[] : [];
   const totalSessions = i.cohorts.reduce((s, c) => s + (courses.find((x) => x.slug === c.course_slug)?.modules.length ?? 0), 0);
   const client = clients.find((c) => c.id === i.client_id);
+  const vopts = await versionOptions();
 
   return (
     <>
@@ -44,6 +46,25 @@ export default async function IntakePage({ params, searchParams }: { params: Pro
       <BulkEnrol title="Enrol into this intake" targets={enrolTargets(intakes, cohorts, courses, programs)} defaultTarget={`intake:${id}`} />
       <h2 className="sec">Cohorts in this intake ({i.cohorts.length})</h2>
       <CohortTable rows={i.cohorts} titles={titles} empty="No cohorts." />
+      <h2 className="sec">Course versions for this intake</h2>
+      <div className="tablewrap" style={{ marginBottom: 18 }}>
+        <table className="tbl">
+          <thead><tr><th>Cohort</th><th>Live version</th><th>This cohort uses</th></tr></thead>
+          <tbody>
+            {i.cohorts.map((c) => {
+              const live = courses.find((x) => x.slug === c.course_slug)?.version;
+              return (
+                <tr key={c.id}><td>{c.name}</td><td>v{live?.n ?? 0} · {live?.label}</td>
+                  <td><form action={pinCohortVersion} style={{ display: "flex", gap: 6 }}>
+                    <input type="hidden" name="cohort_id" value={c.id} />
+                    <select name="course_version" defaultValue={c.course_version ?? ""} style={{ border: "1px solid var(--line)", borderRadius: 8, padding: "5px 8px", fontFamily: "inherit" }}>
+                      <option value="">Follow live</option>{(vopts[c.course_slug] ?? []).map((v) => <option key={v.v} value={v.v}>Pin v{v.v} · {v.label}</option>)}
+                    </select><button className="btn ghost" style={{ padding: "5px 10px", fontSize: 12 }}>Set</button></form></td></tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
       <h2 className="sec">People ({people.length})</h2>
       <div className="tablewrap" style={{ marginBottom: 18 }}>
         <table className="tbl">

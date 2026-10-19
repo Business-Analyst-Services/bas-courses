@@ -636,3 +636,9 @@ a.agrow:hover{background:var(--light)}
 .presentbtn{background:var(--teal);color:#fff;font-weight:700;font-size:13px;padding:9px 14px;border-radius:99px;white-space:nowrap;box-shadow:0 4px 14px #0003}
 .presentbtn:hover{background:var(--tealdk)}
 .shero:has(.viewdrop[open]){z-index:40}
+.verband{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:10px 16px;margin-bottom:14px;font-size:13.5px}
+.verband a{font-weight:700;color:var(--tealdk)}
+.vpill{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:99px;padding:3px 9px;background:#e5e7eb;color:#374151}
+.vpill.live{background:#dcfce7;color:#166534}
+.vpill.draft{background:#fde7c8;color:#8a4b00}
+.diff td.add{color:var(--good)}.diff td.del{color:var(--bad)}.diff td.chg{color:#8a4b00}

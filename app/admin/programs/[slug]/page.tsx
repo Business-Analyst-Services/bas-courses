@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllCourses } from "@/lib/courses";
+import { getAllCourses, versionOptions } from "@/lib/courses";
 import { getPrograms, getClients, getIntakeStats } from "@/lib/programs";
 import { getCohortStats, pct, fmtDate } from "@/lib/admin";
 import { LifePill } from "@/components/AdminBits";
@@ -36,7 +36,7 @@ export default async function ProgramPage({ params, searchParams }: { params: Pr
         </table>
       </div>
       <IntakePlanner programs={programs} clients={clients} program={slug} />
-      <ProgramForm courses={courses} p={p} />
+      <ProgramForm courses={courses} p={p} versions={await versionOptions()} />
       <form action={deleteProgram} className="panel"><h3>Delete program</h3>
         <p style={{ fontSize: 13.5, color: "var(--grey)" }}>Courses, intakes and cohorts are kept.</p>
         <input type="hidden" name="slug" value={slug} /><div className="btnrow2"><button className="btn danger">Delete program</button></div></form>

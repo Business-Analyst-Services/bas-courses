@@ -58,10 +58,12 @@ export async function saveProgram(f: FormData) {
     .sort((a, b) => a.o - b.o).map((x) => x.s);
   const created = await ensureCourses(lines(str(f, "new_courses")), v.email);
   const courseSlugs = [...picked, ...created.filter((s) => !picked.includes(s))];
-  await sql`INSERT INTO programs (slug, title, short_title, description, course_slugs, gap_days, status, price)
-            VALUES (${slug}, ${title}, ${optStr(f, "short_title")}, ${optStr(f, "description")}, ${courseSlugs}, ${num(f, "gap_days", 7)}, ${str(f, "status") || "published"}, ${num(f, "price")})
+  const pins: Record<string, number> = {};
+  for (const s of courseSlugs) { const v = str(f, `ver_${s}`); if (v !== "" && !isNaN(Number(v))) pins[s] = Number(v); }
+  await sql`INSERT INTO programs (slug, title, short_title, description, course_slugs, gap_days, status, price, course_versions)
+            VALUES (${slug}, ${title}, ${optStr(f, "short_title")}, ${optStr(f, "description")}, ${courseSlugs}, ${num(f, "gap_days", 7)}, ${str(f, "status") || "published"}, ${num(f, "price")}, ${JSON.stringify(pins)}::jsonb)
             ON CONFLICT (slug) DO UPDATE SET title = EXCLUDED.title, short_title = EXCLUDED.short_title, description = EXCLUDED.description,
-              course_slugs = EXCLUDED.course_slugs, gap_days = EXCLUDED.gap_days, status = EXCLUDED.status, price = EXCLUDED.price`;
+              course_slugs = EXCLUDED.course_slugs, gap_days = EXCLUDED.gap_days, status = EXCLUDED.status, price = EXCLUDED.price, course_versions = EXCLUDED.course_versions`;
   revalidatePath("/", "layout");
   redirect(`/admin/programs/${slug}?saved=1`);
 }
@@ -78,7 +80,7 @@ export async function deleteProgram(f: FormData) {
 export async function planIntakes(f: FormData) {
   await requireAdmin();
   await ensureSchema();
-  const prog = ((await sql`SELECT * FROM programs WHERE slug = ${str(f, "program")}`) as { slug: string; title: string; short_title: string | null; course_slugs: string[]; gap_days: number; price: string | null }[])[0];
+  const prog = ((await sql`SELECT * FROM programs WHERE slug = ${str(f, "program")}`) as { slug: string; title: string; short_title: string | null; course_slugs: string[]; gap_days: number; price: string | null; course_versions: Record<string, number> | null }[])[0];
   if (!prog) throw new Error("Choose a program");
   const first = str(f, "start_date");
   if (!first) throw new Error("Start date is required");
@@ -112,8 +114,8 @@ export async function planIntakes(f: FormData) {
       let s = cursor;
       if (prevEnd && s <= prevEnd) s = addDays(prevEnd, 1);
       const end = addDays(s, courseSpanDays(c) - 1);
-      const cr = (await sql`INSERT INTO cohorts (course_slug, name, status, start_date, end_date, capacity, forecast_seats, price, delivery, presenter_email, intake_id, client_id)
-                VALUES (${slug}, ${`${c.shortTitle} · ${monthLabel(s)}`}, ${status}, ${s}, ${end}, ${capacity}, ${forecast}, ${null}, ${delivery}, ${presenter}, ${intakeId}, ${clientId}) RETURNING id`) as { id: number }[];
+      const cr = (await sql`INSERT INTO cohorts (course_slug, name, status, start_date, end_date, capacity, forecast_seats, price, delivery, presenter_email, intake_id, client_id, course_version)
+                VALUES (${slug}, ${`${c.shortTitle} · ${monthLabel(s)}`}, ${status}, ${s}, ${end}, ${capacity}, ${forecast}, ${null}, ${delivery}, ${presenter}, ${intakeId}, ${clientId}, ${prog.course_versions?.[slug] ?? null}) RETURNING id`) as { id: number }[];
       if (presenter) {
         await sql`INSERT INTO enrolments (email, course_slug, role, cohort, cohort_id, status) VALUES (${presenter}, ${slug}, 'presenter', ${name}, ${cr[0].id}, 'active')
                   ON CONFLICT (email, course_slug) DO UPDATE SET role = 'presenter', cohort_id = EXCLUDED.cohort_id, cohort = EXCLUDED.cohort, status = 'active'`;
