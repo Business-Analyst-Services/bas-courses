@@ -58,6 +58,7 @@ export type Module = {
     sections: { heading: string; body: string }[];  // (md) teaching content, 2–5 sections, substantive
     activities: Activity[];                   // 1–3
     aiPrompt?: string;                        // paste-ready prompt for their AI agent (plain text)
+    interactive?: Interactive[];             // hands-on simulations (sprint planning, Kanban flow)
     aiContext?: string[];                     // activity ids (any session) whose saved answers are appended to the prompt; default: this session's activities
     samples?: SampleKit[];                    // sample playbook kits: prompt + template files + sample outputs
     quiz: Quiz[];                             // 2–4 knowledge checks
@@ -76,6 +77,18 @@ export type Module = {
     materials: string[];
   };
 };
+
+/** Hands-on practice exercises shown above the session's activities. Results save to the workbook as `<id>::result`. */
+export type SprintItem = { id: string; title: string; short?: string; points: number; value: "high" | "medium" | "low"; goal: boolean; mustHave?: boolean; ready: boolean; readyNote?: string; dependsOn?: string[] };
+export type SprintSim = { type: "sprint"; id: string; title: string; intro: string; minutes?: number; goal: string; capacity: number; sprintName?: string; items: SprintItem[]; model: string; debrief?: string[] };
+export type KanbanSim = {
+  type: "kanban"; id: string; title: string; intro: string; minutes?: number; days: number; movesPerDay?: number;
+  columns: { id: string; name: string; wip?: number }[];
+  cards: { id: string; title: string; col: string }[];
+  events: { id: string; day: number; text: string; cardId?: string; block?: string; options?: { text: string; correct?: boolean; why: string }[] }[];
+  lessons?: string[]; debrief?: string[];
+};
+export type Interactive = SprintSim | KanbanSim;
 
 /** Course feedback form. Scale = 1–5, nps = 0–10, text = open answer.
  *  area (content, activities, ai, facilitation, pacing, materials, relevance, confidence, overall, strengths, improvement)

@@ -9,6 +9,7 @@ import Md from "@/components/Md";
 import ActivityField from "@/components/Activity";
 import Quiz from "@/components/Quiz";
 import AiPrompt, { type PromptSource } from "@/components/AiPrompt";
+import Practice from "@/components/Practice";
 import SampleKit from "@/components/SampleKit";
 import Tabs, { type TabDef } from "@/components/Tabs";
 import { CompleteButton } from "@/components/Buttons";
@@ -111,6 +112,10 @@ export default async function ModulePage({
           if (P.samples?.length) participantTabs.push({
             id: "samples", label: "Samples", icon: "🧰", badge: P.samples.length,
             panel: (<div id="samples">{P.samples.map((k) => <SampleKit key={k.code} kit={k} />)}</div>),
+          });
+          if (P.interactive?.length) participantTabs.push({
+            id: "practice", label: "Practice", icon: "🎮", badge: P.interactive.length,
+            panel: (<div id="practice"><Practice slug={slug} items={P.interactive} initial={responses} /></div>),
           });
           if (P.activities.length) participantTabs.push({
             id: "activities", label: "Activities", icon: "🛠️", badge: P.activities.length,
