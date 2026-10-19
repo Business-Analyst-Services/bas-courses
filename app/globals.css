@@ -450,7 +450,7 @@ a.agrow:hover{background:var(--light)}
 .viewdrop summary::-webkit-details-marker{display:none}
 .viewdrop .car{font-size:8px;opacity:.6}
 .viewdrop[open] .car{transform:rotate(180deg)}
-.vdpanel{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 30px #0f1e3f2e;padding:8px;width:340px;color:var(--ink)}
+.vdpanel{position:absolute;z-index:45;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 30px #0f1e3f2e;padding:8px;width:340px;color:var(--ink)}
 .vdpanel .cbitem{grid-template-columns:28px 1fr 0}
 
 .tabbar{position:sticky;top:110px;z-index:30;display:flex;gap:4px;overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:16px;padding:5px;margin-bottom:18px;box-shadow:0 4px 14px #14283f0f}
@@ -635,3 +635,4 @@ a.agrow:hover{background:var(--light)}
 .shactions{display:flex;flex-direction:column;gap:8px;align-items:flex-end}
 .presentbtn{background:var(--teal);color:#fff;font-weight:700;font-size:13px;padding:9px 14px;border-radius:99px;white-space:nowrap;box-shadow:0 4px 14px #0003}
 .presentbtn:hover{background:var(--tealdk)}
+.shero:has(.viewdrop[open]){z-index:40}
