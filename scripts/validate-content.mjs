@@ -24,6 +24,8 @@ for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".json"))) {
     }
     for (const k of ["purpose", "openingLine", "beats", "facilitationNotes", "whatGood", "commonFailure", "debrief", "materials"]) if (m.presenter?.[k] == null) err(f, `${m.id} presenter.${k} missing`);
   }
+  const actIds = new Set((c.modules ?? []).flatMap((m) => m.participant?.activities ?? []).map((a) => a.id));
+  for (const m of c.modules ?? []) for (const a of m.participant?.aiContext ?? []) if (!actIds.has(a)) err(f, `${m.id} aiContext links to missing activity ${a}`);
   for (const d of c.days) for (const b of d.blocks) if (b.moduleId && !ids.has(b.moduleId)) err(f, `block links missing module ${b.moduleId}`);
   for (const s of c.schedules ?? []) {
     const linked = (s.days ?? c.days).flatMap((d) => d.blocks.map((b) => b.moduleId).filter(Boolean));

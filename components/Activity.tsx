@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useState } from "react";
 import { saveResponse } from "@/lib/actions";
+import { RESPONSE_EVENT } from "@/components/AiPrompt";
 
 export default function ActivityField({
   slug, activityId, promptId, label, placeholder, initial,
@@ -14,7 +15,10 @@ export default function ActivityField({
   function persist(v: string) {
     setState("saving");
     saveResponse(slug, activityId, promptId, v).then(
-      () => setState("saved"),
+      () => {
+        setState("saved");
+        window.dispatchEvent(new CustomEvent(RESPONSE_EVENT, { detail: { activityId, promptId, value: v } }));
+      },
       () => setState("error"),
     );
   }

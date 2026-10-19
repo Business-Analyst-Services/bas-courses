@@ -170,7 +170,7 @@
       ]
      }
     ],
-    "aiPrompt": "I'm a business analyst preparing a backlog item for delivery. From the item and context below, summarise in five bullets what the delivery team needs to understand before work begins: the user, their context, the behaviour the product should exhibit, how success will be judged, and open questions. Item and context:",
+    "aiPrompt": "I'm a business analyst preparing a backlog item for delivery. From the item and context below, summarise in five bullets what the delivery team needs to understand before work begins: the user, their context, the behaviour the product should exhibit, how success will be judged, and open questions. Use my workbook answers below; if anything important is missing, ask me before answering.",
     "quiz": [
      {
       "q": "The purpose of analysis at the Delivery Horizon is to…",
@@ -287,6 +287,9 @@
      "Right things, built correctly.",
      "Analysis is continuous and collaborative.",
      "You'll leave with one item fully elaborated."
+    ],
+    "aiContext": [
+     "hd-s1-act1"
     ]
    },
    "presenter": {
@@ -401,7 +404,7 @@
       ]
      }
     ],
-    "aiPrompt": "Act as an experienced agile business analyst. For the backlog item below, list the roles inside and outside the team I should involve, what each needs from me, and five questions that would expose ambiguity hiding behind apparently clear requirements. Item:",
+    "aiPrompt": "Act as an experienced agile business analyst. For the backlog item below, list the roles inside and outside the team I should involve, what each needs from me, and five questions that would expose ambiguity hiding behind apparently clear requirements. Use my workbook answers below; if anything important is missing, ask me before answering.",
     "quiz": [
      {
       "q": "Who owns prioritisation of the product backlog?",
@@ -518,6 +521,10 @@
      "Participant, not gatekeeper.",
      "Hold the 'why' for the team.",
      "Bridge to stakeholders, with the Product Owner."
+    ],
+    "aiContext": [
+     "hd-s1-act1",
+     "hd-s2-act1"
     ]
    },
    "presenter": {
@@ -678,7 +685,7 @@
       ]
      }
     ],
-    "aiPrompt": "Review the backlog item below against five outcomes of delivery analysis: (1) well-elaborated — user, context, behaviour, testable acceptance criteria covering edge cases; (2) fits a well-prepared backlog — small enough for one iteration, dependencies known; (3) shared understanding — open questions; (4) validation — how we'll verify it; (5) connection to the product vision, customer and value. Rate each red/amber/green with reasons and suggest one supporting artefact (diagram, wireframe, process flow) that would reduce ambiguity. Item:",
+    "aiPrompt": "Review the backlog item below against five outcomes of delivery analysis: (1) well-elaborated — user, context, behaviour, testable acceptance criteria covering edge cases; (2) fits a well-prepared backlog — small enough for one iteration, dependencies known; (3) shared understanding — open questions; (4) validation — how we'll verify it; (5) connection to the product vision, customer and value. Rate each red/amber/green with reasons and suggest one supporting artefact (diagram, wireframe, process flow) that would reduce ambiguity. Use my workbook answers below; if anything important is missing, ask me before answering.",
     "quiz": [
      {
       "q": "Acceptance criteria are best treated as…",
@@ -795,6 +802,11 @@
      "Five outcomes, not five documents.",
      "Elaborate near-term items; order and size the rest.",
      "Keep detail anchored to vision, customer and value."
+    ],
+    "aiContext": [
+     "hd-s1-act1",
+     "hd-s3-act1",
+     "hd-s3-act2"
     ]
    },
    "presenter": {
@@ -921,7 +933,7 @@
       ]
      }
     ],
-    "aiPrompt": "I'm an agile business analyst. Below are feedback signals from my team's last iterations (questions, defects, review reactions, retrospective notes). Group them into patterns, explain what each pattern reveals about our requirements or analysis process, and propose concrete changes to how we elaborate the next backlog items. Flag any pattern the Product Owner should hear about. Signals:",
+    "aiPrompt": "I'm an agile business analyst. Below are feedback signals from my team's last iterations (questions, defects, review reactions, retrospective notes). Group them into patterns, explain what each pattern reveals about our requirements or analysis process, and propose concrete changes to how we elaborate the next backlog items. Flag any pattern the Product Owner should hear about. Use my workbook answers below; if anything important is missing, ask me before answering.",
     "quiz": [
      {
       "q": "Why elaborate close to delivery?",
@@ -1038,6 +1050,10 @@
      "Elaborate just in time.",
      "Hold the context consciously.",
      "Feedback is information — act on it."
+    ],
+    "aiContext": [
+     "hd-s1-act1",
+     "hd-s4-act1"
     ]
    },
    "presenter": {
@@ -1154,7 +1170,7 @@
       ]
      }
     ],
-    "aiPrompt": "Act as an agile business analysis coach. For the backlog item below, apply each of the nine principles of agile business analysis (See the Whole; Think as a Customer; Analyze to Determine What is Valuable; Get Real Using Examples; Understand What is Feasible; Stimulate Collaboration; Pursue Continuous Improvement; Avoid Waste; Embrace Uncertainty and Change) and tell me, for each, one specific thing I should do this iteration. Then rewrite any abstract requirement as a concrete example. Item:",
+    "aiPrompt": "Act as an agile business analysis coach. For the backlog item below, apply each of the nine principles of agile business analysis (See the Whole; Think as a Customer; Analyze to Determine What is Valuable; Get Real Using Examples; Understand What is Feasible; Stimulate Collaboration; Pursue Continuous Improvement; Avoid Waste; Embrace Uncertainty and Change) and tell me, for each, one specific thing I should do this iteration. Then rewrite any abstract requirement as a concrete example. Use my workbook answers below; if anything important is missing, ask me before answering.",
     "quiz": [
      {
       "q": "What does the mnemonic 'STAG US Pursue, Avoid and Embrace' help you remember?",
@@ -1271,6 +1287,10 @@
      "Nine principles, STAG US Pursue, Avoid and Embrace.",
      "Reach for examples whenever a requirement feels abstract.",
      "Surprises are information."
+    ],
+    "aiContext": [
+     "hd-s1-act1",
+     "hd-s5-act1"
     ]
    },
    "presenter": {
@@ -1433,7 +1453,7 @@
       ]
      }
     ],
-    "aiPrompt": "Act as an agile business analyst. For the feature below: (1) decompose it into four to six independently valuable stories (not technical layers); (2) for the first story, write it as a user story and as a job story; (3) propose at least five concrete examples including edge cases and an unhappy path; (4) derive three to five Given/When/Then acceptance criteria from the examples; (5) list NFRs (privacy, security, accessibility, performance, audit, safety) and a measurable indicator of success. Flag ambiguities for the Product Owner. Feature:",
+    "aiPrompt": "Act as an agile business analyst. For the feature below: (1) decompose it into four to six independently valuable stories (not technical layers); (2) for the first story, write it as a user story and as a job story; (3) propose at least five concrete examples including edge cases and an unhappy path; (4) derive three to five Given/When/Then acceptance criteria from the examples; (5) list NFRs (privacy, security, accessibility, performance, audit, safety) and a measurable indicator of success. Flag ambiguities for the Product Owner. Use my workbook answers below; if anything important is missing, ask me before answering.",
     "quiz": [
      {
       "q": "Which is a value-based way to decompose a story?",
@@ -1550,6 +1570,11 @@
      "Decompose by value.",
      "Examples first, criteria second.",
      "NFRs and metrics belong on the item."
+    ],
+    "aiContext": [
+     "hd-s1-act1",
+     "hd-s6-act1",
+     "hd-s6-act2"
     ]
    },
    "presenter": {
@@ -1673,7 +1698,7 @@
       ]
      }
     ],
-    "aiPrompt": "I'm an agile business analyst. For each ambiguity or uncertainty on my backlog item below, recommend the most suitable technique from: Personas, Customer Journey Maps, Story Mapping, Storyboarding, Prototyping/Mock-ups/Wireframes, Discovery Workshops, Event Storming, Spikes, Real Options, Minimum Viable Product, Problem Definition and Analysis, Root Cause Analysis, Stakeholder Analysis. Explain why, and give a concrete first step and time-box. Item and ambiguities:",
+    "aiPrompt": "I'm an agile business analyst. For each ambiguity or uncertainty on my backlog item below, recommend the most suitable technique from: Personas, Customer Journey Maps, Story Mapping, Storyboarding, Prototyping/Mock-ups/Wireframes, Discovery Workshops, Event Storming, Spikes, Real Options, Minimum Viable Product, Problem Definition and Analysis, Root Cause Analysis, Stakeholder Analysis. Explain why, and give a concrete first step and time-box. Use my workbook answers below; if anything important is missing, ask me before answering.",
     "quiz": [
      {
       "q": "A spike is…",
@@ -1790,6 +1815,11 @@
      "Name the ambiguity, then pick the tool.",
      "Spikes and real options tame uncertainty.",
      "Keep the user visible with personas, journeys and prototypes."
+    ],
+    "aiContext": [
+     "hd-s1-act1",
+     "hd-s6-act2",
+     "hd-s7-act1"
     ]
    },
    "presenter": {
@@ -1934,7 +1964,7 @@
       ]
      }
     ],
-    "aiPrompt": "Play the developer and tester in a Three Amigos conversation about the backlog item below. As the developer, ask how it could be built and what's technically unclear. As the tester, ask what could go wrong, including edge cases and unhappy paths. Ask one question at a time and wait for my answer; after ten exchanges, summarise the agreed examples, open questions and acceptance criteria. Item:",
+    "aiPrompt": "Play the developer and tester in a Three Amigos conversation about the backlog item below. As the developer, ask how it could be built and what's technically unclear. As the tester, ask what could go wrong, including edge cases and unhappy paths. Ask one question at a time and wait for my answer; after ten exchanges, summarise the agreed examples, open questions and acceptance criteria. Use my workbook answers below; if anything important is missing, ask me before answering.",
     "quiz": [
      {
       "q": "Who takes part in a Three Amigos conversation?",
@@ -2051,6 +2081,11 @@
      "Three Amigos before commitment.",
      "Hard to estimate = not yet elaborated.",
      "Use the board to spot stuck questions."
+    ],
+    "aiContext": [
+     "hd-s6-act2",
+     "hd-s8-act1",
+     "hd-s8-act2"
     ]
    },
    "presenter": {
@@ -2179,7 +2214,7 @@
       ]
      }
     ],
-    "aiPrompt": "Review my elaborated backlog item below as a peer agile business analyst. Check: examples include edge and unhappy cases; acceptance criteria derive from the examples and are observable; NFRs are explicit; there is a measurable indicator; it is small enough for one iteration; and it is connected to the product vision, customer and value. List the three most important improvements. Item:",
+    "aiPrompt": "Review my elaborated backlog item below as a peer agile business analyst. Check: examples include edge and unhappy cases; acceptance criteria derive from the examples and are observable; NFRs are explicit; there is a measurable indicator; it is small enough for one iteration; and it is connected to the product vision, customer and value. List the three most important improvements. Use my workbook answers below; if anything important is missing, ask me before answering.",
     "quiz": [
      {
       "q": "Which belongs in a fully elaborated item in this course?",
@@ -2296,6 +2331,11 @@
      "You leave with one item fully elaborated.",
      "Check items against the five outcomes.",
      "Practise one technique and one principle next iteration."
+    ],
+    "aiContext": [
+     "hd-s6-act2",
+     "hd-s8-act1",
+     "hd-s9-act1"
     ]
    },
    "presenter": {

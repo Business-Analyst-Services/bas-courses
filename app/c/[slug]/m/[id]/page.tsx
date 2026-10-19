@@ -7,9 +7,10 @@ import { slugify } from "@/lib/slug";
 import Md from "@/components/Md";
 import ActivityField from "@/components/Activity";
 import Quiz from "@/components/Quiz";
+import AiPrompt, { type PromptSource } from "@/components/AiPrompt";
 import SampleKit from "@/components/SampleKit";
 import Tabs, { type TabDef } from "@/components/Tabs";
-import { CompleteButton, CopyButton } from "@/components/Buttons";
+import { CompleteButton } from "@/components/Buttons";
 import { requireCourseRole } from "@/lib/access";
 import { getModule, moduleNeighbours } from "@/lib/courses";
 import { getProgress, getQuizAnswers, getResponses } from "@/lib/data";
@@ -133,11 +134,16 @@ export default async function ModulePage({
           if (showAi && P.aiPrompt) participantTabs.push({
             id: "ai-prompt", label: "AI prompt", icon: "🤖",
             panel: (
-              <div className="promptcard" id="ai-prompt">
-                <div className="promptbar"><span className="dots"><i /><i /><i /></span><span>Paste into your course agent</span><CopyButton text={P.aiPrompt} /></div>
-                <div className="pre">{P.aiPrompt}</div>
-                <div className="guard">🛡️ Never paste confidential or personal data into a consumer AI tool. Use your organisation&apos;s approved tool.</div>
-              </div>
+              <AiPrompt prompt={P.aiPrompt} sources={(P.aiContext ?? P.activities.map((a) => a.id)).flatMap((aid): PromptSource[] => {
+                const owner = course.modules.find((x) => x.participant.activities.some((a) => a.id === aid));
+                const act = owner?.participant.activities.find((a) => a.id === aid);
+                if (!owner || !act) return [];
+                return [{
+                  activityId: act.id, title: act.title,
+                  where: owner.id === m.id ? "this session" : `Session ${owner.num}`,
+                  fields: act.prompts.map((pr) => ({ promptId: pr.id, label: pr.label, value: responses[`${act.id}::${pr.id}`] ?? "" })),
+                }];
+              })} />
             ),
           });
           if (showQuiz && P.quiz.length) participantTabs.push({

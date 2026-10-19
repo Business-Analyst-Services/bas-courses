@@ -562,3 +562,9 @@ a.agrow:hover{background:var(--light)}
   .ovgrid,.rpstage,.gfgrid{grid-template-columns:1fr}
   .glance{flex-direction:column}.gl{flex:none!important}
 }
+.aisrc{background:#13263d;padding:12px 16px;border-bottom:1px solid #1f3b59}
+.aisrch{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal2);font-weight:600;margin-bottom:6px}
+.aisrcrow{display:flex;align-items:center;gap:10px;padding:5px 0;color:#d9ebef;font-size:13px;cursor:pointer}
+.aisrcrow span{flex:1}.aisrcrow small{color:var(--mute)}
+.aisrcrow em{font-style:normal;font-size:12px;color:#7fd6a8}
+.aisrcrow.empty{cursor:default}.aisrcrow.empty em{color:#f5c26b}.aisrcrow.empty b{opacity:.7}
