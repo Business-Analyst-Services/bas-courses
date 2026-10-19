@@ -38,6 +38,13 @@ for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".json"))) {
     if (!["scale", "nps", "text"].includes(q.type)) err(f, `feedback ${q.id} has unknown type ${q.type}`);
     for (const mid of q.modules ?? []) if (!modIds.has(mid)) err(f, `feedback ${q.id} links to missing session ${mid}`);
   }
+  for (const m of c.modules ?? []) for (const x of m.participant?.interactive ?? []) {
+    if (!["sprint", "kanban"].includes(x.type)) err(f, `${m.id} interactive ${x.id} has unknown type`);
+    if (x.type === "sprint") { const ids = new Set(x.items.map((i) => i.id)); for (const i of x.items) for (const dd of i.dependsOn ?? []) if (!ids.has(dd)) err(f, `${x.id}: ${i.id} depends on missing ${dd}`); }
+    if (x.type === "kanban") { const cs = new Set(x.columns.map((c) => c.id)), cards = new Set(x.cards.map((c) => c.id));
+      for (const c of x.cards) if (!cs.has(c.col)) err(f, `${x.id}: card ${c.id} in missing column ${c.col}`);
+      for (const e of x.events) { if (e.cardId && !cards.has(e.cardId)) err(f, `${x.id}: event ${e.id} targets missing card`); if (e.block && !(e.options ?? []).some((o) => o.correct)) err(f, `${x.id}: event ${e.id} has no correct option`); } }
+  }
   for (const r of c.resources ?? []) if (r.href?.startsWith("/files/") && !fs.existsSync("private" + decodeURI(r.href))) err(f, `missing file ${r.href}`);
   console.log(`✓ ${f}: ${c.modules.length} modules`);
 }
