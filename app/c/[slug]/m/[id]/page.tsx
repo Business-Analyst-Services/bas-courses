@@ -239,6 +239,9 @@ export default async function ModulePage({
                       <Link href={`/c/${slug}/m/${m.id}?view=presenter`} className={`cbitem ${presenterView ? "on" : ""}`}>
                         <span className="sbnum">🎤</span><span>Presenter<small>Run sheet, role-play, facilitation, debrief, answer key</small></span><span />
                       </Link>
+                      <Link href={`/c/${slug}/m/${m.id}/present`} className="cbitem" target="_blank">
+                        <span className="sbnum">🖥️</span><span>Present on screen<small>Full-screen slides of this session to share with the room, with your notes</small></span><span />
+                      </Link>
                     </div>
                   </details>
                 )}

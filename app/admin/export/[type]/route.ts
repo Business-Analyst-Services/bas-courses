@@ -19,6 +19,8 @@ export async function GET(_r: Request, { params }: { params: Promise<{ type: str
   else if (type === "attendance") rows = (await sql`SELECT c.name AS cohort, c.course_slug, a.email, a.module_id, a.present, a.marked_by, a.marked_at FROM attendance a JOIN cohorts c ON c.id = a.cohort_id ORDER BY 1, 3, 4`) as Record<string, unknown>[];
   else if (type === "progress") rows = (await sql`SELECT email, course_slug, module_id, completed_at FROM progress ORDER BY 2, 1, 3`) as Record<string, unknown>[];
   else if (type === "quiz") rows = (await sql`SELECT email, course_slug, module_id, question, answer, correct, answered_at FROM quiz_answers ORDER BY 2, 1, 3, 4`) as Record<string, unknown>[];
+  else if (type === "feedback") rows = (await sql`SELECT f.course_slug, c.name AS cohort, f.email, f.question_id, f.score, f.text, f.updated_at FROM feedback f LEFT JOIN cohorts c ON c.id = f.cohort_id ORDER BY 1, 2, 3, 4`) as Record<string, unknown>[];
+  else if (type === "backlog") rows = (await sql`SELECT b.course_slug, c.name AS cohort, b.priority, b.status, b.title, b.area, b.modules, b.source, b.evidence, b.detail, b.created_at FROM improvement_backlog b LEFT JOIN cohorts c ON c.id = b.cohort_id ORDER BY 1, 2, 3`) as Record<string, unknown>[];
   else if (type === "cohorts") {
     const courses = await getAllCourses();
     rows = (await getCohortStats(Object.fromEntries(courses.map((c) => [c.slug, c.modules.length])))).map((c) => ({

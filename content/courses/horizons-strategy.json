@@ -1345,5 +1345,84 @@
    "description": "Model problem statement, outcome tree, thresholds, tests and lean case for the running case.",
    "audience": "presenter"
   }
+ ],
+ "feedback": [
+  {
+   "id": "f1",
+   "q": "I understand what the analyst does before an investment is committed.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "hs-s2"
+   ]
+  },
+  {
+   "id": "f2",
+   "q": "I can write a solution-free problem statement and an outcome tree.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "hs-s2",
+    "hs-s3"
+   ]
+  },
+  {
+   "id": "f3",
+   "q": "Value modelling, assumption mapping and real options are techniques I can now apply.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "hs-s5"
+   ]
+  },
+  {
+   "id": "f4",
+   "q": "I could build a lean business case that states what evidence would prove it wrong.",
+   "type": "scale",
+   "area": "activities",
+   "modules": [
+    "hs-s6",
+    "hs-s7"
+   ]
+  },
+  {
+   "id": "f5",
+   "q": "Applying the principles at the Strategy Horizon was clear and practical.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "hs-s4"
+   ]
+  },
+  {
+   "id": "f6",
+   "q": "The running case study made the ideas concrete.",
+   "type": "scale",
+   "area": "relevance"
+  },
+  {
+   "id": "f7",
+   "q": "The facilitator kept the day engaging and well paced.",
+   "type": "scale",
+   "area": "facilitation"
+  },
+  {
+   "id": "f8",
+   "q": "How likely are you to recommend this course to a colleague? (0–10)",
+   "type": "nps",
+   "area": "overall"
+  },
+  {
+   "id": "f9",
+   "q": "What will you do differently the next time you're shaping an investment idea?",
+   "type": "text",
+   "area": "strengths"
+  },
+  {
+   "id": "f10",
+   "q": "What would you change or add to make the Strategy day better?",
+   "type": "text",
+   "area": "improvement"
+  }
  ]
 }

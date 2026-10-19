@@ -2388,5 +2388,82 @@
    "description": "Model answers for all activities and both exercises, consolidated for quick reference.",
    "audience": "presenter"
   }
+ ],
+ "feedback": [
+  {
+   "id": "f1",
+   "q": "The course gave me a clear understanding of what agile business analysis is and how it differs from traditional BA.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "d1-s1",
+    "d1-s2"
+   ]
+  },
+  {
+   "id": "f2",
+   "q": "I can now place my own work on the right planning horizon (Strategy, Initiative or Delivery).",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "d1-s3",
+    "d1-ex"
+   ]
+  },
+  {
+   "id": "f3",
+   "q": "I understand the agile BA's role in the product team and how it works with the Product Owner.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "d1-s4"
+   ]
+  },
+  {
+   "id": "f4",
+   "q": "The technique selection exercise helped me choose the right technique for a real situation.",
+   "type": "scale",
+   "area": "activities",
+   "modules": [
+    "d2-ex",
+    "d1-ex"
+   ]
+  },
+  {
+   "id": "f5",
+   "q": "The worked examples were realistic and relevant to my industry.",
+   "type": "scale",
+   "area": "relevance"
+  },
+  {
+   "id": "f6",
+   "q": "The facilitator explained ideas clearly and handled questions well.",
+   "type": "scale",
+   "area": "facilitation"
+  },
+  {
+   "id": "f7",
+   "q": "The two days were well paced, with enough time for activities and discussion.",
+   "type": "scale",
+   "area": "pacing"
+  },
+  {
+   "id": "f8",
+   "q": "How likely are you to recommend this course to a colleague? (0–10)",
+   "type": "nps",
+   "area": "overall"
+  },
+  {
+   "id": "f9",
+   "q": "What was the most valuable thing you'll take back to your team?",
+   "type": "text",
+   "area": "strengths"
+  },
+  {
+   "id": "f10",
+   "q": "What would you change or add to make the course better?",
+   "type": "text",
+   "area": "improvement"
+  }
  ]
 }
