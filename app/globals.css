@@ -786,3 +786,44 @@ a.agrow:hover{background:var(--light)}
 .wb-thread{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));overflow:visible}
 .wb-node{min-width:0;padding-right:16px}.wb-nv{max-width:none}
 @media (max-width:900px){.wb-thread{grid-template-columns:repeat(4,minmax(0,1fr))}}
+
+/* ===== Pathways ===== */
+.path-A{--pc:#0E6E80;--pcbg:#e3f3f6}.path-B{--pc:#6d4fc2;--pcbg:#f3efff}.path-C{--pc:#d97706;--pcbg:#fff7e6}
+.pathsec{margin:6px 0 22px}
+.pathcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.pcard{position:relative;display:flex;flex-direction:column;gap:10px;background:#fff;border:1px solid var(--line);border-top:6px solid var(--pc);border-radius:18px;padding:18px;box-shadow:0 6px 18px #14283f0d;transition:transform .15s,box-shadow .15s}
+.pcard:hover{transform:translateY(-3px);box-shadow:0 14px 28px #14283f1a}
+.pcard.on{box-shadow:0 0 0 3px var(--pc),0 14px 28px #14283f1a}
+.pcard p{font-size:13.5px;color:var(--ink)}
+.pchead{display:flex;gap:12px;align-items:center}
+.pchead b{display:block;color:var(--navy);font-size:15px;line-height:1.25}
+.pchead small{display:block;color:var(--grey);font-size:12.5px}
+.ppicon{font-size:24px;width:48px;height:48px;flex-shrink:0;border-radius:14px;background:var(--pcbg);display:flex;align-items:center;justify-content:center}
+.pcref,.pccap{font-size:12.5px;background:var(--pcbg);border-radius:12px;padding:10px 12px;color:var(--ink)}
+.pcref span,.pccap span{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--pc);margin-bottom:2px}
+.pcard .objs li{font-size:13px}
+.pcbtn{margin-top:auto;text-align:center;background:var(--pc);color:#fff;font-weight:700;font-size:13.5px;border-radius:99px;padding:10px 14px}
+.pcbtn.on{background:#ecfdf3;color:var(--good);border:1px solid #bbf7d0}
+.pcdeck{font-size:12.5px;font-weight:600;color:var(--pc)}
+.pathintro{background:var(--light);border:1px dashed var(--line);border-radius:12px;padding:10px 14px;font-size:13.5px;color:var(--grey);margin-bottom:14px}
+.pathblock{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-bottom:18px;box-shadow:0 6px 18px #14283f0d}
+.pbhead{display:flex;gap:14px;align-items:center;padding:16px 20px;background:linear-gradient(90deg,var(--pcbg),#fff);border-bottom:3px solid var(--pc)}
+.pbicon{font-size:26px;width:52px;height:52px;border-radius:16px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px #0000000f}
+.pbkick{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--pc)}
+.pbhead h2{font-size:19px;color:var(--navy)}
+.pbbody{padding:16px 22px}
+.pbbody .md table{border-collapse:separate;border-spacing:0;width:100%;font-size:13.5px;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:10px 0}
+.pbbody .md th{background:var(--pcbg);padding:8px 10px;text-align:left}.pbbody .md td{padding:8px 10px;border-top:1px solid var(--line)}
+.pbex{margin-top:12px;border-left:4px solid var(--pc);background:var(--pcbg);border-radius:0 12px 12px 0;padding:10px 14px;font-size:13.5px}
+.pbex b{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--pc);margin-bottom:2px}
+.pbact{margin:0 16px 16px;border-left-color:var(--pc)}
+.pbact .actnum{background:var(--pc)}
+.pathpick{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:10px 0}
+.pp{display:flex;flex-direction:column;gap:6px;background:#fff;border:1px solid var(--line);border-top:5px solid var(--pc);border-radius:16px;padding:14px;color:var(--ink)}
+.pp b{color:var(--navy);font-size:14px}.pp small{color:var(--grey);font-size:12.5px}
+.pp:hover{box-shadow:0 10px 22px #14283f14}
+.pp.on{box-shadow:0 0 0 3px var(--pc)}
+.ppgo{margin-top:auto;font-weight:700;font-size:12.5px;color:var(--pc)}
+.pathother{margin-top:6px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+.pathother>summary,.pathpeek>summary{cursor:pointer;font-weight:600;font-size:13.5px;color:var(--navy)}
+.pathpeek{margin:8px 0}

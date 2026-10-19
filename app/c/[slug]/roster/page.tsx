@@ -23,9 +23,10 @@ export default async function Roster({ params, searchParams }: { params: Promise
     SELECT e.email, e.role, e.cohort,
       (SELECT count(*) FROM progress p WHERE p.email = e.email AND p.course_slug = e.course_slug)::int AS done,
       (SELECT count(*) FROM responses r WHERE r.email = e.email AND r.course_slug = e.course_slug AND r.value <> '')::int AS answers,
-      (SELECT max(updated_at) FROM responses r WHERE r.email = e.email AND r.course_slug = e.course_slug) AS last_active
+      (SELECT max(updated_at) FROM responses r WHERE r.email = e.email AND r.course_slug = e.course_slug) AS last_active,
+      (SELECT value FROM responses r WHERE r.email = e.email AND r.course_slug = e.course_slug AND r.activity_id = '__pathway' LIMIT 1) AS pathway
     FROM enrolments e WHERE e.course_slug = ${slug} ORDER BY e.role DESC, e.email`) as {
-    email: string; role: string; cohort: string | null; done: number; answers: number; last_active: string | null;
+    email: string; role: string; cohort: string | null; done: number; answers: number; last_active: string | null; pathway: string | null;
   }[];
   const cohorts = (await sql`SELECT id, name, status, start_date::text, end_date::text FROM cohorts WHERE course_slug = ${slug} AND status <> 'cancelled' ORDER BY start_date NULLS LAST`) as { id: number; name: string; status: string; start_date: string | null; end_date: string | null }[];
   const live = cohorts.find((c) => lifecycle(c) === "running");
@@ -35,7 +36,7 @@ export default async function Roster({ params, searchParams }: { params: Promise
     ? ((await sql`SELECT e.email, a.present FROM enrolments e LEFT JOIN attendance a ON a.cohort_id = e.cohort_id AND a.email = e.email AND a.module_id = ${selSession?.id ?? ""}
                  WHERE e.cohort_id = ${selCohort.id} AND e.role = 'participant' AND e.status = 'active' ORDER BY e.email`) as { email: string; present: boolean | null }[])
     : [];
-  const activities = course.modules.flatMap((m) => m.participant.activities.map((a) => ({ m, a })));
+  const activities = course.modules.flatMap((m) => [...m.participant.activities, ...Object.entries(m.participant.pathways ?? {}).map(([k, pc]) => ({ ...pc.activity, title: `Pathway ${k} · ${pc.activity.title}` }))].map((a) => ({ m, a })));
   const sel = activities.find((x) => x.a.id === activity);
   const answers = sel
     ? ((await sql`SELECT email, prompt_id, value FROM responses WHERE course_slug = ${slug} AND activity_id = ${sel.a.id} AND value <> '' ORDER BY email`) as { email: string; prompt_id: string; value: string }[])
@@ -53,12 +54,12 @@ export default async function Roster({ params, searchParams }: { params: Promise
         <p className="lead">Who&apos;s enrolled in {course.title}, how far they&apos;ve got, and what they&apos;ve written in each workbook activity.</p>
         <div className="tablewrap">
           <table className="tbl">
-            <thead><tr><th>Email</th><th>Role</th><th>Cohort</th><th>Sessions done</th><th>Answers</th><th>Last active</th></tr></thead>
+            <thead><tr><th>Email</th><th>Role</th><th>Cohort</th>{course.pathways?.length ? <th>Pathway</th> : null}<th>Sessions done</th><th>Answers</th><th>Last active</th></tr></thead>
             <tbody>
               {people.length === 0 && <tr><td colSpan={6}>No one is enrolled yet. Enrol people from the Admin page.</td></tr>}
               {people.map((p) => (
                 <tr key={p.email}><td>{p.email}</td><td><span className={`rolepill ${p.role}`}>{p.role}</span></td><td>{p.cohort ?? "—"}</td>
-                  <td>{p.done}/{course.modules.length}</td><td>{p.answers}</td>
+                  {course.pathways?.length ? <td>{course.pathways.find((x) => x.id === p.pathway)?.short ?? "—"}</td> : null}<td>{p.done}/{course.modules.length}</td><td>{p.answers}</td>
                   <td>{p.last_active ? new Date(p.last_active).toLocaleString("en-AU", { timeZone: "Australia/Sydney" }) : "—"}</td></tr>
               ))}
             </tbody>

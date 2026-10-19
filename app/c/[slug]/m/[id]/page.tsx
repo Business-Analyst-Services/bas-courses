@@ -12,6 +12,8 @@ import AiPrompt, { type PromptSource } from "@/components/AiPrompt";
 import Practice from "@/components/Practice";
 import SampleKit from "@/components/SampleKit";
 import Tabs, { type TabDef } from "@/components/Tabs";
+import { chosenPathway } from "@/lib/pathway";
+import type { Pathway, PathwayContent } from "@/lib/types";
 import { CompleteButton } from "@/components/Buttons";
 import { requireCourseRole } from "@/lib/access";
 import { getModule, moduleNeighbours } from "@/lib/courses";
@@ -38,6 +40,7 @@ export default async function ModulePage({
   const day = course.days.find((d) => d.id === m.dayId);
   const q = presenterView ? "?view=presenter" : "";
   const P = m.participant;
+  const myPath = chosenPathway(course, responses);
   const S = course.settings;
   const showAi = S.showAiPrompts || role === "presenter";
   const showQuiz = S.showQuiz || role === "presenter";
@@ -47,7 +50,7 @@ export default async function ModulePage({
   return (
     <>
       <Nav enrolments={enrolments} current={slug} isAdmin={viewer.isAdmin} />
-      <CourseSidebar course={course} schedule={schedule} here={`/c/${slug}/m/${m.id}${q}`} currentId={m.id} done={done} view={presenterView ? "presenter" : undefined} role={role} />
+      <CourseSidebar course={course} schedule={schedule} pathway={myPath} here={`/c/${slug}/m/${m.id}${q}`} currentId={m.id} done={done} view={presenterView ? "presenter" : undefined} role={role} />
         <div className="shell">
         <main className="main">
         <VersionBanner course={course} role={role} />
@@ -109,6 +112,56 @@ export default async function ModulePage({
               ),
             },
           ];
+          const here = `/c/${slug}/m/${m.id}`;
+          const pathBlock = (pw: Pathway, pc: PathwayContent, editable: boolean) => (
+            <section className={`pathblock path-${pw.id}`} key={pw.id}>
+              <div className="pbhead"><span className="pbicon" aria-hidden>{pw.icon}</span><div><div className="pbkick">{pw.label}</div><h2>{pc.heading}</h2></div></div>
+              <div className="pbbody"><Md>{pc.body}</Md>
+                {pc.example && <div className="pbex"><b>Worked example · Riverside</b>{pc.example}</div>}
+              </div>
+              <div className="panel act actcard pbact" id={pc.activity.id}>
+                <div className="acthead"><span className="actnum">{pw.id}</span><div><div className="kicker" style={{ margin: 0 }}>Pathway activity</div><h3>{pc.activity.title}</h3></div>{pc.activity.minutes ? <span className="timer">⏱ {pc.activity.minutes} min</span> : null}</div>
+                <Md>{pc.activity.instructions}</Md>
+                {editable ? pc.activity.prompts.map((pr) => (
+                  <ActivityField key={pr.id} slug={slug} activityId={pc.activity.id} promptId={pr.id} label={pr.label}
+                    placeholder={pr.placeholder} initial={responses[`${pc.activity.id}::${pr.id}`] ?? ""} />
+                )) : <ul className="objs">{pc.activity.prompts.map((pr) => <li key={pr.id}>{pr.label}</li>)}</ul>}
+              </div>
+            </section>
+          );
+          const picker = (
+            <div className="pathpick">
+              {course.pathways?.map((pw) => (
+                <a key={pw.id} href={`/c/${slug}/pathway?p=${pw.id}&next=${encodeURIComponent(here + "#tab-pathway")}`} className={`pp path-${pw.id} ${myPath?.id === pw.id ? "on" : ""}`}>
+                  <span className="ppicon">{pw.icon}</span><b>{pw.label}</b><small>{pw.tagline}</small>
+                  <span className="ppgo">{myPath?.id === pw.id ? "✓ Your pathway" : "Choose →"}</span>
+                </a>
+              ))}
+            </div>
+          );
+          const pathEntries = (course.pathways ?? []).filter((pw) => P.pathways?.[pw.id]);
+          if (pathEntries.length) participantTabs.push({
+            id: "pathway", label: myPath ? `Pathway ${myPath.id}` : "Pathway", icon: myPath?.icon ?? "🧭",
+            panel: (
+              <div id="pathway">
+                {P.pathwayIntro && <div className="pathintro">{P.pathwayIntro}</div>}
+                {myPath && P.pathways?.[myPath.id] ? (
+                  <>
+                    {pathBlock(myPath, P.pathways[myPath.id], true)}
+                    <details className="pathother"><summary>Change pathway or peek at the others</summary>{picker}
+                      {pathEntries.filter((pw) => pw.id !== myPath.id).map((pw) => <details key={pw.id} className="pathpeek"><summary>{pw.icon} {pw.label}: {P.pathways![pw.id].heading}</summary><div className="panel"><Md>{P.pathways![pw.id].body}</Md></div></details>)}
+                    </details>
+                  </>
+                ) : (
+                  <>
+                    <h2 className="sec" style={{ marginTop: 6 }}>Choose your pathway</h2>
+                    <p className="lead">Same initiative, same core sessions. Your pathway decides what automation you design alongside it and what you present at the end. You can change it later.</p>
+                    {picker}
+                  </>
+                )}
+              </div>
+            ),
+          });
           if (P.samples?.length) participantTabs.push({
             id: "samples", label: "Samples", icon: "🧰", badge: P.samples.length,
             panel: (<div id="samples">{P.samples.map((k) => <SampleKit key={k.code} kit={k} />)}</div>),
@@ -141,9 +194,10 @@ export default async function ModulePage({
           if (showAi && P.aiPrompt) participantTabs.push({
             id: "ai-prompt", label: "AI prompt", icon: "🤖",
             panel: (
-              <AiPrompt prompt={P.aiPrompt} sources={(P.aiContext ?? P.activities.map((a) => a.id)).flatMap((aid): PromptSource[] => {
-                const owner = course.modules.find((x) => x.participant.activities.some((a) => a.id === aid));
-                const act = owner?.participant.activities.find((a) => a.id === aid);
+              <AiPrompt prompt={P.aiPrompt} sources={[...(P.aiContext ?? P.activities.map((a) => a.id)), ...(myPath && P.pathways?.[myPath.id] ? [P.pathways[myPath.id].activity.id] : [])].flatMap((aid): PromptSource[] => {
+                const acts = (x: typeof m) => [...x.participant.activities, ...(myPath && x.participant.pathways?.[myPath.id] ? [x.participant.pathways[myPath.id].activity] : [])];
+                const owner = course.modules.find((x) => acts(x).some((a) => a.id === aid));
+                const act = owner && acts(owner).find((a) => a.id === aid);
                 if (!owner || !act) return [];
                 return [{
                   activityId: act.id, title: act.title,
@@ -213,6 +267,16 @@ export default async function ModulePage({
             id: "debrief", label: "Debrief", icon: "💬", badge: T.debrief.length,
             panel: (<div className="qgrid" id="debrief">{T.debrief.map((x, i) => <div className="qcard" key={x}><span>Q{i + 1}</span>{x}</div>)}</div>),
           });
+          if (pathEntries.length) presenterTabs.push({
+            id: "pathways", label: "Pathways", icon: "🧭", badge: pathEntries.length,
+            panel: (
+              <div id="pathways">
+                {P.pathwayIntro && <div className="pathintro">{P.pathwayIntro}</div>}
+                <p className="lead">Split rooms by pathway for the 10-minute pathway activity. Each participant&apos;s pathway is on the roster.</p>
+                {pathEntries.map((pw) => pathBlock(pw, P.pathways![pw.id], false))}
+              </div>
+            ),
+          });
           if (T.answerKey) presenterTabs.push({ id: "answer-key", label: "Answer key", icon: "🔑", panel: (<div className="panel" id="answer-key"><Md>{T.answerKey}</Md></div>) });
           if (T.materials.length) presenterTabs.push({
             id: "materials", label: "Materials", icon: "📦", badge: T.materials.length,
@@ -230,6 +294,7 @@ export default async function ModulePage({
                   <p>{m.subtitle}</p>
                   <div className="shchips">
                     <span>🗓 {m.time}</span><span>⏱ {m.minutes} min</span>
+                    {myPath && !presenterView && <span>{myPath.icon} {myPath.short}</span>}
                     {P.activities.length > 0 && <span>🛠️ {P.activities.length} activities</span>}
                     {showQuiz && P.quiz.length > 0 && <span>🧠 {P.quiz.length}-question check</span>}
                     {done.has(m.id) && <span className="ok">✓ Completed</span>}

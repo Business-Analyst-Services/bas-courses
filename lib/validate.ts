@@ -32,7 +32,10 @@ export function validateCourse(c: unknown): string[] {
       if (!(q.a >= 0 && q.a < (q.opts?.length ?? 0))) e.push(`${at}: quiz question ${i + 1} has an invalid answer index`);
     });
   }
-  const actIds = new Set(x.modules.flatMap((m) => m.participant?.activities ?? []).map((a) => a.id));
+  const pathIds = new Set((x.pathways ?? []).map((p) => p.id));
+  for (const m of x.modules) for (const k of Object.keys(m.participant?.pathways ?? {})) if (!pathIds.has(k)) e.push(`Session ${m.id}: content for unknown pathway "${k}"`);
+  const actIds = new Set(x.modules.flatMap((m) => [...(m.participant?.activities ?? []), ...Object.values(m.participant?.pathways ?? {}).map((p) => p.activity)]).map((a) => a.id));
+  if (actIds.size !== x.modules.reduce((n, m) => n + (m.participant?.activities?.length ?? 0) + Object.keys(m.participant?.pathways ?? {}).length, 0)) e.push("Duplicate activity ids (including pathway activities)");
   for (const m of x.modules) for (const a of m.participant?.aiContext ?? []) if (!actIds.has(a)) e.push(`Session ${m.id}: AI prompt links to missing activity ${a}`);
   const modIds = new Set(x.modules.map((m) => m.id));
   for (const q of x.feedback ?? []) {

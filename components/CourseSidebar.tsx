@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Day, LoadedCourse, Schedule } from "@/lib/types";
+import type { Day, LoadedCourse, Pathway, Schedule } from "@/lib/types";
 import { hasWorkbench } from "@/lib/workbench";
 import DropdownCloser from "./DropdownCloser";
 
@@ -16,8 +16,8 @@ function menuGroups(days: Day[]) {
 
 /** Course menu bar under the main nav: overview, one dropdown per day/week group, outline, roster, schedule picker. */
 export default function CourseSidebar({
-  course, currentId, done, view, role, schedule, here,
-}: { course: LoadedCourse; currentId?: string; done: Set<string>; view?: string; role: string; schedule?: Schedule; here?: string }) {
+  course, currentId, done, view, role, schedule, here, pathway,
+}: { pathway?: Pathway; course: LoadedCourse; currentId?: string; done: Set<string>; view?: string; role: string; schedule?: Schedule; here?: string }) {
   const q = view === "presenter" ? "?view=presenter" : "";
   const pct = Math.round((100 * done.size) / Math.max(course.modules.length, 1));
   const S = course.settings;
@@ -64,6 +64,25 @@ export default function CourseSidebar({
           {isP && S.showRoster && <Link href={`/c/${course.slug}/roster`} className={`cbtab ${currentId === "__roster" ? "on" : ""}`}>Roster</Link>}
           {(course.feedback?.length ?? 0) > 0 && <Link href={`/c/${course.slug}/feedback`} className={`cbtab ${currentId === "__feedback" ? "on" : ""}`}>Feedback</Link>}
         </nav>
+        {course.pathways?.length ? (
+          <details className="cbdrop cbsched">
+            <summary className="cbtab" title="Your learning pathway">
+              {pathway ? `${pathway.icon} ${pathway.short}` : "🧭 Pathway"} <span className="car">▼</span>
+            </summary>
+            <div className="cbpanel">
+              <div className="cbpanelh">Pathway · {pathway ? "switch any time" : "choose one"}</div>
+              {course.pathways.map((pw) => role === "presenter" ? (
+                <a key={pw.id} href={`/c/${course.slug}#pathways`} className="cbitem">
+                  <span className="sbnum">{pw.icon}</span><span>{pw.label}<small>{pw.tagline}</small></span><span />
+                </a>
+              ) : (
+                <a key={pw.id} href={`/c/${course.slug}/pathway?p=${pw.id}&next=${encodeURIComponent(here ?? `/c/${course.slug}`)}`} className={`cbitem ${pathway?.id === pw.id ? "on" : ""}`}>
+                  <span className="sbnum">{pw.icon}</span><span>{pw.label}<small>{pw.tagline}</small></span><span className="sbtick">{pathway?.id === pw.id ? "✓" : ""}</span>
+                </a>
+              ))}
+            </div>
+          </details>
+        ) : null}
         {course.schedules && course.schedules.length > 1 && schedule && (
           <details className="cbdrop cbsched">
             <summary className="cbtab" title="Choose how the sessions are spread">

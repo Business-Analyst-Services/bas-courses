@@ -13,6 +13,22 @@ export type Day = {
   menu?: string;           // optional top-menu tab label; consecutive days sharing it merge into one dropdown ("Wk 1–2")
 };
 
+/** A learning pathway: participants choose one; each session can carry pathway-specific teaching and an activity. */
+export type Pathway = {
+  id: string;              // "A"
+  icon: string;            // emoji
+  label: string;           // "Pathway A · Build it end to end"
+  short: string;           // "A · Build" — menu button
+  tagline: string;
+  summary: string;
+  reference?: string;      // the real build this pathway is modelled on
+  capstone: string;        // what they present at the end
+  outcomes: string[];
+  deck?: string;           // presenter reference file
+};
+
+export type PathwayContent = { heading: string; body: string; example?: string; activity: Activity };
+
 /** An alternative delivery pattern for the same sessions (e.g. 12 weeks weekly vs 6 weeks twice-weekly). */
 export type Schedule = {
   id: string;              // "12wk"
@@ -59,6 +75,8 @@ export type Module = {
     activities: Activity[];                   // 1–3
     aiPrompt?: string;                        // paste-ready prompt for their AI agent (plain text)
     interactive?: Interactive[];             // hands-on simulations (sprint planning, Kanban flow)
+    pathwayIntro?: string;                    // one line on how this session's pathway work connects
+    pathways?: Record<string, PathwayContent>; // keyed by Pathway.id
     aiContext?: string[];                     // activity ids (any session) whose saved answers are appended to the prompt; default: this session's activities
     samples?: SampleKit[];                    // sample playbook kits: prompt + template files + sample outputs
     quiz: Quiz[];                             // 2–4 knowledge checks
@@ -110,7 +128,8 @@ export type Course = {
   leaveWith: string[];
   caseStudy?: { title: string; org: string; summary: string; disclaimer?: string };
   days: Day[];
-  schedules?: Schedule[];  // first is the default; the viewer picks one from the menu
+  schedules?: Schedule[];
+  pathways?: Pathway[];    // optional learning pathways the participant chooses between  // first is the default; the viewer picks one from the menu
   modules: Module[];
   feedback?: FeedbackQ[];   // 10-question end-of-course feedback form
   resources: { title: string; description: string; href?: string; audience: "participant" | "presenter" }[];

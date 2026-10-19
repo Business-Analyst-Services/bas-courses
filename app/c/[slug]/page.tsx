@@ -4,7 +4,8 @@ import CourseSidebar from "@/components/CourseSidebar";
 import VersionBanner from "@/components/VersionBanner";
 import { withSchedule } from "@/lib/schedule";
 import { requireCourseRole } from "@/lib/access";
-import { getProgress } from "@/lib/data";
+import { getProgress, getResponses } from "@/lib/data";
+import { chosenPathway } from "@/lib/pathway";
 
 export const dynamic = "force-dynamic";
 
@@ -12,7 +13,8 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
   const { slug } = await params;
   const { viewer, role, enrolments, course: baseCourse } = await requireCourseRole(slug);
   const { course, schedule } = await withSchedule(baseCourse);
-  const done = await getProgress(viewer.userId, slug);
+  const [done, responses] = await Promise.all([getProgress(viewer.userId, slug), getResponses(viewer.userId, slug)]);
+  const myPath = chosenPathway(course, responses);
   const first = course.modules[0];
   const S = course.settings;
   const isP = role === "presenter";
@@ -20,7 +22,7 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
   return (
     <>
       <Nav enrolments={enrolments} current={slug} isAdmin={viewer.isAdmin} />
-      <CourseSidebar course={course} schedule={schedule} here={`/c/${slug}`} done={done} role={role} />
+      <CourseSidebar course={course} schedule={schedule} pathway={myPath} here={`/c/${slug}`} done={done} role={role} />
         <div className="shell">
         <main className="main">
         <VersionBanner course={course} role={role} />
@@ -65,6 +67,29 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
         {isP && S.hiddenModules.length > 0 && (
           <div className="notice">{S.hiddenModules.length} session{S.hiddenModules.length > 1 ? "s are" : " is"} hidden from participants. You can still see {S.hiddenModules.length > 1 ? "them" : "it"}.</div>
         )}
+        {course.pathways?.length ? (
+          <section id="pathways" className="pathsec">
+            <div className="kicker" style={{ marginBottom: 4 }}>Three pathways · one initiative</div>
+            <h2 className="sec" style={{ marginTop: 0 }}>{myPath ? <>You&apos;re on {myPath.label}</> : "Choose your pathway"}</h2>
+            <p className="lead">Every session builds your initiative. Your pathway decides the AI automation you design alongside it: a teaching section and a 10-minute activity in every session, ending in your capstone.</p>
+            <div className="pathcards">
+              {course.pathways.map((pw) => (
+                <div key={pw.id} className={`pcard path-${pw.id} ${myPath?.id === pw.id ? "on" : ""}`}>
+                  <div className="pchead"><span className="ppicon">{pw.icon}</span><div><b>{pw.label}</b><small>{pw.tagline}</small></div></div>
+                  <p>{pw.summary}</p>
+                  {pw.reference && <div className="pcref"><span>Modelled on</span>{pw.reference}</div>}
+                  <ul className="objs">{pw.outcomes.map((o) => <li key={o}>{o}</li>)}</ul>
+                  <div className="pccap"><span>🏁 Capstone</span>{pw.capstone}</div>
+                  {pw.deck && isP && <a className="pcdeck" href={pw.deck}>⬇ Reference deck (presenter)</a>}
+                  {!isP && (myPath?.id === pw.id
+                    ? <span className="pcbtn on">✓ Your pathway</span>
+                    : <a className="pcbtn" href={`/c/${slug}/pathway?p=${pw.id}&next=/c/${slug}%23pathways`}>{myPath ? "Switch to this pathway" : "Choose this pathway"} →</a>)}
+                </div>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
         {course.caseStudy && (
           <div className="casebar">
                         <div>
