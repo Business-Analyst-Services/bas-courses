@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Day, LoadedCourse, Schedule } from "@/lib/types";
+import { hasWorkbench } from "@/lib/workbench";
 import DropdownCloser from "./DropdownCloser";
 
 /** Group consecutive days that share a `menu` label into one dropdown ("Wk 1–2"); otherwise one per day. */
@@ -58,6 +59,7 @@ export default function CourseSidebar({
               </details>
             );
           })}
+          {hasWorkbench(course.slug) && <Link href={`/c/${course.slug}/workbench`} className={`cbtab wbtab ${currentId === "__workbench" ? "on" : ""}`}>Workbench</Link>}
           {(S.showOutline || isP) && <Link href={`/c/${course.slug}/outline`} className={`cbtab ${currentId === "__outline" ? "on" : ""}`}>Outline</Link>}
           {isP && S.showRoster && <Link href={`/c/${course.slug}/roster`} className={`cbtab ${currentId === "__roster" ? "on" : ""}`}>Roster</Link>}
           {(course.feedback?.length ?? 0) > 0 && <Link href={`/c/${course.slug}/feedback`} className={`cbtab ${currentId === "__feedback" ? "on" : ""}`}>Feedback</Link>}
