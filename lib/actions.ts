@@ -46,3 +46,27 @@ export async function answerQuiz(slug: string, moduleId: string, question: numbe
   return { correct };
 }
 
+
+/** Saves the viewer's own course feedback. Each participant can only ever write (and read) their own answers. */
+export async function submitFeedback(slug: string, answers: Record<string, { score?: number | null; text?: string | null }>) {
+  const v = await enrolledViewer(slug);
+  const course = await getCourse(slug, { includeHidden: true });
+  const qs = course?.feedback ?? [];
+  const enr = (await sql`SELECT cohort_id FROM enrolments WHERE email = ${v.email} AND course_slug = ${slug}`) as { cohort_id: number | null }[];
+  const cohortId = enr[0]?.cohort_id ?? null;
+  for (const q of qs) {
+    const a = answers[q.id];
+    if (!a) continue;
+    const max = q.type === "nps" ? 10 : 5, min = q.type === "nps" ? 0 : 1;
+    const score = q.type === "text" || a.score == null ? null : Math.max(min, Math.min(max, Math.round(Number(a.score))));
+    const text = q.type === "text" ? String(a.text ?? "").slice(0, 4000) : null;
+    if (score == null && !text?.trim()) continue;
+    await sql`
+      INSERT INTO feedback (user_id, email, course_slug, cohort_id, question_id, score, text, updated_at)
+      VALUES (${v.userId}, ${v.email}, ${slug}, ${cohortId}, ${q.id}, ${score}, ${text}, now())
+      ON CONFLICT (user_id, course_slug, question_id)
+      DO UPDATE SET score = EXCLUDED.score, text = EXCLUDED.text, cohort_id = EXCLUDED.cohort_id, updated_at = now()`;
+  }
+  revalidatePath(`/c/${slug}/feedback`);
+  return { savedAt: new Date().toISOString() };
+}

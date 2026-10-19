@@ -60,6 +60,7 @@ export default function CourseSidebar({
           })}
           {(S.showOutline || isP) && <Link href={`/c/${course.slug}/outline`} className={`cbtab ${currentId === "__outline" ? "on" : ""}`}>Outline</Link>}
           {isP && S.showRoster && <Link href={`/c/${course.slug}/roster`} className={`cbtab ${currentId === "__roster" ? "on" : ""}`}>Roster</Link>}
+          {(course.feedback?.length ?? 0) > 0 && <Link href={`/c/${course.slug}/feedback`} className={`cbtab ${currentId === "__feedback" ? "on" : ""}`}>Feedback</Link>}
         </nav>
         {course.schedules && course.schedules.length > 1 && schedule && (
           <details className="cbdrop cbsched">

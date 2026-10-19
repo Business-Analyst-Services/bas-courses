@@ -77,6 +77,11 @@ export type Module = {
   };
 };
 
+/** Course feedback form. Scale = 1–5, nps = 0–10, text = open answer.
+ *  area (content, activities, ai, facilitation, pacing, materials, relevance, confidence, overall, strengths, improvement)
+ *  and modules let the cohort review turn results into backlog items against the right part of the course. */
+export type FeedbackQ = { id: string; q: string; type: "scale" | "nps" | "text"; area: string; modules?: string[] };
+
 export type Course = {
   slug: string;
   title: string;
@@ -94,6 +99,7 @@ export type Course = {
   days: Day[];
   schedules?: Schedule[];  // first is the default; the viewer picks one from the menu
   modules: Module[];
+  feedback?: FeedbackQ[];   // 10-question end-of-course feedback form
   resources: { title: string; description: string; href?: string; audience: "participant" | "presenter" }[];
 };
 

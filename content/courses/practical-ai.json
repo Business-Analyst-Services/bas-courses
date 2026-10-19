@@ -2749,5 +2749,80 @@
     }
    ]
   }
+ ],
+ "feedback": [
+  {
+   "id": "f1",
+   "q": "I can use AI responsibly across the end-to-end BA lifecycle, from framing to benefits.",
+   "type": "scale",
+   "area": "content"
+  },
+  {
+   "id": "f2",
+   "q": "The AI-assisted process mapping sessions improved how I model As-Is and To-Be.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "wk2-mon",
+    "wk2-wed"
+   ]
+  },
+  {
+   "id": "f3",
+   "q": "I can use AI to draft requirements, acceptance criteria and traceability I trust.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "wk4-mon",
+    "wk4-wed"
+   ]
+  },
+  {
+   "id": "f4",
+   "q": "The options, business case and roadmap sessions helped me make a stronger case for change.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "wk5-mon",
+    "wk5-wed",
+    "wk6-mon"
+   ]
+  },
+  {
+   "id": "f5",
+   "q": "The prompts produced useful drafts and I know how to check and improve them.",
+   "type": "scale",
+   "area": "ai"
+  },
+  {
+   "id": "f6",
+   "q": "The weekly rhythm (two 2-hour sessions) worked well alongside my job.",
+   "type": "scale",
+   "area": "pacing"
+  },
+  {
+   "id": "f7",
+   "q": "The facilitator's coaching and feedback on my work was valuable.",
+   "type": "scale",
+   "area": "facilitation"
+  },
+  {
+   "id": "f8",
+   "q": "How likely are you to recommend this program to a colleague? (0–10)",
+   "type": "nps",
+   "area": "overall"
+  },
+  {
+   "id": "f9",
+   "q": "Which AI technique has saved you the most time or improved your work most?",
+   "type": "text",
+   "area": "strengths"
+  },
+  {
+   "id": "f10",
+   "q": "What would you change, add or remove to make the program better?",
+   "type": "text",
+   "area": "improvement"
+  }
  ]
 }

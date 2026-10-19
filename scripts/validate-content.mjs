@@ -32,6 +32,12 @@ for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".json"))) {
     for (const id of linked) if (!ids.has(id)) err(f, `schedule ${s.id} links missing module ${id}`);
     for (const id of ids) if (!linked.includes(id)) err(f, `schedule ${s.id} leaves out module ${id}`);
   }
+  const modIds = new Set((c.modules ?? []).map((m) => m.id)); const fq = new Set();
+  for (const q of c.feedback ?? []) {
+    if (fq.has(q.id)) err(f, `duplicate feedback question ${q.id}`); fq.add(q.id);
+    if (!["scale", "nps", "text"].includes(q.type)) err(f, `feedback ${q.id} has unknown type ${q.type}`);
+    for (const mid of q.modules ?? []) if (!modIds.has(mid)) err(f, `feedback ${q.id} links to missing session ${mid}`);
+  }
   for (const r of c.resources ?? []) if (r.href?.startsWith("/files/") && !fs.existsSync("private" + decodeURI(r.href))) err(f, `missing file ${r.href}`);
   console.log(`✓ ${f}: ${c.modules.length} modules`);
 }

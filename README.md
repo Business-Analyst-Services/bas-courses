@@ -16,6 +16,8 @@ Each person is enrolled per course as a **participant** or a **presenter**.
 ## What people see
 - **Participants:** agenda, session pages (big idea, teaching content, an industry worked example, workbook activities that save to Neon, paste-ready AI prompts, knowledge checks), downloads, progress.
 - **Presenters:** everything above, plus a Participant/Presenter toggle on every session (opening line, minute-by-minute beats, role-play persona and curveball, facilitation notes, what good looks like, debrief, answer keys) and a **roster** showing progress and every participant's activity answers.
+- **Present on screen:** presenters get a full-screen slide view of every session (`/c/<slug>/m/<id>/present`) built from the session content — teaching sections with diagrams, activities, quiz questions with answer reveal, debrief and takeaways — with private presenter notes (N), full screen (F) and a copy-link button.
+- **Feedback:** each course has a 10-question feedback form (`feedback` in the course JSON: 7 ratings, 1 likelihood-to-recommend, 2 open questions). Participants only ever see their own answers; presenters see anonymised results.
 - **Admins** (emails in `ADMIN_EMAILS`): presenter access to every course, plus `/admin`:
   - **Dashboard:** running, upcoming, forecast and delivered cohorts, seat fill, attendance, completion, quiz averages, booked revenue.
   - **Courses:** status (published, hidden or archived), per-course menu toggles (outline, resources, AI prompts, quizzes, roster, catalogue), hide individual sessions, title and tagline overrides, sort order. Add courses by importing JSON (validated), downloading the template, exporting or duplicating an existing course.

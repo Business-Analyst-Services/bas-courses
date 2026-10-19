@@ -2009,5 +2009,89 @@
       "description": "Model vision, boundaries, impact map, product outcomes and ordered features.",
       "audience": "presenter"
     }
+  ],
+  "feedback": [
+    {
+      "id": "f1",
+      "q": "I understand how the analyst's role changes once an initiative is funded.",
+      "type": "scale",
+      "area": "content",
+      "modules": [
+        "hi-s2"
+      ]
+    },
+    {
+      "id": "f2",
+      "q": "I can define and measure product outcomes for an initiative.",
+      "type": "scale",
+      "area": "content",
+      "modules": [
+        "hi-s3",
+        "hi-s3b"
+      ]
+    },
+    {
+      "id": "f3",
+      "q": "Personas, journey mapping and impact mapping helped me understand the customer.",
+      "type": "scale",
+      "area": "content",
+      "modules": [
+        "hi-s5",
+        "hi-s5b"
+      ]
+    },
+    {
+      "id": "f4",
+      "q": "Story mapping, MVP and feature decomposition are techniques I can now apply.",
+      "type": "scale",
+      "area": "content",
+      "modules": [
+        "hi-s5c"
+      ]
+    },
+    {
+      "id": "f5",
+      "q": "I can build an outcome-based roadmap with hypotheses and prioritisation.",
+      "type": "scale",
+      "area": "content",
+      "modules": [
+        "hi-s6",
+        "hi-s6b"
+      ]
+    },
+    {
+      "id": "f6",
+      "q": "The final exercise helped me apply the day to a real funded initiative.",
+      "type": "scale",
+      "area": "activities",
+      "modules": [
+        "hi-s7",
+        "hi-s6c"
+      ]
+    },
+    {
+      "id": "f7",
+      "q": "The facilitator kept the day engaging and well paced.",
+      "type": "scale",
+      "area": "facilitation"
+    },
+    {
+      "id": "f8",
+      "q": "How likely are you to recommend this course to a colleague? (0–10)",
+      "type": "nps",
+      "area": "overall"
+    },
+    {
+      "id": "f9",
+      "q": "What's the most useful technique you'll use on your current initiative?",
+      "type": "text",
+      "area": "strengths"
+    },
+    {
+      "id": "f10",
+      "q": "What would you change or add to make the Initiative day better?",
+      "type": "text",
+      "area": "improvement"
+    }
   ]
 }

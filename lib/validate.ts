@@ -34,6 +34,11 @@ export function validateCourse(c: unknown): string[] {
   }
   const actIds = new Set(x.modules.flatMap((m) => m.participant?.activities ?? []).map((a) => a.id));
   for (const m of x.modules) for (const a of m.participant?.aiContext ?? []) if (!actIds.has(a)) e.push(`Session ${m.id}: AI prompt links to missing activity ${a}`);
+  const modIds = new Set(x.modules.map((m) => m.id));
+  for (const q of x.feedback ?? []) {
+    if (!["scale", "nps", "text"].includes(q.type)) e.push(`Feedback question ${q.id}: type must be scale, nps or text`);
+    for (const mid of q.modules ?? []) if (!modIds.has(mid)) e.push(`Feedback question ${q.id} links to missing session ${mid}`);
+  }
   for (const d of x.days) for (const b of d.blocks ?? []) if (b.moduleId && !ids.has(b.moduleId)) e.push(`Agenda block "${b.title}" links to missing session ${b.moduleId}`);
   return e;
 }

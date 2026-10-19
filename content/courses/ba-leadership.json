@@ -2690,5 +2690,87 @@
    "description": "Three-layer check, Visual Library coverage map, practice rules for assistant-run playbooks, capability plan, scorecard, 90-day plan and five-part business case — saved in each module.",
    "audience": "participant"
   }
+ ],
+ "feedback": [
+  {
+   "id": "f1",
+   "q": "I can articulate the value proposition of my BA practice to senior stakeholders.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "d1-s2"
+   ]
+  },
+  {
+   "id": "f2",
+   "q": "The Practice Model (roles, services, operating layer) gave me a usable structure for my practice.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "d1-s3",
+    "d1-s5"
+   ]
+  },
+  {
+   "id": "f3",
+   "q": "I'm more confident influencing governance and decisions as a BA leader.",
+   "type": "scale",
+   "area": "confidence",
+   "modules": [
+    "d1-s4"
+   ]
+  },
+  {
+   "id": "f4",
+   "q": "The coaching, capability and career-path content will help me develop my team.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "d2-s3"
+   ]
+  },
+  {
+   "id": "f5",
+   "q": "I have practical KPIs I can use to measure the value of my practice.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "d2-s4"
+   ]
+  },
+  {
+   "id": "f6",
+   "q": "My 90-day practice plan and business case pitch are ready to use.",
+   "type": "scale",
+   "area": "activities",
+   "modules": [
+    "d2-s5",
+    "d2-s6"
+   ]
+  },
+  {
+   "id": "f7",
+   "q": "The facilitator created a safe, challenging space for leadership discussion.",
+   "type": "scale",
+   "area": "facilitation"
+  },
+  {
+   "id": "f8",
+   "q": "How likely are you to recommend this course to another BA leader? (0–10)",
+   "type": "nps",
+   "area": "overall"
+  },
+  {
+   "id": "f9",
+   "q": "Which part of the course will make the biggest difference to your practice?",
+   "type": "text",
+   "area": "strengths"
+  },
+  {
+   "id": "f10",
+   "q": "What would make this course more useful for leaders in your situation?",
+   "type": "text",
+   "area": "improvement"
+  }
  ]
 }

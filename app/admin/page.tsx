@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAllCourses } from "@/lib/courses";
 import { getCohortStats, pct, todaySydney } from "@/lib/admin";
+import { sql } from "@/lib/db";
 import { CohortTable, Tile } from "@/components/AdminBits";
 
 export default async function AdminDashboard() {
@@ -17,11 +18,14 @@ export default async function AdminDashboard() {
   const avg = (xs: (number | null)[]) => { const v = xs.filter((x): x is number => x != null); return v.length ? v.reduce((a, b) => a + b, 0) / v.length : null; };
   const revenue = upcoming.reduce((s, c) => s + c.enrolled * Number(c.price ?? 0), 0);
 
+  const reviewed = new Set(((await sql`SELECT cohort_id FROM cohort_reviews`) as { cohort_id: number }[]).map((r) => r.cohort_id));
+  const awaitingReview = cohorts.filter((c) => c.lifecycle === "delivered" && !reviewed.has(c.id));
   return (
     <>
       <div className="kicker">Admin · {new Date(todaySydney()).toLocaleDateString("en-AU", { weekday: "long", day: "numeric", month: "long" })}</div>
       <h1 className="pagetitle">Dashboard</h1>
       <p className="lead">Cohorts running now, what&apos;s coming up, what&apos;s forecast, and how delivered cohorts performed.</p>
+      {awaitingReview.length > 0 && <div className="notice"><b>{awaitingReview.length} finished cohort{awaitingReview.length === 1 ? "" : "s"} need{awaitingReview.length === 1 ? "s" : ""} a feedback review.</b> <a href="/admin/feedback">Review feedback and build the improvement backlog →</a></div>}
       <div className="grid g4" style={{ marginBottom: 12 }}>
         <Tile label="Running now" value={running.length} sub={`${running.reduce((s, c) => s + c.enrolled, 0)} participants`} />
         <Tile label="Upcoming cohorts" value={upcoming.length} sub={`${seatsBooked}/${seatsCap} seats booked (${seatsCap ? Math.round((100 * seatsBooked) / seatsCap) : 0}%)`} />

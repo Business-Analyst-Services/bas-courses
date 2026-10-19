@@ -2824,5 +2824,76 @@
    "description": "Stakeholder Persona cards and Curveball / Gap cards, with the ‘When Nobody Has the Answer’ moves guide.",
    "audience": "presenter"
   }
+ ],
+ "feedback": [
+  {
+   "id": "f1",
+   "q": "The playbooks gave me a repeatable way to run BA work from discovery to delivery.",
+   "type": "scale",
+   "area": "content"
+  },
+  {
+   "id": "f2",
+   "q": "The discovery and stakeholder mapping playbook is ready to use on my next engagement.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "pb01"
+   ]
+  },
+  {
+   "id": "f3",
+   "q": "The process mapping and BPMN playbook improved how I model processes.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "pb02"
+   ]
+  },
+  {
+   "id": "f4",
+   "q": "The requirements and user stories playbook will improve the quality of my requirements.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "pb04"
+   ]
+  },
+  {
+   "id": "f5",
+   "q": "The blank templates and worked examples were clear and easy to adapt.",
+   "type": "scale",
+   "area": "materials"
+  },
+  {
+   "id": "f6",
+   "q": "The AI prompts in each playbook produced useful first drafts.",
+   "type": "scale",
+   "area": "ai"
+  },
+  {
+   "id": "f7",
+   "q": "Covering six playbooks in one day felt well paced.",
+   "type": "scale",
+   "area": "pacing"
+  },
+  {
+   "id": "f8",
+   "q": "How likely are you to recommend Playbooks in a Day to a colleague? (0–10)",
+   "type": "nps",
+   "area": "overall"
+  },
+  {
+   "id": "f9",
+   "q": "Which playbook will you use first, and on what?",
+   "type": "text",
+   "area": "strengths"
+  },
+  {
+   "id": "f10",
+   "q": "What playbook, template or example would you add or change?",
+   "type": "text",
+   "area": "improvement"
+  }
  ]
 }

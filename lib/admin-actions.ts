@@ -191,3 +191,38 @@ export async function saveAttendance(f: FormData) {
   revalidatePath(`/c/${c[0].course_slug}/roster`);
   revalidatePath("/admin", "layout");
 }
+
+// ---------------- feedback review & improvement backlog ----------------
+export async function generateCohortReview(f: FormData) {
+  const v = await requireAdmin();
+  const cohortId = num(f, "cohort_id");
+  const c = (await sql`SELECT course_slug FROM cohorts WHERE id = ${cohortId}`) as { course_slug: string }[];
+  const course = c[0] && (await getCourse(c[0].course_slug, { includeHidden: true }));
+  if (!course || cohortId == null) throw new Error("Unknown cohort");
+  const { buildCohortReview, saveBacklog } = await import("./review");
+  const review = await buildCohortReview(course, cohortId);
+  await saveBacklog(course.slug, cohortId, review.drafts, v.email, review);
+  revalidatePath(`/admin/feedback/review/${cohortId}`);
+  revalidatePath("/admin", "layout");
+}
+
+export async function updateBacklogItem(f: FormData) {
+  await requireAdmin();
+  await ensureSchema();
+  const id = num(f, "id");
+  const status = ["new", "planned", "done", "dismissed"].includes(str(f, "status")) ? str(f, "status") : "new";
+  const priority = ["high", "medium", "low"].includes(str(f, "priority")) ? str(f, "priority") : "medium";
+  await sql`UPDATE improvement_backlog SET status = ${status}, priority = ${priority}, updated_at = now() WHERE id = ${id}`;
+  revalidatePath("/admin/feedback", "layout");
+}
+
+export async function addBacklogItem(f: FormData) {
+  await requireAdmin();
+  await ensureSchema();
+  const title = str(f, "title");
+  if (!title) return;
+  const priority = ["high", "medium", "low"].includes(str(f, "priority")) ? str(f, "priority") : "medium";
+  await sql`INSERT INTO improvement_backlog (course_slug, cohort_id, title, detail, area, modules, source, priority)
+            VALUES (${str(f, "course")}, ${num(f, "cohort_id")}, ${title}, ${optStr(f, "detail")}, ${optStr(f, "area")}, ${optStr(f, "modules")}, 'manual', ${priority})`;
+  revalidatePath("/admin/feedback", "layout");
+}

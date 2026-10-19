@@ -2446,5 +2446,83 @@
    "description": "Model decomposition, examples, criteria, NFRs and technique matches.",
    "audience": "presenter"
   }
+ ],
+ "feedback": [
+  {
+   "id": "f1",
+   "q": "I understand the Agile BA's role as a full member of the delivery team.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "hd-s2"
+   ]
+  },
+  {
+   "id": "f2",
+   "q": "The five outcomes of Delivery analysis gave me a clear picture of what good looks like.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "hd-s3"
+   ]
+  },
+  {
+   "id": "f3",
+   "q": "I can apply the nine principles in day-to-day delivery.",
+   "type": "scale",
+   "area": "content",
+   "modules": [
+    "hd-s5"
+   ]
+  },
+  {
+   "id": "f4",
+   "q": "I can decompose a feature into value slices and elaborate a story with examples and criteria.",
+   "type": "scale",
+   "area": "activities",
+   "modules": [
+    "hd-s6",
+    "hd-s9"
+   ]
+  },
+  {
+   "id": "f5",
+   "q": "The Three Amigos role-play was a useful way to practise building shared understanding.",
+   "type": "scale",
+   "area": "activities",
+   "modules": [
+    "hd-s8"
+   ]
+  },
+  {
+   "id": "f6",
+   "q": "The AI prompts, carrying my own answers forward, gave useful feedback on my backlog item.",
+   "type": "scale",
+   "area": "ai"
+  },
+  {
+   "id": "f7",
+   "q": "The diagrams and running case made the content easy to follow.",
+   "type": "scale",
+   "area": "materials"
+  },
+  {
+   "id": "f8",
+   "q": "How likely are you to recommend this course to a colleague? (0–10)",
+   "type": "nps",
+   "area": "overall"
+  },
+  {
+   "id": "f9",
+   "q": "What will you change in your next iteration because of today?",
+   "type": "text",
+   "area": "strengths"
+  },
+  {
+   "id": "f10",
+   "q": "What would you change or add to make the Delivery day better?",
+   "type": "text",
+   "area": "improvement"
+  }
  ]
 }

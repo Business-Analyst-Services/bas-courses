@@ -89,6 +89,40 @@ CREATE TABLE IF NOT EXISTS attendance (
   marked_at   TIMESTAMPTZ NOT NULL DEFAULT now(),
   PRIMARY KEY (cohort_id, email, module_id)
 );
+CREATE TABLE IF NOT EXISTS feedback (
+  user_id      TEXT NOT NULL,
+  email        TEXT NOT NULL,
+  course_slug  TEXT NOT NULL,
+  cohort_id    INT,
+  question_id  TEXT NOT NULL,
+  score        INT,
+  text         TEXT,
+  updated_at   TIMESTAMPTZ NOT NULL DEFAULT now(),
+  PRIMARY KEY (user_id, course_slug, question_id)
+);
+CREATE TABLE IF NOT EXISTS improvement_backlog (
+  id           SERIAL PRIMARY KEY,
+  course_slug  TEXT NOT NULL,
+  cohort_id    INT,
+  key          TEXT,
+  title        TEXT NOT NULL,
+  detail       TEXT,
+  area         TEXT,
+  modules      TEXT,
+  source       TEXT NOT NULL DEFAULT 'manual',
+  evidence     TEXT,
+  priority     TEXT NOT NULL DEFAULT 'medium',
+  status       TEXT NOT NULL DEFAULT 'new',
+  created_at   TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at   TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE UNIQUE INDEX IF NOT EXISTS improvement_backlog_key ON improvement_backlog (cohort_id, key);
+CREATE TABLE IF NOT EXISTS cohort_reviews (
+  cohort_id    INT PRIMARY KEY,
+  generated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  generated_by TEXT,
+  summary      JSONB
+);
 `;
 
 let ready: Promise<void> | null = null;

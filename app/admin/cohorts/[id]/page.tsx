@@ -29,6 +29,9 @@ export default async function CohortPage({ params }: { params: Promise<{ id: str
       <div className="crumbs"><Link href="/admin/cohorts">Cohorts</Link><span>›</span><span>{c.name}</span></div>
       <h1 className="pagetitle">{c.name} <LifePill l={c.lifecycle} /></h1>
       <p className="lead">{course?.title ?? c.course_slug} · {fmtDate(c.start_date)}{c.end_date && c.end_date !== c.start_date ? ` – ${fmtDate(c.end_date)}` : ""}{c.delivery ? ` · ${c.delivery}` : ""}</p>
+      <div className="btnrow2" style={{ margin: "0 0 14px" }}>
+        <Link className={`btn ${c.lifecycle === "delivered" ? "" : "ghost"}`} href={`/admin/feedback/review/${id}`}>{c.lifecycle === "delivered" ? "Review feedback & improvement backlog →" : "Feedback & backlog"}</Link>
+      </div>
       <div className="grid g4" style={{ marginBottom: 18 }}>
         <Tile label="Seats" value={`${c.enrolled}/${c.capacity}`} sub={`${Math.round(c.fill * 100)}% full · ${c.waitlist} waitlisted`} />
         <Tile label="Attendance" value={pct(c.attendanceRate)} sub={`${c.sessionsMarked}/${mods.length} sessions marked`} />
