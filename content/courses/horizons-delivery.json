@@ -176,11 +176,11 @@
       "q": "The purpose of analysis at the Delivery Horizon is to…",
       "opts": [
        "Decide which investments to fund",
-       "Ensure the right things are built correctly",
        "Write the full specification before delivery starts",
+       "Ensure the right things are built correctly",
        "Approve the team's work"
       ],
-      "a": 1,
+      "a": 2,
       "why": "Delivery analysis asks how each backlog item should be understood, elaborated and verified."
      },
      {
@@ -193,6 +193,94 @@
       ],
       "a": 1,
       "why": "Analysis is continuous and embedded in the iteration rhythm."
+     },
+     {
+      "q": "At the Delivery Horizon, the analysis question is…",
+      "opts": [
+       "How each backlog item should be understood, elaborated and verified",
+       "Which investments to fund",
+       "Which product to build next year",
+       "How to restructure the team"
+      ],
+      "a": 0,
+      "why": "Delivery focuses on understanding, elaborating and verifying individual backlog items."
+     },
+     {
+      "q": "What does the Delivery Horizon turn the product vision into?",
+      "opts": [
+       "A business case",
+       "A portfolio roadmap",
+       "A requirements document for sign-off",
+       "Working software, validated business rules and real user experiences"
+      ],
+      "a": 3,
+      "why": "This is where vision becomes tangible."
+     },
+     {
+      "q": "Analysis at the Delivery Horizon is best described as…",
+      "opts": [
+       "A phase completed before development",
+       "The analyst's private activity",
+       "A review at the end of each release",
+       "Continuous, collaborative and embedded in the iteration rhythm"
+      ],
+      "a": 3,
+      "why": "Section 7.1 describes analysis that is continuous and collaborative."
+     },
+     {
+      "q": "In the iteration cycle, what sits at the centre?",
+      "opts": [
+       "A requirements specification",
+       "The project plan",
+       "A potentially releasable increment",
+       "A status report"
+      ],
+      "a": 2,
+      "why": "Each iteration aims to produce a potentially releasable increment."
+     },
+     {
+      "q": "Which events run alongside the cycle throughout the iteration?",
+      "opts": [
+       "Steering committee and budget review",
+       "Daily standup and Three Amigos conversations",
+       "Annual planning",
+       "Change advisory board"
+      ],
+      "a": 1,
+      "why": "Questions are answered as they surface, not saved for the end."
+     },
+     {
+      "q": "In the running case, what is the top backlog item?",
+      "opts": [
+       "Receiver delivery-window confirmation",
+       "A parcel-tracking app",
+       "New depot locations",
+       "Driver rostering"
+      ],
+      "a": 0,
+      "why": "Receivers confirm or choose a safe drop before routes lock."
+     },
+     {
+      "q": "Why does the running case matter to the product?",
+      "opts": [
+       "Failed first attempts hold on-time delivery at 79% against a 92% goal",
+       "Drivers want new vans",
+       "The website is slow",
+       "Depots are closing"
+      ],
+      "a": 0,
+      "why": "Receiver confirmation targets failed first attempts."
+     },
+     {
+      "q": "What will you leave the day with?",
+      "opts": [
+       "A full product roadmap",
+       "A business case",
+       "A project plan",
+       "One backlog item fully elaborated"
+      ],
+      "a": 3,
+      "why": "The course builds one item from feature to buildable story."
      }
     ],
     "takeaways": [
@@ -318,24 +406,112 @@
      {
       "q": "Who owns prioritisation of the product backlog?",
       "opts": [
-       "The Agile Business Analyst",
        "The Product Owner",
+       "The Agile Business Analyst",
        "The Iteration Manager",
        "The developers"
       ],
-      "a": 1,
+      "a": 0,
       "why": "The Agile BA informs priority calls; the Product Owner makes them."
      },
      {
       "q": "The Agile BA's distinctive contribution at Delivery is…",
       "opts": [
        "Being the only person who does analysis",
-       "Sustained focus on the 'why' behind each item",
        "Approving the team's work",
-       "Running the daily standup"
+       "Running the daily standup",
+       "Sustained focus on the 'why' behind each item"
+      ],
+      "a": 3,
+      "why": "Analysis is shared; the dedicated analyst brings depth and context."
+     },
+     {
+      "q": "Where do most Agile BAs spend most of their working time?",
+      "opts": [
+       "Portfolio planning",
+       "Vendor management",
+       "The Delivery Horizon",
+       "Annual budgeting"
+      ],
+      "a": 2,
+      "why": "Section 7.2: closest to the customer, the code and the moment of truth."
+     },
+     {
+      "q": "At the Delivery Horizon the Agile BA is best described as…",
+      "opts": [
+       "A gatekeeper between business and IT",
+       "A full member of the Agile Product Team",
+       "An external reviewer",
+       "The team's manager"
       ],
       "a": 1,
-      "why": "Analysis is shared; the dedicated analyst brings depth and context."
+      "why": "The analyst participates in delivery itself."
+     },
+     {
+      "q": "Who answers the delivery team's questions about what to build and what done looks like?",
+      "opts": [
+       "The Iteration Manager",
+       "The Product Owner, as voice of the customer",
+       "The tester",
+       "The architect"
+      ],
+      "a": 1,
+      "why": "The Agile BA supports by elaborating, documenting and facilitating."
+     },
+     {
+      "q": "The Iteration Manager is focused on…",
+      "opts": [
+       "How the team works together",
+       "What the team builds",
+       "How the code is written",
+       "Approving requirements"
+      ],
+      "a": 0,
+      "why": "In Scrum this role is the Scrum Master."
+     },
+     {
+      "q": "'Business analysis as a shared capability' means…",
+      "opts": [
+       "Nobody needs an analyst",
+       "Only the analyst asks questions",
+       "Analysis is outsourced",
+       "Everyone contributes analysis; the dedicated analyst adds depth and continuity"
+      ],
+      "a": 3,
+      "why": "All team members ask questions and challenge assumptions."
+     },
+     {
+      "q": "The Agile BA acts as a bridge to stakeholders together with…",
+      "opts": [
+       "The Iteration Manager",
+       "The developers",
+       "The Product Owner",
+       "The tester"
+      ],
+      "a": 2,
+      "why": "Both translate needs into backlog items and report back what was learned."
+     },
+     {
+      "q": "A key skill the book highlights at Delivery is recognising when…",
+      "opts": [
+       "Velocity is falling",
+       "The sprint is over",
+       "Apparent clarity is concealing genuine ambiguity",
+       "A stakeholder is senior"
+      ],
+      "a": 2,
+      "why": "Requirements can look clear while hiding different interpretations."
+     },
+     {
+      "q": "Why keep a line of sight from each item to the user need?",
+      "opts": [
+       "For audit only",
+       "So the team avoids solving the wrong problem, even when requirements are technically correct",
+       "To increase story points",
+       "Because the tool requires it"
+      ],
+      "a": 1,
+      "why": "Context keeps delivery from becoming technically proficient but adrift."
      }
     ],
     "takeaways": [
@@ -508,11 +684,11 @@
       "q": "Acceptance criteria are best treated as…",
       "opts": [
        "A separate artefact added after the story",
-       "An integral part of a well-elaborated item",
        "Optional for small stories",
+       "An integral part of a well-elaborated item",
        "The tester's responsibility only"
       ],
-      "a": 1,
+      "a": 2,
       "why": "The book treats acceptance criteria as integral, ideally derived from examples."
      },
      {
@@ -529,13 +705,90 @@
      {
       "q": "Validation at the Delivery Horizon is…",
       "opts": [
-       "A gate at the end of the iteration",
        "A continuous activity throughout the iteration",
+       "A gate at the end of the iteration",
        "Done only by testers",
        "Done after release"
       ],
-      "a": 1,
+      "a": 0,
       "why": "The analyst monitors emerging work and raises deviations early."
+     },
+     {
+      "q": "What shapes the time available for Delivery analysis outcomes?",
+      "opts": [
+       "The budget cycle",
+       "Stakeholder seniority",
+       "Document templates",
+       "Team capacity and velocity"
+      ],
+      "a": 3,
+      "why": "Section 7.3: capacity and historical velocity shape realistic commitments."
+     },
+     {
+      "q": "A well-elaborated backlog item is…",
+      "opts": [
+       "Fully specified for the whole release",
+       "Signed off by the sponsor",
+       "Written by the developer",
+       "Small enough for an iteration, clear enough to start, testable enough to verify"
+      ],
+      "a": 3,
+      "why": "These are the book's three tests."
+     },
+     {
+      "q": "Who takes responsibility for recording clarifications on the backlog item?",
+      "opts": [
+       "Nobody — conversation is enough",
+       "The Iteration Manager",
+       "The Agile Business Analyst",
+       "The sponsor"
+      ],
+      "a": 2,
+      "why": "Clarifications shouldn't remain undocumented knowledge held by individuals."
+     },
+     {
+      "q": "Which supporting artefact suits a change to a business process?",
+      "opts": [
+       "A Gantt chart",
+       "A process flow showing current and future state",
+       "A budget spreadsheet",
+       "A stakeholder email"
+      ],
+      "a": 1,
+      "why": "Diagrams and models cut ambiguity that prose can't."
+     },
+     {
+      "q": "What are the primary tools for preparing the backlog?",
+      "opts": [
+       "Decomposition, elaboration and prioritisation",
+       "Estimation, velocity and burndown",
+       "Templates and sign-offs",
+       "Status reports and RAID logs"
+      ],
+      "a": 0,
+      "why": "Section 7.3.2."
+     },
+     {
+      "q": "Shared understanding is easy to underestimate because…",
+      "opts": [
+       "It is invisible when present",
+       "It is written down",
+       "Only testers need it",
+       "It can be measured precisely"
+      ],
+      "a": 0,
+      "why": "Its absence shows up as defects, rework and surprise at review."
+     },
+     {
+      "q": "Outcome 7.3.5 asks the analyst to counteract…",
+      "opts": [
+       "Changing priorities",
+       "Stakeholder feedback",
+       "Iteration reviews",
+       "The gravitational pull of detail"
+      ],
+      "a": 3,
+      "why": "Keep the team connected to vision, customer and value."
      }
     ],
     "takeaways": [
@@ -673,35 +926,112 @@
      {
       "q": "Why elaborate close to delivery?",
       "opts": [
-       "It's faster to type",
        "Requirements specified far in advance risk becoming obsolete",
+       "It's faster to type",
        "Teams dislike documentation",
        "The tool requires it"
       ],
-      "a": 1,
+      "a": 0,
       "why": "Priorities, feedback and constraints change; early detail is often discarded."
      },
      {
       "q": "A defect that traces to an unclear requirement is best treated as…",
       "opts": [
        "The developer's mistake",
-       "A signal to improve how following items are elaborated",
        "Noise",
-       "A reason to write longer specifications"
+       "A reason to write longer specifications",
+       "A signal to improve how following items are elaborated"
       ],
-      "a": 1,
+      "a": 3,
       "why": "The analyst turns signals into better backlog items."
      },
      {
       "q": "What gives an individual story its meaning?",
       "opts": [
        "Its story points",
-       "The context: product vision, iteration goal, ordered backlog and user needs",
        "The ticket template",
+       "The context: product vision, iteration goal, ordered backlog and user needs",
        "The sprint length"
       ],
-      "a": 1,
+      "a": 2,
       "why": "Without context the team makes assumptions — a major source of rework."
+     },
+     {
+      "q": "How long is a typical Delivery iteration?",
+      "opts": [
+       "One day",
+       "One to four weeks",
+       "Three to six months",
+       "A year"
+      ],
+      "a": 1,
+      "why": "Section 7.4."
+     },
+     {
+      "q": "In a flow-based approach such as Kanban, work items…",
+      "opts": [
+       "Wait for the next fixed iteration",
+       "Move through the pipeline as capacity allows",
+       "Are all planned up front",
+       "Skip refinement"
+      ],
+      "a": 1,
+      "why": "No fixed-length iterations."
+     },
+     {
+      "q": "Within an iteration, analysis activity is…",
+      "opts": [
+       "Distributed across the full time box",
+       "Front-loaded on day one",
+       "Saved for the review",
+       "Done by the PO alone"
+      ],
+      "a": 0,
+      "why": "Items are elaborated just before or just after they're picked up."
+     },
+     {
+      "q": "When context flowing into delivery is ambiguous or absent, the team…",
+      "opts": [
+       "Delivers faster",
+       "Needs no analysis",
+       "Skips the review",
+       "Is forced to make assumptions — a primary source of rework"
+      ],
+      "a": 3,
+      "why": "Section 7.5."
+     },
+     {
+      "q": "Without feedback, iteration is merely…",
+      "opts": [
+       "Planning",
+       "Documentation",
+       "Repetition",
+       "Estimation"
+      ],
+      "a": 2,
+      "why": "Feedback is the engine of agile delivery."
+     },
+     {
+      "q": "Which is a feedback source during the iteration itself?",
+      "opts": [
+       "The annual report",
+       "The budget review",
+       "Developer and tester questions revealing ambiguity",
+       "The org chart"
+      ],
+      "a": 2,
+      "why": "Questions during build are early signals."
+     },
+     {
+      "q": "A pattern shows users aren't engaging with a delivered capability. The analyst should…",
+      "opts": [
+       "Ignore it until next quarter",
+       "Bring it to the Product Owner, as it may change what's built next",
+       "Add more stories to the same feature",
+       "Close the feature"
+      ],
+      "a": 1,
+      "why": "Delivery learning informs priority and scope decisions."
      }
     ],
     "takeaways": [
@@ -830,11 +1160,11 @@
       "q": "What does the mnemonic 'STAG US Pursue, Avoid and Embrace' help you remember?",
       "opts": [
        "Scrum events",
-       "The nine principles, in order",
        "Story splitting patterns",
+       "The nine principles, in order",
        "Definition of done"
       ],
-      "a": 1,
+      "a": 2,
       "why": "Each letter is a principle, in the book's order."
      },
      {
@@ -851,13 +1181,90 @@
      {
       "q": "Which is the best expression of 'Avoid Waste' at Delivery?",
       "opts": [
-       "Specify every scenario up front",
        "Elaborate only what is needed, when it is needed",
+       "Specify every scenario up front",
        "Skip acceptance criteria",
        "Skip refinement"
       ],
-      "a": 1,
+      "a": 0,
       "why": "Just in time, not just in case."
+     },
+     {
+      "q": "How many principles of agile business analysis does the book define?",
+      "opts": [
+       "Five",
+       "Seven",
+       "Twelve",
+       "Nine"
+      ],
+      "a": 3,
+      "why": "STAG US Pursue, Avoid and Embrace."
+     },
+     {
+      "q": "Which principle is described as perhaps the most practically powerful at Delivery?",
+      "opts": [
+       "See the Whole",
+       "Avoid Waste",
+       "Stimulate Collaboration",
+       "Get Real Using Examples"
+      ],
+      "a": 3,
+      "why": "Concrete examples remove ambiguity."
+     },
+     {
+      "q": "'Think as a Customer' is most directly expressed through…",
+      "opts": [
+       "Velocity charts",
+       "Technical design documents",
+       "Acceptance criteria and examples written from the user's perspective",
+       "Status reports"
+      ],
+      "a": 2,
+      "why": "Criteria framed as user outcomes, not system behaviours."
+     },
+     {
+      "q": "'Analyze to Determine What is Valuable' shows up as…",
+      "opts": [
+       "Specifying every detail",
+       "Focusing elaboration on the parts with most risk or uncertainty",
+       "Estimating every story",
+       "Writing longer stories"
+      ],
+      "a": 1,
+      "why": "Selectivity keeps elaboration efficient."
+     },
+     {
+      "q": "'Embrace Uncertainty and Change' treats misunderstandings and surprises as…",
+      "opts": [
+       "Information to learn from",
+       "Failures to be reported",
+       "Reasons to stop the iteration",
+       "The tester's fault"
+      ],
+      "a": 0,
+      "why": "Each iteration is a chance to learn what the team didn't know."
+     },
+     {
+      "q": "Where is 'Pursue Continuous Improvement' most visible?",
+      "opts": [
+       "In the retrospective and reflecting on the analysis process",
+       "In the business case",
+       "In the contract",
+       "In the org chart"
+      ],
+      "a": 0,
+      "why": "Are items well enough elaborated? Are criteria testable?"
+     },
+     {
+      "q": "In the mnemonic STAG US…, the 'U' stands for…",
+      "opts": [
+       "Use Cases",
+       "User Stories",
+       "Uncover Risks",
+       "Understand What is Feasible"
+      ],
+      "a": 3,
+      "why": "S-T-A-G-U-S-P-A-E, in the book's order."
      }
     ],
     "takeaways": [
@@ -1031,35 +1438,112 @@
      {
       "q": "Which is a value-based way to decompose a story?",
       "opts": [
-       "Front end / back end",
        "By business rule, data variation or happy/unhappy path",
+       "Front end / back end",
        "By developer",
        "By sprint"
       ],
-      "a": 1,
+      "a": 0,
       "why": "Each slice must be independently valuable and testable."
      },
      {
       "q": "A job story frames a requirement in terms of…",
       "opts": [
        "Role, capability and benefit",
-       "Situation, motivation and expected outcome",
        "Inputs and outputs",
-       "Epic and theme"
+       "Epic and theme",
+       "Situation, motivation and expected outcome"
       ],
-      "a": 1,
+      "a": 3,
       "why": "That's what distinguishes it from a user story."
      },
      {
       "q": "Where should NFRs live so they aren't deferred?",
       "opts": [
        "In a separate document for later",
-       "In explicit acceptance criteria or the definition of done",
        "Only in the test plan",
+       "In explicit acceptance criteria or the definition of done",
        "Nowhere — they're implied"
       ],
-      "a": 1,
+      "a": 2,
       "why": "Section 7.7.1: represent them in criteria or the definition of done."
+     },
+     {
+      "q": "What is the user story format?",
+      "opts": [
+       "When [situation], I want to [motivation], so I can [outcome]",
+       "As a [user], I want [capability], so that [benefit]",
+       "Given / When / Then",
+       "Shall / Must / Should"
+      ],
+      "a": 1,
+      "why": "The job story uses the situation–motivation–outcome form instead."
+     },
+     {
+      "q": "Job stories are especially useful when…",
+      "opts": [
+       "The team has no Product Owner",
+       "The situation and motivation drive behaviour more than the user's role",
+       "Writing NFRs",
+       "Estimating"
+      ],
+      "a": 1,
+      "why": "They capture context that drives behaviour."
+     },
+     {
+      "q": "What does splitting a feature by technical layer usually produce?",
+      "opts": [
+       "Dependencies, and 'done' stories with nothing to show users",
+       "Faster delivery",
+       "Better tests",
+       "Clearer acceptance criteria"
+      ],
+      "a": 0,
+      "why": "Split along value lines instead."
+     },
+     {
+      "q": "Story elaboration is described as…",
+      "opts": [
+       "An optional step",
+       "The developer's job",
+       "A post-release activity",
+       "The central analysis activity at the Delivery Horizon"
+      ],
+      "a": 3,
+      "why": "It's the output of most refinement and Three Amigos sessions."
+     },
+     {
+      "q": "In specification by example, which comes first?",
+      "opts": [
+       "Acceptance criteria",
+       "Test scripts",
+       "Concrete examples agreed with the team",
+       "UI design"
+      ],
+      "a": 2,
+      "why": "Criteria are distilled from examples."
+     },
+     {
+      "q": "With behaviour-driven development, examples can become…",
+      "opts": [
+       "Business cases",
+       "Release notes",
+       "Executable specifications that are also automated tests",
+       "User manuals"
+      ],
+      "a": 2,
+      "why": "Section 7.3.1."
+     },
+     {
+      "q": "Metrics and KPIs at the Delivery Horizon let the team verify…",
+      "opts": [
+       "Developer productivity",
+       "That a feature delivers the value it was designed for, not just that it was built",
+       "Budget spend",
+       "Meeting attendance"
+      ],
+      "a": 1,
+      "why": "Criteria anchored to measurable outcomes."
      }
     ],
     "takeaways": [
@@ -1195,11 +1679,11 @@
       "q": "A spike is…",
       "opts": [
        "A sudden rise in velocity",
-       "A time-boxed investigation to resolve uncertainty blocking elaboration or estimation",
        "A large story",
+       "A time-boxed investigation to resolve uncertainty blocking elaboration or estimation",
        "A production incident"
       ],
-      "a": 1,
+      "a": 2,
       "why": "It explores the question without committing to full delivery."
      },
      {
@@ -1216,13 +1700,90 @@
      {
       "q": "Real options thinking helps the analyst…",
       "opts": [
-       "Make every decision now",
        "Defer decisions to the last responsible moment",
+       "Make every decision now",
        "Avoid decisions",
        "Estimate faster"
       ],
-      "a": 1,
+      "a": 0,
       "why": "It avoids committing before the team understands enough to choose well."
+     },
+     {
+      "q": "Which technique keeps the user's goals and context visible while the team is deep in detail?",
+      "opts": [
+       "Relative Estimation",
+       "Kanban Board",
+       "Spikes",
+       "Personas"
+      ],
+      "a": 3,
+      "why": "Referencing the persona keeps decisions grounded in a real need."
+     },
+     {
+      "q": "A complex or contested requirement can't be resolved informally. Which technique fits?",
+      "opts": [
+       "Storyboarding",
+       "Planning Poker",
+       "Product Roadmap",
+       "Discovery Workshop"
+      ],
+      "a": 3,
+      "why": "A structured session within the iteration."
+     },
+     {
+      "q": "Event Storming models…",
+      "opts": [
+       "Team capacity",
+       "Budget allocation",
+       "Domain events, commands and aggregates",
+       "Release dates"
+      ],
+      "a": 2,
+      "why": "It builds shared understanding of complex domain behaviour."
+     },
+     {
+      "q": "Recurring defects suggest a systemic issue. Which technique fits?",
+      "opts": [
+       "Personas",
+       "Root Cause Analysis",
+       "Storyboarding",
+       "MVP"
+      ],
+      "a": 1,
+      "why": "Prevents patching symptoms repeatedly."
+     },
+     {
+      "q": "Minimum Viable Product thinking at Delivery helps the team…",
+      "opts": [
+       "Find the simplest implementation that genuinely delivers value",
+       "Build every feature at once",
+       "Avoid user feedback",
+       "Skip testing"
+      ],
+      "a": 0,
+      "why": "Defer enhancement until feedback justifies it."
+     },
+     {
+      "q": "Stakeholder Analysis at Delivery identifies…",
+      "opts": [
+       "Who to consult, who can accept a feature, and who may be affected",
+       "The team's velocity",
+       "The release date",
+       "The test environment"
+      ],
+      "a": 0,
+      "why": "Not all stakeholders are relevant to all features."
+     },
+     {
+      "q": "Problem Definition and Analysis is most useful at Delivery when…",
+      "opts": [
+       "Estimating",
+       "Writing release notes",
+       "Running the standup",
+       "A requirement starts drifting from the original problem"
+      ],
+      "a": 3,
+      "why": "It anchors scope conversations."
      }
     ],
     "takeaways": [
@@ -1378,35 +1939,112 @@
      {
       "q": "Who takes part in a Three Amigos conversation?",
       "opts": [
-       "The sponsor, PO and architect",
        "People representing the analyst, developer and tester mindsets",
+       "The sponsor, PO and architect",
        "The whole department",
        "Only testers"
       ],
-      "a": 1,
+      "a": 0,
       "why": "Three to five people bringing the three mindsets."
      },
      {
       "q": "An item is very hard to estimate. That most likely signals…",
       "opts": [
        "The team is slow",
-       "The item hasn't been adequately elaborated",
        "Estimation is useless",
-       "The PO should decide the estimate"
+       "The PO should decide the estimate",
+       "The item hasn't been adequately elaborated"
       ],
-      "a": 1,
+      "a": 3,
       "why": "A signal for more analysis, not a reason to proceed."
      },
      {
       "q": "A story has sat 'in progress' on the Kanban Board for days. The analyst should…",
       "opts": [
        "Ignore it",
-       "Check for an unresolved ambiguity they can help address",
        "Move it back to the backlog",
+       "Check for an unresolved ambiguity they can help address",
        "Escalate to the sponsor"
       ],
-      "a": 1,
+      "a": 2,
       "why": "Stuck items often signal analysis questions."
+     },
+     {
+      "q": "How many people typically take part in a Three Amigos conversation?",
+      "opts": [
+       "Exactly two",
+       "Three to five",
+       "The whole department",
+       "Ten or more"
+      ],
+      "a": 1,
+      "why": "Enough to bring all three mindsets to the table."
+     },
+     {
+      "q": "What is the output of a Three Amigos session?",
+      "opts": [
+       "A signed specification",
+       "Shared understanding, examples and acceptance criteria — not a document",
+       "A project plan",
+       "A test environment"
+      ],
+      "a": 1,
+      "why": "Section 2.8.4."
+     },
+     {
+      "q": "When should a Three Amigos session stop?",
+      "opts": [
+       "When the team can estimate and start",
+       "When every scenario is written",
+       "After exactly an hour",
+       "When the sponsor approves"
+      ],
+      "a": 0,
+      "why": "Avoid waste — enough, not everything."
+     },
+     {
+      "q": "What is the primary planning workshop at the Delivery Horizon?",
+      "opts": [
+       "Portfolio planning",
+       "Annual budgeting",
+       "Release retrospective",
+       "Iteration planning"
+      ],
+      "a": 3,
+      "why": "The Agile BA prepares items and resolves questions during it."
+     },
+     {
+      "q": "Planning Poker is an example of…",
+      "opts": [
+       "A Kanban metric",
+       "A product roadmap",
+       "A collaborative game",
+       "An NFR"
+      ],
+      "a": 2,
+      "why": "Games surface hidden differences in understanding."
+     },
+     {
+      "q": "At the Delivery Horizon, the Product Roadmap is used as…",
+      "opts": [
+       "The team's task list",
+       "A replacement for the backlog",
+       "Context, with delivery learning fed back when it should change",
+       "A contract"
+      ],
+      "a": 2,
+      "why": "Learning can flow back upstream."
+     },
+     {
+      "q": "Which event is the natural home of Relative Estimation?",
+      "opts": [
+       "The daily standup",
+       "Iteration planning and backlog refinement",
+       "The retrospective only",
+       "The sponsor briefing"
+      ],
+      "a": 1,
+      "why": "Estimation needs well-understood items."
      }
     ],
     "takeaways": [
@@ -1547,11 +2185,11 @@
       "q": "Which belongs in a fully elaborated item in this course?",
       "opts": [
        "Detailed UI designs for every screen",
-       "Examples, criteria, NFRs and a measurable indicator",
        "The project budget",
+       "Examples, criteria, NFRs and a measurable indicator",
        "The team roster"
       ],
-      "a": 1,
+      "a": 2,
       "why": "These are the elements built today."
      },
      {
@@ -1564,6 +2202,94 @@
       ],
       "a": 1,
       "why": "The outcomes describe what good delivery analysis produces."
+     },
+     {
+      "q": "Which is the best evidence that acceptance criteria are good?",
+      "opts": [
+       "They trace to agreed examples and are observable",
+       "They are long",
+       "They repeat the story",
+       "They name the developer"
+      ],
+      "a": 0,
+      "why": "Observable results for specific examples."
+     },
+     {
+      "q": "Your finished item can't fit in one iteration. What should you do?",
+      "opts": [
+       "Extend the iteration",
+       "Remove the acceptance criteria",
+       "Split it by technical layer",
+       "Decompose it further into value slices"
+      ],
+      "a": 3,
+      "why": "Small enough for an iteration is part of 'well-elaborated'."
+     },
+     {
+      "q": "Where should NFRs appear on the finished item?",
+      "opts": [
+       "Nowhere — they're implied",
+       "In a separate document for later",
+       "Only in the test plan",
+       "In explicit acceptance criteria or the definition of done"
+      ],
+      "a": 3,
+      "why": "So they aren't deferred indefinitely."
+     },
+     {
+      "q": "Which supporting artefact did the running case add to reduce ambiguity?",
+      "opts": [
+       "A business case",
+       "A Gantt chart",
+       "A consignment state diagram",
+       "An org chart"
+      ],
+      "a": 2,
+      "why": "Notified → confirmed / safe drop / no response → route locked."
+     },
+     {
+      "q": "The remaining risk on the running-case item is handled by…",
+      "opts": [
+       "Ignoring it",
+       "A spike on the route-lock integration",
+       "Adding more stories",
+       "Delaying the whole feature"
+      ],
+      "a": 1,
+      "why": "A time-boxed investigation to resolve uncertainty."
+     },
+     {
+      "q": "What does a 'measurable indicator' on a story tell you?",
+      "opts": [
+       "Whether the story is delivering the value it was meant to",
+       "How many hours it took",
+       "Who built it",
+       "How many points it was"
+      ],
+      "a": 0,
+      "why": "Section 7.7.1, Metrics and KPIs."
+     },
+     {
+      "q": "Which commitment is strongest?",
+      "opts": [
+       "Run a Three Amigos on the next story before refinement",
+       "Be more engaged",
+       "Communicate better",
+       "Read the book again"
+      ],
+      "a": 0,
+      "why": "Specific, near-term and observable."
+     },
+     {
+      "q": "Why check the finished item against the five outcomes?",
+      "opts": [
+       "They're required for sign-off",
+       "They replace testing",
+       "They set the budget",
+       "They describe what good Delivery analysis produces"
+      ],
+      "a": 3,
+      "why": "Section 7.3."
      }
     ],
     "takeaways": [
