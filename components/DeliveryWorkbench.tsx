@@ -244,7 +244,7 @@ export default function DeliveryWorkbench({
                 </div>
               ))}
             </div>
-            <p className="wb-tip">Drag cards between columns. The roadmap is owned at the Initiative Horizon — at Delivery it's <b>context</b> that tells the team why this iteration matters.</p>
+            <p className="wb-tip">Drag cards between columns. You own the roadmap here at the Initiative Horizon; when it flows down to Delivery it becomes the <b>context</b> that tells the team why each iteration matters.</p>
             <div className="wb-2">
               <Field label={`${T.feature} you're delivering`} value={s.feature} onChange={(v) => up({ feature: v })} placeholder="e.g. Receiver delivery-window confirmation" />
               <Field label="Signal that it worked" value={s.signal} onChange={(v) => up({ signal: v })} placeholder="e.g. ≥70% confirm before route lock" />
