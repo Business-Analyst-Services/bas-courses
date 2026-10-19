@@ -151,10 +151,6 @@
      {
       "heading": "The running case",
       "body": "**Southern Cross Freight** (fictional) moves about 38,000 consignments a day through 14 depots. Only 79% arrive within their promised window and 9% fail at the first delivery attempt. The product team's goal is on-time last-mile delivery of 92% or better.\n\nThe top item on the product backlog is **receiver delivery-window confirmation**: the evening before delivery, the receiver is asked to confirm they'll be in, or choose a safe drop, before routes lock at 5 am. Today we take that item from a feature on the backlog to a story the team can build and verify.\n\n*Illustrative worked example using a fictional organisation.*"
-     },
-     {
-      "heading": "Workbench: try it on your item",
-      "body": "**How today works:** keep the Workbench open in a second tab. After each session you'll take *one* backlog item a step further, and the thread bar at the top fills in as you go. Start now: pick the roadmap item you're delivering against and name the feature — your Day 2 feature is offered if you took the Initiative day. Not sure yet? Press **Load running case** and adapt it.\n\n[Open Workbench step 1 →](/c/horizons-delivery/workbench?step=1)"
      }
     ],
     "activities": [
@@ -329,7 +325,7 @@
       "notes": "Six minutes; chat waterfall of items."
      }
     ],
-    "facilitationNotes": "Keep it brisk. Participants without a suitable item adopt the running case. Point out that the course follows chapter 7 of the book section by section.\n\n**Workbench:** give 3–5 minutes at the end of the session for step 1. Share your screen with the running case loaded to model it first.",
+    "facilitationNotes": "Keep it brisk. Participants without a suitable item adopt the running case. Point out that the course follows chapter 7 of the book section by section.",
     "whatGood": "Every participant has an item, a user and a value statement.",
     "commonFailure": "Choosing an item that's really months of work — the fix: we'll decompose it in session 7; for now name it.",
     "debrief": [
@@ -394,10 +390,6 @@
      {
       "heading": "One story, two rhythms",
       "body": "The same story — *receiver confirms the delivery window or chooses a safe drop* — run two ways:\n\n| Moment | Scrum team (2-week sprints) | Kanban team (flow) |\n|---|---|---|\n| Before work starts | Refined and Three Amigos'd in sprint 3 refinement, ready for sprint 4 planning | Elaborated when it reaches the top of Ready; Three Amigos the morning it's pulled |\n| Commitment | Planned into sprint 4 against the goal 'receivers can confirm from SMS in two pilot depots' | Pulled into Analyse when a slot frees up (WIP 2) |\n| During build | Question about expired links answered at stand-up the same day | Card flagged **Blocked** on the board; the BA clears it within hours |\n| Done | Demoed at sprint 4 review; confirmation rate shown | Demoed when it reaches Done; confirmation rate shown at the fortnightly review |\n| Learning | Retro: 'add an expired-link example to every notification story' | Cycle-time review: 6 days, 2 of them blocked on Legal — involve Legal earlier |\n\n*Illustrative worked example using a fictional organisation.*"
-     },
-     {
-      "heading": "Workbench: try it on your item",
-      "body": "The Practice simulations in this session show a whole team's sprint and flow. The Workbench is where you run *your own* item through it: switch **Show in** to Jira + Confluence or Azure DevOps and every label changes to match where that piece lives in your tool.\n\n[Open Workbench step 4 →](/c/horizons-delivery/workbench?step=4) · [Open Workbench step 5 →](/c/horizons-delivery/workbench?step=5)"
      }
     ],
     "activities": [
@@ -840,7 +832,7 @@
       "notes": "Individual. Tell them it feeds every AI prompt today; include one habit they'll change."
      }
     ],
-    "facilitationNotes": "This session is labelled 'beyond the book' — the book is framework-neutral by design. Map terms both ways (sprint ↔ iteration, Scrum Master ↔ Iteration Manager). Tool names are examples, not endorsements; don't let it become a tool debate. Participants new to agile can describe their organisation's intended setup. The two Practice simulations save each participant's result to their workbook (visible on the roster). If time is tight, run the sprint simulation together on screen and set the Kanban one for a break.\n\n**Workbench:** give 3–5 minutes at the end of the session for step 4, 5. Share your screen with the running case loaded to model it first.",
+    "facilitationNotes": "This session is labelled 'beyond the book' — the book is framework-neutral by design. Map terms both ways (sprint ↔ iteration, Scrum Master ↔ Iteration Manager). Tool names are examples, not endorsements; don't let it become a tool debate. Participants new to agile can describe their organisation's intended setup. The two Practice simulations save each participant's result to their workbook (visible on the roster). If time is tight, run the sprint simulation together on screen and set the Kanban one for a break.",
     "whatGood": "A specific setup (framework, cadence, tools, where criteria live) and one concrete habit tied to a real item.",
     "commonFailure": "Vague setups ('we do agile') — the fix: ask which events happen, how long iterations are, and where the criteria are written today.",
     "debrief": [
@@ -1152,10 +1144,6 @@
      {
       "heading": "7.3.5 Focus on product vision, customer and value",
       "body": "Detail has a gravitational pull. The analyst keeps the team connected to the vision (which of two equivalent implementations better serves the customer?), the customer (criteria written as user outcomes) and value (is this the most valuable work, and is it landing with users?)."
-     },
-     {
-      "heading": "Workbench: try it on your item",
-      "body": "Put the outcomes of analysis to work: slice your feature into stories and check each against INVEST, then elaborate one until the Definition of Ready meter is full.\n\n[Open Workbench step 2 →](/c/horizons-delivery/workbench?step=2) · [Open Workbench step 3 →](/c/horizons-delivery/workbench?step=3)"
      }
     ],
     "activities": [
@@ -1377,7 +1365,7 @@
       "notes": "Which outcome is weakest across the room?"
      }
     ],
-    "facilitationNotes": "Expect 7.3.5 to be the weakest for most people. Point to session 6 for 'think as a customer' and session 7 for decomposition.\n\n**Workbench:** give 3–5 minutes at the end of the session for step 2, 3. Share your screen with the running case loaded to model it first.",
+    "facilitationNotes": "Expect 7.3.5 to be the weakest for most people. Point to session 6 for 'think as a customer' and session 7 for decomposition.",
     "whatGood": "Honest ratings with a concrete next action; a supporting artefact that genuinely reduces ambiguity.",
     "commonFailure": "Rating everything green — the fix: ask 'could a tester write tests from it today?'",
     "debrief": [
@@ -1434,10 +1422,6 @@
      {
       "heading": "7.5 Context, feedback and learning",
       "body": "**Context** — the product vision, the iteration goal, the ordered backlog and the understanding of user needs — gives each story its meaning. When context is unclear, the team makes assumptions, and assumptions are a primary source of rework.\n\n![Feedback sources at the Delivery Horizon](/visuals/horizons-delivery/feedback-loops.svg)\n\nThe analyst listens for signals — questions that reveal misunderstandings, defects that point to unclear requirements, stories that fall short of expectations — and uses them to improve the next items. When a pattern appears (a feature is far more complex than expected, users aren't engaging), it goes to the Product Owner because it may change what's built next."
-     },
-     {
-      "heading": "Workbench: try it on your item",
-      "body": "See the time frame in action: step through a one-week iteration day by day and watch where the analyst adds value. Then record review feedback and decide whether it changes the backlog, the roadmap or goes up to Strategy.\n\n[Open Workbench step 5 →](/c/horizons-delivery/workbench?step=5) · [Open Workbench step 6 →](/c/horizons-delivery/workbench?step=6)"
      }
     ],
     "activities": [
@@ -1627,7 +1611,7 @@
       "notes": "Collect patterns in chat."
      }
     ],
-    "facilitationNotes": "Pre-lunch: keep the teach short and the activity concrete. Expect many to say their team lacks a clear iteration goal — note it for session 9.\n\n**Workbench:** give 3–5 minutes at the end of the session for step 5, 6. Share your screen with the running case loaded to model it first.",
+    "facilitationNotes": "Pre-lunch: keep the teach short and the activity concrete. Expect many to say their team lacks a clear iteration goal — note it for session 9.",
     "whatGood": "Specific signals linked to specific changes in elaboration practice.",
     "commonFailure": "Generic actions ('communicate better') — the fix: what will you do differently on the next item?",
     "debrief": [
@@ -1679,10 +1663,6 @@
      {
       "heading": "From abstract to concrete",
       "body": "*Abstract:* 'The system shall allow receivers to choose a safe drop.'\n\n*Concrete:* 'When a receiver at a house selects **Front porch**, the instruction appears on the driver's run sheet; items over 25 kg are not offered a safe drop, and the receiver is told why.'\n\nThe second version leaves far less room for misinterpretation and gives developers and testers an unambiguous target."
-     },
-     {
-      "heading": "Workbench: try it on your item",
-      "body": "Apply *Get Real Using Examples*: turn your story into Given–When–Then scenarios and watch the live preview build the acceptance criteria.\n\n[Open Workbench step 3 →](/c/horizons-delivery/workbench?step=3)"
      }
     ],
     "activities": [
@@ -1873,7 +1853,7 @@
       "notes": "Share one rewritten example."
      }
     ],
-    "facilitationNotes": "Post-lunch energy: use a quick poll on 'which principle is hardest'. Be precise that the book has nine principles, including Pursue Continuous Improvement and Embrace Uncertainty and Change as separate principles.\n\n**Workbench:** give 3–5 minutes at the end of the session for step 3. Share your screen with the running case loaded to model it first.",
+    "facilitationNotes": "Post-lunch energy: use a quick poll on 'which principle is hardest'. Be precise that the book has nine principles, including Pursue Continuous Improvement and Embrace Uncertainty and Change as separate principles.",
     "roleplay": {
      "persona": "Mei, receiver and shift-working nurse (illustrative)",
      "line": "\"I got a text at 9 pm asking if I'll be home tomorrow — I'm on night shift, so what do I pick?\"",
@@ -1948,10 +1928,6 @@
      {
       "heading": "Non-Functional Requirements, Metrics and KPIs",
       "body": "| NFR | Story-level requirement (illustrative) |\n|---|---|\n| Privacy | Receiver sees only their own consignment; driver sees only address and safe-drop instruction |\n| Security | Single-use, time-limited link; no login or payment requested |\n| Accessibility | Meets WCAG 2.2 AA; works on mobile |\n| Performance | Page loads in under 2 seconds on 4G |\n| Safety | Safe drop never requires climbing, entering premises or lifting over a fence; items over 25 kg not offered |\n| Audit | Every confirmation logged with timestamp and source |\n\nNFRs go in explicit acceptance criteria or the definition of done, so they aren't deferred indefinitely.\n\n**Story-level indicator:** % of notified receivers who confirm or choose a safe drop within 4 hours — anchored to the product's measure of fewer failed first attempts."
-     },
-     {
-      "heading": "Workbench: try it on your item",
-      "body": "Practise the techniques on your own item: choose a splitting pattern for each slice, write the story, add scenarios and tick the NFRs that apply.\n\n[Open Workbench step 2 →](/c/horizons-delivery/workbench?step=2) · [Open Workbench step 3 →](/c/horizons-delivery/workbench?step=3)"
      }
     ],
     "activities": [
@@ -2172,7 +2148,7 @@
       "notes": "Trickiest example."
      }
     ],
-    "facilitationNotes": "Groups write criteria before examples — redirect. Insist on one unhappy path and one privacy NFR. Unfinished work is fine: session 10 completes it.\n\n**Workbench:** give 3–5 minutes at the end of the session for step 2, 3. Share your screen with the running case loaded to model it first.",
+    "facilitationNotes": "Groups write criteria before examples — redirect. Insist on one unhappy path and one privacy NFR. Unfinished work is fine: session 10 completes it.",
     "whatGood": "Value slices; four or more examples incl. an unhappy path; criteria traceable to examples; NFRs; a measurable indicator.",
     "commonFailure": "Criteria that restate the story — the fix: what exact observable result, for which example?",
     "debrief": [
@@ -2226,10 +2202,6 @@
      {
       "heading": "Running case: choosing the technique",
       "body": "| Ambiguity | Technique |\n|---|---|\n| What may the SMS contain, and what consent is needed? | **Spike** with Legal, time-boxed to two days |\n| Drivers ignore safe-drop notes on the run sheet | **Prototyping** a revised run-sheet line with three drivers |\n| Should a confirmation lock the window or allow changes until route lock? | **Real Options** — decide when the route-lock integration is understood |\n| Where does confirmation sit relative to tracking and redelivery? | **Story Mapping** — check the existing map |\n| Failed first attempts rising at one depot despite confirmations | **Root Cause Analysis**, findings to the Product Owner |\n\n*Illustrative worked example using a fictional organisation.*"
-     },
-     {
-      "heading": "Workbench: try it on your item",
-      "body": "Throw a curveball in the week view. For each one, decide: resolve it in conversation, or add a new backlog item (and does it need a spike?).\n\n[Open Workbench step 5 →](/c/horizons-delivery/workbench?step=5)"
      }
     ],
     "activities": [
@@ -2418,7 +2390,7 @@
       "notes": "Most-chosen technique."
      }
     ],
-    "facilitationNotes": "Don't try to teach every technique in depth — the full descriptions are in the book's technique chapters. Focus on choosing the right one.\n\n**Workbench:** give 3–5 minutes at the end of the session for step 5. Share your screen with the running case loaded to model it first.",
+    "facilitationNotes": "Don't try to teach every technique in depth — the full descriptions are in the book's technique chapters. Focus on choosing the right one.",
     "whatGood": "Each ambiguity matched to a technique with a concrete, time-boxed first step.",
     "commonFailure": "Defaulting to 'a workshop' for everything — the fix: would a two-hour spike or a rough sketch resolve it faster?",
     "debrief": [
@@ -2485,10 +2457,6 @@
      {
       "heading": "Where the techniques live in agile events",
       "body": "| Event | Techniques in play |\n|---|---|\n| Backlog refinement | Three Amigos, Story Elaboration, Relative Estimation |\n| Iteration planning | Planning Workshop, Relative Estimation, Collaborative Games |\n| Daily standup | Kanban Board — spot items stuck on questions |\n| Iteration review | Validate the increment; capture feedback as backlog items |\n| Retrospective | Pursue Continuous Improvement in the analysis process |"
-     },
-     {
-      "heading": "Workbench: try it on your item",
-      "body": "Estimate with the planning-poker cards, set capacity, pull in only ready items and write the iteration goal. Then move cards across the board and practise unblocking.\n\n[Open Workbench step 4 →](/c/horizons-delivery/workbench?step=4) · [Open Workbench step 5 →](/c/horizons-delivery/workbench?step=5)"
      }
     ],
     "activities": [
@@ -2702,7 +2670,7 @@
       "notes": "Where do these live in your team?"
      }
     ],
-    "facilitationNotes": "Assign trio roles explicitly; give testers licence to be awkward. Keep event language framework-neutral.\n\n**Workbench:** give 3–5 minutes at the end of the session for step 4, 5. Share your screen with the running case loaded to model it first.",
+    "facilitationNotes": "Assign trio roles explicitly; give testers licence to be awkward. Keep event language framework-neutral.",
     "roleplay": {
      "persona": "Dev, a developer in the trio",
      "line": "\"What happens if the receiver confirms, then the retailer splits the order into two consignments?\"",
@@ -2761,10 +2729,6 @@
      {
       "heading": "The finished running-case item",
       "body": "| Element | Content |\n|---|---|\n| Story | Receiver confirms window or chooses a safe drop via one-click link |\n| Examples | House at home; house at work → porch; small business; link after route lock; 30 kg safe drop rejected; split consignment |\n| Criteria | Run updated within 5 min; safe drop on run sheet; expired link shows no data |\n| NFRs | Privacy, security, WCAG 2.2 AA, < 2 s load, safety limits, audit log |\n| Indicator | % confirming or choosing safe drop within 4 hours |\n| Artefacts | Consignment state diagram; run-sheet line prototype |\n\n*Illustrative worked example using a fictional organisation.*"
-     },
-     {
-      "heading": "Workbench: try it on your item",
-      "body": "Finish the thread: capture review feedback, update the roadmap if the evidence says so, and download your thread as Markdown to take back to work.\n\n[Open Workbench step 6 →](/c/horizons-delivery/workbench?step=6)"
      }
     ],
     "activities": [
@@ -2961,7 +2925,7 @@
       "notes": "Resources and feedback survey."
      }
     ],
-    "facilitationNotes": "End on time. Read the finished running-case table aloud as the final moment.\n\n**Workbench:** give 3–5 minutes at the end of the session for step 6. Share your screen with the running case loaded to model it first.",
+    "facilitationNotes": "End on time. Read the finished running-case table aloud as the final moment.",
     "whatGood": "A complete item and specific commitments.",
     "commonFailure": "Running out of time — the fix: prioritise the outcome check and commitments over polishing.",
     "debrief": [
@@ -2978,12 +2942,6 @@
   }
  ],
  "resources": [
-  {
-   "title": "Delivery Workbench",
-   "description": "Interactive: follow one backlog item from roadmap to review — slicing, Given–When–Then, Definition of Ready, planning poker, the week, and the roadmap update.",
-   "href": "/c/horizons-delivery/workbench",
-   "audience": "participant"
-  },
   {
    "title": "Story elaboration template",
    "description": "User or job story, examples table, Given/When/Then criteria, NFR checklist and indicator.",

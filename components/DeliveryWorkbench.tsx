@@ -221,7 +221,7 @@ export default function DeliveryWorkbench({
           <section>
             <Intro title="Start from the roadmap, not the backlog" text={`Every story you build should trace back to an outcome on the roadmap. Pick the roadmap item you're delivering against now, then name the ${T.feature.toLowerCase()} that serves it and the signal that will tell you it worked.`} />
             {carried?.feature && !s.feature && (
-              <div className="wb-carry">From your Initiative day: <b>{carried.feature}</b> <button className="wb-btn sm" onClick={() => up({ feature: carried.feature! })}>Use this</button></div>
+              <div className="wb-carry">From your answers earlier today: <b>{carried.feature}</b> <button className="wb-btn sm" onClick={() => up({ feature: carried.feature! })}>Use this</button></div>
             )}
             <Field label="Strategic or product outcome" value={s.outcome} onChange={(v) => up({ outcome: v })} placeholder="e.g. On-time last-mile delivery 79% → ≥92%" />
             <div className="wb-lanes">
