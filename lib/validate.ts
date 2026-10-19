@@ -32,6 +32,8 @@ export function validateCourse(c: unknown): string[] {
       if (!(q.a >= 0 && q.a < (q.opts?.length ?? 0))) e.push(`${at}: quiz question ${i + 1} has an invalid answer index`);
     });
   }
+  const actIds = new Set(x.modules.flatMap((m) => m.participant?.activities ?? []).map((a) => a.id));
+  for (const m of x.modules) for (const a of m.participant?.aiContext ?? []) if (!actIds.has(a)) e.push(`Session ${m.id}: AI prompt links to missing activity ${a}`);
   for (const d of x.days) for (const b of d.blocks ?? []) if (b.moduleId && !ids.has(b.moduleId)) e.push(`Agenda block "${b.title}" links to missing session ${b.moduleId}`);
   return e;
 }
