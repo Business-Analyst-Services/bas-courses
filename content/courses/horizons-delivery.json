@@ -805,6 +805,7 @@
     ],
     "aiContext": [
      "hd-s1-act1",
+     "hd-s2-act1",
      "hd-s3-act1",
      "hd-s3-act2"
     ]
@@ -1053,6 +1054,9 @@
     ],
     "aiContext": [
      "hd-s1-act1",
+     "hd-s2-act1",
+     "hd-s3-act1",
+     "hd-s3-act2",
      "hd-s4-act1"
     ]
    },
@@ -1290,6 +1294,10 @@
     ],
     "aiContext": [
      "hd-s1-act1",
+     "hd-s2-act1",
+     "hd-s3-act1",
+     "hd-s3-act2",
+     "hd-s4-act1",
      "hd-s5-act1"
     ]
    },
@@ -1573,6 +1581,11 @@
     ],
     "aiContext": [
      "hd-s1-act1",
+     "hd-s2-act1",
+     "hd-s3-act1",
+     "hd-s3-act2",
+     "hd-s4-act1",
+     "hd-s5-act1",
      "hd-s6-act1",
      "hd-s6-act2"
     ]
@@ -1818,6 +1831,12 @@
     ],
     "aiContext": [
      "hd-s1-act1",
+     "hd-s2-act1",
+     "hd-s3-act1",
+     "hd-s3-act2",
+     "hd-s4-act1",
+     "hd-s5-act1",
+     "hd-s6-act1",
      "hd-s6-act2",
      "hd-s7-act1"
     ]
@@ -2083,7 +2102,15 @@
      "Use the board to spot stuck questions."
     ],
     "aiContext": [
+     "hd-s1-act1",
+     "hd-s2-act1",
+     "hd-s3-act1",
+     "hd-s3-act2",
+     "hd-s4-act1",
+     "hd-s5-act1",
+     "hd-s6-act1",
      "hd-s6-act2",
+     "hd-s7-act1",
      "hd-s8-act1",
      "hd-s8-act2"
     ]
@@ -2333,8 +2360,17 @@
      "Practise one technique and one principle next iteration."
     ],
     "aiContext": [
+     "hd-s1-act1",
+     "hd-s2-act1",
+     "hd-s3-act1",
+     "hd-s3-act2",
+     "hd-s4-act1",
+     "hd-s5-act1",
+     "hd-s6-act1",
      "hd-s6-act2",
+     "hd-s7-act1",
      "hd-s8-act1",
+     "hd-s8-act2",
      "hd-s9-act1"
     ]
    },
