@@ -5,13 +5,13 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "BAS Course Portal",
   description: "Business Analyst Services — participant and presenter course portal.",
-  icons: { icon: "/bas-mark.svg" },
+  icons: { icon: "/favicon.png", apple: "/apple-touch-icon.png" },
   robots: { index: false, follow: false },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <ClerkProvider appearance={{ variables: { colorPrimary: "#1789A0", fontFamily: "Poppins, sans-serif" } }}>
+    <ClerkProvider appearance={{ variables: { colorPrimary: "#1789A0", fontFamily: "Poppins, sans-serif" }, layout: { logoImageUrl: "/bas-logo.png", logoPlacement: "inside" } }}>
       <html lang="en-AU">
         <head>
           {/* eslint-disable-next-line @next/next/no-page-custom-font */}

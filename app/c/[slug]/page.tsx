@@ -27,7 +27,7 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
         <main className="main">
         <VersionBanner course={course} role={role} />
         <section className="hero">
-          <img className="hero-logo" src="/bas-logo.svg" alt="" />
+          <img className="hero-logo" src="/bas-logo.png" alt="" />
           <div className="hk">{course.format.toUpperCase()}{course.series ? ` · ${course.series.toUpperCase()}` : ""}</div>
           <h1>{course.title}<span>{course.tagline}</span></h1>
           <p className="hsub">{course.delivery} · {course.audience}</p>

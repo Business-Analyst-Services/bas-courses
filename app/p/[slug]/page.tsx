@@ -30,7 +30,7 @@ export default async function ProgramHome({ params }: { params: Promise<{ slug: 
       <Nav enrolments={enr} isAdmin={v.isAdmin} />
       <main className="content">
         <section className="hero">
-          <img className="hero-logo" src="/bas-logo.svg" alt="" />
+          <img className="hero-logo" src="/bas-logo.png" alt="" />
           <div className="hk">PROGRAM · {list.length} COURSES</div>
           <h1>{p.title}{p.description && <span>{p.description}</span>}</h1>
           <div className="stats">

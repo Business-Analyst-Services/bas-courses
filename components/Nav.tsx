@@ -18,7 +18,7 @@ export default async function Nav({
     <header className="nav">
       <div className="navin">
         <Link href="/" className="brand">
-          <img className="bas-logo" src="/bas-mark.svg" alt="BAS" />
+          <img className="bas-logo" src="/bas-mark.png" alt="BAS" />
           <div>
             <div className="t1">BUSINESS ANALYST SERVICES</div>
             <div className="t2">Course Portal</div>

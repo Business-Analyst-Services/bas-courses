@@ -11,7 +11,7 @@ body{font-family:'Poppins',system-ui,sans-serif;background:var(--bg);color:var(-
 .nav{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;box-shadow:0 2px 14px #14283f2e}
 .navin{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:16px;padding:9px 22px}
 .brand{display:flex;align-items:center;gap:10px;cursor:pointer;flex-shrink:0}
-.bas-logo{width:40px;height:40px;flex-shrink:0;display:block}
+.bas-logo{width:44px;height:44px;border-radius:50%;flex-shrink:0;display:block}
 .hero-logo{position:absolute;right:34px;top:34px;width:120px;height:120px;opacity:.96;filter:drop-shadow(0 6px 18px #0006)}
 @media(max-width:760px){.hero-logo{width:70px;height:70px;right:18px;top:18px}}
 .brand .t1{font-size:9.5px;letter-spacing:.14em;color:var(--teal2);font-weight:600;white-space:nowrap}

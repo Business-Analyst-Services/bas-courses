@@ -23,7 +23,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ d
       <Nav enrolments={enr} isAdmin={v.isAdmin} />
       <main className="content" style={{ maxWidth: 1180 }}>
         <section className="hero">
-          <img className="hero-logo" src="/bas-logo.svg" alt="" />
+          <img className="hero-logo" src="/bas-logo.png" alt="" />
           <div className="hk">BUSINESS ANALYST SERVICES · COURSE PORTAL</div>
           <h1>G&apos;day {v.name.split(" ")[0]}<span>Your courses, workbooks and session materials</span></h1>
           <p className="hsub">Pick a course to open its agenda, session content and your saved workbook answers. Switch courses at any time from the menu at the top.</p>
