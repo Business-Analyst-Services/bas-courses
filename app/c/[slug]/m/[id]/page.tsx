@@ -140,7 +140,7 @@ export default async function ModulePage({
                 if (!owner || !act) return [];
                 return [{
                   activityId: act.id, title: act.title,
-                  where: owner.id === m.id ? "this session" : `Session ${owner.num}`,
+                  where: owner.id === m.id ? "this session" : `Session ${owner.num}`, current: owner.id === m.id,
                   fields: act.prompts.map((pr) => ({ promptId: pr.id, label: pr.label, value: responses[`${act.id}::${pr.id}`] ?? "" })),
                 }];
               })} />
