@@ -118,3 +118,38 @@ for i, (l, n) in enumerate(pr):
     b += f'<rect x="{x}" y="{y}" width="233" height="80" rx="10" fill="{ICE}" stroke="{TEAL}"/>' + f'<circle cx="{x + 34}" cy="{y + 40}" r="20" fill="{NAVY}"/>' + t(x + 34, y + 40, l, 16, "#fff", 700) + t(x + 144, y + 40, n, 12.5, NAVY, 600)
 svg("principles.svg", 760, 340, b, "The nine principles of agile business analysis")
 print("ok")
+
+# 9. Scrum vs Kanban — same analysis job, different rhythm
+b = DEFS + t(400, 30, "Same analysis job, different rhythm", 16, NAVY, 600)
+b += t(200, 64, "Scrum (iterations)", 15, NAVY, 700) + t(600, 64, "Kanban (continuous flow)", 15, NAVY, 700)
+# Scrum: sprint boxes with fixed events
+for k in range(3):
+    x = 30 + k * 120
+    b += f'<rect x="{x}" y="84" width="110" height="64" rx="10" fill="{ICE}" stroke="{TEAL}"/>' + t(x + 55, 104, f"Sprint {k + 1}", 13, NAVY, 600) + t(x + 55, 128, "2 weeks", 11.5, GREY)
+b += t(200, 172, "Plan → build → review → retro, every sprint", 12, GREY)
+b += box(30, 186, 350, 54, LIGHT, LINE, "Refine 1–2 sprints ahead · commit at planning\nMeasure: velocity, sprint goal met", 12, INK, 500)
+# Kanban: columns with WIP limits
+cols = [("Ready", "WIP 5"), ("Analyse", "WIP 2"), ("Build", "WIP 3"), ("Test", "WIP 2"), ("Done", "")]
+for k, (c, w) in enumerate(cols):
+    x = 420 + k * 72
+    b += f'<rect x="{x}" y="84" width="66" height="64" rx="8" fill="{ICE if k != 1 else NAVY}" stroke="{TEAL}"/>' + t(x + 33, 104, c, 12, "#fff" if k == 1 else NAVY, 700) + t(x + 33, 128, w, 11, "#fff" if k == 1 else GREY)
+b += t(600, 172, "Items pulled one at a time when there's capacity", 12, GREY)
+b += box(420, 186, 354, 54, LIGHT, LINE, "Keep the Ready column topped up · no commitment point\nMeasure: cycle time, items blocked", 12, INK, 500)
+b += box(30, 258, 744, 46, NAVY, NAVY, "Both: elaborate just in time · Three Amigos before work starts · examples → criteria · validate in review", 13, "#fff", 600)
+svg("scrum-vs-kanban.svg", 804, 324, b, "Scrum and Kanban: what changes for the Agile BA")
+
+# 10. Where the analysis lives
+rows = [("Backlog item, acceptance criteria, NFRs", "Jira · Azure DevOps Boards · Linear · Trello"),
+        ("Examples / BDD scenarios", "On the ticket, or feature files (Cucumber, Reqnroll)"),
+        ("Wireframes, prototypes, storyboards", "Figma · Balsamiq · Miro"),
+        ("Story map, event storming, journey map", "Miro · Mural · FigJam"),
+        ("Decisions, glossary, business rules", "Confluence · Notion · SharePoint"),
+        ("Board, WIP limits, flow metrics", "The board in your delivery tool"),
+        ("AI drafting and checking", "Rovo · Copilot · Claude — verify everything")]
+b = t(400, 30, "Where the analysis lives: typical delivery tools (examples, not endorsements)", 15, NAVY, 600)
+for k, (a, c) in enumerate(rows):
+    y = 52 + k * 46
+    b += f'<rect x="20" y="{y}" width="330" height="38" rx="8" fill="{ICE}" stroke="{TEAL}"/>' + t(32, y + 19, a, 12.5, NAVY, 600, "start")
+    b += f'<rect x="360" y="{y}" width="424" height="38" rx="8" fill="{LIGHT}" stroke="{LINE}"/>' + t(372, y + 19, c, 12.5, INK, 400, "start")
+svg("tool-map.svg", 804, 380, b, "Where Delivery analysis lives in common tools")
+print("ok2")
