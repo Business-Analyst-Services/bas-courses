@@ -191,14 +191,14 @@ export async function bulkCreateCohorts(f: FormData) {
 export type BulkResult = { ok?: string; errors?: string[] };
 
 /**
- * Each line: email[, role][, target]. Target defaults to the form's chosen target.
+ * Each line: email[, role][, target, target…]. With no targets on the line, every ticked default is used.
  * Targets: "intake:12", "cohort:34", "course:slug", or an intake/cohort name.
  * Intakes enrol into every cohort in the intake; capacity counts distinct people.
  */
 export async function bulkEnrol(_p: BulkResult, f: FormData): Promise<BulkResult> {
   await requireAdmin();
   await ensureSchema();
-  const defTarget = str(f, "target");
+  const defTargets = f.getAll("target").map(String).filter(Boolean);
   const override = f.get("override") === "on";
   const intakes = (await sql`SELECT id, name, capacity FROM intakes`) as { id: number; name: string; capacity: number }[];
   const cohorts = (await sql`SELECT id, name, course_slug, capacity, intake_id FROM cohorts`) as { id: number; name: string; course_slug: string; capacity: number; intake_id: number | null }[];
@@ -229,18 +229,25 @@ export async function bulkEnrol(_p: BulkResult, f: FormData): Promise<BulkResult
     if (!email) { errors.push(`Line ${n + 1}: no email found (“${line}”)`); continue; }
     const role = parts.some((p) => /^presenter$/i.test(p)) ? "presenter" : "participant";
     const rest = parts.filter((p) => p.toLowerCase() !== email && !/^(presenter|participant)$/i.test(p));
-    const tgt = resolve(rest[0] ?? defTarget) ?? (rest[0] ? null : resolve(defTarget));
-    if (!tgt) { errors.push(`Line ${n + 1}: couldn't find “${rest[0] ?? defTarget}”`); continue; }
-
-    if (tgt.kind === "course") { await put(email, tgt.slug!, role, null, null, "active"); added++; continue; }
-    const set = tgt.kind === "intake" ? cohorts.filter((c) => c.intake_id === tgt.id) : cohorts.filter((c) => c.id === tgt.id);
-    if (!set.length) { errors.push(`Line ${n + 1}: that intake has no cohorts`); continue; }
-    const cap = tgt.kind === "intake" ? intakes.find((i) => i.id === tgt.id)!.capacity : set[0].capacity;
-    const already = ((await sql`SELECT 1 FROM enrolments WHERE email = ${email} AND cohort_id = ANY(${set.map((c) => c.id)}) AND status = 'active'`) as unknown[]).length > 0;
-    const full = role === "participant" && !override && !already && (await taken(set.map((c) => c.id))) >= cap;
-    const name = tgt.kind === "intake" ? intakes.find((i) => i.id === tgt.id)!.name : set[0].name;
-    for (const c of set) await put(email, c.course_slug, role, c.id, name, full ? "waitlist" : "active");
-    if (full) waitlisted++; else added++;
+    // Targets for this line: any names given on the line, otherwise every ticked default.
+    const names = rest.length ? rest : defTargets;
+    if (!names.length) { errors.push(`Line ${n + 1}: nothing to enrol into. Tick at least one course, cohort or intake`); continue; }
+    let lineOk = false, lineWait = false;
+    for (const name of names) {
+      const tgt = resolve(name);
+      if (!tgt) { errors.push(`Line ${n + 1}: couldn't find “${name}”`); continue; }
+      if (tgt.kind === "course") { await put(email, tgt.slug!, role, null, null, "active"); lineOk = true; continue; }
+      const set = tgt.kind === "intake" ? cohorts.filter((c) => c.intake_id === tgt.id) : cohorts.filter((c) => c.id === tgt.id);
+      if (!set.length) { errors.push(`Line ${n + 1}: “${name}” has no cohorts`); continue; }
+      const cap = tgt.kind === "intake" ? intakes.find((i) => i.id === tgt.id)!.capacity : set[0].capacity;
+      const already = ((await sql`SELECT 1 FROM enrolments WHERE email = ${email} AND cohort_id = ANY(${set.map((c) => c.id)}) AND status = 'active'`) as unknown[]).length > 0;
+      const full = role === "participant" && !override && !already && (await taken(set.map((c) => c.id))) >= cap;
+      const label = tgt.kind === "intake" ? intakes.find((i) => i.id === tgt.id)!.name : set[0].name;
+      for (const c of set) await put(email, c.course_slug, role, c.id, label, full ? "waitlist" : "active");
+      if (full) lineWait = true; else lineOk = true;
+    }
+    if (lineOk) added++;
+    else if (lineWait) waitlisted++;
   }
   revalidatePath("/admin", "layout");
   return { ok: `${added} enrolled${waitlisted ? `, ${waitlisted} waitlisted (full)` : ""}${errors.length ? `, ${errors.length} skipped` : ""}.`, errors: errors.length ? errors : undefined };

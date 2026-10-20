@@ -831,3 +831,4 @@ a.agrow:hover{background:var(--light)}
 .hero .hero-logo{position:relative;float:right;right:auto;top:auto;width:136px;height:136px;border-radius:50%;margin:0 0 16px 28px;z-index:1;shape-outside:circle(50%)}
 .hero .stats{clear:both}
 @media(max-width:760px){.hero .hero-logo{display:none}}
+.targetbox{max-height:340px;overflow-y:auto;border:1px solid var(--line);border-radius:12px;padding:6px 12px 12px;background:#fff}
