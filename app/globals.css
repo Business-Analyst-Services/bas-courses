@@ -827,3 +827,8 @@ a.agrow:hover{background:var(--light)}
 .pathother{margin-top:6px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 14px}
 .pathother>summary,.pathpeek>summary{cursor:pointer;font-weight:600;font-size:13.5px;color:var(--navy)}
 .pathpeek{margin:8px 0}
+/* Keep hero text clear of the logo: reserve a column on the right; hide the logo on phones (the nav shows it). */
+.hero:has(.hero-logo){padding-right:200px}
+.hero-logo{right:32px;top:32px;width:136px;height:136px;border-radius:50%}
+.hero h1,.hero .hsub{position:relative;z-index:1}
+@media(max-width:760px){.hero:has(.hero-logo){padding-right:24px}.hero-logo{display:none}}
