@@ -70,7 +70,7 @@ export async function getClients(): Promise<Client[]> {
 }
 export async function getIntakes(): Promise<Intake[]> {
   await ensureSchema();
-  return (await sql`SELECT id, program_slug, client_id, name, status, start_date::text, capacity, forecast_seats, price::text, delivery, presenter_email, notes
+  return (await sql`SELECT id, program_slug, client_id, name, status, start_date::text, capacity, forecast_seats, price::text, delivery, presenter_email, notes, humanitix_event_id
                     FROM intakes ORDER BY start_date NULLS LAST, id`) as Intake[];
 }
 

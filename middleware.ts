@@ -1,7 +1,8 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
 // Everything requires a login except the auth pages themselves.
-const isPublic = createRouteMatcher(["/sign-in(.*)", "/sign-up(.*)"]);
+// Auth pages, plus the cron endpoint (which checks its own CRON_SECRET).
+const isPublic = createRouteMatcher(["/sign-in(.*)", "/sign-up(.*)", "/api/cron(.*)"]);
 
 export default clerkMiddleware(async (auth, req) => {
   if (!isPublic(req)) await auth.protect();

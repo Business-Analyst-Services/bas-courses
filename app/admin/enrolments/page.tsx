@@ -30,13 +30,13 @@ export default async function AdminEnrolments({ searchParams }: { searchParams: 
     <>
       <div className="kicker">Admin</div>
       <h1 className="pagetitle">Enrolments</h1>
-      <p className="lead">Paste a list of people and enrol them into an intake (every course in the program), a single cohort, or a course. They get access when they sign in with that email.</p>
+      <p className="lead">Selling through Humanitix? Use <a href="/admin/import" style={{ color: "var(--tealdk)", fontWeight: 600 }}>Import</a> instead. Paste a list of people and enrol them into an intake (every course in the program), a single cohort, or a course. They get access when they sign in with that email.</p>
       <BulkEnrol targets={enrolTargets(istats, cstats, courses, programs)} />
       <div className="btnrow2" style={{ margin: "-6px 0 14px" }}><a className="btn ghost" href="/admin/export/enrolments">⬇ Export CSV</a></div>
 
       <form className="filters">
         <select name="course" defaultValue={course ?? ""}><option value="">All courses</option>{courses.map((c) => <option key={c.slug} value={c.slug}>{c.shortTitle}</option>)}</select>
-        <select name="status" defaultValue={status ?? ""}><option value="">Everyone</option><option value="participant">Participants</option><option value="presenter">Presenters</option><option value="waitlist">Waitlisted</option></select>
+        <select name="status" defaultValue={status ?? ""}><option value="">Everyone</option><option value="participant">Participants</option><option value="presenter">Presenters</option><option value="waitlist">Waitlisted</option><option value="cancelled">Cancelled</option></select>
         <input name="q" defaultValue={q ?? ""} placeholder="Search email" />
         <button className="btn ghost" style={{ padding: "7px 14px" }}>Filter</button>
       </form>
@@ -50,7 +50,7 @@ export default async function AdminEnrolments({ searchParams }: { searchParams: 
                 <td>{r.email}</td><td>{title(r.course_slug)}</td>
                 <td>{r.cohort_id ? <a href={`/admin/cohorts/${r.cohort_id}`} style={{ color: "var(--tealdk)" }}>{r.cohort_name}</a> : "—"}</td>
                 <td><span className={`rolepill ${r.role}`}>{r.role}</span></td>
-                <td>{r.status === "waitlist" ? <span className="life forecast">waitlist</span> : "active"}</td>
+                <td>{r.status === "waitlist" ? <span className="life forecast">waitlist</span> : r.status === "cancelled" ? <span className="life cancelled">cancelled</span> : "active"}</td>
                 <td>{r.role === "participant" ? `${r.done}/${total(r.course_slug)}` : "—"}</td>
                 <td>{r.last_active ? new Date(r.last_active).toLocaleDateString("en-AU") : "—"}</td>
                 <td style={{ display: "flex", gap: 6 }}>

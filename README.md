@@ -22,6 +22,7 @@ Each person is enrolled per course as a **participant** or a **presenter**.
   - **Dashboard:** running, upcoming, forecast and delivered cohorts, seat fill, attendance, completion, quiz averages, booked revenue.
   - **Programs:** bundle courses in order (the Horizon Series is created automatically). Typing course titles that don't exist yet creates them as hidden drafts. Participants get a program home page at `/p/<slug>`.
   - **Intakes:** plan one or many runs of a program at once (start date, gap between courses, repeat every N weeks). A cohort is created for every course automatically. Enrolling someone into an intake places them in every cohort, and capacity counts people across the intake.
+  - **Import (Humanitix):** upload an attendee report CSV, review it grouped by event (shared and buyer emails are flagged, refunded tickets and bad rows are skipped), tick where each event's attendees go, optionally remember the event link and record check-ins as attendance. With `HUMANITIX_API_KEY` and `CRON_SECRET` set in Vercel, linked cohorts and intakes sync daily at 6am Sydney (`/api/cron/humanitix`), and can be synced on demand.
   - **Clients:** group intakes and cohorts by organisation. A client is created automatically when you type a new name.
   - **Versions:** each course has numbered versions, one of them live. Upload an edited JSON or copy a version into a new draft, preview it as a presenter (`/c/<slug>/preview?v=N`), compare it with the live version, then publish it. Publishing an older version rolls back. Cohorts, intakes (one cohort at a time) and programs (the version new intakes use) can be pinned, so a delivery keeps its content while you revise. v0 is the base: the repo file, which keeps tracking GitHub edits.
   - **Courses:** status (published, hidden or archived), per-course menu toggles (outline, resources, AI prompts, quizzes, roster, catalogue), hide individual sessions, title and tagline overrides, sort order. Add courses by importing JSON (validated), downloading the template, exporting or duplicating an existing course.
@@ -37,7 +38,7 @@ All course content is in `content/courses/<slug>.json` (schema in `lib/types.ts`
 Downloads live in `private/files/<slug>/` and are served only to enrolled users at `/files/<slug>/<file>`.
 
 ## Environment variables
-See `.env.example`: `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`, `CLERK_SECRET_KEY`, `NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in`, `NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up`, `DATABASE_URL`, `ADMIN_EMAILS`.
+See `.env.example`. Optional: `HUMANITIX_API_KEY` and `CRON_SECRET` for the Humanitix sync. Required: `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`, `CLERK_SECRET_KEY`, `NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in`, `NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up`, `DATABASE_URL`, `ADMIN_EMAILS`.
 Tables are created automatically on the first request (or run `npm run db:setup`).
 
 ## Local dev

@@ -20,6 +20,7 @@ export default function CohortForm({ courses, c, versions }: { courses: { slug: 
         <div><label>Lead presenter email</label><input type="email" name="presenter_email" defaultValue={c?.presenter_email ?? ""} /></div>
         {c && versions && <div><label>Course version</label><select name="course_version" defaultValue={c.course_version ?? ""}>
           <option value="">Follow live version</option>{versions.map((v) => <option key={v.v} value={v.v}>Pin to v{v.v} · {v.label}</option>)}</select></div>}
+        {c && <div><label>Humanitix event ID</label><input name="humanitix_event_id" defaultValue={(c as { humanitix_event_id?: string | null }).humanitix_event_id ?? ""} placeholder="links ticket sales" /></div>}
         <div className="wide"><label>Notes</label><textarea name="notes" rows={2} defaultValue={c?.notes ?? ""} placeholder="Client, venue, special requirements…" /></div>
       </div>
       <div className="btnrow2"><button className="btn">{c ? "Save cohort" : "Create cohort"}</button>

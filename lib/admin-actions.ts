@@ -113,6 +113,7 @@ export async function saveCohort(f: FormData) {
     await sql`UPDATE cohorts SET course_slug=${vals.course}, name=${vals.name}, status=${vals.status}, start_date=${vals.start}, end_date=${vals.end},
               capacity=${vals.capacity}, forecast_seats=${vals.forecast}, price=${vals.price}, delivery=${vals.delivery},
               presenter_email=${vals.presenter}, notes=${vals.notes}, course_version=${vals.version} WHERE id=${id}`;
+    if (f.has("humanitix_event_id")) await sql`UPDATE cohorts SET humanitix_event_id = ${optStr(f, "humanitix_event_id")} WHERE id = ${id}`;
   } else {
     const r = (await sql`INSERT INTO cohorts (course_slug, name, status, start_date, end_date, capacity, forecast_seats, price, delivery, presenter_email, notes, course_version)
               VALUES (${vals.course}, ${vals.name}, ${vals.status}, ${vals.start}, ${vals.end}, ${vals.capacity}, ${vals.forecast}, ${vals.price},

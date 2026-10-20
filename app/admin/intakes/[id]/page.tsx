@@ -91,6 +91,7 @@ export default async function IntakePage({ params, searchParams }: { params: Pro
           <div><label>Client</label><input name="client" list="cl" defaultValue={client?.name ?? ""} /><datalist id="cl">{clients.map((c) => <option key={c.id} value={c.name} />)}</datalist></div>
           <div><label>Lead presenter</label><input name="presenter_email" defaultValue={i.presenter_email ?? ""} /></div>
           <div><label>Delivery</label><input name="delivery" defaultValue={i.delivery ?? ""} /></div>
+          <div><label>Humanitix event ID</label><input name="humanitix_event_id" defaultValue={(i as { humanitix_event_id?: string | null }).humanitix_event_id ?? ""} placeholder="links ticket sales" /></div>
           <div className="wide"><label>Notes</label><input name="notes" defaultValue={i.notes ?? ""} /></div>
         </div>
         <label className="check" style={{ marginTop: 10, maxWidth: 460 }}><input type="checkbox" name="cascade" defaultChecked /><span>Apply status, capacity, client, presenter and delivery to all its cohorts</span></label>

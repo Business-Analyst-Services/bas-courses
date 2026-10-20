@@ -172,6 +172,35 @@ CREATE TABLE IF NOT EXISTS course_versions (
 ALTER TABLE course_settings ADD COLUMN IF NOT EXISTS live_version INT NOT NULL DEFAULT 0;
 ALTER TABLE cohorts ADD COLUMN IF NOT EXISTS course_version INT;
 ALTER TABLE programs ADD COLUMN IF NOT EXISTS course_versions JSONB NOT NULL DEFAULT '{}'::jsonb;
+CREATE TABLE IF NOT EXISTS people (
+  email       TEXT PRIMARY KEY,
+  first_name  TEXT,
+  last_name   TEXT,
+  company     TEXT,
+  linkedin    TEXT,
+  source      TEXT,
+  updated_at  TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+ALTER TABLE cohorts ADD COLUMN IF NOT EXISTS humanitix_event_id TEXT;
+ALTER TABLE intakes ADD COLUMN IF NOT EXISTS humanitix_event_id TEXT;
+CREATE TABLE IF NOT EXISTS external_tickets (
+  source      TEXT NOT NULL,
+  ticket_key  TEXT NOT NULL,
+  event_id    TEXT,
+  email       TEXT,
+  target      TEXT,
+  status      TEXT NOT NULL,
+  checked_in  BOOLEAN NOT NULL DEFAULT false,
+  seen_at     TIMESTAMPTZ NOT NULL DEFAULT now(),
+  PRIMARY KEY (source, ticket_key)
+);
+CREATE TABLE IF NOT EXISTS import_log (
+  id        SERIAL PRIMARY KEY,
+  source    TEXT NOT NULL,
+  run_by    TEXT,
+  run_at    TIMESTAMPTZ NOT NULL DEFAULT now(),
+  summary   JSONB NOT NULL
+);
 CREATE TABLE IF NOT EXISTS app_flags (
   key        TEXT PRIMARY KEY,
   set_at     TIMESTAMPTZ NOT NULL DEFAULT now()

@@ -6,6 +6,7 @@ import { requireAdmin } from "./access";
 import { getAllCourses } from "./courses";
 import { courseTemplate } from "./validate";
 import { addDays, courseSpanDays, slugify } from "./programs";
+import { enrolEngine } from "./enrol";
 
 const str = (f: FormData, k: string) => String(f.get(k) ?? "").trim();
 const optStr = (f: FormData, k: string) => str(f, k) || null;
@@ -135,7 +136,7 @@ export async function updateIntake(f: FormData) {
   const clientId = await ensureClient(optStr(f, "client"));
   const status = ["scheduled", "forecast", "cancelled"].includes(str(f, "status")) ? str(f, "status") : "scheduled";
   await sql`UPDATE intakes SET name = ${str(f, "name")}, status = ${status}, capacity = ${num(f, "capacity", 20)}, forecast_seats = ${num(f, "forecast_seats", 0)},
-            price = ${num(f, "price")}, delivery = ${optStr(f, "delivery")}, presenter_email = ${optStr(f, "presenter_email")}, client_id = ${clientId}, notes = ${optStr(f, "notes")} WHERE id = ${id}`;
+            price = ${num(f, "price")}, delivery = ${optStr(f, "delivery")}, presenter_email = ${optStr(f, "presenter_email")}, client_id = ${clientId}, notes = ${optStr(f, "notes")}, humanitix_event_id = ${optStr(f, "humanitix_event_id")} WHERE id = ${id}`;
   if (f.get("cascade") === "on") {
     await sql`UPDATE cohorts SET status = ${status}, capacity = ${num(f, "capacity", 20)}, forecast_seats = ${num(f, "forecast_seats", 0)},
               delivery = ${optStr(f, "delivery")}, presenter_email = ${optStr(f, "presenter_email")}, client_id = ${clientId} WHERE intake_id = ${id}`;
@@ -200,29 +201,9 @@ export async function bulkEnrol(_p: BulkResult, f: FormData): Promise<BulkResult
   await ensureSchema();
   const defTargets = f.getAll("target").map(String).filter(Boolean);
   const override = f.get("override") === "on";
-  const intakes = (await sql`SELECT id, name, capacity FROM intakes`) as { id: number; name: string; capacity: number }[];
-  const cohorts = (await sql`SELECT id, name, course_slug, capacity, intake_id FROM cohorts`) as { id: number; name: string; course_slug: string; capacity: number; intake_id: number | null }[];
-  const courses = await getAllCourses();
+  const engine = await enrolEngine();
   const errors: string[] = [];
   let added = 0, waitlisted = 0;
-
-  const resolve = (t: string): { kind: "intake" | "cohort" | "course"; id?: number; slug?: string } | null => {
-    const [k, v] = t.includes(":") ? [t.split(":")[0], t.split(":").slice(1).join(":")] : ["", t];
-    if (k === "intake" && intakes.some((i) => i.id === Number(v))) return { kind: "intake", id: Number(v) };
-    if (k === "cohort" && cohorts.some((c) => c.id === Number(v))) return { kind: "cohort", id: Number(v) };
-    if (k === "course" && courses.some((c) => c.slug === v)) return { kind: "course", slug: v };
-    const lc = t.toLowerCase();
-    const i = intakes.find((x) => x.name.toLowerCase() === lc); if (i) return { kind: "intake", id: i.id };
-    const c = cohorts.find((x) => x.name.toLowerCase() === lc); if (c) return { kind: "cohort", id: c.id };
-    const s = courses.find((x) => x.slug === lc || x.shortTitle.toLowerCase() === lc); if (s) return { kind: "course", slug: s.slug };
-    return null;
-  };
-  const taken = async (cohortIds: number[]) =>
-    ((await sql`SELECT count(DISTINCT email)::int AS n FROM enrolments WHERE cohort_id = ANY(${cohortIds}) AND role = 'participant' AND status = 'active'`) as { n: number }[])[0].n;
-  const put = (email: string, slug: string, role: string, cohortId: number | null, cohortName: string | null, status: string) =>
-    sql`INSERT INTO enrolments (email, course_slug, role, cohort, cohort_id, status) VALUES (${email}, ${slug}, ${role}, ${cohortName}, ${cohortId}, ${status})
-        ON CONFLICT (email, course_slug) DO UPDATE SET role = EXCLUDED.role, cohort = EXCLUDED.cohort, cohort_id = EXCLUDED.cohort_id, status = EXCLUDED.status`;
-
   for (const [n, line] of lines(str(f, "lines")).entries()) {
     const parts = line.split(/[,\t;]/).map((x) => x.trim()).filter(Boolean);
     const email = parts.find((p) => /.+@.+\..+/.test(p))?.toLowerCase();
@@ -234,17 +215,10 @@ export async function bulkEnrol(_p: BulkResult, f: FormData): Promise<BulkResult
     if (!names.length) { errors.push(`Line ${n + 1}: nothing to enrol into. Tick at least one course, cohort or intake`); continue; }
     let lineOk = false, lineWait = false;
     for (const name of names) {
-      const tgt = resolve(name);
-      if (!tgt) { errors.push(`Line ${n + 1}: couldn't find “${name}”`); continue; }
-      if (tgt.kind === "course") { await put(email, tgt.slug!, role, null, null, "active"); lineOk = true; continue; }
-      const set = tgt.kind === "intake" ? cohorts.filter((c) => c.intake_id === tgt.id) : cohorts.filter((c) => c.id === tgt.id);
-      if (!set.length) { errors.push(`Line ${n + 1}: “${name}” has no cohorts`); continue; }
-      const cap = tgt.kind === "intake" ? intakes.find((i) => i.id === tgt.id)!.capacity : set[0].capacity;
-      const already = ((await sql`SELECT 1 FROM enrolments WHERE email = ${email} AND cohort_id = ANY(${set.map((c) => c.id)}) AND status = 'active'`) as unknown[]).length > 0;
-      const full = role === "participant" && !override && !already && (await taken(set.map((c) => c.id))) >= cap;
-      const label = tgt.kind === "intake" ? intakes.find((i) => i.id === tgt.id)!.name : set[0].name;
-      for (const c of set) await put(email, c.course_slug, role, c.id, label, full ? "waitlist" : "active");
-      if (full) lineWait = true; else lineOk = true;
+      const r = await engine.enrol(email, role, name, override);
+      if (r.outcome === "error") errors.push(`Line ${n + 1}: ${r.error}`);
+      else if (r.outcome === "waitlist") lineWait = true;
+      else lineOk = true;
     }
     if (lineOk) added++;
     else if (lineWait) waitlisted++;
